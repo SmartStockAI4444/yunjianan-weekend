@@ -1,0 +1,167 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>雲嘉南週末去哪玩 V1.7</title>
+<style>
+:root{--bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;--accent:#1f6b4f;--soft:#e8f2ed;--hot:#b34b28}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif}header{position:sticky;top:0;z-index:5;background:#fff;display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line)}h1{font-size:21px;margin:2px 0}.eyebrow,.meta{font-size:12px;color:var(--muted)}.eyebrow{font-weight:800;color:var(--accent)}main{max-width:980px;margin:auto;padding:18px}.hero{min-height:175px;border-radius:24px;padding:27px;background:linear-gradient(135deg,#dfeee5,#f6e8d6);display:flex;align-items:end}.hero h2{font-size:28px;margin:9px 0}.hero p{color:var(--muted)}.row,.tabs,.chips{display:flex;gap:8px;overflow:auto;padding:12px 0}button,select,input{font:inherit}.pill,.tabs button,.chips button{white-space:nowrap;border:1px solid var(--line);background:#fff;border-radius:99px;padding:10px 14px;font-weight:750}.active{background:var(--text)!important;color:#fff!important}.notice{background:#fff;border:1px solid var(--line);padding:12px;border-radius:14px;color:var(--muted);font-size:13px}.search{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:14px;background:#fff;margin-top:15px}.section-title{display:flex;justify-content:space-between;align-items:center}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden}.cover{height:120px;display:flex;align-items:center;justify-content:center;font-size:48px;background:linear-gradient(135deg,#eef4ef,#f7efe5)}.body{padding:15px}.body h3{margin:7px 0}.badge{display:inline-block;background:var(--soft);color:var(--accent);padding:5px 8px;border-radius:99px;font-size:12px;font-weight:800;margin:2px}.social{background:#fff0e9;color:var(--hot)}.heat{font-weight:900;color:var(--hot);margin:8px 0}.reason{font-size:14px;line-height:1.5}.actions{display:flex;gap:7px;flex-wrap:wrap}.actions button,.primary,.icon{border:0;border-radius:11px;padding:10px;font-weight:800}.actions button{background:#eef0ee}.actions .nav{background:#e7eef7;color:#294e76}.actions .detail,.primary{background:var(--accent);color:#fff}.icon{background:var(--soft);color:var(--accent)}.planner{margin-top:28px;background:#1d2520;color:#fff;border-radius:24px;padding:25px}.planner p{color:#cbd1ce}.planner select{padding:11px;border:0;border-radius:11px}.planner .primary{background:#fff;color:#1d2520}.updatebox{margin-top:25px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}.updatebox textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:12px;padding:12px}.modal{position:fixed;inset:0;background:#0007;z-index:20;display:grid;place-items:center;padding:18px}.hidden{display:none}.modal-card{background:#fff;border-radius:22px;max-width:560px;width:100%;padding:25px;position:relative;max-height:85vh;overflow:auto}.close{position:absolute;right:13px;top:8px;border:0;background:none;font-size:29px}.empty{grid-column:1/-1;background:#fff;padding:35px;border-radius:18px;text-align:center;color:var(--muted)}footer{text-align:center;color:var(--muted);padding:35px}@media(max-width:760px){.cards{grid-template-columns:1fr}.hero h2{font-size:26px}}
+
+.syncbox{margin:18px 0;background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px}
+.syncbox h2{margin:0 0 6px}.syncbox input{width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;margin:10px 0}
+.syncok{color:var(--accent);font-weight:800}.syncwarn{color:var(--hot);font-weight:800}
+
+.health{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.health .box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;text-align:center}
+.health .num{font-size:22px;font-weight:900;color:var(--accent)}
+.syncgrid{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center}
+.expired{opacity:.55}.danger{color:#a33a2b;font-weight:800}
+@media(max-width:640px){.health{grid-template-columns:1fr 1fr}.syncgrid{grid-template-columns:1fr}}
+</style></head><body>
+<header><div><div class="eyebrow">AI × 每週自動同步</div><h1>雲嘉南週末去哪玩</h1><div class="meta" id="updated">資料版本：2026/08/10</div></div><button id="fav" class="icon">♡ <span id="fc">0</span></button></header>
+<main><section class="hero"><div><span class="badge">V1.7</span><h2>開始把「寫死的資料」變成可以更新的資料庫。</h2><p>新增搜尋、資料匯入／匯出、更新日期與來源欄位，為後續每週自動更新做準備。</p></div></section>
+
+
+<section class="notice">
+<b>📱 網頁版使用方式：</b> GitHub Pages 上線後，直接用 Chrome / Samsung Internet 開網址即可。
+Android 可從瀏覽器選單使用「加到主畫面」，之後就會像 App 圖示一樣開啟。
+</section>
+<section class="syncbox">
+<h2>☁️ 雲端資料中心</h2>
+<p class="meta">V1.7 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並在同步失敗時保留手機快取。</p>
+<div class="syncgrid">
+<input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
+<button id="useDefaultFeed" class="pill">使用預設資料檔</button>
+</div>
+<div class="row"><button id="syncNow" class="primary">立即同步</button><button id="clearFeed" class="pill">清除同步網址</button><button id="showExpired" class="pill">顯示過期活動</button></div>
+<div id="syncMsg" class="meta">目前使用手機內建／快取資料。</div>
+<div class="health">
+<div class="box"><div id="hTotal" class="num">0</div><div class="meta">有效資料</div></div>
+<div class="box"><div id="hExpired" class="num">0</div><div class="meta">過期活動</div></div>
+<div class="box"><div id="hUpdated" class="num">-</div><div class="meta">資料版本</div></div>
+</div>
+</section>
+<input id="search" class="search" placeholder="🔎 搜尋景點、活動、地區、關鍵字…">
+<nav id="cities" class="tabs"><button class="active" data-v="全部">全部</button><button data-v="雲林">雲林</button><button data-v="嘉義">嘉義</button><button data-v="台南">台南</button></nav>
+<div id="sources" class="row"><button class="pill active" data-v="全部">全部來源</button><button class="pill" data-v="官方">🏛 官方</button><button class="pill" data-v="社群">🔥 社群熱門</button><button class="pill" data-v="部落客">📸 網紅／部落客</button></div>
+<div id="sorts" class="row"><button class="pill active" data-v="推薦">AI推薦</button><button class="pill" data-v="熱度">社群熱度</button><button class="pill" data-v="最新">最近更新</button></div>
+<section><div class="section-title"><h2>你今天想去哪？</h2><button id="clear" class="pill">清除</button></div><div id="filters" class="chips"></div></section>
+<section><div class="section-title"><h2>🔥 推薦資料庫</h2><span id="count" class="meta"></span></div><div id="cards" class="cards"></div></section>
+<section class="planner"><span class="badge">✨ AI 行程</span><h2>幫我安排熱門行程</h2><p>依縣市、類型與熱度組合行程。</p><div class="row"><select id="pc"><option>嘉義</option><option>雲林</option><option>台南</option></select><select id="pt"><option>親子</option><option>美食</option><option>戶外</option><option>室內</option><option>免費</option></select><button id="plan" class="primary">幫我排行程</button></div><div id="pr"></div></section>
+<section class="updatebox"><h2>🗃️ 資料管理</h2><p class="meta">V1.7 可以把推薦資料匯出成 JSON 備份，也可以貼入新版 JSON 後更新。這是未來伺服器每週自動餵資料的接口雛形。</p><div class="row"><button id="export" class="pill">匯出資料</button><button id="showImport" class="pill">匯入資料</button><button id="reset" class="pill">恢復內建資料</button></div><div id="importArea" class="hidden"><textarea id="jsonbox" placeholder="貼上 JSON 資料"></textarea><button id="doImport" class="primary">確認匯入</button></div><div id="msg" class="meta"></div></section>
+</main><div id="modal" class="modal hidden"><div class="modal-card"><button id="close" class="close">×</button><div id="mb"></div></div></div><footer>雲嘉南週末去哪玩 · V1.7 單檔手機版</footer>
+<script>
+(function(){
+var seed=[
+{id:1,city:"雲林",name:"古坑綠色隧道",e:"🌳",type:"景點",src:"社群",heat:88,updated:"2026-08-10",tags:["親子","戶外","免費"],place:"古坑鄉",q:"古坑綠色隧道",why:"週末散步、親子與市集型行程容易搭配。"},
+{id:2,city:"雲林",name:"雲林 TPASS 走拍挑戰",e:"🚉",type:"活動",src:"官方",heat:83,updated:"2026-08-10",tags:["親子","戶外"],place:"雲林縣",q:"雲林縣",why:"活動至 2026/09/10，可用公共運輸分次踩點。",url:"https://content.yunlin.gov.tw/News_Content.aspx?n=1437&s=594801"},
+{id:3,city:"嘉義",name:"檜意森活村",e:"🏡",type:"景點",src:"社群",heat:93,updated:"2026-08-10",tags:["親子","美食","戶外"],place:"嘉義市",q:"檜意森活村",why:"木造聚落好拍，也容易接嘉義市區美食。"},
+{id:4,city:"嘉義",name:"故宮南院",e:"🏛️",type:"景點",src:"官方",heat:82,updated:"2026-08-09",tags:["親子","室內","雨天"],place:"太保市",q:"國立故宮博物院南部院區",why:"炎熱、下雨都適合，親子半日行程穩定。",url:"https://south.npm.gov.tw/"},
+{id:5,city:"嘉義",name:"新港香藝・調香體驗",e:"🌿",type:"體驗",src:"官方",heat:79,updated:"2026-08-08",tags:["親子","室內","雨天"],place:"新港鄉",q:"新港香藝文化園區",why:"手作體驗具特色，適合雨天備案。",url:"https://familytour.chiayi.travel/events/"},
+{id:6,city:"台南",name:"安平老街＋巷弄散策",e:"🏮",type:"景點",src:"社群",heat:96,updated:"2026-08-10",tags:["親子","美食","戶外"],place:"安平區",q:"安平老街",why:"美食、古蹟、拍照一次完成。"},
+{id:7,city:"台南",name:"七股海鮮節",e:"🦪",type:"活動",src:"官方",heat:91,updated:"2026-08-10",tags:["親子","美食","戶外"],place:"七股區",q:"台南七股",why:"2026 年 8 月海線重點活動。",url:"https://www.twtainan.net/zh-tw/event/touristcalendar/2026/"},
+{id:8,city:"台南",name:"台江生態海線",e:"🦀",type:"景點",src:"部落客",heat:86,updated:"2026-08-07",tags:["親子","戶外","免費"],place:"安南區",q:"台江國家公園",why:"適合自然、生態與夕陽路線。"}
+];
+var data,fs=["親子","情侶","美食","戶外","室內","免費","雨天"],city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
+function $(x){return document.getElementById(x)}
+function loadData(){try{var x=JSON.parse(localStorage.getItem("ynData14")||"null");data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed))}catch(e){data=JSON.parse(JSON.stringify(seed))}}
+function saveData(){try{localStorage.setItem("ynData14",JSON.stringify(data))}catch(e){}}
+function loadFav(){try{JSON.parse(localStorage.getItem("ynFav14")||"[]").forEach(function(x){favs[x]=1})}catch(e){}}
+function saveFav(){try{var a=[];for(var k in favs)if(favs[k])a.push(+k);localStorage.setItem("ynFav14",JSON.stringify(a))}catch(e){}}
+function okTags(s){for(var k in sel)if(sel[k]&&s.tags.indexOf(k)<0)return false;return true}
+function list(){var q=query.toLowerCase(),a=data.filter(function(s){var txt=(s.name+" "+s.city+" "+s.place+" "+s.type+" "+s.src+" "+s.tags.join(" ")+" "+s.why).toLowerCase();return(city==="全部"||s.city===city)&&(source==="全部"||s.src===source)&&okTags(s)&&(!favOnly||favs[s.id])&&(!q||txt.indexOf(q)>=0)&&(showExpiredItems||!isExpired(s))});if(sort==="熱度")a.sort(function(a,b){return b.heat-a.heat});if(sort==="最新")a.sort(function(a,b){return String(b.updated).localeCompare(String(a.updated))});return a}
+function nav(s){window.open("https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(s.q||s.name),"_blank")}
+function render(){var a=list(),box=$("cards"),c=0;for(var k in favs)if(favs[k])c++;$("fc").textContent=c;$("count").textContent=a.length+" / "+data.length+" 筆";box.innerHTML="";if(!a.length){box.innerHTML='<div class="empty">找不到符合條件的資料。</div>';return}a.forEach(function(s){var el=document.createElement("article");el.className="card";el.innerHTML='<div class="cover">'+(s.e||"📍")+'</div><div class="body"><div class="meta">'+s.city+' · '+s.type+' · '+s.place+'</div><h3>'+s.name+'</h3><span class="badge '+(s.src==="社群"||s.src==="部落客"?"social":"")+'">'+s.src+'</span><div class="heat">🔥 社群熱度 '+s.heat+'</div><div class="meta">更新 '+s.updated+'</div><p class="reason">'+s.why+'</p><div>'+s.tags.map(function(t){return'<span class="badge">'+t+'</span>'}).join("")+'</div><div class="actions"><button data-f="'+s.id+'">'+(favs[s.id]?"♥ 已收藏":"♡ 收藏")+'</button><button class="nav" data-n="'+s.id+'">🧭 導航</button><button class="detail" data-d="'+s.id+'">詳情</button></div></div>';box.appendChild(el)});
+[].forEach.call(document.querySelectorAll("[data-f]"),function(b){b.onclick=function(){var id=+this.getAttribute("data-f");favs[id]=!favs[id];saveFav();render()}});
+[].forEach.call(document.querySelectorAll("[data-n]"),function(b){b.onclick=function(){var id=+this.getAttribute("data-n");nav(data.filter(function(x){return x.id===id})[0])}});
+[].forEach.call(document.querySelectorAll("[data-d]"),function(b){b.onclick=function(){detail(+this.getAttribute("data-d"))}})}
+function detail(id){var s=data.filter(function(x){return x.id===id})[0];$("mb").innerHTML='<div style="font-size:58px">'+(s.e||"📍")+'</div><h2>'+s.name+'</h2><p><b>來源：</b>'+s.src+'</p><p><b>更新：</b>'+s.updated+'</p><p><b>熱度：</b>'+s.heat+'/100</p><p>'+s.why+'</p>'+(s.url?'<p><a target="_blank" href="'+s.url+'">查看來源資料</a></p>':'')+'<div class="actions"><button class="nav" id="mn">🧭 Google 地圖導航</button></div>';$("mn").onclick=function(){nav(s)};$("modal").classList.remove("hidden")}
+function group(id,setter){[].forEach.call(document.querySelectorAll("#"+id+" button"),function(b){b.onclick=function(){var v=this.getAttribute("data-v");[].forEach.call(document.querySelectorAll("#"+id+" button"),function(x){x.classList.remove("active")});this.classList.add("active");setter(v);render()}})}
+
+
+var showExpiredItems=false;
+var feedMeta={version:"內建",updated:"2026-08-11"};
+
+function normDate(s){
+ if(!s)return null;
+ var d=new Date(s+"T12:00:00");
+ return isNaN(d.getTime())?null:d;
+}
+function isExpired(s){
+ if(s.type!=="活動" || !s.end)return false;
+ var e=normDate(s.end);
+ if(!e)return false;
+ var now=new Date();
+ now.setHours(0,0,0,0);
+ return e<now;
+}
+function dedupe(arr){
+ var seen={},out=[];
+ arr.forEach(function(s){
+   var key=(s.city+"|"+s.name+"|"+(s.start||"")).toLowerCase().replace(/\s+/g,"");
+   if(!seen[key]){seen[key]=1;out.push(s);}
+ });
+ return out;
+}
+function normalizeFeed(x){
+ var items=Array.isArray(x)?x:(x&&Array.isArray(x.items)?x.items:null);
+ if(!items)return null;
+ feedMeta={
+   version:(x&&x.version)||"remote",
+   updated:(x&&x.updated)||new Date().toISOString().slice(0,10)
+ };
+ return dedupe(items);
+}
+function refreshHealth(){
+ var exp=0,valid=0;
+ data.forEach(function(s){if(isExpired(s))exp++;else valid++;});
+ if($("hTotal"))$("hTotal").textContent=valid;
+ if($("hExpired"))$("hExpired").textContent=exp;
+ if($("hUpdated"))$("hUpdated").textContent=feedMeta.version||"-";
+}
+function validFeed(x){
+ var a=normalizeFeed(x);
+ return !!(a&&a.length>0&&a.every(function(s){
+  return s&&s.name&&s.city&&Array.isArray(s.tags);
+ }));
+}
+function syncFeed(url,auto){
+ var msg=$("syncMsg");
+ if(!url){msg.textContent="請先輸入遠端 JSON 網址。";return;}
+ msg.textContent="正在取得最新資料…";
+ fetch(url,{cache:"no-store"}).then(function(r){
+  if(!r.ok)throw new Error("HTTP "+r.status);
+  return r.json();
+ }).then(function(x){
+  if(!validFeed(x))throw new Error("資料格式不正確");
+  data=normalizeFeed(x);
+  try{
+   localStorage.setItem("ynData14",JSON.stringify(data));
+   localStorage.setItem("ynFeed15",url);
+   localStorage.setItem("ynFeed15Time",new Date().toISOString());
+  }catch(e){}
+  msg.className="syncok";
+  msg.textContent="✅ 同步成功，共 "+data.length+" 筆資料。版本："+(feedMeta.version||"-");
+  refreshHealth();
+  render();
+ }).catch(function(e){
+  msg.className="syncwarn";
+  msg.textContent=(auto?"離線／無法自動同步：":"⚠️ 同步失敗：")+"繼續使用手機快取資料。";
+ });
+}
+function init(){loadData();loadFav();fs.forEach(function(n){var b=document.createElement("button");b.textContent=n;b.onclick=function(){sel[n]=!sel[n];this.classList.toggle("active");render()};$("filters").appendChild(b)});group("cities",function(v){city=v});group("sources",function(v){source=v});group("sorts",function(v){sort=v});$("search").oninput=function(){query=this.value;render()};$("clear").onclick=function(){sel={};query="";$("search").value="";[].forEach.call(document.querySelectorAll("#filters button"),function(x){x.classList.remove("active")});render()};$("fav").onclick=function(){favOnly=!favOnly;this.classList.toggle("active");render()};$("close").onclick=function(){$("modal").classList.add("hidden")};$("modal").onclick=function(e){if(e.target===this)this.classList.add("hidden")};$("plan").onclick=function(){var c=$("pc").value,t=$("pt").value,a=data.filter(function(s){return s.city===c&&s.tags.indexOf(t)>=0}).sort(function(a,b){return b.heat-a.heat}).slice(0,2);$("pr").innerHTML=a.length?'<b>'+c+'・'+t+'行程</b><br>① '+a[0].name+(a[1]?' → ② '+a[1].name:''):'目前沒有符合行程。'};
+$("export").onclick=function(){$("jsonbox").value=JSON.stringify(data,null,2);$("importArea").classList.remove("hidden");$("msg").textContent="已產生目前資料 JSON，可全選複製備份。"};
+$("showImport").onclick=function(){$("importArea").classList.toggle("hidden");$("jsonbox").value=""};
+$("doImport").onclick=function(){try{var x=JSON.parse($("jsonbox").value);if(!Array.isArray(x)||!x.length)throw 0;data=x;saveData();$("msg").textContent="匯入成功，共 "+data.length+" 筆。";render()}catch(e){$("msg").textContent="匯入失敗：JSON 格式不正確。"}};
+$("reset").onclick=function(){data=JSON.parse(JSON.stringify(seed));saveData();$("msg").textContent="已恢復 V1.7 內建資料。";render()};
+var savedFeed="";try{savedFeed=localStorage.getItem("ynFeed15")||""}catch(e){} if(!savedFeed)savedFeed="weekly_feed.json";
+$("feedUrl").value=savedFeed;
+$("syncNow").onclick=function(){syncFeed($("feedUrl").value.trim(),false)};
+$("useDefaultFeed").onclick=function(){
+ $("feedUrl").value="weekly_feed.json";
+ $("syncMsg").textContent="已填入預設 weekly_feed.json。GitHub Pages 部署後會直接讀取同資料夾的 weekly_feed.json。";
+};
+$("showExpired").onclick=function(){showExpiredItems=!showExpiredItems;this.classList.toggle("active");render();};
+$("clearFeed").onclick=function(){try{localStorage.removeItem("ynFeed15")}catch(e){}$("feedUrl").value="";$("syncMsg").className="meta";$("syncMsg").textContent="已清除同步網址，保留目前快取資料。"};
+refreshHealth();
+render();
+if(savedFeed)syncFeed(savedFeed,true);
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init()
+})();</script></body></html>

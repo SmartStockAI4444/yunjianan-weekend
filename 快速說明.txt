@@ -1,0 +1,10 @@
+V1.7 GitHub Pages 雲端部署版
+
+測試方式：
+直接開 index.html，原本功能仍可使用。
+
+真正部署：
+把整個資料夾上傳 GitHub Repository，
+Settings → Pages → Source 選 GitHub Actions。
+
+部署後，App 會自動使用同資料夾的 weekly_feed.json。
