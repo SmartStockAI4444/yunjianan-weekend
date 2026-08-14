@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "id": "official-yunlin-tpass-2026",
+    "city": "雲林",
+    "name": "雲林 TPASS 走拍挑戰",
+    "e": "🚉",
+    "type": "活動",
+    "src": "官方",
+    "base_heat": 82,
+    "updated": "2026-08-12",
+    "start": "2026-06-10",
+    "end": "2026-09-10",
+    "tags": [
+      "親子",
+      "戶外"
+    ],
+    "place": "雲林縣",
+    "q": "雲林縣",
+    "why": "活動期間可利用公共運輸分次踩點。",
+    "url": "https://content.yunlin.gov.tw/News_Content.aspx?n=1437&s=594801"
+  },
+  {
+    "id": "official-chiayi-npm",
+    "city": "嘉義",
+    "name": "故宮南院",
+    "e": "🏛️",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 80,
+    "updated": "2026-08-12",
+    "tags": [
+      "親子",
+      "室內",
+      "雨天"
+    ],
+    "place": "太保市",
+    "q": "國立故宮博物院南部院區",
+    "why": "炎熱或下雨天都適合安排半日。",
+    "url": "https://south.npm.gov.tw/"
+  },
+  {
+    "id": "official-tainan-qigu-2026",
+    "city": "台南",
+    "name": "七股海鮮節",
+    "e": "🦪",
+    "type": "活動",
+    "src": "官方",
+    "base_heat": 90,
+    "updated": "2026-08-12",
+    "start": "2026-08-01",
+    "end": "2026-08-31",
+    "tags": [
+      "親子",
+      "美食",
+      "戶外"
+    ],
+    "place": "七股區",
+    "q": "台南七股",
+    "why": "8 月海線重點活動。",
+    "url": "https://www.twtainan.net/zh-tw/event/touristcalendar/2026/"
+  }
+]

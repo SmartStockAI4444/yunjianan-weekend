@@ -1,0 +1,68 @@
+[
+  {
+    "id": "social-yunlin-gukeng",
+    "city": "雲林",
+    "name": "古坑綠色隧道",
+    "e": "🌳",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 7,
+      "creator_mentions": 2,
+      "repeat_recommendations": 4
+    },
+    "updated": "2026-08-12",
+    "tags": [
+      "親子",
+      "戶外",
+      "免費"
+    ],
+    "place": "古坑鄉",
+    "q": "古坑綠色隧道",
+    "why": "近期旅遊分享持續出現，適合週末散步與親子行程。"
+  },
+  {
+    "id": "social-chiayi-hinoki",
+    "city": "嘉義",
+    "name": "檜意森活村",
+    "e": "🏡",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 9,
+      "creator_mentions": 4,
+      "repeat_recommendations": 5
+    },
+    "updated": "2026-08-12",
+    "tags": [
+      "親子",
+      "美食",
+      "戶外"
+    ],
+    "place": "嘉義市",
+    "q": "檜意森活村",
+    "why": "拍照與市區美食行程常被一起推薦。"
+  },
+  {
+    "id": "social-tainan-anping",
+    "city": "台南",
+    "name": "安平老街＋巷弄散策",
+    "e": "🏮",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 10,
+      "creator_mentions": 5,
+      "repeat_recommendations": 6
+    },
+    "updated": "2026-08-12",
+    "tags": [
+      "親子",
+      "美食",
+      "戶外"
+    ],
+    "place": "安平區",
+    "q": "安平老街",
+    "why": "美食、古蹟與拍照組合長期保持高討論度。"
+  }
+]
