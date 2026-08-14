@@ -1,91 +1,22 @@
 {
-  "version": "2026.08.11-01",
+  "version": "2026.08.11-auto",
   "updated": "2026-08-11",
+  "generated_at": "2026-08-11T17:05:57+00:00",
+  "stats": {
+    "official": 3,
+    "social": 3,
+    "expired_removed": 0,
+    "total": 6
+  },
   "items": [
     {
-      "id": 101,
-      "city": "雲林",
-      "name": "雲林 TPASS 走拍挑戰",
-      "e": "🚉",
-      "type": "活動",
-      "src": "官方",
-      "heat": 83,
-      "updated": "2026-08-11",
-      "start": "2026-06-10",
-      "end": "2026-09-10",
-      "tags": [
-        "親子",
-        "戶外"
-      ],
-      "place": "雲林縣",
-      "q": "雲林縣",
-      "why": "活動期間可利用公共運輸分次踩點。",
-      "url": "https://content.yunlin.gov.tw/News_Content.aspx?n=1437&s=594801"
-    },
-    {
-      "id": 102,
-      "city": "雲林",
-      "name": "古坑綠色隧道",
-      "e": "🌳",
-      "type": "景點",
-      "src": "社群",
-      "heat": 88,
-      "updated": "2026-08-11",
-      "tags": [
-        "親子",
-        "戶外",
-        "免費"
-      ],
-      "place": "古坑鄉",
-      "q": "古坑綠色隧道",
-      "why": "散步與親子週末行程容易安排。"
-    },
-    {
-      "id": 201,
-      "city": "嘉義",
-      "name": "檜意森活村",
-      "e": "🏡",
-      "type": "景點",
-      "src": "社群",
-      "heat": 93,
-      "updated": "2026-08-11",
-      "tags": [
-        "親子",
-        "美食",
-        "戶外"
-      ],
-      "place": "嘉義市",
-      "q": "檜意森活村",
-      "why": "木造聚落好拍，也容易接嘉義市區美食。"
-    },
-    {
-      "id": 202,
-      "city": "嘉義",
-      "name": "故宮南院",
-      "e": "🏛️",
-      "type": "景點",
-      "src": "官方",
-      "heat": 82,
-      "updated": "2026-08-11",
-      "tags": [
-        "親子",
-        "室內",
-        "雨天"
-      ],
-      "place": "太保市",
-      "q": "國立故宮博物院南部院區",
-      "why": "炎熱或雨天都適合。",
-      "url": "https://south.npm.gov.tw/"
-    },
-    {
-      "id": 301,
+      "id": "official-tainan-qigu-2026",
       "city": "台南",
       "name": "七股海鮮節",
       "e": "🦪",
       "type": "活動",
       "src": "官方",
-      "heat": 91,
-      "updated": "2026-08-11",
+      "updated": "2026-08-12",
       "start": "2026-08-01",
       "end": "2026-08-31",
       "tags": [
@@ -95,18 +26,62 @@
       ],
       "place": "七股區",
       "q": "台南七股",
-      "why": "2026 年 8 月海線重點活動。",
-      "url": "https://www.twtainan.net/zh-tw/event/touristcalendar/2026/"
+      "why": "8 月海線重點活動。",
+      "url": "https://www.twtainan.net/zh-tw/event/touristcalendar/2026/",
+      "heat": 90
     },
     {
-      "id": 302,
+      "id": "official-yunlin-tpass-2026",
+      "city": "雲林",
+      "name": "雲林 TPASS 走拍挑戰",
+      "e": "🚉",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-08-12",
+      "start": "2026-06-10",
+      "end": "2026-09-10",
+      "tags": [
+        "親子",
+        "戶外"
+      ],
+      "place": "雲林縣",
+      "q": "雲林縣",
+      "why": "活動期間可利用公共運輸分次踩點。",
+      "url": "https://content.yunlin.gov.tw/News_Content.aspx?n=1437&s=594801",
+      "heat": 82
+    },
+    {
+      "id": "official-chiayi-npm",
+      "city": "嘉義",
+      "name": "故宮南院",
+      "e": "🏛️",
+      "type": "景點",
+      "src": "官方",
+      "updated": "2026-08-12",
+      "tags": [
+        "親子",
+        "室內",
+        "雨天"
+      ],
+      "place": "太保市",
+      "q": "國立故宮博物院南部院區",
+      "why": "炎熱或下雨天都適合安排半日。",
+      "url": "https://south.npm.gov.tw/",
+      "heat": 80
+    },
+    {
+      "id": "social-tainan-anping",
       "city": "台南",
       "name": "安平老街＋巷弄散策",
       "e": "🏮",
       "type": "景點",
       "src": "社群",
-      "heat": 96,
-      "updated": "2026-08-11",
+      "signals": {
+        "recent_mentions": 10,
+        "creator_mentions": 5,
+        "repeat_recommendations": 6
+      },
+      "updated": "2026-08-12",
       "tags": [
         "親子",
         "美食",
@@ -114,7 +89,54 @@
       ],
       "place": "安平區",
       "q": "安平老街",
-      "why": "美食、古蹟與拍照一次完成。"
+      "why": "美食、古蹟與拍照組合長期保持高討論度。",
+      "heat": 81
+    },
+    {
+      "id": "social-chiayi-hinoki",
+      "city": "嘉義",
+      "name": "檜意森活村",
+      "e": "🏡",
+      "type": "景點",
+      "src": "社群",
+      "signals": {
+        "recent_mentions": 9,
+        "creator_mentions": 4,
+        "repeat_recommendations": 5
+      },
+      "updated": "2026-08-12",
+      "tags": [
+        "親子",
+        "美食",
+        "戶外"
+      ],
+      "place": "嘉義市",
+      "q": "檜意森活村",
+      "why": "拍照與市區美食行程常被一起推薦。",
+      "heat": 77
+    },
+    {
+      "id": "social-yunlin-gukeng",
+      "city": "雲林",
+      "name": "古坑綠色隧道",
+      "e": "🌳",
+      "type": "景點",
+      "src": "社群",
+      "signals": {
+        "recent_mentions": 7,
+        "creator_mentions": 2,
+        "repeat_recommendations": 4
+      },
+      "updated": "2026-08-12",
+      "tags": [
+        "親子",
+        "戶外",
+        "免費"
+      ],
+      "place": "古坑鄉",
+      "q": "古坑綠色隧道",
+      "why": "近期旅遊分享持續出現，適合週末散步與親子行程。",
+      "heat": 71
     }
   ]
 }
