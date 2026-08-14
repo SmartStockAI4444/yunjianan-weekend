@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import json
+import urllib.request
+import urllib.error
 from pathlib import Path
 from datetime import datetime
 
@@ -9,9 +11,62 @@ SOURCES = ROOT / "sources"
 
 OFFICIAL = SOURCES / "official_seed.json"
 SOCIAL = SOURCES / "social_candidates.json"
-
+TAINAN_ATTRACTIONS_URL = "https://www.twtainan.net/data/attractions_zh-tw.json"
 
 def read_json(path):
+    def fetch_json(url):
+    try:
+        request = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": "YunJiaNanWeekend/1.0"
+            }
+        )
+
+        with urllib.request.urlopen(request, timeout=30) as response:
+            text = response.read().decode("utf-8")
+            return json.loads(text)
+
+    except Exception as e:
+        print(f"網路資料取得失敗：{url}")
+        print(e)
+        return []
+      def collect_tainan_attractions():
+    raw = fetch_json(TAINAN_ATTRACTIONS_URL)
+
+    if not isinstance(raw, list):
+        return []
+
+    results = []
+
+    for item in raw:
+        name = str(item.get("name", "")).strip()
+
+        if not name:
+            continue
+
+        categories = item.get("category", [])
+        if not isinstance(categories, list):
+            categories = []
+
+        results.append({
+            "id": f"tainan-attraction-{item.get('id', name)}",
+            "city": "台南",
+            "name": name,
+            "e": "📍",
+            "type": "景點",
+            "src": "官方",
+            "base_heat": 70,
+            "updated": str(item.get("update_time", ""))[:10],
+            "tags": ["戶外"] if "自然景觀" in categories else ["親子"],
+            "place": str(item.get("district", "")),
+            "q": str(item.get("address", "")) or name,
+            "why": str(item.get("summary", ""))[:120],
+            "url": "https://www.twtainan.net/"
+        })
+
+    print(f"台南官方景點：{len(results)} 筆")
+    return results  
     if not path.exists():
         print(f"找不到：{path}")
         return []
@@ -63,10 +118,17 @@ def unique(items):
 
 
 def main():
-    official = [
-        normalize(x, "official")
-        for x in read_json(OFFICIAL)
-    ]
+    official_local = [
+    normalize(x, "official")
+    for x in read_json(OFFICIAL)
+]
+
+tainan_online = [
+    normalize(x, "official")
+    for x in collect_tainan_attractions()
+]
+
+official = official_local + tainan_online
 
     social = [
         normalize(x, "social")
