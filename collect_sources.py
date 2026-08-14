@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import json
 import urllib.request
-import urllib.error
 from pathlib import Path
 from datetime import datetime
 
@@ -30,6 +29,10 @@ def read_json(path):
         if isinstance(data, list):
             return data
 
+        if isinstance(data, dict):
+            items = data.get("items", [])
+            return items if isinstance(items, list) else []
+
         return []
 
     except Exception as e:
@@ -47,17 +50,20 @@ def fetch_json(url):
         )
 
         with urllib.request.urlopen(
-    request,
-    timeout=30,
-) as response:
-    raw = response.read()
+            request,
+            timeout=30,
+        ) as response:
+            raw = response.read()
 
-    try:
-        text = raw.decode("utf-8-sig")
-    except UnicodeDecodeError:
-        text = raw.decode("utf-8", errors="replace")
+        try:
+            text = raw.decode("utf-8-sig")
+        except UnicodeDecodeError:
+            text = raw.decode(
+                "utf-8",
+                errors="replace",
+            )
 
-    return json.loads(text)
+        return json.loads(text)
 
     except Exception as e:
         print(f"網路資料取得失敗：{url}")
@@ -162,10 +168,11 @@ def normalize(item, source_type):
         return None
 
     if not result.get("src"):
-        if source_type == "official":
-            result["src"] = "官方"
-        else:
-            result["src"] = "社群"
+        result["src"] = (
+            "官方"
+            if source_type == "official"
+            else "社群"
+        )
 
     if not result.get("type"):
         result["type"] = "景點"
