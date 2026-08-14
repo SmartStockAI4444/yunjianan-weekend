@@ -47,11 +47,17 @@ def fetch_json(url):
         )
 
         with urllib.request.urlopen(
-            request,
-            timeout=30,
-        ) as response:
-            text = response.read().decode("utf-8")
-            return json.loads(text)
+    request,
+    timeout=30,
+) as response:
+    raw = response.read()
+
+    try:
+        text = raw.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        text = raw.decode("utf-8", errors="replace")
+
+    return json.loads(text)
 
     except Exception as e:
         print(f"網路資料取得失敗：{url}")
