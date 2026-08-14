@@ -11,136 +11,276 @@ SOURCES = ROOT / "sources"
 
 OFFICIAL = SOURCES / "official_seed.json"
 SOCIAL = SOURCES / "social_candidates.json"
-TAINAN_ATTRACTIONS_URL = "https://www.twtainan.net/data/attractions_zh-tw.json"
+
+TAINAN_ATTRACTIONS_URL = (
+    "https://www.twtainan.net/data/attractions_zh-tw.json"
+)
+
 
 def read_json(path):
-    def fetch_json(url):
+    if not path.exists():
+        print(f"找不到：{path}")
+        return []
+
+    try:
+        data = json.loads(
+            path.read_text(encoding="utf-8")
+        )
+
+        if isinstance(data, list):
+            return data
+
+        return []
+
+    except Exception as e:
+        print(f"讀取失敗 {path}: {e}")
+        return []
+
+
+def fetch_json(url):
     try:
         request = urllib.request.Request(
             url,
             headers={
                 "User-Agent": "YunJiaNanWeekend/1.0"
-            }
+            },
         )
 
-        with urllib.request.urlopen(request, timeout=30) as response:
+        with urllib.request.urlopen(
+            request,
+            timeout=30,
+        ) as response:
             text = response.read().decode("utf-8")
             return json.loads(text)
 
     except Exception as e:
         print(f"網路資料取得失敗：{url}")
-        print(e)
+        print(f"原因：{e}")
         return []
-      def collect_tainan_attractions():
+
+
+def collect_tainan_attractions():
+    print("開始取得台南官方景點資料...")
+
     raw = fetch_json(TAINAN_ATTRACTIONS_URL)
 
     if not isinstance(raw, list):
+        print("台南官方資料格式不是清單。")
         return []
 
     results = []
 
     for item in raw:
-        name = str(item.get("name", "")).strip()
+        if not isinstance(item, dict):
+            continue
+
+        name = str(
+            item.get("name", "")
+        ).strip()
 
         if not name:
             continue
 
-        categories = item.get("category", [])
+        item_id = item.get("id", name)
+
+        categories = item.get(
+            "category",
+            [],
+        )
+
         if not isinstance(categories, list):
             categories = []
 
-        results.append({
-            "id": f"tainan-attraction-{item.get('id', name)}",
+        category_text = " ".join(
+            str(x) for x in categories
+        )
+
+        if "自然" in category_text:
+            tags = ["戶外", "自然"]
+        elif "文化" in category_text:
+            tags = ["文化"]
+        else:
+            tags = ["親子"]
+
+        district = str(
+            item.get("district", "")
+        ).strip()
+
+        address = str(
+            item.get("address", "")
+        ).strip()
+
+        summary = str(
+            item.get("summary", "")
+        ).strip()
+
+        update_time = str(
+            item.get("update_time", "")
+        ).strip()
+
+        result = {
+            "id": f"tainan-attraction-{item_id}",
             "city": "台南",
             "name": name,
             "e": "📍",
             "type": "景點",
             "src": "官方",
             "base_heat": 70,
-            "updated": str(item.get("update_time", ""))[:10],
-            "tags": ["戶外"] if "自然景觀" in categories else ["親子"],
-            "place": str(item.get("district", "")),
-            "q": str(item.get("address", "")) or name,
-            "why": str(item.get("summary", ""))[:120],
-            "url": "https://www.twtainan.net/"
-        })
+            "updated": update_time[:10],
+            "tags": tags,
+            "place": district,
+            "q": address or name,
+            "why": summary[:120],
+            "url": "https://www.twtainan.net/",
+        }
 
-    print(f"台南官方景點：{len(results)} 筆")
-    return results  
-    if not path.exists():
-        print(f"找不到：{path}")
-        return []
+        results.append(result)
 
-    try:
-        data = json.loads(path.read_text(encoding="utf-8"))
-        return data if isinstance(data, list) else data.get("items", [])
-    except Exception as e:
-        print(f"讀取失敗 {path}: {e}")
-        return []
+    print(
+        f"台南官方景點取得完成：{len(results)} 筆"
+    )
+
+    return results
 
 
 def normalize(item, source_type):
-    x = dict(item)
+    if not isinstance(item, dict):
+        return None
 
-    x.setdefault("city", "")
-    x.setdefault("name", "")
-    x.setdefault("type", "景點")
-    x.setdefault("url", "")
-    x.setdefault("start_date", "")
-    x.setdefault("end_date", "")
-    x.setdefault("description", "")
-    x.setdefault("signals", {})
+    result = dict(item)
 
-    x["source_type"] = source_type
-    x["collected_at"] = datetime.now().astimezone().isoformat()
+    if not result.get("name"):
+        return None
 
-    return x
+    if not result.get("city"):
+        return None
 
+    if not result.get("src"):
+        if source_type == "official":
+            result["src"] = "官方"
+        else:
+            result["src"] = "社群"
 
-def unique(items):
-    result = []
-    seen = set()
+    if not result.get("type"):
+        result["type"] = "景點"
 
-    for x in items:
-        key = (
-            str(x.get("city", "")).strip(),
-            str(x.get("name", "")).strip(),
-            str(x.get("start_date", "")).strip(),
+    if not result.get("e"):
+        result["e"] = "📍"
+
+    if not isinstance(
+        result.get("tags"),
+        list,
+    ):
+        result["tags"] = []
+
+    if not result.get("updated"):
+        result["updated"] = (
+            datetime.now()
+            .astimezone()
+            .date()
+            .isoformat()
         )
-
-        if key in seen:
-            continue
-
-        seen.add(key)
-        result.append(x)
 
     return result
 
 
+def save_json(path, data):
+    path.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    path.write_text(
+        json.dumps(
+            data,
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+
 def main():
-    official_local = [
-    normalize(x, "official")
-    for x in read_json(OFFICIAL)
-]
+    print("=" * 50)
+    print("雲嘉南週末去哪玩 - 自動資料蒐集")
+    print("=" * 50)
 
-tainan_online = [
-    normalize(x, "official")
-    for x in collect_tainan_attractions()
-]
+    official_local = []
 
-official = official_local + tainan_online
+    for item in read_json(OFFICIAL):
+        normalized = normalize(
+            item,
+            "official",
+        )
 
-    social = [
-        normalize(x, "social")
-        for x in read_json(SOCIAL)
-    ]
+        if normalized:
+            official_local.append(
+                normalized
+            )
 
-    items = unique(official + social)
+    social_local = []
 
-    print("=== 雲嘉南資料蒐集完成 ===")
-    print(f"官方資料：{len(official)}")
-    print(f"社群候選：{len(social)}")
-    print(f"去重後：{len(items)}")
+    for item in read_json(SOCIAL):
+        normalized = normalize(
+            item,
+            "social",
+        )
+
+        if normalized:
+            social_local.append(
+                normalized
+            )
+
+    tainan_online = []
+
+    for item in collect_tainan_attractions():
+        normalized = normalize(
+            item,
+            "official",
+        )
+
+        if normalized:
+            tainan_online.append(
+                normalized
+            )
+
+    official = (
+        official_local
+        + tainan_online
+    )
+
+    print("")
+    print("資料蒐集結果：")
+    print(
+        f"原有官方資料："
+        f"{len(official_local)} 筆"
+    )
+    print(
+        f"台南網路資料："
+        f"{len(tainan_online)} 筆"
+    )
+    print(
+        f"官方資料合計："
+        f"{len(official)} 筆"
+    )
+    print(
+        f"社群資料："
+        f"{len(social_local)} 筆"
+    )
+
+    save_json(
+        OFFICIAL,
+        official,
+    )
+
+    save_json(
+        SOCIAL,
+        social_local,
+    )
+
+    print("")
+    print("資料已寫入 sources/")
+    print("collect_sources.py 完成")
 
 
 if __name__ == "__main__":
