@@ -99,7 +99,7 @@ def fetch_json(url):
 
     try:
         try:
-            text = raw.decode("utf-8")
+            text = raw.decode("utf-8-sig")
         except UnicodeDecodeError:
             text = raw.decode("utf-8-sig")
 
