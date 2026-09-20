@@ -1,10 +1,10 @@
 {
   "version": "2026.09.20-auto",
   "updated": "2026-09-20",
-  "generated_at": "2026-09-20T06:19:21+00:00",
+  "generated_at": "2026-09-20T07:55:42+00:00",
   "stats": {
     "official": 584,
-    "social": 3,
+    "social": 6,
     "expired_removed": 2,
     "total": 587
   },
@@ -28,7 +28,10 @@
       "q": "佐登妮絲城堡",
       "why": "大型歐式園區，結合美妝產業、展覽與花園。",
       "url": "",
-      "heat": 90
+      "heat": 90,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-chiayi-ballplanet",
@@ -49,7 +52,10 @@
       "q": "丸聚星球",
       "why": "貢丸主題互動展覽、製程與DIY。",
       "url": "",
-      "heat": 88
+      "heat": 88,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-chiayi-tkfood",
@@ -70,7 +76,10 @@
       "q": "老楊方城市",
       "why": "方塊酥主題產線、彩繪與DIY。",
       "url": "",
-      "heat": 88
+      "heat": 88,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-chiayi-carol",
@@ -91,7 +100,10 @@
       "q": "卡羅爾銅管樂器觀光工廠",
       "why": "銅管樂器製程、博物館與吹奏體驗。",
       "url": "",
-      "heat": 86
+      "heat": 86,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-yunlin-arwin",
@@ -112,7 +124,10 @@
       "q": "雅聞峇里海岸觀光工廠",
       "why": "南洋風庭園與拍照造景。",
       "url": "",
-      "heat": 86
+      "heat": 86,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-chiayi-love-wood",
@@ -133,7 +148,10 @@
       "q": "愛木村休閒觀光工廠",
       "why": "木材產業文化與木作DIY。",
       "url": "",
-      "heat": 84
+      "heat": 84,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-yunlin-touched",
@@ -154,7 +172,10 @@
       "q": "塔吉特千層蛋糕大使館",
       "why": "千層蛋糕主題與親子體驗。",
       "url": "",
-      "heat": 84
+      "heat": 84,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-yunlin-shinglong",
@@ -174,7 +195,10 @@
       "q": "興隆毛巾觀光工廠",
       "why": "MIT毛巾製程與造型毛巾DIY。",
       "url": "",
-      "heat": 84
+      "heat": 84,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-tjcos",
@@ -193,7 +217,10 @@
       "q": "TJCOS台鉅美妝觀光工廠",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-kadoya",
@@ -212,7 +239,10 @@
       "q": "卡多良食故事館",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-homing",
@@ -231,7 +261,10 @@
       "q": "和明織品文化館",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-shanhua",
@@ -250,7 +283,10 @@
       "q": "善化啤酒觀光工廠",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-tianyi",
@@ -269,7 +305,10 @@
       "q": "天一中藥生活化園區",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-chimei",
@@ -288,7 +327,10 @@
       "q": "奇美食品幸福工廠",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-kangnaxiang",
@@ -307,7 +349,10 @@
       "q": "康那香不織布創意王國",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-petiva",
@@ -326,7 +371,10 @@
       "q": "彼緹娃藝術蛋糕觀光工廠",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-newbellus",
@@ -345,7 +393,10 @@
       "q": "新百祿燕窩觀光工廠",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-bee",
@@ -364,7 +415,10 @@
       "q": "東和蜂文化觀光工廠",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-kangxianglan",
@@ -383,7 +437,10 @@
       "q": "港香蘭綠色健康知識館",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-guagua",
@@ -402,7 +459,10 @@
       "q": "瓜瓜園地瓜生態故事館",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-likang",
@@ -421,7 +481,10 @@
       "q": "立康中草藥產業文化館",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-meiya",
@@ -440,7 +503,10 @@
       "q": "美雅家具觀光工廠",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-foot",
@@ -459,7 +525,10 @@
       "q": "腳の眼鏡足部科學體驗中心",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-longtian",
@@ -478,7 +547,10 @@
       "q": "臺灣菸酒(股)公司隆田觀光酒廠",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-eye",
@@ -497,7 +569,10 @@
       "q": "華美光學eye玩世界",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-wanguo",
@@ -516,7 +591,10 @@
       "q": "萬國通路創意觀光工廠",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-landu",
@@ -535,7 +613,10 @@
       "q": "蘭都觀光工廠",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-hongtai",
@@ -554,7 +635,10 @@
       "q": "虹泰水凝膠世界",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-arwin",
@@ -573,7 +657,10 @@
       "q": "雅聞湖濱療癒森林",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-tainan-blackbridge",
@@ -592,7 +679,10 @@
       "q": "黑橋牌香腸博物館",
       "why": "臺南市政府列冊觀光工廠／產業體驗景點。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-chiayi-white",
@@ -612,7 +702,10 @@
       "q": "白人牙膏觀光工廠",
       "why": "牙膏製造、產線與產品知識。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-chiayi-kumquat",
@@ -632,7 +725,10 @@
       "q": "金桔觀光工廠",
       "why": "金桔農產與DIY食農體驗。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-yunlin-wuan",
@@ -653,7 +749,10 @@
       "q": "丸莊醬油觀光工廠",
       "why": "西螺醬油與傳統釀造文化。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-yunlin-tilapia",
@@ -673,7 +772,10 @@
       "q": "台灣鯛生態創意園區",
       "why": "台灣鯛、生態知識與親子體驗。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-yunlin-liangzuo",
@@ -693,7 +795,10 @@
       "q": "良作工場農業文創館",
       "why": "食農教育、農業與產業文創。",
       "url": "",
-      "heat": 82
+      "heat": 82,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-chiayi-peanut",
@@ -713,7 +818,10 @@
       "q": "余順豐花生觀光工廠",
       "why": "花生產業文化與DIY。",
       "url": "",
-      "heat": 80
+      "heat": 80,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-chiayi-capshow",
@@ -733,7 +841,10 @@
       "q": "卡普秀醫美研發中心",
       "why": "醫美研發知識與DIY體驗。",
       "url": "",
-      "heat": 80
+      "heat": 80,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-chiayi-pinhuang",
@@ -753,7 +864,10 @@
       "q": "品皇咖啡觀光工廠",
       "why": "咖啡產業與產品體驗。",
       "url": "",
-      "heat": 80
+      "heat": 80,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "official-chiayi-npm",
@@ -772,7 +886,10 @@
       "q": "國立故宮博物院南部院區",
       "why": "炎熱或下雨天都適合安排半日。",
       "url": "https://south.npm.gov.tw/",
-      "heat": 80
+      "heat": 80,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-chiayi-cement",
@@ -792,7 +909,10 @@
       "q": "欣欣水泥森活園",
       "why": "水泥製程導覽與DIY。",
       "url": "",
-      "heat": 80
+      "heat": 80,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-chiayi-winery",
@@ -812,7 +932,10 @@
       "q": "嘉義觀光酒廠",
       "why": "酒文化歷史與產業參訪。",
       "url": "",
-      "heat": 78
+      "heat": 78,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-yunlin-datung",
@@ -832,7 +955,10 @@
       "q": "大同醬油黑金釀造館",
       "why": "醬油釀造與在地產業文化。",
       "url": "",
-      "heat": 78
+      "heat": 78,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-yunlin-yuanshun",
@@ -851,7 +977,10 @@
       "q": "源順芝麻觀光油廠",
       "why": "芝麻與食用油製作。",
       "url": "",
-      "heat": 78
+      "heat": 78,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-yunlin-ruichun",
@@ -871,7 +1000,10 @@
       "q": "瑞春醬油觀光工廠",
       "why": "西螺傳統醬油產業。",
       "url": "",
-      "heat": 78
+      "heat": 78,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "factory-yunlin-fulushou",
@@ -890,7 +1022,10 @@
       "q": "福祿壽觀光酒廠",
       "why": "酒類製程與地方產業文化。",
       "url": "",
-      "heat": 76
+      "heat": 76,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-570",
@@ -907,7 +1042,10 @@
       "q": "713 臺南市左鎮區草山里",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/570",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5504",
@@ -924,7 +1062,10 @@
       "q": "700 臺南市中西區民權路二段48號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5504",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6117",
@@ -941,7 +1082,10 @@
       "q": "708 臺南市安平區安億路472號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6117",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4342",
@@ -958,7 +1102,10 @@
       "q": "709 臺南市安南區工業一路23號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4342",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-470",
@@ -976,7 +1123,10 @@
       "q": "724 臺南市七股區三股里",
       "why": "面積約1600公頃，原是300多年前的台江內海遺跡，當地俗稱「內海仔」，搭乘膠筏遊潟湖是體驗七股潟湖的最好方式，沿途滿是吊蚵仔、定置魚網，悠哉的釣客，與豐富的潟湖生態，潟湖周邊的紅樹林，滿是白鷺鷥與招潮蟹；而孤立外海的浮洲「網仔寮汕」，木麻黃林、馬鞍藤草原非常美麗，您可在此享受無人小島的快樂探險，非常值得一遊。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/470",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-632",
@@ -994,7 +1144,10 @@
       "q": "724 臺南市七股區鹽埕里68號",
       "why": "位於鹽埕安檢所旁，是一座三層樓高的瞭望台，位於潟湖的中心，可觀賞到七股的潟湖美景，登高可遠眺潟湖全景",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/632",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5997",
@@ -1011,7 +1164,10 @@
       "q": "724 臺南市七股區塩埕里塩埕102-8號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5997",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-471",
@@ -1029,7 +1185,10 @@
       "q": "724 臺南市七股區鹽埕里66號",
       "why": "七股鹽場經過日治時期與二戰後政府的開發經營，成為台灣史上最大規模的曬鹽場，而面對鹽業式微的現實，重新精心規劃本遊憩園區，以發展觀光事業。鹽場內共有2座鹽山：主峰與北峰，主峰的鹽是鹽場停產後所留下之鹽，海拔高度20公尺，約6萬公噸；質地堅硬，表層有落塵覆蓋，已成為七股觀光地標。北峰是西澳洲的鹽，是粉碎鹽工廠的原料鹽，像極",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/471",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-932",
@@ -1047,7 +1206,10 @@
       "q": "724 臺南市七股區新山子寮",
       "why": "濕地北起將軍漁港南側，東側沿七股鹽場新鹽灘第一工區西側堤防往南，排除青山漁港，包括七股鹽場西區鹽區及中寮鹽區，南以七股潟湖南堤為界，西側海域至等深線6公尺處，包含頂頭額沙洲、網仔寮沙洲；扇形鹽灘等處為未定範圍。面積總計2,997公頃。 \r\n包括七股潟湖及東邊的鹽田，總開晒面積達1,976公頃，為全台面積最大的鹽場。日治",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/932",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1248",
@@ -1065,7 +1227,10 @@
       "q": "724 臺南市七股區南34區道",
       "why": "黑板樹因其生長迅速，木材輕軟、微香，很適合製成黑板，因此得到這個有趣的名字。黑板樹的樹冠成蔭速度快，遮蔭效果良好，適合在日照強烈的七股濱海地區種為行道樹，享受迎面而來的涼風，為酷熱的夏日帶來涼爽宜人的氛圍，兩行排列整齊的黑板樹成為南34區道長長的綠色隧道。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1248",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6062",
@@ -1082,7 +1247,10 @@
       "q": "724 臺南市七股區龍山208號",
       "why": "龍山宮位於七股的魚塭旁，空氣中彌漫著處理蚵仔、海產的氣味，而在廟宇的龍邊，有著三層樓高的牌樓，若仔細一看，會發現在屋簷上的剪黏裝飾不是常見的龍或卷草，而是熟悉的黑面琵鷺與虱目魚，融入了地方特色。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6062",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5602",
@@ -1099,7 +1267,10 @@
       "q": "712 臺南市新化區中正路與中山路交會處",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5602",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-526",
@@ -1116,7 +1287,10 @@
       "q": "735 臺南市下營區新興里中山路一段301號",
       "why": "下營有3寶－白鵝、蠶桑、黑豆，產業文化展示館即以此3寶為主軸，詳細介紹下營區的產業文化。展示館係改建30年歷史的閒置倉庫空間，設有下營農業發展區、絲製品展示區、蠶桑區、生活展示區、多媒體放映區、蠶業文化區、古農村器具展示、黑豆產業文化區、鵝產業文化區、鄉土藝文區、下營農會特產販售區等，並將剩餘空間規劃為黑豆蔭油現場加工",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/526",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4311",
@@ -1134,7 +1308,10 @@
       "q": "735 臺南市下營區中山路一段476巷",
       "why": "長達1.3公里的小葉欖仁自然景觀，枝葉茂密，夾道成蔭，蔚為奇觀，綠蔭蔽天形成美麗的綠色隧道，讓用路人在忙碌之餘，能放慢腳步用心感受美麗的景色。也達到市府節能減碳的政策。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4311",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-527",
@@ -1151,7 +1328,10 @@
       "q": "735 臺南市下營區中山路一段1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/527",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4310",
@@ -1169,7 +1349,10 @@
       "q": "735 臺南市下營區市道174線",
       "why": "長達2.5公里的洋紅風鈴木綠色隧道，枝葉茂密，夾道成蔭，綠蔭蔽天形成美麗的綠色隧道，尤其每當花季來臨，綻放朵朵花蕊，蔚為奇觀，讓用路人在忙碌之餘，能放慢腳步用心感受美麗的景色。也達到市府節能減碳的政策。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4310",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-535",
@@ -1186,7 +1369,10 @@
       "q": "734 臺南市六甲區中社里林鳳營109-1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/535",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-569",
@@ -1203,7 +1389,10 @@
       "q": "713 臺南市左鎮區岡林里31號",
       "why": "二寮有著全台灣最低海拔的美麗日出斜射光與白堊地形上的竹林雲霧交會，形成如潑墨國畫般的絕美景象",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/569",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1358",
@@ -1220,7 +1409,10 @@
       "q": "710 臺南市永康區永二街395號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1358",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6089",
@@ -1237,7 +1429,10 @@
       "q": "717 臺南市仁德區保仁路20號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6089",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4284",
@@ -1254,7 +1449,10 @@
       "q": "717 臺南市仁德區行大街2號",
       "why": "清王宮創建於1789年(嘉慶三年)，廟址附近原為鄭氏時期萬年縣、州治遺址，也是萬年縣、州之行政中心，其地位僅次於東都明京和承天府。鄭氏時期萬年縣、州之協防將領因公殉職後葬於二層行東北邊，後人為感念其功，常至墓前瞻拜，逐漸威靈顯赫，為庄民所共仰。1798年(嘉慶三年)駐守二層行北邊之鹽水埔汛外委(位階如今之警察機關分駐所",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4284",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-677",
@@ -1271,7 +1469,10 @@
       "q": "700 臺南市中西區五妃街201號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/677",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6068",
@@ -1288,7 +1489,10 @@
       "q": "700 臺南市中西區忠義路二段87號",
       "why": "三川殿邀請藝師王武雄，以剪黏技法完成西拉雅族赤崁社、荷蘭、明清、日治四個時期的作品，讓廟口門面如同臺南歷史的縮影；走入廟內，牆面是府城潘氏家族三代的彩繪，名家汪崇楹書法、杜牧河父子泥塑神像，在前殿的屋頂還有對於府城近代發展有貢獻的人物剪黏。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6068",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-801",
@@ -1305,7 +1509,10 @@
       "q": "700 臺南市中西區成功路以南、新美街以西、南至中正路",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/801",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-587",
@@ -1323,7 +1530,10 @@
       "q": "727 臺南市北門區永華里井仔腳興安宮旁",
       "why": "北門的第一座鹽田，現存最古老的瓦盤鹽田遺址，曾荒廢的鹽田，而後為了延續鹽業文化將鹽場復育，現已成為台南濱海最具特色的景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/587",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4266",
@@ -1340,7 +1550,10 @@
       "q": "717 臺南市仁德區文賢路一段81巷90號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4266",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-517",
@@ -1357,7 +1570,10 @@
       "q": "733 臺南市東山區南勢里賀老寮6-2號",
       "why": "仙湖農場坐落於嘉南平原，海拔為300公尺，農場涵蓋生態區、休閒區與農業區，是一個極適合親子活動的場所，可以享受幽靜的田園之樂",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/517",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4333",
@@ -1374,7 +1590,10 @@
       "q": "732 臺南市白河區關嶺里5鄰關子嶺99-3號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4333",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-546",
@@ -1391,7 +1610,10 @@
       "q": "714 臺南市玉井區沙田25-66號附近",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/546",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1226",
@@ -1409,7 +1631,10 @@
       "q": "722 臺南市佳里區南27區道",
       "why": "木棉花又稱為斑芝花，是台灣平埔族的聖樹，意指美好，花朵有紅色、橙色，相當討喜。三月中旬陸續可看到火紅的木棉花開花，花期大約可持續到4月中旬，「紅紅的花開滿了木棉道，長長的街好像在燃燒」。                                                                   ",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1226",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-486",
@@ -1426,7 +1651,10 @@
       "q": "722 臺南市佳里區中山路289號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/486",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-483",
@@ -1443,7 +1671,10 @@
       "q": "722 臺南市佳里區禮化里佳里興325號",
       "why": "因大地震而聘請來葉王新製交趾陶，意外成為了日後震興宮的鎮廟之寶。這些交趾陶屬於葉王的晚期作品，包含了三川殿的「憨番扛廟角」、「博古通金」、「四方皆來」；龍虎井的「八仙過海」、「七賢過關」等。除了水車堵的八仙和七賢的人偶部分遭竊外，其餘皆保留至今，讓人得以一窺百年前的交趾陶工藝。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/483",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-571",
@@ -1460,7 +1691,10 @@
       "q": "717 臺南市仁德區保安里文賢路一段529巷10號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/571",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4306",
@@ -1477,7 +1711,10 @@
       "q": "711 臺南市歸仁區大廟里大廟五街31號",
       "why": "保西代天府創建於鄭氏時期(清康熙元年，西元一六六二年，名為大人廟，於台灣二戰後，改名為代天府，直到民國84年(西元1995年)因廟宇重建再改為現在的保西代天府)。奉祀朱、池、李三老爺，廟地佔坪一三八九坪，建地三百零七坪，建築雖簡樸，但寬敞宏偉，在當時是本縣(台灣縣)寺廟中，規模最大，故清康熙二十五年(西元一六八六年)編",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4306",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-673",
@@ -1494,7 +1731,10 @@
       "q": "708 臺南市安平區光州路3號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/673",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-681",
@@ -1511,7 +1751,10 @@
       "q": "700 臺南市中西區文賢路與信義街交叉口",
       "why": "門高約四公尺，厚三公尺。城門洞寬三公尺，上做半圓拱形，用紅磚砌築。圓拱上方有石刻橫額一方，落款為「\"道光拾陸年元月建」，題[兌悅門]三字。圓拱內留高出挑的門臼石，供安門扇，並有插關孔槽，以便閉鎖門扇。門洞上方的樓板以花崗石條舖造。門座內側有踏階，供登域之用。由於年久失修，壁面根莖攀爬。 日治及二戰後，由於實施市區改正及",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/681",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5556",
@@ -1528,7 +1771,10 @@
       "q": "700 臺南市中西區永福路二段187號",
       "why": "落成於1950年的全美戲院，是台南老字號的二輪戲院，也是國際知名電影導演李安曾多次提及的戲院，孕育出李安的電影夢",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5556",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4288",
@@ -1545,7 +1791,10 @@
       "q": "723 臺南市西港區港東里八份1號之2",
       "why": "主祀:仙姑娘媽(四位仙姑娘媽:鄞仙姑 何仙姑 李仙姑 紀仙姑)\r\n配祀:福德正神 註生娘娘 山西夫子 關平太子 周倉將軍 朱府將軍爺 田都元帥 中壇元帥\r\n姑媽宮供奉「鄞」、「何」、「李」、「紀」四位仙姑，在姑媽宮歷史地位中，是「台灣第一香」西港香科的發源地，即是「祖廟」。乾隆四十九年(西元一七八四年，甲辰年)，陳姓庄",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4288",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5560",
@@ -1562,7 +1811,10 @@
       "q": "700 臺南市中西區友愛街40巷11號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5560",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1343",
@@ -1579,7 +1831,10 @@
       "q": "720 臺南市官田區嘉南66號",
       "why": "八田與一紀念園區位於烏山頭水庫北側，是為了紀念嘉南大圳的創造者-八田與一所建立的，此紀念園區的建築是在民國98年翻修，而在民國100年正式啟用，由中冶環境造形顧問有限公司擔任設計、監造等工作，並赴八田與一的故鄉-石川縣做為建築的依據，並引進日本的木匠技術，來建造此園區，表示我們對八田與一的尊敬與崇拜。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1343",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-880",
@@ -1596,7 +1851,10 @@
       "q": "736 臺南市柳營區八翁里93-139號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/880",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-490",
@@ -1613,7 +1871,10 @@
       "q": "737 臺南市鹽水區中山路4巷1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/490",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-626",
@@ -1631,7 +1892,10 @@
       "q": "734 臺南市六甲區王爺里水流東的入口處下坡道旁(174市道36K處)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/626",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1322",
@@ -1648,7 +1912,10 @@
       "q": "734 臺南市六甲區工研路2號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1322",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-908",
@@ -1665,7 +1932,10 @@
       "q": "732 臺南市白河區六溪里六重溪123號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/908",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-592",
@@ -1682,7 +1952,10 @@
       "q": "732 臺南市白河區關嶺里28-3號",
       "why": "由三重溪、六重溪及九重溪匯集而成的六溪親水公園，經由白河區公所的全力整頓，是目前白河地區，保持最為完整的自然親水公園。到六重溪親水公園，必須進入當地的六重溪部落，這是一個保存了相當多平埔族文化的部落，因此，村中所保存的古文物為數也就不少，有漢人文物亦有平埔族古物。六重溪原本是條水量豐沛的河流，也是平埔族人之所以會落腳此",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/592",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6107",
@@ -1699,7 +1972,10 @@
       "q": "734 臺南市六甲區",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6107",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1218",
@@ -1716,7 +1992,10 @@
       "q": "720 臺南市官田區隆田里中山路二段207號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1218",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5624",
@@ -1733,7 +2012,10 @@
       "q": "736 臺南市柳營區中山西路三段112號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5624",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5606",
@@ -1750,7 +2032,10 @@
       "q": "714 臺南市玉井區三埔里83-1號",
       "why": "加利利宣教中心的方舟教堂是以八八風災漂流木打造，造型深具意義。草坪上有耶穌牧羊與可愛動物塑像，彷彿諾亞方舟的故事場景",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5606",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-795",
@@ -1767,7 +2052,10 @@
       "q": "701 臺南市東區勝利路10號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/795",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-888",
@@ -1784,7 +2072,10 @@
       "q": "700 臺南市中西區民權路二段89號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/888",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-945",
@@ -1801,7 +2092,10 @@
       "q": "727 臺南市北門區三光里三寮灣127-3號",
       "why": "三寮灣東隆宮，距離海邊只有不到兩公里的距離。信仰的起源是明朝永曆19年（1665）來臺的先民，為保佑航海平安，特奉請故鄉神明「李府千歲」隨船保護，落腳此處後先在草寮中安頓神像，到日治時期才正式建廟奉祀。\r\n\r\n廟宇另設有「王爺信仰文物館」，若來到這裡，請務必花上一兩個小時，細細欣賞每個角落不可重現的藝術品。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/945",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-640",
@@ -1818,7 +2112,10 @@
       "q": "727 臺南市北門區台17線約143公里處",
       "why": "位於北門區台17線省道約143公里處旁的一座小山丘，相傳為鄭成功姑媽鄭細所葬之處，當地居民稱這座墓園為「老祖媽墓」。 \r\n相傳清政府為讓鄭氏在台風水永遠滅絕，乃四處挖掘鄭氏後嗣族人墳墓；鄭氏後人為免清政府挖掘，特在「北門嶼」的這座小丘附近建了9處相同的墳墓，以假亂真，加上過去地理位置處於台江內海附近，海面煙霧瀰漫整個山",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/640",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1104",
@@ -1835,7 +2132,10 @@
       "q": "727 臺南市北門區永隆里北門31號",
       "why": "北門嶼教會位於烏腳病醫療紀念館區域內，一旁就有絕美夕陽的永隆溝，白色教堂營造出北門鹽鄉的白色浪漫，常有新人到此拍攝婚紗",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1104",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5622",
@@ -1852,7 +2152,10 @@
       "q": "727 臺南市北門區舊埕200號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5622",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-638",
@@ -1869,7 +2172,10 @@
       "q": "727 臺南市北門區北門里舊埕3號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/638",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-586",
@@ -1887,7 +2193,10 @@
       "q": "727 臺南市北門區井仔腳井仔腳瓦盤鹽田旁海堤",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/586",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-867",
@@ -1904,7 +2213,10 @@
       "q": "727 臺南市北門區北門里舊埕200號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/867",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-639",
@@ -1921,7 +2233,10 @@
       "q": "727 臺南市北門區舊埕187號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/639",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-487",
@@ -1938,7 +2253,10 @@
       "q": "722 臺南市佳里區佳青路一段162號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/487",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1352",
@@ -1956,7 +2274,10 @@
       "q": "709 臺南市安南區公學路4段54巷43弄",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1352",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6118",
@@ -1973,7 +2294,10 @@
       "q": "733 臺南市東山區東中里中興路1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6118",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-816",
@@ -1990,7 +2314,10 @@
       "q": "717 臺南市仁德區文華路二段326號",
       "why": "付予百年歷史的糖廠風華重現，現在舉辦各種活動，包括十鼓獨創之台灣特色鼓樂，化身為亞洲第一座鼓樂主題國際藝術村",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/816",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-581",
@@ -2007,7 +2334,10 @@
       "q": "718 臺南市關廟區旺萊路466巷1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/581",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-779",
@@ -2024,7 +2354,10 @@
       "q": "701 臺南市東區民族路一段1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/779",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-606",
@@ -2041,7 +2374,10 @@
       "q": "718 臺南市關廟區布袋里長榮街500號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/606",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-531",
@@ -2058,7 +2394,10 @@
       "q": "736 臺南市柳營區果毅里南湖25號",
       "why": "位於柳營與六甲的交界處，是當地非常受歡迎的農場，也是寵物友善農場，多樣化的設施及景觀，湖上木屋是南元農場最具代表性的一景",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/531",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-623",
@@ -2076,7 +2415,10 @@
       "q": "716 臺南市南化區玉山里139號",
       "why": "南化水庫位在南化區玉山里的東方，由北寮沿南橫公路往甲仙方向。主要供應大台南和大高雄地區的公共給水兼具觀光旅遊",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/623",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-599",
@@ -2093,7 +2435,10 @@
       "q": "716 臺南市南化區東和里92之1號",
       "why": "台灣獼猴區是到南化烏山喝咖啡散步踏青時一定要來造訪的地方",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/599",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6071",
@@ -2110,7 +2455,10 @@
       "q": "716 臺南市南化區西埔里西埔1-3",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6071",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-595",
@@ -2127,7 +2475,10 @@
       "q": "742 臺南市大內區頭社里頭社136號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/595",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-543",
@@ -2144,7 +2495,10 @@
       "q": "742 臺南市大內區曲溪里34-2號",
       "why": "座落於大內區二重溪段之山坡地上，由四個獨立丘陵相連而成，丘陵間形成兩道南北向帶狀的谷地，具有天文觀測及生態豐富的優勢",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/543",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-496",
@@ -2161,7 +2515,10 @@
       "q": "730 臺南市新營區民治路36號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/496",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-933",
@@ -2178,7 +2535,10 @@
       "q": "724 臺南市七股區十份村十份30-1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/933",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-553",
@@ -2195,7 +2555,10 @@
       "q": "744 臺南市新市區南科三路22號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/553",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6076",
@@ -2212,7 +2575,10 @@
       "q": "716 臺南市南化區北平里北平9-5號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6076",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-466",
@@ -2229,7 +2595,10 @@
       "q": "727 臺南市北門區鯤江976號",
       "why": "是一座位於臺南市北門區之王爺廟，為台灣五府千歲的王爺總廟，主祀「代天巡狩」李、池、吳、朱、范 府千歲五府千歲",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/466",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6070",
@@ -2246,7 +2615,10 @@
       "q": "716 臺南市南化區東和108-1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6070",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-759",
@@ -2263,7 +2635,10 @@
       "q": "700 臺南市中西區中正路2之1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/759",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1142",
@@ -2280,7 +2655,10 @@
       "q": "700 臺南市中西區中正路1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1142",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-778",
@@ -2297,7 +2675,10 @@
       "q": "701 臺南市東區育樂街197巷2號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/778",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-723",
@@ -2314,7 +2695,10 @@
       "q": "700 臺南市中西區公園路21號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/723",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-736",
@@ -2331,7 +2715,10 @@
       "q": "700 臺南市中西區忠義路二段2號(忠義國小內)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/736",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-731",
@@ -2348,7 +2735,10 @@
       "q": "708 臺南市安平區舊安平港海邊",
       "why": "昭和6年（西元1931年），擬於舊港南方1公里，切割鯤鯓半島連接新運河，開築安平新港，昭和10年10月開工，經2年5個月，於昭和13年3月竣工。\r\n\r\n安平舊港口海岸，皆是砂質形成地，大雨時洪水由上流帶土砂流下，受台灣海峽風浪抵滯，沈積而為細長沙洲，距離現在海事學校二公里的海外，形成左右沙洲，南至臺南市下鯤鯓，北連新豐",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/731",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-788",
@@ -2365,7 +2755,10 @@
       "q": "708 臺南市安平區延平街58號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/788",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-899",
@@ -2382,7 +2775,10 @@
       "q": "704 臺南市北區小東路25號(成功大學力行校區)",
       "why": "原日本陸軍臺南衛戍病院與臺灣地區其他衛戍病院、或日本岐阜衛戍病院，就量體及空間配置上皆為「個形式配置」，為當時代衛戍病院建築之典型。古蹟本體共有7座建築物，包括原管理室、2棟原病室、原管理室附屬家、原講堂、原傳染病室及原實驗室及消毒室等。藉由這些建築構成，呈現日治時期軍事病院的運作概況，反映當時代病院運作之動線、設計邏",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/899",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-739",
@@ -2399,7 +2795,10 @@
       "q": "700 臺南市中西區忠義路二段63號",
       "why": "台灣現存最古老的西式百貨，2014 年6 月復修開放，並定位為文創百貨，成為令人注目的台南文化新地標。商場內的空間規劃與商品、咖啡廳、美食等各方面，都融合了在地文化創意與歷史記憶的特色。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/739",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-758",
@@ -2416,7 +2815,10 @@
       "q": "700 臺南市中西區府前路一段195號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/758",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-771",
@@ -2433,7 +2835,10 @@
       "q": "701 臺南市東區光華街225號(對面)",
       "why": "位於光華街上大東、小東門間殘垣，依其構造及外觀推測，應與今成大光復校區內小東門段殘蹟同在清乾隆五十三年（1788）所興建。清領時期在台發生朱一貴事件，遂於雍正十一年（1733）題准興築木柵竹城。乾隆五十三年（1788），發生林爽文事件，平定後為加強府城防務，改木柵竹城為土城，屏垣愈形鞏固，規模也更加宏偉，奠定日後規模，",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/771",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-768",
@@ -2450,7 +2855,10 @@
       "q": "702 臺南市南區鹽埕路131巷57號",
       "why": "昔為台灣製鹽總廠台南鹽場鹽埕場務所，根據文獻，西元1665年鄭氏時期，鹽埕即有曬鹽場，當時稱為瀨口鹽場，可能是台灣第一個曬鹽場，至西元1726年鹽進入專賣後，又改名為瀨北鹽場，雖然目前現存的鹽埕場務所，不是當時場務所址，但距離均不遠。鹽埕場務所日治時代時，當時做為辦公廳舍，其中編制為一名主任、四名職員等，管轄目前國宅里",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/768",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-687",
@@ -2467,7 +2875,10 @@
       "q": "708 臺南市安平區古堡街108號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/687",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-765",
@@ -2484,7 +2895,10 @@
       "q": "704 臺南市北區北門路二段125號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/765",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-715",
@@ -2501,7 +2915,10 @@
       "q": "704 臺南市北區公園路356號",
       "why": "已有百年歷史的台南公園最為人津津樂道的就是流傳已久的燕潭曉月，形容月亮高掛天空時，猶如明月落在燕潭的倒映美景。每天從早到晚都有不少遊客在潭邊散步運動或是約會談情，假日時潭邊更是許多親子嬉戲的場所，也是攝影留念的最佳取景點，是許多台南人與遊客對台南的共同印象。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/715",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5816",
@@ -2518,7 +2935,10 @@
       "q": "743 臺南市山上區山上里山上16號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5816",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5576",
@@ -2535,7 +2955,10 @@
       "q": "701 臺南市東區北門路二段16號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5576",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-773",
@@ -2552,7 +2975,10 @@
       "q": "701 臺南市東區北門路二段16號",
       "why": "日政府於西元1901年（明治34年）設臺灣總督府專賣局。此建物應係同年間所建，為ㄇ型紅磚建構，其左右勾轉處頂突出扇形并有三線條雕繪，與臺北專賣局建構相同。 \r\n日治時期專賣廳紅磚建築，ㄇ型紅磚建構，其左右勾轉處頂突出扇形并有三線條雕繪，與台北專賣局建構相同。門窗格局，與原台南地方法院相仿。目前保存良好，仍供原物使用中。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/773",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-755",
@@ -2569,7 +2995,10 @@
       "q": "700 臺南市中西區忠義路二段2號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/755",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6108",
@@ -2586,7 +3015,10 @@
       "q": "700 臺南市中西區武聖路 69巷及光賢街交界處廣場",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6108",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1344",
@@ -2603,7 +3035,10 @@
       "q": "720 臺南市官田區大崎里66號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1344",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-730",
@@ -2620,7 +3055,10 @@
       "q": "708 臺南市安平區安平路97-15號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/730",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5524",
@@ -2637,7 +3075,10 @@
       "q": "708 臺南市安平區安億路501號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5524",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-651",
@@ -2654,7 +3095,10 @@
       "q": "717 臺南市仁德區文華路二段62號",
       "why": "全台灣第三大的都會公園，也是唯一一座擁有博物館的都會公園，園內綠草如茵的景觀池開闊優美，成為許多鳥類與小動物的棲息地",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/651",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-605",
@@ -2671,7 +3115,10 @@
       "q": "712 臺南市新化區礁坑里100號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/605",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-643",
@@ -2688,7 +3135,10 @@
       "q": "720 臺南市官田區渡頭里三塊厝178-1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/643",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-955",
@@ -2706,7 +3156,10 @@
       "q": "724 臺南市七股區三股里海埔18號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/955",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5812",
@@ -2723,7 +3176,10 @@
       "q": "709 臺南市安南區四草大道118號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5812",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5534",
@@ -2740,7 +3196,10 @@
       "q": "709 臺南市安南區安吉路一段205號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5534",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-797",
@@ -2757,7 +3216,10 @@
       "q": "709 臺南市安南區四草大道 118 號",
       "why": "台南的後花園，台南最年輕的土地。 有大片的魚塭、鹽田，加上紅樹林、 鳥類等生態資源、空氣清新的「台江」， 為台南最具自然之美遼闊土地。 \r\n晶白的鹽田在陽光下閃耀，遠來的候鳥在天空飛翔，坐在管筏感受著陽光從茂密的紅樹林中透進來的驚喜，小朋友歡樂的體驗漁家風情，這就是台江生態文化園區。\r\n走一趟台江文化園區，除了生態教育",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/797",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-631",
@@ -2774,7 +3236,10 @@
       "q": "737 臺南市鹽水區田寮里68-1號",
       "why": "詩路園區中種植許多花木，每個季節詩路披上不同繽紛顏色的外衣。以詩舖成的田邊小路，與周邊的花景相融，形成一條美麗的詩人步道",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/631",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-489",
@@ -2791,7 +3256,10 @@
       "q": "724 臺南市七股區鹽埕里69號",
       "why": "一望無際的鹽田中，有兩座白色金字塔並肩聳立，與七股鹽山遙遙相望，這裡是台灣鹽博物館",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/489",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-506",
@@ -2808,7 +3276,10 @@
       "q": "731 臺南市後壁區烏樹里烏樹林184號",
       "why": "位於台南市後壁區烏樹林，建於1910年，目前已不製糖，但其仍保有原有的糖鐵系統，更有台糖五分車動態展示",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/506",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4344",
@@ -2825,7 +3296,10 @@
       "q": "717 臺南市仁德區中正路三段589號",
       "why": "台鉅企業股份有限公司創立於1981年，其間於美加地區創立CITY COLOR品牌，並在全球超過60個國家以上販售。累積超過30年全球彩妝經驗後，於2015年建造全台第一座美妝主題觀光工廠。\r\n\r\nTJCOS台鉅美妝觀光工廠占地近4千坪，包含可以親自以五感體驗彩妝的美妝博物館區，及規劃安全走道可一窺化妝品產線的生產製程區",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4344",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-642",
@@ -2842,7 +3316,10 @@
       "q": "721 臺南市麻豆區南勢里104-1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/642",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4302",
@@ -2859,7 +3336,10 @@
       "q": "730 臺南市新營區王公里民族路51號",
       "why": "新營王公廟—同濟宮，座落於台南市治所在地新營區，距離市政府東側約二百公尺。奉祀  開漳聖王、李府、池府、朱府、姚府、范府、謝府千歲及中壇元帥、福德正神、註生娘娘、天上聖母等諸神，神蹟顯赫，庇護黎民朝拜者絡繹不絕，香火鼎盛，為新營區一帶居民之信仰中心。\r\n開漳聖王之由來，乃漳州人士陳聖王，陳將軍奉命開拓閩南一帶，掃平閩南",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4302",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-760",
@@ -2876,7 +3356,10 @@
       "q": "700 臺南市中西區民權路二段30 號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/760",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5610",
@@ -2893,7 +3376,10 @@
       "q": "736 臺南市柳營區界和路158號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5610",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6103",
@@ -2910,7 +3396,10 @@
       "q": "702 臺南市南區體育路10號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6103",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-554",
@@ -2927,7 +3416,10 @@
       "q": "741 臺南市善化區中山路470號",
       "why": "慶安宮建廟於西元1810年，為市定古蹟，前身為奉祀五文昌的文昌祠，但文昌祠在1862年嘉南大地震毀壞後重新擴大規模改建為媽祖廟",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/554",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5603",
@@ -2944,7 +3436,10 @@
       "q": "741 臺南市善化區南126區道102號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5603",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4255",
@@ -2961,7 +3456,10 @@
       "q": "741 臺南市善化區溪美里310號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4255",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5626",
@@ -2978,7 +3476,10 @@
       "q": "741 臺南市善化區溪美里262號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5626",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-607",
@@ -2995,7 +3496,10 @@
       "q": "720 臺南市官田區社子里六雙21號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/607",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4351",
@@ -3012,7 +3516,10 @@
       "q": "714 臺南市玉井區樹糖街22號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4351",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-548",
@@ -3029,7 +3536,10 @@
       "q": "714 臺南市玉井區中正路27號",
       "why": "噍吧哖紀念公園位於台20與台84交會點，為玉井區門戶，立碑之地為日本屠殺抗日志士之殺戮戰場，玉井區公所結合芒果特產，以巨大的愛文芒果造形作為紀念公園之地標，也成為了進入玉井之最佳識別座標。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/548",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-568",
@@ -3046,7 +3556,10 @@
       "q": "713 臺南市左鎮區左鎮里91-2號",
       "why": "噶瑪噶居寺是藏傳佛教噶居派在台的第一座叢林居寺，建於1986年，由活佛第三世「洛本天津仁波切」開山，為漢藏文化融合的佛寺建築",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/568",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-809",
@@ -3063,7 +3576,10 @@
       "q": "709 臺南市安南區大眾路360號",
       "why": "鎮海元帥---陳酉，台灣人，生長海濱，熟水務，秉性剛直，勇力過人，勤奮自勵，人稱牛車友，牽牛板車搬運為業，營生海濱受僱運貨，際遇大清官船來台，臨岸船隻擱淺，眾卒下海力推不遂，群眾簇擁觀望 ，陳酉自告奮勇挺身而出，單人推船出海，官員讚為台灣奇人，稟奏皇上封官於朝，累陞提督鎮守台南；乾隆皇帝得知渠其在台，忠君愛國，君紀森嚴",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/809",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1324",
@@ -3081,7 +3597,10 @@
       "q": "709 臺南市安南區大眾路(四草大眾廟旁)",
       "why": "位於四草大眾廟後方排水道，曾是全台最集中的欖李純林，是台南市最佳紅樹林自然觀察區，分佈三種紅樹林植物：最多的海茄苳，次為最耐鹽的欖李，紅海欖只有幾棵。觀察四草紅樹林，可先從大眾廟後方的小坡上瀏覽全區，俯瞰紅樹林的樹冠層，能清楚看見紅樹林間活動的鳥類、招潮蟹約六種及彈塗魚，搭乘觀光船進入紅樹林隧道，體會不一樣的大自然感受",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1324",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-680",
@@ -3098,7 +3617,10 @@
       "q": "700 臺南市中西區府前路一段307號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/680",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-875",
@@ -3115,7 +3637,10 @@
       "q": "712 臺南市新化區口埤76號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/875",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-750",
@@ -3132,7 +3657,10 @@
       "q": "700 臺南市中西區樹林街二段33號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/750",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4263",
@@ -3149,7 +3677,10 @@
       "q": "701 臺南市東區大學路1號(成功校區)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4263",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5543",
@@ -3166,7 +3697,10 @@
       "q": "744 臺南市新市區南科三路10號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5543",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-852",
@@ -3183,7 +3717,10 @@
       "q": "709 臺南市安南區長和路一段250號",
       "why": "國立臺灣歷史博物館基地位於臺南市安南區，展示內容著重在臺灣歷史，包括多民族長時間與臺灣自然環境互動的歷史",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/852",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-934",
@@ -3201,7 +3738,10 @@
       "q": "724 臺南市七股區鹽埕里52號",
       "why": "國聖港燈塔位在台灣本島的極西點，是台灣四極點燈塔之一，因位處頂頭額沙洲，蒼茫的景象與多變的夕陽雲彩，形成孤寂荒涼的大漠風情，加上特殊的地理位置意義，搭配極西藝術地標與極西．集希郵筒，吸引不少旅人前來拜訪，更是環島人士必訪的極點燈塔。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/934",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-754",
@@ -3218,7 +3758,10 @@
       "q": "700 臺南市中西區中正路28號",
       "why": "日治時代稱為勸業銀行，勸業在日文中有提倡實業，獎勵產業的意義，土地銀行外觀建築有如神殿般造型，風格非常獨特",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/754",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-704",
@@ -3235,7 +3778,10 @@
       "q": "700 臺南市中西區忠義路二段38巷8號",
       "why": "建於咸豐十一年(西元1861年)，位於當時府治東安坊右營埔，是先天派齋教的祖堂。創建時為一簡陋草堂，同治五年(西元1866年)重修。光緒十二年(西元1888年)信徒們為永久計，仍集貲鳩工重建，改為瓦石構造的齋堂，明治二十九年(西元1896年)日本人徵收報恩堂改建臺南醫院，主事鄭良謨遂利用補償費和信徒捐款，遷建至現址。 ",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/704",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-954",
@@ -3252,7 +3798,10 @@
       "q": "731 臺南市後壁區墨林里菁寮217號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/954",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6105",
@@ -3269,7 +3818,10 @@
       "q": "700 臺南市中西區",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6105",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6083",
@@ -3287,7 +3839,10 @@
       "q": "734 臺南市六甲區",
       "why": "是《在水一方》等待的伊人、也是《今年的湖畔會很冷》的洛茵湖，位於烏山頭水庫集水區上緣的夢之湖，在1980年代因多部知名電影在此取景而紅極一時，巨星秦漢、林青霞、王祖賢等都曾在此留下不朽的身影。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6083",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-738",
@@ -3304,7 +3859,10 @@
       "q": "700 臺南市中西區民權路二段225號前",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/738",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4317",
@@ -3321,7 +3879,10 @@
       "q": "742 臺南市大內區石湖里291號",
       "why": "石子瀨天后宮天上聖母，為本廟主祀，餘奉祀神位觀音佛祖、保生大帝、中壇元帥、楊六使爺、福德正神、註生娘娘、虎爺、千里眼、順風耳等神祀。\r\n主祀天上聖母，由來已久。明季(西元一六六一年)漳州府龍溪縣南靖莊楊氏之祖先，隨延平郡王鄭成功迎奉聖母神像渡台，亦祀香位於本庄竹坑社宅中。康熙十三年後經居民倡議，見草奄立神座成為本宮之前",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4317",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4295",
@@ -3338,7 +3899,10 @@
       "q": "716 臺南市南化區南化里27號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4295",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-953",
@@ -3355,7 +3919,10 @@
       "q": "710 臺南市永康區中山北路499巷24弄38號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/953",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-564",
@@ -3372,7 +3939,10 @@
       "q": "712 臺南市新化區大坑里82號",
       "why": "由傳統農畜轉變成休閒型態的農場，進到農場就可感受到群山環抱，佔地非常廣大，是前往觀看二寮日出雲海時不可錯過的地點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/564",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-612",
@@ -3389,7 +3959,10 @@
       "q": "741 臺南市善化區小新營350號",
       "why": "農埸成立於1998年是一個以農村生態教學為主的教育農園。總面積約8公頃，座落於嘉南平原之中心地帶。原是由一片傳統荔枝果園和草莓果園所組合而成的傳統式觀光農場，1996年轉型規劃，以植物生態為主體做為戶外教學。 \r\n整個園區提供了專業的生態教材課程，隨著四季氣候時令不同而變更其解說服務，只要團體入園，即會由專業講師帶領參",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/612",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5636",
@@ -3406,7 +3979,10 @@
       "q": "735 臺南市下營區大屯里(大屯保安宮旁)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5636",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6110",
@@ -3423,7 +3999,10 @@
       "q": "701 臺南市東區林森路一段276號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6110",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6109",
@@ -3440,7 +4019,10 @@
       "q": "701 臺南市東區林森路一段276號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6109",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-721",
@@ -3457,7 +4039,10 @@
       "q": "701 臺南市東區東門路一段243號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/721",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1299",
@@ -3474,7 +4059,10 @@
       "q": "718 臺南市關廟區松腳里緊鄰千佛山菩堤寺",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1299",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4326",
@@ -3491,7 +4079,10 @@
       "q": "710 臺南市永康區永大路二段103巷8號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4326",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1359",
@@ -3508,7 +4099,10 @@
       "q": "710 臺南市永康區大灣路286號",
       "why": "永康廣護宮主祀廣惠聖王，為台灣較少見的主祀神。廣惠尊王在歷史上確有其人，即贏得淝水之戰而大大有名的政治家「謝安」。謝安為東晉人，有謀略卻為人高潔，死後追封「廬陵郡公」，故廣惠聖王又稱王公爺，廟則稱「王公廟」。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1359",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4324",
@@ -3525,7 +4119,10 @@
       "q": "717 臺南市仁德區大甲里行大一街297之1號",
       "why": "萬龍宮，位於台南市仁德區大甲里港崎頭，背臨二仁溪，座南朝北，是一座五門三殿式廟宇，建坪約五百坪，本宮廟前豎立有一對旗杆，龍虎左右相對，根據台灣民間信仰的神界組織，就像古時候君權政治，凡曾經接受過玉皇大帝敕封的帝或是王的神明，都可以依據科舉舊制來豎立旗杆，以彰顯威儀。本宮二府千歲，屬於王字輩，當然有豎旗的資格，由於曾經受",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4324",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5535",
@@ -3542,7 +4139,10 @@
       "q": "712 臺南市新化區和平街34號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5535",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4301",
@@ -3559,7 +4159,10 @@
       "q": "744 臺南市新市區大社里288號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4301",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4309",
@@ -3576,7 +4179,10 @@
       "q": "737 臺南市鹽水區大豐里大豐88號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4309",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6006",
@@ -3593,7 +4199,10 @@
       "q": "720 臺南市官田區中山路一段(官田區公所對面)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6006",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4299",
@@ -3610,7 +4219,10 @@
       "q": "712 臺南市新化區東榮里護安街42號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4299",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-495",
@@ -3627,7 +4239,10 @@
       "q": "730 臺南市新營區埤寮里中正路",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/495",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4322",
@@ -3644,7 +4259,10 @@
       "q": "717 臺南市仁德區太子里太子路354號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4322",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1325",
@@ -3661,7 +4279,10 @@
       "q": "700 臺南市中西區公園路6號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1325",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-522",
@@ -3678,7 +4299,10 @@
       "q": "736 臺南市柳營區義士路二段至義士路三段",
       "why": "日治時期被稱為「軍路」的林蔭大道，長度4472公尺，寬24公尺，由柳營至大農里都是翠綠的芒果樹，多為樹齡50多年的老樹種",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/522",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-572",
@@ -3689,13 +4313,27 @@
       "src": "官方",
       "updated": "2026-09-20",
       "tags": [
-        "親子"
+        "親子",
+        "網路熱門"
       ],
       "place": "仁德區",
       "q": "717 臺南市仁德區文華路二段66號",
       "why": "位在台南市的奇美博物館為全國西洋美術館館藏最豐富多樣，館內由西洋繪畫雕塑、樂器、古兵器、自然史、古文物等五個部門組成",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/572",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方",
+        "社群"
+      ],
+      "signals": {
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
+      },
+      "social_heat": 58,
+      "social_updated": "2026-09-20",
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMi_AJBVV95cUxPMkluY2tPZGM1WVgyUGliYkdId09KVXZZSVhrU3RmOGJWQmREZGRiWFFCbXRWVDIyZk5jb0lISHpnMllxOHl2cTJETW9RSGhVWkdyQUlLaHBlRlZ5MmE1SmIzMWl5QVozcVlwZTI1V3ItU2Q0cWgtRXdnZG1ZUHhmc1ZSTERJZ0JYNTNpMmd3TkxEUHA3eHNnSmZMVEd4aHllMGh3c0s0WndoUkN5ZHZQelNVOXpOblN3YVlrb0x5RFNqc2pPM3pLa0tzZFVZYkNWd2JmVVpGTEx2MF9mYjhaWHhlOUdsUUtMTHFwMThKZGxZanNBUV9ETzBPZkFOdzBqWDNKT29jQkdjaDZEZFJBYjFhUUo3ejltaFRGamI0SWNiSHp5QWtORzZQM1VsTUNwdGZ2WUFnM2dVa1pOSzhtM3p3S0M5cWpaT3JqZ0JNRmwzRG50S1RPY1FYcDRnXzN4NjVEamVhSXo0NnlFeGZnWGdpT2FydWNOeHRTMA?oc=5"
     },
     {
       "id": "tainan-attraction-689",
@@ -3712,7 +4350,10 @@
       "q": "708 臺南市安平區古堡街1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/689",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-783",
@@ -3729,7 +4370,10 @@
       "q": "700 臺南市中西區忠孝街118號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/783",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4289",
@@ -3746,7 +4390,10 @@
       "q": "722 臺南市佳里區麻佳路三段200號",
       "why": "開基子龍廟永昌宮坐落於台南市佳里區子龍里，主祀為趙聖輔天帝君(即三國名將趙子龍) \r\n清康熙三十年(公元1691年)村民為謀求精神寄託，共同決議築一草寮供奉神明，正巧有位村人「林廷龍」於村附近溪中撈魚，發現溪中一塊樟木盤旋不去，經多次驅入溪流中迴流不前，始將該樟木拾起，竟發現此木已被白蟻咬成「常山趙子龍」五字，村民嘆為",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4289",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-800",
@@ -3763,7 +4410,10 @@
       "q": "700 臺南市中西區南門路2號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/800",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4305",
@@ -3780,7 +4430,10 @@
       "q": "726 臺南市學甲區大灣里19號",
       "why": "逮明永曆十五年辛丑（西元1661年）復自福建省泉州府同安縣白礁鄉（金龍海縣角美鎮）白礁慈濟靈宮迎請保生大帝（白礁開基祖－吳本開基聖像）偕天上聖母（天妃、媽祖）護佑開臺民族英雄鄭成功登陸臺南鹿耳門，完成復臺大業而奠基於清濟宮。大灣為二聖奠基之聖地，清濟宮乃水官大帝－開基禹王奠基暨「白礁開基祖保生大帝－吳真人（吳本開基聖像",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4305",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-475",
@@ -3797,7 +4450,10 @@
       "q": "726 臺南市學甲區慈福里濟生路170號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/475",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6088",
@@ -3814,7 +4470,10 @@
       "q": "726 臺南市學甲區學甲光華社區",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6088",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4334",
@@ -3831,7 +4490,10 @@
       "q": "745 臺南市安定區安定里131號",
       "why": "安定保安宮創建於清嘉慶元年（西元1796年），主祀保生大帝、天上聖母，同祀城隍爺、謝府元帥、註生娘娘、田府元帥、中壇太子、福德正神、虎爺將軍等神祇。清嘉慶元年（西元1796年），保安宮舊廟原本坐落於大道公營（及本宮東方一公里於「宮九崛」附近）。清同治元年（西元1862年）六月六日，發生大地震，庄頭受損嚴重，廟宇亦因地震",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4334",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-671",
@@ -3848,7 +4510,10 @@
       "q": "708 臺南市安平區國勝路82號",
       "why": "臺灣城又稱王城、赤嵌城、安平城。原為荷蘭人所建，早期的漢人稱荷蘭人為紅毛，所以把這座巍峨的域稱為紅毛城。日治時期改建後，稱為安平古堡，沿用至今。\r\n熱蘭遮城興建於1634年。 完工之時，城分內外兩城，內城形方，共築三層，下層位於地面下，作為倉庫，地上有兩層，上層四角有稜堡，兩角之中間有北、東、南三門，北門門額上刻有Ｔ‘",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/671",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4256",
@@ -3865,7 +4530,10 @@
       "q": "708 臺南市安平區安平路850巷2號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4256",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-986",
@@ -3882,7 +4550,10 @@
       "q": "708 臺南市安平區國勝路33號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/986",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5516",
@@ -3899,7 +4570,10 @@
       "q": "708 臺南市安平區安億路115號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5516",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-691",
@@ -3916,7 +4590,10 @@
       "q": "708 臺南市安平區安平路790號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/691",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-732",
@@ -3933,7 +4610,10 @@
       "q": "708 臺南市安平區延平街86號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/732",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-806",
@@ -3950,7 +4630,10 @@
       "q": "708 臺南市安平區古堡街108號旁",
       "why": "樹屋位於德記洋行旁，最初為洋行倉庫，從砌牆古磚取自熱蘭遮城紅磚，及門楣花崗石、窗框基石與木屋架構判定，推測最早應建於十九世紀末及日治初期，作為「大日本鹽業株式會社」出張所倉庫，現況規模即為日本人增建。 \r\n戰後改為台鹽倉庫，曾一度荒廢任由榕樹寄生，經過半個世紀，形成特有的屋樹共生奇景。安平樹屋的奇景，引發藝術家的創造意",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/806",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5548",
@@ -3967,7 +4650,10 @@
       "q": "708 臺南市安平區安北路",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5548",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-733",
@@ -3984,7 +4670,10 @@
       "q": "708 臺南市安平區安北路121巷16弄6號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/733",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-798",
@@ -4001,7 +4690,10 @@
       "q": "708 臺南市安平區安億路",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/798",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-735",
@@ -4018,7 +4710,10 @@
       "q": "708 臺南市安平區安平路802號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/735",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-812",
@@ -4035,7 +4730,10 @@
       "q": "708 臺南市安平區延平街",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/812",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-728",
@@ -4052,7 +4750,10 @@
       "q": "708 臺南市安平區安北路110-1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/728",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1380",
@@ -4069,7 +4770,10 @@
       "q": "708 臺南市安平區觀音街33號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1380",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5552",
@@ -4087,7 +4791,10 @@
       "q": "708 臺南市安平區運河路43號之1",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5552",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5815",
@@ -4104,7 +4811,10 @@
       "q": "720 臺南市官田區官田里357號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5815",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1342",
@@ -4121,7 +4831,10 @@
       "q": "720 臺南市官田區南64與南65交會處附近",
       "why": "官田區域內賞鳥的最佳去處，因四周種植菱角與水田，鳥類食物來源豐富，讓此處埤塘充滿生機，也是愛鳥人士的秘境",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1342",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6001",
@@ -4138,7 +4851,10 @@
       "q": "720 臺南市官田區福田路99號",
       "why": "吸睛的建築外觀結合西拉雅族意象，以西拉雅聚落建築為概念設計，以台南的「陽光」、嘉南平原的「風」及西拉雅族信仰阿立祖的「水」三大元素來進行設計，更沿用西拉雅傳統服飾顏色作為建築主色調，白色為主體、藍色及黃色為綴。更沿用西拉雅族聚落傳統，面朝水域來進行規劃，遠遠看去建築彷彿被山田環抱，增添寧靜的美感。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6001",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-601",
@@ -4155,7 +4871,10 @@
       "q": "725 臺南市將軍區平沙里156號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/601",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6049",
@@ -4172,7 +4891,10 @@
       "q": "726 臺南市學甲區信義路10-8號(華宗橋)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6049",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-469",
@@ -4189,7 +4911,10 @@
       "q": "725 臺南市將軍區平沙里156號",
       "why": "將軍漁港為台南沿海最大的漁港，擁有漁市、代客料理的美食餐廳、往返澎湖南方四島國家公園-東吉島的固定航線，也是每年夏日音樂節「將軍吼」的舉辦場地，是一座兼具觀光休閒的漁港。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/469",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5505",
@@ -4206,7 +4931,10 @@
       "q": "704 臺南市北區西門路四段101號",
       "why": "與南部常見的露天市集式的夜市不同，小北觀光夜市都設在室內，是一個結合府城知名小吃、四季水果、冷飲冰品、服飾、鞋帽及各式精美百貨之綜合型商場。不受天候與車輛影響，行人能於此自在走逛，享受購物嚐美食的樂趣。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5505",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4320",
@@ -4223,7 +4951,10 @@
       "q": "700 臺南市中西區忠義路二段158巷27號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4320",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1330",
@@ -4241,7 +4972,10 @@
       "q": "732 臺南市白河區 廣安里5 鄰37-1 號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1330",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6064",
@@ -4258,7 +4992,10 @@
       "q": "743 臺南市山上區南洲里158號",
       "why": "位於山上區，南洲開靈宮可能是全臺唯一主祀阿勃勒的廟宇。為什麼會以樹為主神？這有一段「漢朝樹神」與「清朝樹神」的有趣連結。\r\n\r\n根據廟內石碑的介紹，樹德尊王生前為西漢的「杜冠明」將軍，為人忠心愛國。在王莽以藥酒毒死漢平帝，篡漢佔領江山後，杜將軍站在「忠臣不扶二主」的立場，入深山墾荒，養精蓄銳，預備著某一日要協助收復漢朝",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6064",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4252",
@@ -4275,7 +5012,10 @@
       "q": "743 臺南市山上區山上里121號",
       "why": "在山上區山上國中南邊矗立著一棟金碧輝煌的廟宇，這就是主祀「玉二聖母」的山上天后宮。該宮歷史悠久、信徒眾多、香火鼎盛，是當地居民的信仰中心，還有台中天后宮等十餘處分宮，遍及全台各處，是遠近馳名的廟宇之一。\r\n相傳於明末清初，順治十八年（公元一六六一年），「二娘娘」的神像，隨民族英雄鄭成功之水師，為航海守護神，由福建渡海來",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4252",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4323",
@@ -4292,7 +5032,10 @@
       "q": "717 臺南市仁德區太子路64號",
       "why": "本廟落成於道光廿八年，本地在鄭成功來台後，堪稱府城外之大街市，而南潭過港仔(郭光侯住處)有港口給大陸來台小帆船停泊，而繁極一時，本廟所在地為「六甲店」概因當時此地有一條街道，兩旁多店鋪日常買賣活絡，故得名，延稱迄今。\r\n本廟主祀岳飛(追諡岳武穆王)是國家認定之民族英雄，自民國六十八年已於每年農曆二月十五日岳穆王誕辰紀念",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4323",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1331",
@@ -4309,7 +5052,10 @@
       "q": "732 臺南市白河區關嶺里南寮111號",
       "why": "崁頂福安宮位於臺灣臺南市白河區，是一間供奉福德正神的廟宇，為全台灣三大土地公廟之一",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1331",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1312",
@@ -4326,7 +5072,10 @@
       "q": "710 臺南市永康區崑大路195號(崑山科技大學校內)",
       "why": "永康區位於昔日台江內海，故潭、橋甚多，其中最著名的是「鯽魚潭」，此潭在上古時為大灣海峽，後因地盤上升而成潟湖，再逐漸演變成潭，此潭在今日永康區之境內，名稱有三：一稱鯽魚潭，以湖中盛產鯽魚得名。一稱東湖，以位在府城東方得名。一稱龍潭，為堪輿家所稱府城地龍所在。潭水終年不枯竭，是永康境內重要的灌溉水源，潭水四時不竭，最宜霽",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1312",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5813",
@@ -4343,7 +5092,10 @@
       "q": "720 臺南市官田區拔林里75號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5813",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4286",
@@ -4360,7 +5112,10 @@
       "q": "713 臺南市左鎮區中正里171-3號",
       "why": "左鎮北極殿供奉主神玄天上帝，轄下之口社寮阿立祖壇是平埔族信仰的壺神，約全區人口的七成供奉阿立祖，原址在林務局左鎮工作站內豬母松下，現移至三百年樹齡之芒果樹下。\r\n明末廖家渡海來台，祈求玄天上帝、天上聖母為守護神，保佑來台定居於口社寮（中正里）之子民。由於北極殿主神請求阿立祖結盟合壇共處，起先未被同意，幾經神人溝通（原先",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4286",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6069",
@@ -4377,7 +5132,10 @@
       "q": "713 臺南市左鎮區岡林里47號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6069",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4285",
@@ -4394,7 +5152,10 @@
       "q": "713 臺南市左鎮區左鎮里128號",
       "why": "保護著在地信仰的高聳禮拜堂",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4285",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4358",
@@ -4411,7 +5172,10 @@
       "q": "713 臺南市左鎮區岡林里31號",
       "why": "公  告:  有關左鎮月世界生態學園於109年1月1日起由左鎮區公所進行管理，後續相關使用及申請事宜請洽左鎮區公所辦理。\r\n                     \r\n          \r\n       臺南市政府觀光旅遊局",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4358",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1350",
@@ -4428,7 +5192,10 @@
       "q": "701 臺南市東區巴克禮路100號",
       "why": "又稱巴克禮公園，為紀念英籍巴克禮牧師而命名。位於台南市東區崇明里，與台南市立台南文化中心隔中華東路相望",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1350",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-863",
@@ -4445,7 +5212,10 @@
       "q": "709 臺南市安南區布袋路60號",
       "why": "位於總頭寮與中洲寮之間，本里舊名「布袋嘴寮」乃開墾之先民來自嘉義布袋，在民國六十七年一度遭到廢里，併入總頭寮及新寮仔，民國七十九年五月一日因地方須求成立本里。後來才又恢復設里，行政區劃名「布袋里」。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/863",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-744",
@@ -4462,7 +5232,10 @@
       "q": "700 臺南市中西區新美街172號",
       "why": "米街廣安宮創建於清雍正初期，其址原位於明寧靖王府鼓樓與開基武廟之鐘樓相呼應，因所在之米街（今新美街）為當時重要街道，廣安宮也因而香火鼎盛。日治時期實施市區改正，街道拓寬，致使廟宇北移至現址，與共善堂邢王爺合祀，廟埕也發展成府城著名的石精臼小吃，由於現石精臼已廢除，而廣安宮也有重建之議，並且已搬至臨時行館，舊廟宇成閒置狀",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/744",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-690",
@@ -4479,7 +5252,10 @@
       "q": "708 臺南市安平區延平街148巷3號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/690",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-792",
@@ -4496,7 +5272,10 @@
       "q": "700 臺南市中西區開山路152號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/792",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5608",
@@ -4513,7 +5292,10 @@
       "q": "730 臺南市新營區大同路39號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5608",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4292",
@@ -4530,7 +5312,10 @@
       "q": "701 臺南市東區東門里東門路一段133號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4292",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4315",
@@ -4548,7 +5333,10 @@
       "q": "731 臺南市後壁區南87鄉道",
       "why": "後壁區位於臺南市最北端，嘉南平原中北方，八掌溪南方二公里處，為八掌溪與急水溪沖積而成之狹長平原。地勢東北部較高，向西傾瀉，全境大多屬嘉南平原。北和西隔著八掌溪與嘉義縣水上鄉、鹿草鄉為界，東接白河區，東南鄰東山區，南與新營區毗連。面積為72.2189平方公里。由於具有豐富的水資源，遍植水稻，是嘉南平原的穀倉，其種植面積達",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4315",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-851",
@@ -4565,7 +5353,10 @@
       "q": "731 臺南市後壁區嘉苳里6鄰69號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/851",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1328",
@@ -4582,7 +5373,10 @@
       "q": "731 臺南市後壁區菁寮",
       "why": "無米樂社區係位於台南市後壁區西北側，由菁寮里、後廍里和墨林里三個毗連的村落共同組織而成一完整且獨立的農村社區，是典型的臺灣稻米農村。自民國九十七年開始，在政府的農村再生政策下，無米樂社區很幸運的受到行政院農業委員會水土保持局協助，三個村落因為農村再生政策合作組織成為無米樂社區，社區居民在村(里)長邀集下共同參與社區事務",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1328",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4257",
@@ -4599,7 +5393,10 @@
       "q": "731 臺南市後壁區後壁里77號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4257",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4290",
@@ -4616,7 +5413,10 @@
       "q": "701 臺南市東區富強里中華東路二段96巷1弄1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4290",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1139",
@@ -4633,7 +5433,10 @@
       "q": "712 臺南市新化區民生路旁(新化演藝廳旁)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1139",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-520",
@@ -4651,7 +5454,10 @@
       "q": "736 臺南市柳營區神農里新厝100號",
       "why": "德元埤位於柳營區東南約2公里處，海拔7公尺高，係攔截龜子港排水上游9條支流而形成珊瑚狀之埤塘，為一平地小型水庫，構造為鋼筋混凝土低堰，湖底低平，呈珊瑚狀，面積寬闊，湖中盛產鯽魚及鯪魚，兩岸農田種植水稻，低窪處生長菱角，生態資源豐富，為一珍貴具開發潛力之埤塘。德元埤風景清幽，市府引進荷蘭風車，融入在地的特色景觀，並進行環",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/520",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4291",
@@ -4668,7 +5474,10 @@
       "q": "701 臺南市東區德高里城東街28號",
       "why": "德高厝，原稱竹篙厝，以地在崁頂山頂，刺竹高聳，望之竹篙聳立得名。鄭氏治台時期，本莊尚無漢人開墾，仁和里在虎頭山南有下灣，山北有大林等莊。入清之初，泉州府南安縣陳元亨率眾入墾此，稱竹篙厝，相繼入居者有泉州府同安縣陳氏，泉州府南安縣、晉江縣王氏，晉江縣劉氏、林氏，以及漳州府龍溪縣蔡氏，或直接入居，或由他處轉居，人煙漸稠，並",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4291",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4271",
@@ -4685,7 +5494,10 @@
       "q": "713 臺南市左鎮區岡林里10號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4271",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-657",
@@ -4702,7 +5514,10 @@
       "q": "723 臺南市西港區竹林里11號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/657",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-724",
@@ -4719,7 +5534,10 @@
       "q": "701 臺南市東區大學路1號(光復校區)",
       "why": "禮賢樓建於西元1911年，目前成大藝術研究所館舍，原為日軍臺灣步兵第二聯隊本部\r\n110.05.11經查東區區公所網頁，發現應為第二聯隊\"本部\"(跟舊文學館及大成館做區別:為原聯隊營舍)",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/724",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-725",
@@ -4736,7 +5554,10 @@
       "q": "701 臺南市東區大學路1號(光復校區)",
       "why": "原日軍步兵第二聯隊營舍，目前為成大歷史系(文學院)、工業設計系(大成館)等系所使用，是日治時期少數能保存下來的軍用建築",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/725",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1349",
@@ -4753,7 +5574,10 @@
       "q": "701 臺南市東區大學路1號光復校區",
       "why": "成大榕園中最醒目的大榕樹，為成功大學的重要地標，乃1923年日本裕仁太子（即昭和天皇）巡視台灣時手植",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1349",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6116",
@@ -4770,7 +5594,10 @@
       "q": "701 臺南市東區林森路二段256號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6116",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-708",
@@ -4787,7 +5614,10 @@
       "q": "700 臺南市中西區民權路三段143 巷7 號(風神廟前)前",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/708",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-699",
@@ -4804,7 +5634,10 @@
       "q": "700 臺南市中西區中正路21巷15號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/699",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4307",
@@ -4821,7 +5654,10 @@
       "q": "711 臺南市歸仁區忠孝北路歸仁教會旁",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4307",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6114",
@@ -4832,13 +5668,27 @@
       "src": "官方",
       "updated": "2026-09-20",
       "tags": [
-        "親子"
+        "親子",
+        "網路熱門"
       ],
       "place": "中西區",
       "q": "700 臺南市中西區民權路二段162號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6114",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方",
+        "社群"
+      ],
+      "signals": {
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
+      },
+      "social_heat": 58,
+      "social_updated": "2026-09-20",
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1EQmNURHJ3blBUZzJ3QnRtMU92cTQ5QjVpbnBNQ0F6UVNJeEhVMFhaZGlKUFozUjJtRzZ3WUhiSzhnZHVfRTNMLS15T01pUQ?oc=5"
     },
     {
       "id": "tainan-attraction-594",
@@ -4855,7 +5705,10 @@
       "q": "733 臺南市東山區東原里斑芝花坑39號",
       "why": "永安高爾夫鄉村渡假俱樂部，於1989年在秋高氣爽的台南市東山區班芝花谷動工，自始至終秉持一切合法的信念勤奮拓墾，終於在1993年開放使用，一時之間，成為南台灣天空最亮的休閒巨星！即使秋冬季節，氣候依然怡人，與同季節的北部球場相比，實在是令球友愛好者最嚮往的競技聖地。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/594",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5597",
@@ -4872,7 +5725,10 @@
       "q": "718 臺南市關廟區新光街209號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5597",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5711",
@@ -4889,7 +5745,10 @@
       "q": "712 臺南市新化區中山路134號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5711",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4261",
@@ -4906,7 +5765,10 @@
       "q": "712 臺南市新化區太平里中正路534號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4261",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6054",
@@ -4923,7 +5785,10 @@
       "q": "712 臺南市新化區護東路335號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6054",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4270",
@@ -4940,7 +5805,10 @@
       "q": "712 臺南市新化區東榮里和平街53號",
       "why": "「武德殿」建於西元1925-1928年間，其位於新化區中正路與和平街口的舊消防隊旁，於日治時代為劍道、柔道訓練場所。結合鄰近新化老街、新化街役場及楊逵文學館，塑造一個多樣的新化老街文化園區。傳統日式社寺與現代之建築融合形式。(資料來源:台南市文化資產管理處網站)",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4270",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-559",
@@ -4957,7 +5825,10 @@
       "q": "712 臺南市新化區中正路336~441號",
       "why": "新化老街從日治時期就是一個台南山區入口的重要政經中心，現金保留許多仿巴洛克式的老洋樓，曾獲全國歷史建築百景票選的第2名",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/559",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-561",
@@ -4974,7 +5845,10 @@
       "q": "712 臺南市新化區中正路500號",
       "why": "目前是餐廳的街役場也是新化很具代表性的古蹟建築之一，建築就興建於1934年，裡面的屋頂都還保留著原本的模樣",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/561",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4287",
@@ -4991,7 +5865,10 @@
       "q": "714 臺南市玉井區沙田里2鄰15號",
       "why": "在玉井市街南邊沙仔田庄廟「新天王殿」，主祀「壢王大千歲」、「盤古萬歲﹙大王公﹚和天王千歲，創建於光緒十五年﹙一八八九﹚，原稱「大王公廟」，大正年﹙一九一五﹚「噍吧哖事件」時曾為日人「庄」，巍峨今貌為民國七十九年﹙一九九○﹚所建，廟內有「三王兄弟」降示詩文刻劃而成的「忠義牆」，蔚為一景。 新天王殿眾善信集資所建造的善義亭",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4287",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4350",
@@ -5008,7 +5885,10 @@
       "q": "727 臺南市北門區蚵寮1003之1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4350",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6063",
@@ -5025,7 +5905,10 @@
       "q": "744 臺南市新市區大社里577號",
       "why": "遠看是以鐵皮搭建的兩層樓私人祠廟，入口處有著聖旨牌和對聯，入內卻會發現和一般廟宇略有不同，供桌中央是三個插有植物的祀壺，牆上掛有雷令旗，寫著「新港社太上老君祖」、「藥王」、「三十六太師」，前方奉祀著檳榔和香菸，顯示了這裡的西拉雅信仰色彩。而在祀壺的前方，有著四尊神像一同被奉祀著。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6063",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4300",
@@ -5042,7 +5925,10 @@
       "q": "744 臺南市新市區仁愛街331號",
       "why": "新市永安宮主祀天上聖母-媽祖，又稱為「木柵媽祖」。指的是台江內海淤積前的「木柵港」，為水路旁的廟宇，香火鼎盛。後因水患、瘟疫，民眾改遷至地勢較高的地方，逐漸形成市集，也就是今天「新市」地名的由來。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4300",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6090",
@@ -5059,7 +5945,10 @@
       "q": "730 臺南市新營區大同路78巷13號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6090",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1338",
@@ -5076,7 +5965,10 @@
       "q": "744 臺南市新市區豐華里道爺路3號(南科園區內)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1338",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1403",
@@ -5094,7 +5986,10 @@
       "q": "730 臺南市新營區南70區道",
       "why": "鐵線橋紫壇綠色隧道位於新營區鐵線里，同里內的通濟宮古廟係內政部核定之直轄市定古蹟，通濟宮創建於清康熙年間，龍柱、彩繪、剪粘及泥塑都頗為精巧細膩，廟內並擁有不少年代久遠文物源於中國泉州，仍保存至今的兩尊白面及黑面軟身媽，更是鎮宮之寶。在鐵線橋伽藍廟與通濟宮之間，長約120公尺的鐵線老街，年代已有一百年左右，原有的石板街道",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1403",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-499",
@@ -5111,7 +6006,10 @@
       "q": "730 臺南市新營區太子宮太北里45-2號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/499",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5621",
@@ -5128,7 +6026,10 @@
       "q": "730 臺南市新營區中正路23號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5621",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4303",
@@ -5145,7 +6046,10 @@
       "q": "730 臺南市新營區忠義街28號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4303",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4304",
@@ -5162,7 +6066,10 @@
       "q": "730 臺南市新營區南興里延平路112號",
       "why": "百餘年前，現址原為草埔水潭，常有牧童嬉戲，偶有順手捏泥，塑稱玄天上帝，群向低頭叩拜，日久竟充有靈氣，而真神附乩，令人信仰，遂正式雕像以祀。清咸豐五年(西元1855年)，里人沈芳林、沈葛林，首倡集資五百五十銀元，建一小祠供民祈福禱祥。光緒末年境民沈興、沈鉗等曾事領修一次。民 國二十二年(昭和8年、西元1933年)，董事沈",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4304",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5609",
@@ -5179,7 +6086,10 @@
       "q": "730 臺南市新營區公園路一段139號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5609",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5764",
@@ -5196,7 +6106,10 @@
       "q": "730 臺南市新營區新進路57號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5764",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-498",
@@ -5213,7 +6126,10 @@
       "q": "730 臺南市新營區中興路42號",
       "why": "原名稱為「新營糖廠」",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/498",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-645",
@@ -5230,7 +6146,10 @@
       "q": "725 臺南市將軍區西華里1號(將軍郵局旁)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/645",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6067",
@@ -5247,7 +6166,10 @@
       "q": "700 臺南市中西區府前路一段359巷2號",
       "why": "現在的昆沙宮廟貌是1987年重修後落成，廟內的裝飾藝術是眾「師」雲集—施弘毅石雕、潘岳雄門神、蔡草如石板畫、何金龍剪黏，前三位是薪傳獎名師，而何金龍則是來自潮汕的著名剪黏司阜，由於在臺的時間不長，留下的作品不多，且分佈於南瀛地區為主，而昆沙宮所留的壁堵剪黏，則是府城城內唯一而且能近距離觀賞的作品。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6067",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6104",
@@ -5264,7 +6186,10 @@
       "q": "723 臺南市西港區金砂里",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6104",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6112",
@@ -5281,7 +6206,10 @@
       "q": "717 臺南市仁德區晉祥橋",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6112",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-669",
@@ -5298,7 +6226,10 @@
       "q": "700 臺南市中西區普濟街79號",
       "why": "普濟殿，舊名普濟寺、普濟廟，是位於臺灣臺南市中西區、臺南府城最早的王爺廟，主祀威靈王池府千歲",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/669",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-702",
@@ -5315,7 +6246,10 @@
       "q": "700 臺南市中西區普濟街44號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/702",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-641",
@@ -5332,7 +6266,10 @@
       "q": "715 臺南市楠西區密枝里70號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/641",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-922",
@@ -5350,7 +6287,10 @@
       "q": "724 臺南市七股區鹽埕里",
       "why": "與四草溼地並列為臺灣兩大國際級濕地，位於曾文溪出海口，北起頂頭額沙洲國聖港燈塔(七股燈塔)、南堤堤防及七股海埔堤防，南至曾文溪南岸青草崙堤防，東以省道台17線(國姓大橋)為界，西側海域至等深線6公尺處，面積總計3,218公頃。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/922",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-491",
@@ -5367,7 +6307,10 @@
       "q": "737 臺南市鹽水區中境里武廟路7號",
       "why": "舊時鹽水月津港商賈商船林立，聚波漁火是當時月津八景之一，主祀雷府大將公，是鹽水護庇宮二媽角的角頭之一",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/491",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4282",
@@ -5384,7 +6327,10 @@
       "q": "737 臺南市鹽水區橋南街4號",
       "why": "每年的月津港燈節以創新藝術結合在地人文風情，展現有如夜之美術館的夢幻浪漫氛圍，形成獨樹一格的藝術燈節品牌",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4282",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4249",
@@ -5401,7 +6347,10 @@
       "q": "719 臺南市龍崎區崎頂里龍崎國小旁(龍崎區虎形山公園)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4249",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5525",
@@ -5419,7 +6368,10 @@
       "q": "712 臺南市新化區山脚里五甲勢",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5525",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-786",
@@ -5436,7 +6388,10 @@
       "q": "708 臺南市安平區古堡街108號安平樹屋旁",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/786",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-804",
@@ -5453,7 +6408,10 @@
       "q": "701 臺南市東區東至林森路，北至小東路，西至北門路三段，中山路，開山路，大同路(由北而南)，南至健康路",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/804",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1329",
@@ -5470,7 +6428,10 @@
       "q": "733 臺南市東山區市道175線",
       "why": "東山區在日治時期曾經是台灣重要的咖啡產地，但是因為當時喝咖啡的人不多，市場不佳而使咖啡產業沒落，一直到最近幾年才逐漸恢復栽培，也建立東山咖啡的品牌。來到東山區，一定要到群山環抱的東山咖啡園區坐坐。山頭飄過的白雲和雲間洩出的陽光，讓坐落在咖啡園的咖啡座像是人間仙境，偶爾飄雨時，還多一份朦朦朧朧的美感。優閒的品味一杯東山咖",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1329",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-516",
@@ -5487,7 +6448,10 @@
       "q": "733 臺南市東山區南勢里大洋14號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/516",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1201",
@@ -5504,7 +6468,10 @@
       "q": "733 臺南市東山區枋子林74-6號",
       "why": "東山服務區位於國道3號，是全台最大占地最大的高速公路休息站，以東山大榕樹為主軸，將森林與樹的元素融入，搭配戶外的原生植物園、百年榕樹、寵物公園等，重新打造帶有森林系風格的服務區，並設有美食廣場、服務台、無障礙廁所、24小時開放的哺集乳室、駕駛人休息室、車輛充電站等設施，提供來往的車輛旅客休息的地方。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1201",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1135",
@@ -5521,7 +6488,10 @@
       "q": "733 臺南市東山區水雲里12號",
       "why": "昭和20年(西元1945年)1月12日自日本警方手中接收而來，係為台南市山區罕見日式傳統派出所建物，同時住辦混合式建物，見證日治時期警察制度的實施。建築本體與週邊環境均具特色，且建物保存良好，空間配置完備，為住辦混合式建物，為傳統日式派出所，造形具美感。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1135",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1333",
@@ -5538,7 +6508,10 @@
       "q": "733 臺南市東山區東山里218號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1333",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-709",
@@ -5555,7 +6528,10 @@
       "q": "700 臺南市中西區民權路一段110號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/709",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5564",
@@ -5572,7 +6548,10 @@
       "q": "700 臺南市中西區青年路164巷26號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5564",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5580",
@@ -5589,7 +6568,10 @@
       "q": "701 臺南市東區東門路一段187號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5580",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4267",
@@ -5606,7 +6588,10 @@
       "q": "711 臺南市歸仁區中正北路一段191之2號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4267",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-467",
@@ -5623,7 +6608,10 @@
       "q": "727 臺南市北門區三光里三寮灣127-3號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/467",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-628",
@@ -5641,7 +6629,10 @@
       "q": "732 臺南市白河區",
       "why": "由白河或附近沖積平原往關仔嶺方向遠眺，可以看到一座狀似枕頭的山頭，即為枕頭山，因開礦與雨水之沖刷，令其崖面上呈三條甚大的沖刷痕跡，遠眺明顯，也有些人叫它為三條龍；此山頭全為石灰岩體組成，原為泥質砂岩的夾層之透鏡狀石灰岩，其向上的一端（即尖滅的一端）因開礦大部分被切去而呈突出於周圍的泥質砂岩上的石灰岩體，狀似枕頭，所以才",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/628",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-849",
@@ -5659,7 +6650,10 @@
       "q": "732 臺南市白河區 林初埤",
       "why": "位於台南白河的林初埤木棉花道，是近幾年頗為熱門的景點。每年3 月，綿延200 多公尺長的火紅木棉花道夾道盛開，堪稱台灣最美，在這條筆直的鄉間小路開得格外醒目，映襯於周遭綠意盎然的田野景觀，教人驚艷。每到木棉花季，常見鐵馬族、攝影愛好者、遊客聞名而來，或是感受木棉艷色，或是漫步田間，好不愜意！",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/849",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4331",
@@ -5676,7 +6670,10 @@
       "q": "732 臺南市白河區汴頭里林子內25-1號",
       "why": "林子內教會設立於1963年，在許多信仰前輩們忠心的耕耘與努力，牧養與栽培中穩定根基。1996年起我們開始學習走進社區，關懷老人、培育兒童與青少年，推展社區環境改造。期盼在社區整體環境的改善、營造與關懷中實踐信仰的真理，落實「上帝國的福音」。\r\n林子內位於南94線的終點，這是一個幽靜的小村落，是尋幽解悶者的「心靈故鄉」。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4331",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5623",
@@ -5694,7 +6691,10 @@
       "q": "734 臺南市六甲區菁埔埤",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5623",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-533",
@@ -5711,7 +6711,10 @@
       "q": "734 臺南市六甲區林鳳營16號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/533",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-613",
@@ -5728,7 +6731,10 @@
       "q": "715 臺南市楠西區密枝里6號",
       "why": "貫穿南台灣的台3線省道，於台南境內沿著楠西區、玉井區的路段，本來是戰備道路，近年則以大力栽種水果聞名。其中尤以楠西區的密枝村最著名，所生產的珍珠楊桃等不同品種的楊桃，優良的品質深受消費者喜愛。 \r\n為了讓更多人知道密枝楊桃的美味，當地果農主動出擊，召集其他農戶共同成立「密枝果農之家」。果農之家佔地10多公頃，依密枝楊桃",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/613",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4298",
@@ -5745,7 +6751,10 @@
       "q": "736 臺南市柳營區中山西路一段362號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4298",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-523",
@@ -5762,7 +6771,10 @@
       "q": "736 臺南市柳營區旭山里60號",
       "why": "由尖山埤水庫改建而成的尖山埤江南渡假村，由台灣糖業公司經營，園區依山傍水，擁有秀麗的山水景致。園區到處綠意盎然，沿途也有繽紛的牆面彩繪，還有孩子們最愛的童心園親子遊戲區，若想要留宿，更有江南會館、豪華木屋、著名的水上villa等多樣不同的住宿，除此之外園區亦提供了完善的露營設施，也是留宿很不錯的選擇！",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/523",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-635",
@@ -5779,7 +6791,10 @@
       "q": "715 臺南市楠西區香蕉山灣丘里3-10號",
       "why": "梅嶺位於台南市楠西區，早期因土壤肥沃盛產香蕉，故舊稱香蕉山，後來香蕉的經濟價值低落，果農大量改種梅樹，每年的1至2月滿山綻放的白色花海美不勝收，於是前副總統謝東閔先生賜名為梅嶺沿用至今日，附近的山頭展望很好，難度也不高，非常適合一般大眾登山健行，因而假日常有許多民眾來此登山健行、梅嶺有四條主要登山步道，由北至南分別為伍",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/635",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6008",
@@ -5797,7 +6812,10 @@
       "q": "715 臺南市楠西區灣丘里香蕉山51之6號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6008",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-550",
@@ -5814,7 +6832,10 @@
       "q": "715 臺南市楠西區梅嶺3-10號",
       "why": "梅嶺地區海拔高度約在500∼1100公尺間，日治時期即栽培梅樹，由於氣候合宜，梅樹生長良好； 每年冬天時梅花遍野盛開，清麗雪白的吐蕊梅花妝點 整個山頭。此區盛產梅、李、桃樹等，其中又以梅為最大宗，是台灣產梅最大的栽培區之一，也使梅子雞成為梅嶺招牌，由醃製梅子所熬煮的土雞料理，清爽可口，是兼具美味與在地特色的風味佳餚。\r",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/550",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-560",
@@ -5831,7 +6852,10 @@
       "q": "712 臺南市新化區中正路488號",
       "why": "楊逵先生是台灣在日治時期，文學作品被填入教科書的第一人，是新化當地非常受到尊重的文學作家，可說是新化人的驕傲之一",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/560",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4337",
@@ -5848,7 +6872,10 @@
       "q": "715 臺南市楠西區楠西里民族路102號",
       "why": "楠西玄天上帝廟位於台南現縣楠西鄉(註1)楠西村民族路102號，該廟又稱為北極殿，主祀玄天上帝，陪祀開天炎帝、中壇元帥，後殿供奉著玉皇大帝、南北斗星君、境主公和註生娘娘，是楠西、東勢最多人信仰的公廟。\r\n關於楠西玄天上帝廟創建，相傳是清乾隆16年(1751年)時，林氏先民自福建攜帶武當山北極玄天上帝香火至內茄跋(今楠西)",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4337",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5619",
@@ -5865,7 +6892,10 @@
       "q": "723 臺南市西港區營西里1號",
       "why": "西港是台灣胡麻的主要產區，當地原作為儲存粗糠用的西港農會穀倉，現改為以胡麻料理為特色的穀倉餐廳",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5619",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1373",
@@ -5882,7 +6912,10 @@
       "q": "744 臺南市新市區中心路8號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1373",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1383",
@@ -5899,7 +6932,10 @@
       "q": "744 臺南市新市區中心東路12號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1383",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4277",
@@ -5916,7 +6952,10 @@
       "q": "744 臺南市新市區中心東路12號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4277",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1355",
@@ -5933,7 +6972,10 @@
       "q": "712 臺南市新化區中正路488號(楊逵文學紀念館C棟展館)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1355",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4325",
@@ -5950,7 +6992,10 @@
       "q": "724 臺南市七股區十份里53-2號",
       "why": "當時在此處有一山川靈氣之地，已為一名幼女所得，其雖有心顯化濟世，然能力有限，不能善盡靈氣威力，幸逢溫府千歲－雷府三兄弟巡遊到此，遂邀共襄扶持，修善救苦救難，收納孤魂好漢歸位，溫府千歲深感未能庇祐雷府三兄弟安全進港上岸，決心留下與雷府三兄弟同甘共苦，普渡眾生，偶有沿海捕魚晚歸漁民，迷失方向，不知何處歸航，即有奇蹟出現火球",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4325",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-815",
@@ -5967,7 +7012,10 @@
       "q": "709 臺南市安南區城安路160號",
       "why": "為土城地區的信仰中心，整座廟宇仿造北京紫禁城的宮殿建築氣勢恢宏，享有遠東第一大廟的美譽",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/815",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-528",
@@ -5984,7 +7032,10 @@
       "q": "735 臺南市下營區中山路一段北極殿玄天上帝廟前約100公尺",
       "why": "面積2公頃的武承恩公園設有玄武台、玄武亭、武德亭、武承橋、觀湖樓等觀光設施，園內小橋流水，亭台樓閣，風景秀麗，是下營區居民休閒的最佳去處。公園入口旁有1955年設置的「下營北極玄天上帝廟沿革誌」，記載玄天上帝神奇的故事，「龍飛鳳舞」舊石堵和入口處的一對石鼓，則是上帝廟重建時拆卸下的古物，發人思古幽情。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/528",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-656",
@@ -6001,7 +7052,10 @@
       "q": "711 臺南市歸仁區七甲五街(與中正北路二段附近)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/656",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-575",
@@ -6018,7 +7072,10 @@
       "q": "711 臺南市歸仁區文化街二段16號",
       "why": "仁壽宮祭祀大道公、太子爺，相傳創建於鄭氏時期，主祀的保生大帝神尊為300多年前，鄭成功部將吳鳩山為祈求海途順利，從福建省同安縣祈請保生大帝金身一尊，隨身奉祀。原安奉於吳宅，後因保生大帝非常靈驗，地方人士感念神蹟庇護，興建廟宇，經歷代增建，始有今日之規模。2樓古文農物室，陳列許多台灣早期農具與日常民俗器物，尚有一個特別展",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/575",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1364",
@@ -6035,7 +7092,10 @@
       "q": "711 臺南市歸仁區信義南路78號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1364",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4279",
@@ -6052,7 +7112,10 @@
       "q": "711 臺南市歸仁區區中山路一段568號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4279",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1354",
@@ -6069,7 +7132,10 @@
       "q": "730 臺南市新營區民治路36號",
       "why": "原台南縣政府，2010年12月25日縣市合併升格直轄市後為台南市政府民治市政中心。(另有永華市政中心，位於台南市安平區永華路2段6號。)",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1354",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-766",
@@ -6086,7 +7152,10 @@
       "q": "702 臺南市南區興中街118號",
       "why": "延承日式武官宿舍風貌，有玄關、挑高通氣式木質地板，方正格局，庭園圍繞。 \r\n興中街67號原為「聯勤軍眷診療所」，主要任務為照顧官兵眷屬健康之醫療單位。裁撤後交由眷村自治會使用，繼續服務管理眷村眷戶、眷舍之人事事宜。 \r\n「水交社」多數日式建築眷舍均已老舊，多已年逾八十年，有眷戶居住者尚能自行維修堪用，空戶者房舍則殘破不",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/766",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-692",
@@ -6103,7 +7172,10 @@
       "q": "700 臺南市中西區神農街1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/692",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-627",
@@ -6121,7 +7193,10 @@
       "q": "732 臺南市白河區關嶺里水火洞10之5號",
       "why": "又名「水火洞」，曾名列台灣七景和台南八景，火焰不斷從水中冒出的畫面，打破了水火不相容的定理",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/627",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4260",
@@ -6138,7 +7213,10 @@
       "q": "710 臺南市永康區仁愛街與三民街交界",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4260",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-655",
@@ -6155,7 +7233,10 @@
       "q": "710 臺南市永康區興國街60號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/655",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1337",
@@ -6172,7 +7253,10 @@
       "q": "710 臺南市永康區永康里永華路、永平街、永大五路、永興路街廓",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1337",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5588",
@@ -6189,7 +7273,10 @@
       "q": "710 臺南市永康區永大二路88號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5588",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5584",
@@ -6206,7 +7293,10 @@
       "q": "710 臺南市永康區中山路459號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5584",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4251",
@@ -6223,7 +7313,10 @@
       "q": "737 臺南市鹽水區水正里過港21號",
       "why": "1945年成立，前身並非戲院，是黃直先生經營的「永成碾米廠」，二戰爆發碾米廠受波及，黃直先生便改建為戲院，也就是永成戲院由來",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4251",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1220",
@@ -6241,7 +7334,10 @@
       "q": "715 臺南市楠西區照興里興南3號巷內(楠西區)",
       "why": "橫越台南母親河曾文溪的永興吊橋，是目前曾文溪水域唯一僅存的吊橋，而包含引道全長497 公尺，同時也是台灣最長的吊橋。位在楠西區的楠西里與照興里之間的永興吊橋，過去一直是兩岸學童上學、居民外出購物、工作的必經之路。但舊橋在2007 年科羅莎颱風過後遭溪水沖毀，歷經三年後重建成現在的紫色觀光大橋，每當假日來自全台各地的旅客",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1220",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5996",
@@ -6258,7 +7354,10 @@
       "q": "700 臺南市中西區中正路343號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5996",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1327",
@@ -6275,7 +7374,10 @@
       "q": "700 臺南市中西區府中街西側街口處",
       "why": "「泮宮石坊」原是孔廟最外的出入口，乾隆年間，知府蔣元樞重修孔廟時，將此出入口重新整建，聘請石匠雕建精美牌坊，再運至台南組建，及今日「泮宮石坊」，在全台孔廟中，僅台南孔廟有這項設施。日治時，為開闢南門路，將石坊與孔廟隔開，原有功能遂逐漸被人們淡忘，許多人甚至不知道這是孔廟的附屬建築。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1327",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4336",
@@ -6292,7 +7394,10 @@
       "q": "712 臺南市新化區豐榮里洋子127號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4336",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4349",
@@ -6309,7 +7414,10 @@
       "q": "727 臺南市北門區鯤江里1003之1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4349",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1321",
@@ -6326,7 +7434,10 @@
       "q": "710 臺南市永康區鹽洲里洲尾街78號",
       "why": "創建於明永曆十七年（1663），主祀保生大帝，當時稱為真君廟。乾隆元年（1736）本廟鳩資翻修，懸匾為「保寧宮」。保寧宮每三至六年都會視境民經濟情況，舉行盛大迎神賽會祭典。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1321",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-477",
@@ -6343,7 +7454,10 @@
       "q": "721 臺南市麻豆區海埔里80-1號",
       "why": "海埔池王府坐落於麻豆區海埔里，奉祀五府千歲－池、李、吳、朱、范五王爺，主神為池王爺，池王爺金尊於明末清初之際供奉來台，至今已有三百多年歷史。1996年間曾舉辦池王府演藝活動，至今仍是相當成功的宗教活動，相傳池王府與南鯤鯓代天府極有淵源，過去麻豆、南鯤鯓之間王爺往來皆以海埔為中間站，故此地有王爺埔之稱，池王府神靈顯赫，香",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/477",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1345",
@@ -6360,7 +7474,10 @@
       "q": "700 臺南市中西區海安路",
       "why": "海安路的日與夜各有不同風景，無論什麼時刻走到這兒，它都是熱鬧的一條大街，沿路許多美好的景觀、繪畫以及攝影等裝置藝術與塗鴉文化，讓遊客的相機快門不得閒。雖然過去曾因為設計不良造成地層下陷、房屋毀損，還讓大家印象猶存，但在藝術家與當地居民的努力之下，重新再塑的海安路綜合了藝術與繁華之美，這是遊歷台南不可不到的景點。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1345",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-749",
@@ -6377,7 +7494,10 @@
       "q": "700 臺南市中西區國華街3段26號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/749",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6074",
@@ -6395,7 +7515,10 @@
       "q": "745 臺南市安定區港口(灣港)滯洪池",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6074",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5625",
@@ -6412,7 +7535,10 @@
       "q": "708 臺南市安平區港濱歷史公園(安億橋邊安億路旁)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5625",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6081",
@@ -6429,7 +7555,10 @@
       "q": "708 臺南市安平區安億路",
       "why": "港濱歷史特色遊戲場是一處以深海歷險趣為主題的公園，設有5~12歲各年齡層的遊樂設施、方便年長者散步的步道、遮陽處等，園區中共分四大主題區：大鯨魚土丘區、急流海溝區、珊瑚礁叢區及綠藻山洞區，依各區主題設置溜滑梯、盪鞦韆、彈跳床、雙軌滑溜索等好玩設施，夏季時段在噴霧區還會定時噴出水霧，讓孩子能夠盡情暢玩，享受在海洋探險的樂",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6081",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-737",
@@ -6446,7 +7575,10 @@
       "q": "700 臺南市中西區台南市中山、民生、公園、中正、南門、開山、青年路交會處",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/737",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5520",
@@ -6464,7 +7596,10 @@
       "q": "708 臺南市安平區漁光路118號",
       "why": "漁光島，與熙來攘往的安平區僅隔一座漁光大橋相連，舊稱三鯤鯓。從前漁船在夜間點燈以吸引魚隻，遠望過去，漆黑的海上遍佈耀眼的漁光點點，因而得名「漁光島」，更有「漁火點點，半月沉江」的佳言美句流傳。遊客可漫步於沙灘，或赤腳踏入海浪，感受海風的親撫，沁涼的海水輕拍腳踝。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5520",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1336",
@@ -6481,7 +7616,10 @@
       "q": "725 臺南市將軍區忠興里196號",
       "why": "由於主神為關公之故，廟內的石雕裝飾，許多皆以關公為主角的三國故事，如「洛陽斬孟坦」（孟坦為「過五關斬六將」中的第二將）、「夜讀春秋」、「水淹七軍」等；石雕之外的牆面，則多以剪黏裝飾，為「人間國寶」王保原藝師的作品；在光緒年間增設的文昌祠牆上，則有薪傳獎藝師潘麗水的「四讀」壁畫。廟宇空間雖然不大，但藝術藏品的密度卻不下於",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1336",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-579",
@@ -6498,7 +7636,10 @@
       "q": "711 臺南市歸仁區大廟里大廟1街38巷46號",
       "why": "穎川家廟建於清嘉慶年間，距今180年前，於1956年整修竣工。穎川家廟為磚造建築，陳家第1代祖先落腳之地，為閩南式口字型建築，共有2進3開間，屋架為穿斗式，屬於木構造，屋面為紅色仰合瓦，屋脊為燕尾脊，屋身施作花草、龍紋、雲形彩繪...等。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/579",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-662",
@@ -6515,7 +7656,10 @@
       "q": "702 臺南市南區灣裡路64號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/662",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-608",
@@ -6532,7 +7676,10 @@
       "q": "732 臺南市白河區仙草里火山路1號",
       "why": "原名「火山廟」，建於清嘉慶三年。位於台南市白河關子嶺，是台灣直轄市定古蹟，與俗稱舊巖的大仙寺合稱為南瀛八大景之關嶺雲巖",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/608",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-634",
@@ -6549,7 +7696,10 @@
       "q": "716 臺南市南化區",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/634",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-529",
@@ -6566,7 +7716,10 @@
       "q": "720 臺南市官田區烏山頭里嘉南68-2號",
       "why": "有珊瑚潭美名的烏山頭水庫，園區設有完善的露營區及步道，另有親水公園等安全遊憩的水域設施，是一處家庭共遊的好去處",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/529",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-713",
@@ -6583,7 +7736,10 @@
       "q": "704 臺南市北區自強街146巷10號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/713",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5529",
@@ -6600,7 +7756,10 @@
       "q": "708 臺南市安平區國勝路82號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5529",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-582",
@@ -6617,7 +7776,10 @@
       "q": "719 臺南市龍崎區牛埔里苦苓湖10號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/582",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-625",
@@ -6635,7 +7797,10 @@
       "q": "713 臺南市左鎮區 左鎮里(台20線往左鎮本部落)",
       "why": "左鎮本部落牛稠內附近的地質屬於崎頂層，主要岩石有砂岩、頁岩和泥岩的互層。崎頂層下段以泥岩為主，中段則為泥岩夾數層厚層砂岩，上段以砂岩與頁岩的互層為主。在此地帶岩層找到的扇貝和牡蠣數量居多。\r\n牛稠內附近多數是半面山，一邊是斜坡(向西傾斜)，另一邊是接近垂直的山崖(在斜坡東邊)。因為泥岩與砂岩相互堆疊，惡地形很發達，地層",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/625",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-648",
@@ -6652,7 +7817,10 @@
       "q": "715 臺南市楠西區中華路270號",
       "why": "位於楠西區市區的玄空法寺，獲得台灣宗教百景網路票選人氣景觀第一名。以各式奇木、雅石、鐘乳石、樹化玉、文物、千年古佛著稱",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/648",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-545",
@@ -6669,7 +7837,10 @@
       "q": "714 臺南市玉井區中正路102號",
       "why": "龜池象徵玄天上帝信仰\r\n一入北極殿，第一個映入眼簾的是天井的百隻烏龜。傳說龜蛇是玄天上帝的腳力，這些烏龜都是信眾所放生，透過飼養烏龜以尊崇玄天上帝。廟方為了讓烏龜可以自由地在地面活動，也貼心地架設了步道給信眾行走，形成人龜並行的特殊場景。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/545",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1334",
@@ -6687,7 +7858,10 @@
       "q": "714 臺南市玉井區竹圍",
       "why": "虎頭山位在玉井竹圍里境，因山勢酷似虎頭而得名，山標高239公尺。一九一五年，余清芳等人攻下南庄派出所後，即佔據此山準備繼續進攻噍吧哖支廳，不料於此殉役。台南縣政府於民國七十年在山頂豎立「抗日烈士余清芳紀念碑」為記。虎頭山是玉井的最高點，登上山頂向西可俯視果園林立的玉井盆地，向北最遠可眺望鹿陶洋及龜丹等山區，為登山建行者",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1334",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-551",
@@ -6704,7 +7878,10 @@
       "q": "716 臺南市南化區玉山里17-1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/551",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1222",
@@ -6722,7 +7899,10 @@
       "q": "732 臺南市白河區竹門派出所為起點至玉豐里南90鄉道",
       "why": "以竹門為出發點，往玉豐方向，兩旁芒果樹群相伴，為白河地區完整幽美的綠色隧道，都是老芒果樹群，在今日強調交通為主的時代，能獲得保留，蔚成隧道，尤其與中間包圍著的綿延蓮海形成美妙風光。欣賞路旁的蓮花與不遠處的關嶺、枕頭山，是蓮鄉難得的賞蓮綠蔭隧道美景。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1222",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1379",
@@ -6739,7 +7919,10 @@
       "q": "708 臺南市安平區國勝路35巷2號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1379",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-512",
@@ -6756,7 +7939,10 @@
       "q": "732 臺南市白河區仙草里岩前1號",
       "why": "俗稱舊巖，創建於西元1701年，主祀神祇有釋迦牟尼、三寶佛祖、觀音菩薩與地藏王菩薩，並且供奉有開山法師之舍利供民眾參拜觀賞",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/512",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4314",
@@ -6774,7 +7960,10 @@
       "q": "732 臺南市白河區南89區道，近將軍埤畔",
       "why": "南洋櫻因花朵盛開時似櫻花滿樹而稱之，粉嫩花色與落英繽紛之美毫不遜色，高大樹形及粉彩花色展現的數大風姿。黃昏清晨最佳散步地點，傍著將軍埤溼地，微風徐徐，綠蔭成傘。印度紫檀，樹冠層次分明，枝條平展，羽狀複葉，翠綠清新，葉形優美，隨著四季氣候變化有不同的景緻變換，兩種植物交織成優美的綠色隧道，位於南89區道，近將軍埤畔。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4314",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4312",
@@ -6792,7 +7981,10 @@
       "q": "732 臺南市白河區172甲道",
       "why": "白河往後壁車站的172甲路段兩排印度紫檀，生育情形非常的好，樹冠層次分明，枝條平展，羽狀複葉，翠綠清新，葉形優美，隨著四季氣候變化有不同的景緻變換，冬天葉片都掉光，像枯枝般蕭瑟的景緻，到了春天開始萌芽，其萌芽性極強，側枝生長迅速，造成寬廣的庇蔭效果。種植印度紫檀的道路都相當優美，猶如一條綠色隧道。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4312",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-510",
@@ -6809,7 +8001,10 @@
       "q": "732 臺南市白河區仙草里1-18號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/510",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5607",
@@ -6826,7 +8021,10 @@
       "q": "714 臺南市玉井區層林1之7號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5607",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-668",
@@ -6843,7 +8041,10 @@
       "q": "700 臺南市中西區和平街33號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/668",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-782",
@@ -6860,7 +8061,10 @@
       "q": "701 臺南市東區衛民街1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/782",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5630",
@@ -6878,7 +8082,10 @@
       "q": "732 臺南市白河區汴頭里11鄰洪溪州29之2號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5630",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5544",
@@ -6895,7 +8102,10 @@
       "q": "708 臺南市安平區城平路1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5544",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-675",
@@ -6912,7 +8122,10 @@
       "q": "700 臺南市中西區永福路二段227巷18號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/675",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6066",
@@ -6929,7 +8142,10 @@
       "q": "704 臺南市北區長北街192號",
       "why": "位於長北街上，僅一進、無廟埕的神農殿，不大的廟宇卻見證了府城的歷史。從位置上來看，這裡位於小北門城門至府城十字大街的路上，有著古地名「豆仔市」，說明了這裡是五穀類的交易場所—當先民們從城外以牛車、人力千里迢迢挑運著米穀入城，就近找一處空地進行交易，久了漸成集市，信仰亦然。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6066",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1351",
@@ -6946,7 +8162,10 @@
       "q": "700 臺南市中西區神農街",
       "why": "「神農街」昔日被稱為\"北勢街\"，是目前台南市保存最完善的老街，也是\"五條港文化園區\"最重要的據點。\"五條港\"在清初台灣對外主要的門戶，而「神農街（北勢街）」所在位置正是港區的中央，可說是當時最熱鬧的街道。「神農街（北勢街）」街道寬度約四米，街道上的老屋因為產權複雜、改建不易，許多老屋目前仍然保留了清代及日治初期的外觀結",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1351",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6106",
@@ -6963,7 +8182,10 @@
       "q": "742 臺南市大內區",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6106",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-761",
@@ -6980,7 +8202,10 @@
       "q": "704 臺南市北區西門路三段41號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/761",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4253",
@@ -6997,7 +8222,10 @@
       "q": "719 臺南市龍崎區崎頂里新市子7鄰223號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4253",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1163",
@@ -7015,7 +8243,10 @@
       "q": "732 臺南市白河區南90鄉道上，竹門國小門前道路",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1163",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5814",
@@ -7032,7 +8263,10 @@
       "q": "724 臺南市七股區篤加里47–7號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5814",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-598",
@@ -7050,7 +8284,10 @@
       "q": "724 臺南市七股區紅樹林保護區",
       "why": "紅樹林是指生長在海河交界的耐鹽性植物。目前台灣現存的紅樹林只有四種：水筆仔、欖李、海茄苳及五梨跤。從台南市沿海北起八掌溪口，南至曾文溪口，海岸地區風浪較小，浮洲、湖、河口沼澤地特多，泥沙在河口沿海淤積，成為紅樹林落腳繁衍的好地方。分別分布在北門區生長於急水溪口的淺沼泥地，樹種為海茄苳、水筆仔；將軍區生長於將軍溪口，樹種",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/598",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-472",
@@ -7068,7 +8305,10 @@
       "q": "724 臺南市七股區鹽埕里52號",
       "why": "台南市沿海河流攜帶了大量泥沙淤積，成就了紅樹林繁衍的好環境，此處樹種主要為海茄苳，由於紅樹林裡有非常豐富的魚、蝦、蟹、貝類生態系，所以集結了許多白鷺鷥、夜鷺等，賞鳥亭附近有解說牌，是一處賞鳥的絕佳地點。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/472",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-513",
@@ -7086,7 +8326,10 @@
       "q": "732 臺南市白河區關嶺里28-3號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/513",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-855",
@@ -7103,7 +8346,10 @@
       "q": "704 臺南市北區小東路25號 (力行校區)",
       "why": "落成於2011年的綠色魔法學校是台灣第一座零碳建築，也可說是一棟融入現代諾亞方舟概念的綠建築",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/855",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-649",
@@ -7121,7 +8367,10 @@
       "q": "712 臺南市新化區大坑里大坑尾240-16號",
       "why": "新化原為平埔族人聚居地，雖然原有的平埔生活文化已不復見，但早期平埔族生活的文化景緻，卻在綠谷西拉雅重新呈現風情。強調自然傳統的園區內，除可體驗純樸的農村生態，也可讓您對保護自然更進一步認識與支持。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/649",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-920",
@@ -7139,7 +8388,10 @@
       "q": "724 臺南市七股區鹽埕里68號",
       "why": "為一臨海沙洲，七股內海中段的屏障，由台灣西部河川所沖積出來的砂土，經過台灣海峽海浪挾帶這些砂土，長年累月地堆積而漸漸露出海面所造成狹長狀沙洲。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/920",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-480",
@@ -7156,7 +8408,10 @@
       "q": "721 臺南市麻豆區南勢里總爺5號",
       "why": "橘黃色鳥居，在整排林蔭的襯托之下非常顯眼，藝文中心園區裡有很多建築都成了藝術工坊，散落在園區裡的林木之間",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/480",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-707",
@@ -7173,7 +8428,10 @@
       "q": "700 臺南市中西區中正路131巷13號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/707",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5615",
@@ -7190,7 +8448,10 @@
       "q": "726 臺南市學甲區美豐49之26號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5615",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1320",
@@ -7207,7 +8468,10 @@
       "q": "736 臺南市柳營區神農里新厝102號",
       "why": "台南首創的老耕牛安養中心，緊鄰德元埤荷蘭村園區，具有保護、生命教育、尊重老者生命等多項意義。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1320",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5604",
@@ -7224,7 +8488,10 @@
       "q": "741 臺南市善化區胡家里300號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5604",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-683",
@@ -7241,7 +8508,10 @@
       "q": "704 臺南市北區西門路三段100號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/683",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5533",
@@ -7258,7 +8528,10 @@
       "q": "700 臺南市中西區忠義路二段1號",
       "why": "建築本體以鳳凰花為發想概念，五角形的外型象徵臺南的文化地標，垂直錯落堆疊的展示空間，結合大型碎形屋頂，構成南美館2館",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5533",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-573",
@@ -7275,7 +8548,10 @@
       "q": "717 臺南市仁德區二仁路一段315巷50號",
       "why": "台1線省道往南經過86號快速道路後，有一座高約5米的大椅王，像是巨人坐的椅子一樣立在路邊，為台南家具產業博物館知名地標",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/573",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-566",
@@ -7292,7 +8568,10 @@
       "q": "713 臺南市左鎮區榮和里61之23號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/566",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-742",
@@ -7309,7 +8588,10 @@
       "q": "700 臺南市中西區中正路3號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/742",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-865",
@@ -7326,7 +8608,10 @@
       "q": "730 臺南市新營區民權路96-27號",
       "why": "南瀛客家文化會館現址由前臺南縣政府擇定座落於臺南市新營區民治段275地號兩棟縣府的建物，並於94年由前臺南縣政府編列預算加上客家委員會補助，共同建築整修於96年3月3日正式揭牌使用。於100年4月15日因應臺南縣市合併改制，更名為「臺南市南瀛客家文化會館」。會館座落於臺南市新營區中心，館內裝設呈現出濃濃的客家味，開放給",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/865",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5713",
@@ -7343,7 +8628,10 @@
       "q": "710 臺南市永康區永大二路88號B棟3F（永康社教中心-圖書館3樓）",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5713",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-866",
@@ -7360,7 +8648,10 @@
       "q": "702 臺南市南區夏林路4號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/866",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1374",
@@ -7377,7 +8668,10 @@
       "q": "708 臺南市安平區永華路二段898號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1374",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-667",
@@ -7394,7 +8688,10 @@
       "q": "700 臺南市中西區開山路152號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/667",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6003",
@@ -7411,7 +8708,10 @@
       "q": "710 臺南市永康區康橋大道255號",
       "why": "打破你對圖書館的想像！遠遠看去，金色格柵的亮眼外型，展現平滑細緻的特色美感，由台灣與荷蘭建築師攜手設計，仔細看格柵紋路，隱隱有著台南老屋特有窗花的圖樣，於新穎建築中結合傳統特色，隱喻著百年圖書館的傳承。入夜後的建築光雕，點亮了永康區的夜空，顯得格外閃亮耀眼。獨具特色的絕美外型，除了成為新的IG打卡景點外，更是許多攝影好",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6003",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6085",
@@ -7428,7 +8728,10 @@
       "q": "702 臺南市南區濱南路780號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6085",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-753",
@@ -7445,7 +8748,10 @@
       "q": "700 臺南市中西區南門路37號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/753",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-864",
@@ -7462,7 +8768,10 @@
       "q": "712 臺南市新化區永新路11號3樓",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/864",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6111",
@@ -7479,7 +8788,10 @@
       "q": "700 臺南市中西區中西區-海安路-友愛街口與中正路口之中軸地帶",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6111",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-693",
@@ -7496,7 +8808,10 @@
       "q": "700 臺南市中西區府前路一段178號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/693",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-780",
@@ -7513,7 +8828,10 @@
       "q": "701 臺南市東區東門路一段117號",
       "why": "臺南神學院是一所在台灣的神學院，簡稱南神，隸屬台灣基督長老教會。建築帶點歐式風格的神學院增添了不少浪漫",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/780",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-726",
@@ -7530,7 +8848,10 @@
       "q": "701 臺南市東區北門路二段4號",
       "why": "南火車站日治時期稱為台南驛，最初之站房興建於一九ＯＯ年(日明治三十三年)五月，為一洋風式樣之建築。此建築經過三十多年之使用，已經逐漸不敷使用而且老舊，不足以成為發展中之台南市之門面，因而改建之聲不斷，鐵道部當局也為此甚費苦心。\r\n一九二七年(日昭和二年)，縱貫鐵路台北竹南段與台南高雄段的雙線工程被認可後，懸宕已久台南站",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/726",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5995",
@@ -7547,7 +8868,10 @@
       "q": "704 臺南市北區公園路291號",
       "why": "臺南轉運站前身是兵工配件廠，為清領時期鎮署遺構，因此設計時即朝淺基礎與輕量化規劃，並以綠建材及可回收鋼構、貨櫃作為轉運站的主體構造。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5995",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-938",
@@ -7564,7 +8888,10 @@
       "q": "709 臺南市安南區鹽田6街26號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/938",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-944",
@@ -7581,7 +8908,10 @@
       "q": "717 臺南市仁德區文賢路一段598號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/944",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-850",
@@ -7598,7 +8928,10 @@
       "q": "704 臺南市北區成功路86號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/850",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-729",
@@ -7615,7 +8948,10 @@
       "q": "708 臺南市安平區國勝路82號",
       "why": "明永曆十五年(1661)，鄭成功來台驅荷，並遷居熱蘭遮城，故名王城。清康熙二十二年(1683)，臺灣納入清國版圖，王城喪失其地位，設軍裝局。同治十年 (1871)軍火庫爆炸，城垣傾圮，清同治十三（1874）沈葆楨有鑑於淪為殘蹟的臺灣城軍事價值已失，遂大量拆除臺灣城磚石為興築二鯤鯓砲臺（今億載金城）所需建材，至此臺灣城僅",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/729",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6079",
@@ -7632,7 +8968,10 @@
       "q": "732 臺南市白河區仙草里白水溪26-4號",
       "why": "甘為霖牧師撒下的信仰種子",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6079",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-705",
@@ -7649,7 +8988,10 @@
       "q": "700 臺南市中西區大埔街97號後(台南女中後)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/705",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-670",
@@ -7666,7 +9008,10 @@
       "q": "701 臺南市東區大學路1號",
       "why": "臺灣府城在清雍正三年(西元一七三五年)築造木柵城時，小東門段的範圍為:正東倚龍山寺，設大東門，木柵由大東門向北，延續到右營廳後，轉東北到小東門，再向正北走，靠近城守營即為大北門。所以小東門的城段，就是介於大東門城與大北門城之間的兩段。 \r\n台灣府城城垣小東門段城垣僅存勝利路上，以三合土夯築之小東門段城垣殘蹟，北起小東路",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/670",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-856",
@@ -7683,7 +9028,10 @@
       "q": "700 臺南市中西區聖前里南門路34巷邊",
       "why": "臺南府城可以說是全台歷史最悠久的古都，除實質可見的古蹟、歷史建築、文物外，亦有豐富的民俗、傳統藝術，而臺南市舊城所環繞的區域，因歷經荷蘭、鄭氏、清代、日本、戰後等時期的個別發展，此區域內不論硬體空間、設施以至於軟體活動上，皆保留豐富多元的文化資產。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/856",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-720",
@@ -7700,7 +9048,10 @@
       "q": "701 臺南市東區光華街10號(修禪院內)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/720",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-682",
@@ -7717,7 +9068,10 @@
       "q": "700 臺南市中西區青年路133號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/682",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6080",
@@ -7734,7 +9088,10 @@
       "q": "701 臺南市東區青年路334號",
       "why": "臺灣首份報紙的發源地",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6080",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6055",
@@ -7751,7 +9108,10 @@
       "q": "732 臺南市白河區30號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6055",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-678",
@@ -7768,7 +9128,10 @@
       "q": "700 臺南市中西區永福路二段229號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/678",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-505",
@@ -7785,7 +9148,10 @@
       "q": "731 臺南市後壁區烏樹里烏樹林325號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/505",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-710",
@@ -7802,7 +9168,10 @@
       "q": "700 臺南市中西區忠義路二段84巷16號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/710",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6050",
@@ -7819,7 +9188,10 @@
       "q": "718 臺南市關廟區靶場一街126號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6050",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-854",
@@ -7836,7 +9208,10 @@
       "q": "704 臺南市北區成功路86號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/854",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1302",
@@ -7853,7 +9228,10 @@
       "q": "731 臺南市後壁區長安里",
       "why": "後壁區長安社區的芙蓉埤，是早期林家祖厝口埤，原為「風水池」，在之前是椎滿工業廢土的埤塘，經社區居民以生態工法整治成衣座美麗的埤塘，目前在埤中設置人工浮島，栽種水生植物，使成為水質淨化再利用的溼地生態教學區。又營造出生態步道，兩旁栽種山芙蓉及多種原生植物，極具地方特色，成「芙蓉埤生態園區」。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1302",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5572",
@@ -7870,7 +9248,10 @@
       "q": "704 臺南市北區海安路三段533號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5572",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1377",
@@ -7887,7 +9268,10 @@
       "q": "708 臺南市安平區安北路233巷1弄5號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1377",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4274",
@@ -7904,7 +9288,10 @@
       "q": "735 臺南市下營區茅港里163號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4274",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-624",
@@ -7922,7 +9309,10 @@
       "q": "713 臺南市左鎮區南171線",
       "why": "左鎮區的草山月世界，是由砂岩與頁岩所構成的青灰岩地形，與高雄市內門、田寮、燕巢區的泥岩惡地連成一片，稱為白堊土地形。因地質鬆軟，加上草山溪、岡林溪等河流切割地表，造成山岩嶙岣綿延，到處懸崖峭壁，山脊也光禿成鋸齒狀。由於白堊土含高鹼性，使得草木難生，荒地中只有耐旱的剌竹生長。由岡林里往草山月世界的路上，沿途所見盡是稜角分",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/624",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-502",
@@ -7939,7 +9329,10 @@
       "q": "731 臺南市後壁區墨林里282號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/502",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-943",
@@ -7956,7 +9349,10 @@
       "q": "731 臺南市後壁區墨林里",
       "why": "菁寮老街，後壁區「菁寮」曾是八掌溪沿岸最繁華的聚落，俗稱「北勢街」的古老街屋即是最熱鬧的商店街，亦有數家「酒家」「查某間」「販仔間」「漢藥舖」「傢俱店」「美容院」「自轉車店」「布行」「鐘錶店」「棉被店」「撞球間」聚集於此，顯見此地的高經濟能力，經過七十年八十年歲月的演變；當地古老街屋可為歷史做見證。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/943",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-501",
@@ -7973,7 +9369,10 @@
       "q": "731 臺南市後壁區菁寮墨林里294-1號",
       "why": "普立茲獎得主－佛萊德．波姆(Gottfried Bohm)設計的天主堂，偷偷藏在台南市後壁區。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/501",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6007",
@@ -7990,7 +9389,10 @@
       "q": "715 臺南市楠西區照興里興北 73-5 號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6007",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-700",
@@ -8007,7 +9409,10 @@
       "q": "700 臺南市中西區民族路二段317巷5號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/700",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-743",
@@ -8024,7 +9429,10 @@
       "q": "700 臺南市中西區中正路5巷1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/743",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-874",
@@ -8041,7 +9449,10 @@
       "q": "720 臺南市官田區中山路二段207號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/874",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-600",
@@ -8058,7 +9469,10 @@
       "q": "732 臺南市白河區",
       "why": "蓮潭位於台南市白河區的北端，為白河蓮花的原產地。北臨八掌溪與嘉義縣水上鄉相望。面積三‧六二○平方公里，人口數有一千二百人。白河地區的蓮花，最早發跡之處，在蓮潭、廣安一帶。而蓮潭之蓮產規模甚大，尤以四十九欉東北及蓮潭田洋，蓮田阡陌縱橫，蔚為奇觀。而閒雜土丘的平原，多沼澤、埤塘及黏性的土壤，是蓮花生長的福地，遂以「蓮生潭中",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/600",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-534",
@@ -8075,7 +9489,10 @@
       "q": "734 臺南市六甲區中社里林鳳營109號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/534",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-508",
@@ -8092,7 +9509,10 @@
       "q": "732 臺南市白河區三民路465號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/508",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-481",
@@ -8109,7 +9529,10 @@
       "q": "721 臺南市麻豆區南勢里南勢87-30號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/481",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-484",
@@ -8126,7 +9549,10 @@
       "q": "722 臺南市佳里區六安里六安130號",
       "why": "文化園區前身為蕭壠糖廠，1998年因糖業沒落，2003年將閒置空間再利用，保留建築原有樣貌，綠美化自然環境，以藝文基地的面貌重新出發",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/484",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-696",
@@ -8143,7 +9569,10 @@
       "q": "700 臺南市中西區府前路一段304巷3號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/696",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-740",
@@ -8160,7 +9589,10 @@
       "q": "702 臺南市南區西門路一段689巷",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/740",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5617",
@@ -8177,7 +9609,10 @@
       "q": "723 臺南市西港區檨林里24號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5617",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-589",
@@ -8195,7 +9630,10 @@
       "q": "727 臺南市北門區三光里三灣寮",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/589",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6073",
@@ -8212,7 +9650,10 @@
       "q": "745 臺南市安定區蘇厝滯洪池",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6073",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1339",
@@ -8229,7 +9670,10 @@
       "q": "745 臺南市安定區蘇厝里293-2號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1339",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4335",
@@ -8246,7 +9690,10 @@
       "q": "745 臺南市安定區蘇厝里456號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4335",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5539",
@@ -8263,7 +9710,10 @@
       "q": "712 臺南市新化區中正路341巷31號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5539",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-584",
@@ -8281,7 +9731,10 @@
       "q": "719 臺南市龍崎區崎頂里龍崎國小旁",
       "why": "虎形山位於台南市龍崎區市區，因山勢有如猛虎雄踞，故得其名，海拔雖僅113公尺，卻藏有豐富的自然生態，宛如一座生態教室。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/584",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4246",
@@ -8298,7 +9751,10 @@
       "q": "712 臺南市新化區中興路42巷36號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4246",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-562",
@@ -8315,7 +9771,10 @@
       "q": "712 臺南市新化區中興路42巷36號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/562",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6051",
@@ -8333,7 +9792,10 @@
       "q": "708 臺南市安平區漁光路128-2號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6051",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6084",
@@ -8351,7 +9813,10 @@
       "q": "715 臺南市楠西區",
       "why": "蝙蝠洞瀑布藏於灣丘溪的支流之中，近南118茄拔路，距離梅嶺風景區僅10分鐘的車程，自停車場步行約200公尺的森林步道，只需5分鐘即可抵達這別有洞天的秘境。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6084",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6047",
@@ -8368,7 +9833,10 @@
       "q": "700 臺南市中西區永福路二段81巷及永福路二段交叉口",
       "why": "位於中西區的蝸牛巷，是指被永福路二段、民生路一段、西門路二段與中正路包圍的街區巷弄，與鬧街相鄰，蝸牛巷卻無比寧靜，令人不自覺放慢腳步。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6047",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-536",
@@ -8386,7 +9854,10 @@
       "q": "733 臺南市東山區南勢里南勢庄66號",
       "why": "西口小瑞士其實是由「水利奇才」八田與一創造而出的美景，日治時期興建嘉南大圳時，因為擔心烏山頭水庫的水源不足，所以在烏山嶺山腹內建了一條約4公里的引水道，將東口的曾文溪水導引至西口注入水庫，因落差大，形成溪水快速由圓形的洞口中快速旋轉而下，由「急圳口」噴出，成為可高達數丈有名的「天井漩渦」奇觀，此處原本林相美麗，有「小瑞",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/536",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-746",
@@ -8403,7 +9874,10 @@
       "q": "700 臺南市中西區西門路、中正路、正興街與國華街街廓內",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/746",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1060",
@@ -8420,7 +9894,10 @@
       "q": "733 臺南市東山區東河里吉貝耍",
       "why": "西拉雅語Kapasau，是「木棉部落」的意思。原為洪安雅族哆囉嘓社的居住地，清代段、程、潘等姓蕭壠社族人因「番屯政策」而遷移至此，形成以蕭壟社為主體的部落。信奉祖靈阿立母，部落西南方的「大公廨」是信仰中心，另有五座「角頭公廨」。吉貝耍文史工作室致力保存地方西拉雅文化、挖掘社區文化資源，推動部落文化觀光，近期號召各部落籌",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1060",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1063",
@@ -8437,7 +9914,10 @@
       "q": "742 臺南市大內區頭社里頭社",
       "why": "據聞是新港社民受到漢人壓迫而遷往淺山地區所建立的第一個支社，故名「頭社」。此處是漢人從事貿易的要地，居民大部分屬於目加溜灣社。信奉祖靈太祖，部落北邊有三間式的公廨建築「太上龍頭忠義廟」，是目前台灣最大的平埔公廨。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1063",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5618",
@@ -8454,7 +9934,10 @@
       "q": "723 臺南市西港區慶安路59巷17號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5618",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-485",
@@ -8471,7 +9954,10 @@
       "q": "723 臺南市西港區慶安路32號",
       "why": "主祀天上聖母的廟宇，此外同祀中壇元帥、境主公、十二瘟王等神，廟宇建築採用繁複之雕工披覆金箔裝飾而成，所以又稱「金大廟」",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/485",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4259",
@@ -8488,7 +9974,10 @@
       "q": "708 臺南市安平區國勝路35巷12號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4259",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1346",
@@ -8505,7 +9994,10 @@
       "q": "700 臺南市中西區和平街90號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1346",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-716",
@@ -8522,7 +10014,10 @@
       "q": "704 臺南市北區西華街59巷16號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/716",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1216",
@@ -8540,7 +10035,10 @@
       "q": "713 臺南市左鎮區草山里南171鄉道2.5公里處(草山月世界風景區)",
       "why": "要月吊橋是草山地區唯一的一座吊橋，過去的舊名稱是以附近住戶李德興的名字來命名，主要是當地人對外出入的必經要道。但隨著交通型態的改變，與經時間歲月流逝而逐漸老舊的橋身，在吊橋的上游另新建了一座可行經汽車的水泥橋樑，老舊吊橋交通功能不在，在拆除後重建為觀光吊，重新命名為「要月橋」。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1216",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-810",
@@ -8558,7 +10056,10 @@
       "q": "708 臺南市安平區四草大橋南端步行約100M",
       "why": "觀夕平台位於安平燈塔對面，為保留二側之防風林，平台設計採倒三角形，以理性、冷調、現代的設計，南方松木為鋪面，四周及階梯設計低光源的光廊，於夜幕低垂之後，海風徐徐，繁星點點，成為三五好友、情侶或家庭活動在此聚會、觀星賞月的最佳場所。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/810",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4308",
@@ -8575,7 +10076,10 @@
       "q": "737 臺南市鹽水區水正里中正路140號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4308",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-532",
@@ -8592,7 +10096,10 @@
       "q": "734 臺南市六甲區珊瑚路198巷1號",
       "why": "六甲區域有名的古寺，已有300多年的歷史，主祀觀世音菩薩，過往俗稱「巖龍湖庵」，至今仍香火鼎盛，參拜的遊客絡繹不絕",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/532",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-802",
@@ -8609,7 +10116,10 @@
       "q": "700 臺南市中西區新美街以東，成功路以南至民權路",
       "why": "赤嵌樓是早期台南舊城發展的中心。園區以赤崁樓為最大地標建築，範圍大約是新美街以東，成功路以南至民權路左右的塊區，新美街一帶正是十七世紀台南海岸線的位置，園區內赤崁樓、祀典大天后宮、祀典武廟等古蹟矗立，是台灣少數擁有荷蘭、鄭氏建築的文化園區。園區內傳統工藝或傳統美食匯集，在此可發現知名的再發號肉粽店、義豐冬瓜茶、白北浮水",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/802",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-674",
@@ -8626,7 +10136,10 @@
       "q": "700 臺南市中西區民族路二段212號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/674",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-542",
@@ -8643,7 +10156,10 @@
       "q": "742 臺南市大內區二溪里唭子瓦60號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/542",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4245",
@@ -8660,7 +10176,10 @@
       "q": "720 臺南市官田區嘉南里68-2號(烏山頭水庫)",
       "why": "烏山頭水庫往天壇方向走就會抵達這座隱密又美麗的吊橋，早期這座吊橋是大崎居民與台南藝術大學師生進出的重要道路",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4245",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-752",
@@ -8677,7 +10196,10 @@
       "q": "700 臺南市中西區友愛街25號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/752",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5605",
@@ -8694,7 +10216,10 @@
       "q": "744 臺南市新市區環東路一段",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5605",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-558",
@@ -8711,7 +10236,10 @@
       "q": "710 臺南市永康區鹽洲里國聖街",
       "why": "鄭成功、鄭經父子墓遺址，高拱乾《臺灣府志》所載[葬於台灣縣武定里洲仔尾]即今永康區鹽洲里，清康熙38年(1699)奉旨歸葬福建南安，前台南縣政府於1980年，建置「鄭成功紀念碑」於此以茲紀念。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/558",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-711",
@@ -8728,7 +10256,10 @@
       "q": "700 臺南市中西區忠義路二段36號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/711",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-857",
@@ -8745,7 +10276,10 @@
       "q": "709 臺南市安南區城西街二段",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/857",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-790",
@@ -8762,7 +10296,10 @@
       "q": "700 臺南市中西區中正路5巷2號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/790",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-967",
@@ -8779,7 +10316,10 @@
       "q": "704 臺南市北區公園路356號(燕潭北畔)",
       "why": "重道崇文房創建於清嘉慶二十年（1815年），用以旌表府城林朝英樂善好施、修建台灣縣學文廟。是役，嘉慶九年興工，十二年竣工；惜原碑未存，僅有捐題碑記傳世，存於台南市大南門碑林，而落款年代則為嘉慶十九年。坊原立於龍王廟(址在今台南市警察局刑警隊）前方，日治昭和九年（1934年）開闢今南門路，拆廟移坊，乃遷建台南公園「燕潭」",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/967",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5765",
@@ -8796,7 +10336,10 @@
       "q": "723 臺南市西港區八份58號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5765",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6082",
@@ -8814,7 +10357,10 @@
       "q": "723 臺南市西港區南45-1鄉道",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6082",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-745",
@@ -8831,7 +10377,10 @@
       "q": "700 臺南市中西區神農街71號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/745",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6065",
@@ -8848,7 +10397,10 @@
       "q": "717 臺南市仁德區仁德區仁義里中清路82號",
       "why": "位於仁德區鍾厝，當地人習慣稱廟宇為「鍾厝清寧代天府」。清康熙年間，鍾姓先民率十一姓氏（王黃吳葉林沈阮余楊陳蔡）先民一同自泉州同安渡海來臺，為了路途的平安，並自廈門草仔鞍奉迎吳府千歲神尊隨行庇護。來臺後，除了吳府千歲外，又自南鯤鯓代天府分香，迎來李府千歲、池府千歲、朱府千歲、范府千歲神尊（建廟時間不詳）。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6065",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-803",
@@ -8865,7 +10417,10 @@
       "q": "704 臺南市北區北門路以西，西門路三段以東，成功路以北，公園北路以南為主要劃分範圍",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/803",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-500",
@@ -8882,7 +10437,10 @@
       "q": "730 臺南市新營區鐵線里鐵線橋107-1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/500",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5620",
@@ -8899,7 +10457,10 @@
       "q": "730 臺南市新營區建業路200號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5620",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-775",
@@ -8916,7 +10477,10 @@
       "q": "701 臺南市東區林森路二段79號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/775",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-776",
@@ -8933,7 +10497,10 @@
       "q": "701 臺南市東區長榮路二段135-143號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/776",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-685",
@@ -8950,7 +10517,10 @@
       "q": "704 臺南市北區北園街89號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/685",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-684",
@@ -8967,7 +10537,10 @@
       "q": "704 臺南市北區自強街12號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/684",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-823",
@@ -8984,7 +10557,10 @@
       "q": "700 臺南市中西區新美街116號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/823",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1326",
@@ -9001,7 +10577,10 @@
       "q": "700 臺南市中西區府前路一段196巷20號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1326",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4321",
@@ -9018,7 +10597,10 @@
       "q": "700 臺南市中西區建業街16號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4321",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-706",
@@ -9035,7 +10617,10 @@
       "q": "700 臺南市中西區赤崁東街86號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/706",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4318",
@@ -9052,7 +10637,10 @@
       "q": "700 臺南市中西區中山路79巷56號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4318",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4354",
@@ -9069,7 +10657,10 @@
       "q": "732 臺南市白河區紫雲殿仙祖廟",
       "why": "大凍山海拔1241公尺，山峰雄偉壯麗，為台南的最高峰，也是台灣的小百岳之一",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4354",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-636",
@@ -9086,7 +10677,10 @@
       "q": "732 臺南市白河區",
       "why": "共5條登山健行路線，大凍山線、九龍山線、雞籠山線、福龍山線以及檳榔山線。其中大凍山台南市第一高峰，也是台灣小百岳之一",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/636",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-590",
@@ -9104,7 +10698,10 @@
       "q": "732 臺南市白河區關嶺里28-3號",
       "why": "位於白河區東側，環山風景點以關子嶺鹼性溫泉為起點，沿途有紅葉公園、水火同源、碧雲寺、大仙寺、東山咖啡公路等休憩玩賞地點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/590",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-580",
@@ -9121,7 +10718,10 @@
       "q": "718 臺南市關廟區正義街37號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/580",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5601",
@@ -9138,7 +10738,10 @@
       "q": "718 臺南市關廟區忠孝街68號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5601",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5993",
@@ -9155,7 +10758,10 @@
       "q": "718 臺南市關廟區台19甲線50K處",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5993",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-504",
@@ -9172,7 +10778,10 @@
       "q": "731 臺南市後壁區墨林里4鄰菁寮191號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/504",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-695",
@@ -9189,7 +10798,10 @@
       "q": "700 臺南市中西區永福路二段152巷20號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/695",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4275",
@@ -9206,7 +10818,10 @@
       "q": "726 臺南市學甲區中洲里15之10號",
       "why": "有國必有史，有族必有譜；無史則綱紀廢，無譜則源流失。族之有譜，猶水之源、木之本。公於民國十八年開始著手編輯族譜，二十一初稿完成，賡續對照戶口、整理除戶簿，二十四年謄抄總本工作完成，二十七年開始整理金門族譜，四十六年至四十九年複查工作，挨戶核對，所有憑証如神主牌、戶籍資料全部查閱，記載至為翔實，五十二年三月三日付印，五十",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4275",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4356",
@@ -9223,7 +10838,10 @@
       "q": "736 臺南市柳營區果毅後",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4356",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6043",
@@ -9240,7 +10858,10 @@
       "q": "720 臺南市官田區新生街43號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6043",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-537",
@@ -9257,7 +10878,10 @@
       "q": "720 臺南市官田區隆本里中華路一段335號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/537",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1002",
@@ -9274,7 +10898,10 @@
       "q": "720 臺南市官田區隆本里中華路二段15巷16號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1002",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-784",
@@ -9291,7 +10918,10 @@
       "q": "700 臺南市中西區信義街38號",
       "why": "集福宮原名「集福祠」，與普濟殿、金安宮、媽祖樓同屬四聯境。清乾隆元年（西元1763年），創建於新港墘港邊，由黃姓、王姓、劉姓等碼頭工人，自故鄉泉州晉江縣南門外二十四都桃源塘後鄉集福祠，迎奉玄天上帝等神祇來台，做為船筏、碼頭工人之保護神，供境眾焚香膜拜；初為小廟，後於道光二年（西元1822年）修建老古石街渡口之泊岸及街路",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/784",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-597",
@@ -9308,7 +10938,10 @@
       "q": "727 臺南市北門區雙春里雙春73-10號",
       "why": "雙春濱海遊憩區界於八掌溪、急水溪之間，是臺南市最北端的海濱，距離南鯤鯓代天府約五分鐘車程，交通方便，道路設施良好",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/597",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-585",
@@ -9325,7 +10958,10 @@
       "q": "727 臺南市北門區北門里舊埕119號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/585",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5629",
@@ -9343,7 +10979,10 @@
       "q": "725 臺南市將軍區鯤鯓里",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5629",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5616",
@@ -9360,7 +10999,10 @@
       "q": "725 臺南市將軍區南26區道101號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5616",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-921",
@@ -9378,7 +11020,10 @@
       "q": "724 臺南市七股區鹽埕里68號",
       "why": "緊鄰國聖港燈塔，為一臨海沙洲，七股內海南端的屏障，由台灣西部河川所沖積出來的砂土，經過台灣海峽海浪挾帶這些砂土，長年累月地堆積而漸漸露出海面所造成狹長狀沙洲。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/921",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-476",
@@ -9395,7 +11040,10 @@
       "q": "726 臺南市學甲區頂州里75-25號",
       "why": "園區內模擬原棲環境圈養方式，以低矮柵欄展示，讓人與動物的距離縮為零；各種不同主題動物區，可愛動物區、非洲動物觀賞區",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/476",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1004",
@@ -9412,7 +11060,10 @@
       "q": "742 臺南市大內區頭社里31號",
       "why": "一年一度的頭社夜祭\r\n每年農曆9月1日到11月1日為頭社的年度祭儀，其中，重頭戲落在10月14至15日的「夜祭」，儀式包含了獻豬隻給太祖（點豬、生飲豬血豬肝的簽收動作）、牽曲（身著白衣白戴白手套的牽曲成員，吟唱祈福與祈雨的古調），從晚上到隔日的清晨，儀式都在公廨前進行，在燈光與曲聲中，答謝太祖一年來的照顧。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1004",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-525",
@@ -9429,7 +11080,10 @@
       "q": "735 臺南市下營區紅毛厝123號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/525",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-697",
@@ -9446,7 +11100,10 @@
       "q": "700 臺南市中西區民權路三段143巷8號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/697",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6004",
@@ -9463,7 +11120,10 @@
       "q": "709 臺南市安南區大安街730-1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6004",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-848",
@@ -9480,7 +11140,10 @@
       "q": "709 臺南市安南區總安街一段316號",
       "why": "臺南市香光聖堂屬一貫道，主祀彌勒古佛、燃燈古佛、釋迦古佛，總面積約1350坪。堂內「無盡藏文物館」收藏海內外寶貴古文物供人觀賞，無極清虛宮、三聖殿等建築富麗典雅，廟埕前主牌樓及四欉百餘年茄苳樹更添聖堂莊嚴靜謐之氣氛。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/848",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5628",
@@ -9497,7 +11160,10 @@
       "q": "725 臺南市將軍區長沙里51號",
       "why": "從過去的沿海漁村，到今天濱海遊憩區，馬沙溝今日或許是以3D彩繪藝術村、沙雕藝術季、音樂節等形象被認識，但若要深入了解馬沙溝，也可以從庒廟「李聖宮」著手。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5628",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-796",
@@ -9514,7 +11180,10 @@
       "q": "702 臺南市南區濱南路600號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/796",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-664",
@@ -9531,7 +11200,10 @@
       "q": "702 臺南市南區灣裡路282巷68弄17號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/664",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-660",
@@ -9548,7 +11220,10 @@
       "q": "702 臺南市南區鯤鯓路147號",
       "why": "位於安平港連外道路上，是連接龍岡國小與海岸堤防最安全的道路。該天橋重新縫合了被堤防阻斷的「臺江古地」水岸與地景，契合成巨大的縫線，延伸出一處臨海的休憩停留空間，藉通往濱海50米綠地的空中散步廊道，讓大海、旅人與鯤鯓維繫起新的親近關係。使用線性光束做為橋面行進的導引，經由沖孔板內藏日光燈管透出的光，鋪陳海濱散步道動線，橋",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/660",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-661",
@@ -9565,7 +11240,10 @@
       "q": "702 臺南市南區喜樹路222巷52號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/661",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-658",
@@ -9582,7 +11260,10 @@
       "q": "702 臺南市南區鯤鯓路102巷81號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/658",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4250",
@@ -9599,7 +11280,10 @@
       "q": "702 臺南市南區體育路87號(竹溪寺)",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4250",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5568",
@@ -9616,7 +11300,10 @@
       "q": "704 臺南市北區成功路148號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5568",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-859",
@@ -9633,7 +11320,10 @@
       "q": "700 臺南市中西區忠義路2段84巷18號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/859",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-653",
@@ -9650,7 +11340,10 @@
       "q": "725 臺南市將軍區長榮里182 號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/653",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4296",
@@ -9667,7 +11360,10 @@
       "q": "702 臺南市南區鹽埕路159巷1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4296",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-5592",
@@ -9684,7 +11380,10 @@
       "q": "702 臺南市南區新和東路51號",
       "why": "以書本的堆疊形式象徵知識結晶體，呼應圖書館及在地特色。預計藏書10萬冊、視聽資料供民眾借閱，成為南區民眾的學習與生活中心",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/5592",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-987",
@@ -9701,7 +11400,10 @@
       "q": "702 臺南市南區鹽埕路291巷15號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/987",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1113",
@@ -9718,7 +11420,10 @@
       "q": "737 臺南市鹽水區西門路19號",
       "why": "擁有近三十年歷史的鹽水天主堂，是台灣最具特色的教堂之一。中國宮殿外觀讓人側目，聖經故事採用傳統中國繪畫來表現，「最後晚餐」的詮釋也全都換上中國風，餐桌上擺著中國古餐具，真讓人眼界一開呢！",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1113",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-494",
@@ -9735,7 +11440,10 @@
       "q": "737 臺南市鹽水區橋南街",
       "why": "曾是鹽水區通往南部鄉鎮的交通要道，後期沒落，橋南老街轉為住宅區，但早期商業街的特色建築仍留存至今，現為鹽水的觀光景點之一",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/494",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-493",
@@ -9752,7 +11460,10 @@
       "q": "737 臺南市鹽水區武廟路87號",
       "why": "鹽水武廟主祀關聖帝君。相傳明朝末年，麻豆一位信女所供奉的關聖帝君畫像，被一陣風吹到了十多公里外的鹽水的一棵榕樹上，並且無法請回，當地人以為神蹟，便就地建廟奉祀，一直到今天都是鹽水的信仰中心。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/493",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-931",
@@ -9770,7 +11481,10 @@
       "q": "709 臺南市安南區府安路七段",
       "why": "本濕地位於鹽水溪出海口，北側毗鄰四草濕地A2區，自鹽水溪大排北堤起，南至安平堤防止，東以省道台17線及大港觀海橋為界，西側海域至等深線6公尺處。面積總計635公頃。\r\n近幾年，中白鷺在台灣西南沿海地區繁殖，並建立新的族群；台南市鹽水溪口的紅樹林區，也發現大白鷺及中白鷺有營巢的現象。另外，台灣博物館學刊第58卷曾報導在此",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/931",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4281",
@@ -9787,7 +11501,10 @@
       "q": "709 臺南市安南區媽祖宮一街136號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4281",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4262",
@@ -9804,7 +11521,10 @@
       "q": "709 臺南市安南區媽祖宮一街136號",
       "why": "本館主體建置於鹿耳門公館，館舍內多功能會議室及展覽空間，不只成為地方生活圈改善、觀光推廣、歷史傳承的推動空間，配合鹿耳門天后宮舉辦之民間自發性大型文化活動，更可讓來此駐足的全臺灣民眾有個知性、感性的認識與回憶。(資料來源:臺南市政府文化局網站)",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4262",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4269",
@@ -9821,7 +11541,10 @@
       "q": "709 臺南市安南區媽祖宮一街345巷420號",
       "why": "回首鹿耳門，守候台灣情，鎮門宮奉鹿耳門開基媽祖懿旨，鎮海安瀾，守風候潮，晨鐘暮禱，香火不斷，為開台祖先延續篳路襤褸的精神，然寒外邊城，海風蕭瑟，鹹露侵蝕，草創期的建築於海風中飄搖已有二十寒暑，又逢近年幾番強烈風雨來襲，拜亭終於倒塌了，主殿亦漏雨嚴重，重修鹿耳門鎮門宮已成為熱愛鄉土，心繫家園！關懷台灣人文歷史的善信大德為",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4269",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-479",
@@ -9838,7 +11561,10 @@
       "q": "721 臺南市麻豆區南勢里關帝廟60號",
       "why": "麻豆代天府主祀五府千歲，1956年啟建，網羅全國著名工匠共同建造，歷經10年完成，廟地3甲餘，分建前、中、後，3大殿及觀音寶殿",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/479",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-947",
@@ -9855,7 +11581,10 @@
       "q": "721 臺南市麻豆區巷口里興國路11號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/947",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-971",
@@ -9872,7 +11601,10 @@
       "q": "721 臺南市麻豆區和平路20號",
       "why": "由於經濟與政治上的實力，「麻豆林家」在當時的聲望與「台中霧峰林家」與「台北板橋林家」並稱，三者合稱「台灣三林」。隨著分家繼承與都市發展所造成的土地價格飆漲，清領時期所建的七座精美大宅，因所有權人想法的不同，有些遂遭受拆除改建的命運，「新四房厝」即為其中較早因此而遭拆除者。由於所有權人對舊宅保存看法不一，民國六十七年（西",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/971",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-972",
@@ -9889,7 +11621,10 @@
       "q": "721 臺南市麻豆區光復路106號",
       "why": "護濟宮俗稱「媽祖宮」，是在清乾隆46年（1781）由居民倡建，奉祀媽祖。護濟宮創建後，香火鼎盛，在乾隆末期在附近形成市街，今廟東振興街即是古街道。清道光19年（1839），麻豆分出頂街與下街，即穀里街為頂街，在上帝廟四周；穀興街為下街，即護濟宮四周。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/972",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-805",
@@ -9901,13 +11636,27 @@
       "updated": "2026-09-20",
       "tags": [
         "戶外",
-        "自然"
+        "自然",
+        "網路熱門"
       ],
       "place": "南區",
       "q": "702 臺南市南區濱南路600號",
       "why": "黃金海岸位於台南市南區，為台南市最南端之海岸線。本地區地形狹長，東有西濱公路(台17)貫穿，南與高雄茄萣相鄰。自台南安平至黃金海岸，有長達近5公里的海岸線，是民眾休閒、踏浪、放風箏的好去處。 \r\n在落日時分，海水與沙灘經夕陽照射後，呈現一片金光閃閃的海岸美景，故有「黃金海岸」美名。",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/805",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方",
+        "社群"
+      ],
+      "signals": {
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
+      },
+      "social_heat": 58,
+      "social_updated": "2026-09-20",
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1pTE9GbGFKalZidmozUDZkOUNyaTZYcFBJbjYzWk1sMkk0b3lwMzZoU09zYWJYSzFYYXVpUGdhc2gxVmptWExEMFdhWHBVQmdLQi16SEdTY2VQbDJGVVdIZmVxUnFjM2R4TlHSAWpBVV95cUxNaUxPRmxhSmpWYnZqM1A2ZDlDcmk2WHBQSW42M1pNbDJJNG95cDM2aFNPc2FiWEsxWGF1aVBnYXNoMVZqbVhMRDBXYVhwVUJnS0ItekhHU2NlUGwyRlVXSGZlcVJxYzNkeE5R?oc=5"
     },
     {
       "id": "tainan-attraction-473",
@@ -9924,7 +11673,10 @@
       "q": "724 臺南市七股區十份里海埔47號",
       "why": "曾文溪出海口擁有豐富的河口生態體系，本區已由政府規劃為野生動物棲息地及黑面琵鷺保護區，來保護此處豐富的生態資源",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/473",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-474",
@@ -9941,7 +11693,10 @@
       "q": "724 臺南市七股區十份里海埔47號",
       "why": "在通往黑面琵鷺保護區的廣闊魚塭之中，會見到一棟造型非常特殊的水上屋，是臺南市重要的環境教育設施場所",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/474",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1166",
@@ -9958,7 +11713,10 @@
       "q": "724 臺南市七股區鹽埕里52號",
       "why": "黑面琵鷺是全球瀕危鳥種，總數量不超過3000隻，台江地區是目前全世界黑面琵鷺數量最多的度冬棲息地，近年度冬最大數量幾乎都在1000隻以上。春天北返前覓食頻繁，有時會出現在路邊水位適當的休耕魚塭中。偏好在夜間活動，白天大群聚集在空曠不易遭受干擾的海岸灘地或魚塭休息。飛行時頸部伸直，姿態優雅，被稱為『黑面舞者』。覓食時多成",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1166",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4293",
@@ -9975,7 +11733,10 @@
       "q": "701 臺南市東區龍山里東門路二段134巷27號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4293",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-870",
@@ -9992,7 +11753,10 @@
       "q": "724 臺南市七股區龍山里龍山宮前",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/870",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6115",
@@ -10009,7 +11773,10 @@
       "q": "719 臺南市龍崎區182橋下公園",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6115",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-1360",
@@ -10026,7 +11793,10 @@
       "q": "719 臺南市龍崎區中坑里中坑3-2號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/1360",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-4294",
@@ -10043,7 +11813,10 @@
       "q": "716 臺南市南化區東和里95號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4294",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-583",
@@ -10061,7 +11834,10 @@
       "q": "719 臺南市龍崎區龍船窩",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/583",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-6078",
@@ -10079,7 +11855,10 @@
       "q": "716 臺南市南化區龍鱗山步道",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6078",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-637",
@@ -10096,7 +11875,10 @@
       "q": "715 臺南市楠西區龜丹里南186線2.8k支路內之龜丹溪畔",
       "why": "龜丹溫泉位於楠西區龜丹里東方山谷中、龜丹溪與曾文溪之上游處，是一個隱於山谷河床中的露頭溫泉。溫泉源頭位於龜丹溫泉橋開始溯龜丹溪，到達兩溪交會處，溫泉從中新世的泥岩地層中湧出，泉質為中性的碳酸氫鈉泉，清澈、透明、無味，夾有氣泡湧出。擁有豐沛溫泉資源觀光旅遊局初估溫泉量為5000公噸,發展潛力無窮,後續將可發展ㄧ個精緻溫泉",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/637",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "tainan-attraction-853",
@@ -10113,7 +11895,10 @@
       "q": "715 臺南市楠西區龜丹里南186線2.8k支路內之龜丹溪畔",
       "why": "龜丹溫泉水質之酸鹼度(pH)介於8.08 至8.55 之間，呈弱鹼性，陰離子以碳酸氫根離子(HCO3-)為主、陽離子以鈉離子(Na+)為主，水溫約在攝氏31至35.5度左右，無色無味，水質清澈，溫泉分類屬於碳酸氫鹽泉，依據相關文獻的研究，碳酸氫鹽泉是對皮膚有滋潤功能的『美人湯』泉質，有軟化角質層的功效，對神經痛、皮膚病",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/853",
-      "heat": 70
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
     },
     {
       "id": "social-tainan-anping",
@@ -10137,7 +11922,10 @@
       "q": "安平老街",
       "why": "美食、古蹟與拍照組合長期保持高討論度。",
       "url": "",
-      "heat": 81
+      "heat": 81,
+      "sources": [
+        "社群"
+      ]
     },
     {
       "id": "social-chiayi-hinoki",
@@ -10161,7 +11949,10 @@
       "q": "檜意森活村",
       "why": "拍照與市區美食行程常被一起推薦。",
       "url": "",
-      "heat": 77
+      "heat": 77,
+      "sources": [
+        "社群"
+      ]
     },
     {
       "id": "social-yunlin-gukeng",
@@ -10185,7 +11976,10 @@
       "q": "古坑綠色隧道",
       "why": "近期旅遊分享持續出現，適合週末散步與親子行程。",
       "url": "",
-      "heat": 71
+      "heat": 71,
+      "sources": [
+        "社群"
+      ]
     }
   ]
 }
