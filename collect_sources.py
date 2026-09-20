@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import io
 import json
+import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
 from datetime import datetime
@@ -42,6 +44,22 @@ TARGET_CITIES = {
     "臺南": "台南",
     "台南": "台南",
 }
+
+
+# V2.1：公開網路熱門文章來源。
+# 使用 Google News RSS 搜尋最近 30 天的旅遊相關公開文章。
+# 若 RSS 暫時無法取得，程式會保留原有 social_candidates.json，
+# 不影響官方景點與活動資料更新。
+SOCIAL_RSS_QUERIES = {
+    "雲林": "雲林 (景點 OR 旅遊 OR 活動) when:30d",
+    "嘉義": "嘉義 (景點 OR 旅遊 OR 活動) when:30d",
+    "台南": "台南 (景點 OR 旅遊 OR 活動) when:30d",
+}
+
+GOOGLE_NEWS_RSS = (
+    "https://news.google.com/rss/search?"
+    "q={query}&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+)
 
 
 def read_json(path):
@@ -559,6 +577,172 @@ def collect_tainan_attractions():
     return results
 
 
+
+def collect_social_rss(official_items):
+    """
+    讀取公開 RSS 文章，並只把「名稱有出現在文章標題中」的既有
+    雲嘉南官方景點加上網路熱門訊號。這樣可降低把一般新聞誤當景點
+    的機率，也不會憑文章內容自行創造不存在的景點。
+    """
+
+    print("開始取得最近 30 天網路熱門旅遊文章...")
+
+    candidates = []
+
+    for item in official_items:
+        if not isinstance(item, dict):
+            continue
+
+        name = str(item.get("name", "")).strip()
+        city = str(item.get("city", "")).strip()
+
+        if city not in SOCIAL_RSS_QUERIES or len(name) < 2:
+            continue
+
+        candidates.append(item)
+
+    mentions = {}
+
+    for city, query in SOCIAL_RSS_QUERIES.items():
+        url = GOOGLE_NEWS_RSS.format(
+            query=urllib.parse.quote_plus(query)
+        )
+        raw = fetch_bytes(url)
+
+        if not raw:
+            print(f"{city}網路熱門 RSS 取得失敗，略過")
+            continue
+
+        try:
+            root = ET.fromstring(raw)
+        except Exception as exc:
+            print(f"{city}網路熱門 RSS 解析失敗")
+            print(exc)
+            continue
+
+        article_count = 0
+
+        for node in root.findall(".//item"):
+            title = flatten_text(
+                node.findtext("title", "")
+            ).strip()
+            link = flatten_text(
+                node.findtext("link", "")
+            ).strip()
+            pub_date = flatten_text(
+                node.findtext("pubDate", "")
+            ).strip()
+            source_node = node.find("source")
+            source_name = (
+                flatten_text(source_node.text).strip()
+                if source_node is not None
+                else ""
+            )
+
+            if not title:
+                continue
+
+            article_count += 1
+
+            for item in candidates:
+                if item.get("city") != city:
+                    continue
+
+                name = str(
+                    item.get("name", "")
+                ).strip()
+
+                if name not in title:
+                    continue
+
+                key = (city, name)
+                info = mentions.setdefault(
+                    key,
+                    {
+                        "item": item,
+                        "titles": [],
+                        "links": [],
+                        "sources": set(),
+                        "dates": [],
+                    },
+                )
+
+                if title not in info["titles"]:
+                    info["titles"].append(title)
+
+                if link and link not in info["links"]:
+                    info["links"].append(link)
+
+                if source_name:
+                    info["sources"].add(source_name)
+
+                if pub_date:
+                    info["dates"].append(pub_date)
+
+        print(
+            f"{city}網路熱門文章讀取完成："
+            f"{article_count} 篇"
+        )
+
+    results = []
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    for (city, name), info in mentions.items():
+        item = info["item"]
+        recent_mentions = len(info["titles"])
+        independent_sources = len(info["sources"])
+
+        # 多篇、且來自不同公開來源時提高熱度；
+        # 上限 95，避免單一網路訊號壓過所有資料。
+        heat = min(
+            95,
+            68
+            + recent_mentions * 4
+            + independent_sources * 3,
+        )
+
+        tags = list(item.get("tags", []))
+        if "網路熱門" not in tags:
+            tags.append("網路熱門")
+
+        results.append(
+            {
+                "id":
+                    f"social-auto-{item.get('id', city + '-' + name)}",
+                "city": city,
+                "name": name,
+                "e": "🔥",
+                "type": item.get("type", "景點"),
+                "src": "社群",
+                "signals": {
+                    "recent_mentions": recent_mentions,
+                    "creator_mentions": independent_sources,
+                    "repeat_recommendations":
+                        max(0, recent_mentions - 1),
+                },
+                "base_heat": heat,
+                "updated": today,
+                "tags": tags,
+                "place": item.get("place", city),
+                "q": item.get("q", name),
+                "why":
+                    f"最近30天公開旅遊文章提及"
+                    f"{recent_mentions}次，"
+                    f"來自{independent_sources}個來源",
+                "url":
+                    info["links"][0]
+                    if info["links"]
+                    else item.get("url", ""),
+            }
+        )
+
+    print(
+        f"網路熱門景點比對完成：{len(results)} 筆"
+    )
+
+    return results
+
+
 def normalize(item, source_type):
     if not isinstance(item, dict):
         return None
@@ -704,7 +888,7 @@ def main():
     print("=" * 50)
     print(
         "雲嘉南週末去哪玩 - "
-        "自動資料蒐集 V2.0"
+        "自動資料蒐集 V2.1"
     )
     print("=" * 50)
 
@@ -787,7 +971,12 @@ def main():
         + tainan_online
     )
 
-    social = dedupe(social_local)
+    social_online = collect_social_rss(official)
+
+    social = dedupe(
+        social_local
+        + social_online
+    )
 
     print("")
     print("資料蒐集結果：")
@@ -816,6 +1005,10 @@ def main():
         f"{len(official)} 筆"
     )
     print(
+        f"自動網路熱門資料："
+        f"{len(social_online)} 筆"
+    )
+    print(
         f"社群資料去重後："
         f"{len(social)} 筆"
     )
@@ -832,7 +1025,7 @@ def main():
 
     print("")
     print("資料已寫入 sources/")
-    print("collect_sources.py V2.0 完成")
+    print("collect_sources.py V2.1 完成")
 
 
 if __name__ == "__main__":
