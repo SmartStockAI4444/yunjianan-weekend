@@ -70,5 +70,75 @@
     "why": "美食、古蹟與拍照組合長期保持高討論度。",
     "base_heat": 70,
     "url": ""
+  },
+  {
+    "id": "social-auto-tainan-attraction-572",
+    "city": "台南",
+    "name": "奇美博物館",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-09-20",
+    "tags": [
+      "親子",
+      "網路熱門"
+    ],
+    "place": "仁德區",
+    "q": "717 臺南市仁德區文華路二段66號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMi_AJBVV95cUxPMkluY2tPZGM1WVgyUGliYkdId09KVXZZSVhrU3RmOGJWQmREZGRiWFFCbXRWVDIyZk5jb0lISHpnMllxOHl2cTJETW9RSGhVWkdyQUlLaHBlRlZ5MmE1SmIzMWl5QVozcVlwZTI1V3ItU2Q0cWgtRXdnZG1ZUHhmc1ZSTERJZ0JYNTNpMmd3TkxEUHA3eHNnSmZMVEd4aHllMGh3c0s0WndoUkN5ZHZQelNVOXpOblN3YVlrb0x5RFNqc2pPM3pLa0tzZFVZYkNWd2JmVVpGTEx2MF9mYjhaWHhlOUdsUUtMTHFwMThKZGxZanNBUV9ETzBPZkFOdzBqWDNKT29jQkdjaDZEZFJBYjFhUUo3ejltaFRGamI0SWNiSHp5QWtORzZQM1VsTUNwdGZ2WUFnM2dVa1pOSzhtM3p3S0M5cWpaT3JqZ0JNRmwzRG50S1RPY1FYcDRnXzN4NjVEamVhSXo0NnlFeGZnWGdpT2FydWNOeHRTMA?oc=5"
+  },
+  {
+    "id": "social-auto-tainan-attraction-6114",
+    "city": "台南",
+    "name": "文鼎留聲博物館",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-09-20",
+    "tags": [
+      "親子",
+      "網路熱門"
+    ],
+    "place": "中西區",
+    "q": "700 臺南市中西區民權路二段162號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1EQmNURHJ3blBUZzJ3QnRtMU92cTQ5QjVpbnBNQ0F6UVNJeEhVMFhaZGlKUFozUjJtRzZ3WUhiSzhnZHVfRTNMLS15T01pUQ?oc=5"
+  },
+  {
+    "id": "social-auto-tainan-attraction-805",
+    "city": "台南",
+    "name": "黃金海岸",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-09-20",
+    "tags": [
+      "戶外",
+      "自然",
+      "網路熱門"
+    ],
+    "place": "南區",
+    "q": "702 臺南市南區濱南路600號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1pTE9GbGFKalZidmozUDZkOUNyaTZYcFBJbjYzWk1sMkk0b3lwMzZoU09zYWJYSzFYYXVpUGdhc2gxVmptWExEMFdhWHBVQmdLQi16SEdTY2VQbDJGVVdIZmVxUnFjM2R4TlHSAWpBVV95cUxNaUxPRmxhSmpWYnZqM1A2ZDlDcmk2WHBQSW42M1pNbDJJNG95cDM2aFNPc2FiWEsxWGF1aVBnYXNoMVZqbVhMRDBXYVhwVUJnS0ItekhHU2NlUGwyRlVXSGZlcVJxYzNkeE5R?oc=5"
   }
 ]
