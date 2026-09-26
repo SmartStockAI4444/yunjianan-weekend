@@ -151,7 +151,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
   <p>依縣市、類型與熱度組合行程。</p>
   <div class="row">
     <select id="pc"><option>嘉義</option><option>雲林</option><option>台南</option></select>
-    <select id="pt"><option>親子</option><option>美食</option><option>戶外</option><option>室內</option><option>免費</option></select>
+    <select id="pt"><option>親子</option><option>美食</option><option>戶外</option><option>室內</option><option>免費</option><option>觀光工廠</option></select>，
     <button id="plan" class="primary">幫我排行程</button>
   </div>
   <div id="pr"></div>
@@ -540,9 +540,14 @@ function init(){
   $("plan").onclick=function(){
     var c=$("pc").value,t=$("pt").value;
     var a=data.filter(function(s){
-      return s.city===c && Array.isArray(s.tags) && s.tags.indexOf(t)>=0;
-    }).sort(function(a,b){return Number(b.heat||0)-Number(a.heat||0)}).slice(0,2);
-
+  return s.city===c && (
+    t==="觀光工廠"
+      ? s.type==="觀光工廠"
+      : Array.isArray(s.tags) && s.tags.indexOf(t)>=0
+  );
+}).sort(function(a,b){
+  return Number(b.heat||0)-Number(a.heat||0);
+}).slice(0,2);
     $("pr").innerHTML=a.length
       ?'<b>'+c+'・'+t+'行程</b><br>① '+a[0].name+(a[1]?' → ② '+a[1].name:'')
       :'目前沒有符合行程。';
