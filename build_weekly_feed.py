@@ -33,14 +33,29 @@ def norm(x):
     return y
 
 def key(x):
+    name = x.get("name", "").strip()
+
+    for prefix in (
+        "嘉義：", "嘉義:",
+        "雲林：", "雲林:",
+        "台南：", "台南:",
+        "臺南：", "臺南:",
+    ):
+        if name.startswith(prefix):
+            name = name[len(prefix):].strip()
+            break
+
     s = (
         x.get("city", "")
         + "|"
-        + x.get("name", "")
+        + name
         + "|"
         + x.get("start", "")
     ).replace(" ", "").lower()
-    return hashlib.sha1(s.encode("utf-8")).hexdigest()
+
+    return hashlib.sha1(
+        s.encode("utf-8")
+    ).hexdigest()
 
 def merge_unique(a, b):
     out = []
