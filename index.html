@@ -204,7 +204,7 @@ var seed=[
 ];
 
 var data;
-var fs=["親子","情侶","美食","戶外","室內","免費","雨天"];
+var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
 var feedMeta={version:"內建",updated:"2026-08-11"};
@@ -247,7 +247,14 @@ function saveFav(){
 
 function okTags(s){
   var tags=Array.isArray(s.tags)?s.tags:[];
-  for(var k in sel)if(sel[k]&&tags.indexOf(k)<0)return false;
+  for(var k in sel){
+    if(!sel[k])continue;
+    if(k==="觀光工廠"){
+      if(s.type!=="觀光工廠")return false;
+    }else{
+      if(tags.indexOf(k)<0)return false;
+    }
+  }
   return true;
 }
 
