@@ -292,7 +292,8 @@ function normalizeFeed(x){
 }
 
 function list(){
-  var q=query.toLowerCase();
+  var q=query.trim().toLowerCase();
+
   var a=data.filter(function(s){
     var tags=Array.isArray(s.tags)?s.tags:[];
     var txt=((s.name||"")+" "+(s.city||"")+" "+(s.place||"")+" "+(s.type||"")+" "+
@@ -306,11 +307,35 @@ function list(){
       && (showExpiredItems||!isExpired(s));
   });
 
-  if(sort==="熱度")a.sort(function(a,b){return Number(b.heat||0)-Number(a.heat||0)});
-  if(sort==="最新")a.sort(function(a,b){return String(b.updated||"").localeCompare(String(a.updated||""))});
+  function relevance(s){
+    if(!q)return 0;
+
+    var name=String(s.name||"").trim().toLowerCase();
+
+    if(name===q)return 3;
+    if(name.indexOf(q)>=0)return 2;
+    return 1;
+  }
+
+  a.sort(function(a,b){
+    var ra=relevance(a);
+    var rb=relevance(b);
+
+    if(q&&ra!==rb)return rb-ra;
+
+    if(sort==="熱度"){
+      return Number(b.heat||0)-Number(a.heat||0);
+    }
+
+    if(sort==="最新"){
+      return String(b.updated||"").localeCompare(String(a.updated||""));
+    }
+
+    return 0;
+  });
+
   return a;
 }
-
 function nav(s){
   window.open("https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(s.q||s.name),"_blank");
 }
