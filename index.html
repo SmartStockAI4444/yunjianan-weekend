@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>雲嘉南週末去哪玩 V2.1</title>
+<title>雲嘉南週末去哪玩 V2.2</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -65,6 +65,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 .expired{opacity:.55}
 .danger{color:#a33a2b;font-weight:800}
 .source-note{font-size:12px;color:var(--muted);margin-top:4px}
+.eventdate{margin:8px 0;padding:8px 10px;border-radius:10px;background:#fff5df;color:#7a5412;font-size:13px;font-weight:800}
 @media(max-width:760px){.cards{grid-template-columns:1fr}.hero h2{font-size:26px}}
 @media(max-width:640px){.health{grid-template-columns:1fr 1fr}.syncgrid{grid-template-columns:1fr}}
 </style>
@@ -82,7 +83,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 <main>
 <section class="hero">
   <div>
-    <span class="badge">V2.1</span>
+    <span class="badge">V2.2</span>
     <h2>官方資料＋社群熱門訊號，合併成不重複的旅遊資料庫。</h2>
     <p>同一景點只顯示一張卡片，但可同時被「官方」與「社群熱門」篩選找到。</p>
   </div>
@@ -95,7 +96,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 
 <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V2.1 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V2.2 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -151,7 +152,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
   <p>依縣市、類型與熱度組合行程。</p>
   <div class="row">
     <select id="pc"><option>嘉義</option><option>雲林</option><option>台南</option></select>
-    <select id="pt"><option>親子</option><option>美食</option><option>戶外</option><option>室內</option><option>免費</option><option>觀光工廠</option><option>校園</option></select>
+    <select id="pt"><option>親子</option><option>美食</option><option>戶外</option><option>室內</option><option>免費</option><option>觀光工廠</option><option>校園</option><option>活動</option></select>
     <button id="plan" class="primary">幫我排行程</button>
   </div>
   <div id="pr"></div>
@@ -180,7 +181,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V2.1</footer>
+<footer>雲嘉南週末去哪玩 · V2.2</footer>
 
 <script>
 (function(){
@@ -205,10 +206,10 @@ var seed=[
 ].concat(campusSeed);
 
 var data;
-var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園"];
+var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V2.1",updated:"2026-09-27"};
+var feedMeta={version:"內建 V2.2",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -229,11 +230,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData21")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData22")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData21",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData22",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -254,6 +255,8 @@ function okTags(s){
       if(s.type!=="觀光工廠")return false;
     }else if(k==="校園"){
       if(s.type!=="校園")return false;
+    }else if(k==="活動"){
+      if(s.type!=="活動")return false;
     }else{
       if(tags.indexOf(k)<0)return false;
     }
@@ -330,6 +333,19 @@ function displayUpdated(s){
   if(source==="社群"&&s.social_updated)return s.social_updated;
   return s.updated||"";
 }
+function activityDateText(s){
+  if(!s||s.type!=="活動")return "";
+  var a=s.start||"",b=s.end||"";
+  if(a&&b)return a===b?"📅 活動日期 "+a:"📅 活動期間 "+a+" ～ "+b;
+  if(a)return "📅 開始日期 "+a;
+  if(b)return "📅 結束日期 "+b;
+  return "";
+}
+function activityDateHtml(s){
+  var t=activityDateText(s);
+  return t?'<div class="eventdate">'+t+'</div>':"";
+}
+
 
 function render(){
   var a=list(),box=$("cards"),c=0;
@@ -355,6 +371,7 @@ function render(){
       sourceBadges(s)+
       '<div class="heat">🔥 社群熱度 '+displayHeat(s)+'</div>'+
       '<div class="meta">更新 '+displayUpdated(s)+'</div>'+
+      activityDateHtml(s)+
       (sourceList(s).length>1?'<div class="source-note">此景點同時有官方資料與近期社群訊號</div>':'')+
       '<p class="reason">'+displayReason(s)+'</p>'+
       '<div>'+tags.map(function(t){return'<span class="badge">'+t+'</span>'}).join("")+'</div>'+
@@ -405,6 +422,7 @@ function detail(id){
     '<h2>'+s.name+'</h2>'+
     '<p><b>來源：</b>'+src+'</p>'+
     '<p><b>更新：</b>'+(s.updated||"-")+'</p>'+
+    (activityDateText(s)?'<p><b>'+activityDateText(s)+'</b></p>':'')+
     '<p><b>熱度：</b>'+(s.heat||0)+'/100</p>'+
     '<p>'+(s.why||"")+'</p>'+
     (s.url?'<p><a target="_blank" href="'+s.url+'">查看官方／主要來源資料</a></p>':'')+
@@ -459,7 +477,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData21",JSON.stringify(data));
+        localStorage.setItem("ynData22",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -523,7 +541,9 @@ function init(){
           ? s.type==="觀光工廠"
           : t==="校園"
             ? s.type==="校園"
-            : Array.isArray(s.tags) && s.tags.indexOf(t)>=0
+            : t==="活動"
+              ? s.type==="活動" && !isExpired(s)
+              : Array.isArray(s.tags) && s.tags.indexOf(t)>=0
       );
     }).sort(function(a,b){return Number(b.heat||0)-Number(a.heat||0)}).slice(0,2);
 
@@ -559,9 +579,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V2.1",updated:"2026-09-27"};
+    feedMeta={version:"內建 V2.2",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V2.1 內建資料。";
+    $("msg").textContent="已恢復 V2.2 內建資料。";
     refreshHealth();
     render();
   };
