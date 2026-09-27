@@ -1,4 +1,4 @@
-const CACHE_NAME = "yunjianan-v5-2";
+const CACHE_NAME = "yunjianan-v5-3";
 const CORE = [
   "./",
   "./index.html",
