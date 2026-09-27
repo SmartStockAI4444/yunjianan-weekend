@@ -11,7 +11,7 @@
 <link rel="manifest" href="./manifest.json">
 <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
 <link rel="apple-touch-icon" href="./icon-192.png">
-<title>雲嘉南週末去哪玩 V4.5</title>
+<title>雲嘉南週末去哪玩 V4.6</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -94,7 +94,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 .source-note{font-size:12px;color:var(--muted);margin-top:4px}
 .eventdate{margin:8px 0;padding:8px 10px;border-radius:10px;background:#fff5df;color:#7a5412;font-size:13px;font-weight:800}
 
-/* ===== V4.5 手機 App 版面 ===== */
+/* ===== V4.6 手機 App 版面 ===== */
 html{scroll-behavior:smooth}
 body{padding-bottom:78px}
 header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94)}
@@ -157,7 +157,7 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
 }
 @media(min-width:761px){.mobile-bottom-nav{display:none}}
 
-/* ===== V4.5 Travel App Visual ===== */
+/* ===== V4.6 Travel App Visual ===== */
 :root{
   --bg:#f2f4ef;
   --card:#ffffff;
@@ -423,7 +423,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.5 Photo Cards + Scroll Polish ===== */
+/* ===== V4.6 Photo Cards + Scroll Polish ===== */
 .row,.tabs,.chips{
   -webkit-overflow-scrolling:touch;
   scrollbar-width:none;
@@ -485,7 +485,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.5 Filter + Bottom Dock Polish ===== */
+/* ===== V4.6 Filter + Bottom Dock Polish ===== */
 @media(max-width:640px){
   /* 來源、想去哪：直接完整換行，不再露半顆按鈕 */
   #sources,
@@ -568,7 +568,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.5 Stable Mobile Filter Grid ===== */
+/* ===== V4.6 Stable Mobile Filter Grid ===== */
 @media(max-width:640px){
 
   /* 來源：3 欄固定網格，永遠不會超出螢幕 */
@@ -653,7 +653,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.5 Weekend Featured ===== */
+/* ===== V4.6 Weekend Featured ===== */
 .featured-section{
   margin-top:18px;
 }
@@ -816,6 +816,15 @@ footer{font-size:11px}
   .featured-name{font-size:19px}
 }
 
+
+/* ===== V4.6 Featured Dedupe ===== */
+.featured-sub{
+  max-width:250px;
+}
+.recommend-title .count-pill{
+  white-space:nowrap;
+}
+
 </style>
 </head>
 <body>
@@ -896,7 +905,7 @@ footer{font-size:11px}
       <div>
         <span class="section-kicker">WEEKEND PICKS</span>
         <h2>本週末精選</h2>
-        <p class="featured-sub">依近期、熱度與出遊適合度自動挑選</p>
+        <p class="featured-sub">本週末活動優先，活動不足才補熱門景點</p>
       </div>
       <span id="featuredCount" class="count-pill"></span>
     </div>
@@ -929,7 +938,7 @@ footer{font-size:11px}
   <div class="settings-inner">
     <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V4.5 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V4.6 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -972,7 +981,7 @@ footer{font-size:11px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V4.5</footer>
+<footer>雲嘉南週末去哪玩 · V4.6</footer>
 
 <script>
 (function(){
@@ -1000,7 +1009,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V4.5",updated:"2026-09-27"};
+var feedMeta={version:"內建 V4.6",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -1021,11 +1030,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData45")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData46")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData45",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData46",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -1139,7 +1148,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V4.5：活動必須同時符合
+  // V4.6：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -1797,43 +1806,71 @@ function featuredCandidates(){
     return s.type==="活動" &&
       isTravelFriendlyEvent(s) &&
       isThisWeekendEvent(s);
-  }).sort(function(a,b){return featuredScore(b)-featuredScore(a)});
+  }).sort(function(a,b){
+    return featuredScore(b)-featuredScore(a);
+  });
 
   var soon=pool.filter(function(s){
     return s.type==="活動" &&
       isTravelFriendlyEvent(s) &&
       isSoonEvent(s) &&
       !isThisWeekendEvent(s);
-  }).sort(function(a,b){return featuredScore(b)-featuredScore(a)});
+  }).sort(function(a,b){
+    return featuredScore(b)-featuredScore(a);
+  });
 
   var places=pool.filter(function(s){
     return s.type!=="活動";
-  }).sort(function(a,b){return featuredScore(b)-featuredScore(a)});
+  }).sort(function(a,b){
+    return featuredScore(b)-featuredScore(a);
+  });
 
-  var merged=uniqueByNameForFeatured(weekend.concat(soon,places));
+  var picks=[],used={};
 
-  if(city==="全部"){
-    var balanced=[],used={};
-    ["雲林","嘉義","台南"].forEach(function(c){
-      var hit=merged.filter(function(s){return s.city===c})[0];
-      if(hit){
-        balanced.push(hit);
-        used[String(hit.id||hit.name)]=1;
-      }
-    });
-
-    merged.forEach(function(s){
-      if(balanced.length>=4)return;
-      var key=String(s.id||s.name);
-      if(!used[key]){
-        balanced.push(s);
-        used[key]=1;
-      }
-    });
-    return balanced.slice(0,4);
+  function addOne(s){
+    if(!s||picks.length>=4)return false;
+    var key=String(s.id||dedupeName(s.name||""));
+    if(!key||used[key])return false;
+    used[key]=1;
+    picks.push(s);
+    return true;
   }
 
-  return merged.slice(0,4);
+  function addFrom(arr){
+    for(var i=0;i<arr.length && picks.length<4;i++)addOne(arr[i]);
+  }
+
+  if(city==="全部"){
+    /* 先讓三縣市有機會各出現一個「本週末活動」 */
+    ["雲林","嘉義","台南"].forEach(function(c){
+      var hit=weekend.filter(function(s){return s.city===c})[0];
+      addOne(hit);
+    });
+
+    /* 若仍有空位，繼續塞其他本週末活動 */
+    addFrom(weekend);
+
+    /* 再讓三縣市的近期活動有機會補位 */
+    if(picks.length<4){
+      ["雲林","嘉義","台南"].forEach(function(c){
+        if(picks.length>=4)return;
+        var hit=soon.filter(function(s){return s.city===c})[0];
+        addOne(hit);
+      });
+    }
+
+    /* 仍不足才補其他近期活動 */
+    addFrom(soon);
+
+    /* 最後才補熱門景點 */
+    addFrom(places);
+  }else{
+    addFrom(weekend);
+    addFrom(soon);
+    addFrom(places);
+  }
+
+  return picks.slice(0,4);
 }
 
 function featuredLabel(s){
@@ -1842,6 +1879,8 @@ function featuredLabel(s){
   return "🔥 熱門去處";
 }
 
+var currentFeaturedIds={};
+
 function renderFeatured(){
   var box=$("featuredCards");
   var section=$("weekendFeatured");
@@ -1849,6 +1888,10 @@ function renderFeatured(){
   if(!box||!section)return;
 
   var picks=featuredCandidates();
+  currentFeaturedIds={};
+  picks.forEach(function(s){
+    currentFeaturedIds[String(s.id||dedupeName(s.name||""))]=1;
+  });
   if(count)count.textContent=picks.length+" 選";
 
   if(!picks.length){
@@ -1886,10 +1929,13 @@ function renderFeatured(){
 
 function render(){
   renderFeatured();
-  var a=list(),box=$("cards"),c=0;
+  var a=list().filter(function(s){
+    var key=String(s.id||dedupeName(s.name||""));
+    return !currentFeaturedIds[key];
+  }),box=$("cards"),c=0;
   for(var k in favs)if(favs[k])c++;
   $("fc").textContent=c;
-  $("count").textContent=a.length+" / "+data.length+" 筆";
+  $("count").textContent=a.length+" 筆";
   box.innerHTML="";
 
   if(!a.length){
@@ -2046,7 +2092,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData45",JSON.stringify(data));
+        localStorage.setItem("ynData46",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -2177,9 +2223,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V4.5",updated:"2026-09-27"};
+    feedMeta={version:"內建 V4.6",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V4.5 內建資料。";
+    $("msg").textContent="已恢復 V4.6 內建資料。";
     refreshHealth();
     render();
   };
