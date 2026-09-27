@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>雲嘉南週末去哪玩 V2.6</title>
+<title>雲嘉南週末去哪玩 V2.7</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -83,7 +83,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 <main>
 <section class="hero">
   <div>
-    <span class="badge">V2.6</span>
+    <span class="badge">V2.7</span>
     <h2>官方資料＋社群熱門訊號，合併成不重複的旅遊資料庫。</h2>
     <p>同一景點只顯示一張卡片，但可同時被「官方」與「社群熱門」篩選找到。</p>
   </div>
@@ -96,7 +96,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 
 <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V2.6 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V2.7 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -181,7 +181,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V2.6</footer>
+<footer>雲嘉南週末去哪玩 · V2.7</footer>
 
 <script>
 (function(){
@@ -206,10 +206,10 @@ var seed=[
 ].concat(campusSeed);
 
 var data;
-var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動"];
+var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V2.6",updated:"2026-09-27"};
+var feedMeta={version:"內建 V2.7",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -230,11 +230,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData26")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData27")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData26",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData27",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -257,6 +257,8 @@ function okTags(s){
       if(s.type!=="校園")return false;
     }else if(k==="活動"){
       if(s.type!=="活動")return false;
+    }else if(k==="本週末"){
+      if(!isThisWeekendEvent(s)||!isTravelFriendlyEvent(s))return false;
     }else{
       if(tags.indexOf(k)<0)return false;
     }
@@ -268,6 +270,57 @@ function normDate(s){
   if(!s)return null;
   var d=new Date(s+"T12:00:00");
   return isNaN(d.getTime())?null:d;
+}
+
+function getThisWeekendRange(){
+  var now=new Date();
+  now.setHours(0,0,0,0);
+
+  var day=now.getDay();
+  var sat=new Date(now);
+
+  // 星期日使用「昨天星期六＋今天星期日」；
+  // 其他日期則抓接下來的星期六、星期日。
+  if(day===0){
+    sat.setDate(now.getDate()-1);
+  }else{
+    sat.setDate(now.getDate()+(6-day));
+  }
+
+  sat.setHours(0,0,0,0);
+
+  var sun=new Date(sat);
+  sun.setDate(sat.getDate()+1);
+  sun.setHours(23,59,59,999);
+
+  return {start:sat,end:sun};
+}
+
+function isThisWeekendEvent(s){
+  if(!s||s.type!=="活動")return false;
+
+  var range=getThisWeekendRange();
+  var start=normDate(s.start);
+  var end=normDate(s.end);
+
+  if(start)start.setHours(0,0,0,0);
+  if(end)end.setHours(23,59,59,999);
+
+  // 有完整起訖日期：只要活動期間與本週末有重疊就算。
+  if(start&&end){
+    return start<=range.end&&end>=range.start;
+  }
+
+  // 只有單一日期時，必須落在本週末。
+  if(start){
+    return start>=range.start&&start<=range.end;
+  }
+
+  if(end){
+    return end>=range.start&&end<=range.end;
+  }
+
+  return false;
 }
 function isExpired(s){
   if(s.type!=="活動"||!s.end)return false;
@@ -295,7 +348,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V2.6：活動必須同時符合
+  // V2.7：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -438,7 +491,7 @@ function list(){
       && (showExpiredItems||!isExpired(s));
   });
 
-  if(sort==="推薦"&&sel["活動"]){
+  if(sort==="推薦"&&(sel["活動"]||sel["本週末"])){
     a.sort(function(a,b){
       var sa=eventRecommendScore(a),sb=eventRecommendScore(b);
       if(sa!==sb)return sb-sa;
@@ -488,7 +541,7 @@ function render(){
   box.innerHTML="";
 
   if(!a.length){
-    box.innerHTML='<div class="empty">'+(sel["活動"]?'目前沒有符合「近期週末活動」條件的資料。':'找不到符合條件的資料。')+'</div>';
+    box.innerHTML='<div class="empty">'+(sel["本週末"]?'本週末目前沒有符合條件的活動。':sel["活動"]?'目前沒有符合「近期週末活動」條件的資料。':'找不到符合條件的資料。')+'</div>';
     return;
   }
 
@@ -501,6 +554,7 @@ function render(){
       '<div class="body">'+
       '<div class="meta">'+(s.city||"")+' · '+(s.type||"")+' · '+(s.place||"")+'</div>'+
       '<h3>'+s.name+'</h3>'+
+      (sel["本週末"]&&isThisWeekendEvent(s)?'<span class="badge">📅 本週末</span>':'')+
       (s.type==="活動"&&isTravelFriendlyEvent(s)?'<span class="badge">✨ 近期週末精選</span>':'')+
       sourceBadges(s)+
       '<div class="heat">🔥 社群熱度 '+displayHeat(s)+'</div>'+
@@ -611,7 +665,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData26",JSON.stringify(data));
+        localStorage.setItem("ynData27",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -635,7 +689,7 @@ function init(){
 
   fs.forEach(function(n){
     var b=document.createElement("button");
-    b.textContent=n;
+    b.textContent=n==="本週末"?"📅 本週末":n;
     b.onclick=function(){
       sel[n]=!sel[n];
       this.classList.toggle("active");
@@ -720,9 +774,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V2.6",updated:"2026-09-27"};
+    feedMeta={version:"內建 V2.7",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V2.6 內建資料。";
+    $("msg").textContent="已恢復 V2.7 內建資料。";
     refreshHealth();
     render();
   };
