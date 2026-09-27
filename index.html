@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>雲嘉南週末去哪玩 V2.0</title>
+<title>雲嘉南週末去哪玩 V2.1</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -82,7 +82,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 <main>
 <section class="hero">
   <div>
-    <span class="badge">V2.0</span>
+    <span class="badge">V2.1</span>
     <h2>官方資料＋社群熱門訊號，合併成不重複的旅遊資料庫。</h2>
     <p>同一景點只顯示一張卡片，但可同時被「官方」與「社群熱門」篩選找到。</p>
   </div>
@@ -95,7 +95,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 
 <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V2.0 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V2.1 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -180,7 +180,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V2.0</footer>
+<footer>雲嘉南週末去哪玩 · V2.1</footer>
 
 <script>
 (function(){
@@ -208,7 +208,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V2.0",updated:"2026-09-27"};
+var feedMeta={version:"內建 V2.1",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -229,11 +229,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData20")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData21")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData20",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData21",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -291,7 +291,7 @@ function normalizeFeed(x){
     version:(x&&x.version)||"remote",
     updated:(x&&x.updated)||new Date().toISOString().slice(0,10)
   };
-  return dedupe(items.concat(campusSeed));
+  return dedupe(campusSeed.concat(items));
 }
 
 function list(){
@@ -459,7 +459,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData20",JSON.stringify(data));
+        localStorage.setItem("ynData21",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -559,9 +559,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V2.0",updated:"2026-09-27"};
+    feedMeta={version:"內建 V2.1",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V2.0 內建資料。";
+    $("msg").textContent="已恢復 V2.1 內建資料。";
     refreshHealth();
     render();
   };
