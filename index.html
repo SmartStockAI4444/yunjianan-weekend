@@ -11,7 +11,7 @@
 <link rel="manifest" href="./manifest.json">
 <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
 <link rel="apple-touch-icon" href="./icon-192.png">
-<title>雲嘉南週末去哪玩 V4.6</title>
+<title>雲嘉南週末去哪玩 V4.7</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -94,7 +94,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 .source-note{font-size:12px;color:var(--muted);margin-top:4px}
 .eventdate{margin:8px 0;padding:8px 10px;border-radius:10px;background:#fff5df;color:#7a5412;font-size:13px;font-weight:800}
 
-/* ===== V4.6 手機 App 版面 ===== */
+/* ===== V4.7 手機 App 版面 ===== */
 html{scroll-behavior:smooth}
 body{padding-bottom:78px}
 header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94)}
@@ -157,7 +157,7 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
 }
 @media(min-width:761px){.mobile-bottom-nav{display:none}}
 
-/* ===== V4.6 Travel App Visual ===== */
+/* ===== V4.7 Travel App Visual ===== */
 :root{
   --bg:#f2f4ef;
   --card:#ffffff;
@@ -423,7 +423,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.6 Photo Cards + Scroll Polish ===== */
+/* ===== V4.7 Photo Cards + Scroll Polish ===== */
 .row,.tabs,.chips{
   -webkit-overflow-scrolling:touch;
   scrollbar-width:none;
@@ -485,7 +485,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.6 Filter + Bottom Dock Polish ===== */
+/* ===== V4.7 Filter + Bottom Dock Polish ===== */
 @media(max-width:640px){
   /* 來源、想去哪：直接完整換行，不再露半顆按鈕 */
   #sources,
@@ -568,7 +568,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.6 Stable Mobile Filter Grid ===== */
+/* ===== V4.7 Stable Mobile Filter Grid ===== */
 @media(max-width:640px){
 
   /* 來源：3 欄固定網格，永遠不會超出螢幕 */
@@ -653,7 +653,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.6 Weekend Featured ===== */
+/* ===== V4.7 Weekend Featured ===== */
 .featured-section{
   margin-top:18px;
 }
@@ -817,12 +817,53 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.6 Featured Dedupe ===== */
+/* ===== V4.7 Featured Dedupe ===== */
 .featured-sub{
   max-width:250px;
 }
 .recommend-title .count-pill{
   white-space:nowrap;
+}
+
+
+/* ===== V4.7 Official Activity Visuals ===== */
+.poster-badge{
+  position:absolute;
+  left:14px;
+  top:48px;
+  z-index:4;
+  display:inline-flex;
+  align-items:center;
+  height:24px;
+  padding:0 8px;
+  border-radius:999px;
+  background:rgba(20,45,34,.78);
+  color:#fff;
+  font-size:9px;
+  font-weight:900;
+  backdrop-filter:blur(7px);
+}
+.featured-poster-badge{
+  position:absolute;
+  right:14px;
+  bottom:14px;
+  z-index:3;
+  display:inline-flex;
+  align-items:center;
+  height:24px;
+  padding:0 8px;
+  border-radius:999px;
+  background:rgba(255,255,255,.88);
+  color:#315344;
+  font-size:9px;
+  font-weight:900;
+  backdrop-filter:blur(7px);
+}
+.featured-media img[style*="object-fit:contain"]{
+  padding:0;
+}
+.travel-card .cover.has-photo .poster-badge + .cover-glow{
+  display:none;
 }
 
 </style>
@@ -938,7 +979,7 @@ footer{font-size:11px}
   <div class="settings-inner">
     <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V4.6 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V4.7 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -981,7 +1022,7 @@ footer{font-size:11px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V4.6</footer>
+<footer>雲嘉南週末去哪玩 · V4.7</footer>
 
 <script>
 (function(){
@@ -1009,7 +1050,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V4.6",updated:"2026-09-27"};
+var feedMeta={version:"內建 V4.7",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -1030,11 +1071,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData46")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData47")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData46",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData47",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -1148,7 +1189,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V4.6：活動必須同時符合
+  // V4.7：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -1722,6 +1763,50 @@ function renderPlanResult(a,title,maxStops,optMode){
 }
 
 
+
+var ACTIVITY_IMAGE_MAP=[
+  {
+    keys:["曾文水庫峽谷音樂會","峽谷音樂會"],
+    src:"https://www.siraya-nsa.gov.tw/image/101534/1024x768",
+    credit:"西拉雅國家風景區管理處",
+    license:"官方活動主視覺",
+    page:"https://www.siraya-nsa.gov.tw/zh-tw/event/calendardetail/14374",
+    fit:"cover",
+    poster:true
+  },
+  {
+    keys:["Mattauw","大地藝術季","曲流擺"],
+    src:"https://mattauw2026.art/wp-content/uploads/2026/07/Mattauw2026_%E4%B8%BB%E8%A6%96%E8%A6%BA_1920.jpg",
+    credit:"2026 Mattauw 大地藝術季",
+    license:"官方主視覺",
+    page:"https://mattauw2026.art/",
+    fit:"contain",
+    bg:"#f3efd9",
+    poster:true
+  },
+  {
+    keys:["環騎5COOL","5COOL","仙境西拉雅"],
+    src:"https://www.siraya-nsa.gov.tw/image/100977/1024x768",
+    credit:"西拉雅國家風景區管理處",
+    license:"官方活動主視覺",
+    page:"https://www.siraya-nsa.gov.tw/zh-tw/event/calendardetail/14372",
+    fit:"cover",
+    poster:true
+  }
+];
+
+function activityPhotoInfo(s){
+  if(!s||s.type!=="活動")return null;
+  var name=String(s.name||"").toLowerCase();
+  for(var i=0;i<ACTIVITY_IMAGE_MAP.length;i++){
+    var item=ACTIVITY_IMAGE_MAP[i];
+    for(var j=0;j<item.keys.length;j++){
+      if(name.indexOf(String(item.keys[j]).toLowerCase())>=0)return item;
+    }
+  }
+  return null;
+}
+
 var PHOTO_MAP={
   "campus-yunlin-yuntech":{
     src:"https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/College_of_Design_Yuntech.jpg/960px-College_of_Design_Yuntech.jpg",
@@ -1762,9 +1847,16 @@ function photoInfo(s){
       src:s.image,
       credit:s.image_credit||"",
       license:s.image_license||"",
-      page:s.image_source||s.url||""
+      page:s.image_source||s.url||"",
+      fit:s.image_fit||"cover",
+      bg:s.image_bg||"",
+      poster:s.type==="活動"
     };
   }
+
+  var activity=activityPhotoInfo(s);
+  if(activity)return activity;
+
   return PHOTO_MAP[String(s.id||"")]||null;
 }
 
@@ -1901,10 +1993,14 @@ function renderFeatured(){
 
   box.innerHTML=picks.map(function(s){
     var photo=photoInfo(s);
+    var fStyle=photo&&photo.fit==="contain"
+      ?'object-fit:contain;background:'+(photo.bg||"#f3f1e8")+';'
+      :'object-fit:cover;';
     var media=photo&&photo.src
       ?'<div class="featured-media">'+
-         '<img loading="lazy" src="'+photo.src+'" alt="'+s.name+'" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">'+
+         '<img loading="lazy" src="'+photo.src+'" alt="'+s.name+'" style="'+fStyle+'" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">'+
          '<div class="featured-fallback" style="display:none">'+(s.e||"📍")+'</div>'+
+         (photo.poster?'<div class="featured-poster-badge">官方主視覺</div>':'')+
        '</div>'
       :'<div class="featured-media"><div class="featured-fallback">'+(s.e||"📍")+'</div></div>';
 
@@ -1950,8 +2046,13 @@ function render(){
     var extraTags=Math.max(0,tags.length-topTags.length);
     var cityClass=s.city==="雲林"?"yunlin":s.city==="嘉義"?"chiayi":"tainan";
     var photo=photoInfo(s);
+    var photoStyle=photo&&photo.fit==="contain"
+      ?'object-fit:contain;background:'+(photo.bg||"#f3f1e8")+';'
+      :'object-fit:cover;';
     var photoHtml=photo&&photo.src
-      ?'<img class="cover-photo" loading="lazy" src="'+photo.src+'" alt="'+s.name+'" onerror="this.style.display=\'none\';this.parentNode.classList.remove(\'has-photo\')"><div class="cover-photo-shade"></div>'
+      ?'<img class="cover-photo" loading="lazy" src="'+photo.src+'" alt="'+s.name+'" style="'+photoStyle+'" onerror="this.style.display=\'none\';this.parentNode.classList.remove(\'has-photo\')">'+
+       '<div class="cover-photo-shade"></div>'+
+       (photo.poster?'<div class="poster-badge">官方主視覺</div>':'')
       :"";
     el.className="card travel-card "+cityClass;
     el.innerHTML=
@@ -2025,7 +2126,7 @@ function detail(id){
 
   $("mb").innerHTML=
     (photo&&photo.src
-      ?'<img src="'+photo.src+'" alt="'+s.name+'" style="width:100%;height:190px;object-fit:cover;border-radius:18px;margin-bottom:12px" onerror="this.style.display=\'none\'">'
+      ?'<img src="'+photo.src+'" alt="'+s.name+'" style="width:100%;height:230px;object-fit:'+(photo.fit||"cover")+';background:'+(photo.bg||"#f3f1e8")+';border-radius:18px;margin-bottom:12px" onerror="this.style.display=\'none\'">'
       :'<div style="font-size:58px">'+(s.e||"📍")+'</div>')+
     '<h2>'+s.name+'</h2>'+
     '<p><b>地點：</b>'+(s.place||s.city||"地點待確認")+'</p>'+
@@ -2092,7 +2193,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData46",JSON.stringify(data));
+        localStorage.setItem("ynData47",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -2223,9 +2324,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V4.6",updated:"2026-09-27"};
+    feedMeta={version:"內建 V4.7",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V4.6 內建資料。";
+    $("msg").textContent="已恢復 V4.7 內建資料。";
     refreshHealth();
     render();
   };
