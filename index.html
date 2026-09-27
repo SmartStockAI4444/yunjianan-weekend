@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>雲嘉南週末去哪玩 V3.0</title>
+<title>雲嘉南週末去哪玩 V3.1</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -58,6 +58,7 @@ button,select,input{font:inherit}
 .plan-actions button{border:0;border-radius:10px;padding:9px 12px;font-weight:850}
 .plan-actions .pnav{background:#e7eef7;color:#294e76}
 .plan-actions .pdetail{background:var(--accent);color:#fff}
+.plan-actions .psource{background:#fff5df;color:#7a5412}
 .updatebox{margin-top:25px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}
 .updatebox textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:12px;padding:12px}
 .modal{position:fixed;inset:0;background:#0007;z-index:20;display:grid;place-items:center;padding:18px}
@@ -96,7 +97,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 <main>
 <section class="hero">
   <div>
-    <span class="badge">V3.0</span>
+    <span class="badge">V3.1</span>
     <h2>官方資料＋社群熱門訊號，合併成不重複的旅遊資料庫。</h2>
     <p>同一景點只顯示一張卡片，但可同時被「官方」與「社群熱門」篩選找到。</p>
   </div>
@@ -109,7 +110,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 
 <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V3.0 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V3.1 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -162,7 +163,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 <section class="planner">
   <span class="badge">✨ AI 行程</span>
   <h2>幫我安排熱門行程</h2>
-  <p>依縣市、類型、日期與旅遊適合度組合行程；結果會顯示日期、地點、導航與詳情。</p>
+  <p>依縣市、類型、日期與旅遊適合度組合行程；結果會顯示日期、簡短地點、導航、詳情與來源。</p>
   <div class="row">
     <select id="pc"><option>嘉義</option><option>雲林</option><option>台南</option></select>
     <select id="pt"><option>親子</option><option>美食</option><option>戶外</option><option>室內</option><option>免費</option><option>觀光工廠</option><option>校園</option><option>活動</option><option>本週末</option></select>
@@ -194,7 +195,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V3.0</footer>
+<footer>雲嘉南週末去哪玩 · V3.1</footer>
 
 <script>
 (function(){
@@ -222,7 +223,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V3.0",updated:"2026-09-27"};
+var feedMeta={version:"內建 V3.1",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -243,11 +244,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData30")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData31")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData30",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData31",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -361,7 +362,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V3.0：活動必須同時符合
+  // V3.1：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -616,9 +617,45 @@ function activityDateHtml(s){
   return t?'<div class="eventdate">'+t+'</div>':"";
 }
 
+function shortPlace(s){
+  var raw=String((s&&s.place)||"").trim();
+  var city=String((s&&s.city)||"").trim();
+
+  if(!raw)return city||"地點待確認";
+
+  // 完整地址：擷取縣市＋鄉鎮市區
+  var countyMatch=raw.match(/(雲林縣|嘉義縣|嘉義市|臺南市|台南市)/);
+  var county=countyMatch?countyMatch[1].replace("臺南市","台南市"):"";
+
+  var areas=raw.match(/[\u4e00-\u9fff]{1,5}(?:區|鄉|鎮|市)/g)||[];
+  var area="";
+  for(var i=0;i<areas.length;i++){
+    var x=areas[i];
+    if(x!==county && x!=="嘉義市" && x!=="台南市" && x!=="臺南市"){
+      area=x;
+      break;
+    }
+  }
+
+  if(county&&area)return county+"・"+area;
+  if(county)return county;
+
+  // 已經是短地名，例如「民雄鄉」「斗六市」「東區」
+  if(raw.length<=10 && !/\d/.test(raw)){
+    if(city && raw!==city)return city+"・"+raw;
+    return raw;
+  }
+
+  // 最後保底：移除郵遞區號/門牌數字，只留前段可讀地名
+  var clean=raw.replace(/\b\d{3,6}\b/g," ").replace(/\s+/g," ").trim();
+  var m=clean.match(/^(.{2,12}?(?:區|鄉|鎮|市))/);
+  return m?m[1]:(city||clean.slice(0,12)||"地點待確認");
+}
+
 function planCardHtml(s,i){
   var date=activityDateText(s);
-  var place=(s.place||s.city||"地點待確認");
+  var place=shortPlace(s);
+  var sourceUrl=s.url||s.social_url||"";
   return '<div class="plan-card">'+
     '<div class="plan-top">'+
       '<div class="plan-step">'+(i+1)+'</div>'+
@@ -632,6 +669,7 @@ function planCardHtml(s,i){
     '<div class="plan-actions">'+
       '<button class="pnav" data-pn="'+i+'">🧭 導航</button>'+
       '<button class="pdetail" data-pd="'+i+'">詳情</button>'+
+      (sourceUrl?'<button class="psource" data-ps="'+i+'">🔗 查看來源</button>':'')+
     '</div>'+
   '</div>';
 }
@@ -711,6 +749,7 @@ function detail(id){
   $("mb").innerHTML=
     '<div style="font-size:58px">'+(s.e||"📍")+'</div>'+
     '<h2>'+s.name+'</h2>'+
+    '<p><b>地點：</b>'+(s.place||s.city||"地點待確認")+'</p>'+
     '<p><b>來源：</b>'+src+'</p>'+
     '<p><b>更新：</b>'+(s.updated||"-")+'</p>'+
     (activityDateText(s)?'<p><b>'+activityDateText(s)+'</b></p>':'')+
@@ -768,7 +807,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData30",JSON.stringify(data));
+        localStorage.setItem("ynData31",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -871,6 +910,15 @@ function init(){
         if(a[i])detail(a[i].id);
       };
     });
+
+    [].forEach.call($("pr").querySelectorAll("[data-ps]"),function(b){
+      b.onclick=function(){
+        var i=Number(this.getAttribute("data-ps"));
+        if(!a[i])return;
+        var u=a[i].url||a[i].social_url||"";
+        if(u)window.open(u,"_blank");
+      };
+    });
   };
 
   $("export").onclick=function(){
@@ -900,9 +948,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V3.0",updated:"2026-09-27"};
+    feedMeta={version:"內建 V3.1",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V3.0 內建資料。";
+    $("msg").textContent="已恢復 V3.1 內建資料。";
     refreshHealth();
     render();
   };
