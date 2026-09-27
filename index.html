@@ -11,7 +11,7 @@
 <link rel="manifest" href="./manifest.json">
 <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
 <link rel="apple-touch-icon" href="./icon-192.png">
-<title>雲嘉南週末去哪玩 V5.3</title>
+<title>雲嘉南週末去哪玩 V5.4</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -94,7 +94,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 .source-note{font-size:12px;color:var(--muted);margin-top:4px}
 .eventdate{margin:8px 0;padding:8px 10px;border-radius:10px;background:#fff5df;color:#7a5412;font-size:13px;font-weight:800}
 
-/* ===== V5.3 手機 App 版面 ===== */
+/* ===== V5.4 手機 App 版面 ===== */
 html{scroll-behavior:smooth}
 body{padding-bottom:78px}
 header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94)}
@@ -157,7 +157,7 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
 }
 @media(min-width:761px){.mobile-bottom-nav{display:none}}
 
-/* ===== V5.3 Travel App Visual ===== */
+/* ===== V5.4 Travel App Visual ===== */
 :root{
   --bg:#f2f4ef;
   --card:#ffffff;
@@ -423,7 +423,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.3 Photo Cards + Scroll Polish ===== */
+/* ===== V5.4 Photo Cards + Scroll Polish ===== */
 .row,.tabs,.chips{
   -webkit-overflow-scrolling:touch;
   scrollbar-width:none;
@@ -485,7 +485,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.3 Filter + Bottom Dock Polish ===== */
+/* ===== V5.4 Filter + Bottom Dock Polish ===== */
 @media(max-width:640px){
   /* 來源、想去哪：直接完整換行，不再露半顆按鈕 */
   #sources,
@@ -568,7 +568,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.3 Stable Mobile Filter Grid ===== */
+/* ===== V5.4 Stable Mobile Filter Grid ===== */
 @media(max-width:640px){
 
   /* 來源：3 欄固定網格，永遠不會超出螢幕 */
@@ -653,7 +653,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.3 Weekend Featured ===== */
+/* ===== V5.4 Weekend Featured ===== */
 .featured-section{
   margin-top:18px;
 }
@@ -817,7 +817,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.3 Featured Dedupe ===== */
+/* ===== V5.4 Featured Dedupe ===== */
 .featured-sub{
   max-width:250px;
 }
@@ -826,7 +826,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.3 Official Activity Visuals ===== */
+/* ===== V5.4 Official Activity Visuals ===== */
 .poster-badge{
   position:absolute;
   left:14px;
@@ -867,7 +867,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.3 Weekend Date + Poster Fallback ===== */
+/* ===== V5.4 Weekend Date + Poster Fallback ===== */
 .featured-date{
   align-self:flex-start;
   display:inline-flex;
@@ -971,7 +971,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.3 Nearby Explore ===== */
+/* ===== V5.4 Nearby Explore ===== */
 .nearby-hint{
   margin:3px 2px 5px;
   padding:9px 11px;
@@ -1013,6 +1013,36 @@ footer{font-size:11px}
   #sorts .pill{
     flex:0 0 auto;
   }
+}
+
+
+/* ===== V5.4 Nearby Radius ===== */
+.nearby-range{
+  display:flex;
+  gap:7px;
+  overflow-x:auto;
+  padding:3px 2px 8px;
+  scrollbar-width:none;
+}
+.nearby-range::-webkit-scrollbar{display:none}
+.nearby-range button{
+  flex:0 0 auto;
+  height:34px;
+  padding:0 13px;
+  border:0;
+  border-radius:999px;
+  background:#fff;
+  color:#3c4f46;
+  font-size:11px;
+  font-weight:900;
+  box-shadow:0 4px 14px rgba(30,55,43,.06);
+}
+.nearby-range button.active{
+  background:#17372a;
+  color:#fff;
+}
+.nearby-range.hidden{
+  display:none;
 }
 
 </style>
@@ -1085,6 +1115,13 @@ footer{font-size:11px}
   <button class="pill" data-v="最新">最近更新</button>
 </div>
 <div id="nearbyHint" class="nearby-hint hidden"></div>
+<div id="nearbyRange" class="nearby-range hidden" aria-label="附近範圍">
+  <button data-km="5">5 km</button>
+  <button data-km="10">10 km</button>
+  <button class="active" data-km="20">20 km</button>
+  <button data-km="50">50 km</button>
+  <button data-km="all">不限</button>
+</div>
 
 <section>
   <div class="section-title mood-title"><div><span class="section-kicker">TRAVEL MOOD · 可複選</span><h2>你今天想去哪？</h2></div><button id="clear" class="pill clear-btn">清除</button></div>
@@ -1104,7 +1141,7 @@ footer{font-size:11px}
     <div id="featuredCards" class="featured-strip"></div>
   </section>
 
-  <div class="section-title recommend-title"><div><span class="section-kicker">SMART PICKS · AI推薦／離我近自由切換</span><h2>更多推薦</h2></div><span id="count" class="count-pill"></span></div>
+  <div class="section-title recommend-title"><div><span class="section-kicker">SMART PICKS · AI推薦／離我近／範圍篩選</span><h2>更多推薦</h2></div><span id="count" class="count-pill"></span></div>
   <div id="cards" class="cards"></div>
 </section>
 
@@ -1130,7 +1167,7 @@ footer{font-size:11px}
   <div class="settings-inner">
     <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V5.3 保留推薦平衡，並新增「離我近」排序；定位只用於當次距離計算，不會存進資料庫。</p>
+  <p class="meta">V5.4 保留「離我近」，並新增 5／10／20／50 km 與不限距離範圍；定位只用於當次距離計算。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -1173,7 +1210,7 @@ footer{font-size:11px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V5.3</footer>
+<footer>雲嘉南週末去哪玩 · V5.4</footer>
 
 <script>
 (function(){
@@ -1295,8 +1332,9 @@ var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光�
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var currentUserCoord=null;
 var locationState="idle";
+var nearbyRadius=20;
 var showExpiredItems=false;
-var feedMeta={version:"內建 V5.3",updated:"2026-09-27"};
+var feedMeta={version:"內建 V5.4",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -1356,7 +1394,7 @@ function readCachedArray(key){
 function loadData(){
   var best=null,bestKey="內建資料";
 
-  /* V5.3 起固定用 ynDataCurrent；若尚未存在，從舊版本中找「筆數最多」的資料搬過來。
+  /* V5.4 起固定用 ynDataCurrent；若尚未存在，從舊版本中找「筆數最多」的資料搬過來。
      這可自動找回 V4.6 的 1353 筆，而不是被 V4.7 的少量內建資料覆蓋。 */
   var keys=[DATA_KEY].concat(LEGACY_DATA_KEYS);
   keys.forEach(function(key){
@@ -1587,7 +1625,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V5.3：活動必須同時符合
+  // V5.4：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -1941,7 +1979,7 @@ function diversifyRecommendations(items){
       var t=s.type||"其他";
       var isActivity=t==="活動";
 
-      /* V5.3 硬規則：首頁前 8 張，活動絕不連續。 */
+      /* V5.4 硬規則：首頁前 8 張，活動絕不連續。 */
       if(pos<8&&lastType==="活動"&&isActivity)continue;
 
       /* 第一輪優先讓任何類型都不要連續。
@@ -2015,7 +2053,12 @@ function list(){
     a=diversifyRecommendations(a);
   }
   if(sort==="附近"){
-    a=currentUserCoord?nearbySort(a):diversifyRecommendations(a);
+    if(currentUserCoord){
+      a=a.filter(withinNearbyRadius);
+      a=nearbySort(a);
+    }else{
+      a=diversifyRecommendations(a);
+    }
   }
   if(sort==="熱度"){
     a.sort(function(a,b){
@@ -2353,10 +2396,87 @@ function setNearbyHint(msg,kind){
   el.className="nearby-hint "+(kind||"");
 }
 
+function nearbyRadiusText(){
+  return nearbyRadius==="all"?"不限距離":nearbyRadius+" km 內";
+}
+
+function syncNearbyRange(){
+  var box=$("nearbyRange");
+  if(!box)return;
+
+  var show=sort==="附近";
+  box.classList.toggle("hidden",!show);
+
+  [].forEach.call(box.querySelectorAll("button"),function(b){
+    var raw=b.getAttribute("data-km");
+    var active=(nearbyRadius==="all"&&raw==="all")||
+      (nearbyRadius!=="all"&&Number(raw)===Number(nearbyRadius));
+    b.classList.toggle("active",active);
+  });
+}
+
+function withinNearbyRadius(s){
+  if(sort!=="附近"||!currentUserCoord)return true;
+  if(nearbyRadius==="all")return true;
+
+  var d=itemDistanceKm(s);
+  if(d==null)return false;
+  return d<=Number(nearbyRadius);
+}
+
+function nearbyMatchCount(items){
+  if(!currentUserCoord)return 0;
+  return (items||data||[]).filter(function(s){
+    if(isExpired(s))return false;
+    if(city!=="全部"&&s.city!==city)return false;
+    if(source!=="全部"&&sourceList(s).indexOf(source)<0)return false;
+    if(!matchFilter(s))return false;
+
+    var q=query.toLowerCase();
+    if(q){
+      var hay=[s.name,s.city,s.type,s.place,s.why,(s.tags||[]).join(" ")].join(" ").toLowerCase();
+      if(hay.indexOf(q)<0)return false;
+    }
+
+    return withinNearbyRadius(s);
+  }).length;
+}
+
+function refreshNearbyHint(){
+  if(sort!=="附近"){
+    setNearbyHint("");
+    syncNearbyRange();
+    return;
+  }
+
+  syncNearbyRange();
+
+  if(locationState==="loading"){
+    setNearbyHint("📍 正在取得目前位置…","loading");
+    return;
+  }
+
+  if(!currentUserCoord){
+    setNearbyHint("📍 尚未取得位置。","loading");
+    return;
+  }
+
+  var count=nearbyMatchCount(data);
+  var note=nearbyRadius==="all"
+    ?"已依距離由近到遠排列"
+    :"找到 "+count+" 筆 "+nearbyRadiusText();
+
+  setNearbyHint(
+    "📍 已定位｜"+note+"；部分資料為鄉鎮中心估算。",
+    "ok"
+  );
+}
+
+
 function requestUserLocation(){
   if(currentUserCoord){
     locationState="ready";
-    setNearbyHint("📍 已定位｜依距離由近到遠；部分資料為鄉鎮中心估算。","ok");
+    refreshNearbyHint();
     render();
     return;
   }
@@ -2380,7 +2500,7 @@ function requestUserLocation(){
         Number(pos.coords.longitude)
       ];
       locationState="ready";
-      setNearbyHint("📍 已定位｜依距離由近到遠；部分資料為鄉鎮中心估算。","ok");
+      refreshNearbyHint();
       render();
     },
     function(err){
@@ -2857,6 +2977,7 @@ function render(){
   for(var k in favs)if(favs[k])c++;
   $("fc").textContent=c;
   $("count").textContent=a.length+" 筆";
+  if(sort==="附近")refreshNearbyHint();
   box.innerHTML="";
 
   if(!a.length){
@@ -3068,14 +3189,27 @@ function init(){
       syncSortButtons();
 
       if(v==="附近"){
+        syncNearbyRange();
         requestUserLocation();
         render();
       }else{
         setNearbyHint("");
+        syncNearbyRange();
         render();
       }
     };
   });
+
+  [].forEach.call(document.querySelectorAll("#nearbyRange button"),function(b){
+    b.onclick=function(){
+      var raw=this.getAttribute("data-km");
+      nearbyRadius=raw==="all"?"all":Number(raw);
+      syncNearbyRange();
+      render();
+    };
+  });
+
+  syncNearbyRange();
 
   $("search").oninput=function(){query=this.value;render()};
 
@@ -3171,9 +3305,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V5.3",updated:"2026-09-27"};
+    feedMeta={version:"內建 V5.4",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V5.3 內建資料。";
+    $("msg").textContent="已恢復 V5.4 內建資料。";
     refreshHealth();
     render();
   };
@@ -3190,7 +3324,7 @@ function init(){
 
   $("useDefaultFeed").onclick=function(){
     $("feedUrl").value="weekly_feed.json";
-    $("syncMsg").textContent="已填入預設 weekly_feed.json。V5.3 會把遠端資料與手機既有資料合併，不再因版本更新丟失資料。";
+    $("syncMsg").textContent="已填入預設 weekly_feed.json。V5.4 會把遠端資料與手機既有資料合併，不再因版本更新丟失資料。";
   };
 
   $("showExpired").onclick=function(){
