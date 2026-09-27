@@ -11,7 +11,7 @@
 <link rel="manifest" href="./manifest.json">
 <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
 <link rel="apple-touch-icon" href="./icon-192.png">
-<title>雲嘉南週末去哪玩 V4.7</title>
+<title>雲嘉南週末去哪玩 V4.8</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -94,7 +94,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 .source-note{font-size:12px;color:var(--muted);margin-top:4px}
 .eventdate{margin:8px 0;padding:8px 10px;border-radius:10px;background:#fff5df;color:#7a5412;font-size:13px;font-weight:800}
 
-/* ===== V4.7 手機 App 版面 ===== */
+/* ===== V4.8 手機 App 版面 ===== */
 html{scroll-behavior:smooth}
 body{padding-bottom:78px}
 header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94)}
@@ -157,7 +157,7 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
 }
 @media(min-width:761px){.mobile-bottom-nav{display:none}}
 
-/* ===== V4.7 Travel App Visual ===== */
+/* ===== V4.8 Travel App Visual ===== */
 :root{
   --bg:#f2f4ef;
   --card:#ffffff;
@@ -423,7 +423,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.7 Photo Cards + Scroll Polish ===== */
+/* ===== V4.8 Photo Cards + Scroll Polish ===== */
 .row,.tabs,.chips{
   -webkit-overflow-scrolling:touch;
   scrollbar-width:none;
@@ -485,7 +485,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.7 Filter + Bottom Dock Polish ===== */
+/* ===== V4.8 Filter + Bottom Dock Polish ===== */
 @media(max-width:640px){
   /* 來源、想去哪：直接完整換行，不再露半顆按鈕 */
   #sources,
@@ -568,7 +568,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.7 Stable Mobile Filter Grid ===== */
+/* ===== V4.8 Stable Mobile Filter Grid ===== */
 @media(max-width:640px){
 
   /* 來源：3 欄固定網格，永遠不會超出螢幕 */
@@ -653,7 +653,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.7 Weekend Featured ===== */
+/* ===== V4.8 Weekend Featured ===== */
 .featured-section{
   margin-top:18px;
 }
@@ -817,7 +817,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.7 Featured Dedupe ===== */
+/* ===== V4.8 Featured Dedupe ===== */
 .featured-sub{
   max-width:250px;
 }
@@ -826,7 +826,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.7 Official Activity Visuals ===== */
+/* ===== V4.8 Official Activity Visuals ===== */
 .poster-badge{
   position:absolute;
   left:14px;
@@ -979,7 +979,7 @@ footer{font-size:11px}
   <div class="settings-inner">
     <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V4.7 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V4.8 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -1022,11 +1022,104 @@ footer{font-size:11px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V4.7</footer>
+<footer>雲嘉南週末去哪玩 · V4.8</footer>
 
 <script>
 (function(){
 var campusSeed=[{"id":"campus-yunlin-yuntech","city":"雲林","name":"國立雲林科技大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":84,"updated":"2026-09-27","tags":["校園","戶外","拍照","生態","免費"],"place":"斗六市","q":"國立雲林科技大學 雲林縣斗六市","why":"校內有雲夢湖、青青草原、生態專區與多處校園景觀，適合散步與拍照。","url":"https://gallery.yuntech.edu.tw/dir/1604"},{"id":"campus-yunlin-nfu","city":"雲林","name":"國立虎尾科技大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":78,"updated":"2026-09-27","tags":["校園","戶外","拍照","免費"],"place":"虎尾鎮","q":"國立虎尾科技大學 雲林縣虎尾鎮","why":"校方設有校園景觀專區，包含校門、校園建築與飛機意象等特色景觀。","url":"https://nfu.edu.tw/zh_tw/about/gallery/%E6%A0%A1%E5%9C%92%E6%99%AF%E8%A7%80-988561"},{"id":"campus-chiayi-ccu","city":"嘉義","name":"國立中正大學","e":"🏫","type":"校園","mapQuery":"國立中正大學 嘉義縣民雄鄉大學路一段168號","src":"官方","sources":["官方"],"heat":90,"updated":"2026-09-27","tags":["校園","戶外","拍照","湖景","免費"],"place":"民雄鄉","q":"國立中正大學 嘉義縣民雄鄉","why":"寧靜湖、拱橋、草坪與綠樹是代表性校園景觀，適合散步與拍照。","url":"https://ccu-navigation.ccu.edu.tw/p/426-1253-19.php?Lang=zh-tw"},{"id":"campus-chiayi-ncyu-lantan","city":"嘉義","name":"國立嘉義大學蘭潭校區","e":"🏫","type":"校園","mapQuery":"國立嘉義大學蘭潭校區 嘉義市東區學府路300號","src":"官方","sources":["官方"],"heat":82,"updated":"2026-09-27","tags":["校園","戶外","親子","生態","免費"],"place":"嘉義市","q":"國立嘉義大學蘭潭校區 嘉義市","why":"蘭潭校區有嘉大植物園、昆蟲館與農業相關教學場域，適合親子與校園散步。","url":"https://www.ncyu.edu.tw/ncyu/Subject/Detail/5776?nodeId=552"},{"id":"campus-chiayi-nhu","city":"嘉義","name":"南華大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":82,"updated":"2026-09-27","tags":["校園","戶外","拍照","生態","免費"],"place":"大林鎮","q":"南華大學 嘉義縣大林鎮","why":"校園有森林大學特色、大片綠地與多處校園景點，適合悠閒散步。","url":"https://www3.nhu.edu.tw/Web/Pages?mid=2603&n=%E6%A0%A1%E5%9C%92%E6%99%AF%E9%BB%9E&v=1"},{"id":"campus-tainan-ncku","city":"台南","name":"國立成功大學光復校區","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":92,"updated":"2026-09-27","tags":["校園","戶外","拍照","文化","古蹟","免費"],"place":"東區","q":"國立成功大學光復校區 台南市","why":"榕園、成功湖與歷史建築群是成大代表性景觀，也有校園古蹟導覽資源。","url":"https://virtualcampustour.ossd.ncku.edu.tw/"},{"id":"campus-tainan-tnnua","city":"台南","name":"國立臺南藝術大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":88,"updated":"2026-09-27","tags":["校園","戶外","拍照","藝術","湖景","免費"],"place":"官田區","q":"國立臺南藝術大學 台南市官田區","why":"鄰近烏山頭水庫，校內南湖、藝川與藝術建築形成獨特山水校園景觀。","url":"https://www.tnnua.edu.tw/p/412-1000-1045.php?Lang=zh-tw"}];
+
+var weekendEventSeed=[
+  {
+    id:"official-tainan-mattauw-2026",
+    city:"台南",
+    name:"2026 Mattauw 大地藝術季",
+    e:"🎨",
+    type:"活動",
+    src:"官方",
+    sources:["官方"],
+    heat:90,
+    updated:"2026-09-27",
+    tags:["活動","藝術","戶外","拍照","本週末"],
+    place:"麻豆區・曾文流域多展區",
+    q:"總爺藝文中心 台南市麻豆區",
+    start:"2026-09-05",
+    end:"2026-12-06",
+    open_weekdays:[0,3,4,5,6],
+    why:"2026 Mattauw 大地藝術季於曾文流域多個展區展開，週三至週日開放，適合安排半日或一日藝術散策。",
+    url:"https://mattauw2026.art/",
+    image:"https://mattauw2026.art/wp-content/uploads/2026/07/Mattauw2026_%E4%B8%BB%E8%A6%96%E8%A6%BA_1920.jpg",
+    image_credit:"2026 Mattauw 大地藝術季",
+    image_license:"官方主視覺",
+    image_source:"https://mattauw2026.art/",
+    image_fit:"contain",
+    image_bg:"#f3efd9"
+  },
+  {
+    id:"official-yunlin-puppet-2026",
+    city:"雲林",
+    name:"2026雲林國際偶戲節",
+    e:"🎭",
+    type:"活動",
+    src:"官方",
+    sources:["官方"],
+    heat:95,
+    updated:"2026-09-27",
+    tags:["活動","文化","親子","表演"],
+    place:"虎尾鎮・雲林縣立田徑場／農博公園",
+    q:"雲林縣立田徑場 虎尾",
+    start:"2026-09-29",
+    end:"2026-10-11",
+    why:"2026雲林國際偶戲節 9/29 至 10/11 登場，包含國際偶戲、金掌獎競演、親子戲臺與跨界演出。",
+    url:"https://content.yunlin.gov.tw/News_Content.aspx?n=1438&s=607864&sms=9780"
+  },
+  {
+    id:"official-chiayi-zengwen-concert-2026",
+    city:"嘉義",
+    name:"2026曾文水庫峽谷音樂會",
+    e:"🎶",
+    type:"活動",
+    src:"官方",
+    sources:["官方"],
+    heat:80,
+    updated:"2026-09-27",
+    tags:["活動","音樂","戶外"],
+    place:"大埔鄉・曾文水庫",
+    q:"曾文水庫賞鷹平台 嘉義縣大埔鄉",
+    start:"2026-11-06",
+    end:"2026-11-07",
+    occurrences:["2026-11-06","2026-11-07"],
+    why:"峽谷音樂會實際演出日期為 11/6、11/7；App 不再把 9/1～11/9 的宣傳／抽獎期間誤判成每個週末都有音樂會。",
+    url:"https://www.siraya-nsa.gov.tw/zh-tw/event/calendardetail/14374",
+    image:"https://www.siraya-nsa.gov.tw/image/101534/1024x768",
+    image_credit:"西拉雅國家風景區管理處",
+    image_license:"官方活動主視覺",
+    image_source:"https://www.siraya-nsa.gov.tw/zh-tw/event/calendardetail/14374"
+  },
+  {
+    id:"official-tainan-5cool-2026",
+    city:"台南",
+    name:"2026仙境西拉雅 環騎5COOL",
+    e:"🚴",
+    type:"活動",
+    src:"官方",
+    sources:["官方"],
+    heat:86,
+    updated:"2026-09-27",
+    tags:["活動","戶外","自行車","親子"],
+    place:"官田區・西拉雅官田遊客中心",
+    q:"西拉雅國家風景區管理處 官田遊客中心",
+    start:"2026-10-25",
+    end:"2026-11-23",
+    occurrences:["2026-10-25","2026-10-26","2026-11-07","2026-11-22","2026-11-23"],
+    why:"主要 9/19、9/20 活動已結束；後續仍有 10/25～10/26、11/7、11/22～11/23 等系列行程。",
+    url:"https://www.siraya-nsa.gov.tw/zh-tw/event/calendardetail/14372",
+    image:"https://www.siraya-nsa.gov.tw/image/100977/1024x768",
+    image_credit:"西拉雅國家風景區管理處",
+    image_license:"官方活動主視覺",
+    image_source:"https://www.siraya-nsa.gov.tw/zh-tw/event/calendardetail/14372"
+  }
+];
+
 var seed=[
 {id:1,city:"雲林",name:"古坑綠色隧道",e:"🌳",type:"景點",src:"社群",sources:["社群"],heat:88,updated:"2026-08-10",tags:["親子","戶外","免費"],place:"古坑鄉",q:"古坑綠色隧道",why:"週末散步、親子與市集型行程容易搭配。"},
 {id:2,city:"雲林",name:"雲林 TPASS 走拍挑戰",e:"🚉",type:"活動",src:"官方",sources:["官方"],heat:83,updated:"2026-08-10",tags:["親子","戶外"],place:"雲林縣",q:"雲林縣",why:"活動至 2026/09/10，可用公共運輸分次踩點。",url:"https://content.yunlin.gov.tw/News_Content.aspx?n=1437&s=594801"},
@@ -1044,13 +1137,13 @@ var seed=[
 {id:14,city:"台南",name:"奇美食品幸福工廠",e:"🥟",type:"觀光工廠",src:"官方",sources:["官方"],heat:93,updated:"2026-05-22",tags:["親子","美食","室內","雨天"],place:"仁德區",q:"奇美食品幸福工廠",why:"食品文化與互動體驗豐富，適合家庭及雨天備案。"},
 {id:15,city:"台南",name:"瓜瓜園地瓜生態故事館",e:"🍠",type:"觀光工廠",src:"官方",sources:["官方"],heat:89,updated:"2026-05-22",tags:["親子","美食","室內"],place:"新化區",q:"瓜瓜園地瓜生態故事館",why:"以地瓜產業為主題，可認識台灣農產與食品加工。"},
 {id:16,city:"台南",name:"萬國通路創意觀光工廠",e:"🧳",type:"觀光工廠",src:"官方",sources:["官方"],heat:87,updated:"2026-05-22",tags:["親子","室內","雨天"],place:"歸仁區",q:"萬國通路創意觀光工廠",why:"認識行李箱製造與產業發展，適合親子室內行程。"}
-].concat(campusSeed);
+].concat(weekendEventSeed,campusSeed);
 
 var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V4.7",updated:"2026-09-27"};
+var feedMeta={version:"內建 V4.8",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -1069,13 +1162,68 @@ function sourceBadges(s){
   }).join("");
 }
 
-function loadData(){
-  try{
-    var x=JSON.parse(localStorage.getItem("ynData47")||"null");
-    data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
-  }catch(e){data=JSON.parse(JSON.stringify(seed))}
+var DATA_KEY="ynDataCurrent";
+var LEGACY_DATA_KEYS=[
+  "ynData47","ynData46","ynData45","ynData44","ynData43","ynData42","ynData41","ynData40",
+  "ynData38","ynData37","ynData36","ynData35","ynData34","ynData33","ynData32","ynData31",
+  "ynData30","ynData29","ynData28","ynData27","ynData26","ynData25","ynData24","ynData23",
+  "ynData22","ynData21","ynData20"
+];
+
+function canonicalizeItem(s){
+  if(!s||typeof s!=="object")return s;
+  var x={};
+  Object.keys(s).forEach(function(k){x[k]=s[k]});
+
+  x.start=x.start||x.start_date||x.event_start||x.date_start||x.activity_start||x.begin||"";
+  x.end=x.end||x.end_date||x.event_end||x.date_end||x.activity_end||x.finish||"";
+
+  if(!x.image){
+    x.image=x.image_url||x.poster||x.poster_url||x.cover||x.cover_url||x.photo||x.photo_url||x.picture||x.thumbnail||"";
+  }
+  if(!x.image_source)x.image_source=x.poster_source||x.photo_source||x.source_url||"";
+  if(!x.image_credit)x.image_credit=x.poster_credit||x.photo_credit||"";
+  if(!x.image_license)x.image_license=x.poster_license||x.photo_license||"";
+
+  return x;
 }
-function saveData(){try{localStorage.setItem("ynData47",JSON.stringify(data))}catch(e){}}
+
+function prepareDataset(arr){
+  var base=Array.isArray(arr)?arr.map(canonicalizeItem):[];
+  return dedupe(JSON.parse(JSON.stringify(seed)).concat(base));
+}
+
+function readCachedArray(key){
+  try{
+    var x=JSON.parse(localStorage.getItem(key)||"null");
+    return Array.isArray(x)&&x.length?x:null;
+  }catch(e){return null}
+}
+
+function loadData(){
+  var best=null,bestKey="內建資料";
+
+  /* V4.8 起固定用 ynDataCurrent；若尚未存在，從舊版本中找「筆數最多」的資料搬過來。
+     這可自動找回 V4.6 的 1353 筆，而不是被 V4.7 的少量內建資料覆蓋。 */
+  var keys=[DATA_KEY].concat(LEGACY_DATA_KEYS);
+  keys.forEach(function(key){
+    var arr=readCachedArray(key);
+    if(arr && (!best || arr.length>best.length)){
+      best=arr;
+      bestKey=key;
+    }
+  });
+
+  data=prepareDataset(best||[]);
+  try{
+    localStorage.setItem(DATA_KEY,JSON.stringify(data));
+    localStorage.setItem("ynDataMigratedFrom",bestKey);
+  }catch(e){}
+}
+
+function saveData(){
+  try{localStorage.setItem(DATA_KEY,JSON.stringify(data))}catch(e){}
+}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -1137,32 +1285,129 @@ function getThisWeekendRange(){
   return {start:sat,end:sun};
 }
 
+var KNOWN_EVENT_SCHEDULES=[
+  {
+    keys:["曾文水庫峽谷音樂會","峽谷音樂會"],
+    occurrences:["2026-11-06","2026-11-07"]
+  },
+  {
+    keys:["環騎5COOL","5COOL","仙境西拉雅"],
+    occurrences:["2026-09-19","2026-09-20","2026-10-25","2026-10-26","2026-11-07","2026-11-22","2026-11-23"]
+  },
+  {
+    keys:["Mattauw","大地藝術季","曲流擺"],
+    start:"2026-09-05",
+    end:"2026-12-06",
+    weekdays:[0,3,4,5,6]
+  },
+  {
+    keys:["雲林國際偶戲節"],
+    start:"2026-09-29",
+    end:"2026-10-11"
+  }
+];
+
+function knownEventSchedule(s){
+  var name=String((s&&s.name)||"").toLowerCase();
+  for(var i=0;i<KNOWN_EVENT_SCHEDULES.length;i++){
+    var row=KNOWN_EVENT_SCHEDULES[i];
+    for(var j=0;j<row.keys.length;j++){
+      if(name.indexOf(String(row.keys[j]).toLowerCase())>=0)return row;
+    }
+  }
+  return null;
+}
+
+function occurrenceOverlap(v,range){
+  if(!v)return false;
+  if(typeof v==="string"){
+    var d=normDate(v);
+    if(!d)return false;
+    d.setHours(12,0,0,0);
+    return d>=range.start&&d<=range.end;
+  }
+  if(typeof v==="object"){
+    var a=normDate(v.start||v.date||"");
+    var b=normDate(v.end||v.start||v.date||"");
+    if(!a&&!b)return false;
+    if(a)a.setHours(0,0,0,0);
+    if(b)b.setHours(23,59,59,999);
+    return (!a||a<=range.end)&&(!b||b>=range.start);
+  }
+  return false;
+}
+
+function scheduleActiveOnDate(sched,d){
+  if(!sched)return false;
+
+  if(Array.isArray(sched.occurrences)){
+    for(var i=0;i<sched.occurrences.length;i++){
+      var one={start:new Date(d),end:new Date(d)};
+      one.start.setHours(0,0,0,0);
+      one.end.setHours(23,59,59,999);
+      if(occurrenceOverlap(sched.occurrences[i],one))return true;
+    }
+    return false;
+  }
+
+  var a=normDate(sched.start||"");
+  var b=normDate(sched.end||"");
+  if(a){a.setHours(0,0,0,0);if(d<a)return false}
+  if(b){b.setHours(23,59,59,999);if(d>b)return false}
+
+  if(Array.isArray(sched.weekdays)&&sched.weekdays.length){
+    return sched.weekdays.indexOf(d.getDay())>=0;
+  }
+
+  return !!(a||b);
+}
+
+function effectiveSchedule(s){
+  if(!s)return null;
+
+  if(Array.isArray(s.occurrences)&&s.occurrences.length){
+    return {occurrences:s.occurrences};
+  }
+
+  if(Array.isArray(s.open_weekdays)&&s.open_weekdays.length){
+    return {start:s.start,end:s.end,weekdays:s.open_weekdays};
+  }
+
+  var known=knownEventSchedule(s);
+  if(known)return known;
+
+  return null;
+}
+
 function isThisWeekendEvent(s){
   if(!s||s.type!=="活動")return false;
 
   var range=getThisWeekendRange();
+  var sched=effectiveSchedule(s);
+
+  /* 有精準排程就一定使用精準排程，不再退回「大範圍活動期間」誤判。 */
+  if(sched){
+    var d=new Date(range.start);
+    while(d<=range.end){
+      if(scheduleActiveOnDate(sched,d))return true;
+      d.setDate(d.getDate()+1);
+    }
+    return false;
+  }
+
   var start=normDate(s.start);
   var end=normDate(s.end);
 
   if(start)start.setHours(0,0,0,0);
   if(end)end.setHours(23,59,59,999);
 
-  // 有完整起訖日期：只要活動期間與本週末有重疊就算。
-  if(start&&end){
-    return start<=range.end&&end>=range.start;
-  }
-
-  // 只有單一日期時，必須落在本週末。
-  if(start){
-    return start>=range.start&&start<=range.end;
-  }
-
-  if(end){
-    return end>=range.start&&end<=range.end;
-  }
+  if(start&&end)return start<=range.end&&end>=range.start;
+  if(start)return start>=range.start&&start<=range.end;
+  if(end)return end>=range.start&&end<=range.end;
 
   return false;
 }
+
 function isExpired(s){
   if(s.type!=="活動"||!s.end)return false;
   var e=normDate(s.end);
@@ -1189,7 +1434,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V4.7：活動必須同時符合
+  // V4.8：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -1222,11 +1467,41 @@ function isTravelFriendlyEvent(s){
   return true;
 }
 
+function nextScheduledDate(s){
+  var now=new Date();
+  now.setHours(0,0,0,0);
+
+  var sched=effectiveSchedule(s);
+  if(sched&&Array.isArray(sched.occurrences)){
+    var found=[];
+    sched.occurrences.forEach(function(v){
+      var d=normDate(typeof v==="string"?v:(v&&v.start)||"");
+      if(d){
+        d.setHours(0,0,0,0);
+        if(d>=now)found.push(d);
+      }
+    });
+    found.sort(function(a,b){return a-b});
+    if(found.length)return found[0];
+  }
+
+  if(sched&&Array.isArray(sched.weekdays)){
+    var d=new Date(now);
+    for(var i=0;i<120;i++){
+      if(scheduleActiveOnDate(sched,d))return new Date(d);
+      d.setDate(d.getDate()+1);
+    }
+  }
+
+  return normDate(s.start||s.end);
+}
+
 function eventDaysUntil(s){
-  var d=normDate(s.start||s.end);
+  var d=nextScheduledDate(s);
   if(!d)return 9999;
   var now=new Date();
   now.setHours(0,0,0,0);
+  d.setHours(0,0,0,0);
   return Math.round((d-now)/86400000);
 }
 
@@ -1384,7 +1659,11 @@ function normalizeFeed(x){
     version:(x&&x.version)||"remote",
     updated:(x&&x.updated)||new Date().toISOString().slice(0,10)
   };
-  return dedupe(campusSeed.concat(items));
+  return dedupe(
+    weekendEventSeed
+      .concat(campusSeed)
+      .concat(items.map(canonicalizeItem))
+  );
 }
 
 function list(){
@@ -2190,10 +2469,15 @@ function syncFeed(url,auto){
     })
     .then(function(x){
       if(!validFeed(x))throw new Error("資料格式不正確");
-      data=normalizeFeed(x);
+      var incoming=normalizeFeed(x);
+      if(!incoming||!incoming.length)throw new Error("遠端資料為空");
+
+      /* 遠端更新採合併：保留既有大資料庫，再用新資料更新/補充。
+         這樣 weekly_feed 暫時只含少量活動時，也不會把 1353 筆資料洗掉。 */
+      data=dedupe((data||[]).concat(incoming));
+      saveData();
 
       try{
-        localStorage.setItem("ynData47",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -2324,9 +2608,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V4.7",updated:"2026-09-27"};
+    feedMeta={version:"內建 V4.8",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V4.7 內建資料。";
+    $("msg").textContent="已恢復 V4.8 內建資料。";
     refreshHealth();
     render();
   };
@@ -2343,7 +2627,7 @@ function init(){
 
   $("useDefaultFeed").onclick=function(){
     $("feedUrl").value="weekly_feed.json";
-    $("syncMsg").textContent="已填入預設 weekly_feed.json。GitHub Pages 會直接讀取同資料夾的 weekly_feed.json。";
+    $("syncMsg").textContent="已填入預設 weekly_feed.json。V4.8 會把遠端資料與手機既有資料合併，不再因版本更新丟失資料。";
   };
 
   $("showExpired").onclick=function(){
