@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>雲嘉南週末去哪玩 V3.2</title>
+<title>雲嘉南週末去哪玩 V3.3</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -99,7 +99,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 <main>
 <section class="hero">
   <div>
-    <span class="badge">V3.2</span>
+    <span class="badge">V3.3</span>
     <h2>官方資料＋社群熱門訊號，合併成不重複的旅遊資料庫。</h2>
     <p>同一景點只顯示一張卡片，但可同時被「官方」與「社群熱門」篩選找到。</p>
   </div>
@@ -112,7 +112,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 
 <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V3.2 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V3.3 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -165,7 +165,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 <section class="planner">
   <span class="badge">✨ AI 行程</span>
   <h2>幫我安排熱門行程</h2>
-  <p>依縣市、類型、日期與旅遊適合度組合行程；結果會顯示日期、簡短地點、導航、詳情與來源，並可一鍵開啟整段 Google Maps 路線。</p>
+  <p>依縣市、類型、日期與旅遊適合度組合行程；結果會顯示日期、簡短地點、導航、詳情與來源，並可一鍵開啟「目前位置 → 第1站 → 第2站」Google Maps 路線。</p>
   <div class="row">
     <select id="pc"><option>嘉義</option><option>雲林</option><option>台南</option></select>
     <select id="pt"><option>親子</option><option>美食</option><option>戶外</option><option>室內</option><option>免費</option><option>觀光工廠</option><option>校園</option><option>活動</option><option>本週末</option></select>
@@ -197,11 +197,11 @@ footer{text-align:center;color:var(--muted);padding:35px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V3.2</footer>
+<footer>雲嘉南週末去哪玩 · V3.3</footer>
 
 <script>
 (function(){
-var campusSeed=[{"id":"campus-yunlin-yuntech","city":"雲林","name":"國立雲林科技大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":84,"updated":"2026-09-27","tags":["校園","戶外","拍照","生態","免費"],"place":"斗六市","q":"國立雲林科技大學","why":"校內有雲夢湖、青青草原、生態專區與多處校園景觀，適合散步與拍照。","url":"https://gallery.yuntech.edu.tw/dir/1604"},{"id":"campus-yunlin-nfu","city":"雲林","name":"國立虎尾科技大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":78,"updated":"2026-09-27","tags":["校園","戶外","拍照","免費"],"place":"虎尾鎮","q":"國立虎尾科技大學","why":"校方設有校園景觀專區，包含校門、校園建築與飛機意象等特色景觀。","url":"https://nfu.edu.tw/zh_tw/about/gallery/%E6%A0%A1%E5%9C%92%E6%99%AF%E8%A7%80-988561"},{"id":"campus-chiayi-ccu","city":"嘉義","name":"國立中正大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":90,"updated":"2026-09-27","tags":["校園","戶外","拍照","湖景","免費"],"place":"民雄鄉","q":"國立中正大學 寧靜湖","why":"寧靜湖、拱橋、草坪與綠樹是代表性校園景觀，適合散步與拍照。","url":"https://ccu-navigation.ccu.edu.tw/p/426-1253-19.php?Lang=zh-tw"},{"id":"campus-chiayi-ncyu-lantan","city":"嘉義","name":"國立嘉義大學蘭潭校區","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":82,"updated":"2026-09-27","tags":["校園","戶外","親子","生態","免費"],"place":"嘉義市","q":"國立嘉義大學 蘭潭校區","why":"蘭潭校區有嘉大植物園、昆蟲館與農業相關教學場域，適合親子與校園散步。","url":"https://www.ncyu.edu.tw/ncyu/Subject/Detail/5776?nodeId=552"},{"id":"campus-chiayi-nhu","city":"嘉義","name":"南華大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":82,"updated":"2026-09-27","tags":["校園","戶外","拍照","生態","免費"],"place":"大林鎮","q":"南華大學","why":"校園有森林大學特色、大片綠地與多處校園景點，適合悠閒散步。","url":"https://www3.nhu.edu.tw/Web/Pages?mid=2603&n=%E6%A0%A1%E5%9C%92%E6%99%AF%E9%BB%9E&v=1"},{"id":"campus-tainan-ncku","city":"台南","name":"國立成功大學光復校區","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":92,"updated":"2026-09-27","tags":["校園","戶外","拍照","文化","古蹟","免費"],"place":"東區","q":"成功大學 光復校區 榕園","why":"榕園、成功湖與歷史建築群是成大代表性景觀，也有校園古蹟導覽資源。","url":"https://virtualcampustour.ossd.ncku.edu.tw/"},{"id":"campus-tainan-tnnua","city":"台南","name":"國立臺南藝術大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":88,"updated":"2026-09-27","tags":["校園","戶外","拍照","藝術","湖景","免費"],"place":"官田區","q":"國立臺南藝術大學","why":"鄰近烏山頭水庫，校內南湖、藝川與藝術建築形成獨特山水校園景觀。","url":"https://www.tnnua.edu.tw/p/412-1000-1045.php?Lang=zh-tw"}];
+var campusSeed=[{"id":"campus-yunlin-yuntech","city":"雲林","name":"國立雲林科技大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":84,"updated":"2026-09-27","tags":["校園","戶外","拍照","生態","免費"],"place":"斗六市","q":"國立雲林科技大學 雲林縣斗六市","why":"校內有雲夢湖、青青草原、生態專區與多處校園景觀，適合散步與拍照。","url":"https://gallery.yuntech.edu.tw/dir/1604"},{"id":"campus-yunlin-nfu","city":"雲林","name":"國立虎尾科技大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":78,"updated":"2026-09-27","tags":["校園","戶外","拍照","免費"],"place":"虎尾鎮","q":"國立虎尾科技大學 雲林縣虎尾鎮","why":"校方設有校園景觀專區，包含校門、校園建築與飛機意象等特色景觀。","url":"https://nfu.edu.tw/zh_tw/about/gallery/%E6%A0%A1%E5%9C%92%E6%99%AF%E8%A7%80-988561"},{"id":"campus-chiayi-ccu","city":"嘉義","name":"國立中正大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":90,"updated":"2026-09-27","tags":["校園","戶外","拍照","湖景","免費"],"place":"民雄鄉","q":"國立中正大學 嘉義縣民雄鄉","why":"寧靜湖、拱橋、草坪與綠樹是代表性校園景觀，適合散步與拍照。","url":"https://ccu-navigation.ccu.edu.tw/p/426-1253-19.php?Lang=zh-tw"},{"id":"campus-chiayi-ncyu-lantan","city":"嘉義","name":"國立嘉義大學蘭潭校區","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":82,"updated":"2026-09-27","tags":["校園","戶外","親子","生態","免費"],"place":"嘉義市","q":"國立嘉義大學蘭潭校區 嘉義市","why":"蘭潭校區有嘉大植物園、昆蟲館與農業相關教學場域，適合親子與校園散步。","url":"https://www.ncyu.edu.tw/ncyu/Subject/Detail/5776?nodeId=552"},{"id":"campus-chiayi-nhu","city":"嘉義","name":"南華大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":82,"updated":"2026-09-27","tags":["校園","戶外","拍照","生態","免費"],"place":"大林鎮","q":"南華大學 嘉義縣大林鎮","why":"校園有森林大學特色、大片綠地與多處校園景點，適合悠閒散步。","url":"https://www3.nhu.edu.tw/Web/Pages?mid=2603&n=%E6%A0%A1%E5%9C%92%E6%99%AF%E9%BB%9E&v=1"},{"id":"campus-tainan-ncku","city":"台南","name":"國立成功大學光復校區","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":92,"updated":"2026-09-27","tags":["校園","戶外","拍照","文化","古蹟","免費"],"place":"東區","q":"國立成功大學光復校區 台南市","why":"榕園、成功湖與歷史建築群是成大代表性景觀，也有校園古蹟導覽資源。","url":"https://virtualcampustour.ossd.ncku.edu.tw/"},{"id":"campus-tainan-tnnua","city":"台南","name":"國立臺南藝術大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":88,"updated":"2026-09-27","tags":["校園","戶外","拍照","藝術","湖景","免費"],"place":"官田區","q":"國立臺南藝術大學 台南市官田區","why":"鄰近烏山頭水庫，校內南湖、藝川與藝術建築形成獨特山水校園景觀。","url":"https://www.tnnua.edu.tw/p/412-1000-1045.php?Lang=zh-tw"}];
 var seed=[
 {id:1,city:"雲林",name:"古坑綠色隧道",e:"🌳",type:"景點",src:"社群",sources:["社群"],heat:88,updated:"2026-08-10",tags:["親子","戶外","免費"],place:"古坑鄉",q:"古坑綠色隧道",why:"週末散步、親子與市集型行程容易搭配。"},
 {id:2,city:"雲林",name:"雲林 TPASS 走拍挑戰",e:"🚉",type:"活動",src:"官方",sources:["官方"],heat:83,updated:"2026-08-10",tags:["親子","戶外"],place:"雲林縣",q:"雲林縣",why:"活動至 2026/09/10，可用公共運輸分次踩點。",url:"https://content.yunlin.gov.tw/News_Content.aspx?n=1437&s=594801"},
@@ -225,7 +225,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V3.2",updated:"2026-09-27"};
+var feedMeta={version:"內建 V3.3",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -246,11 +246,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData32")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData33")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData32",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData33",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -364,7 +364,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V3.2：活動必須同時符合
+  // V3.3：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -596,12 +596,20 @@ function nav(s){
 
 function routeQuery(s){
   if(!s)return "";
+
+  // 校園路線優先使用「完整校名＋地區」，
+  // 避免 Google Maps 把寧靜湖、宿舍區等子地點當成整所學校。
+  if(s.type==="校園"){
+    return [s.name,shortPlace(s)].filter(Boolean).join(" ");
+  }
+
   return s.q||([s.name,s.place,s.city].filter(Boolean).join(" "))||s.name||"";
 }
 
 function openPlanRoute(stops){
   if(!Array.isArray(stops)||!stops.length)return;
 
+  // 不指定 origin，Google Maps 會以使用者目前位置作為起點。
   if(stops.length===1){
     var dest=encodeURIComponent(routeQuery(stops[0]));
     window.open(
@@ -611,12 +619,12 @@ function openPlanRoute(stops){
     return;
   }
 
-  var origin=encodeURIComponent(routeQuery(stops[0]));
+  var waypoint=encodeURIComponent(routeQuery(stops[0]));
   var destination=encodeURIComponent(routeQuery(stops[stops.length-1]));
 
   window.open(
-    "https://www.google.com/maps/dir/?api=1&origin="+origin+
-    "&destination="+destination+"&travelmode=driving",
+    "https://www.google.com/maps/dir/?api=1&destination="+destination+
+    "&waypoints="+waypoint+"&travelmode=driving",
     "_blank"
   );
 }
@@ -836,7 +844,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData32",JSON.stringify(data));
+        localStorage.setItem("ynData33",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -927,7 +935,7 @@ function init(){
       a.map(function(s,i){return planCardHtml(s,i)}).join("")+
       '<button id="startPlanRoute" class="plan-route">🚗 開始整段行程</button>'+
       '<div class="plan-route-note">'+
-        (a.length===1?'從目前位置導航到這一站':'Google Maps 路線：第 1 站 → 第 2 站')+
+        (a.length===1?'從目前位置導航到這一站':'Google Maps 路線：目前位置 → 第 1 站 → 第 2 站')+
       '</div>';
 
     $("startPlanRoute").onclick=function(){
@@ -985,9 +993,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V3.2",updated:"2026-09-27"};
+    feedMeta={version:"內建 V3.3",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V3.2 內建資料。";
+    $("msg").textContent="已恢復 V3.3 內建資料。";
     refreshHealth();
     render();
   };
