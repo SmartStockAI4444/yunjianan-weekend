@@ -1,0 +1,336 @@
+name: Build Android APK
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android SDK 35
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Generate Android project
+        shell: bash
+        run: |
+          set -e
+          rm -rf _android_build
+          mkdir -p _android_build/app/src/main/java/com/yunjianan/weekend
+          mkdir -p _android_build/app/src/main/res/values
+          mkdir -p _android_build/app/src/main/res/drawable
+          mkdir -p _android_build/app/src/main/assets
+
+          cp index.html _android_build/app/src/main/assets/index.html
+          cp weekly_feed.json _android_build/app/src/main/assets/weekly_feed.json
+          [ -f manifest.json ] && cp manifest.json _android_build/app/src/main/assets/manifest.json || true
+          [ -f icon-192.png ] && cp icon-192.png _android_build/app/src/main/assets/icon-192.png || true
+          [ -f icon-512.png ] && cp icon-512.png _android_build/app/src/main/assets/icon-512.png || true
+
+          if [ -f icon-512.png ]; then
+            cp icon-512.png _android_build/app/src/main/res/drawable/app_icon.png
+          else
+            cp icon-192.png _android_build/app/src/main/res/drawable/app_icon.png
+          fi
+
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path("_android_build/app/src/main/assets/index.html")
+          s=p.read_text(encoding="utf-8")
+          s=s.replace("<head>", '<head>\n<script>window.__NATIVE_ANDROID_APP__=true;</script>', 1)
+          s=s.replace(
+              'function isStandaloneApp(){\n  return window.matchMedia("(display-mode: standalone)").matches ||\n    window.navigator.standalone===true;\n}',
+              'function isStandaloneApp(){\n  return window.__NATIVE_ANDROID_APP__===true ||\n    window.matchMedia("(display-mode: standalone)").matches ||\n    window.navigator.standalone===true;\n}',
+              1
+          )
+          s=s.replace(
+              '  if("serviceWorker" in navigator){\n    window.addEventListener("load",function(){\n      navigator.serviceWorker.register("./service-worker.js").catch(function(){});\n    });\n  }',
+              '  if(!window.__NATIVE_ANDROID_APP__ && "serviceWorker" in navigator){\n    window.addEventListener("load",function(){\n      navigator.serviceWorker.register("./service-worker.js").catch(function(){});\n    });\n  }',
+              1
+          )
+          s=s.replace(
+              "<script>\n(function(){",
+              '<script>\nif(window.__NATIVE_ANDROID_APP__){\n  window.open=function(url){\n    if(url) window.location.href=url;\n    return null;\n  };\n}\n(function(){',
+              1
+          )
+          p.write_text(s,encoding="utf-8")
+          PY
+
+          cat > _android_build/settings.gradle <<'EOF'
+          pluginManagement {
+              repositories {
+                  google()
+                  mavenCentral()
+                  gradlePluginPortal()
+              }
+          }
+          dependencyResolutionManagement {
+              repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+              repositories {
+                  google()
+                  mavenCentral()
+              }
+          }
+          rootProject.name = "YunJiaNanWeekend"
+          include(":app")
+          EOF
+
+          cat > _android_build/build.gradle <<'EOF'
+          plugins {
+              id 'com.android.application' version '8.7.3' apply false
+          }
+          EOF
+
+          cat > _android_build/gradle.properties <<'EOF'
+          org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
+          android.useAndroidX=true
+          android.nonTransitiveRClass=true
+          EOF
+
+          cat > _android_build/app/build.gradle <<'EOF'
+          plugins {
+              id 'com.android.application'
+          }
+
+          android {
+              namespace 'com.yunjianan.weekend'
+              compileSdk 35
+
+              defaultConfig {
+                  applicationId "com.yunjianan.weekend"
+                  minSdk 26
+                  targetSdk 35
+                  versionCode 1
+                  versionName "5.5-native-1"
+              }
+
+              buildTypes {
+                  release {
+                      minifyEnabled false
+                      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+                  }
+              }
+
+              compileOptions {
+                  sourceCompatibility JavaVersion.VERSION_17
+                  targetCompatibility JavaVersion.VERSION_17
+              }
+          }
+
+          dependencies {
+              implementation 'androidx.webkit:webkit:1.12.1'
+          }
+          EOF
+
+          echo '# no custom rules' > _android_build/app/proguard-rules.pro
+
+          cat > _android_build/app/src/main/res/values/styles.xml <<'EOF'
+          <?xml version="1.0" encoding="utf-8"?>
+          <resources>
+              <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+                  <item name="android:fontFamily">sans</item>
+                  <item name="android:colorAccent">#1F6B4F</item>
+                  <item name="android:statusBarColor">#1F6B4F</item>
+                  <item name="android:navigationBarColor">#000000</item>
+                  <item name="android:windowLightStatusBar">false</item>
+                  <item name="android:windowBackground">#F5F7F4</item>
+              </style>
+          </resources>
+          EOF
+
+          cat > _android_build/app/src/main/AndroidManifest.xml <<'EOF'
+          <?xml version="1.0" encoding="utf-8"?>
+          <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+              <uses-permission android:name="android.permission.INTERNET" />
+              <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+              <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+              <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+              <uses-feature android:name="android.hardware.location" android:required="false" />
+              <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+
+              <application
+                  android:allowBackup="true"
+                  android:icon="@drawable/app_icon"
+                  android:label="雲嘉南週末"
+                  android:supportsRtl="true"
+                  android:theme="@style/AppTheme"
+                  android:usesCleartextTraffic="false">
+
+                  <activity
+                      android:name=".MainActivity"
+                      android:exported="true"
+                      android:screenOrientation="portrait">
+                      <intent-filter>
+                          <action android:name="android.intent.action.MAIN" />
+                          <category android:name="android.intent.category.LAUNCHER" />
+                      </intent-filter>
+                  </activity>
+              </application>
+          </manifest>
+          EOF
+
+          cat > _android_build/app/src/main/java/com/yunjianan/weekend/MainActivity.java <<'EOF'
+          package com.yunjianan.weekend;
+
+          import android.Manifest;
+          import android.app.Activity;
+          import android.content.Intent;
+          import android.content.pm.PackageManager;
+          import android.net.Uri;
+          import android.os.Bundle;
+          import android.view.ViewGroup;
+          import android.webkit.GeolocationPermissions;
+          import android.webkit.WebChromeClient;
+          import android.webkit.WebResourceRequest;
+          import android.webkit.WebResourceResponse;
+          import android.webkit.WebSettings;
+          import android.webkit.WebView;
+          import android.webkit.WebViewClient;
+          import android.widget.Toast;
+          import androidx.webkit.WebViewAssetLoader;
+
+          public class MainActivity extends Activity {
+              private static final int LOCATION_PERMISSION_REQUEST = 4105;
+              private WebView webView;
+              private GeolocationPermissions.Callback pendingGeoCallback;
+              private String pendingGeoOrigin;
+
+              @Override
+              protected void onCreate(Bundle savedInstanceState) {
+                  super.onCreate(savedInstanceState);
+
+                  webView = new WebView(this);
+                  webView.setLayoutParams(new ViewGroup.LayoutParams(
+                          ViewGroup.LayoutParams.MATCH_PARENT,
+                          ViewGroup.LayoutParams.MATCH_PARENT
+                  ));
+                  setContentView(webView);
+
+                  WebSettings settings = webView.getSettings();
+                  settings.setJavaScriptEnabled(true);
+                  settings.setDomStorageEnabled(true);
+                  settings.setDatabaseEnabled(true);
+                  settings.setGeolocationEnabled(true);
+                  settings.setAllowFileAccess(false);
+                  settings.setAllowContentAccess(true);
+                  settings.setMediaPlaybackRequiresUserGesture(false);
+
+                  WebViewAssetLoader assetLoader = new WebViewAssetLoader.Builder()
+                          .addPathHandler("/assets/", new WebViewAssetLoader.AssetsPathHandler(this))
+                          .build();
+
+                  webView.setWebViewClient(new WebViewClient() {
+                      @Override
+                      public WebResourceResponse shouldInterceptRequest(WebView view, WebResourceRequest request) {
+                          return assetLoader.shouldInterceptRequest(request.getUrl());
+                      }
+
+                      @Override
+                      public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                          Uri uri = request.getUrl();
+                          if ("appassets.androidplatform.net".equalsIgnoreCase(uri.getHost())) {
+                              return false;
+                          }
+                          try {
+                              startActivity(new Intent(Intent.ACTION_VIEW, uri));
+                          } catch (Exception e) {
+                              Toast.makeText(MainActivity.this, "無法開啟外部連結", Toast.LENGTH_SHORT).show();
+                          }
+                          return true;
+                      }
+                  });
+
+                  webView.setWebChromeClient(new WebChromeClient() {
+                      @Override
+                      public void onGeolocationPermissionsShowPrompt(
+                              String origin,
+                              GeolocationPermissions.Callback callback
+                      ) {
+                          if (hasAnyLocationPermission()) {
+                              callback.invoke(origin, true, false);
+                              return;
+                          }
+
+                          pendingGeoOrigin = origin;
+                          pendingGeoCallback = callback;
+
+                          requestPermissions(
+                                  new String[] {
+                                          Manifest.permission.ACCESS_FINE_LOCATION,
+                                          Manifest.permission.ACCESS_COARSE_LOCATION
+                                  },
+                                  LOCATION_PERMISSION_REQUEST
+                          );
+                      }
+                  });
+
+                  webView.loadUrl("https://appassets.androidplatform.net/assets/index.html");
+              }
+
+              private boolean hasAnyLocationPermission() {
+                  return checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)
+                          == PackageManager.PERMISSION_GRANTED
+                          || checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION)
+                          == PackageManager.PERMISSION_GRANTED;
+              }
+
+              @Override
+              public void onRequestPermissionsResult(
+                      int requestCode,
+                      String[] permissions,
+                      int[] grantResults
+              ) {
+                  super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+                  if (requestCode != LOCATION_PERMISSION_REQUEST) return;
+
+                  boolean granted = hasAnyLocationPermission();
+
+                  if (pendingGeoCallback != null && pendingGeoOrigin != null) {
+                      pendingGeoCallback.invoke(pendingGeoOrigin, granted, false);
+                  }
+
+                  pendingGeoCallback = null;
+                  pendingGeoOrigin = null;
+
+                  if (!granted) {
+                      Toast.makeText(this, "定位未允許；仍可使用手動位置", Toast.LENGTH_LONG).show();
+                  }
+              }
+
+              @Override
+              public void onBackPressed() {
+                  if (webView != null && webView.canGoBack()) webView.goBack();
+                  else super.onBackPressed();
+              }
+          }
+          EOF
+
+      - name: Build APK
+        run: gradle -p _android_build assembleDebug --stacktrace
+
+      - name: Rename APK
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5.apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: YunJiaNanWeekend-V5.5-APK
+          path: YunJiaNanWeekend-V5.5.apk
+          if-no-files-found: error
