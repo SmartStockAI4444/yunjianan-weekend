@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>雲嘉南週末去哪玩 V2.7</title>
+<title>雲嘉南週末去哪玩 V2.8</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -83,7 +83,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 <main>
 <section class="hero">
   <div>
-    <span class="badge">V2.7</span>
+    <span class="badge">V2.8</span>
     <h2>官方資料＋社群熱門訊號，合併成不重複的旅遊資料庫。</h2>
     <p>同一景點只顯示一張卡片，但可同時被「官方」與「社群熱門」篩選找到。</p>
   </div>
@@ -96,7 +96,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 
 <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V2.7 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V2.8 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -181,7 +181,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V2.7</footer>
+<footer>雲嘉南週末去哪玩 · V2.8</footer>
 
 <script>
 (function(){
@@ -209,7 +209,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V2.7",updated:"2026-09-27"};
+var feedMeta={version:"內建 V2.8",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -230,11 +230,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData27")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData28")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData27",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData28",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -348,7 +348,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V2.7：活動必須同時符合
+  // V2.8：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -456,12 +456,83 @@ function eventRecommendScore(s){
   return score;
 }
 
+function dedupeName(name){
+  return String(name||"")
+    .toLowerCase()
+    // 忽略西元年份：2026曾文...、曾文...2026 視為同一名稱
+    .replace(/(?:19|20)\d{2}年?/g,"")
+    // 忽略民國年份，如 115年
+    .replace(/(^|[^\d])1\d{2}年/g,"$1")
+    // 忽略常見括號、標點與空白
+    .replace(/[「」『』【】（）()\[\]［］〈〉《》·•・\-—_.,，。:：、\/\\\s]/g,"")
+    .trim();
+}
+
+function mergeSources(a,b){
+  var x=sourceList(a),y=sourceList(b),out=[];
+  x.concat(y).forEach(function(v){
+    if(v&&out.indexOf(v)<0)out.push(v);
+  });
+  return out;
+}
+
+function mergeDuplicate(a,b){
+  var keep=a;
+
+  // 優先保留資訊較完整的一筆
+  var scoreA=(a.url?2:0)+(a.why?2:0)+(a.start?1:0)+(a.end?1:0)+(a.place?1:0);
+  var scoreB=(b.url?2:0)+(b.why?2:0)+(b.start?1:0)+(b.end?1:0)+(b.place?1:0);
+  if(scoreB>scoreA)keep=b;
+
+  var other=keep===a?b:a;
+  var merged={};
+  Object.keys(other||{}).forEach(function(k){merged[k]=other[k]});
+  Object.keys(keep||{}).forEach(function(k){merged[k]=keep[k]});
+
+  merged.sources=mergeSources(a,b);
+  if(merged.sources.length)merged.src=merged.sources[0];
+
+  merged.heat=Math.max(Number(a.heat||0),Number(b.heat||0));
+  if(a.social_heat!=null||b.social_heat!=null){
+    merged.social_heat=Math.max(Number(a.social_heat||0),Number(b.social_heat||0));
+  }
+
+  if(!merged.url)merged.url=a.url||b.url||"";
+  if(!merged.social_url)merged.social_url=a.social_url||b.social_url||"";
+  if(!merged.social_why)merged.social_why=a.social_why||b.social_why||"";
+  if(!merged.why)merged.why=a.why||b.why||"";
+
+  // 起訖日期取較完整的範圍
+  var starts=[a.start,b.start].filter(Boolean).sort();
+  var ends=[a.end,b.end].filter(Boolean).sort();
+  if(starts.length)merged.start=starts[0];
+  if(ends.length)merged.end=ends[ends.length-1];
+
+  return merged;
+}
+
 function dedupe(arr){
   var seen={},out=[];
+
   arr.forEach(function(s){
-    var key=((s.city||"")+"|"+(s.name||"")+"|"+(s.start||"")).toLowerCase().replace(/\s+/g,"");
-    if(!seen[key]){seen[key]=1;out.push(s)}
+    var nameKey=dedupeName(s.name);
+    var placeKey=String(s.place||"").toLowerCase().replace(/\s+/g,"");
+
+    // 活動：同縣市＋去年份後名稱相同，就視為同一活動。
+    // 其他景點：多加地區判斷，避免不同地點同名被誤合併。
+    var key=s.type==="活動"
+      ? ((s.city||"")+"|活動|"+nameKey)
+      : ((s.city||"")+"|"+(s.type||"")+"|"+nameKey+"|"+placeKey);
+
+    if(seen[key]==null){
+      seen[key]=out.length;
+      out.push(s);
+    }else{
+      var idx=seen[key];
+      out[idx]=mergeDuplicate(out[idx],s);
+    }
   });
+
   return out;
 }
 
@@ -665,7 +736,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData27",JSON.stringify(data));
+        localStorage.setItem("ynData28",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -774,9 +845,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V2.7",updated:"2026-09-27"};
+    feedMeta={version:"內建 V2.8",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V2.7 內建資料。";
+    $("msg").textContent="已恢復 V2.8 內建資料。";
     refreshHealth();
     render();
   };
