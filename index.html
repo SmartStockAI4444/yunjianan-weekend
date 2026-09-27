@@ -11,7 +11,7 @@
 <link rel="manifest" href="./manifest.json">
 <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
 <link rel="apple-touch-icon" href="./icon-192.png">
-<title>雲嘉南週末去哪玩 V4.2</title>
+<title>雲嘉南週末去哪玩 V4.3</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -94,7 +94,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 .source-note{font-size:12px;color:var(--muted);margin-top:4px}
 .eventdate{margin:8px 0;padding:8px 10px;border-radius:10px;background:#fff5df;color:#7a5412;font-size:13px;font-weight:800}
 
-/* ===== V4.2 手機 App 版面 ===== */
+/* ===== V4.3 手機 App 版面 ===== */
 html{scroll-behavior:smooth}
 body{padding-bottom:78px}
 header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94)}
@@ -157,7 +157,7 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
 }
 @media(min-width:761px){.mobile-bottom-nav{display:none}}
 
-/* ===== V4.2 Travel App Visual ===== */
+/* ===== V4.3 Travel App Visual ===== */
 :root{
   --bg:#f2f4ef;
   --card:#ffffff;
@@ -423,7 +423,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.2 Photo Cards + Scroll Polish ===== */
+/* ===== V4.3 Photo Cards + Scroll Polish ===== */
 .row,.tabs,.chips{
   -webkit-overflow-scrolling:touch;
   scrollbar-width:none;
@@ -481,6 +481,89 @@ footer{font-size:11px}
     background:linear-gradient(90deg,rgba(242,244,239,0),#f2f4ef 42%);
     color:#819087;font-size:24px;font-weight:800;
     pointer-events:none
+  }
+}
+
+
+/* ===== V4.3 Filter + Bottom Dock Polish ===== */
+@media(max-width:640px){
+  /* 來源、想去哪：直接完整換行，不再露半顆按鈕 */
+  #sources,
+  #filters{
+    display:flex;
+    flex-wrap:wrap;
+    overflow:visible;
+    scroll-snap-type:none;
+    gap:7px;
+    padding:7px 0 5px;
+    margin-left:0;
+    margin-right:0;
+  }
+
+  #sources:after,
+  #filters:after{
+    content:none !important;
+    display:none !important;
+  }
+
+  #sources > button,
+  #filters > button{
+    flex:0 0 auto;
+    max-width:100%;
+    scroll-snap-align:none;
+  }
+
+  #sources > button{
+    padding:8px 11px;
+    font-size:12px;
+  }
+
+  #filters > button{
+    padding:9px 13px;
+    font-size:13px;
+  }
+
+  /* 排序維持單排，但保留完整右側空間 */
+  #sorts{
+    padding-right:10px;
+  }
+
+  /* 底部 App Dock 縮薄 */
+  .mobile-bottom-nav{
+    left:12px;
+    right:12px;
+    bottom:8px;
+    padding:5px 7px calc(5px + env(safe-area-inset-bottom));
+    border-radius:20px;
+  }
+
+  .mobile-bottom-nav button{
+    min-height:44px;
+    padding:5px 3px 4px;
+    border-radius:14px;
+    font-size:10px;
+    gap:1px;
+  }
+
+  .mobile-bottom-nav .nav-ico{
+    font-size:18px;
+  }
+
+  /* 最後內容不會被底部 Dock 擋住 */
+  main{
+    padding-bottom:142px;
+  }
+
+  footer{
+    padding-bottom:118px;
+  }
+
+  body{
+    padding-bottom:0;
+  }
+
+  html{
+    scroll-padding-bottom:96px;
   }
 }
 
@@ -554,7 +637,7 @@ footer{font-size:11px}
 </div>
 
 <section>
-  <div class="section-title mood-title"><div><span class="section-kicker">TRAVEL MOOD</span><h2>你今天想去哪？</h2></div><button id="clear" class="pill clear-btn">清除</button></div>
+  <div class="section-title mood-title"><div><span class="section-kicker">TRAVEL MOOD · 可複選</span><h2>你今天想去哪？</h2></div><button id="clear" class="pill clear-btn">清除</button></div>
   <div id="filters" class="chips"></div>
 </section>
 
@@ -585,7 +668,7 @@ footer{font-size:11px}
   <div class="settings-inner">
     <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V4.2 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V4.3 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -628,7 +711,7 @@ footer{font-size:11px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V4.2</footer>
+<footer>雲嘉南週末去哪玩 · V4.3</footer>
 
 <script>
 (function(){
@@ -656,7 +739,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V4.2",updated:"2026-09-27"};
+var feedMeta={version:"內建 V4.3",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -677,11 +760,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData42")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData43")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData42",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData43",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -795,7 +878,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V4.2：活動必須同時符合
+  // V4.3：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -1576,7 +1659,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData42",JSON.stringify(data));
+        localStorage.setItem("ynData43",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -1707,9 +1790,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V4.2",updated:"2026-09-27"};
+    feedMeta={version:"內建 V4.3",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V4.2 內建資料。";
+    $("msg").textContent="已恢復 V4.3 內建資料。";
     refreshHealth();
     render();
   };
