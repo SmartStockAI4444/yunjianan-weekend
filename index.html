@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>雲嘉南週末去哪玩 V3.7</title>
+<title>雲嘉南週末去哪玩 V3.8</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -85,59 +85,87 @@ footer{text-align:center;color:var(--muted);padding:35px}
 .danger{color:#a33a2b;font-weight:800}
 .source-note{font-size:12px;color:var(--muted);margin-top:4px}
 .eventdate{margin:8px 0;padding:8px 10px;border-radius:10px;background:#fff5df;color:#7a5412;font-size:13px;font-weight:800}
+
+/* ===== V3.8 手機 App 版面 ===== */
+html{scroll-behavior:smooth}
+body{padding-bottom:78px}
+header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94)}
+.app-title{font-size:20px;font-weight:950;line-height:1.15}
+.app-sub{font-size:11px;color:var(--muted);margin-top:3px}
+.hero{min-height:118px;padding:20px;border-radius:20px;align-items:center}
+.hero h2{font-size:22px;margin:6px 0}
+.hero p{font-size:13px;margin:4px 0;line-height:1.45}
+.notice{margin-top:12px}
+.explore-block,.planner,.settings-panel{scroll-margin-top:86px}
+.settings-panel{margin-top:24px;border:1px solid var(--line);border-radius:20px;background:#fff;overflow:hidden}
+.settings-panel>summary{list-style:none;cursor:pointer;padding:18px 20px;font-size:18px;font-weight:900;display:flex;align-items:center;justify-content:space-between}
+.settings-panel>summary::-webkit-details-marker{display:none}
+.settings-panel>summary:after{content:"⌄";font-size:22px;color:var(--muted)}
+.settings-panel[open]>summary:after{content:"⌃"}
+.settings-inner{padding:0 16px 16px}
+.settings-inner .syncbox,.settings-inner .updatebox{margin:10px 0;background:#f9faf8}
+.mobile-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);backdrop-filter:saturate(180%) blur(18px)}
+.mobile-bottom-nav button{border:0;background:transparent;border-radius:12px;padding:7px 4px 5px;color:var(--muted);font-size:11px;font-weight:800;display:flex;flex-direction:column;align-items:center;gap:2px}
+.mobile-bottom-nav .nav-ico{font-size:20px;line-height:1}
+.mobile-bottom-nav button.nav-active{background:var(--soft);color:var(--accent)}
+#sources,#sorts{padding-top:7px;padding-bottom:7px}
+.section-title h2{font-size:20px}
+.search{font-size:16px}
+
 @media(max-width:760px){.cards{grid-template-columns:1fr}.hero h2{font-size:26px}}
 @media(max-width:640px){
+  main{padding:12px}
+  header{padding:11px 14px}
+  .hero{min-height:auto;padding:16px;margin-bottom:10px}
+  .hero h2{font-size:20px}
+  .hero p{font-size:12px}
+  .notice{font-size:12px;padding:10px}
+  .tabs,.row,.chips{gap:7px;padding:8px 0}
+  .pill,.tabs button,.chips button{padding:9px 13px}
+  .section-title{margin-top:8px}
+  .cards{gap:12px}
+  .card{border-radius:17px}
+  .cover{height:92px;font-size:40px}
+  .body{padding:13px}
+  .body h3{font-size:18px}
+  .reason{font-size:13px}
+  .planner{padding:18px;border-radius:20px}
+  .planner h2{font-size:22px;margin:10px 0}
+  .planner p{font-size:13px;line-height:1.55}
   .health{grid-template-columns:1fr 1fr}
   .syncgrid{grid-template-columns:1fr}
   .planner-controls{grid-template-columns:1fr 1fr}
   .planner-controls select,.planner-controls button{min-height:48px;font-size:16px}
+  footer{padding:26px 12px 90px}
 }
+@media(min-width:761px){.mobile-bottom-nav{display:none}}
 </style>
 </head>
 <body>
 <header>
   <div>
-    <div class="eyebrow">AI × 每週自動整理</div>
-    <h1>雲嘉南週末去哪玩</h1>
-    <div class="meta" id="updated">資料版本：載入中</div>
+    <div class="app-title">雲嘉南週末去哪玩</div>
+    <div class="app-sub" id="updated">資料版本：載入中</div>
   </div>
-  <button id="fav" class="icon">♡ <span id="fc">0</span></button>
+  <button id="fav" class="icon" aria-label="收藏">♡ <span id="fc">0</span></button>
 </header>
 
 <main>
-<section class="hero">
+<section class="hero" id="top">
   <div>
-    <span class="badge">V3.7</span>
-    <h2>官方資料＋社群熱門訊號，合併成不重複的旅遊資料庫。</h2>
-    <p>同一景點只顯示一張卡片，但可同時被「官方」與「社群熱門」篩選找到。</p>
+    <span class="badge">V3.8</span>
+    <h2>這個週末，想去哪裡走走？</h2>
+    <p>雲林・嘉義・台南的景點、活動與 AI 行程，一個畫面快速找到。</p>
   </div>
 </section>
 
 <section class="notice">
-  <b>📱 網頁版使用方式：</b>
-  GitHub Pages 上線後直接開網址即可。Android 可從瀏覽器選單使用「加到主畫面」。
+  <b>📱 手機版：</b> V3.8 已優化單手操作；下一階段會加入正式「安裝 App」功能。
 </section>
 
-<section class="syncbox">
-  <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V3.7 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
-  <div class="syncgrid">
-    <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
-    <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
-  </div>
-  <div class="row">
-    <button id="syncNow" class="primary">立即同步</button>
-    <button id="clearFeed" class="pill">清除同步網址</button>
-    <button id="showExpired" class="pill">顯示過期活動</button>
-  </div>
-  <div id="syncMsg" class="meta">目前使用手機內建／快取資料。</div>
-  <div class="health">
-    <div class="box"><div id="hTotal" class="num">0</div><div class="meta">有效資料</div></div>
-    <div class="box"><div id="hExpired" class="num">0</div><div class="meta">過期活動</div></div>
-    <div class="box"><div id="hUpdated" class="num">-</div><div class="meta">資料版本</div></div>
-  </div>
-</section>
 
+
+<section id="explore" class="explore-block">
 <input id="search" class="search" placeholder="🔎 搜尋景點、活動、地區、關鍵字…">
 
 <nav id="cities" class="tabs">
@@ -170,7 +198,9 @@ footer{text-align:center;color:var(--muted);padding:35px}
   <div id="cards" class="cards"></div>
 </section>
 
-<section class="planner">
+</section>
+
+<section class="planner" id="planner">
   <span class="badge">✨ AI 行程</span>
   <h2>幫我安排熱門行程</h2>
   <p>依縣市、類型、日期與旅遊適合度組合行程；半日最多 2 站、一日最多 4 站；AI 會先去除重複景點，再依目前位置與景點距離調整順序，盡量減少繞路。</p>
@@ -183,7 +213,31 @@ footer{text-align:center;color:var(--muted);padding:35px}
   <div id="pr" class="plan-result"></div>
 </section>
 
-<section class="updatebox">
+
+
+<details id="settings" class="settings-panel">
+  <summary>⚙️ 設定與資料</summary>
+  <div class="settings-inner">
+    <section class="syncbox">
+  <h2>☁️ 雲端資料中心</h2>
+  <p class="meta">V3.8 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <div class="syncgrid">
+    <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
+    <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
+  </div>
+  <div class="row">
+    <button id="syncNow" class="primary">立即同步</button>
+    <button id="clearFeed" class="pill">清除同步網址</button>
+    <button id="showExpired" class="pill">顯示過期活動</button>
+  </div>
+  <div id="syncMsg" class="meta">目前使用手機內建／快取資料。</div>
+  <div class="health">
+    <div class="box"><div id="hTotal" class="num">0</div><div class="meta">有效資料</div></div>
+    <div class="box"><div id="hExpired" class="num">0</div><div class="meta">過期活動</div></div>
+    <div class="box"><div id="hUpdated" class="num">-</div><div class="meta">資料版本</div></div>
+  </div>
+</section>
+    <section class="updatebox">
   <h2>🗃️ 資料管理</h2>
   <p class="meta">可匯出目前資料做備份，也可貼入新版 JSON 後更新。</p>
   <div class="row">
@@ -197,6 +251,9 @@ footer{text-align:center;color:var(--muted);padding:35px}
   </div>
   <div id="msg" class="meta"></div>
 </section>
+  </div>
+</details>
+
 </main>
 
 <div id="modal" class="modal hidden">
@@ -206,7 +263,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V3.7</footer>
+<footer>雲嘉南週末去哪玩 · V3.8</footer>
 
 <script>
 (function(){
@@ -234,7 +291,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V3.7",updated:"2026-09-27"};
+var feedMeta={version:"內建 V3.8",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -255,11 +312,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData37")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData38")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData37",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData38",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -373,7 +430,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V3.7：活動必須同時符合
+  // V3.8：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -1079,7 +1136,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData37",JSON.stringify(data));
+        localStorage.setItem("ynData38",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -1129,6 +1186,7 @@ function init(){
   $("fav").onclick=function(){
     favOnly=!favOnly;
     this.classList.toggle("active");
+    if($("bnFav"))$("bnFav").classList.toggle("nav-active",favOnly);
     render();
   };
 
@@ -1209,9 +1267,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V3.7",updated:"2026-09-27"};
+    feedMeta={version:"內建 V3.8",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V3.7 內建資料。";
+    $("msg").textContent="已恢復 V3.8 內建資料。";
     refreshHealth();
     render();
   };
@@ -1244,6 +1302,37 @@ function init(){
     $("syncMsg").textContent="已清除同步網址，保留目前快取資料。";
   };
 
+  function setBottomActive(id){
+    ["bnExplore","bnPlan","bnFav","bnSettings"].forEach(function(x){
+      var el=$(x);
+      if(el)el.classList.toggle("nav-active",x===id);
+    });
+  }
+
+  if($("bnExplore"))$("bnExplore").onclick=function(){
+    favOnly=false;
+    $("fav").classList.remove("active");
+    setBottomActive("bnExplore");
+    $("explore").scrollIntoView({behavior:"smooth",block:"start"});
+    render();
+  };
+  if($("bnPlan"))$("bnPlan").onclick=function(){
+    setBottomActive("bnPlan");
+    $("planner").scrollIntoView({behavior:"smooth",block:"start"});
+  };
+  if($("bnFav"))$("bnFav").onclick=function(){
+    favOnly=true;
+    $("fav").classList.add("active");
+    setBottomActive("bnFav");
+    $("explore").scrollIntoView({behavior:"smooth",block:"start"});
+    render();
+  };
+  if($("bnSettings"))$("bnSettings").onclick=function(){
+    setBottomActive("bnSettings");
+    $("settings").open=true;
+    $("settings").scrollIntoView({behavior:"smooth",block:"start"});
+  };
+
   refreshHealth();
   render();
   if(savedFeed)syncFeed(savedFeed,true);
@@ -1253,5 +1342,13 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
 else init();
 })();
 </script>
+
+<nav class="mobile-bottom-nav" aria-label="主要功能">
+  <button id="bnExplore" class="nav-active"><span class="nav-ico">🧭</span><span>探索</span></button>
+  <button id="bnPlan"><span class="nav-ico">✨</span><span>AI 行程</span></button>
+  <button id="bnFav"><span class="nav-ico">♡</span><span>收藏</span></button>
+  <button id="bnSettings"><span class="nav-ico">⚙️</span><span>設定</span></button>
+</nav>
+
 </body>
 </html>
