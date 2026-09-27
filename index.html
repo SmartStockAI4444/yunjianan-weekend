@@ -11,7 +11,7 @@
 <link rel="manifest" href="./manifest.json">
 <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
 <link rel="apple-touch-icon" href="./icon-192.png">
-<title>雲嘉南週末去哪玩 V5.4</title>
+<title>雲嘉南週末去哪玩 V5.5</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -94,7 +94,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 .source-note{font-size:12px;color:var(--muted);margin-top:4px}
 .eventdate{margin:8px 0;padding:8px 10px;border-radius:10px;background:#fff5df;color:#7a5412;font-size:13px;font-weight:800}
 
-/* ===== V5.4 手機 App 版面 ===== */
+/* ===== V5.5 手機 App 版面 ===== */
 html{scroll-behavior:smooth}
 body{padding-bottom:78px}
 header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94)}
@@ -157,7 +157,7 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
 }
 @media(min-width:761px){.mobile-bottom-nav{display:none}}
 
-/* ===== V5.4 Travel App Visual ===== */
+/* ===== V5.5 Travel App Visual ===== */
 :root{
   --bg:#f2f4ef;
   --card:#ffffff;
@@ -423,7 +423,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.4 Photo Cards + Scroll Polish ===== */
+/* ===== V5.5 Photo Cards + Scroll Polish ===== */
 .row,.tabs,.chips{
   -webkit-overflow-scrolling:touch;
   scrollbar-width:none;
@@ -485,7 +485,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.4 Filter + Bottom Dock Polish ===== */
+/* ===== V5.5 Filter + Bottom Dock Polish ===== */
 @media(max-width:640px){
   /* 來源、想去哪：直接完整換行，不再露半顆按鈕 */
   #sources,
@@ -568,7 +568,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.4 Stable Mobile Filter Grid ===== */
+/* ===== V5.5 Stable Mobile Filter Grid ===== */
 @media(max-width:640px){
 
   /* 來源：3 欄固定網格，永遠不會超出螢幕 */
@@ -653,7 +653,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.4 Weekend Featured ===== */
+/* ===== V5.5 Weekend Featured ===== */
 .featured-section{
   margin-top:18px;
 }
@@ -817,7 +817,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.4 Featured Dedupe ===== */
+/* ===== V5.5 Featured Dedupe ===== */
 .featured-sub{
   max-width:250px;
 }
@@ -826,7 +826,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.4 Official Activity Visuals ===== */
+/* ===== V5.5 Official Activity Visuals ===== */
 .poster-badge{
   position:absolute;
   left:14px;
@@ -867,7 +867,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.4 Weekend Date + Poster Fallback ===== */
+/* ===== V5.5 Weekend Date + Poster Fallback ===== */
 .featured-date{
   align-self:flex-start;
   display:inline-flex;
@@ -971,7 +971,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.4 Nearby Explore ===== */
+/* ===== V5.5 Nearby Explore ===== */
 .nearby-hint{
   margin:3px 2px 5px;
   padding:9px 11px;
@@ -1016,7 +1016,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.4 Nearby Radius ===== */
+/* ===== V5.5 Nearby Radius ===== */
 .nearby-range{
   display:flex;
   gap:7px;
@@ -1043,6 +1043,105 @@ footer{font-size:11px}
 }
 .nearby-range.hidden{
   display:none;
+}
+
+
+/* ===== V5.5 GPS + Manual Location ===== */
+.location-panel{
+  margin:2px 0 9px;
+  padding:12px;
+  border-radius:18px;
+  background:rgba(255,255,255,.78);
+  border:1px solid rgba(34,82,61,.08);
+  box-shadow:0 6px 22px rgba(24,55,42,.05);
+}
+.location-panel.hidden{display:none}
+.location-panel-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  margin-bottom:10px;
+  color:#244438;
+  font-size:12px;
+  font-weight:950;
+}
+.location-source-badge{
+  display:inline-flex;
+  align-items:center;
+  max-width:62%;
+  min-height:26px;
+  padding:0 9px;
+  border-radius:999px;
+  background:#eef2ef;
+  color:#66736d;
+  font-size:10px;
+  font-weight:900;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.location-source-badge.gps{
+  background:#e1f2e9;
+  color:#19704d;
+}
+.location-source-badge.manual{
+  background:#fff0cf;
+  color:#805918;
+}
+.gps-location-btn{
+  width:100%;
+  min-height:42px;
+  border:0;
+  border-radius:13px;
+  background:#17372a;
+  color:#fff;
+  font-size:12px;
+  font-weight:950;
+}
+.manual-location-title{
+  margin:12px 0 7px;
+  color:#66766e;
+  font-size:10px;
+  font-weight:900;
+}
+.manual-location-grid{
+  display:grid;
+  grid-template-columns:1fr 1.25fr auto;
+  gap:7px;
+}
+.manual-location-grid select,
+.manual-location-grid button{
+  min-width:0;
+  height:42px;
+  border:1px solid #dce5df;
+  border-radius:12px;
+  background:#fff;
+  padding:0 9px;
+  color:#1f3129;
+  font-size:11px;
+  font-weight:850;
+}
+.manual-location-grid button{
+  border:0;
+  background:#e6f2eb;
+  color:#1c6b4b;
+  padding:0 12px;
+  font-weight:950;
+}
+.manual-location-note{
+  margin-top:8px;
+  color:#7c8782;
+  font-size:9px;
+  line-height:1.45;
+}
+@media(max-width:420px){
+  .manual-location-grid{
+    grid-template-columns:1fr 1.25fr;
+  }
+  .manual-location-grid button{
+    grid-column:1 / -1;
+  }
 }
 
 </style>
@@ -1122,6 +1221,24 @@ footer{font-size:11px}
   <button data-km="50">50 km</button>
   <button data-km="all">不限</button>
 </div>
+<div id="locationPanel" class="location-panel hidden">
+  <div class="location-panel-head">
+    <span>📍 位置來源</span>
+    <span id="locationSourceBadge" class="location-source-badge">尚未設定</span>
+  </div>
+  <button id="useGpsLocation" class="gps-location-btn">📡 使用手機定位</button>
+  <div class="manual-location-title">或手動選擇目前位置</div>
+  <div class="manual-location-grid">
+    <select id="manualCity" aria-label="縣市">
+      <option value="嘉義">嘉義</option>
+      <option value="雲林">雲林</option>
+      <option value="台南">台南</option>
+    </select>
+    <select id="manualTown" aria-label="鄉鎮市區"></select>
+    <button id="applyManualLocation">套用位置</button>
+  </div>
+  <div class="manual-location-note">手動位置只用來估算「離我近」；Google Maps 導航仍使用手機實際定位。</div>
+</div>
 
 <section>
   <div class="section-title mood-title"><div><span class="section-kicker">TRAVEL MOOD · 可複選</span><h2>你今天想去哪？</h2></div><button id="clear" class="pill clear-btn">清除</button></div>
@@ -1141,7 +1258,7 @@ footer{font-size:11px}
     <div id="featuredCards" class="featured-strip"></div>
   </section>
 
-  <div class="section-title recommend-title"><div><span class="section-kicker">SMART PICKS · AI推薦／離我近／範圍篩選</span><h2>更多推薦</h2></div><span id="count" class="count-pill"></span></div>
+  <div class="section-title recommend-title"><div><span class="section-kicker">SMART PICKS · GPS／手動位置／附近範圍</span><h2>更多推薦</h2></div><span id="count" class="count-pill"></span></div>
   <div id="cards" class="cards"></div>
 </section>
 
@@ -1167,7 +1284,7 @@ footer{font-size:11px}
   <div class="settings-inner">
     <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V5.4 保留「離我近」，並新增 5／10／20／50 km 與不限距離範圍；定位只用於當次距離計算。</p>
+  <p class="meta">V5.5 支援手機定位與手動位置雙模式；PWA 無定位權限時，可直接選雲林／嘉義／台南的鄉鎮市區。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -1210,7 +1327,7 @@ footer{font-size:11px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V5.4</footer>
+<footer>雲嘉南週末去哪玩 · V5.5</footer>
 
 <script>
 (function(){
@@ -1332,9 +1449,12 @@ var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光�
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var currentUserCoord=null;
 var locationState="idle";
+var locationSource="";
+var currentLocationLabel="";
+var manualLocationChoice=null;
 var nearbyRadius=20;
 var showExpiredItems=false;
-var feedMeta={version:"內建 V5.4",updated:"2026-09-27"};
+var feedMeta={version:"內建 V5.5",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -1394,7 +1514,7 @@ function readCachedArray(key){
 function loadData(){
   var best=null,bestKey="內建資料";
 
-  /* V5.4 起固定用 ynDataCurrent；若尚未存在，從舊版本中找「筆數最多」的資料搬過來。
+  /* V5.5 起固定用 ynDataCurrent；若尚未存在，從舊版本中找「筆數最多」的資料搬過來。
      這可自動找回 V4.6 的 1353 筆，而不是被 V4.7 的少量內建資料覆蓋。 */
   var keys=[DATA_KEY].concat(LEGACY_DATA_KEYS);
   keys.forEach(function(key){
@@ -1625,7 +1745,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V5.4：活動必須同時符合
+  // V5.5：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -1979,7 +2099,7 @@ function diversifyRecommendations(items){
       var t=s.type||"其他";
       var isActivity=t==="活動";
 
-      /* V5.4 硬規則：首頁前 8 張，活動絕不連續。 */
+      /* V5.5 硬規則：首頁前 8 張，活動絕不連續。 */
       if(pos<8&&lastType==="活動"&&isActivity)continue;
 
       /* 第一輪優先讓任何類型都不要連續。
@@ -2313,6 +2433,104 @@ var REGION_COORDS={
   }
 };
 
+function manualTownNames(cityName){
+  var region=REGION_COORDS[String(cityName||"")]||{};
+  return Object.keys(region);
+}
+
+function fillManualTownOptions(){
+  var cityEl=$("manualCity"),townEl=$("manualTown");
+  if(!cityEl||!townEl)return;
+
+  var cityName=cityEl.value||"嘉義";
+  var names=manualTownNames(cityName);
+
+  townEl.innerHTML=names.map(function(name){
+    return '<option value="'+name+'">'+name+'</option>';
+  }).join("");
+
+  if(manualLocationChoice &&
+     manualLocationChoice.city===cityName &&
+     names.indexOf(manualLocationChoice.town)>=0){
+    townEl.value=manualLocationChoice.town;
+  }else if(cityName==="嘉義"&&names.indexOf("嘉義市")>=0){
+    townEl.value="嘉義市";
+  }
+}
+
+function saveManualLocation(cityName,townName){
+  try{
+    localStorage.setItem("ynManualLocation",JSON.stringify({
+      city:cityName,
+      town:townName
+    }));
+  }catch(e){}
+}
+
+function loadManualLocation(){
+  try{
+    var x=JSON.parse(localStorage.getItem("ynManualLocation")||"null");
+    if(x&&x.city&&x.town&&REGION_COORDS[x.city]&&REGION_COORDS[x.city][x.town]){
+      manualLocationChoice={city:x.city,town:x.town};
+      return manualLocationChoice;
+    }
+  }catch(e){}
+  return null;
+}
+
+function applyManualLocation(cityName,townName,saveChoice){
+  var region=REGION_COORDS[String(cityName||"")]||{};
+  var coord=region[String(townName||"")];
+  if(!coord)return false;
+
+  currentUserCoord=[coord[0],coord[1]];
+  locationState="ready";
+  locationSource="manual";
+  currentLocationLabel=cityName+"・"+townName;
+  manualLocationChoice={city:cityName,town:townName};
+
+  if(saveChoice!==false)saveManualLocation(cityName,townName);
+
+  syncLocationPanel();
+  refreshNearbyHint();
+  render();
+  return true;
+}
+
+function applySavedManualLocation(){
+  var x=manualLocationChoice||loadManualLocation();
+  if(!x)return false;
+  return applyManualLocation(x.city,x.town,false);
+}
+
+function syncLocationPanel(){
+  var panel=$("locationPanel");
+  if(!panel)return;
+
+  panel.classList.toggle("hidden",sort!=="附近");
+
+  var badge=$("locationSourceBadge");
+  if(badge){
+    if(locationSource==="gps"){
+      badge.textContent="手機定位";
+      badge.className="location-source-badge gps";
+    }else if(locationSource==="manual"){
+      badge.textContent=currentLocationLabel||"手動位置";
+      badge.className="location-source-badge manual";
+    }else{
+      badge.textContent="尚未設定";
+      badge.className="location-source-badge";
+    }
+  }
+
+  var cityEl=$("manualCity"),townEl=$("manualTown");
+  if(cityEl&&manualLocationChoice){
+    cityEl.value=manualLocationChoice.city;
+    fillManualTownOptions();
+    if(townEl)townEl.value=manualLocationChoice.town;
+  }
+}
+
 var PRECISE_COORDS={
   "campus-chiayi-ccu":[23.5622,120.4713],
   "campus-chiayi-ncyu-lantan":[23.4626,120.4836],
@@ -2413,6 +2631,8 @@ function syncNearbyRange(){
       (nearbyRadius!=="all"&&Number(raw)===Number(nearbyRadius));
     b.classList.toggle("active",active);
   });
+
+  syncLocationPanel();
 }
 
 function withinNearbyRadius(s){
@@ -2466,32 +2686,50 @@ function refreshNearbyHint(){
     ?"已依距離由近到遠排列"
     :"找到 "+count+" 筆 "+nearbyRadiusText();
 
+  var sourceText=locationSource==="manual"
+    ?"手動位置："+(currentLocationLabel||"已設定")
+    :"手機定位";
+
   setNearbyHint(
-    "📍 已定位｜"+note+"；部分資料為鄉鎮中心估算。",
+    "📍 "+sourceText+"｜"+note+"；距離為估算值。",
     "ok"
   );
 }
 
 
-function requestUserLocation(){
-  if(currentUserCoord){
+function requestUserLocation(forceGps){
+  /* 若已有手動位置，平常再次進入「離我近」直接沿用；
+     按「使用手機定位」時 forceGps=true 才重新嘗試 GPS。 */
+  if(currentUserCoord&&!forceGps){
     locationState="ready";
+    syncLocationPanel();
     refreshNearbyHint();
     render();
     return;
   }
 
+  if(!forceGps && applySavedManualLocation()){
+    return;
+  }
+
   if(!navigator.geolocation){
     locationState="error";
-    setNearbyHint("此裝置不支援定位，已暫時改回 AI 推薦。","warn");
-    sort="推薦";
-    syncSortButtons();
+    if(applySavedManualLocation())return;
+
+    currentUserCoord=null;
+    locationSource="";
+    currentLocationLabel="";
+    syncLocationPanel();
+    setNearbyHint("⚠️ 此 App 無法取得手機定位，請在下方手動選擇目前位置。","warn");
     render();
     return;
   }
 
   locationState="loading";
-  setNearbyHint("📍 正在取得目前位置…","loading");
+  locationSource="";
+  currentLocationLabel="";
+  syncLocationPanel();
+  setNearbyHint("📍 正在嘗試手機定位；若沒有權限，可直接用下方手動位置。","loading");
 
   navigator.geolocation.getCurrentPosition(
     function(pos){
@@ -2500,24 +2738,43 @@ function requestUserLocation(){
         Number(pos.coords.longitude)
       ];
       locationState="ready";
+      locationSource="gps";
+      currentLocationLabel="手機目前位置";
+      syncLocationPanel();
       refreshNearbyHint();
       render();
     },
     function(err){
       locationState="error";
-      var msg="定位未開啟，已改回 AI 推薦。";
-      if(err&&err.code===1)msg="未允許定位權限，已改回 AI 推薦。";
-      else if(err&&err.code===2)msg="目前無法取得位置，已改回 AI 推薦。";
-      else if(err&&err.code===3)msg="取得位置逾時，已改回 AI 推薦。";
 
-      setNearbyHint("⚠️ "+msg,"warn");
-      sort="推薦";
-      syncSortButtons();
+      if(applySavedManualLocation()){
+        setNearbyHint(
+          "⚠️ 手機定位無法使用，已沿用手動位置："+currentLocationLabel+"。",
+          "warn"
+        );
+        render();
+        return;
+      }
+
+      currentUserCoord=null;
+      locationSource="";
+      currentLocationLabel="";
+      syncLocationPanel();
+
+      var msg="手機定位目前無法使用";
+      if(err&&err.code===1)msg="App 沒有取得定位權限";
+      else if(err&&err.code===2)msg="手機目前無法提供位置";
+      else if(err&&err.code===3)msg="手機定位逾時";
+
+      setNearbyHint(
+        "⚠️ "+msg+"，請直接在下方選擇縣市與鄉鎮市區。",
+        "warn"
+      );
       render();
     },
     {
       enableHighAccuracy:false,
-      timeout:10000,
+      timeout:7000,
       maximumAge:300000
     }
   );
@@ -2584,6 +2841,17 @@ function optimizePlanOrder(stops,startCoord){
 }
 
 function getPlanStartCoord(done){
+  if(currentUserCoord){
+    done(currentUserCoord.slice());
+    return;
+  }
+
+  var saved=manualLocationChoice||loadManualLocation();
+  if(saved&&REGION_COORDS[saved.city]&&REGION_COORDS[saved.city][saved.town]){
+    done(REGION_COORDS[saved.city][saved.town].slice());
+    return;
+  }
+
   if(!navigator.geolocation){
     done(null);
     return;
@@ -3167,6 +3435,7 @@ function syncFeed(url,auto){
 function init(){
   loadData();
   loadFav();
+  loadManualLocation();
 
   fs.forEach(function(n){
     var b=document.createElement("button");
@@ -3190,7 +3459,8 @@ function init(){
 
       if(v==="附近"){
         syncNearbyRange();
-        requestUserLocation();
+        syncLocationPanel();
+        requestUserLocation(false);
         render();
       }else{
         setNearbyHint("");
@@ -3209,7 +3479,37 @@ function init(){
     };
   });
 
+  if($("manualCity")){
+    if(manualLocationChoice)$("manualCity").value=manualLocationChoice.city;
+    fillManualTownOptions();
+
+    $("manualCity").onchange=function(){
+      manualLocationChoice=null;
+      fillManualTownOptions();
+    };
+  }
+
+  if($("useGpsLocation")){
+    $("useGpsLocation").onclick=function(){
+      currentUserCoord=null;
+      locationSource="";
+      currentLocationLabel="";
+      requestUserLocation(true);
+    };
+  }
+
+  if($("applyManualLocation")){
+    $("applyManualLocation").onclick=function(){
+      var c=$("manualCity").value;
+      var t=$("manualTown").value;
+      if(!applyManualLocation(c,t,true)){
+        setNearbyHint("⚠️ 無法套用這個位置，請重新選擇。","warn");
+      }
+    };
+  }
+
   syncNearbyRange();
+  syncLocationPanel();
 
   $("search").oninput=function(){query=this.value;render()};
 
@@ -3305,9 +3605,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V5.4",updated:"2026-09-27"};
+    feedMeta={version:"內建 V5.5",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V5.4 內建資料。";
+    $("msg").textContent="已恢復 V5.5 內建資料。";
     refreshHealth();
     render();
   };
@@ -3324,7 +3624,7 @@ function init(){
 
   $("useDefaultFeed").onclick=function(){
     $("feedUrl").value="weekly_feed.json";
-    $("syncMsg").textContent="已填入預設 weekly_feed.json。V5.4 會把遠端資料與手機既有資料合併，不再因版本更新丟失資料。";
+    $("syncMsg").textContent="已填入預設 weekly_feed.json。V5.5 會把遠端資料與手機既有資料合併，不再因版本更新丟失資料。";
   };
 
   $("showExpired").onclick=function(){
