@@ -1,0 +1,27 @@
+{
+  "id": "./",
+  "name": "雲嘉南週末去哪玩",
+  "short_name": "雲嘉南週末",
+  "description": "每週整理雲林、嘉義、台南的景點、活動與 AI 自由行路線。",
+  "lang": "zh-Hant",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f5f7f4",
+  "theme_color": "#1f6b4f",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

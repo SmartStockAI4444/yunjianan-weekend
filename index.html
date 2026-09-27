@@ -3,7 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>雲嘉南週末去哪玩 V3.8</title>
+<meta name="theme-color" content="#1f6b4f">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="雲嘉南週末">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<title>雲嘉南週末去哪玩 V4.0</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -86,7 +94,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 .source-note{font-size:12px;color:var(--muted);margin-top:4px}
 .eventdate{margin:8px 0;padding:8px 10px;border-radius:10px;background:#fff5df;color:#7a5412;font-size:13px;font-weight:800}
 
-/* ===== V3.8 手機 App 版面 ===== */
+/* ===== V4.0 手機 App 版面 ===== */
 html{scroll-behavior:smooth}
 body{padding-bottom:78px}
 header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94)}
@@ -111,6 +119,15 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
 #sources,#sorts{padding-top:7px;padding-bottom:7px}
 .section-title h2{font-size:20px}
 .search{font-size:16px}
+.install-card{margin-top:12px;background:#e8f2ed;border:1px solid #d8e8df;border-radius:16px;padding:12px 14px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.install-card .install-copy{min-width:0}
+.install-card b{display:block;color:var(--accent);margin-bottom:2px}
+.install-card small{display:block;color:var(--muted);line-height:1.35}
+.install-btn{flex:0 0 auto;border:0;border-radius:12px;background:var(--accent);color:#fff;padding:10px 13px;font-weight:900;white-space:nowrap}
+.install-card.installed{display:none}
+.chips{padding-left:2px;padding-right:2px;scroll-padding-left:2px}
+#filters button:first-child{margin-left:0}
+@media(max-width:640px){.install-card{padding:11px 12px}.install-btn{padding:10px 11px}.chips{margin-left:0}}
 
 @media(max-width:760px){.cards{grid-template-columns:1fr}.hero h2{font-size:26px}}
 @media(max-width:640px){
@@ -153,14 +170,18 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
 <main>
 <section class="hero" id="top">
   <div>
-    <span class="badge">V3.8</span>
+    <span class="badge">V4.0</span>
     <h2>這個週末，想去哪裡走走？</h2>
     <p>雲林・嘉義・台南的景點、活動與 AI 行程，一個畫面快速找到。</p>
   </div>
 </section>
 
-<section class="notice">
-  <b>📱 手機版：</b> V3.8 已優化單手操作；下一階段會加入正式「安裝 App」功能。
+<section id="installCard" class="install-card">
+  <div class="install-copy">
+    <b>📲 安裝「雲嘉南週末」App</b>
+    <small id="installHint">安裝後可從手機桌面直接開啟，並支援基本離線使用。</small>
+  </div>
+  <button id="installApp" class="install-btn">安裝 App</button>
 </section>
 
 
@@ -220,7 +241,7 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
   <div class="settings-inner">
     <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V3.8 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V4.0 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -263,7 +284,7 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V3.8</footer>
+<footer>雲嘉南週末去哪玩 · V4.0</footer>
 
 <script>
 (function(){
@@ -291,7 +312,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V3.8",updated:"2026-09-27"};
+var feedMeta={version:"內建 V4.0",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -312,11 +333,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData38")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData40")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData38",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData40",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -430,7 +451,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V3.8：活動必須同時符合
+  // V4.0：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -1136,7 +1157,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData38",JSON.stringify(data));
+        localStorage.setItem("ynData40",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -1267,9 +1288,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V3.8",updated:"2026-09-27"};
+    feedMeta={version:"內建 V4.0",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V3.8 內建資料。";
+    $("msg").textContent="已恢復 V4.0 內建資料。";
     refreshHealth();
     render();
   };
@@ -1333,9 +1354,78 @@ function init(){
     $("settings").scrollIntoView({behavior:"smooth",block:"start"});
   };
 
+  setupPWA();
   refreshHealth();
   render();
   if(savedFeed)syncFeed(savedFeed,true);
+}
+
+
+var deferredInstallPrompt=null;
+
+function isStandaloneApp(){
+  return window.matchMedia("(display-mode: standalone)").matches ||
+    window.navigator.standalone===true;
+}
+
+function updateInstallUI(){
+  var card=$("installCard"),btn=$("installApp"),hint=$("installHint");
+  if(!card||!btn)return;
+
+  if(isStandaloneApp()){
+    card.classList.add("installed");
+    return;
+  }
+
+  card.classList.remove("installed");
+  if(deferredInstallPrompt){
+    btn.textContent="安裝 App";
+    if(hint)hint.textContent="按一下即可安裝到手機桌面，之後可像一般 App 直接開啟。";
+  }else{
+    btn.textContent="安裝說明";
+    if(hint)hint.textContent="若目前瀏覽器不能直接安裝，請用 Chrome 開啟後選「安裝應用程式」。";
+  }
+}
+
+window.addEventListener("beforeinstallprompt",function(e){
+  e.preventDefault();
+  deferredInstallPrompt=e;
+  updateInstallUI();
+});
+
+window.addEventListener("appinstalled",function(){
+  deferredInstallPrompt=null;
+  updateInstallUI();
+});
+
+function setupPWA(){
+  updateInstallUI();
+
+  if($("installApp")){
+    $("installApp").onclick=function(){
+      if(isStandaloneApp()){
+        updateInstallUI();
+        return;
+      }
+
+      if(deferredInstallPrompt){
+        deferredInstallPrompt.prompt();
+        deferredInstallPrompt.userChoice.then(function(){
+          deferredInstallPrompt=null;
+          updateInstallUI();
+        });
+        return;
+      }
+
+      alert("請用 Chrome 開啟這個網頁，點右上角 ⋮，再選「安裝應用程式」或「加到主畫面」。");
+    };
+  }
+
+  if("serviceWorker" in navigator){
+    window.addEventListener("load",function(){
+      navigator.serviceWorker.register("./service-worker.js").catch(function(){});
+    });
+  }
 }
 
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);
