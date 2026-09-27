@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>雲嘉南週末去哪玩 V3.6</title>
+<title>雲嘉南週末去哪玩 V3.7</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -63,6 +63,7 @@ button,select,input{font:inherit}
 .plan-actions .psource{background:#fff5df;color:#7a5412}
 .plan-route{width:100%;margin-top:14px;border:0;border-radius:14px;padding:13px 16px;background:#fff;color:#1d2520;font-weight:900;font-size:16px}
 .plan-route-note{font-size:12px;color:#cbd1ce;margin-top:7px}
+.plan-opt{font-size:13px;color:#dff3e8;margin:0 0 10px;font-weight:800}
 .updatebox{margin-top:25px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}
 .updatebox textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:12px;padding:12px}
 .modal{position:fixed;inset:0;background:#0007;z-index:20;display:grid;place-items:center;padding:18px}
@@ -106,7 +107,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 <main>
 <section class="hero">
   <div>
-    <span class="badge">V3.6</span>
+    <span class="badge">V3.7</span>
     <h2>官方資料＋社群熱門訊號，合併成不重複的旅遊資料庫。</h2>
     <p>同一景點只顯示一張卡片，但可同時被「官方」與「社群熱門」篩選找到。</p>
   </div>
@@ -119,7 +120,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 
 <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V3.6 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V3.7 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -172,7 +173,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 <section class="planner">
   <span class="badge">✨ AI 行程</span>
   <h2>幫我安排熱門行程</h2>
-  <p>依縣市、類型、日期與旅遊適合度組合行程；半日最多 2 站、一日最多 4 站；AI 會先去除重複景點，再建立完整 Google Maps 路線。</p>
+  <p>依縣市、類型、日期與旅遊適合度組合行程；半日最多 2 站、一日最多 4 站；AI 會先去除重複景點，再依目前位置與景點距離調整順序，盡量減少繞路。</p>
   <div class="planner-controls">
     <select id="pc"><option>嘉義</option><option>雲林</option><option>台南</option></select>
     <select id="pt"><option>親子</option><option>美食</option><option>戶外</option><option>室內</option><option>免費</option><option>觀光工廠</option><option>校園</option><option>活動</option><option>本週末</option></select>
@@ -205,7 +206,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V3.6</footer>
+<footer>雲嘉南週末去哪玩 · V3.7</footer>
 
 <script>
 (function(){
@@ -233,7 +234,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V3.6",updated:"2026-09-27"};
+var feedMeta={version:"內建 V3.7",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -254,11 +255,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData36")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData37")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData36",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData37",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -372,7 +373,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V3.6：活動必須同時符合
+  // V3.7：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -707,6 +708,149 @@ function shortPlace(s){
   return m?m[1]:(city||clean.slice(0,12)||"地點待確認");
 }
 
+var REGION_COORDS={
+  "嘉義":{
+    "嘉義市":[23.4801,120.4491],"東區":[23.4820,120.4690],"西區":[23.4790,120.4350],
+    "民雄鄉":[23.5513,120.4294],"大林鎮":[23.6010,120.4550],"太保市":[23.4592,120.3329],
+    "新港鄉":[23.5519,120.3472],"朴子市":[23.4652,120.2473],"六腳鄉":[23.4930,120.2910],
+    "東石鄉":[23.4600,120.1540],"布袋鎮":[23.3780,120.1660],"義竹鄉":[23.3370,120.2440],
+    "鹿草鄉":[23.4100,120.3070],"水上鄉":[23.4250,120.3970],"中埔鄉":[23.4250,120.5220],
+    "竹崎鄉":[23.5200,120.5500],"梅山鄉":[23.5840,120.5570],"番路鄉":[23.4660,120.5540],
+    "大埔鄉":[23.2990,120.5900],"阿里山鄉":[23.4360,120.7750],"溪口鄉":[23.6030,120.3930]
+  },
+  "雲林":{
+    "斗六市":[23.7070,120.5430],"斗南鎮":[23.6780,120.4780],"虎尾鎮":[23.7090,120.4310],
+    "西螺鎮":[23.8000,120.4660],"古坑鄉":[23.6460,120.5610],"林內鄉":[23.7580,120.6150],
+    "莿桐鄉":[23.7570,120.5020],"大埤鄉":[23.6460,120.4310],"土庫鎮":[23.6770,120.3920],
+    "褒忠鄉":[23.6950,120.3110],"元長鄉":[23.6490,120.3150],"北港鎮":[23.5750,120.3040],
+    "水林鄉":[23.5720,120.2450],"口湖鄉":[23.5820,120.1830],"四湖鄉":[23.6370,120.2250],
+    "臺西鄉":[23.6990,120.1990],"台西鄉":[23.6990,120.1990],"東勢鄉":[23.6750,120.2560],
+    "麥寮鄉":[23.7480,120.2520],"崙背鄉":[23.7590,120.3540],"二崙鄉":[23.7720,120.4140]
+  },
+  "台南":{
+    "中西區":[22.9948,120.1965],"東區":[22.9860,120.2240],"南區":[22.9610,120.1880],
+    "北區":[23.0100,120.2070],"安平區":[22.9940,120.1640],"安南區":[23.0470,120.1840],
+    "永康區":[23.0260,120.2530],"歸仁區":[22.9670,120.2940],"仁德區":[22.9710,120.2520],
+    "新化區":[23.0370,120.3110],"左鎮區":[23.0580,120.4070],"玉井區":[23.1240,120.4610],
+    "楠西區":[23.1780,120.4860],"南化區":[23.0420,120.4770],"官田區":[23.1920,120.3160],
+    "麻豆區":[23.1810,120.2480],"佳里區":[23.1660,120.1770],"西港區":[23.1230,120.2030],
+    "七股區":[23.1430,120.1110],"將軍區":[23.2010,120.1580],"學甲區":[23.2330,120.1800],
+    "北門區":[23.2670,120.1240],"新營區":[23.3060,120.3160],"後壁區":[23.3660,120.3620],
+    "白河區":[23.3490,120.4160],"東山區":[23.3260,120.4040],"六甲區":[23.2280,120.3510],
+    "下營區":[23.2350,120.2640],"柳營區":[23.2780,120.3110],"鹽水區":[23.3210,120.2670],
+    "善化區":[23.1320,120.2970],"大內區":[23.1190,120.3560],"山上區":[23.1020,120.3520],
+    "新市區":[23.0780,120.2950],"安定區":[23.1210,120.2360],"龍崎區":[22.9540,120.3600],
+    "關廟區":[22.9620,120.3270]
+  }
+};
+
+var PRECISE_COORDS={
+  "campus-chiayi-ccu":[23.5622,120.4713],
+  "campus-chiayi-ncyu-lantan":[23.4626,120.4836],
+  "campus-chiayi-nhu":[23.5697,120.4933],
+  "campus-yunlin-yuntech":[23.6960,120.5340],
+  "campus-yunlin-nfu":[23.7032,120.4290],
+  "campus-tainan-ncku":[22.9990,120.2196],
+  "campus-tainan-tnnua":[23.1880,120.3740]
+};
+
+function stopCoord(s){
+  if(!s)return null;
+
+  var lat=Number(s.lat!=null?s.lat:s.latitude);
+  var lng=Number(s.lng!=null?s.lng:(s.lon!=null?s.lon:s.longitude));
+  if(isFinite(lat)&&isFinite(lng)&&Math.abs(lat)<=90&&Math.abs(lng)<=180){
+    return [lat,lng];
+  }
+
+  if(PRECISE_COORDS[String(s.id||"")])return PRECISE_COORDS[String(s.id||"")];
+
+  var txt=[s.mapQuery||"",s.place||"",s.q||"",s.name||"",s.city||""].join(" ");
+  var region=REGION_COORDS[String(s.city||"")]||{};
+  var keys=Object.keys(region).sort(function(a,b){return b.length-a.length});
+
+  for(var i=0;i<keys.length;i++){
+    if(txt.indexOf(keys[i])>=0)return region[keys[i]];
+  }
+  return null;
+}
+
+function geoDistance(a,b){
+  if(!a||!b)return 999999;
+  var R=6371,toRad=Math.PI/180;
+  var dLat=(b[0]-a[0])*toRad,dLng=(b[1]-a[1])*toRad;
+  var x=Math.sin(dLat/2)*Math.sin(dLat/2)+
+    Math.cos(a[0]*toRad)*Math.cos(b[0]*toRad)*
+    Math.sin(dLng/2)*Math.sin(dLng/2);
+  return 2*R*Math.atan2(Math.sqrt(x),Math.sqrt(1-x));
+}
+
+function permuteStops(arr){
+  if(arr.length<=1)return [arr.slice()];
+  var out=[];
+  for(var i=0;i<arr.length;i++){
+    var head=arr[i];
+    var rest=arr.slice(0,i).concat(arr.slice(i+1));
+    permuteStops(rest).forEach(function(p){
+      out.push([head].concat(p));
+    });
+  }
+  return out;
+}
+
+function optimizePlanOrder(stops,startCoord){
+  if(!Array.isArray(stops)||stops.length<2){
+    return {stops:(stops||[]).slice(),mode:"none"};
+  }
+
+  var coords=stops.map(stopCoord);
+  if(coords.some(function(c){return !c})){
+    return {stops:stops.slice(),mode:"heat"};
+  }
+
+  var originalIndex={};
+  stops.forEach(function(s,i){
+    originalIndex[String(s.id||s.name||i)]=i;
+  });
+
+  var best=null,bestCost=Infinity;
+  permuteStops(stops).forEach(function(order){
+    var cost=0;
+    if(startCoord)cost+=geoDistance(startCoord,stopCoord(order[0]));
+
+    for(var i=1;i<order.length;i++){
+      cost+=geoDistance(stopCoord(order[i-1]),stopCoord(order[i]));
+    }
+
+    if(!startCoord){
+      for(var j=0;j<order.length;j++){
+        var idx=originalIndex[String(order[j].id||order[j].name||j)];
+        cost+=Math.abs(idx-j)*0.001;
+      }
+    }
+
+    if(cost<bestCost){
+      bestCost=cost;
+      best=order.slice();
+    }
+  });
+
+  return {stops:best||stops.slice(),mode:startCoord?"location":"distance"};
+}
+
+function getPlanStartCoord(done){
+  if(!navigator.geolocation){
+    done(null);
+    return;
+  }
+
+  navigator.geolocation.getCurrentPosition(
+    function(pos){done([pos.coords.latitude,pos.coords.longitude])},
+    function(){done(null)},
+    {enableHighAccuracy:false,timeout:2500,maximumAge:600000}
+  );
+}
+
 function uniquePlanStops(arr){
   var seen={},out=[];
   (arr||[]).forEach(function(s){
@@ -754,6 +898,52 @@ function planCardHtml(s,i){
       (sourceUrl?'<button class="psource" data-ps="'+i+'">🔗 查看來源</button>':'')+
     '</div>'+
   '</div>';
+}
+
+function renderPlanResult(a,title,maxStops,optMode){
+  var shortage=a.length<maxStops
+    ?'<div class="plan-route-note">目前只有 '+a.length+' 個符合條件的地點，因此不強行湊滿 '+maxStops+' 站。</div>'
+    :"";
+
+  var optText=optMode==="location"
+    ?"🧭 已依目前位置＋景點距離調整順序"
+    :optMode==="distance"
+      ?"🧭 未取得目前位置，已依景點彼此距離調整順序"
+      :optMode==="heat"
+        ?"ℹ️ 部分景點缺少位置資訊，沿用熱門度順序"
+        :"";
+
+  $("pr").innerHTML='<div class="plan-title">'+title+'</div>'+
+    (optText?'<div class="plan-opt">'+optText+'</div>':'')+
+    a.map(function(s,i){return planCardHtml(s,i)}).join("")+
+    '<button id="startPlanRoute" class="plan-route">🚗 開始整段行程</button>'+
+    '<div class="plan-route-note">'+planRouteText(a)+'</div>'+
+    shortage;
+
+  $("startPlanRoute").onclick=function(){openPlanRoute(a)};
+
+  [].forEach.call($("pr").querySelectorAll("[data-pn]"),function(b){
+    b.onclick=function(){
+      var i=Number(this.getAttribute("data-pn"));
+      if(a[i])nav(a[i]);
+    };
+  });
+
+  [].forEach.call($("pr").querySelectorAll("[data-pd]"),function(b){
+    b.onclick=function(){
+      var i=Number(this.getAttribute("data-pd"));
+      if(a[i])detail(a[i].id);
+    };
+  });
+
+  [].forEach.call($("pr").querySelectorAll("[data-ps]"),function(b){
+    b.onclick=function(){
+      var i=Number(this.getAttribute("data-ps"));
+      if(!a[i])return;
+      var u=a[i].url||a[i].social_url||"";
+      if(u)window.open(u,"_blank");
+    };
+  });
 }
 
 function render(){
@@ -889,7 +1079,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData36",JSON.stringify(data));
+        localStorage.setItem("ynData37",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -983,41 +1173,12 @@ function init(){
       return;
     }
 
-    var shortage=a.length<maxStops
-      ?'<div class="plan-route-note">目前只有 '+a.length+' 個符合條件的地點，因此不強行湊滿 '+maxStops+' 站。</div>'
-      :"";
-
     $("pr").innerHTML='<div class="plan-title">'+title+'</div>'+
-      a.map(function(s,i){return planCardHtml(s,i)}).join("")+
-      '<button id="startPlanRoute" class="plan-route">🚗 開始整段行程</button>'+
-      '<div class="plan-route-note">'+planRouteText(a)+'</div>'+
-      shortage;
+      '<div class="plan-opt">🧭 正在依距離最佳化行程順序…</div>';
 
-    $("startPlanRoute").onclick=function(){
-      openPlanRoute(a);
-    };
-
-    [].forEach.call($("pr").querySelectorAll("[data-pn]"),function(b){
-      b.onclick=function(){
-        var i=Number(this.getAttribute("data-pn"));
-        if(a[i])nav(a[i]);
-      };
-    });
-
-    [].forEach.call($("pr").querySelectorAll("[data-pd]"),function(b){
-      b.onclick=function(){
-        var i=Number(this.getAttribute("data-pd"));
-        if(a[i])detail(a[i].id);
-      };
-    });
-
-    [].forEach.call($("pr").querySelectorAll("[data-ps]"),function(b){
-      b.onclick=function(){
-        var i=Number(this.getAttribute("data-ps"));
-        if(!a[i])return;
-        var u=a[i].url||a[i].social_url||"";
-        if(u)window.open(u,"_blank");
-      };
+    getPlanStartCoord(function(startCoord){
+      var optimized=optimizePlanOrder(a,startCoord);
+      renderPlanResult(optimized.stops,title,maxStops,optimized.mode);
     });
   };
 
@@ -1048,9 +1209,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V3.6",updated:"2026-09-27"};
+    feedMeta={version:"內建 V3.7",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V3.6 內建資料。";
+    $("msg").textContent="已恢復 V3.7 內建資料。";
     refreshHealth();
     render();
   };
