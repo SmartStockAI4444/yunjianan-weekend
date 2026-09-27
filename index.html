@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>雲嘉南週末去哪玩 V3.1</title>
+<title>雲嘉南週末去哪玩 V3.2</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -59,6 +59,8 @@ button,select,input{font:inherit}
 .plan-actions .pnav{background:#e7eef7;color:#294e76}
 .plan-actions .pdetail{background:var(--accent);color:#fff}
 .plan-actions .psource{background:#fff5df;color:#7a5412}
+.plan-route{width:100%;margin-top:14px;border:0;border-radius:14px;padding:13px 16px;background:#fff;color:#1d2520;font-weight:900;font-size:16px}
+.plan-route-note{font-size:12px;color:#cbd1ce;margin-top:7px}
 .updatebox{margin-top:25px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}
 .updatebox textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:12px;padding:12px}
 .modal{position:fixed;inset:0;background:#0007;z-index:20;display:grid;place-items:center;padding:18px}
@@ -97,7 +99,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 <main>
 <section class="hero">
   <div>
-    <span class="badge">V3.1</span>
+    <span class="badge">V3.2</span>
     <h2>官方資料＋社群熱門訊號，合併成不重複的旅遊資料庫。</h2>
     <p>同一景點只顯示一張卡片，但可同時被「官方」與「社群熱門」篩選找到。</p>
   </div>
@@ -110,7 +112,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 
 <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V3.1 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V3.2 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -163,7 +165,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 <section class="planner">
   <span class="badge">✨ AI 行程</span>
   <h2>幫我安排熱門行程</h2>
-  <p>依縣市、類型、日期與旅遊適合度組合行程；結果會顯示日期、簡短地點、導航、詳情與來源。</p>
+  <p>依縣市、類型、日期與旅遊適合度組合行程；結果會顯示日期、簡短地點、導航、詳情與來源，並可一鍵開啟整段 Google Maps 路線。</p>
   <div class="row">
     <select id="pc"><option>嘉義</option><option>雲林</option><option>台南</option></select>
     <select id="pt"><option>親子</option><option>美食</option><option>戶外</option><option>室內</option><option>免費</option><option>觀光工廠</option><option>校園</option><option>活動</option><option>本週末</option></select>
@@ -195,7 +197,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V3.1</footer>
+<footer>雲嘉南週末去哪玩 · V3.2</footer>
 
 <script>
 (function(){
@@ -223,7 +225,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V3.1",updated:"2026-09-27"};
+var feedMeta={version:"內建 V3.2",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -244,11 +246,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData31")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData32")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData31",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData32",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -362,7 +364,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V3.1：活動必須同時符合
+  // V3.2：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -592,6 +594,33 @@ function nav(s){
   window.open("https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(s.q||s.name),"_blank");
 }
 
+function routeQuery(s){
+  if(!s)return "";
+  return s.q||([s.name,s.place,s.city].filter(Boolean).join(" "))||s.name||"";
+}
+
+function openPlanRoute(stops){
+  if(!Array.isArray(stops)||!stops.length)return;
+
+  if(stops.length===1){
+    var dest=encodeURIComponent(routeQuery(stops[0]));
+    window.open(
+      "https://www.google.com/maps/dir/?api=1&destination="+dest+"&travelmode=driving",
+      "_blank"
+    );
+    return;
+  }
+
+  var origin=encodeURIComponent(routeQuery(stops[0]));
+  var destination=encodeURIComponent(routeQuery(stops[stops.length-1]));
+
+  window.open(
+    "https://www.google.com/maps/dir/?api=1&origin="+origin+
+    "&destination="+destination+"&travelmode=driving",
+    "_blank"
+  );
+}
+
 function displayReason(s){
   if(source==="社群"&&s.social_why)return s.social_why;
   return s.why||"";
@@ -807,7 +836,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData31",JSON.stringify(data));
+        localStorage.setItem("ynData32",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -895,7 +924,15 @@ function init(){
     }
 
     $("pr").innerHTML='<div class="plan-title">'+title+'</div>'+
-      a.map(function(s,i){return planCardHtml(s,i)}).join("");
+      a.map(function(s,i){return planCardHtml(s,i)}).join("")+
+      '<button id="startPlanRoute" class="plan-route">🚗 開始整段行程</button>'+
+      '<div class="plan-route-note">'+
+        (a.length===1?'從目前位置導航到這一站':'Google Maps 路線：第 1 站 → 第 2 站')+
+      '</div>';
+
+    $("startPlanRoute").onclick=function(){
+      openPlanRoute(a);
+    };
 
     [].forEach.call($("pr").querySelectorAll("[data-pn]"),function(b){
       b.onclick=function(){
@@ -948,9 +985,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V3.1",updated:"2026-09-27"};
+    feedMeta={version:"內建 V3.2",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V3.1 內建資料。";
+    $("msg").textContent="已恢復 V3.2 內建資料。";
     refreshHealth();
     render();
   };
