@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>雲嘉南週末去哪玩 V2.3</title>
+<title>雲嘉南週末去哪玩 V2.4</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -83,7 +83,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 <main>
 <section class="hero">
   <div>
-    <span class="badge">V2.3</span>
+    <span class="badge">V2.4</span>
     <h2>官方資料＋社群熱門訊號，合併成不重複的旅遊資料庫。</h2>
     <p>同一景點只顯示一張卡片，但可同時被「官方」與「社群熱門」篩選找到。</p>
   </div>
@@ -96,7 +96,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 
 <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V2.3 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V2.4 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -181,7 +181,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V2.3</footer>
+<footer>雲嘉南週末去哪玩 · V2.4</footer>
 
 <script>
 (function(){
@@ -209,7 +209,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V2.3",updated:"2026-09-27"};
+var feedMeta={version:"內建 V2.4",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -230,11 +230,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData23")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData24")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData23",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData24",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -292,32 +292,48 @@ function isTravelFriendlyEvent(s){
   if(!s||s.type!=="活動")return false;
   if(isExpired(s)&&!showExpiredItems)return false;
 
-  var t=eventText(s);
+  var name=String(s.name||"").toLowerCase();
+  var full=eventText(s);
 
-  var travelWords=[
-    "節慶","祭典","嘉年華","市集","展覽","特展","藝術","藝文","音樂",
-    "演出","表演","文化","觀光","親子","美食","花季","賞花","燈會",
-    "燈節","煙火","遊行","農產","農特產","夜市","廟會","慶典","踩街",
-    "龍舟","風箏","熱氣球","海鮮","音樂祭","啤酒節","咖啡節","茶文化",
-    "地方創生","文創","體驗","導覽","季","祭","節","展"
+  // V2.4：先看「活動名稱」做強制排除，避免說明文字中的
+  // 「文化、展現、體驗」等字眼把一般競賽誤判成旅遊活動。
+  var hardExclude=[
+    "競賽","比賽","錦標賽","聯賽","選拔賽","冠軍賽","資格賽","邀請賽",
+    "盃賽","校內","校際","報名簡章","徵件","徵選","招生","研習","講座",
+    "學術會議","研討會","worldskills","worldcool","toyota"
   ];
 
-  var competitionWords=[
-    "校內","校際","學生競賽","技能競賽","科學競賽","作文比賽","語文競賽",
-    "數學競賽","英語競賽","機器人競賽","程式競賽","創意競賽","選拔賽",
-    "錦標賽","聯賽","冠軍賽","資格賽","邀請賽","盃賽","競賽","比賽",
-    "報名簡章","徵件","徵選","招生","研習","講座","學術會議","研討會",
-    "worldskills","worldcool","toyota"
+  // 這些運動／民俗活動即使名稱含「比賽」，通常仍適合週末觀看或參與。
+  var publicSport=[
+    "龍舟","路跑","馬拉松","自行車","單車","健走","鐵人","帆船","風箏"
   ];
 
-  var positive=hasAny(t,travelWords);
-  var negative=hasAny(t,competitionWords);
+  // 名稱本身明確具有旅遊、節慶或休閒屬性時，可優先保留。
+  var strongName=[
+    "節慶","祭典","嘉年華","市集","展覽","特展","博覽會","展演","藝術節",
+    "音樂祭","音樂節","文化季","文化節","花季","賞花","燈會","燈節",
+    "煙火","遊行","廟會","慶典","踩街","農產節","農特產","海鮮節",
+    "咖啡節","啤酒節","茶文化","文創","體驗","導覽","夜市","熱氣球"
+  ];
 
-  // 有明確旅遊／節慶屬性的活動，即使名稱含「比賽」仍可保留；
-  // 一般競賽、校內活動、純報名型活動則從「週末活動」精選中排除。
-  if(negative&&!positive)return false;
+  var excludedByName=hasAny(name,hardExclude);
+  var sportException=hasAny(name,publicSport);
+  var strongByName=hasAny(name,strongName);
 
-  return true;
+  if(excludedByName&&!sportException&&!strongByName)return false;
+
+  // 若名稱沒有明確旅遊字樣，再看完整內容；但只採用較具體的複合詞，
+  // 不再使用單字「季、祭、節、展」以降低誤判。
+  var travelFull=[
+    "親子活動","觀光活動","旅遊活動","地方文化","文化活動","藝文活動",
+    "戶外活動","美食活動","農產活動","農特產活動","手作體驗","導覽活動",
+    "市集活動","音樂表演","舞台表演","節慶活動","地方創生"
+  ];
+
+  if(strongByName||sportException)return true;
+  if(hasAny(full,travelFull))return true;
+
+  return false;
 }
 
 function eventDaysUntil(s){
@@ -336,10 +352,11 @@ function eventRecommendScore(s){
   var days=eventDaysUntil(s);
 
   var strongWords=[
-    "節慶","祭典","嘉年華","市集","展覽","特展","音樂","藝術","藝文",
-    "文化","觀光","親子","美食","花季","燈會","燈節","煙火","遊行",
-    "農產","農特產","夜市","廟會","慶典","踩街","龍舟","風箏","熱氣球",
-    "海鮮","音樂祭","文創","體驗","導覽"
+    "節慶","祭典","嘉年華","市集","展覽","特展","博覽會","展演",
+    "音樂祭","音樂節","藝術節","文化季","文化節","花季","賞花",
+    "燈會","燈節","煙火","遊行","夜市","廟會","慶典","踩街",
+    "農產節","海鮮節","咖啡節","啤酒節","文創","手作體驗","導覽活動",
+    "龍舟","路跑","馬拉松","自行車","健走","風箏","熱氣球"
   ];
 
   if(hasAny(t,strongWords))score+=30;
@@ -573,7 +590,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData23",JSON.stringify(data));
+        localStorage.setItem("ynData24",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -682,9 +699,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V2.3",updated:"2026-09-27"};
+    feedMeta={version:"內建 V2.4",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V2.3 內建資料。";
+    $("msg").textContent="已恢復 V2.4 內建資料。";
     refreshHealth();
     render();
   };
