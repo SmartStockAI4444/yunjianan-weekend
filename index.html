@@ -11,7 +11,7 @@
 <link rel="manifest" href="./manifest.json">
 <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
 <link rel="apple-touch-icon" href="./icon-192.png">
-<title>雲嘉南週末去哪玩 V5.0</title>
+<title>雲嘉南週末去哪玩 V5.1</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -94,7 +94,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 .source-note{font-size:12px;color:var(--muted);margin-top:4px}
 .eventdate{margin:8px 0;padding:8px 10px;border-radius:10px;background:#fff5df;color:#7a5412;font-size:13px;font-weight:800}
 
-/* ===== V5.0 手機 App 版面 ===== */
+/* ===== V5.1 手機 App 版面 ===== */
 html{scroll-behavior:smooth}
 body{padding-bottom:78px}
 header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94)}
@@ -157,7 +157,7 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
 }
 @media(min-width:761px){.mobile-bottom-nav{display:none}}
 
-/* ===== V5.0 Travel App Visual ===== */
+/* ===== V5.1 Travel App Visual ===== */
 :root{
   --bg:#f2f4ef;
   --card:#ffffff;
@@ -423,7 +423,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.0 Photo Cards + Scroll Polish ===== */
+/* ===== V5.1 Photo Cards + Scroll Polish ===== */
 .row,.tabs,.chips{
   -webkit-overflow-scrolling:touch;
   scrollbar-width:none;
@@ -485,7 +485,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.0 Filter + Bottom Dock Polish ===== */
+/* ===== V5.1 Filter + Bottom Dock Polish ===== */
 @media(max-width:640px){
   /* 來源、想去哪：直接完整換行，不再露半顆按鈕 */
   #sources,
@@ -568,7 +568,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.0 Stable Mobile Filter Grid ===== */
+/* ===== V5.1 Stable Mobile Filter Grid ===== */
 @media(max-width:640px){
 
   /* 來源：3 欄固定網格，永遠不會超出螢幕 */
@@ -653,7 +653,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.0 Weekend Featured ===== */
+/* ===== V5.1 Weekend Featured ===== */
 .featured-section{
   margin-top:18px;
 }
@@ -817,7 +817,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.0 Featured Dedupe ===== */
+/* ===== V5.1 Featured Dedupe ===== */
 .featured-sub{
   max-width:250px;
 }
@@ -826,7 +826,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.0 Official Activity Visuals ===== */
+/* ===== V5.1 Official Activity Visuals ===== */
 .poster-badge{
   position:absolute;
   left:14px;
@@ -867,7 +867,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V5.0 Weekend Date + Poster Fallback ===== */
+/* ===== V5.1 Weekend Date + Poster Fallback ===== */
 .featured-date{
   align-self:flex-start;
   display:inline-flex;
@@ -1057,7 +1057,7 @@ footer{font-size:11px}
     <div id="featuredCards" class="featured-strip"></div>
   </section>
 
-  <div class="section-title recommend-title"><div><span class="section-kicker">SMART PICKS · 熱度 × 新鮮度 × 多樣性</span><h2>更多推薦</h2></div><span id="count" class="count-pill"></span></div>
+  <div class="section-title recommend-title"><div><span class="section-kicker">SMART PICKS · 活動 × 景點 × 縣市平衡</span><h2>更多推薦</h2></div><span id="count" class="count-pill"></span></div>
   <div id="cards" class="cards"></div>
 </section>
 
@@ -1083,7 +1083,7 @@ footer{font-size:11px}
   <div class="settings-inner">
     <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V5.0 會檢查遠端資料版本、去除重複與過期活動，並以熱度、日期、新鮮度、來源與多樣性做 AI 推薦排序。</p>
+  <p class="meta">V5.1 會保留 V5.0 的 AI 推薦分數，並額外平衡首頁前段的活動比例、景點類型與縣市分布。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -1126,7 +1126,7 @@ footer{font-size:11px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V5.0</footer>
+<footer>雲嘉南週末去哪玩 · V5.1</footer>
 
 <script>
 (function(){
@@ -1247,7 +1247,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V5.0",updated:"2026-09-27"};
+var feedMeta={version:"內建 V5.1",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -1307,7 +1307,7 @@ function readCachedArray(key){
 function loadData(){
   var best=null,bestKey="內建資料";
 
-  /* V5.0 起固定用 ynDataCurrent；若尚未存在，從舊版本中找「筆數最多」的資料搬過來。
+  /* V5.1 起固定用 ynDataCurrent；若尚未存在，從舊版本中找「筆數最多」的資料搬過來。
      這可自動找回 V4.6 的 1353 筆，而不是被 V4.7 的少量內建資料覆蓋。 */
   var keys=[DATA_KEY].concat(LEGACY_DATA_KEYS);
   keys.forEach(function(key){
@@ -1538,7 +1538,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V5.0：活動必須同時符合
+  // V5.1：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -1836,31 +1836,64 @@ function diversifyRecommendations(items){
     return Number(b.heat||0)-Number(a.heat||0);
   });
 
-  /* 只重新安排最前面 72 筆，兼顧手機效能；
-     後面維持純分數排序。 */
-  var pool=sorted.slice(0,Math.min(72,sorted.length));
-  var tail=sorted.slice(pool.length);
-  var out=[],cityCount={},typeCount={},lastType="",lastPlace="";
+  /* 使用者明確選了「活動／本週末」時，不限制活動比例。 */
+  var activityMode=!!(sel["活動"]||sel["本週末"]);
+  if(activityMode)return sorted;
 
-  while(pool.length){
-    var bestIndex=0,bestValue=-999999;
+  /* 只平衡首頁最前段；後面的完整資料仍保留純 AI 分數順序。 */
+  var HEAD_SIZE=Math.min(12,sorted.length);
+  var pool=sorted.slice(0,Math.min(80,sorted.length));
+  var chosen=[];
+  var used={};
+  var cityCount={};
+  var typeCount={};
+  var activityCount=0;
+  var lastType="";
+  var lastCity="";
+
+  function itemKey(s){
+    return String((s&&s.id)||dedupeName((s&&s.name)||""));
+  }
+
+  for(var pos=0;pos<HEAD_SIZE;pos++){
+    var bestIndex=-1;
+    var bestValue=-999999;
 
     for(var i=0;i<pool.length;i++){
       var s=pool[i];
+      var key=itemKey(s);
+      if(!key||used[key])continue;
+
+      var isActivity=s.type==="活動";
       var value=recommendationScore(s);
       var c=s.city||"";
       var t=s.type||"其他";
-      var p=String(s.place||"");
 
-      /* 同一類型／同一縣市連續出現時略降權，
-         讓首頁前幾張不要全部是校園、全部是同一縣市。 */
-      value-=(typeCount[t]||0)*7;
-      if(city==="全部")value-=(cityCount[c]||0)*4;
-      if(lastType&&t===lastType)value-=12;
-      if(lastPlace&&p&&p===lastPlace)value-=6;
+      /* 前 8 張最多 3 個活動；前 12 張最多 4 個活動。 */
+      var activityLimit=pos<8?3:4;
+      if(isActivity&&activityCount>=activityLimit){
+        value-=200;
+      }
 
-      /* 真正本週末能去的活動仍保有優先權 */
-      if(s.type==="活動"&&isThisWeekendEvent(s))value+=18;
+      /* 任一類型不要在前 8 張出現超過 3 次。 */
+      if(pos<8 && (typeCount[t]||0)>=3){
+        value-=120;
+      }
+
+      /* 避免同類型連續出現。 */
+      if(lastType&&t===lastType){
+        value-=34;
+      }
+
+      /* 全部縣市模式時，避免同縣市連續與過度集中。 */
+      if(city==="全部"){
+        value-=(cityCount[c]||0)*8;
+        if(lastCity&&c===lastCity)value-=14;
+      }
+
+      /* 活動本身仍保留品質優勢，但不再能靠加權連續霸榜。 */
+      if(isActivity&&eventActiveToday(s))value+=14;
+      else if(isActivity&&isThisWeekendEvent(s))value+=10;
 
       if(value>bestValue){
         bestValue=value;
@@ -1868,18 +1901,31 @@ function diversifyRecommendations(items){
       }
     }
 
+    if(bestIndex<0)break;
+
     var picked=pool.splice(bestIndex,1)[0];
-    out.push(picked);
+    var pk=itemKey(picked);
+
+    chosen.push(picked);
+    used[pk]=1;
 
     var pc=picked.city||"";
     var pt=picked.type||"其他";
     cityCount[pc]=(cityCount[pc]||0)+1;
     typeCount[pt]=(typeCount[pt]||0)+1;
+
+    if(picked.type==="活動")activityCount++;
+
     lastType=pt;
-    lastPlace=String(picked.place||"");
+    lastCity=pc;
   }
 
-  return out.concat(tail);
+  /* 把沒被選進首頁前段的項目，照原本 AI 分數順序接回去。 */
+  var rest=sorted.filter(function(s){
+    return !used[itemKey(s)];
+  });
+
+  return chosen.concat(rest);
 }
 
 function list(){
@@ -2939,9 +2985,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V5.0",updated:"2026-09-27"};
+    feedMeta={version:"內建 V5.1",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V5.0 內建資料。";
+    $("msg").textContent="已恢復 V5.1 內建資料。";
     refreshHealth();
     render();
   };
@@ -2958,7 +3004,7 @@ function init(){
 
   $("useDefaultFeed").onclick=function(){
     $("feedUrl").value="weekly_feed.json";
-    $("syncMsg").textContent="已填入預設 weekly_feed.json。V5.0 會把遠端資料與手機既有資料合併，不再因版本更新丟失資料。";
+    $("syncMsg").textContent="已填入預設 weekly_feed.json。V5.1 會把遠端資料與手機既有資料合併，不再因版本更新丟失資料。";
   };
 
   $("showExpired").onclick=function(){
