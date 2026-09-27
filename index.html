@@ -11,7 +11,7 @@
 <link rel="manifest" href="./manifest.json">
 <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
 <link rel="apple-touch-icon" href="./icon-192.png">
-<title>雲嘉南週末去哪玩 V4.9</title>
+<title>雲嘉南週末去哪玩 V5.0</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -94,7 +94,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 .source-note{font-size:12px;color:var(--muted);margin-top:4px}
 .eventdate{margin:8px 0;padding:8px 10px;border-radius:10px;background:#fff5df;color:#7a5412;font-size:13px;font-weight:800}
 
-/* ===== V4.9 手機 App 版面 ===== */
+/* ===== V5.0 手機 App 版面 ===== */
 html{scroll-behavior:smooth}
 body{padding-bottom:78px}
 header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94)}
@@ -157,7 +157,7 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
 }
 @media(min-width:761px){.mobile-bottom-nav{display:none}}
 
-/* ===== V4.9 Travel App Visual ===== */
+/* ===== V5.0 Travel App Visual ===== */
 :root{
   --bg:#f2f4ef;
   --card:#ffffff;
@@ -423,7 +423,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.9 Photo Cards + Scroll Polish ===== */
+/* ===== V5.0 Photo Cards + Scroll Polish ===== */
 .row,.tabs,.chips{
   -webkit-overflow-scrolling:touch;
   scrollbar-width:none;
@@ -485,7 +485,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.9 Filter + Bottom Dock Polish ===== */
+/* ===== V5.0 Filter + Bottom Dock Polish ===== */
 @media(max-width:640px){
   /* 來源、想去哪：直接完整換行，不再露半顆按鈕 */
   #sources,
@@ -568,7 +568,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.9 Stable Mobile Filter Grid ===== */
+/* ===== V5.0 Stable Mobile Filter Grid ===== */
 @media(max-width:640px){
 
   /* 來源：3 欄固定網格，永遠不會超出螢幕 */
@@ -653,7 +653,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.9 Weekend Featured ===== */
+/* ===== V5.0 Weekend Featured ===== */
 .featured-section{
   margin-top:18px;
 }
@@ -817,7 +817,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.9 Featured Dedupe ===== */
+/* ===== V5.0 Featured Dedupe ===== */
 .featured-sub{
   max-width:250px;
 }
@@ -826,7 +826,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.9 Official Activity Visuals ===== */
+/* ===== V5.0 Official Activity Visuals ===== */
 .poster-badge{
   position:absolute;
   left:14px;
@@ -867,7 +867,7 @@ footer{font-size:11px}
 }
 
 
-/* ===== V4.9 Weekend Date + Poster Fallback ===== */
+/* ===== V5.0 Weekend Date + Poster Fallback ===== */
 .featured-date{
   align-self:flex-start;
   display:inline-flex;
@@ -1057,7 +1057,7 @@ footer{font-size:11px}
     <div id="featuredCards" class="featured-strip"></div>
   </section>
 
-  <div class="section-title recommend-title"><div><span class="section-kicker">EXPLORE MORE</span><h2>更多推薦</h2></div><span id="count" class="count-pill"></span></div>
+  <div class="section-title recommend-title"><div><span class="section-kicker">SMART PICKS · 熱度 × 新鮮度 × 多樣性</span><h2>更多推薦</h2></div><span id="count" class="count-pill"></span></div>
   <div id="cards" class="cards"></div>
 </section>
 
@@ -1083,7 +1083,7 @@ footer{font-size:11px}
   <div class="settings-inner">
     <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V4.9 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V5.0 會檢查遠端資料版本、去除重複與過期活動，並以熱度、日期、新鮮度、來源與多樣性做 AI 推薦排序。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -1126,7 +1126,7 @@ footer{font-size:11px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V4.9</footer>
+<footer>雲嘉南週末去哪玩 · V5.0</footer>
 
 <script>
 (function(){
@@ -1247,7 +1247,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V4.9",updated:"2026-09-27"};
+var feedMeta={version:"內建 V5.0",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -1307,7 +1307,7 @@ function readCachedArray(key){
 function loadData(){
   var best=null,bestKey="內建資料";
 
-  /* V4.9 起固定用 ynDataCurrent；若尚未存在，從舊版本中找「筆數最多」的資料搬過來。
+  /* V5.0 起固定用 ynDataCurrent；若尚未存在，從舊版本中找「筆數最多」的資料搬過來。
      這可自動找回 V4.6 的 1353 筆，而不是被 V4.7 的少量內建資料覆蓋。 */
   var keys=[DATA_KEY].concat(LEGACY_DATA_KEYS);
   keys.forEach(function(key){
@@ -1538,7 +1538,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V4.9：活動必須同時符合
+  // V5.0：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -1770,6 +1770,118 @@ function normalizeFeed(x){
   );
 }
 
+
+function daysSinceUpdated(s){
+  var d=normDate(s&&s.updated);
+  if(!d)return 9999;
+
+  var now=todayAtMidnight();
+  d.setHours(0,0,0,0);
+  return Math.floor((now-d)/86400000);
+}
+
+function recommendationScore(s){
+  if(!s)return -9999;
+
+  var score=Number(s.heat||0);
+  var sources=sourceList(s);
+
+  /* 近期活動：真正「現在能去」的活動優先很多 */
+  if(s.type==="活動"){
+    if(eventActiveToday(s))score+=72;
+    else if(isThisWeekendEvent(s))score+=62;
+    else{
+      var days=eventDaysUntil(s);
+      if(days>=0&&days<=7)score+=38;
+      else if(days<=14)score+=26;
+      else if(days<=30)score+=15;
+      else if(days<=60)score+=7;
+    }
+
+    if(isTravelFriendlyEvent(s))score+=12;
+  }
+
+  /* 來源完整度：官方＋社群交叉出現的項目更有參考價值 */
+  if(sources.indexOf("官方")>=0)score+=5;
+  if(sources.indexOf("社群")>=0)score+=6;
+  if(sources.indexOf("部落客")>=0)score+=3;
+  if(sources.length>=2)score+=10;
+
+  /* 有照片、地址、說明、網址，對實際出遊更有用 */
+  if(photoInfo(s))score+=8;
+  if(s.place||s.q||s.mapQuery)score+=4;
+  if(s.why)score+=3;
+  if(s.url)score+=3;
+
+  /* 最近更新給小幅加分，不讓舊資料長期霸榜 */
+  var fresh=daysSinceUpdated(s);
+  if(fresh>=0&&fresh<=14)score+=12;
+  else if(fresh<=30)score+=9;
+  else if(fresh<=90)score+=5;
+  else if(fresh<=180)score+=2;
+
+  /* 標籤較完整的資料，較容易符合不同旅遊情境 */
+  var tags=Array.isArray(s.tags)?s.tags:[];
+  score+=Math.min(tags.length,5);
+
+  return score;
+}
+
+function diversifyRecommendations(items){
+  if(!Array.isArray(items)||items.length<2)return items||[];
+
+  var sorted=items.slice().sort(function(a,b){
+    var sa=recommendationScore(a),sb=recommendationScore(b);
+    if(sa!==sb)return sb-sa;
+    return Number(b.heat||0)-Number(a.heat||0);
+  });
+
+  /* 只重新安排最前面 72 筆，兼顧手機效能；
+     後面維持純分數排序。 */
+  var pool=sorted.slice(0,Math.min(72,sorted.length));
+  var tail=sorted.slice(pool.length);
+  var out=[],cityCount={},typeCount={},lastType="",lastPlace="";
+
+  while(pool.length){
+    var bestIndex=0,bestValue=-999999;
+
+    for(var i=0;i<pool.length;i++){
+      var s=pool[i];
+      var value=recommendationScore(s);
+      var c=s.city||"";
+      var t=s.type||"其他";
+      var p=String(s.place||"");
+
+      /* 同一類型／同一縣市連續出現時略降權，
+         讓首頁前幾張不要全部是校園、全部是同一縣市。 */
+      value-=(typeCount[t]||0)*7;
+      if(city==="全部")value-=(cityCount[c]||0)*4;
+      if(lastType&&t===lastType)value-=12;
+      if(lastPlace&&p&&p===lastPlace)value-=6;
+
+      /* 真正本週末能去的活動仍保有優先權 */
+      if(s.type==="活動"&&isThisWeekendEvent(s))value+=18;
+
+      if(value>bestValue){
+        bestValue=value;
+        bestIndex=i;
+      }
+    }
+
+    var picked=pool.splice(bestIndex,1)[0];
+    out.push(picked);
+
+    var pc=picked.city||"";
+    var pt=picked.type||"其他";
+    cityCount[pc]=(cityCount[pc]||0)+1;
+    typeCount[pt]=(typeCount[pt]||0)+1;
+    lastType=pt;
+    lastPlace=String(picked.place||"");
+  }
+
+  return out.concat(tail);
+}
+
 function list(){
   var q=query.toLowerCase();
   var a=data.filter(function(s){
@@ -1786,15 +1898,21 @@ function list(){
       && (showExpiredItems||!isExpired(s));
   });
 
-  if(sort==="推薦"&&(sel["活動"]||sel["本週末"])){
+  if(sort==="推薦"){
+    a=diversifyRecommendations(a);
+  }
+  if(sort==="熱度"){
     a.sort(function(a,b){
-      var sa=eventRecommendScore(a),sb=eventRecommendScore(b);
-      if(sa!==sb)return sb-sa;
-      return eventDaysUntil(a)-eventDaysUntil(b);
+      var ah=(source==="社群"&&a.social_heat!=null)?Number(a.social_heat):Number(a.heat||0);
+      var bh=(source==="社群"&&b.social_heat!=null)?Number(b.social_heat):Number(b.heat||0);
+      return bh-ah;
     });
   }
-  if(sort==="熱度")a.sort(function(a,b){return Number(b.heat||0)-Number(a.heat||0)});
-  if(sort==="最新")a.sort(function(a,b){return String(b.updated||"").localeCompare(String(a.updated||""))});
+  if(sort==="最新"){
+    a.sort(function(a,b){
+      return String(displayUpdated(b)||"").localeCompare(String(displayUpdated(a)||""));
+    });
+  }
   return a;
 }
 
@@ -2349,17 +2467,15 @@ function uniqueByNameForFeatured(arr){
 }
 
 function featuredScore(s){
-  var score=Number(s.heat||0);
+  var score=recommendationScore(s);
 
   if(s.type==="活動"){
-    if(isThisWeekendEvent(s))score+=80;
-    else if(isSoonEvent(s))score+=35;
-    if(isTravelFriendlyEvent(s))score+=20;
+    if(eventActiveToday(s))score+=35;
+    else if(isThisWeekendEvent(s))score+=28;
+    else if(isSoonEvent(s))score+=12;
   }
 
-  if(photoInfo(s))score+=14;
-  if(sourceList(s).length>1)score+=7;
-
+  if(photoInfo(s))score+=6;
   return score;
 }
 
@@ -2823,9 +2939,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V4.9",updated:"2026-09-27"};
+    feedMeta={version:"內建 V5.0",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V4.9 內建資料。";
+    $("msg").textContent="已恢復 V5.0 內建資料。";
     refreshHealth();
     render();
   };
@@ -2842,7 +2958,7 @@ function init(){
 
   $("useDefaultFeed").onclick=function(){
     $("feedUrl").value="weekly_feed.json";
-    $("syncMsg").textContent="已填入預設 weekly_feed.json。V4.9 會把遠端資料與手機既有資料合併，不再因版本更新丟失資料。";
+    $("syncMsg").textContent="已填入預設 weekly_feed.json。V5.0 會把遠端資料與手機既有資料合併，不再因版本更新丟失資料。";
   };
 
   $("showExpired").onclick=function(){
