@@ -11,7 +11,7 @@
 <link rel="manifest" href="./manifest.json">
 <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
 <link rel="apple-touch-icon" href="./icon-192.png">
-<title>雲嘉南週末去哪玩 V4.0</title>
+<title>雲嘉南週末去哪玩 V4.1</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -94,7 +94,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 .source-note{font-size:12px;color:var(--muted);margin-top:4px}
 .eventdate{margin:8px 0;padding:8px 10px;border-radius:10px;background:#fff5df;color:#7a5412;font-size:13px;font-weight:800}
 
-/* ===== V4.0 手機 App 版面 ===== */
+/* ===== V4.1 手機 App 版面 ===== */
 html{scroll-behavior:smooth}
 body{padding-bottom:78px}
 header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94)}
@@ -156,23 +156,305 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
   footer{padding:26px 12px 90px}
 }
 @media(min-width:761px){.mobile-bottom-nav{display:none}}
+
+/* ===== V4.1 Travel App Visual ===== */
+:root{
+  --bg:#f2f4ef;
+  --card:#ffffff;
+  --text:#17221d;
+  --muted:#77817b;
+  --line:#e3e7e2;
+  --accent:#176a4a;
+  --accent-2:#0f5138;
+  --soft:#e8f3ed;
+  --sand:#f4ead8;
+  --sun:#f7c85c;
+  --hot:#d65d32;
+  --ink:#13231c;
+}
+body{
+  background:
+    radial-gradient(circle at 0 0,rgba(23,106,74,.06),transparent 28%),
+    var(--bg);
+}
+main{max-width:760px}
+.app-header{
+  min-height:62px;
+  padding:10px 14px;
+  box-shadow:0 5px 22px rgba(20,42,32,.06);
+  border-bottom:0;
+}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-icon{
+  width:38px;height:38px;border-radius:12px;
+  box-shadow:0 5px 14px rgba(23,106,74,.18);
+}
+.brand-copy{min-width:0}
+.app-title{font-size:18px;letter-spacing:.1px}
+.app-sub{display:flex;align-items:center;gap:6px;margin-top:3px}
+.online-dot{width:6px;height:6px;border-radius:50%;background:#45a879;box-shadow:0 0 0 3px rgba(69,168,121,.12)}
+.fav-top{
+  min-width:58px;height:40px;border-radius:14px;
+  background:#edf6f1;color:var(--accent);
+  box-shadow:inset 0 0 0 1px rgba(23,106,74,.08);
+}
+.travel-hero{
+  min-height:210px;
+  position:relative;
+  overflow:hidden;
+  padding:23px 20px;
+  color:#fff;
+  background:
+    linear-gradient(135deg,#164e3a 0%,#1b7250 55%,#2d8a61 100%);
+  box-shadow:0 14px 34px rgba(19,73,52,.18);
+}
+.travel-hero:after{
+  content:"";
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 35%,rgba(8,42,29,.18));
+  pointer-events:none;
+}
+.hero-copy{position:relative;z-index:3;max-width:68%}
+.hero-kicker{
+  font-size:10px;font-weight:900;letter-spacing:1.55px;
+  color:#ccead9;margin-bottom:11px
+}
+.travel-hero h2{
+  color:#fff;font-size:30px;line-height:1.08;
+  letter-spacing:-1px;margin:0 0 10px;
+}
+.travel-hero h2 span{color:#ffdc7b}
+.travel-hero p{color:#e2f2e9;font-size:13px;line-height:1.55;margin:0}
+.hero-cities{display:flex;align-items:center;gap:7px;margin-top:16px;font-size:11px;font-weight:850;color:#e7f5ed}
+.hero-cities i{width:4px;height:4px;border-radius:50%;background:#ffdc7b}
+.hero-art{position:absolute;right:-10px;top:0;width:44%;height:100%;z-index:2}
+.sun{position:absolute;width:62px;height:62px;border-radius:50%;right:25px;top:26px;background:#f9d26f;box-shadow:0 0 0 12px rgba(249,210,111,.08)}
+.hill{position:absolute;border-radius:50% 50% 0 0/100% 100% 0 0;bottom:-12px}
+.hill-a{width:190px;height:112px;right:-28px;background:#0f5138;transform:rotate(-5deg)}
+.hill-b{width:160px;height:84px;right:50px;background:#2e8761;transform:rotate(10deg);opacity:.9}
+.route-line{position:absolute;right:31px;top:78px;width:90px;height:90px;border-left:3px dashed rgba(255,255,255,.65);border-bottom:3px dashed rgba(255,255,255,.65);border-radius:0 0 0 60px;transform:rotate(-12deg)}
+.route-pin{position:absolute;color:#ffe08a;font-size:12px;filter:drop-shadow(0 2px 2px #0004)}
+.pin-a{right:99px;top:82px}.pin-b{right:62px;top:127px}.pin-c{right:21px;top:157px}
+.hero-pin{position:absolute;right:18px;bottom:25px;font-size:42px;color:#fff;opacity:.92}
+.install-card{
+  border:0;background:linear-gradient(135deg,#eff8f3,#e4f3eb);
+  box-shadow:0 8px 24px rgba(37,76,57,.07);
+}
+.install-btn{border-radius:14px;box-shadow:0 7px 15px rgba(23,106,74,.18)}
+.explore-block{margin-top:12px}
+.search{
+  height:50px;border:0;border-radius:17px;margin-top:12px;
+  padding:0 17px;background:#fff;
+  box-shadow:0 7px 24px rgba(28,49,39,.07);
+}
+.tabs{
+  gap:7px;padding:12px 0 7px;
+}
+.tabs button{
+  border:0;min-width:64px;background:#fff;
+  box-shadow:0 4px 15px rgba(27,48,38,.05);
+}
+.tabs .active{background:var(--ink)!important}
+#sources,#sorts{
+  margin-left:-2px;margin-right:-2px;
+  padding:5px 2px;
+}
+#sources .pill,#sorts .pill{
+  border:0;background:rgba(255,255,255,.72);
+  box-shadow:inset 0 0 0 1px rgba(30,52,42,.05)
+}
+.section-kicker{
+  font-size:9px;font-weight:950;letter-spacing:1.45px;color:#90a099;
+}
+.section-title{margin-top:18px}
+.section-title h2{margin:3px 0 0;font-size:22px;letter-spacing:-.3px}
+.clear-btn{padding:8px 12px!important;background:#fff!important;color:var(--muted)!important}
+.count-pill{
+  border-radius:999px;background:#e9eee9;padding:6px 9px;
+  color:#67736d;font-size:11px;font-weight:800;
+}
+.chips{gap:8px;padding-top:11px}
+.chips button{
+  border:0;background:#fff;
+  box-shadow:0 4px 14px rgba(26,45,36,.045);
+}
+.chips button.active{background:#183f31!important}
+.cards{gap:15px}
+.travel-card{
+  border:0;border-radius:24px;
+  box-shadow:0 10px 32px rgba(28,47,38,.09);
+  overflow:hidden;background:#fff;
+}
+.travel-card .cover{
+  height:146px;position:relative;overflow:hidden;
+  justify-content:flex-start;align-items:flex-end;padding:17px;
+}
+.travel-card.yunlin .cover{background:linear-gradient(135deg,#dceee4,#b9dbc7)}
+.travel-card.chiayi .cover{background:linear-gradient(135deg,#f3ead6,#e6cf9f)}
+.travel-card.tainan .cover{background:linear-gradient(135deg,#f2dfd4,#e7bfa7)}
+.cover-glow{
+  position:absolute;width:170px;height:170px;border-radius:50%;
+  right:-60px;top:-75px;background:rgba(255,255,255,.34)
+}
+.cover-city{
+  position:absolute;left:14px;top:13px;
+  background:rgba(255,255,255,.72);backdrop-filter:blur(7px);
+  padding:6px 10px;border-radius:999px;
+  font-size:11px;font-weight:900;color:#34463d;
+}
+.cover-emoji{
+  position:absolute;right:18px;bottom:19px;
+  width:67px;height:67px;display:grid;place-items:center;
+  border-radius:21px;font-size:37px;
+  background:rgba(255,255,255,.74);
+  box-shadow:0 11px 20px rgba(70,54,31,.10);
+  transform:rotate(3deg)
+}
+.cover-place{
+  position:relative;z-index:2;
+  color:#33453c;font-size:12px;font-weight:850;
+  background:rgba(255,255,255,.60);backdrop-filter:blur(5px);
+  padding:7px 9px;border-radius:10px;max-width:68%;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.cover-heat{
+  position:absolute;right:14px;top:13px;
+  padding:6px 9px;border-radius:999px;
+  background:#fff7e3;color:#a35c17;font-size:11px;font-weight:950;
+}
+.travel-card .body{padding:16px}
+.card-type-row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.type-chip,.weekend-chip{
+  display:inline-flex;align-items:center;
+  height:25px;padding:0 9px;border-radius:999px;
+  font-size:10px;font-weight:900;
+}
+.type-chip{background:#edf5f0;color:#337356}
+.weekend-chip{background:#fff0cc;color:#8d6512}
+.travel-card h3{
+  font-size:20px;line-height:1.28;margin:8px 0 6px;
+  letter-spacing:-.25px
+}
+.source-row{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:2px}
+.source-row .badge{font-size:10px;padding:4px 7px;margin:1px 2px 1px 0}
+.travel-card .eventdate{
+  margin:10px 0 8px;border-radius:12px;
+  border:1px solid #f3ddb0;background:#fff8e8;
+}
+.travel-card .reason{
+  color:#505d56;font-size:13px;line-height:1.6;
+  margin:9px 0 10px;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden
+}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap}
+.tag-mini{
+  padding:5px 8px;border-radius:999px;
+  background:#f0f4f1;color:#5a6d62;
+  font-size:10px;font-weight:800
+}
+.tag-more{background:#e7ece8;color:#64716a}
+.card-foot{
+  border-top:1px solid #edf0ed;margin-top:13px;padding-top:12px;
+  display:flex;align-items:center;justify-content:space-between;gap:9px
+}
+.updated-mini{font-size:10px;color:#9aa49e;white-space:nowrap}
+.compact-actions{gap:6px;flex-wrap:nowrap}
+.compact-actions button{
+  min-height:36px;border-radius:12px;padding:0 12px;font-size:12px
+}
+.compact-actions .fav-btn{
+  width:38px;padding:0;background:#f1f4f2;font-size:18px
+}
+.compact-actions .nav{background:#e7eff7;color:#315874}
+.compact-actions .detail{background:#176a4a}
+.planner{
+  position:relative;overflow:hidden;
+  margin-top:24px;padding:22px 18px 19px;
+  background:linear-gradient(145deg,#13271f,#183a2b 64%,#1d4c38);
+  box-shadow:0 14px 34px rgba(21,49,37,.18)
+}
+.planner:before,.planner:after{
+  content:"";position:absolute;border-radius:50%;pointer-events:none
+}
+.planner:before{width:130px;height:130px;right:-48px;top:-48px;background:rgba(255,220,123,.08)}
+.planner:after{width:90px;height:90px;left:-35px;bottom:-50px;background:rgba(87,181,132,.10)}
+.planner>*{position:relative;z-index:2}
+.planner-kicker{
+  font-size:10px;font-weight:950;letter-spacing:1.5px;color:#b7ddc7;
+}
+.planner h2{
+  font-size:27px;line-height:1.12;letter-spacing:-.6px;margin:8px 0 10px
+}
+.planner p{font-size:12px;line-height:1.6;color:#b9c9c1}
+.planner-controls{gap:8px}
+.planner select{
+  min-height:49px;padding:0 12px;
+  color:#23362d;background:#f4f6f4;
+  box-shadow:none
+}
+.planner .primary{
+  min-height:49px;border-radius:11px;
+  background:#f4ce6a;color:#253027;
+}
+.settings-panel{box-shadow:0 8px 24px rgba(27,48,38,.055);border:0}
+.mobile-bottom-nav{
+  left:10px;right:10px;bottom:9px;
+  border:0;border-radius:22px;
+  padding:7px 8px calc(7px + env(safe-area-inset-bottom));
+  box-shadow:0 12px 34px rgba(20,39,30,.18);
+}
+.mobile-bottom-nav button{min-height:51px;border-radius:16px}
+.mobile-bottom-nav button.nav-active{
+  background:#e7f2eb!important;color:#176a4a!important
+}
+.mobile-bottom-nav button.nav-active .nav-ico{
+  transform:translateY(-1px) scale(1.08)
+}
+.modal-card{border-radius:26px;box-shadow:0 24px 70px rgba(0,0,0,.22)}
+footer{font-size:11px}
+@media(max-width:640px){
+  main{padding:11px 11px 104px}
+  .app-header{padding:9px 12px}
+  .travel-hero{min-height:198px;border-radius:23px;padding:22px 18px}
+  .travel-hero h2{font-size:29px}
+  .hero-copy{max-width:70%}
+  .travel-card .cover{height:136px}
+  .section-title h2{font-size:21px}
+}
+
 </style>
 </head>
 <body>
-<header>
-  <div>
-    <div class="app-title">雲嘉南週末去哪玩</div>
-    <div class="app-sub" id="updated">資料版本：載入中</div>
+<header class="app-header">
+  <div class="brand">
+    <img class="brand-icon" src="./icon-192.png" alt="">
+    <div class="brand-copy">
+      <div class="app-title">雲嘉南週末</div>
+      <div class="app-sub"><span class="online-dot"></span><span id="updated">資料版本：載入中</span></div>
+    </div>
   </div>
-  <button id="fav" class="icon" aria-label="收藏">♡ <span id="fc">0</span></button>
+  <button id="fav" class="icon fav-top" aria-label="收藏">♡ <span id="fc">0</span></button>
 </header>
 
 <main>
-<section class="hero" id="top">
-  <div>
-    <span class="badge">V4.0</span>
-    <h2>這個週末，想去哪裡走走？</h2>
-    <p>雲林・嘉義・台南的景點、活動與 AI 行程，一個畫面快速找到。</p>
+<section class="hero travel-hero" id="top">
+  <div class="hero-copy">
+    <div class="hero-kicker">WEEKEND IN YUN・JIA・NAN</div>
+    <h2>這個週末，<br><span>去走走吧。</span></h2>
+    <p>精選活動、在地景點與自由行路線，想去哪就出發。</p>
+    <div class="hero-cities">
+      <span>雲林</span><i></i><span>嘉義</span><i></i><span>台南</span>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="sun"></div>
+    <div class="hill hill-a"></div>
+    <div class="hill hill-b"></div>
+    <div class="route-line"></div>
+    <div class="route-pin pin-a">●</div>
+    <div class="route-pin pin-b">●</div>
+    <div class="route-pin pin-c">●</div>
+    <div class="hero-pin">⌖</div>
   </div>
 </section>
 
@@ -210,21 +492,21 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
 </div>
 
 <section>
-  <div class="section-title"><h2>你今天想去哪？</h2><button id="clear" class="pill">清除</button></div>
+  <div class="section-title mood-title"><div><span class="section-kicker">TRAVEL MOOD</span><h2>你今天想去哪？</h2></div><button id="clear" class="pill clear-btn">清除</button></div>
   <div id="filters" class="chips"></div>
 </section>
 
 <section>
-  <div class="section-title"><h2>🔥 推薦資料庫</h2><span id="count" class="meta"></span></div>
+  <div class="section-title recommend-title"><div><span class="section-kicker">FOR YOU</span><h2>為你推薦</h2></div><span id="count" class="count-pill"></span></div>
   <div id="cards" class="cards"></div>
 </section>
 
 </section>
 
 <section class="planner" id="planner">
-  <span class="badge">✨ AI 行程</span>
-  <h2>幫我安排熱門行程</h2>
-  <p>依縣市、類型、日期與旅遊適合度組合行程；半日最多 2 站、一日最多 4 站；AI 會先去除重複景點，再依目前位置與景點距離調整順序，盡量減少繞路。</p>
+  <div class="planner-kicker">✨ SMART ROUTE</div>
+  <h2>幫我排一條<br>不繞路的行程</h2>
+  <p>選縣市、想玩的類型和半日／一日，系統會從熱門景點中挑選並依距離調整順序。</p>
   <div class="planner-controls">
     <select id="pc"><option>嘉義</option><option>雲林</option><option>台南</option></select>
     <select id="pt"><option>親子</option><option>美食</option><option>戶外</option><option>室內</option><option>免費</option><option>觀光工廠</option><option>校園</option><option>活動</option><option>本週末</option></select>
@@ -241,7 +523,7 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
   <div class="settings-inner">
     <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V4.0 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V4.1 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -284,7 +566,7 @@ header{backdrop-filter:saturate(180%) blur(16px);background:rgba(255,255,255,.94
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V4.0</footer>
+<footer>雲嘉南週末去哪玩 · V4.1</footer>
 
 <script>
 (function(){
@@ -312,7 +594,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V4.0",updated:"2026-09-27"};
+var feedMeta={version:"內建 V4.1",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -333,11 +615,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData40")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData41")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData40",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData41",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -451,7 +733,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V4.0：活動必須同時符合
+  // V4.1：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -1039,26 +1321,40 @@ function render(){
   a.forEach(function(s){
     var tags=Array.isArray(s.tags)?s.tags:[];
     var el=document.createElement("article");
-    el.className="card";
+    var topTags=tags.slice(0,3);
+    var extraTags=Math.max(0,tags.length-topTags.length);
+    var cityClass=s.city==="雲林"?"yunlin":s.city==="嘉義"?"chiayi":"tainan";
+    el.className="card travel-card "+cityClass;
     el.innerHTML=
-      '<div class="cover">'+(s.e||"📍")+'</div>'+
+      '<div class="cover">'+
+        '<div class="cover-glow"></div>'+
+        '<div class="cover-city">'+(s.city||"雲嘉南")+'</div>'+
+        '<div class="cover-emoji">'+(s.e||"📍")+'</div>'+
+        '<div class="cover-place">📍 '+(s.place||s.city||"")+'</div>'+
+        '<div class="cover-heat">🔥 '+displayHeat(s)+'</div>'+
+      '</div>'+
       '<div class="body">'+
-      '<div class="meta">'+(s.city||"")+' · '+(s.type||"")+' · '+(s.place||"")+'</div>'+
-      '<h3>'+s.name+'</h3>'+
-      (sel["本週末"]&&isThisWeekendEvent(s)?'<span class="badge">📅 本週末</span>':'')+
-      (s.type==="活動"&&isTravelFriendlyEvent(s)?'<span class="badge">✨ 近期週末精選</span>':'')+
-      sourceBadges(s)+
-      '<div class="heat">🔥 社群熱度 '+displayHeat(s)+'</div>'+
-      '<div class="meta">更新 '+displayUpdated(s)+'</div>'+
-      activityDateHtml(s)+
-      (sourceList(s).length>1?'<div class="source-note">此景點同時有官方資料與近期社群訊號</div>':'')+
-      '<p class="reason">'+displayReason(s)+'</p>'+
-      '<div>'+tags.map(function(t){return'<span class="badge">'+t+'</span>'}).join("")+'</div>'+
-      '<div class="actions">'+
-      '<button data-f="'+s.id+'">'+(favs[s.id]?"♥ 已收藏":"♡ 收藏")+'</button>'+
-      '<button class="nav" data-n="'+s.id+'">🧭 導航</button>'+
-      '<button class="detail" data-d="'+s.id+'">詳情</button>'+
-      '</div></div>';
+        '<div class="card-type-row">'+
+          '<span class="type-chip">'+(s.type||"景點")+'</span>'+
+          (sel["本週末"]&&isThisWeekendEvent(s)?'<span class="weekend-chip">本週末</span>':'')+
+          (s.type==="活動"&&isTravelFriendlyEvent(s)?'<span class="weekend-chip">近期精選</span>':'')+
+        '</div>'+
+        '<h3>'+s.name+'</h3>'+
+        '<div class="source-row">'+sourceBadges(s)+'</div>'+
+        activityDateHtml(s)+
+        '<p class="reason">'+displayReason(s)+'</p>'+
+        '<div class="tag-row">'+topTags.map(function(t){return'<span class="tag-mini">'+t+'</span>'}).join("")+
+          (extraTags?'<span class="tag-mini tag-more">+'+extraTags+'</span>':'')+
+        '</div>'+
+        '<div class="card-foot">'+
+          '<span class="updated-mini">更新 '+displayUpdated(s)+'</span>'+
+          '<div class="actions compact-actions">'+
+            '<button class="fav-btn" data-f="'+s.id+'">'+(favs[s.id]?"♥":"♡")+'</button>'+
+            '<button class="nav" data-n="'+s.id+'">導航</button>'+
+            '<button class="detail" data-d="'+s.id+'">查看</button>'+
+          '</div>'+
+        '</div>'+
+      '</div>';
     box.appendChild(el);
   });
 
@@ -1157,7 +1453,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData40",JSON.stringify(data));
+        localStorage.setItem("ynData41",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -1288,9 +1584,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V4.0",updated:"2026-09-27"};
+    feedMeta={version:"內建 V4.1",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V4.0 內建資料。";
+    $("msg").textContent="已恢復 V4.1 內建資料。";
     refreshHealth();
     render();
   };
