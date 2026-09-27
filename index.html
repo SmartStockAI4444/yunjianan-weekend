@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>雲嘉南週末去哪玩 V2.9</title>
+<title>雲嘉南週末去哪玩 V3.0</title>
 <style>
 :root{
   --bg:#f5f7f4;--card:#fff;--text:#1d2520;--muted:#69736d;--line:#e1e6e2;
@@ -45,6 +45,19 @@ button,select,input{font:inherit}
 .planner p{color:#cbd1ce}
 .planner select{padding:11px;border:0;border-radius:11px}
 .planner .primary{background:#fff;color:#1d2520}
+.plan-result{margin-top:18px}
+.plan-title{font-size:18px;font-weight:900;margin:0 0 12px}
+.plan-card{background:#fff;color:var(--text);border-radius:16px;padding:14px;margin-top:10px}
+.plan-top{display:flex;gap:10px;align-items:flex-start}
+.plan-step{flex:0 0 auto;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-weight:900}
+.plan-name{font-size:17px;font-weight:900;line-height:1.35}
+.plan-meta{font-size:13px;color:var(--muted);margin-top:4px}
+.plan-date{margin-top:9px;padding:8px 10px;border-radius:10px;background:#fff5df;color:#7a5412;font-size:13px;font-weight:800}
+.plan-heat{margin-top:8px;color:var(--hot);font-weight:900;font-size:13px}
+.plan-actions{display:flex;gap:8px;margin-top:11px;flex-wrap:wrap}
+.plan-actions button{border:0;border-radius:10px;padding:9px 12px;font-weight:850}
+.plan-actions .pnav{background:#e7eef7;color:#294e76}
+.plan-actions .pdetail{background:var(--accent);color:#fff}
 .updatebox{margin-top:25px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}
 .updatebox textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:12px;padding:12px}
 .modal{position:fixed;inset:0;background:#0007;z-index:20;display:grid;place-items:center;padding:18px}
@@ -83,7 +96,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 <main>
 <section class="hero">
   <div>
-    <span class="badge">V2.9</span>
+    <span class="badge">V3.0</span>
     <h2>官方資料＋社群熱門訊號，合併成不重複的旅遊資料庫。</h2>
     <p>同一景點只顯示一張卡片，但可同時被「官方」與「社群熱門」篩選找到。</p>
   </div>
@@ -96,7 +109,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
 
 <section class="syncbox">
   <h2>☁️ 雲端資料中心</h2>
-  <p class="meta">V2.9 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
+  <p class="meta">V3.0 會檢查遠端資料版本、去除重複項目、隱藏已過期活動，並保留官方＋社群雙來源標記。</p>
   <div class="syncgrid">
     <input id="feedUrl" placeholder="遠端 weekly_feed.json 網址（https://…）">
     <button id="useDefaultFeed" class="pill">使用預設資料檔</button>
@@ -149,13 +162,13 @@ footer{text-align:center;color:var(--muted);padding:35px}
 <section class="planner">
   <span class="badge">✨ AI 行程</span>
   <h2>幫我安排熱門行程</h2>
-  <p>依縣市、類型、日期與旅遊適合度組合行程；可直接選「本週末」。</p>
+  <p>依縣市、類型、日期與旅遊適合度組合行程；結果會顯示日期、地點、導航與詳情。</p>
   <div class="row">
     <select id="pc"><option>嘉義</option><option>雲林</option><option>台南</option></select>
     <select id="pt"><option>親子</option><option>美食</option><option>戶外</option><option>室內</option><option>免費</option><option>觀光工廠</option><option>校園</option><option>活動</option><option>本週末</option></select>
     <button id="plan" class="primary">幫我排行程</button>
   </div>
-  <div id="pr"></div>
+  <div id="pr" class="plan-result"></div>
 </section>
 
 <section class="updatebox">
@@ -181,7 +194,7 @@ footer{text-align:center;color:var(--muted);padding:35px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V2.9</footer>
+<footer>雲嘉南週末去哪玩 · V3.0</footer>
 
 <script>
 (function(){
@@ -209,7 +222,7 @@ var data;
 var fs=["親子","情侶","美食","戶外","室內","免費","雨天","觀光工廠","校園","活動","本週末"];
 var city="全部",source="全部",sort="推薦",sel={},favs={},favOnly=false,query="";
 var showExpiredItems=false;
-var feedMeta={version:"內建 V2.9",updated:"2026-09-27"};
+var feedMeta={version:"內建 V3.0",updated:"2026-09-27"};
 
 function $(x){return document.getElementById(x)}
 
@@ -230,11 +243,11 @@ function sourceBadges(s){
 
 function loadData(){
   try{
-    var x=JSON.parse(localStorage.getItem("ynData29")||"null");
+    var x=JSON.parse(localStorage.getItem("ynData30")||"null");
     data=Array.isArray(x)&&x.length?x:JSON.parse(JSON.stringify(seed));
   }catch(e){data=JSON.parse(JSON.stringify(seed))}
 }
-function saveData(){try{localStorage.setItem("ynData29",JSON.stringify(data))}catch(e){}}
+function saveData(){try{localStorage.setItem("ynData30",JSON.stringify(data))}catch(e){}}
 
 function loadFav(){
   try{JSON.parse(localStorage.getItem("ynFav20")||"[]").forEach(function(x){favs[x]=1})}catch(e){}
@@ -348,7 +361,7 @@ function isTravelFriendlyEvent(s){
   var name=String(s.name||"").toLowerCase();
   var full=eventText(s);
 
-  // V2.9：活動必須同時符合
+  // V3.0：活動必須同時符合
   // 1. 不是競賽／招生／學術類
   // 2. 名稱本身明確像旅遊休閒活動
   // 3. 已在進行中，或未來 45 天內開始
@@ -603,6 +616,25 @@ function activityDateHtml(s){
   return t?'<div class="eventdate">'+t+'</div>':"";
 }
 
+function planCardHtml(s,i){
+  var date=activityDateText(s);
+  var place=(s.place||s.city||"地點待確認");
+  return '<div class="plan-card">'+
+    '<div class="plan-top">'+
+      '<div class="plan-step">'+(i+1)+'</div>'+
+      '<div>'+
+        '<div class="plan-name">'+(s.name||"未命名行程")+'</div>'+
+        '<div class="plan-meta">📍 '+place+' · '+(s.type||"景點")+'</div>'+
+      '</div>'+
+    '</div>'+
+    (date?'<div class="plan-date">'+date+'</div>':'')+
+    '<div class="plan-heat">🔥 熱度 '+Number(s.heat||0)+'</div>'+
+    '<div class="plan-actions">'+
+      '<button class="pnav" data-pn="'+i+'">🧭 導航</button>'+
+      '<button class="pdetail" data-pd="'+i+'">詳情</button>'+
+    '</div>'+
+  '</div>';
+}
 
 function render(){
   var a=list(),box=$("cards"),c=0;
@@ -736,7 +768,7 @@ function syncFeed(url,auto){
       data=normalizeFeed(x);
 
       try{
-        localStorage.setItem("ynData29",JSON.stringify(data));
+        localStorage.setItem("ynData30",JSON.stringify(data));
         localStorage.setItem("ynFeed20",url);
         localStorage.setItem("ynFeed20Time",new Date().toISOString());
       }catch(e){}
@@ -816,9 +848,29 @@ function init(){
     }).slice(0,2);
 
     var title=t==="本週末"?c+"・本週末行程":c+"・"+t+"行程";
-    $("pr").innerHTML=a.length
-      ?'<b>'+title+'</b><br>① '+a[0].name+(a[1]?' → ② '+a[1].name:'')
-      :(t==="本週末"?'本週末目前沒有符合條件的活動。':'目前沒有符合行程。');
+
+    if(!a.length){
+      $("pr").innerHTML='<div class="plan-title">'+title+'</div>'+
+        '<div class="meta">'+(t==="本週末"?'本週末目前沒有符合條件的活動。':'目前沒有符合行程。')+'</div>';
+      return;
+    }
+
+    $("pr").innerHTML='<div class="plan-title">'+title+'</div>'+
+      a.map(function(s,i){return planCardHtml(s,i)}).join("");
+
+    [].forEach.call($("pr").querySelectorAll("[data-pn]"),function(b){
+      b.onclick=function(){
+        var i=Number(this.getAttribute("data-pn"));
+        if(a[i])nav(a[i]);
+      };
+    });
+
+    [].forEach.call($("pr").querySelectorAll("[data-pd]"),function(b){
+      b.onclick=function(){
+        var i=Number(this.getAttribute("data-pd"));
+        if(a[i])detail(a[i].id);
+      };
+    });
   };
 
   $("export").onclick=function(){
@@ -848,9 +900,9 @@ function init(){
 
   $("reset").onclick=function(){
     data=JSON.parse(JSON.stringify(seed));
-    feedMeta={version:"內建 V2.9",updated:"2026-09-27"};
+    feedMeta={version:"內建 V3.0",updated:"2026-09-27"};
     saveData();
-    $("msg").textContent="已恢復 V2.9 內建資料。";
+    $("msg").textContent="已恢復 V3.0 內建資料。";
     refreshHealth();
     render();
   };
