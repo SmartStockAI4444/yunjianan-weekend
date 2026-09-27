@@ -17,11 +17,12 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
 
-      - name: Install Android SDK 35
-        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+      - name: Prepare Android SDK 35
+        shell: bash
+        run: |
+          yes | sdkmanager --licenses >/dev/null || true
+          sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
@@ -103,6 +104,8 @@ jobs:
           android.useAndroidX=true
           android.nonTransitiveRClass=true
           EOF
+
+          echo "sdk.dir=${ANDROID_SDK_ROOT:-$ANDROID_HOME}" > _android_build/local.properties
 
           cat > _android_build/app/build.gradle <<'EOF'
           plugins {
