@@ -160,7 +160,7 @@ jobs:
               locationSource="gps";
               currentLocationLabel="手機定位";
               syncLocationPanel();
-              setNearbyHint("📍 Native9：正在呼叫 Android 定位…","loading");
+              setNearbyHint("📍 Native10：正在呼叫 Android 定位…","loading");
           
               try{
                 window.__clearNativeLocationTimer();
@@ -179,23 +179,23 @@ jobs:
           """
               s=s.replace(marker,native_branch,1)
 
-          # Native9: fix nearbyMatchCount() calling a non-existent matchFilter().
+          # Native10: fix nearbyMatchCount() calling a non-existent matchFilter().
           if 'if(!matchFilter(s))return false;' in s:
               s=s.replace(
                   'if(!matchFilter(s))return false;',
-                  'if(!okTags(s))return false;\\n'
-                  '    if(sel["活動"]&&!isTravelFriendlyEvent(s))return false;\\n'
+                  'if(!okTags(s))return false;\n'
+                  '    if(sel["活動"]&&!isTravelFriendlyEvent(s))return false;\n'
                   '    if(favOnly&&!favs[s.id])return false;',
                   1
               )
 
           s=s.replace(
               "雲嘉南週末去哪玩 · V5.5",
-              "雲嘉南週末去哪玩 · V5.5 · Native9",
+              "雲嘉南週末去哪玩 · V5.5 · Native10",
               1
           )
 
-          # Native9 guard: nearby code must not reference undefined matchFilter().
+          # Native10 guard: nearby code must not reference undefined matchFilter().
           if "matchFilter(s)" in s:
               raise RuntimeError("nearbyMatchCount still references undefined matchFilter(s)")
 
@@ -268,8 +268,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 9
-                  versionName "5.5-native-9"
+                  versionCode 10
+                  versionName "5.5-native-10"
               }
 
               buildTypes {
@@ -469,10 +469,10 @@ jobs:
                   @JavascriptInterface
                   public void requestLocation() {
                       runOnUiThread(() -> {
-                          directStatus("📍 Native9：Android 已收到定位要求…");
+                          directStatus("📍 Native10：Android 已收到定位要求…");
                           Toast.makeText(
                                   MainActivity.this,
-                                  "Native9 定位已啟動",
+                                  "Native10 定位已啟動",
                                   Toast.LENGTH_SHORT
                           ).show();
                           requestNativeLocation();
@@ -491,7 +491,7 @@ jobs:
 
               private void requestNativeLocation() {
                   if (!hasLocationPermission()) {
-                      directStatus("📍 Native9：等待位置權限…");
+                      directStatus("📍 Native10：等待位置權限…");
                       requestPermissions(
                               new String[] {
                                       Manifest.permission.ACCESS_FINE_LOCATION,
@@ -543,7 +543,7 @@ jobs:
                   }
 
                   directStatus(
-                          "📍 Native9：權限正常，先讀取 Wi‑Fi／基地台位置…"
+                          "📍 Native10：權限正常，先讀取 Wi‑Fi／基地台位置…"
                   );
 
                   try {
@@ -579,7 +579,7 @@ jobs:
                   }
 
                   directStatus(
-                          "📍 Native9：沒有近期位置，正在等 Wi‑Fi／基地台或 GPS…"
+                          "📍 Native10：沒有近期位置，正在等 Wi‑Fi／基地台或 GPS…"
                   );
 
                   listener = new LocationListener() {
@@ -694,7 +694,7 @@ jobs:
                   double lng = location.getLongitude();
 
                   directStatus(
-                          "✅ Native9：已取得"
+                          "✅ Native10：已取得"
                                   + source
                                   + "，正在套用位置…"
                   );
@@ -716,7 +716,7 @@ jobs:
                                   + "}catch(e){"
                                   + "var el=document.getElementById('nearbyHint');"
                                   + "if(el){"
-                                  + "el.textContent='⚠️ Native9 套用位置失敗：'+"
+                                  + "el.textContent='⚠️ Native10 套用位置失敗：'+"
                                   + "(e&&e.message?e.message:String(e));"
                                   + "el.className='nearby-hint warn';"
                                   + "}"
@@ -737,7 +737,7 @@ jobs:
                   locationResolved = true;
                   stopLocationRequests();
 
-                  directStatus("⚠️ Native9：" + message);
+                  directStatus("⚠️ Native10：" + message);
 
                   Toast.makeText(
                           this,
@@ -805,7 +805,7 @@ jobs:
 
                   if (hasLocationPermission()) {
                       directStatus(
-                              "📍 Native9：位置權限已允許，開始定位…"
+                              "📍 Native10：位置權限已允許，開始定位…"
                       );
                       beginLocation();
                   } else {
@@ -853,11 +853,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native9.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native10.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native9-APK
-          path: YunJiaNanWeekend-V5.5-native9.apk
+          name: YunJiaNanWeekend-V5.5-Native10-APK
+          path: YunJiaNanWeekend-V5.5-native10.apk
           if-no-files-found: error
