@@ -141,7 +141,7 @@ jobs:
           if marker in s:
               # IMPORTANT: inject native callbacks inside the same IIFE,
               # before requestUserLocation(), so they close over app state vars.
-              s=s.replace(marker, native_hook+"\\n"+marker, 1)
+              s=s.replace(marker, native_hook+"\n"+marker, 1)
               native_branch=r"""function requestUserLocation(forceGps){
             if(window.__NATIVE_ANDROID_APP__ && window.AndroidLocation){
               if(currentUserCoord&&!forceGps){
@@ -160,7 +160,7 @@ jobs:
               locationSource="gps";
               currentLocationLabel="手機定位";
               syncLocationPanel();
-              setNearbyHint("📍 正在由 Android 取得目前位置…","loading");
+              setNearbyHint("📍 正在由 Android 取得目前位置…（Native7）","loading");
           
               try{
                 window.__clearNativeLocationTimer();
@@ -181,12 +181,32 @@ jobs:
 
           s=s.replace(
               "雲嘉南週末去哪玩 · V5.5",
-              "雲嘉南週末去哪玩 · V5.5 · Native6",
+              "雲嘉南週末去哪玩 · V5.5 · Native7",
               1
+          )
+
+          # Build-time sanity checks: never ship a broken native JS injection again.
+          if "\\nfunction requestUserLocation" in s:
+              raise RuntimeError("Native JS contains a literal \\n before requestUserLocation")
+
+          main_marker='<script>\nif(window.__NATIVE_ANDROID_APP__){\n  window.open=function(url){'
+          start=s.find(main_marker)
+          if start<0:
+              raise RuntimeError("Cannot find transformed native main script")
+          start += len("<script>")
+          end=s.find("</script>", start)
+          if end<0:
+              raise RuntimeError("Cannot find end of transformed native main script")
+
+          Path("_android_build/native-main-check.js").write_text(
+              s[start:end],
+              encoding="utf-8"
           )
 
           p.write_text(s,encoding="utf-8")
           PY
+
+          node --check _android_build/native-main-check.js
 
           cat > _android_build/settings.gradle <<'EOF'
           pluginManagement {
@@ -234,8 +254,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 1
-                  versionName "5.5-native-6"
+                  versionCode 7
+                  versionName "5.5-native-7"
               }
 
               buildTypes {
@@ -690,11 +710,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native6.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native7.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native6-APK
-          path: YunJiaNanWeekend-V5.5-native6.apk
+          name: YunJiaNanWeekend-V5.5-Native7-APK
+          path: YunJiaNanWeekend-V5.5-native7.apk
           if-no-files-found: error
