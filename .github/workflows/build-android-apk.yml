@@ -104,60 +104,60 @@ jobs:
               1
           )
           native_hook = r"""
-if(window.__NATIVE_ANDROID_APP__){
-  window.__receiveNativeLocation=function(lat,lng){
-    currentUserCoord=[Number(lat),Number(lng)];
-    locationState="ready";
-    locationSource="gps";
-    currentLocationLabel="手機目前位置";
-    syncLocationPanel();
-    refreshNearbyHint();
-    render();
-  };
-
-  window.__nativeLocationError=function(msg){
-    locationState="error";
-    currentUserCoord=null;
-    locationSource="";
-    currentLocationLabel="";
-    syncLocationPanel();
-    setNearbyHint("⚠️ "+(msg||"目前無法取得手機位置")+"；可改用下方手動位置。","warn");
-    render();
-  };
-}
-"""
+          if(window.__NATIVE_ANDROID_APP__){
+            window.__receiveNativeLocation=function(lat,lng){
+              currentUserCoord=[Number(lat),Number(lng)];
+              locationState="ready";
+              locationSource="gps";
+              currentLocationLabel="手機目前位置";
+              syncLocationPanel();
+              refreshNearbyHint();
+              render();
+            };
+          
+            window.__nativeLocationError=function(msg){
+              locationState="error";
+              currentUserCoord=null;
+              locationSource="";
+              currentLocationLabel="";
+              syncLocationPanel();
+              setNearbyHint("⚠️ "+(msg||"目前無法取得手機位置")+"；可改用下方手動位置。","warn");
+              render();
+            };
+          }
+          """
           s=s.replace("</body>", "<script>"+native_hook+"</script>\\n</body>", 1)
 
           marker="function requestUserLocation(forceGps){"
           if marker in s:
               native_branch=r"""function requestUserLocation(forceGps){
-  if(window.__NATIVE_ANDROID_APP__ && window.AndroidLocation){
-    if(currentUserCoord&&!forceGps){
-      locationState="ready";
-      syncLocationPanel();
-      refreshNearbyHint();
-      render();
-      return;
-    }
-
-    if(!forceGps && applySavedManualLocation()){
-      return;
-    }
-
-    locationState="loading";
-    locationSource="gps";
-    currentLocationLabel="手機定位";
-    syncLocationPanel();
-    setNearbyHint("📍 正在由 Android 取得目前位置…","loading");
-
-    try{
-      window.AndroidLocation.requestLocation();
-    }catch(e){
-      window.__nativeLocationError("Android 定位服務啟動失敗");
-    }
-    return;
-  }
-"""
+            if(window.__NATIVE_ANDROID_APP__ && window.AndroidLocation){
+              if(currentUserCoord&&!forceGps){
+                locationState="ready";
+                syncLocationPanel();
+                refreshNearbyHint();
+                render();
+                return;
+              }
+          
+              if(!forceGps && applySavedManualLocation()){
+                return;
+              }
+          
+              locationState="loading";
+              locationSource="gps";
+              currentLocationLabel="手機定位";
+              syncLocationPanel();
+              setNearbyHint("📍 正在由 Android 取得目前位置…","loading");
+          
+              try{
+                window.AndroidLocation.requestLocation();
+              }catch(e){
+                window.__nativeLocationError("Android 定位服務啟動失敗");
+              }
+              return;
+            }
+          """
               s=s.replace(marker,native_branch,1)
 
           p.write_text(s,encoding="utf-8")
@@ -210,7 +210,7 @@ if(window.__NATIVE_ANDROID_APP__){
                   minSdk 26
                   targetSdk 35
                   versionCode 1
-                  versionName "5.5-native-2"
+                  versionName "5.5-native-3"
               }
 
               buildTypes {
@@ -528,12 +528,12 @@ if(window.__NATIVE_ANDROID_APP__){
               }
 
               private void sendLocationError(String message) {
-                  final String safe = message
-                          .replace("\", "\\")
-                          .replace("'", "\'");
+                  final String safe = org.json.JSONObject.quote(
+                          message == null ? "" : message
+                  );
 
                   runOnUiThread(() -> webView.evaluateJavascript(
-                          "window.__nativeLocationError('" + safe + "');",
+                          "window.__nativeLocationError(" + safe + ");",
                           null
                   ));
               }
@@ -596,11 +596,11 @@ if(window.__NATIVE_ANDROID_APP__){
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native2.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native3.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native2-APK
-          path: YunJiaNanWeekend-V5.5-native2.apk
+          name: YunJiaNanWeekend-V5.5-Native3-APK
+          path: YunJiaNanWeekend-V5.5-native3.apk
           if-no-files-found: error
