@@ -210,7 +210,7 @@ jobs:
                   minSdk 26
                   targetSdk 35
                   versionCode 1
-                  versionName "5.5-native-3"
+                  versionName "5.5-native-4"
               }
 
               buildTypes {
@@ -228,6 +228,7 @@ jobs:
 
           dependencies {
               implementation 'androidx.webkit:webkit:1.12.1'
+              implementation 'com.google.android.gms:play-services-location:21.3.0'
           }
           EOF
 
@@ -283,16 +284,14 @@ jobs:
 
           import android.Manifest;
           import android.app.Activity;
-          import android.content.Context;
           import android.content.Intent;
           import android.content.pm.PackageManager;
           import android.location.Location;
-          import android.location.LocationListener;
-          import android.location.LocationManager;
           import android.net.Uri;
           import android.os.Bundle;
           import android.os.Handler;
           import android.os.Looper;
+          import android.provider.Settings;
           import android.view.ViewGroup;
           import android.webkit.JavascriptInterface;
           import android.webkit.WebResourceRequest;
@@ -304,24 +303,29 @@ jobs:
 
           import androidx.webkit.WebViewAssetLoader;
 
-          import java.util.ArrayList;
-          import java.util.List;
+          import com.google.android.gms.location.FusedLocationProviderClient;
+          import com.google.android.gms.location.LocationServices;
+          import com.google.android.gms.location.Priority;
+          import com.google.android.gms.tasks.CancellationTokenSource;
 
           public class MainActivity extends Activity {
 
               private static final int LOCATION_PERMISSION_REQUEST = 4105;
+              private static final long LOCATION_TIMEOUT_MS = 15000L;
 
               private WebView webView;
-              private LocationManager locationManager;
-              private LocationListener activeLocationListener;
+              private FusedLocationProviderClient fusedLocationClient;
               private final Handler handler = new Handler(Looper.getMainLooper());
-              private Location staleFallback;
+
+              private CancellationTokenSource activeLocationToken;
+              private Runnable activeTimeout;
+              private boolean locationResolved = false;
 
               @Override
               protected void onCreate(Bundle savedInstanceState) {
                   super.onCreate(savedInstanceState);
 
-                  locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+                  fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
                   webView = new WebView(this);
                   webView.setLayoutParams(new ViewGroup.LayoutParams(
@@ -339,10 +343,16 @@ jobs:
                   settings.setAllowContentAccess(true);
                   settings.setMediaPlaybackRequiresUserGesture(false);
 
-                  webView.addJavascriptInterface(new NativeLocationBridge(), "AndroidLocation");
+                  webView.addJavascriptInterface(
+                          new NativeLocationBridge(),
+                          "AndroidLocation"
+                  );
 
                   WebViewAssetLoader assetLoader = new WebViewAssetLoader.Builder()
-                          .addPathHandler("/assets/", new WebViewAssetLoader.AssetsPathHandler(this))
+                          .addPathHandler(
+                                  "/assets/",
+                                  new WebViewAssetLoader.AssetsPathHandler(this)
+                          )
                           .build();
 
                   webView.setWebViewClient(new WebViewClient() {
@@ -379,7 +389,9 @@ jobs:
                   });
 
                   if (savedInstanceState == null) {
-                      webView.loadUrl("https://appassets.androidplatform.net/assets/index.html");
+                      webView.loadUrl(
+                              "https://appassets.androidplatform.net/assets/index.html"
+                      );
                   } else {
                       webView.restoreState(savedInstanceState);
                   }
@@ -393,10 +405,12 @@ jobs:
               }
 
               private boolean hasLocationPermission() {
-                  return checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)
-                          == PackageManager.PERMISSION_GRANTED
-                          || checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION)
-                          == PackageManager.PERMISSION_GRANTED;
+                  return checkSelfPermission(
+                          Manifest.permission.ACCESS_FINE_LOCATION
+                  ) == PackageManager.PERMISSION_GRANTED
+                          || checkSelfPermission(
+                          Manifest.permission.ACCESS_COARSE_LOCATION
+                  ) == PackageManager.PERMISSION_GRANTED;
               }
 
               private void requestNativeLocation() {
@@ -420,101 +434,146 @@ jobs:
                       return;
                   }
 
-                  if (locationManager == null) {
-                      sendLocationError("Android 定位服務不可用");
+                  if (!isLocationEnabled()) {
+                      sendLocationError("請先開啟手機的「位置」服務");
                       return;
                   }
 
+                  locationResolved = false;
+
                   try {
-                      List<String> providers = new ArrayList<>();
+                      fusedLocationClient
+                              .getLastLocation()
+                              .addOnSuccessListener(this, location -> {
+                                  if (locationResolved) return;
 
-                      if (locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
-                          providers.add(LocationManager.NETWORK_PROVIDER);
-                      }
-                      if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-                          providers.add(LocationManager.GPS_PROVIDER);
-                      }
+                                  if (location != null) {
+                                      long ageMs =
+                                              System.currentTimeMillis()
+                                                      - location.getTime();
 
-                      if (providers.isEmpty()) {
-                          sendLocationError("請先開啟手機的「位置」服務");
-                          return;
-                      }
+                                      if (ageMs <= 10 * 60 * 1000L) {
+                                          finishLocation(location);
+                                          return;
+                                      }
+                                  }
 
-                      Location best = null;
-
-                      for (String provider : providers) {
-                          Location last = locationManager.getLastKnownLocation(provider);
-                          if (last != null && (best == null || last.getTime() > best.getTime())) {
-                              best = last;
-                          }
-                      }
-
-                      staleFallback = best;
-
-                      if (best != null) {
-                          long ageMs = System.currentTimeMillis() - best.getTime();
-                          if (ageMs <= 15 * 60 * 1000L) {
-                              sendLocation(best);
-                              return;
-                          }
-                      }
-
-                      final String provider = providers.get(0);
-
-                      activeLocationListener = new LocationListener() {
-                          @Override
-                          public void onLocationChanged(Location location) {
-                              if (location != null) {
-                                  stopLocationUpdates();
-                                  sendLocation(location);
-                              }
-                          }
-
-                          @Override
-                          public void onProviderEnabled(String provider) {}
-
-                          @Override
-                          public void onProviderDisabled(String provider) {}
-
-                          @Override
-                          public void onStatusChanged(String provider, int status, Bundle extras) {}
-                      };
-
-                      locationManager.requestLocationUpdates(
-                              provider,
-                              0L,
-                              0f,
-                              activeLocationListener,
-                              Looper.getMainLooper()
-                      );
-
-                      handler.postDelayed(() -> {
-                          if (activeLocationListener != null) {
-                              stopLocationUpdates();
-
-                              if (staleFallback != null) {
-                                  sendLocation(staleFallback);
-                              } else {
-                                  sendLocationError("定位逾時，請稍後再試一次");
-                              }
-                          }
-                      }, 12000);
+                                  requestFreshLocation();
+                              })
+                              .addOnFailureListener(this, e -> {
+                                  if (!locationResolved) {
+                                      requestFreshLocation();
+                                  }
+                              });
 
                   } catch (SecurityException e) {
                       sendLocationError("Android 未允許定位權限");
                   } catch (Exception e) {
+                      sendLocationError("無法啟動手機定位");
+                  }
+              }
+
+              private boolean isLocationEnabled() {
+                  try {
+                      if (android.os.Build.VERSION.SDK_INT >=
+                              android.os.Build.VERSION_CODES.P) {
+                          android.location.LocationManager lm =
+                                  (android.location.LocationManager)
+                                          getSystemService(LOCATION_SERVICE);
+                          return lm != null && lm.isLocationEnabled();
+                      }
+                  } catch (Exception ignored) {
+                  }
+                  return true;
+              }
+
+              private void requestFreshLocation() {
+                  if (locationResolved) return;
+
+                  cancelActiveRequest();
+
+                  activeLocationToken = new CancellationTokenSource();
+
+                  activeTimeout = () -> {
+                      if (!locationResolved) {
+                          locationResolved = true;
+
+                          if (activeLocationToken != null) {
+                              activeLocationToken.cancel();
+                          }
+
+                          sendLocationError(
+                                  "定位逾時，請再按一次「使用手機定位」"
+                          );
+                      }
+                  };
+
+                  handler.postDelayed(
+                          activeTimeout,
+                          LOCATION_TIMEOUT_MS
+                  );
+
+                  try {
+                      fusedLocationClient
+                              .getCurrentLocation(
+                                      Priority.PRIORITY_BALANCED_POWER_ACCURACY,
+                                      activeLocationToken.getToken()
+                              )
+                              .addOnSuccessListener(this, location -> {
+                                  if (locationResolved) return;
+
+                                  if (location != null) {
+                                      finishLocation(location);
+                                  } else {
+                                      locationResolved = true;
+                                      cancelActiveRequest();
+                                      sendLocationError(
+                                              "目前沒有可用的位置資料"
+                                      );
+                                  }
+                              })
+                              .addOnFailureListener(this, e -> {
+                                  if (locationResolved) return;
+
+                                  locationResolved = true;
+                                  cancelActiveRequest();
+                                  sendLocationError(
+                                          "手機定位失敗，請稍後再試"
+                                  );
+                              });
+
+                  } catch (SecurityException e) {
+                      locationResolved = true;
+                      cancelActiveRequest();
+                      sendLocationError("Android 未允許定位權限");
+                  } catch (Exception e) {
+                      locationResolved = true;
+                      cancelActiveRequest();
                       sendLocationError("無法取得目前位置");
                   }
               }
 
-              private void stopLocationUpdates() {
-                  if (locationManager != null && activeLocationListener != null) {
-                      try {
-                          locationManager.removeUpdates(activeLocationListener);
-                      } catch (Exception ignored) {}
+              private void finishLocation(Location location) {
+                  if (locationResolved) return;
+
+                  locationResolved = true;
+                  cancelActiveRequest();
+                  sendLocation(location);
+              }
+
+              private void cancelActiveRequest() {
+                  if (activeTimeout != null) {
+                      handler.removeCallbacks(activeTimeout);
+                      activeTimeout = null;
                   }
 
-                  activeLocationListener = null;
+                  if (activeLocationToken != null) {
+                      try {
+                          activeLocationToken.cancel();
+                      } catch (Exception ignored) {
+                      }
+                      activeLocationToken = null;
+                  }
               }
 
               private void sendLocation(Location location) {
@@ -522,7 +581,8 @@ jobs:
                   final double lng = location.getLongitude();
 
                   runOnUiThread(() -> webView.evaluateJavascript(
-                          "window.__receiveNativeLocation(" + lat + "," + lng + ");",
+                          "window.__receiveNativeLocation("
+                                  + lat + "," + lng + ");",
                           null
                   ));
               }
@@ -533,7 +593,8 @@ jobs:
                   );
 
                   runOnUiThread(() -> webView.evaluateJavascript(
-                          "window.__nativeLocationError(" + safe + ");",
+                          "window.__nativeLocationError("
+                                  + safe + ");",
                           null
                   ));
               }
@@ -544,7 +605,11 @@ jobs:
                       String[] permissions,
                       int[] grantResults
               ) {
-                  super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+                  super.onRequestPermissionsResult(
+                          requestCode,
+                          permissions,
+                          grantResults
+                  );
 
                   if (requestCode != LOCATION_PERMISSION_REQUEST) {
                       return;
@@ -559,7 +624,7 @@ jobs:
 
               @Override
               protected void onDestroy() {
-                  stopLocationUpdates();
+                  cancelActiveRequest();
 
                   if (webView != null) {
                       webView.stopLoading();
@@ -596,11 +661,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native3.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native4.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native3-APK
-          path: YunJiaNanWeekend-V5.5-native3.apk
+          name: YunJiaNanWeekend-V5.5-Native4-APK
+          path: YunJiaNanWeekend-V5.5-native4.apk
           if-no-files-found: error
