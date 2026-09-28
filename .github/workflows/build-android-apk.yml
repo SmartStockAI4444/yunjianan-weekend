@@ -105,7 +105,17 @@ jobs:
           )
           native_hook = r"""
           if(window.__NATIVE_ANDROID_APP__){
+            window.__nativeLocationTimer=null;
+
+            window.__clearNativeLocationTimer=function(){
+              if(window.__nativeLocationTimer){
+                clearTimeout(window.__nativeLocationTimer);
+                window.__nativeLocationTimer=null;
+              }
+            };
+
             window.__receiveNativeLocation=function(lat,lng){
+              window.__clearNativeLocationTimer();
               currentUserCoord=[Number(lat),Number(lng)];
               locationState="ready";
               locationSource="gps";
@@ -114,8 +124,9 @@ jobs:
               refreshNearbyHint();
               render();
             };
-          
+
             window.__nativeLocationError=function(msg){
+              window.__clearNativeLocationTimer();
               locationState="error";
               currentUserCoord=null;
               locationSource="";
@@ -151,6 +162,13 @@ jobs:
               setNearbyHint("📍 正在由 Android 取得目前位置…","loading");
           
               try{
+                window.__clearNativeLocationTimer();
+                window.__nativeLocationTimer=setTimeout(function(){
+                  window.__nativeLocationError(
+                    "Android 定位超過 20 秒沒有回應"
+                  );
+                },20000);
+
                 window.AndroidLocation.requestLocation();
               }catch(e){
                 window.__nativeLocationError("Android 定位服務啟動失敗");
@@ -210,7 +228,7 @@ jobs:
                   minSdk 26
                   targetSdk 35
                   versionCode 1
-                  versionName "5.5-native-4"
+                  versionName "5.5-native-5"
               }
 
               buildTypes {
@@ -291,7 +309,6 @@ jobs:
           import android.os.Bundle;
           import android.os.Handler;
           import android.os.Looper;
-          import android.provider.Settings;
           import android.view.ViewGroup;
           import android.webkit.JavascriptInterface;
           import android.webkit.WebResourceRequest;
@@ -325,7 +342,8 @@ jobs:
               protected void onCreate(Bundle savedInstanceState) {
                   super.onCreate(savedInstanceState);
 
-                  fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+                  fusedLocationClient =
+                          LocationServices.getFusedLocationProviderClient(this);
 
                   webView = new WebView(this);
                   webView.setLayoutParams(new ViewGroup.LayoutParams(
@@ -348,12 +366,13 @@ jobs:
                           "AndroidLocation"
                   );
 
-                  WebViewAssetLoader assetLoader = new WebViewAssetLoader.Builder()
-                          .addPathHandler(
-                                  "/assets/",
-                                  new WebViewAssetLoader.AssetsPathHandler(this)
-                          )
-                          .build();
+                  WebViewAssetLoader assetLoader =
+                          new WebViewAssetLoader.Builder()
+                                  .addPathHandler(
+                                          "/assets/",
+                                          new WebViewAssetLoader.AssetsPathHandler(this)
+                                  )
+                                  .build();
 
                   webView.setWebViewClient(new WebViewClient() {
                       @Override
@@ -361,7 +380,9 @@ jobs:
                               WebView view,
                               WebResourceRequest request
                       ) {
-                          return assetLoader.shouldInterceptRequest(request.getUrl());
+                          return assetLoader.shouldInterceptRequest(
+                                  request.getUrl()
+                          );
                       }
 
                       @Override
@@ -371,12 +392,15 @@ jobs:
                       ) {
                           Uri uri = request.getUrl();
 
-                          if ("appassets.androidplatform.net".equalsIgnoreCase(uri.getHost())) {
+                          if ("appassets.androidplatform.net"
+                                  .equalsIgnoreCase(uri.getHost())) {
                               return false;
                           }
 
                           try {
-                              startActivity(new Intent(Intent.ACTION_VIEW, uri));
+                              startActivity(
+                                      new Intent(Intent.ACTION_VIEW, uri)
+                              );
                           } catch (Exception e) {
                               Toast.makeText(
                                       MainActivity.this,
@@ -428,6 +452,20 @@ jobs:
                   fetchLocationNow();
               }
 
+              private boolean isLocationEnabled() {
+                  try {
+                      if (android.os.Build.VERSION.SDK_INT
+                              >= android.os.Build.VERSION_CODES.P) {
+                          android.location.LocationManager lm =
+                                  (android.location.LocationManager)
+                                          getSystemService(LOCATION_SERVICE);
+                          return lm != null && lm.isLocationEnabled();
+                      }
+                  } catch (Exception ignored) {
+                  }
+                  return true;
+              }
+
               private void fetchLocationNow() {
                   if (!hasLocationPermission()) {
                       sendLocationError("尚未取得定位權限");
@@ -439,71 +477,24 @@ jobs:
                       return;
                   }
 
-                  locationResolved = false;
-
-                  try {
-                      fusedLocationClient
-                              .getLastLocation()
-                              .addOnSuccessListener(this, location -> {
-                                  if (locationResolved) return;
-
-                                  if (location != null) {
-                                      long ageMs =
-                                              System.currentTimeMillis()
-                                                      - location.getTime();
-
-                                      if (ageMs <= 10 * 60 * 1000L) {
-                                          finishLocation(location);
-                                          return;
-                                      }
-                                  }
-
-                                  requestFreshLocation();
-                              })
-                              .addOnFailureListener(this, e -> {
-                                  if (!locationResolved) {
-                                      requestFreshLocation();
-                                  }
-                              });
-
-                  } catch (SecurityException e) {
-                      sendLocationError("Android 未允許定位權限");
-                  } catch (Exception e) {
-                      sendLocationError("無法啟動手機定位");
-                  }
-              }
-
-              private boolean isLocationEnabled() {
-                  try {
-                      if (android.os.Build.VERSION.SDK_INT >=
-                              android.os.Build.VERSION_CODES.P) {
-                          android.location.LocationManager lm =
-                                  (android.location.LocationManager)
-                                          getSystemService(LOCATION_SERVICE);
-                          return lm != null && lm.isLocationEnabled();
-                      }
-                  } catch (Exception ignored) {
-                  }
-                  return true;
-              }
-
-              private void requestFreshLocation() {
-                  if (locationResolved) return;
-
                   cancelActiveRequest();
-
+                  locationResolved = false;
                   activeLocationToken = new CancellationTokenSource();
 
+                  /* Native5：總逾時從定位一開始就啟動。 */
                   activeTimeout = () -> {
                       if (!locationResolved) {
                           locationResolved = true;
 
                           if (activeLocationToken != null) {
-                              activeLocationToken.cancel();
+                              try {
+                                  activeLocationToken.cancel();
+                              } catch (Exception ignored) {
+                              }
                           }
 
                           sendLocationError(
-                                  "定位逾時，請再按一次「使用手機定位」"
+                                  "Android 定位逾時，請再試一次或使用手動位置"
                           );
                       }
                   };
@@ -514,6 +505,27 @@ jobs:
                   );
 
                   try {
+                      /* 最近位置與目前位置同時要求，
+                         不再讓 getLastLocation 阻塞流程。 */
+                      fusedLocationClient
+                              .getLastLocation()
+                              .addOnSuccessListener(this, location -> {
+                                  if (locationResolved || location == null) {
+                                      return;
+                                  }
+
+                                  long ageMs =
+                                          System.currentTimeMillis()
+                                                  - location.getTime();
+
+                                  if (ageMs <= 10 * 60 * 1000L) {
+                                      finishLocation(location);
+                                  }
+                              })
+                              .addOnFailureListener(this, e -> {
+                                  /* 忽略，current location 仍在進行 */
+                              });
+
                       fusedLocationClient
                               .getCurrentLocation(
                                       Priority.PRIORITY_BALANCED_POWER_ACCURACY,
@@ -528,7 +540,7 @@ jobs:
                                       locationResolved = true;
                                       cancelActiveRequest();
                                       sendLocationError(
-                                              "目前沒有可用的位置資料"
+                                              "Google 定位服務沒有回傳位置"
                                       );
                                   }
                               })
@@ -537,8 +549,16 @@ jobs:
 
                                   locationResolved = true;
                                   cancelActiveRequest();
+
+                                  String detail = e == null
+                                          ? ""
+                                          : e.getClass().getSimpleName();
+
                                   sendLocationError(
-                                          "手機定位失敗，請稍後再試"
+                                          "Google 定位服務失敗"
+                                                  + (detail.isEmpty()
+                                                  ? ""
+                                                  : "：" + detail)
                                   );
                               });
 
@@ -549,7 +569,9 @@ jobs:
                   } catch (Exception e) {
                       locationResolved = true;
                       cancelActiveRequest();
-                      sendLocationError("無法取得目前位置");
+                      sendLocationError(
+                              "無法啟動定位：" + e.getClass().getSimpleName()
+                      );
                   }
               }
 
@@ -661,11 +683,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native4.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native5.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native4-APK
-          path: YunJiaNanWeekend-V5.5-native4.apk
+          name: YunJiaNanWeekend-V5.5-Native5-APK
+          path: YunJiaNanWeekend-V5.5-native5.apk
           if-no-files-found: error
