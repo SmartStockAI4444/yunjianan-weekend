@@ -137,10 +137,11 @@ jobs:
             };
           }
           """
-          s=s.replace("</body>", "<script>"+native_hook+"</script>\\n</body>", 1)
-
           marker="function requestUserLocation(forceGps){"
           if marker in s:
+              # IMPORTANT: inject native callbacks inside the same IIFE,
+              # before requestUserLocation(), so they close over app state vars.
+              s=s.replace(marker, native_hook+"\\n"+marker, 1)
               native_branch=r"""function requestUserLocation(forceGps){
             if(window.__NATIVE_ANDROID_APP__ && window.AndroidLocation){
               if(currentUserCoord&&!forceGps){
@@ -177,6 +178,12 @@ jobs:
             }
           """
               s=s.replace(marker,native_branch,1)
+
+          s=s.replace(
+              "雲嘉南週末去哪玩 · V5.5",
+              "雲嘉南週末去哪玩 · V5.5 · Native6",
+              1
+          )
 
           p.write_text(s,encoding="utf-8")
           PY
@@ -228,7 +235,7 @@ jobs:
                   minSdk 26
                   targetSdk 35
                   versionCode 1
-                  versionName "5.5-native-5"
+                  versionName "5.5-native-6"
               }
 
               buildTypes {
@@ -683,11 +690,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native5.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native6.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native5-APK
-          path: YunJiaNanWeekend-V5.5-native5.apk
+          name: YunJiaNanWeekend-V5.5-Native6-APK
+          path: YunJiaNanWeekend-V5.5-native6.apk
           if-no-files-found: error
