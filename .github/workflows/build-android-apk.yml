@@ -160,7 +160,7 @@ jobs:
               locationSource="gps";
               currentLocationLabel="手機定位";
               syncLocationPanel();
-              setNearbyHint("📍 正在由 Android 取得目前位置…（Native7）","loading");
+              setNearbyHint("📍 Native8：正在呼叫 Android 定位…","loading");
           
               try{
                 window.__clearNativeLocationTimer();
@@ -181,7 +181,7 @@ jobs:
 
           s=s.replace(
               "雲嘉南週末去哪玩 · V5.5",
-              "雲嘉南週末去哪玩 · V5.5 · Native7",
+              "雲嘉南週末去哪玩 · V5.5 · Native8",
               1
           )
 
@@ -254,8 +254,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 7
-                  versionName "5.5-native-7"
+                  versionCode 8
+                  versionName "5.5-native-8"
               }
 
               buildTypes {
@@ -273,7 +273,6 @@ jobs:
 
           dependencies {
               implementation 'androidx.webkit:webkit:1.12.1'
-              implementation 'com.google.android.gms:play-services-location:21.3.0'
           }
           EOF
 
@@ -329,12 +328,14 @@ jobs:
 
           import android.Manifest;
           import android.app.Activity;
+          import android.content.Context;
           import android.content.Intent;
           import android.content.pm.PackageManager;
           import android.location.Location;
+          import android.location.LocationListener;
+          import android.location.LocationManager;
           import android.net.Uri;
           import android.os.Bundle;
-          import android.os.Handler;
           import android.os.Looper;
           import android.view.ViewGroup;
           import android.webkit.JavascriptInterface;
@@ -347,30 +348,35 @@ jobs:
 
           import androidx.webkit.WebViewAssetLoader;
 
-          import com.google.android.gms.location.FusedLocationProviderClient;
-          import com.google.android.gms.location.LocationServices;
-          import com.google.android.gms.location.Priority;
-          import com.google.android.gms.tasks.CancellationTokenSource;
+          import java.util.ArrayList;
+          import java.util.List;
+          import java.util.concurrent.Executors;
+          import java.util.concurrent.ScheduledExecutorService;
+          import java.util.concurrent.ScheduledFuture;
+          import java.util.concurrent.TimeUnit;
 
           public class MainActivity extends Activity {
 
               private static final int LOCATION_PERMISSION_REQUEST = 4105;
-              private static final long LOCATION_TIMEOUT_MS = 15000L;
+              private static final long LOCATION_TIMEOUT_SECONDS = 15L;
 
               private WebView webView;
-              private FusedLocationProviderClient fusedLocationClient;
-              private final Handler handler = new Handler(Looper.getMainLooper());
+              private LocationManager locationManager;
+              private LocationListener listener;
 
-              private CancellationTokenSource activeLocationToken;
-              private Runnable activeTimeout;
+              private final ScheduledExecutorService scheduler =
+                      Executors.newSingleThreadScheduledExecutor();
+              private ScheduledFuture<?> timeoutFuture;
+
               private boolean locationResolved = false;
+              private Location fallbackLocation = null;
 
               @Override
               protected void onCreate(Bundle savedInstanceState) {
                   super.onCreate(savedInstanceState);
 
-                  fusedLocationClient =
-                          LocationServices.getFusedLocationProviderClient(this);
+                  locationManager =
+                          (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
                   webView = new WebView(this);
                   webView.setLayoutParams(new ViewGroup.LayoutParams(
@@ -386,7 +392,6 @@ jobs:
                   settings.setGeolocationEnabled(true);
                   settings.setAllowFileAccess(false);
                   settings.setAllowContentAccess(true);
-                  settings.setMediaPlaybackRequiresUserGesture(false);
 
                   webView.addJavascriptInterface(
                           new NativeLocationBridge(),
@@ -425,9 +430,7 @@ jobs:
                           }
 
                           try {
-                              startActivity(
-                                      new Intent(Intent.ACTION_VIEW, uri)
-                              );
+                              startActivity(new Intent(Intent.ACTION_VIEW, uri));
                           } catch (Exception e) {
                               Toast.makeText(
                                       MainActivity.this,
@@ -451,7 +454,15 @@ jobs:
               public class NativeLocationBridge {
                   @JavascriptInterface
                   public void requestLocation() {
-                      runOnUiThread(() -> requestNativeLocation());
+                      runOnUiThread(() -> {
+                          directStatus("📍 Native8：Android 已收到定位要求…");
+                          Toast.makeText(
+                                  MainActivity.this,
+                                  "Native8 定位已啟動",
+                                  Toast.LENGTH_SHORT
+                          ).show();
+                          requestNativeLocation();
+                      });
                   }
               }
 
@@ -466,6 +477,7 @@ jobs:
 
               private void requestNativeLocation() {
                   if (!hasLocationPermission()) {
+                      directStatus("📍 Native8：等待位置權限…");
                       requestPermissions(
                               new String[] {
                                       Manifest.permission.ACCESS_FINE_LOCATION,
@@ -476,176 +488,272 @@ jobs:
                       return;
                   }
 
-                  fetchLocationNow();
+                  beginLocation();
               }
 
-              private boolean isLocationEnabled() {
+              private void beginLocation() {
+                  if (!hasLocationPermission()) {
+                      finalError("尚未取得位置權限");
+                      return;
+                  }
+
+                  if (locationManager == null) {
+                      finalError("Android LocationManager 不可用");
+                      return;
+                  }
+
+                  stopLocationRequests();
+                  locationResolved = false;
+                  fallbackLocation = null;
+
+                  List<String> providers = new ArrayList<>();
+
                   try {
-                      if (android.os.Build.VERSION.SDK_INT
-                              >= android.os.Build.VERSION_CODES.P) {
-                          android.location.LocationManager lm =
-                                  (android.location.LocationManager)
-                                          getSystemService(LOCATION_SERVICE);
-                          return lm != null && lm.isLocationEnabled();
+                      if (locationManager.isProviderEnabled(
+                              LocationManager.NETWORK_PROVIDER
+                      )) {
+                          providers.add(LocationManager.NETWORK_PROVIDER);
+                      }
+
+                      if (locationManager.isProviderEnabled(
+                              LocationManager.GPS_PROVIDER
+                      )) {
+                          providers.add(LocationManager.GPS_PROVIDER);
                       }
                   } catch (Exception ignored) {
                   }
-                  return true;
-              }
 
-              private void fetchLocationNow() {
-                  if (!hasLocationPermission()) {
-                      sendLocationError("尚未取得定位權限");
+                  if (providers.isEmpty()) {
+                      finalError("請先開啟手機「位置」服務");
                       return;
                   }
 
-                  if (!isLocationEnabled()) {
-                      sendLocationError("請先開啟手機的「位置」服務");
-                      return;
-                  }
-
-                  cancelActiveRequest();
-                  locationResolved = false;
-                  activeLocationToken = new CancellationTokenSource();
-
-                  /* Native5：總逾時從定位一開始就啟動。 */
-                  activeTimeout = () -> {
-                      if (!locationResolved) {
-                          locationResolved = true;
-
-                          if (activeLocationToken != null) {
-                              try {
-                                  activeLocationToken.cancel();
-                              } catch (Exception ignored) {
-                              }
-                          }
-
-                          sendLocationError(
-                                  "Android 定位逾時，請再試一次或使用手動位置"
-                          );
-                      }
-                  };
-
-                  handler.postDelayed(
-                          activeTimeout,
-                          LOCATION_TIMEOUT_MS
+                  directStatus(
+                          "📍 Native8：權限正常，先讀取 Wi‑Fi／基地台位置…"
                   );
 
                   try {
-                      /* 最近位置與目前位置同時要求，
-                         不再讓 getLastLocation 阻塞流程。 */
-                      fusedLocationClient
-                              .getLastLocation()
-                              .addOnSuccessListener(this, location -> {
-                                  if (locationResolved || location == null) {
-                                      return;
-                                  }
+                      for (String provider : providers) {
+                          Location last =
+                                  locationManager.getLastKnownLocation(provider);
 
-                                  long ageMs =
-                                          System.currentTimeMillis()
-                                                  - location.getTime();
+                          if (last != null) {
+                              if (fallbackLocation == null
+                                      || last.getTime()
+                                      > fallbackLocation.getTime()) {
+                                  fallbackLocation = last;
+                              }
 
-                                  if (ageMs <= 10 * 60 * 1000L) {
-                                      finishLocation(location);
-                                  }
-                              })
-                              .addOnFailureListener(this, e -> {
-                                  /* 忽略，current location 仍在進行 */
-                              });
+                              long ageMs =
+                                      System.currentTimeMillis()
+                                              - last.getTime();
 
-                      fusedLocationClient
-                              .getCurrentLocation(
-                                      Priority.PRIORITY_BALANCED_POWER_ACCURACY,
-                                      activeLocationToken.getToken()
-                              )
-                              .addOnSuccessListener(this, location -> {
-                                  if (locationResolved) return;
-
-                                  if (location != null) {
-                                      finishLocation(location);
-                                  } else {
-                                      locationResolved = true;
-                                      cancelActiveRequest();
-                                      sendLocationError(
-                                              "Google 定位服務沒有回傳位置"
-                                      );
-                                  }
-                              })
-                              .addOnFailureListener(this, e -> {
-                                  if (locationResolved) return;
-
-                                  locationResolved = true;
-                                  cancelActiveRequest();
-
-                                  String detail = e == null
-                                          ? ""
-                                          : e.getClass().getSimpleName();
-
-                                  sendLocationError(
-                                          "Google 定位服務失敗"
-                                                  + (detail.isEmpty()
-                                                  ? ""
-                                                  : "：" + detail)
+                              if (ageMs <= 30 * 60 * 1000L) {
+                                  finalLocation(
+                                          last,
+                                          "最近的"
+                                                  + providerName(provider)
+                                                  + "位置"
                                   );
-                              });
-
+                                  return;
+                              }
+                          }
+                      }
                   } catch (SecurityException e) {
-                      locationResolved = true;
-                      cancelActiveRequest();
-                      sendLocationError("Android 未允許定位權限");
-                  } catch (Exception e) {
-                      locationResolved = true;
-                      cancelActiveRequest();
-                      sendLocationError(
-                              "無法啟動定位：" + e.getClass().getSimpleName()
-                      );
+                      finalError("讀取最近位置時權限被拒絕");
+                      return;
                   }
+
+                  directStatus(
+                          "📍 Native8：沒有近期位置，正在等 Wi‑Fi／基地台或 GPS…"
+                  );
+
+                  listener = new LocationListener() {
+                      @Override
+                      public void onLocationChanged(Location location) {
+                          if (location == null || locationResolved) {
+                              return;
+                          }
+
+                          finalLocation(
+                                  location,
+                                  providerName(location.getProvider())
+                          );
+                      }
+
+                      @Override
+                      public void onProviderEnabled(String provider) {
+                      }
+
+                      @Override
+                      public void onProviderDisabled(String provider) {
+                      }
+
+                      @Override
+                      public void onStatusChanged(
+                              String provider,
+                              int status,
+                              Bundle extras
+                      ) {
+                      }
+                  };
+
+                  try {
+                      if (providers.contains(
+                              LocationManager.NETWORK_PROVIDER
+                      )) {
+                          locationManager.requestLocationUpdates(
+                                  LocationManager.NETWORK_PROVIDER,
+                                  0L,
+                                  0f,
+                                  listener,
+                                  Looper.getMainLooper()
+                          );
+                      }
+
+                      if (providers.contains(
+                              LocationManager.GPS_PROVIDER
+                      )) {
+                          locationManager.requestLocationUpdates(
+                                  LocationManager.GPS_PROVIDER,
+                                  0L,
+                                  0f,
+                                  listener,
+                                  Looper.getMainLooper()
+                          );
+                      }
+                  } catch (SecurityException e) {
+                      finalError("要求即時位置時權限被拒絕");
+                      return;
+                  } catch (Exception e) {
+                      finalError(
+                              "啟動定位失敗："
+                                      + e.getClass().getSimpleName()
+                      );
+                      return;
+                  }
+
+                  timeoutFuture = scheduler.schedule(
+                          () -> runOnUiThread(() -> {
+                              if (locationResolved) {
+                                  return;
+                              }
+
+                              if (fallbackLocation != null) {
+                                  finalLocation(
+                                          fallbackLocation,
+                                          "較舊的備援位置"
+                                  );
+                              } else {
+                                  finalError(
+                                          "15 秒內 Wi‑Fi／基地台與 GPS 都沒有回傳位置"
+                                  );
+                              }
+                          }),
+                          LOCATION_TIMEOUT_SECONDS,
+                          TimeUnit.SECONDS
+                  );
               }
 
-              private void finishLocation(Location location) {
-                  if (locationResolved) return;
+              private String providerName(String provider) {
+                  if (LocationManager.NETWORK_PROVIDER.equals(provider)) {
+                      return "網路定位";
+                  }
+                  if (LocationManager.GPS_PROVIDER.equals(provider)) {
+                      return "GPS";
+                  }
+                  return provider == null ? "Android 定位" : provider;
+              }
+
+              private void finalLocation(
+                      Location location,
+                      String source
+              ) {
+                  if (locationResolved) {
+                      return;
+                  }
 
                   locationResolved = true;
-                  cancelActiveRequest();
-                  sendLocation(location);
-              }
+                  stopLocationRequests();
 
-              private void cancelActiveRequest() {
-                  if (activeTimeout != null) {
-                      handler.removeCallbacks(activeTimeout);
-                      activeTimeout = null;
-                  }
+                  double lat = location.getLatitude();
+                  double lng = location.getLongitude();
 
-                  if (activeLocationToken != null) {
-                      try {
-                          activeLocationToken.cancel();
-                      } catch (Exception ignored) {
-                      }
-                      activeLocationToken = null;
-                  }
-              }
+                  directStatus(
+                          "✅ Native8：已取得"
+                                  + source
+                                  + "，正在套用位置…"
+                  );
 
-              private void sendLocation(Location location) {
-                  final double lat = location.getLatitude();
-                  final double lng = location.getLongitude();
+                  Toast.makeText(
+                          this,
+                          "已取得位置：" + source,
+                          Toast.LENGTH_SHORT
+                  ).show();
 
-                  runOnUiThread(() -> webView.evaluateJavascript(
+                  webView.evaluateJavascript(
                           "window.__receiveNativeLocation("
                                   + lat + "," + lng + ");",
                           null
-                  ));
+                  );
               }
 
-              private void sendLocationError(String message) {
-                  final String safe = org.json.JSONObject.quote(
-                          message == null ? "" : message
-                  );
+              private void finalError(String message) {
+                  if (locationResolved) {
+                      return;
+                  }
 
-                  runOnUiThread(() -> webView.evaluateJavascript(
+                  locationResolved = true;
+                  stopLocationRequests();
+
+                  directStatus("⚠️ Native8：" + message);
+
+                  Toast.makeText(
+                          this,
+                          message,
+                          Toast.LENGTH_LONG
+                  ).show();
+
+                  String safe =
+                          org.json.JSONObject.quote(message);
+
+                  webView.evaluateJavascript(
                           "window.__nativeLocationError("
                                   + safe + ");",
                           null
-                  ));
+                  );
+              }
+
+              private void directStatus(String message) {
+                  String safe =
+                          org.json.JSONObject.quote(message);
+
+                  webView.evaluateJavascript(
+                          "(function(){"
+                                  + "var e=document.getElementById('nearbyHint');"
+                                  + "if(e){"
+                                  + "e.textContent=" + safe + ";"
+                                  + "e.className='nearby-hint loading';"
+                                  + "}"
+                                  + "})();",
+                          null
+                  );
+              }
+
+              private void stopLocationRequests() {
+                  if (timeoutFuture != null) {
+                      timeoutFuture.cancel(true);
+                      timeoutFuture = null;
+                  }
+
+                  if (locationManager != null && listener != null) {
+                      try {
+                          locationManager.removeUpdates(listener);
+                      } catch (Exception ignored) {
+                      }
+                  }
+
+                  listener = null;
               }
 
               @Override
@@ -665,15 +773,19 @@ jobs:
                   }
 
                   if (hasLocationPermission()) {
-                      fetchLocationNow();
+                      directStatus(
+                              "📍 Native8：位置權限已允許，開始定位…"
+                      );
+                      beginLocation();
                   } else {
-                      sendLocationError("定位權限未允許");
+                      finalError("定位權限未允許");
                   }
               }
 
               @Override
               protected void onDestroy() {
-                  cancelActiveRequest();
+                  stopLocationRequests();
+                  scheduler.shutdownNow();
 
                   if (webView != null) {
                       webView.stopLoading();
@@ -710,11 +822,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native7.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native8.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native7-APK
-          path: YunJiaNanWeekend-V5.5-native7.apk
+          name: YunJiaNanWeekend-V5.5-Native8-APK
+          path: YunJiaNanWeekend-V5.5-native8.apk
           if-no-files-found: error
