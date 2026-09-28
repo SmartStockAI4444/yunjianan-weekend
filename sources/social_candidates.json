@@ -149,12 +149,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
     },
-    "base_heat": 82,
-    "updated": "2026-09-26",
+    "base_heat": 75,
+    "updated": "2026-09-28",
     "tags": [
       "景點",
       "戶外",
@@ -162,7 +162,7 @@
     ],
     "place": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
     "q": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZXZqQ2tjb3JHbDJ5LXVnd0Q5ZkJpWjhpYTlfZ1pEcjBJbUlrYUZKaXhEdWc4dktYOTVlcFpLM2Q2YnZGSnpxT0dIakdNNnlSQ0pPZHdiRzU4MFJsRjZpcmtPUlBSTDZBRlJ2RV9tVndZenRhMjZ2amRIancxR3RjYkxONVl0dGNV?oc=5"
   },
   {
@@ -178,7 +178,7 @@
       "repeat_recommendations": 2
     },
     "base_heat": 89,
-    "updated": "2026-09-26",
+    "updated": "2026-09-28",
     "tags": [
       "景點",
       "文化",
@@ -187,7 +187,7 @@
     "place": "雲林縣 10009 虎尾鎮 10009030 632 林森路一段498號",
     "q": "雲林縣 10009 虎尾鎮 10009030 632 林森路一段498號",
     "why": "最近30天公開旅遊文章提及3次，來自3個來源",
-    "url": "https://news.google.com/rss/articles/CBMipgNBVV95cUxOVmQ0d3Z4eXZzZWt2dG1kbC1rZ3piTDhEYXBrVy1nN0NqY2RuUy1Ibjg5TlVNQTg1LUpwaXZwMldtbjBfVzhaV1hSRUkxd19hc3NfTGwydTU5ekR0bEZwTmdJZHQ3Rmp4N1J1QXd0eDdBa2lKb09qVzRvcUpuWDdab2VLai1IZ1Fsdl9pUERpTkpXZ1lfSTZDZW5yTHdMTkFrNWxSNEV2R1VPYlFXRGdDLU91TThjMVd2QjY4TnllQTUtNGI2OF9wZklsdGJxWlhDX2kwRjlBUEZIWmtwOVVQdXp2NUg0Smd1NEt1NUthRC1UYklvM05mbG1oQ1htZi1MQ2tqQWc3ZGJCdlZTVUp2dU5yUzlRbFJGNlp1NUZmRGxpMWdaeFNhcWk0TWxIcHF1Q085SVp5TjJQbzgyTDFLZUlnSjM5R2phNWdhQzByVE8wRFRJV3VaajdpV202SVJBWDlCQlpTVll0VnFlMlFZOEZGOVVoMEdhWE12b3AxUmVxWHpGNWpOUEpWajc2WEJUb2NUcXFwTm1ocUtTQ0YyaFJoS0FBZw?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9UaGRQc2FoeVpvUC00ZERDU2pON0NtTFFsX3puc2VFenlIYjVUaVNlMGRkQ0tGWWFLU2NDU2dxMEktOHB6RlB0NEFWaXVzMG5vZDJQbk9kamt3cW9zbWRhRWxqYTnSAWpBVV95cUxPdkh0M2hCN0hIZ0VnMnppZnV3andRbDZ5Vi1zbjlwdUVKWkVKaF9rVjdnMTRPN3djNW51RWR5YTZiUDZQdG0xdTFPS09oN0IwWldxeHh5MExualdSa0w5Q3NKUEZQZFc5dlR3?oc=5"
   },
   {
     "id": "social-auto-tourism-event-Event_A15010000H_081715",
@@ -197,19 +197,19 @@
     "type": "活動",
     "src": "社群",
     "signals": {
-      "recent_mentions": 6,
-      "creator_mentions": 6,
-      "repeat_recommendations": 5
+      "recent_mentions": 4,
+      "creator_mentions": 4,
+      "repeat_recommendations": 3
     },
     "base_heat": 95,
-    "updated": "2026-09-26",
+    "updated": "2026-09-28",
     "tags": [
       "活動",
       "網路熱門"
     ],
     "place": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
     "q": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
-    "why": "最近30天公開旅遊文章提及6次，來自6個來源",
+    "why": "最近30天公開旅遊文章提及4次，來自4個來源",
     "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE56alpxenhubWdhT0VJNGNSTTNiRk9vM1BQemtoaHE3eFViUHNRYjkyazdSYTdYNkVNMHRYNXFyeTJVb1BxdlBjM2IyOA?oc=5"
   },
   {
@@ -225,7 +225,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-09-26",
+    "updated": "2026-09-28",
     "tags": [
       "親子",
       "DIY",
@@ -247,12 +247,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 3,
-      "creator_mentions": 3,
-      "repeat_recommendations": 2
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 89,
-    "updated": "2026-09-26",
+    "base_heat": 82,
+    "updated": "2026-09-28",
     "tags": [
       "景點",
       "戶外",
@@ -260,8 +260,8 @@
     ],
     "place": "嘉義縣 10010 梅山鄉 10010150 603 二尖山步道",
     "q": "嘉義縣 10010 梅山鄉 10010150 603 二尖山步道",
-    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
-    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPLUV6SkM2S0xxQWJlYzlaWW1RejlVZWlEYWRmZHlFM2UtMFpGcUoxdFB1ZVVLVHdIN2Z6Yk9XYzhZMlhncDZwTERoV09vTlZERGI2NFlPT1o0YUN6b0V3Z2lKdDlwS2FscWw3YWZBdW1UV0ZZeXpqTkZ5OE96RjZvaFhuNUszRDd3SDBrbmMwSQ?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XbmtMSGxYa0xlalZsQTl5bTBFcUhYYTBrSFVFdjFXbEdrTDFFcmlNYmprdW1fOXc0VjB6dk1JeDhuZEl6dWl3c1pQUHZYakNZUW1PaVBB?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_A15010800H_000206",
@@ -271,12 +271,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 3,
-      "creator_mentions": 3,
-      "repeat_recommendations": 2
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 89,
-    "updated": "2026-09-26",
+    "base_heat": 82,
+    "updated": "2026-09-28",
     "tags": [
       "景點",
       "戶外",
@@ -284,8 +284,8 @@
     ],
     "place": "嘉義縣 10010 梅山鄉 10010150 603",
     "q": "嘉義縣 10010 梅山鄉 10010150 603",
-    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
-    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPLUV6SkM2S0xxQWJlYzlaWW1RejlVZWlEYWRmZHlFM2UtMFpGcUoxdFB1ZVVLVHdIN2Z6Yk9XYzhZMlhncDZwTERoV09vTlZERGI2NFlPT1o0YUN6b0V3Z2lKdDlwS2FscWw3YWZBdW1UV0ZZeXpqTkZ5OE96RjZvaFhuNUszRDd3SDBrbmMwSQ?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XbmtMSGxYa0xlalZsQTl5bTBFcUhYYTBrSFVFdjFXbEdrTDFFcmlNYmprdW1fOXc0VjB6dk1JeDhuZEl6dWl3c1pQUHZYakNZUW1PaVBB?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_376600000A_000045",
@@ -300,7 +300,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-09-26",
+    "updated": "2026-09-28",
     "tags": [
       "景點",
       "戶外",
@@ -349,7 +349,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-09-26",
+    "updated": "2026-09-28",
     "tags": [
       "景點",
       "文化",
@@ -373,7 +373,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-09-26",
+    "updated": "2026-09-28",
     "tags": [
       "景點",
       "文化",
@@ -383,5 +383,53 @@
     "q": "臺南市 67000 仁德區 67000270 717 文華路二段66號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTWNhR0dZYnNINFFUN1FoeVFtUWJISnVwcXlMaGpuV3BVRWlGbmFTelVlX2JaRURpU0dxYUlNcVVaQi1RMGVlM2lVTnd3ZmRpQ2trNGdhM3BoTlFVYVNnQUxBV0RzM1RNT1RrODRpY0p6SHVGTjJaTURGUXJ5NWV6LVBpeFY?oc=5"
+  },
+  {
+    "id": "social-auto-tainan-attraction-5520",
+    "city": "台南",
+    "name": "漁光島",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-09-28",
+    "tags": [
+      "戶外",
+      "自然",
+      "網路熱門"
+    ],
+    "place": "安平區",
+    "q": "708 臺南市安平區漁光路118號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE40bk1KdUROLTN0Q1B2bVUybENZWHN0Vk1RY2UyWWxiMlE3VWtlXzBZa2lsbjd3SmZSWTM2cDhTdk1MdE9WU0pXN1Q5NWRSN19oZXY0WEpfQlcwZw?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_395000000A_000805",
+    "city": "台南",
+    "name": "黃金海岸",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-09-28",
+    "tags": [
+      "景點",
+      "戶外",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 南區 67000330 702 濱南路600號",
+    "q": "臺南市 67000 南區 67000330 702 濱南路600號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB2RjN4d0ZNT1Z3Z2ZYcGJTUzR1c0lCUENiaWVPN0VsUWtVQWY2WUlmZ0JjaFdZUmw4N005am82YWxaZUpkaWcyZGhxUm5JQzlxOTNKbnUwT01MNXB6UkhYTlQtc1HSAWpBVV95cUxNaUxPRmxhSmpWYnZqM1A2ZDlDcmk2WHBQSW42M1pNbDJJNG95cDM2aFNPc2FiWEsxWGF1aVBnYXNoMVZqbVhMRDBXYVhwVUJnS0ItekhHU2NlUGwyRlVXSGZlcVJxYzNkeE5R?oc=5"
   }
 ]
