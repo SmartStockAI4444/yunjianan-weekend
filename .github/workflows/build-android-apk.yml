@@ -85,6 +85,7 @@ jobs:
 
           python3 - <<'PY'
           from pathlib import Path
+          import textwrap
           p=Path("_android_build/app/src/main/assets/index.html")
           s=p.read_text(encoding="utf-8")
           s=s.replace("<head>", '<head>\n<script>window.__NATIVE_ANDROID_APP__=true;</script>', 1)
@@ -121,6 +122,7 @@ jobs:
               locationSource="gps";
               currentLocationLabel="手機目前位置";
               syncLocationPanel();
+              if(typeof setLocationPanelExpanded==="function")setLocationPanelExpanded(false);
               refreshNearbyHint();
               render();
             };
@@ -132,7 +134,8 @@ jobs:
               locationSource="";
               currentLocationLabel="";
               syncLocationPanel();
-              setNearbyHint("⚠️ "+(msg||"目前無法取得手機位置")+"；可改用下方手動位置。","warn");
+              if(typeof setLocationPanelExpanded==="function")setLocationPanelExpanded(true);
+              setNearbyHint("⚠️ "+(msg||"目前無法取得手機位置")+"；可展開位置設定改用手動位置。","warn");
               render();
             };
           }
@@ -160,7 +163,7 @@ jobs:
               locationSource="gps";
               currentLocationLabel="手機定位";
               syncLocationPanel();
-              setNearbyHint("📍 Native10：正在呼叫 Android 定位…","loading");
+              setNearbyHint("📍 Native11：正在呼叫 Android 定位…","loading");
           
               try{
                 window.__clearNativeLocationTimer();
@@ -179,7 +182,7 @@ jobs:
           """
               s=s.replace(marker,native_branch,1)
 
-          # Native10: fix nearbyMatchCount() calling a non-existent matchFilter().
+          # Native11: fix nearbyMatchCount() calling a non-existent matchFilter().
           if 'if(!matchFilter(s))return false;' in s:
               s=s.replace(
                   'if(!matchFilter(s))return false;',
@@ -189,13 +192,176 @@ jobs:
                   1
               )
 
+          # Native11: nearby mode should show the full distance-sorted list.
+          old_featured=textwrap.dedent("""\
+            var box=$("featuredCards");
+            var section=$("weekendFeatured");
+            var count=$("featuredCount");
+            if(!box||!section)return;
+
+            var picks=featuredCandidates();""")
+          new_featured=textwrap.dedent("""\
+            var box=$("featuredCards");
+            var section=$("weekendFeatured");
+            var count=$("featuredCount");
+            if(!box||!section)return;
+
+            if(sort==="附近"){
+              section.style.display="none";
+              box.innerHTML="";
+              currentFeaturedIds={};
+              if(count)count.textContent="";
+              return;
+            }
+            section.style.display="";
+
+            var picks=featuredCandidates();""")
+          if old_featured not in s:
+              raise RuntimeError("Native11 cannot find renderFeatured anchor")
+          s=s.replace(old_featured,new_featured,1)
+
+          # Native11: collapse the large manual-location controls by default.
+          old_panel=textwrap.dedent("""\
+          <div id="locationPanel" class="location-panel hidden">
+            <div class="location-panel-head">
+              <span>📍 位置來源</span>
+              <span id="locationSourceBadge" class="location-source-badge">尚未設定</span>
+            </div>
+            <button id="useGpsLocation" class="gps-location-btn">📡 使用手機定位</button>
+            <div class="manual-location-title">或手動選擇目前位置</div>
+            <div class="manual-location-grid">
+              <select id="manualCity" aria-label="縣市">
+                <option value="嘉義">嘉義</option>
+                <option value="雲林">雲林</option>
+                <option value="台南">台南</option>
+              </select>
+              <select id="manualTown" aria-label="鄉鎮市區"></select>
+              <button id="applyManualLocation">套用位置</button>
+            </div>
+            <div class="manual-location-note">手動位置只用來估算「離我近」；Google Maps 導航仍使用手機實際定位。</div>
+          </div>""")
+          new_panel=textwrap.dedent("""\
+          <div id="locationPanel" class="location-panel hidden collapsed">
+            <div class="location-panel-head">
+              <span>📍 位置來源</span>
+              <div class="location-head-right">
+                <span id="locationSourceBadge" class="location-source-badge">尚未設定</span>
+                <button id="locationPanelToggle" class="location-panel-toggle" type="button" aria-expanded="false">設定 ▼</button>
+              </div>
+            </div>
+            <div id="locationPanelBody" class="location-panel-body hidden">
+              <button id="useGpsLocation" class="gps-location-btn">📡 重新使用手機定位</button>
+              <div class="manual-location-title">或手動選擇目前位置</div>
+              <div class="manual-location-grid">
+                <select id="manualCity" aria-label="縣市">
+                  <option value="嘉義">嘉義</option>
+                  <option value="雲林">雲林</option>
+                  <option value="台南">台南</option>
+                </select>
+                <select id="manualTown" aria-label="鄉鎮市區"></select>
+                <button id="applyManualLocation">套用位置</button>
+              </div>
+              <div class="manual-location-note">手動位置只用來估算「離我近」；Google Maps 導航仍使用手機實際定位。</div>
+            </div>
+          </div>""")
+          if old_panel not in s:
+              raise RuntimeError("Native11 cannot find location panel HTML")
+          s=s.replace(old_panel,new_panel,1)
+
+          css_anchor=".location-panel.hidden{display:none}\\n.location-panel-head{"
+          css_new=textwrap.dedent("""\
+          .location-panel.hidden{display:none}
+          .location-panel.collapsed{
+            padding-top:10px;
+            padding-bottom:10px;
+          }
+          .location-head-right{
+            display:flex;
+            align-items:center;
+            justify-content:flex-end;
+            gap:7px;
+            min-width:0;
+          }
+          .location-panel-toggle{
+            flex:0 0 auto;
+            height:28px;
+            padding:0 10px;
+            border:0;
+            border-radius:999px;
+            background:#e6f2eb;
+            color:#1c6b4b;
+            font-size:10px;
+            font-weight:950;
+          }
+          .location-panel-body.hidden{display:none}
+          .location-panel-head{""")
+          if css_anchor not in s:
+              raise RuntimeError("Native11 cannot find location CSS anchor")
+          s=s.replace(css_anchor,css_new,1)
+
+          sync_anchor=textwrap.dedent("""\
+          function syncLocationPanel(){
+            var panel=$("locationPanel");""")
+          sync_new=textwrap.dedent("""\
+          function setLocationPanelExpanded(open){
+            var panel=$("locationPanel");
+            var body=$("locationPanelBody");
+            var btn=$("locationPanelToggle");
+            if(!panel||!body||!btn)return;
+
+            body.classList.toggle("hidden",!open);
+            panel.classList.toggle("collapsed",!open);
+            btn.textContent=open?"收合 ▲":"設定 ▼";
+            btn.setAttribute("aria-expanded",open?"true":"false");
+          }
+
+          function syncLocationPanel(){
+            var panel=$("locationPanel");""")
+          if sync_anchor not in s:
+              raise RuntimeError("Native11 cannot find syncLocationPanel")
+          s=s.replace(sync_anchor,sync_new,1)
+
+          init_anchor=textwrap.dedent("""\
+            syncNearbyRange();
+            syncLocationPanel();
+
+            $("search").oninput=function(){query=this.value;render()};""")
+          init_new=textwrap.dedent("""\
+            syncNearbyRange();
+            syncLocationPanel();
+            setLocationPanelExpanded(false);
+
+            if($("locationPanelToggle")){
+              $("locationPanelToggle").onclick=function(){
+                var body=$("locationPanelBody");
+                setLocationPanelExpanded(!!(body&&body.classList.contains("hidden")));
+              };
+            }
+
+            $("search").oninput=function(){query=this.value;render()};""")
+          if init_anchor not in s:
+              raise RuntimeError("Native11 cannot find init location anchor")
+          s=s.replace(init_anchor,init_new,1)
+
+          # Build-time guards for Native11 UI.
+          for token in [
+              'id="locationPanelToggle"',
+              'function setLocationPanelExpanded(open)',
+              'section.style.display="none"',
+              'class="distance-chip"',
+              'a=nearbySort(a)'
+          ]:
+              if token not in s:
+                  raise RuntimeError("Native11 missing expected token: "+token)
+
+
           s=s.replace(
               "雲嘉南週末去哪玩 · V5.5",
-              "雲嘉南週末去哪玩 · V5.5 · Native10",
+              "雲嘉南週末去哪玩 · V5.5 · Native11",
               1
           )
 
-          # Native10 guard: nearby code must not reference undefined matchFilter().
+          # Native11 guard: nearby code must not reference undefined matchFilter().
           if "matchFilter(s)" in s:
               raise RuntimeError("nearbyMatchCount still references undefined matchFilter(s)")
 
@@ -268,8 +434,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 10
-                  versionName "5.5-native-10"
+                  versionCode 11
+                  versionName "5.5-native-11"
               }
 
               buildTypes {
@@ -469,10 +635,10 @@ jobs:
                   @JavascriptInterface
                   public void requestLocation() {
                       runOnUiThread(() -> {
-                          directStatus("📍 Native10：Android 已收到定位要求…");
+                          directStatus("📍 Native11：Android 已收到定位要求…");
                           Toast.makeText(
                                   MainActivity.this,
-                                  "Native10 定位已啟動",
+                                  "Native11 定位已啟動",
                                   Toast.LENGTH_SHORT
                           ).show();
                           requestNativeLocation();
@@ -491,7 +657,7 @@ jobs:
 
               private void requestNativeLocation() {
                   if (!hasLocationPermission()) {
-                      directStatus("📍 Native10：等待位置權限…");
+                      directStatus("📍 Native11：等待位置權限…");
                       requestPermissions(
                               new String[] {
                                       Manifest.permission.ACCESS_FINE_LOCATION,
@@ -543,7 +709,7 @@ jobs:
                   }
 
                   directStatus(
-                          "📍 Native10：權限正常，先讀取 Wi‑Fi／基地台位置…"
+                          "📍 Native11：權限正常，先讀取 Wi‑Fi／基地台位置…"
                   );
 
                   try {
@@ -579,7 +745,7 @@ jobs:
                   }
 
                   directStatus(
-                          "📍 Native10：沒有近期位置，正在等 Wi‑Fi／基地台或 GPS…"
+                          "📍 Native11：沒有近期位置，正在等 Wi‑Fi／基地台或 GPS…"
                   );
 
                   listener = new LocationListener() {
@@ -694,7 +860,7 @@ jobs:
                   double lng = location.getLongitude();
 
                   directStatus(
-                          "✅ Native10：已取得"
+                          "✅ Native11：已取得"
                                   + source
                                   + "，正在套用位置…"
                   );
@@ -716,7 +882,7 @@ jobs:
                                   + "}catch(e){"
                                   + "var el=document.getElementById('nearbyHint');"
                                   + "if(el){"
-                                  + "el.textContent='⚠️ Native10 套用位置失敗：'+"
+                                  + "el.textContent='⚠️ Native11 套用位置失敗：'+"
                                   + "(e&&e.message?e.message:String(e));"
                                   + "el.className='nearby-hint warn';"
                                   + "}"
@@ -737,7 +903,7 @@ jobs:
                   locationResolved = true;
                   stopLocationRequests();
 
-                  directStatus("⚠️ Native10：" + message);
+                  directStatus("⚠️ Native11：" + message);
 
                   Toast.makeText(
                           this,
@@ -805,7 +971,7 @@ jobs:
 
                   if (hasLocationPermission()) {
                       directStatus(
-                              "📍 Native10：位置權限已允許，開始定位…"
+                              "📍 Native11：位置權限已允許，開始定位…"
                       );
                       beginLocation();
                   } else {
@@ -853,11 +1019,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native10.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native11.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native10-APK
-          path: YunJiaNanWeekend-V5.5-native10.apk
+          name: YunJiaNanWeekend-V5.5-Native11-APK
+          path: YunJiaNanWeekend-V5.5-native11.apk
           if-no-files-found: error
