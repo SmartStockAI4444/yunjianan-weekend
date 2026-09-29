@@ -1587,9 +1587,265 @@ jobs:
                   raise RuntimeError("Native20 missing expected token: "+token)
 
 
+          # Native21: make AI timetables more route-realistic.
+          native21_css = r"""
+          /* ===== Native21 Route Reality ===== */
+          .plan-drive-badge{
+            display:inline-flex;
+            align-items:center;
+            min-height:27px;
+            padding:0 9px;
+            border-radius:999px;
+            background:#e8f0ff;
+            color:#315a8a;
+            font-size:11px;
+            font-weight:900;
+          }
+          """
+          if "</style>" not in s:
+              raise RuntimeError("Native21 cannot find style end")
+          s=s.replace("</style>",native21_css+"\n</style>",1)
+
+          old_food_fn = r"""function planIsFoodStop(s){
+            if(!s)return false;
+            var tags=Array.isArray(s.tags)?s.tags:[];
+            var keys=["美食","咖啡","甜點","小吃","餐廳","下午茶"];
+            if(keys.some(function(x){return tags.indexOf(x)>=0}))return true;
+
+            var type=String(s.type||"");
+            var name=String(s.name||"");
+            return /美食|餐飲|餐廳|咖啡|甜點|小吃/.test(type+" "+name);
+          }"""
+          new_food_fn = r"""function planIsFoodStop(s){
+            if(!s)return false;
+            var tags=Array.isArray(s.tags)?s.tags:[];
+            var type=String(s.type||"");
+            var name=String(s.name||"");
+
+            if(/美食|餐飲|餐廳|咖啡|甜點|小吃|食堂|冰品|茶屋/.test(type+" "+name)){
+              return true;
+            }
+
+            var keys=["美食","咖啡","甜點","小吃","餐廳","下午茶"];
+            var hits=keys.filter(function(x){return tags.indexOf(x)>=0}).length;
+            return hits>=2;
+          }"""
+          if old_food_fn not in s:
+              raise RuntimeError("Native21 cannot find planIsFoodStop")
+          s=s.replace(old_food_fn,new_food_fn,1)
+
+          old_role_fn = r"""function planStopRole(s){
+            if(!s)return "景點";
+            var tags=Array.isArray(s.tags)?s.tags:[];
+
+            if(planIsFoodStop(s))return "美食";
+            if(s.type==="活動")return "活動";
+            if(s.type==="觀光工廠")return "觀光工廠";
+            if(s.type==="校園")return "校園";
+            if(tags.indexOf("戶外")>=0)return "戶外";
+            if(tags.indexOf("室內")>=0)return "室內";
+            if(tags.indexOf("文化")>=0||tags.indexOf("藝術")>=0)return "文化";
+            return s.type||"景點";
+          }"""
+          new_role_fn = r"""function planStopRole(s){
+            if(!s)return "景點";
+            var tags=Array.isArray(s.tags)?s.tags:[];
+
+            if(s.type==="活動")return "活動";
+            if(s.type==="觀光工廠")return "觀光工廠";
+            if(s.type==="校園")return "校園";
+            if(planIsFoodStop(s))return "美食";
+            if(tags.indexOf("文化")>=0||tags.indexOf("藝術")>=0)return "文化";
+            if(tags.indexOf("戶外")>=0)return "戶外";
+            if(tags.indexOf("室內")>=0)return "室內";
+            return s.type||"景點";
+          }"""
+          if old_role_fn not in s:
+              raise RuntimeError("Native21 cannot find planStopRole")
+          s=s.replace(old_role_fn,new_role_fn,1)
+
+          old_near_filter = r"""if(c==="附近" && startCoord){
+                var coord=stopCoord(s);
+                if(coord){
+                  var d=geoDistance(startCoord,coord);
+                  if(isFinite(d) && d>maxRadius)return false;
+                }
+              }"""
+          new_near_filter = r"""if(c==="附近" && startCoord){
+                var coord=stopCoord(s);
+                if(!coord)return false;
+
+                var d=geoDistance(startCoord,coord);
+                if(isFinite(d) && d>maxRadius)return false;
+              }"""
+          if old_near_filter not in s:
+              raise RuntimeError("Native21 cannot find nearby planner filter")
+          s=s.replace(old_near_filter,new_near_filter,1)
+
+          old_pick_coord = r"""var coord=stopCoord(s);
+                var leg=0;
+
+                if(current&&coord){"""
+          new_pick_coord = r"""var coord=stopCoord(s);
+                var leg=0;
+
+                if(opts.city==="附近" && startCoord && !coord)return;
+
+                if(current&&coord){"""
+          if old_pick_coord not in s:
+              raise RuntimeError("Native21 cannot find compact-plan coord block")
+          s=s.replace(old_pick_coord,new_pick_coord,1)
+
+          timeline_helpers = r"""
+          function planStayMinutes(s){
+            var role=planStopRole(s);
+            if(role==="美食")return 70;
+            if(role==="觀光工廠")return 90;
+            if(role==="活動")return 90;
+            if(role==="戶外")return 80;
+            if(role==="校園")return 75;
+            return 70;
+          }
+
+          function planDriveMinutes(d){
+            if(d==null||!isFinite(d))return 0;
+            if(d<=1.5)return 8;
+            if(d<=4)return 12;
+            if(d<=8)return 18;
+            if(d<=15)return 25;
+            if(d<=25)return 35;
+            return 50;
+          }
+
+          function planClock(total){
+            total=Math.max(0,Math.round(total));
+            var h=Math.floor(total/60)%24;
+            var m=total%60;
+            return (h<10?"0":"")+h+":"+(m<10?"0":"")+m;
+          }
+
+          function planTimeline(ctx){
+            if(!ctx)return [];
+            if(ctx._timeline)return ctx._timeline;
+
+            var stops=Array.isArray(ctx.stops)?ctx.stops:[];
+            var t=ctx.timeMode==="full"?9*60:9*60+30;
+            var out=[];
+
+            stops.forEach(function(s,i){
+              var drive=0;
+              var from=null;
+              var to=stopCoord(s);
+
+              if(i===0){
+                from=ctx.startCoord||null;
+              }else{
+                from=stopCoord(stops[i-1]);
+              }
+
+              if(i>0 && from && to){
+                drive=planDriveMinutes(geoDistance(from,to));
+                t+=drive;
+              }
+
+              out.push({
+                time:planClock(t),
+                drive:drive
+              });
+
+              t+=planStayMinutes(s);
+            });
+
+            ctx._timeline=out;
+            return out;
+          }
+
+          function planDriveText(ctx,i){
+            if(!ctx||i<=0)return "";
+            var x=planTimeline(ctx)[i];
+            if(!x||!x.drive)return "";
+            return "🚗 約 "+x.drive+" 分";
+          }
+          """
+          timeline_marker="function planScheduleTimes(timeMode,count){"
+          if timeline_marker not in s:
+              raise RuntimeError("Native21 cannot find timetable marker")
+          s=s.replace(timeline_marker,timeline_helpers+"\n"+timeline_marker,1)
+
+          old_time_for_stop = r"""function planTimeForStop(ctx,i){
+            var times=planScheduleTimes(ctx&&ctx.timeMode,ctx&&ctx.stops?ctx.stops.length:0);
+            return times[i]||"";
+          }"""
+          new_time_for_stop = r"""function planTimeForStop(ctx,i){
+            var x=planTimeline(ctx)[i];
+            return x&&x.time?x.time:"";
+          }"""
+          if old_time_for_stop not in s:
+              raise RuntimeError("Native21 cannot find planTimeForStop")
+          s=s.replace(old_time_for_stop,new_time_for_stop,1)
+
+          old_card_prep_drive = (
+              '  var time=ctx?planTimeForStop(ctx,i):"";\n'
+              '  var role=planStopRole(s);\n'
+              '  var stay=planSuggestedStay(s);'
+          )
+          new_card_prep_drive = (
+              '  var time=ctx?planTimeForStop(ctx,i):"";\n'
+              '  var drive=ctx?planDriveText(ctx,i):"";\n'
+              '  var role=planStopRole(s);\n'
+              '  var stay=planSuggestedStay(s);'
+          )
+          if old_card_prep_drive not in s:
+              raise RuntimeError("Native21 cannot find plan card prep")
+          s=s.replace(old_card_prep_drive,new_card_prep_drive,1)
+
+          old_time_row = (
+              '    (time?\'<div class="plan-time-row"><span class="plan-time-badge">🕘 \'+time+\'</span><span class="plan-stay-badge">建議停留 \'+stay+\'</span></div>\':\'\')+\n'
+          )
+          new_time_row = (
+              '    (time?\'<div class="plan-time-row"><span class="plan-time-badge">🕘 \'+time+\'</span><span class="plan-stay-badge">建議停留 \'+stay+\'</span>\'+(drive?\'<span class="plan-drive-badge">\'+drive+\'</span>\':\'\')+\'</div>\':\'\')+\n'
+          )
+          if old_time_row not in s:
+              raise RuntimeError("Native21 cannot find plan time row")
+          s=s.replace(old_time_row,new_time_row,1)
+
+          old_summary_times='planScheduleTimes(ctx.timeMode,a.length).join(" → ")'
+          new_summary_times='planTimeline(ctx).map(function(x){return x.time}).join(" → ")'
+          if old_summary_times not in s:
+              raise RuntimeError("Native21 cannot find timetable summary times")
+          s=s.replace(old_summary_times,new_summary_times,1)
+
+          s=s.replace(
+              "AI SMART ROUTE · Native20",
+              "AI SMART ROUTE · Native21",
+              1
+          )
+          s=s.replace(
+              "會先控制行程範圍，再兼顧主題多樣性，排成可直接照著走的 3～5 站時間表。",
+              "會先控制行程範圍，只使用可定位景點，再依停留時間與站間距離排出 3～5 站時間表。",
+              1
+          )
+          s=s.replace(
+              "AI 行程會優先排同一生活圈，並避免整天都是同一類型景點。",
+              "AI 行程會優先排同一生活圈，並用站間距離估算移動時間。",
+              1
+          )
+
+          for token in [
+              "function planTimeline(ctx)",
+              "function planDriveMinutes(d)",
+              "function planDriveText(ctx,i)",
+              "plan-drive-badge",
+              'if(!coord)return false;',
+              "AI SMART ROUTE · Native21"
+          ]:
+              if token not in s:
+                  raise RuntimeError("Native21 missing expected token: "+token)
+
+
           s=s.replace(
               "雲嘉南週末去哪玩 · V5.5",
-              "雲嘉南週末去哪玩 · V5.5 · Native20",
+              "雲嘉南週末去哪玩 · V5.5 · Native21",
               1
           )
 
@@ -1666,8 +1922,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 20
-                  versionName "5.5-native-20"
+                  versionCode 21
+                  versionName "5.5-native-21"
               }
 
               buildTypes {
@@ -2251,11 +2507,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native20.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native21.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native20-APK
-          path: YunJiaNanWeekend-V5.5-native20.apk
+          name: YunJiaNanWeekend-V5.5-Native21-APK
+          path: YunJiaNanWeekend-V5.5-native21.apk
           if-no-files-found: error
