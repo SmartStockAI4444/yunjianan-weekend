@@ -163,7 +163,7 @@ jobs:
               locationSource="gps";
               currentLocationLabel="手機定位";
               syncLocationPanel();
-              setNearbyHint("📍 Native11：正在呼叫 Android 定位…","loading");
+              setNearbyHint("📍 Native12：正在呼叫 Android 定位…","loading");
           
               try{
                 window.__clearNativeLocationTimer();
@@ -182,7 +182,7 @@ jobs:
           """
               s=s.replace(marker,native_branch,1)
 
-          # Native11: fix nearbyMatchCount() calling a non-existent matchFilter().
+          # Native12: fix nearbyMatchCount() calling a non-existent matchFilter().
           if 'if(!matchFilter(s))return false;' in s:
               s=s.replace(
                   'if(!matchFilter(s))return false;',
@@ -192,35 +192,34 @@ jobs:
                   1
               )
 
-          # Native11: nearby mode should show the full distance-sorted list.
-          old_featured=textwrap.dedent("""\
-            var box=$("featuredCards");
-            var section=$("weekendFeatured");
-            var count=$("featuredCount");
-            if(!box||!section)return;
-
-            var picks=featuredCandidates();""")
-          new_featured=textwrap.dedent("""\
-            var box=$("featuredCards");
-            var section=$("weekendFeatured");
-            var count=$("featuredCount");
-            if(!box||!section)return;
-
-            if(sort==="附近"){
-              section.style.display="none";
-              box.innerHTML="";
-              currentFeaturedIds={};
-              if(count)count.textContent="";
-              return;
-            }
-            section.style.display="";
-
-            var picks=featuredCandidates();""")
+          # Native12: nearby mode should show the full distance-sorted list.
+          old_featured=(
+              '  var box=$("featuredCards");\n'
+              '  var section=$("weekendFeatured");\n'
+              '  var count=$("featuredCount");\n'
+              '  if(!box||!section)return;\n\n'
+              '  var picks=featuredCandidates();'
+          )
+          new_featured=(
+              '  var box=$("featuredCards");\n'
+              '  var section=$("weekendFeatured");\n'
+              '  var count=$("featuredCount");\n'
+              '  if(!box||!section)return;\n\n'
+              '  if(sort==="附近"){\n'
+              '    section.style.display="none";\n'
+              '    box.innerHTML="";\n'
+              '    currentFeaturedIds={};\n'
+              '    if(count)count.textContent="";\n'
+              '    return;\n'
+              '  }\n'
+              '  section.style.display="";\n\n'
+              '  var picks=featuredCandidates();'
+          )
           if old_featured not in s:
-              raise RuntimeError("Native11 cannot find renderFeatured anchor")
+              raise RuntimeError("Native12 cannot find renderFeatured anchor")
           s=s.replace(old_featured,new_featured,1)
 
-          # Native11: collapse the large manual-location controls by default.
+          # Native12: collapse the large manual-location controls by default.
           old_panel=textwrap.dedent("""\
           <div id="locationPanel" class="location-panel hidden">
             <div class="location-panel-head">
@@ -265,7 +264,7 @@ jobs:
             </div>
           </div>""")
           if old_panel not in s:
-              raise RuntimeError("Native11 cannot find location panel HTML")
+              raise RuntimeError("Native12 cannot find location panel HTML")
           s=s.replace(old_panel,new_panel,1)
 
           css_anchor=".location-panel.hidden{display:none}\\n.location-panel-head{"
@@ -296,7 +295,7 @@ jobs:
           .location-panel-body.hidden{display:none}
           .location-panel-head{""")
           if css_anchor not in s:
-              raise RuntimeError("Native11 cannot find location CSS anchor")
+              raise RuntimeError("Native12 cannot find location CSS anchor")
           s=s.replace(css_anchor,css_new,1)
 
           sync_anchor=textwrap.dedent("""\
@@ -318,32 +317,31 @@ jobs:
           function syncLocationPanel(){
             var panel=$("locationPanel");""")
           if sync_anchor not in s:
-              raise RuntimeError("Native11 cannot find syncLocationPanel")
+              raise RuntimeError("Native12 cannot find syncLocationPanel")
           s=s.replace(sync_anchor,sync_new,1)
 
-          init_anchor=textwrap.dedent("""\
-            syncNearbyRange();
-            syncLocationPanel();
-
-            $("search").oninput=function(){query=this.value;render()};""")
-          init_new=textwrap.dedent("""\
-            syncNearbyRange();
-            syncLocationPanel();
-            setLocationPanelExpanded(false);
-
-            if($("locationPanelToggle")){
-              $("locationPanelToggle").onclick=function(){
-                var body=$("locationPanelBody");
-                setLocationPanelExpanded(!!(body&&body.classList.contains("hidden")));
-              };
-            }
-
-            $("search").oninput=function(){query=this.value;render()};""")
+          init_anchor=(
+              '  syncNearbyRange();\n'
+              '  syncLocationPanel();\n\n'
+              '  $("search").oninput=function(){query=this.value;render()};'
+          )
+          init_new=(
+              '  syncNearbyRange();\n'
+              '  syncLocationPanel();\n'
+              '  setLocationPanelExpanded(false);\n\n'
+              '  if($("locationPanelToggle")){\n'
+              '    $("locationPanelToggle").onclick=function(){\n'
+              '      var body=$("locationPanelBody");\n'
+              '      setLocationPanelExpanded(!!(body&&body.classList.contains("hidden")));\n'
+              '    };\n'
+              '  }\n\n'
+              '  $("search").oninput=function(){query=this.value;render()};'
+          )
           if init_anchor not in s:
-              raise RuntimeError("Native11 cannot find init location anchor")
+              raise RuntimeError("Native12 cannot find init location anchor")
           s=s.replace(init_anchor,init_new,1)
 
-          # Build-time guards for Native11 UI.
+          # Build-time guards for Native12 UI.
           for token in [
               'id="locationPanelToggle"',
               'function setLocationPanelExpanded(open)',
@@ -352,16 +350,16 @@ jobs:
               'a=nearbySort(a)'
           ]:
               if token not in s:
-                  raise RuntimeError("Native11 missing expected token: "+token)
+                  raise RuntimeError("Native12 missing expected token: "+token)
 
 
           s=s.replace(
               "雲嘉南週末去哪玩 · V5.5",
-              "雲嘉南週末去哪玩 · V5.5 · Native11",
+              "雲嘉南週末去哪玩 · V5.5 · Native12",
               1
           )
 
-          # Native11 guard: nearby code must not reference undefined matchFilter().
+          # Native12 guard: nearby code must not reference undefined matchFilter().
           if "matchFilter(s)" in s:
               raise RuntimeError("nearbyMatchCount still references undefined matchFilter(s)")
 
@@ -434,8 +432,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 11
-                  versionName "5.5-native-11"
+                  versionCode 12
+                  versionName "5.5-native-12"
               }
 
               buildTypes {
@@ -635,10 +633,10 @@ jobs:
                   @JavascriptInterface
                   public void requestLocation() {
                       runOnUiThread(() -> {
-                          directStatus("📍 Native11：Android 已收到定位要求…");
+                          directStatus("📍 Native12：Android 已收到定位要求…");
                           Toast.makeText(
                                   MainActivity.this,
-                                  "Native11 定位已啟動",
+                                  "Native12 定位已啟動",
                                   Toast.LENGTH_SHORT
                           ).show();
                           requestNativeLocation();
@@ -657,7 +655,7 @@ jobs:
 
               private void requestNativeLocation() {
                   if (!hasLocationPermission()) {
-                      directStatus("📍 Native11：等待位置權限…");
+                      directStatus("📍 Native12：等待位置權限…");
                       requestPermissions(
                               new String[] {
                                       Manifest.permission.ACCESS_FINE_LOCATION,
@@ -709,7 +707,7 @@ jobs:
                   }
 
                   directStatus(
-                          "📍 Native11：權限正常，先讀取 Wi‑Fi／基地台位置…"
+                          "📍 Native12：權限正常，先讀取 Wi‑Fi／基地台位置…"
                   );
 
                   try {
@@ -745,7 +743,7 @@ jobs:
                   }
 
                   directStatus(
-                          "📍 Native11：沒有近期位置，正在等 Wi‑Fi／基地台或 GPS…"
+                          "📍 Native12：沒有近期位置，正在等 Wi‑Fi／基地台或 GPS…"
                   );
 
                   listener = new LocationListener() {
@@ -860,7 +858,7 @@ jobs:
                   double lng = location.getLongitude();
 
                   directStatus(
-                          "✅ Native11：已取得"
+                          "✅ Native12：已取得"
                                   + source
                                   + "，正在套用位置…"
                   );
@@ -882,7 +880,7 @@ jobs:
                                   + "}catch(e){"
                                   + "var el=document.getElementById('nearbyHint');"
                                   + "if(el){"
-                                  + "el.textContent='⚠️ Native11 套用位置失敗：'+"
+                                  + "el.textContent='⚠️ Native12 套用位置失敗：'+"
                                   + "(e&&e.message?e.message:String(e));"
                                   + "el.className='nearby-hint warn';"
                                   + "}"
@@ -903,7 +901,7 @@ jobs:
                   locationResolved = true;
                   stopLocationRequests();
 
-                  directStatus("⚠️ Native11：" + message);
+                  directStatus("⚠️ Native12：" + message);
 
                   Toast.makeText(
                           this,
@@ -971,7 +969,7 @@ jobs:
 
                   if (hasLocationPermission()) {
                       directStatus(
-                              "📍 Native11：位置權限已允許，開始定位…"
+                              "📍 Native12：位置權限已允許，開始定位…"
                       );
                       beginLocation();
                   } else {
@@ -1019,11 +1017,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native11.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native12.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native11-APK
-          path: YunJiaNanWeekend-V5.5-native11.apk
+          name: YunJiaNanWeekend-V5.5-Native12-APK
+          path: YunJiaNanWeekend-V5.5-native12.apk
           if-no-files-found: error
