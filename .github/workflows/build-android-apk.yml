@@ -163,7 +163,7 @@ jobs:
               locationSource="gps";
               currentLocationLabel="手機定位";
               syncLocationPanel();
-              setNearbyHint("📍 Native14：正在呼叫 Android 定位…","loading");
+              setNearbyHint("📍 Native15：正在呼叫 Android 定位…","loading");
           
               try{
                 window.__clearNativeLocationTimer();
@@ -182,7 +182,7 @@ jobs:
           """
               s=s.replace(marker,native_branch,1)
 
-          # Native14: fix nearbyMatchCount() calling a non-existent matchFilter().
+          # Native15: fix nearbyMatchCount() calling a non-existent matchFilter().
           if 'if(!matchFilter(s))return false;' in s:
               s=s.replace(
                   'if(!matchFilter(s))return false;',
@@ -192,7 +192,7 @@ jobs:
                   1
               )
 
-          # Native14: nearby mode should show the full distance-sorted list.
+          # Native15: nearby mode should show the full distance-sorted list.
           old_featured=(
               '  var box=$("featuredCards");\n'
               '  var section=$("weekendFeatured");\n'
@@ -216,10 +216,10 @@ jobs:
               '  var picks=featuredCandidates();'
           )
           if old_featured not in s:
-              raise RuntimeError("Native14 cannot find renderFeatured anchor")
+              raise RuntimeError("Native15 cannot find renderFeatured anchor")
           s=s.replace(old_featured,new_featured,1)
 
-          # Native14: collapse the large manual-location controls by default.
+          # Native15: collapse the large manual-location controls by default.
           old_panel=textwrap.dedent("""\
           <div id="locationPanel" class="location-panel hidden">
             <div class="location-panel-head">
@@ -264,7 +264,7 @@ jobs:
             </div>
           </div>""")
           if old_panel not in s:
-              raise RuntimeError("Native14 cannot find location panel HTML")
+              raise RuntimeError("Native15 cannot find location panel HTML")
           s=s.replace(old_panel,new_panel,1)
 
           css_anchor=".location-panel.hidden{display:none}"
@@ -294,7 +294,7 @@ jobs:
           }
           .location-panel-body.hidden{display:none}""")
           if css_anchor not in s:
-              raise RuntimeError("Native14 cannot find location CSS anchor")
+              raise RuntimeError("Native15 cannot find location CSS anchor")
           s=s.replace(css_anchor,css_new,1)
 
           sync_anchor=textwrap.dedent("""\
@@ -316,7 +316,7 @@ jobs:
           function syncLocationPanel(){
             var panel=$("locationPanel");""")
           if sync_anchor not in s:
-              raise RuntimeError("Native14 cannot find syncLocationPanel")
+              raise RuntimeError("Native15 cannot find syncLocationPanel")
           s=s.replace(sync_anchor,sync_new,1)
 
           init_anchor=(
@@ -337,10 +337,10 @@ jobs:
               '  $("search").oninput=function(){query=this.value;render()};'
           )
           if init_anchor not in s:
-              raise RuntimeError("Native14 cannot find init location anchor")
+              raise RuntimeError("Native15 cannot find init location anchor")
           s=s.replace(init_anchor,init_new,1)
 
-          # Build-time guards for Native14 UI.
+          # Build-time guards for Native15 UI.
           for token in [
               'id="locationPanelToggle"',
               'function setLocationPanelExpanded(open)',
@@ -349,12 +349,12 @@ jobs:
               'a=nearbySort(a)'
           ]:
               if token not in s:
-                  raise RuntimeError("Native14 missing expected token: "+token)
+                  raise RuntimeError("Native15 missing expected token: "+token)
 
 
-          # Native14: stronger nearby distance presentation and distance bands.
+          # Native15: stronger nearby distance presentation and distance bands.
           native14_css = r"""
-          /* ===== Native14 Nearby Distance UI ===== */
+          /* ===== Native15 Nearby Distance UI ===== */
           .distance-chip{
             min-height:28px;
             padding:0 9px;
@@ -420,7 +420,7 @@ jobs:
           }
           """
           if "</style>" not in s:
-              raise RuntimeError("Native14 cannot find style end")
+              raise RuntimeError("Native15 cannot find style end")
           s=s.replace("</style>",native14_css+"\n</style>",1)
 
           native14_helpers = r"""
@@ -470,13 +470,13 @@ jobs:
           """
           sort_marker="function nearbySort(items){"
           if sort_marker not in s:
-              raise RuntimeError("Native14 cannot find nearbySort marker")
+              raise RuntimeError("Native15 cannot find nearbySort marker")
           s=s.replace(sort_marker,native14_helpers+"\n"+sort_marker,1)
 
           old_distance_chip = """          (sort==="附近"&&itemDistanceKm(s)!=null?'<span class="distance-chip">📍 '+formatDistanceKm(itemDistanceKm(s))+'</span>':'')+"""
           new_distance_chip = """          distanceChipHtml(s)+"""
           if old_distance_chip not in s:
-              raise RuntimeError("Native14 cannot find distance chip render line")
+              raise RuntimeError("Native15 cannot find distance chip render line")
           s=s.replace(old_distance_chip,new_distance_chip,1)
 
           old_card_loop = """  a.forEach(function(s){"""
@@ -496,7 +496,7 @@ jobs:
                 }
               }"""
           if old_card_loop not in s:
-              raise RuntimeError("Native14 cannot find card loop")
+              raise RuntimeError("Native15 cannot find card loop")
           s=s.replace(old_card_loop,new_card_loop,1)
 
           old_radius_click = r"""      nearbyRadius=raw==="all"?"all":Number(raw);
@@ -507,7 +507,7 @@ jobs:
                 render();
                 pulseNearbyRefresh();"""
           if old_radius_click not in s:
-              raise RuntimeError("Native14 cannot find nearby radius click handler")
+              raise RuntimeError("Native15 cannot find nearby radius click handler")
           s=s.replace(old_radius_click,new_radius_click,1)
 
           s=s.replace(
@@ -516,7 +516,7 @@ jobs:
               1
           )
 
-          # Native14 build guards.
+          # Native15 build guards.
           for token in [
               'function nearbyBand(d)',
               'function distanceChipHtml(s)',
@@ -526,16 +526,118 @@ jobs:
               '.distance-chip.nearest'
           ]:
               if token not in s:
-                  raise RuntimeError("Native14 missing expected token: "+token)
+                  raise RuntimeError("Native15 missing expected token: "+token)
+
+
+
+          # Native15: clean up duplicate nearby cards and make estimated distance less falsely precise.
+          native15_helpers = r"""
+          function hasPreciseDistanceCoord(s){
+            if(!s)return false;
+
+            var lat=Number(s.lat!=null?s.lat:s.latitude);
+            var lng=Number(s.lng!=null?s.lng:(s.lon!=null?s.lon:s.longitude));
+            if(isFinite(lat)&&isFinite(lng)&&Math.abs(lat)<=90&&Math.abs(lng)<=180){
+              return true;
+            }
+
+            return !!PRECISE_COORDS[String(s.id||"")];
+          }
+
+          function formatDistanceForItem(s){
+            var d=itemDistanceKm(s);
+            if(d==null||!isFinite(d))return "";
+
+            if(hasPreciseDistanceCoord(s)){
+              return formatDistanceKm(d);
+            }
+
+            return "約 "+Math.max(1,Math.round(d))+" km";
+          }
+
+          function nearbyDisplayDedupe(items){
+            var seen={},out=[];
+
+            (items||[]).forEach(function(s){
+              var nameKey=dedupeName((s&&s.name)||"");
+              var key=String((s&&s.city)||"")+"|"+nameKey;
+
+              if(!nameKey){
+                out.push(s);
+                return;
+              }
+
+              if(seen[key]==null){
+                seen[key]=out.length;
+                out.push(s);
+              }else{
+                var idx=seen[key];
+                out[idx]=mergeDuplicate(out[idx],s);
+              }
+            });
+
+            return out;
+          }
+          """
+
+          nearby_sort_marker="function nearbySort(items){"
+          if nearby_sort_marker not in s:
+              raise RuntimeError("Native15 cannot find nearbySort marker")
+          s=s.replace(nearby_sort_marker,native15_helpers+"\n"+nearby_sort_marker,1)
+
+          old_nearby_list = r"""  if(sort==="附近"){
+            if(currentUserCoord){
+              a=a.filter(withinNearbyRadius);
+              a=nearbySort(a);
+            }else{
+              a=diversifyRecommendations(a);
+            }
+          }"""
+          new_nearby_list = r"""  if(sort==="附近"){
+            a=nearbyDisplayDedupe(a);
+
+            if(currentUserCoord){
+              a=a.filter(withinNearbyRadius);
+              a=nearbySort(a);
+            }else{
+              a=diversifyRecommendations(a);
+            }
+          }"""
+          if old_nearby_list not in s:
+              raise RuntimeError("Native15 cannot find nearby list block")
+          s=s.replace(old_nearby_list,new_nearby_list,1)
+
+          old_distance_html = r"""            return '<span class="distance-chip '+band+'">📍 '+formatDistanceKm(d)+'</span>';"""
+          new_distance_html = r"""            return '<span class="distance-chip '+band+'">📍 '+formatDistanceForItem(s)+'</span>';"""
+          if old_distance_html not in s:
+              raise RuntimeError("Native15 cannot find distanceChipHtml formatter")
+          s=s.replace(old_distance_html,new_distance_html,1)
+
+          old_count = """  var count=nearbyMatchCount(data);"""
+          new_count = """  var count=list().length;"""
+          if old_count not in s:
+              raise RuntimeError("Native15 cannot find nearby count line")
+          s=s.replace(old_count,new_count,1)
+
+          # Native15 guards.
+          for token in [
+              'function nearbyDisplayDedupe(items)',
+              'function formatDistanceForItem(s)',
+              'a=nearbyDisplayDedupe(a);',
+              "var count=list().length;",
+              "formatDistanceForItem(s)"
+          ]:
+              if token not in s:
+                  raise RuntimeError("Native15 missing expected token: "+token)
 
 
           s=s.replace(
               "雲嘉南週末去哪玩 · V5.5",
-              "雲嘉南週末去哪玩 · V5.5 · Native14",
+              "雲嘉南週末去哪玩 · V5.5 · Native15",
               1
           )
 
-          # Native14 guard: nearby code must not reference undefined matchFilter().
+          # Native15 guard: nearby code must not reference undefined matchFilter().
           if "matchFilter(s)" in s:
               raise RuntimeError("nearbyMatchCount still references undefined matchFilter(s)")
 
@@ -608,8 +710,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 14
-                  versionName "5.5-native-14"
+                  versionCode 15
+                  versionName "5.5-native-15"
               }
 
               buildTypes {
@@ -809,10 +911,10 @@ jobs:
                   @JavascriptInterface
                   public void requestLocation() {
                       runOnUiThread(() -> {
-                          directStatus("📍 Native14：Android 已收到定位要求…");
+                          directStatus("📍 Native15：Android 已收到定位要求…");
                           Toast.makeText(
                                   MainActivity.this,
-                                  "Native14 定位已啟動",
+                                  "Native15 定位已啟動",
                                   Toast.LENGTH_SHORT
                           ).show();
                           requestNativeLocation();
@@ -831,7 +933,7 @@ jobs:
 
               private void requestNativeLocation() {
                   if (!hasLocationPermission()) {
-                      directStatus("📍 Native14：等待位置權限…");
+                      directStatus("📍 Native15：等待位置權限…");
                       requestPermissions(
                               new String[] {
                                       Manifest.permission.ACCESS_FINE_LOCATION,
@@ -883,7 +985,7 @@ jobs:
                   }
 
                   directStatus(
-                          "📍 Native14：權限正常，先讀取 Wi‑Fi／基地台位置…"
+                          "📍 Native15：權限正常，先讀取 Wi‑Fi／基地台位置…"
                   );
 
                   try {
@@ -919,7 +1021,7 @@ jobs:
                   }
 
                   directStatus(
-                          "📍 Native14：沒有近期位置，正在等 Wi‑Fi／基地台或 GPS…"
+                          "📍 Native15：沒有近期位置，正在等 Wi‑Fi／基地台或 GPS…"
                   );
 
                   listener = new LocationListener() {
@@ -1034,7 +1136,7 @@ jobs:
                   double lng = location.getLongitude();
 
                   directStatus(
-                          "✅ Native14：已取得"
+                          "✅ Native15：已取得"
                                   + source
                                   + "，正在套用位置…"
                   );
@@ -1056,7 +1158,7 @@ jobs:
                                   + "}catch(e){"
                                   + "var el=document.getElementById('nearbyHint');"
                                   + "if(el){"
-                                  + "el.textContent='⚠️ Native14 套用位置失敗：'+"
+                                  + "el.textContent='⚠️ Native15 套用位置失敗：'+"
                                   + "(e&&e.message?e.message:String(e));"
                                   + "el.className='nearby-hint warn';"
                                   + "}"
@@ -1077,7 +1179,7 @@ jobs:
                   locationResolved = true;
                   stopLocationRequests();
 
-                  directStatus("⚠️ Native14：" + message);
+                  directStatus("⚠️ Native15：" + message);
 
                   Toast.makeText(
                           this,
@@ -1145,7 +1247,7 @@ jobs:
 
                   if (hasLocationPermission()) {
                       directStatus(
-                              "📍 Native14：位置權限已允許，開始定位…"
+                              "📍 Native15：位置權限已允許，開始定位…"
                       );
                       beginLocation();
                   } else {
@@ -1193,11 +1295,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native14.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native15.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native14-APK
-          path: YunJiaNanWeekend-V5.5-native14.apk
+          name: YunJiaNanWeekend-V5.5-Native15-APK
+          path: YunJiaNanWeekend-V5.5-native15.apk
           if-no-files-found: error
