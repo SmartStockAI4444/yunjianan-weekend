@@ -1,0 +1,1026 @@
+name: Build Android APK
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+
+      - name: Prepare Android SDK 35
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          SDK_ROOT="$RUNNER_TEMP/android-sdk"
+          CMDLINE_ROOT="$RUNNER_TEMP/android-cmdline-tools"
+
+          echo "Installing private Android SDK into: $SDK_ROOT"
+
+          rm -rf "$SDK_ROOT" "$CMDLINE_ROOT"
+          mkdir -p "$SDK_ROOT/cmdline-tools/latest" "$CMDLINE_ROOT"
+
+          curl -fL --retry 3 \
+            "https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip" \
+            -o "$RUNNER_TEMP/android-commandlinetools.zip"
+
+          unzip -q "$RUNNER_TEMP/android-commandlinetools.zip" -d "$CMDLINE_ROOT"
+
+          cp -R "$CMDLINE_ROOT/cmdline-tools/"* "$SDK_ROOT/cmdline-tools/latest/"
+
+          SDKMANAGER="$SDK_ROOT/cmdline-tools/latest/bin/sdkmanager"
+
+          echo "sdkmanager: $SDKMANAGER"
+          test -f "$SDKMANAGER"
+
+          yes | bash "$SDKMANAGER" --sdk_root="$SDK_ROOT" --licenses >/dev/null || true
+
+          bash "$SDKMANAGER" --sdk_root="$SDK_ROOT" \
+            "platform-tools" \
+            "platforms;android-35" \
+            "build-tools;35.0.0"
+
+          echo "ANDROID_SDK_ROOT=$SDK_ROOT" >> "$GITHUB_ENV"
+          echo "ANDROID_HOME=$SDK_ROOT" >> "$GITHUB_ENV"
+          echo "$SDK_ROOT/platform-tools" >> "$GITHUB_PATH"
+          echo "$SDK_ROOT/build-tools/35.0.0" >> "$GITHUB_PATH"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Generate Android project
+        shell: bash
+        run: |
+          set -e
+          rm -rf _android_build
+          mkdir -p _android_build/app/src/main/java/com/yunjianan/weekend
+          mkdir -p _android_build/app/src/main/res/values
+          mkdir -p _android_build/app/src/main/res/drawable
+          mkdir -p _android_build/app/src/main/assets
+
+          cp index.html _android_build/app/src/main/assets/index.html
+          cp weekly_feed.json _android_build/app/src/main/assets/weekly_feed.json
+          [ -f manifest.json ] && cp manifest.json _android_build/app/src/main/assets/manifest.json || true
+          [ -f icon-192.png ] && cp icon-192.png _android_build/app/src/main/assets/icon-192.png || true
+          [ -f icon-512.png ] && cp icon-512.png _android_build/app/src/main/assets/icon-512.png || true
+
+          if [ -f icon-512.png ]; then
+            cp icon-512.png _android_build/app/src/main/res/drawable/app_icon.png
+          else
+            cp icon-192.png _android_build/app/src/main/res/drawable/app_icon.png
+          fi
+
+          python3 - <<'PY'
+          from pathlib import Path
+          import textwrap
+          p=Path("_android_build/app/src/main/assets/index.html")
+          s=p.read_text(encoding="utf-8")
+          s=s.replace("<head>", '<head>\n<script>window.__NATIVE_ANDROID_APP__=true;</script>', 1)
+          s=s.replace(
+              'function isStandaloneApp(){\n  return window.matchMedia("(display-mode: standalone)").matches ||\n    window.navigator.standalone===true;\n}',
+              'function isStandaloneApp(){\n  return window.__NATIVE_ANDROID_APP__===true ||\n    window.matchMedia("(display-mode: standalone)").matches ||\n    window.navigator.standalone===true;\n}',
+              1
+          )
+          s=s.replace(
+              '  if("serviceWorker" in navigator){\n    window.addEventListener("load",function(){\n      navigator.serviceWorker.register("./service-worker.js").catch(function(){});\n    });\n  }',
+              '  if(!window.__NATIVE_ANDROID_APP__ && "serviceWorker" in navigator){\n    window.addEventListener("load",function(){\n      navigator.serviceWorker.register("./service-worker.js").catch(function(){});\n    });\n  }',
+              1
+          )
+          s=s.replace(
+              "<script>\n(function(){",
+              '<script>\nif(window.__NATIVE_ANDROID_APP__){\n  window.open=function(url){\n    if(url) window.location.href=url;\n    return null;\n  };\n}\n(function(){',
+              1
+          )
+          native_hook = r"""
+          if(window.__NATIVE_ANDROID_APP__){
+            window.__nativeLocationTimer=null;
+
+            window.__clearNativeLocationTimer=function(){
+              if(window.__nativeLocationTimer){
+                clearTimeout(window.__nativeLocationTimer);
+                window.__nativeLocationTimer=null;
+              }
+            };
+
+            window.__receiveNativeLocation=function(lat,lng){
+              window.__clearNativeLocationTimer();
+              currentUserCoord=[Number(lat),Number(lng)];
+              locationState="ready";
+              locationSource="gps";
+              currentLocationLabel="手機目前位置";
+              syncLocationPanel();
+              if(typeof setLocationPanelExpanded==="function")setLocationPanelExpanded(false);
+              refreshNearbyHint();
+              render();
+            };
+
+            window.__nativeLocationError=function(msg){
+              window.__clearNativeLocationTimer();
+              locationState="error";
+              currentUserCoord=null;
+              locationSource="";
+              currentLocationLabel="";
+              syncLocationPanel();
+              if(typeof setLocationPanelExpanded==="function")setLocationPanelExpanded(true);
+              setNearbyHint("⚠️ "+(msg||"目前無法取得手機位置")+"；可展開位置設定改用手動位置。","warn");
+              render();
+            };
+          }
+          """
+          marker="function requestUserLocation(forceGps){"
+          if marker in s:
+              # IMPORTANT: inject native callbacks inside the same IIFE,
+              # before requestUserLocation(), so they close over app state vars.
+              s=s.replace(marker, native_hook+"\n"+marker, 1)
+              native_branch=r"""function requestUserLocation(forceGps){
+            if(window.__NATIVE_ANDROID_APP__ && window.AndroidLocation){
+              if(currentUserCoord&&!forceGps){
+                locationState="ready";
+                syncLocationPanel();
+                refreshNearbyHint();
+                render();
+                return;
+              }
+          
+              if(!forceGps && applySavedManualLocation()){
+                return;
+              }
+          
+              locationState="loading";
+              locationSource="gps";
+              currentLocationLabel="手機定位";
+              syncLocationPanel();
+              setNearbyHint("📍 Native13：正在呼叫 Android 定位…","loading");
+          
+              try{
+                window.__clearNativeLocationTimer();
+                window.__nativeLocationTimer=setTimeout(function(){
+                  window.__nativeLocationError(
+                    "Android 定位超過 20 秒沒有回應"
+                  );
+                },20000);
+
+                window.AndroidLocation.requestLocation();
+              }catch(e){
+                window.__nativeLocationError("Android 定位服務啟動失敗");
+              }
+              return;
+            }
+          """
+              s=s.replace(marker,native_branch,1)
+
+          # Native13: fix nearbyMatchCount() calling a non-existent matchFilter().
+          if 'if(!matchFilter(s))return false;' in s:
+              s=s.replace(
+                  'if(!matchFilter(s))return false;',
+                  'if(!okTags(s))return false;\n'
+                  '    if(sel["活動"]&&!isTravelFriendlyEvent(s))return false;\n'
+                  '    if(favOnly&&!favs[s.id])return false;',
+                  1
+              )
+
+          # Native13: nearby mode should show the full distance-sorted list.
+          old_featured=(
+              '  var box=$("featuredCards");\n'
+              '  var section=$("weekendFeatured");\n'
+              '  var count=$("featuredCount");\n'
+              '  if(!box||!section)return;\n\n'
+              '  var picks=featuredCandidates();'
+          )
+          new_featured=(
+              '  var box=$("featuredCards");\n'
+              '  var section=$("weekendFeatured");\n'
+              '  var count=$("featuredCount");\n'
+              '  if(!box||!section)return;\n\n'
+              '  if(sort==="附近"){\n'
+              '    section.style.display="none";\n'
+              '    box.innerHTML="";\n'
+              '    currentFeaturedIds={};\n'
+              '    if(count)count.textContent="";\n'
+              '    return;\n'
+              '  }\n'
+              '  section.style.display="";\n\n'
+              '  var picks=featuredCandidates();'
+          )
+          if old_featured not in s:
+              raise RuntimeError("Native13 cannot find renderFeatured anchor")
+          s=s.replace(old_featured,new_featured,1)
+
+          # Native13: collapse the large manual-location controls by default.
+          old_panel=textwrap.dedent("""\
+          <div id="locationPanel" class="location-panel hidden">
+            <div class="location-panel-head">
+              <span>📍 位置來源</span>
+              <span id="locationSourceBadge" class="location-source-badge">尚未設定</span>
+            </div>
+            <button id="useGpsLocation" class="gps-location-btn">📡 使用手機定位</button>
+            <div class="manual-location-title">或手動選擇目前位置</div>
+            <div class="manual-location-grid">
+              <select id="manualCity" aria-label="縣市">
+                <option value="嘉義">嘉義</option>
+                <option value="雲林">雲林</option>
+                <option value="台南">台南</option>
+              </select>
+              <select id="manualTown" aria-label="鄉鎮市區"></select>
+              <button id="applyManualLocation">套用位置</button>
+            </div>
+            <div class="manual-location-note">手動位置只用來估算「離我近」；Google Maps 導航仍使用手機實際定位。</div>
+          </div>""")
+          new_panel=textwrap.dedent("""\
+          <div id="locationPanel" class="location-panel hidden collapsed">
+            <div class="location-panel-head">
+              <span>📍 位置來源</span>
+              <div class="location-head-right">
+                <span id="locationSourceBadge" class="location-source-badge">尚未設定</span>
+                <button id="locationPanelToggle" class="location-panel-toggle" type="button" aria-expanded="false">設定 ▼</button>
+              </div>
+            </div>
+            <div id="locationPanelBody" class="location-panel-body hidden">
+              <button id="useGpsLocation" class="gps-location-btn">📡 重新使用手機定位</button>
+              <div class="manual-location-title">或手動選擇目前位置</div>
+              <div class="manual-location-grid">
+                <select id="manualCity" aria-label="縣市">
+                  <option value="嘉義">嘉義</option>
+                  <option value="雲林">雲林</option>
+                  <option value="台南">台南</option>
+                </select>
+                <select id="manualTown" aria-label="鄉鎮市區"></select>
+                <button id="applyManualLocation">套用位置</button>
+              </div>
+              <div class="manual-location-note">手動位置只用來估算「離我近」；Google Maps 導航仍使用手機實際定位。</div>
+            </div>
+          </div>""")
+          if old_panel not in s:
+              raise RuntimeError("Native13 cannot find location panel HTML")
+          s=s.replace(old_panel,new_panel,1)
+
+          css_anchor=".location-panel.hidden{display:none}"
+          css_new=textwrap.dedent("""\
+          .location-panel.hidden{display:none}
+          .location-panel.collapsed{
+            padding-top:10px;
+            padding-bottom:10px;
+          }
+          .location-head-right{
+            display:flex;
+            align-items:center;
+            justify-content:flex-end;
+            gap:7px;
+            min-width:0;
+          }
+          .location-panel-toggle{
+            flex:0 0 auto;
+            height:28px;
+            padding:0 10px;
+            border:0;
+            border-radius:999px;
+            background:#e6f2eb;
+            color:#1c6b4b;
+            font-size:10px;
+            font-weight:950;
+          }
+          .location-panel-body.hidden{display:none}""")
+          if css_anchor not in s:
+              raise RuntimeError("Native13 cannot find location CSS anchor")
+          s=s.replace(css_anchor,css_new,1)
+
+          sync_anchor=textwrap.dedent("""\
+          function syncLocationPanel(){
+            var panel=$("locationPanel");""")
+          sync_new=textwrap.dedent("""\
+          function setLocationPanelExpanded(open){
+            var panel=$("locationPanel");
+            var body=$("locationPanelBody");
+            var btn=$("locationPanelToggle");
+            if(!panel||!body||!btn)return;
+
+            body.classList.toggle("hidden",!open);
+            panel.classList.toggle("collapsed",!open);
+            btn.textContent=open?"收合 ▲":"設定 ▼";
+            btn.setAttribute("aria-expanded",open?"true":"false");
+          }
+
+          function syncLocationPanel(){
+            var panel=$("locationPanel");""")
+          if sync_anchor not in s:
+              raise RuntimeError("Native13 cannot find syncLocationPanel")
+          s=s.replace(sync_anchor,sync_new,1)
+
+          init_anchor=(
+              '  syncNearbyRange();\n'
+              '  syncLocationPanel();\n\n'
+              '  $("search").oninput=function(){query=this.value;render()};'
+          )
+          init_new=(
+              '  syncNearbyRange();\n'
+              '  syncLocationPanel();\n'
+              '  setLocationPanelExpanded(false);\n\n'
+              '  if($("locationPanelToggle")){\n'
+              '    $("locationPanelToggle").onclick=function(){\n'
+              '      var body=$("locationPanelBody");\n'
+              '      setLocationPanelExpanded(!!(body&&body.classList.contains("hidden")));\n'
+              '    };\n'
+              '  }\n\n'
+              '  $("search").oninput=function(){query=this.value;render()};'
+          )
+          if init_anchor not in s:
+              raise RuntimeError("Native13 cannot find init location anchor")
+          s=s.replace(init_anchor,init_new,1)
+
+          # Build-time guards for Native13 UI.
+          for token in [
+              'id="locationPanelToggle"',
+              'function setLocationPanelExpanded(open)',
+              'section.style.display="none"',
+              'class="distance-chip"',
+              'a=nearbySort(a)'
+          ]:
+              if token not in s:
+                  raise RuntimeError("Native13 missing expected token: "+token)
+
+
+          s=s.replace(
+              "雲嘉南週末去哪玩 · V5.5",
+              "雲嘉南週末去哪玩 · V5.5 · Native13",
+              1
+          )
+
+          # Native13 guard: nearby code must not reference undefined matchFilter().
+          if "matchFilter(s)" in s:
+              raise RuntimeError("nearbyMatchCount still references undefined matchFilter(s)")
+
+          # Build-time sanity checks: never ship a broken native JS injection again.
+          if "\\nfunction requestUserLocation" in s:
+              raise RuntimeError("Native JS contains a literal \\n before requestUserLocation")
+
+          main_marker='<script>\nif(window.__NATIVE_ANDROID_APP__){\n  window.open=function(url){'
+          start=s.find(main_marker)
+          if start<0:
+              raise RuntimeError("Cannot find transformed native main script")
+          start += len("<script>")
+          end=s.find("</script>", start)
+          if end<0:
+              raise RuntimeError("Cannot find end of transformed native main script")
+
+          Path("_android_build/native-main-check.js").write_text(
+              s[start:end],
+              encoding="utf-8"
+          )
+
+          p.write_text(s,encoding="utf-8")
+          PY
+
+          node --check _android_build/native-main-check.js
+
+          cat > _android_build/settings.gradle <<'EOF'
+          pluginManagement {
+              repositories {
+                  google()
+                  mavenCentral()
+                  gradlePluginPortal()
+              }
+          }
+          dependencyResolutionManagement {
+              repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+              repositories {
+                  google()
+                  mavenCentral()
+              }
+          }
+          rootProject.name = "YunJiaNanWeekend"
+          include(":app")
+          EOF
+
+          cat > _android_build/build.gradle <<'EOF'
+          plugins {
+              id 'com.android.application' version '8.7.3' apply false
+          }
+          EOF
+
+          cat > _android_build/gradle.properties <<'EOF'
+          org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
+          android.useAndroidX=true
+          android.nonTransitiveRClass=true
+          EOF
+
+          echo "sdk.dir=$ANDROID_SDK_ROOT" > _android_build/local.properties
+
+          cat > _android_build/app/build.gradle <<'EOF'
+          plugins {
+              id 'com.android.application'
+          }
+
+          android {
+              namespace 'com.yunjianan.weekend'
+              compileSdk 35
+
+              defaultConfig {
+                  applicationId "com.yunjianan.weekend"
+                  minSdk 26
+                  targetSdk 35
+                  versionCode 13
+                  versionName "5.5-native-13"
+              }
+
+              buildTypes {
+                  release {
+                      minifyEnabled false
+                      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+                  }
+              }
+
+              compileOptions {
+                  sourceCompatibility JavaVersion.VERSION_17
+                  targetCompatibility JavaVersion.VERSION_17
+              }
+          }
+
+          dependencies {
+              implementation 'androidx.webkit:webkit:1.12.1'
+          }
+          EOF
+
+          echo '# no custom rules' > _android_build/app/proguard-rules.pro
+
+          cat > _android_build/app/src/main/res/values/styles.xml <<'EOF'
+          <?xml version="1.0" encoding="utf-8"?>
+          <resources>
+              <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+                  <item name="android:fontFamily">sans</item>
+                  <item name="android:colorAccent">#1F6B4F</item>
+                  <item name="android:statusBarColor">#1F6B4F</item>
+                  <item name="android:navigationBarColor">#000000</item>
+                  <item name="android:windowLightStatusBar">false</item>
+                  <item name="android:windowBackground">#F5F7F4</item>
+              </style>
+          </resources>
+          EOF
+
+          cat > _android_build/app/src/main/AndroidManifest.xml <<'EOF'
+          <?xml version="1.0" encoding="utf-8"?>
+          <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+              <uses-permission android:name="android.permission.INTERNET" />
+              <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+              <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+              <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+              <uses-feature android:name="android.hardware.location" android:required="false" />
+              <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+
+              <application
+                  android:allowBackup="true"
+                  android:icon="@drawable/app_icon"
+                  android:label="雲嘉南週末"
+                  android:supportsRtl="true"
+                  android:theme="@style/AppTheme"
+                  android:usesCleartextTraffic="false">
+
+                  <activity
+                      android:name=".MainActivity"
+                      android:exported="true"
+                      android:screenOrientation="portrait">
+                      <intent-filter>
+                          <action android:name="android.intent.action.MAIN" />
+                          <category android:name="android.intent.category.LAUNCHER" />
+                      </intent-filter>
+                  </activity>
+              </application>
+          </manifest>
+          EOF
+
+          cat > _android_build/app/src/main/java/com/yunjianan/weekend/MainActivity.java <<'EOF'
+          package com.yunjianan.weekend;
+
+          import android.Manifest;
+          import android.app.Activity;
+          import android.content.Context;
+          import android.content.Intent;
+          import android.content.pm.PackageManager;
+          import android.location.Location;
+          import android.location.LocationListener;
+          import android.location.LocationManager;
+          import android.net.Uri;
+          import android.os.Bundle;
+          import android.os.Looper;
+          import android.view.ViewGroup;
+          import android.webkit.JavascriptInterface;
+          import android.webkit.WebResourceRequest;
+          import android.webkit.WebResourceResponse;
+          import android.webkit.WebSettings;
+          import android.webkit.WebView;
+          import android.webkit.WebViewClient;
+          import android.widget.Toast;
+
+          import androidx.webkit.WebViewAssetLoader;
+
+          import java.util.ArrayList;
+          import java.util.List;
+          import java.util.concurrent.Executors;
+          import java.util.concurrent.ScheduledExecutorService;
+          import java.util.concurrent.ScheduledFuture;
+          import java.util.concurrent.TimeUnit;
+
+          public class MainActivity extends Activity {
+
+              private static final int LOCATION_PERMISSION_REQUEST = 4105;
+              private static final long LOCATION_TIMEOUT_SECONDS = 15L;
+
+              private WebView webView;
+              private LocationManager locationManager;
+              private LocationListener listener;
+
+              private final ScheduledExecutorService scheduler =
+                      Executors.newSingleThreadScheduledExecutor();
+              private ScheduledFuture<?> timeoutFuture;
+
+              private boolean locationResolved = false;
+              private Location fallbackLocation = null;
+
+              @Override
+              protected void onCreate(Bundle savedInstanceState) {
+                  super.onCreate(savedInstanceState);
+
+                  locationManager =
+                          (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+                  webView = new WebView(this);
+                  webView.setLayoutParams(new ViewGroup.LayoutParams(
+                          ViewGroup.LayoutParams.MATCH_PARENT,
+                          ViewGroup.LayoutParams.MATCH_PARENT
+                  ));
+                  setContentView(webView);
+
+                  WebSettings settings = webView.getSettings();
+                  settings.setJavaScriptEnabled(true);
+                  settings.setDomStorageEnabled(true);
+                  settings.setDatabaseEnabled(true);
+                  settings.setGeolocationEnabled(true);
+                  settings.setAllowFileAccess(false);
+                  settings.setAllowContentAccess(true);
+
+                  webView.addJavascriptInterface(
+                          new NativeLocationBridge(),
+                          "AndroidLocation"
+                  );
+
+                  WebViewAssetLoader assetLoader =
+                          new WebViewAssetLoader.Builder()
+                                  .addPathHandler(
+                                          "/assets/",
+                                          new WebViewAssetLoader.AssetsPathHandler(this)
+                                  )
+                                  .build();
+
+                  webView.setWebViewClient(new WebViewClient() {
+                      @Override
+                      public WebResourceResponse shouldInterceptRequest(
+                              WebView view,
+                              WebResourceRequest request
+                      ) {
+                          return assetLoader.shouldInterceptRequest(
+                                  request.getUrl()
+                          );
+                      }
+
+                      @Override
+                      public boolean shouldOverrideUrlLoading(
+                              WebView view,
+                              WebResourceRequest request
+                      ) {
+                          Uri uri = request.getUrl();
+
+                          if ("appassets.androidplatform.net"
+                                  .equalsIgnoreCase(uri.getHost())) {
+                              return false;
+                          }
+
+                          try {
+                              startActivity(new Intent(Intent.ACTION_VIEW, uri));
+                          } catch (Exception e) {
+                              Toast.makeText(
+                                      MainActivity.this,
+                                      "無法開啟外部連結",
+                                      Toast.LENGTH_SHORT
+                              ).show();
+                          }
+                          return true;
+                      }
+                  });
+
+                  if (savedInstanceState == null) {
+                      webView.loadUrl(
+                              "https://appassets.androidplatform.net/assets/index.html"
+                      );
+                  } else {
+                      webView.restoreState(savedInstanceState);
+                  }
+              }
+
+              public class NativeLocationBridge {
+                  @JavascriptInterface
+                  public void requestLocation() {
+                      runOnUiThread(() -> {
+                          directStatus("📍 Native13：Android 已收到定位要求…");
+                          Toast.makeText(
+                                  MainActivity.this,
+                                  "Native13 定位已啟動",
+                                  Toast.LENGTH_SHORT
+                          ).show();
+                          requestNativeLocation();
+                      });
+                  }
+              }
+
+              private boolean hasLocationPermission() {
+                  return checkSelfPermission(
+                          Manifest.permission.ACCESS_FINE_LOCATION
+                  ) == PackageManager.PERMISSION_GRANTED
+                          || checkSelfPermission(
+                          Manifest.permission.ACCESS_COARSE_LOCATION
+                  ) == PackageManager.PERMISSION_GRANTED;
+              }
+
+              private void requestNativeLocation() {
+                  if (!hasLocationPermission()) {
+                      directStatus("📍 Native13：等待位置權限…");
+                      requestPermissions(
+                              new String[] {
+                                      Manifest.permission.ACCESS_FINE_LOCATION,
+                                      Manifest.permission.ACCESS_COARSE_LOCATION
+                              },
+                              LOCATION_PERMISSION_REQUEST
+                      );
+                      return;
+                  }
+
+                  beginLocation();
+              }
+
+              private void beginLocation() {
+                  if (!hasLocationPermission()) {
+                      finalError("尚未取得位置權限");
+                      return;
+                  }
+
+                  if (locationManager == null) {
+                      finalError("Android LocationManager 不可用");
+                      return;
+                  }
+
+                  stopLocationRequests();
+                  locationResolved = false;
+                  fallbackLocation = null;
+
+                  List<String> providers = new ArrayList<>();
+
+                  try {
+                      if (locationManager.isProviderEnabled(
+                              LocationManager.NETWORK_PROVIDER
+                      )) {
+                          providers.add(LocationManager.NETWORK_PROVIDER);
+                      }
+
+                      if (locationManager.isProviderEnabled(
+                              LocationManager.GPS_PROVIDER
+                      )) {
+                          providers.add(LocationManager.GPS_PROVIDER);
+                      }
+                  } catch (Exception ignored) {
+                  }
+
+                  if (providers.isEmpty()) {
+                      finalError("請先開啟手機「位置」服務");
+                      return;
+                  }
+
+                  directStatus(
+                          "📍 Native13：權限正常，先讀取 Wi‑Fi／基地台位置…"
+                  );
+
+                  try {
+                      for (String provider : providers) {
+                          Location last =
+                                  locationManager.getLastKnownLocation(provider);
+
+                          if (last != null) {
+                              if (fallbackLocation == null
+                                      || last.getTime()
+                                      > fallbackLocation.getTime()) {
+                                  fallbackLocation = last;
+                              }
+
+                              long ageMs =
+                                      System.currentTimeMillis()
+                                              - last.getTime();
+
+                              if (ageMs <= 30 * 60 * 1000L) {
+                                  finalLocation(
+                                          last,
+                                          "最近的"
+                                                  + providerName(provider)
+                                                  + "位置"
+                                  );
+                                  return;
+                              }
+                          }
+                      }
+                  } catch (SecurityException e) {
+                      finalError("讀取最近位置時權限被拒絕");
+                      return;
+                  }
+
+                  directStatus(
+                          "📍 Native13：沒有近期位置，正在等 Wi‑Fi／基地台或 GPS…"
+                  );
+
+                  listener = new LocationListener() {
+                      @Override
+                      public void onLocationChanged(Location location) {
+                          if (location == null || locationResolved) {
+                              return;
+                          }
+
+                          finalLocation(
+                                  location,
+                                  providerName(location.getProvider())
+                          );
+                      }
+
+                      @Override
+                      public void onProviderEnabled(String provider) {
+                      }
+
+                      @Override
+                      public void onProviderDisabled(String provider) {
+                      }
+
+                      @Override
+                      public void onStatusChanged(
+                              String provider,
+                              int status,
+                              Bundle extras
+                      ) {
+                      }
+                  };
+
+                  try {
+                      if (providers.contains(
+                              LocationManager.NETWORK_PROVIDER
+                      )) {
+                          locationManager.requestLocationUpdates(
+                                  LocationManager.NETWORK_PROVIDER,
+                                  0L,
+                                  0f,
+                                  listener,
+                                  Looper.getMainLooper()
+                          );
+                      }
+
+                      if (providers.contains(
+                              LocationManager.GPS_PROVIDER
+                      )) {
+                          locationManager.requestLocationUpdates(
+                                  LocationManager.GPS_PROVIDER,
+                                  0L,
+                                  0f,
+                                  listener,
+                                  Looper.getMainLooper()
+                          );
+                      }
+                  } catch (SecurityException e) {
+                      finalError("要求即時位置時權限被拒絕");
+                      return;
+                  } catch (Exception e) {
+                      finalError(
+                              "啟動定位失敗："
+                                      + e.getClass().getSimpleName()
+                      );
+                      return;
+                  }
+
+                  timeoutFuture = scheduler.schedule(
+                          () -> runOnUiThread(() -> {
+                              if (locationResolved) {
+                                  return;
+                              }
+
+                              if (fallbackLocation != null) {
+                                  finalLocation(
+                                          fallbackLocation,
+                                          "較舊的備援位置"
+                                  );
+                              } else {
+                                  finalError(
+                                          "15 秒內 Wi‑Fi／基地台與 GPS 都沒有回傳位置"
+                                  );
+                              }
+                          }),
+                          LOCATION_TIMEOUT_SECONDS,
+                          TimeUnit.SECONDS
+                  );
+              }
+
+              private String providerName(String provider) {
+                  if (LocationManager.NETWORK_PROVIDER.equals(provider)) {
+                      return "網路定位";
+                  }
+                  if (LocationManager.GPS_PROVIDER.equals(provider)) {
+                      return "GPS";
+                  }
+                  return provider == null ? "Android 定位" : provider;
+              }
+
+              private void finalLocation(
+                      Location location,
+                      String source
+              ) {
+                  if (locationResolved) {
+                      return;
+                  }
+
+                  locationResolved = true;
+                  stopLocationRequests();
+
+                  double lat = location.getLatitude();
+                  double lng = location.getLongitude();
+
+                  directStatus(
+                          "✅ Native13：已取得"
+                                  + source
+                                  + "，正在套用位置…"
+                  );
+
+                  Toast.makeText(
+                          this,
+                          "已取得位置：" + source,
+                          Toast.LENGTH_SHORT
+                  ).show();
+
+                  String applyScript =
+                          "(function(){try{"
+                                  + "if(typeof window.__receiveNativeLocation!=='function'){"
+                                  + "throw new Error('找不到 __receiveNativeLocation');"
+                                  + "}"
+                                  + "window.__receiveNativeLocation("
+                                  + lat + "," + lng + ");"
+                                  + "return 'OK';"
+                                  + "}catch(e){"
+                                  + "var el=document.getElementById('nearbyHint');"
+                                  + "if(el){"
+                                  + "el.textContent='⚠️ Native13 套用位置失敗：'+"
+                                  + "(e&&e.message?e.message:String(e));"
+                                  + "el.className='nearby-hint warn';"
+                                  + "}"
+                                  + "return 'ERR';"
+                                  + "}})();";
+
+                  webView.evaluateJavascript(
+                          applyScript,
+                          null
+                  );
+              }
+
+              private void finalError(String message) {
+                  if (locationResolved) {
+                      return;
+                  }
+
+                  locationResolved = true;
+                  stopLocationRequests();
+
+                  directStatus("⚠️ Native13：" + message);
+
+                  Toast.makeText(
+                          this,
+                          message,
+                          Toast.LENGTH_LONG
+                  ).show();
+
+                  String safe =
+                          org.json.JSONObject.quote(message);
+
+                  webView.evaluateJavascript(
+                          "window.__nativeLocationError("
+                                  + safe + ");",
+                          null
+                  );
+              }
+
+              private void directStatus(String message) {
+                  String safe =
+                          org.json.JSONObject.quote(message);
+
+                  webView.evaluateJavascript(
+                          "(function(){"
+                                  + "var e=document.getElementById('nearbyHint');"
+                                  + "if(e){"
+                                  + "e.textContent=" + safe + ";"
+                                  + "e.className='nearby-hint loading';"
+                                  + "}"
+                                  + "})();",
+                          null
+                  );
+              }
+
+              private void stopLocationRequests() {
+                  if (timeoutFuture != null) {
+                      timeoutFuture.cancel(true);
+                      timeoutFuture = null;
+                  }
+
+                  if (locationManager != null && listener != null) {
+                      try {
+                          locationManager.removeUpdates(listener);
+                      } catch (Exception ignored) {
+                      }
+                  }
+
+                  listener = null;
+              }
+
+              @Override
+              public void onRequestPermissionsResult(
+                      int requestCode,
+                      String[] permissions,
+                      int[] grantResults
+              ) {
+                  super.onRequestPermissionsResult(
+                          requestCode,
+                          permissions,
+                          grantResults
+                  );
+
+                  if (requestCode != LOCATION_PERMISSION_REQUEST) {
+                      return;
+                  }
+
+                  if (hasLocationPermission()) {
+                      directStatus(
+                              "📍 Native13：位置權限已允許，開始定位…"
+                      );
+                      beginLocation();
+                  } else {
+                      finalError("定位權限未允許");
+                  }
+              }
+
+              @Override
+              protected void onDestroy() {
+                  stopLocationRequests();
+                  scheduler.shutdownNow();
+
+                  if (webView != null) {
+                      webView.stopLoading();
+                      webView.destroy();
+                  }
+
+                  super.onDestroy();
+              }
+
+              @Override
+              public void onBackPressed() {
+                  if (webView != null && webView.canGoBack()) {
+                      webView.goBack();
+                  } else {
+                      super.onBackPressed();
+                  }
+              }
+          }
+          EOF
+
+      - name: Verify Android environment
+        shell: bash
+        run: |
+          set -e
+          echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          test -f "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager"
+          test -d "$ANDROID_SDK_ROOT/platforms/android-35"
+          test -d "$ANDROID_SDK_ROOT/build-tools/35.0.0"
+          test -f "_android_build/local.properties"
+          cat "_android_build/local.properties"
+
+      - name: Build APK
+        run: gradle -p _android_build assembleDebug --stacktrace
+
+      - name: Rename APK
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native13.apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: YunJiaNanWeekend-V5.5-Native13-APK
+          path: YunJiaNanWeekend-V5.5-native13.apk
+          if-no-files-found: error
