@@ -163,7 +163,7 @@ jobs:
               locationSource="gps";
               currentLocationLabel="手機定位";
               syncLocationPanel();
-              setNearbyHint("📍 Native12：正在呼叫 Android 定位…","loading");
+              setNearbyHint("📍 Native13：正在呼叫 Android 定位…","loading");
           
               try{
                 window.__clearNativeLocationTimer();
@@ -182,7 +182,7 @@ jobs:
           """
               s=s.replace(marker,native_branch,1)
 
-          # Native12: fix nearbyMatchCount() calling a non-existent matchFilter().
+          # Native13: fix nearbyMatchCount() calling a non-existent matchFilter().
           if 'if(!matchFilter(s))return false;' in s:
               s=s.replace(
                   'if(!matchFilter(s))return false;',
@@ -192,7 +192,7 @@ jobs:
                   1
               )
 
-          # Native12: nearby mode should show the full distance-sorted list.
+          # Native13: nearby mode should show the full distance-sorted list.
           old_featured=(
               '  var box=$("featuredCards");\n'
               '  var section=$("weekendFeatured");\n'
@@ -216,10 +216,10 @@ jobs:
               '  var picks=featuredCandidates();'
           )
           if old_featured not in s:
-              raise RuntimeError("Native12 cannot find renderFeatured anchor")
+              raise RuntimeError("Native13 cannot find renderFeatured anchor")
           s=s.replace(old_featured,new_featured,1)
 
-          # Native12: collapse the large manual-location controls by default.
+          # Native13: collapse the large manual-location controls by default.
           old_panel=textwrap.dedent("""\
           <div id="locationPanel" class="location-panel hidden">
             <div class="location-panel-head">
@@ -264,10 +264,10 @@ jobs:
             </div>
           </div>""")
           if old_panel not in s:
-              raise RuntimeError("Native12 cannot find location panel HTML")
+              raise RuntimeError("Native13 cannot find location panel HTML")
           s=s.replace(old_panel,new_panel,1)
 
-          css_anchor=".location-panel.hidden{display:none}\\n.location-panel-head{"
+          css_anchor=".location-panel.hidden{display:none}"
           css_new=textwrap.dedent("""\
           .location-panel.hidden{display:none}
           .location-panel.collapsed{
@@ -292,10 +292,9 @@ jobs:
             font-size:10px;
             font-weight:950;
           }
-          .location-panel-body.hidden{display:none}
-          .location-panel-head{""")
+          .location-panel-body.hidden{display:none}""")
           if css_anchor not in s:
-              raise RuntimeError("Native12 cannot find location CSS anchor")
+              raise RuntimeError("Native13 cannot find location CSS anchor")
           s=s.replace(css_anchor,css_new,1)
 
           sync_anchor=textwrap.dedent("""\
@@ -317,7 +316,7 @@ jobs:
           function syncLocationPanel(){
             var panel=$("locationPanel");""")
           if sync_anchor not in s:
-              raise RuntimeError("Native12 cannot find syncLocationPanel")
+              raise RuntimeError("Native13 cannot find syncLocationPanel")
           s=s.replace(sync_anchor,sync_new,1)
 
           init_anchor=(
@@ -338,10 +337,10 @@ jobs:
               '  $("search").oninput=function(){query=this.value;render()};'
           )
           if init_anchor not in s:
-              raise RuntimeError("Native12 cannot find init location anchor")
+              raise RuntimeError("Native13 cannot find init location anchor")
           s=s.replace(init_anchor,init_new,1)
 
-          # Build-time guards for Native12 UI.
+          # Build-time guards for Native13 UI.
           for token in [
               'id="locationPanelToggle"',
               'function setLocationPanelExpanded(open)',
@@ -350,16 +349,16 @@ jobs:
               'a=nearbySort(a)'
           ]:
               if token not in s:
-                  raise RuntimeError("Native12 missing expected token: "+token)
+                  raise RuntimeError("Native13 missing expected token: "+token)
 
 
           s=s.replace(
               "雲嘉南週末去哪玩 · V5.5",
-              "雲嘉南週末去哪玩 · V5.5 · Native12",
+              "雲嘉南週末去哪玩 · V5.5 · Native13",
               1
           )
 
-          # Native12 guard: nearby code must not reference undefined matchFilter().
+          # Native13 guard: nearby code must not reference undefined matchFilter().
           if "matchFilter(s)" in s:
               raise RuntimeError("nearbyMatchCount still references undefined matchFilter(s)")
 
@@ -432,8 +431,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 12
-                  versionName "5.5-native-12"
+                  versionCode 13
+                  versionName "5.5-native-13"
               }
 
               buildTypes {
@@ -633,10 +632,10 @@ jobs:
                   @JavascriptInterface
                   public void requestLocation() {
                       runOnUiThread(() -> {
-                          directStatus("📍 Native12：Android 已收到定位要求…");
+                          directStatus("📍 Native13：Android 已收到定位要求…");
                           Toast.makeText(
                                   MainActivity.this,
-                                  "Native12 定位已啟動",
+                                  "Native13 定位已啟動",
                                   Toast.LENGTH_SHORT
                           ).show();
                           requestNativeLocation();
@@ -655,7 +654,7 @@ jobs:
 
               private void requestNativeLocation() {
                   if (!hasLocationPermission()) {
-                      directStatus("📍 Native12：等待位置權限…");
+                      directStatus("📍 Native13：等待位置權限…");
                       requestPermissions(
                               new String[] {
                                       Manifest.permission.ACCESS_FINE_LOCATION,
@@ -707,7 +706,7 @@ jobs:
                   }
 
                   directStatus(
-                          "📍 Native12：權限正常，先讀取 Wi‑Fi／基地台位置…"
+                          "📍 Native13：權限正常，先讀取 Wi‑Fi／基地台位置…"
                   );
 
                   try {
@@ -743,7 +742,7 @@ jobs:
                   }
 
                   directStatus(
-                          "📍 Native12：沒有近期位置，正在等 Wi‑Fi／基地台或 GPS…"
+                          "📍 Native13：沒有近期位置，正在等 Wi‑Fi／基地台或 GPS…"
                   );
 
                   listener = new LocationListener() {
@@ -858,7 +857,7 @@ jobs:
                   double lng = location.getLongitude();
 
                   directStatus(
-                          "✅ Native12：已取得"
+                          "✅ Native13：已取得"
                                   + source
                                   + "，正在套用位置…"
                   );
@@ -880,7 +879,7 @@ jobs:
                                   + "}catch(e){"
                                   + "var el=document.getElementById('nearbyHint');"
                                   + "if(el){"
-                                  + "el.textContent='⚠️ Native12 套用位置失敗：'+"
+                                  + "el.textContent='⚠️ Native13 套用位置失敗：'+"
                                   + "(e&&e.message?e.message:String(e));"
                                   + "el.className='nearby-hint warn';"
                                   + "}"
@@ -901,7 +900,7 @@ jobs:
                   locationResolved = true;
                   stopLocationRequests();
 
-                  directStatus("⚠️ Native12：" + message);
+                  directStatus("⚠️ Native13：" + message);
 
                   Toast.makeText(
                           this,
@@ -969,7 +968,7 @@ jobs:
 
                   if (hasLocationPermission()) {
                       directStatus(
-                              "📍 Native12：位置權限已允許，開始定位…"
+                              "📍 Native13：位置權限已允許，開始定位…"
                       );
                       beginLocation();
                   } else {
@@ -1017,11 +1016,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native12.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native13.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native12-APK
-          path: YunJiaNanWeekend-V5.5-native12.apk
+          name: YunJiaNanWeekend-V5.5-Native13-APK
+          path: YunJiaNanWeekend-V5.5-native13.apk
           if-no-files-found: error
