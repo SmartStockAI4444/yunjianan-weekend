@@ -175,7 +175,7 @@ jobs:
               locationSource="gps";
               currentLocationLabel="手機定位";
               syncLocationPanel();
-              setNearbyHint("📍 Native19：正在呼叫 Android 定位…","loading");
+              setNearbyHint("📍 Native20：正在呼叫 Android 定位…","loading");
           
               try{
                 window.__clearNativeLocationTimer();
@@ -1286,9 +1286,310 @@ jobs:
 
 
 
+          # Native20: add a practical timetable and improve category diversity in AI itineraries.
+          native20_css = r"""
+          /* ===== Native20 AI Timetable ===== */
+          .plan-time-row{
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            gap:7px;
+            margin:0 0 8px 43px;
+          }
+          .plan-time-badge{
+            display:inline-flex;
+            align-items:center;
+            min-height:27px;
+            padding:0 9px;
+            border-radius:999px;
+            background:#17372a;
+            color:#fff;
+            font-size:12px;
+            font-weight:950;
+            letter-spacing:.02em;
+          }
+          .plan-stay-badge{
+            display:inline-flex;
+            align-items:center;
+            min-height:27px;
+            padding:0 9px;
+            border-radius:999px;
+            background:#edf5f0;
+            color:#2e6652;
+            font-size:11px;
+            font-weight:900;
+          }
+          .plan-role-badge{
+            display:inline-flex;
+            align-items:center;
+            min-height:24px;
+            padding:0 8px;
+            margin-top:6px;
+            border-radius:999px;
+            background:#fff4dc;
+            color:#855817;
+            font-size:10px;
+            font-weight:900;
+          }
+          .plan-timetable-note{
+            margin:0 0 12px;
+            padding:10px 12px;
+            border-radius:13px;
+            background:#eef7f2;
+            color:#245c47;
+            font-size:12px;
+            font-weight:850;
+            line-height:1.5;
+          }
+          """
+          if "</style>" not in s:
+              raise RuntimeError("Native20 cannot find style end")
+          s=s.replace("</style>",native20_css+"\n</style>",1)
+
+          native20_helpers = r"""
+          function planIsFoodStop(s){
+            if(!s)return false;
+            var tags=Array.isArray(s.tags)?s.tags:[];
+            var keys=["美食","咖啡","甜點","小吃","餐廳","下午茶"];
+            if(keys.some(function(x){return tags.indexOf(x)>=0}))return true;
+
+            var type=String(s.type||"");
+            var name=String(s.name||"");
+            return /美食|餐飲|餐廳|咖啡|甜點|小吃/.test(type+" "+name);
+          }
+
+          function planStopRole(s){
+            if(!s)return "景點";
+            var tags=Array.isArray(s.tags)?s.tags:[];
+
+            if(planIsFoodStop(s))return "美食";
+            if(s.type==="活動")return "活動";
+            if(s.type==="觀光工廠")return "觀光工廠";
+            if(s.type==="校園")return "校園";
+            if(tags.indexOf("戶外")>=0)return "戶外";
+            if(tags.indexOf("室內")>=0)return "室內";
+            if(tags.indexOf("文化")>=0||tags.indexOf("藝術")>=0)return "文化";
+            return s.type||"景點";
+          }
+
+          function planRoleEmoji(role){
+            if(role==="美食")return "🍽️";
+            if(role==="活動")return "🎪";
+            if(role==="觀光工廠")return "🏭";
+            if(role==="校園")return "🏫";
+            if(role==="戶外")return "🌿";
+            if(role==="室內")return "🏠";
+            if(role==="文化")return "🎨";
+            return "📍";
+          }
+
+          function planSuggestedStay(s){
+            var role=planStopRole(s);
+            if(role==="美食")return "60–75 分";
+            if(role==="觀光工廠")return "約 90 分";
+            if(role==="活動")return "約 90 分";
+            if(role==="戶外")return "75–90 分";
+            if(role==="校園")return "60–75 分";
+            return "60–90 分";
+          }
+
+          function planScheduleTimes(timeMode,count){
+            var full=["09:00","11:30","13:30","15:30","17:00"];
+            var half=["09:30","11:30","13:00"];
+            var base=timeMode==="full"?full:half;
+            return base.slice(0,count||base.length);
+          }
+
+          function planTimeForStop(ctx,i){
+            var times=planScheduleTimes(ctx&&ctx.timeMode,ctx&&ctx.stops?ctx.stops.length:0);
+            return times[i]||"";
+          }
+
+          function planMixText(stops){
+            var seen={},roles=[];
+            (stops||[]).forEach(function(s){
+              var r=planStopRole(s);
+              if(!seen[r]){
+                seen[r]=true;
+                roles.push(planRoleEmoji(r)+r);
+              }
+            });
+            return roles.join("・");
+          }
+          """
+          native20_helper_marker="function planLegLimit(timeMode,relaxed){"
+          if native20_helper_marker not in s:
+              raise RuntimeError("Native20 cannot find planLegLimit")
+          s=s.replace(native20_helper_marker,native20_helpers+"\n"+native20_helper_marker,1)
+
+          old_theme_filter = (
+              '    if(c!=="附近" && s.city!==c)return false;\n'
+              '    if(!planThemeMatch(s,t))return false;'
+          )
+          new_theme_filter = (
+              '    if(c!=="附近" && s.city!==c)return false;\n'
+              '    var primary=planThemeMatch(s,t);\n'
+              '    var support=(timeMode==="full" && t!=="美食" && planIsFoodStop(s));\n'
+              '    if(!primary && !support)return false;'
+          )
+          if old_theme_filter not in s:
+              raise RuntimeError("Native20 cannot find smart planner theme filter")
+          s=s.replace(old_theme_filter,new_theme_filter,1)
+
+          old_role_state = (
+              '  var activityCount=0;\n'
+              '  var activityLimit=opts.timeMode==="full"?2:1;'
+          )
+          new_role_state = (
+              '  var activityCount=0;\n'
+              '  var activityLimit=opts.timeMode==="full"?2:1;\n'
+              '  var roleCounts={};'
+          )
+          if old_role_state not in s:
+              raise RuntimeError("Native20 cannot find compact planner state")
+          s=s.replace(old_role_state,new_role_state,1)
+
+          old_diversity_score = (
+              '      if(chosen.length){\n'
+              '        var prev=chosen[chosen.length-1];\n'
+              '        if(prev.city===s.city)score+=7;\n'
+              '        if(prev.type===s.type)score-=5;\n'
+              '      }\n\n'
+              '      if(s.type==="活動" && eventActiveToday(s))score+=6;'
+          )
+          new_diversity_score = (
+              '      if(chosen.length){\n'
+              '        var prev=chosen[chosen.length-1];\n'
+              '        if(prev.city===s.city)score+=7;\n'
+              '        if(prev.type===s.type)score-=4;\n'
+              '      }\n\n'
+              '      var role=planStopRole(s);\n'
+              '      var used=roleCounts[role]||0;\n\n'
+              '      if(opts.theme!=="美食"){\n'
+              '        score-=used*12;\n'
+              '      }\n\n'
+              '      if(opts.timeMode==="full" && chosen.length===1 && role==="美食"){\n'
+              '        score+=24;\n'
+              '      }else if(opts.timeMode==="full" && chosen.length===2 && role==="美食"){\n'
+              '        score+=8;\n'
+              '      }\n\n'
+              '      if(s.type==="活動" && eventActiveToday(s))score+=6;'
+          )
+          if old_diversity_score not in s:
+              raise RuntimeError("Native20 cannot find compact planner diversity score")
+          s=s.replace(old_diversity_score,new_diversity_score,1)
+
+          old_after_pick = (
+              '    chosen.push(best);\n'
+              '    if(best.type==="活動")activityCount++;\n\n'
+              '    var next=stopCoord(best);'
+          )
+          new_after_pick = (
+              '    chosen.push(best);\n'
+              '    if(best.type==="活動")activityCount++;\n'
+              '    var bestRole=planStopRole(best);\n'
+              '    roleCounts[bestRole]=(roleCounts[bestRole]||0)+1;\n\n'
+              '    var next=stopCoord(best);'
+          )
+          if old_after_pick not in s:
+              raise RuntimeError("Native20 cannot find compact planner pick state")
+          s=s.replace(old_after_pick,new_after_pick,1)
+
+          old_plan_card_prep = (
+              '  var sourceUrl=s.url||s.social_url||"";\n'
+              '  var leg=ctx?planLegText(ctx.stops,i,ctx.startCoord):"";'
+          )
+          new_plan_card_prep = (
+              '  var sourceUrl=s.url||s.social_url||"";\n'
+              '  var leg=ctx?planLegText(ctx.stops,i,ctx.startCoord):"";\n'
+              '  var time=ctx?planTimeForStop(ctx,i):"";\n'
+              '  var role=planStopRole(s);\n'
+              '  var stay=planSuggestedStay(s);'
+          )
+          if old_plan_card_prep not in s:
+              raise RuntimeError("Native20 cannot find planCard prep")
+          s=s.replace(old_plan_card_prep,new_plan_card_prep,1)
+
+          old_plan_card_open = (
+              '  return \'<div class="plan-card">\'+\n'
+              '    \'<div class="plan-top">\'+'
+          )
+          new_plan_card_open = (
+              '  return \'<div class="plan-card">\'+\n'
+              '    (time?\'<div class="plan-time-row"><span class="plan-time-badge">🕘 \'+time+\'</span><span class="plan-stay-badge">建議停留 \'+stay+\'</span></div>\':\'\')+\n'
+              '    \'<div class="plan-top">\'+'
+          )
+          if old_plan_card_open not in s:
+              raise RuntimeError("Native20 cannot find planCard open")
+          s=s.replace(old_plan_card_open,new_plan_card_open,1)
+
+          old_plan_meta = (
+              '        \'<div class="plan-meta">📍 \'+place+\' · \'+(s.type||"景點")+\'</div>\'+\n'
+              '      \'</div>\'+\n'
+              '    \'</div>\'+'
+          )
+          new_plan_meta = (
+              '        \'<div class="plan-meta">📍 \'+place+\' · \'+(s.type||"景點")+\'</div>\'+\n'
+              '        \'<div class="plan-role-badge">\'+planRoleEmoji(role)+\' \'+role+\'</div>\'+\n'
+              '      \'</div>\'+\n'
+              '    \'</div>\'+'
+          )
+          if old_plan_meta not in s:
+              raise RuntimeError("Native20 cannot find planCard meta")
+          s=s.replace(old_plan_meta,new_plan_meta,1)
+
+          old_smart_summary='var smartSummary="✨ AI 已綜合「"+(ctx.theme||"主題")+"」、熱門度、距離與路線，挑出 "+a.length+" 站。";'
+          new_smart_summary='var smartSummary="✨ AI 已綜合「"+(ctx.theme||"主題")+"」、熱門度、距離與路線，排成 "+a.length+" 站時間表。";'
+          if old_smart_summary not in s:
+              raise RuntimeError("Native20 cannot find smart summary")
+          s=s.replace(old_smart_summary,new_smart_summary,1)
+
+          old_result_head = (
+              '  $("pr").innerHTML=\'<div class="plan-title">\'+title+\'</div>\'+\n'
+              '    \'<div class="plan-smart-summary">\'+smartSummary+\'</div>\'+\n'
+              '    (optText?\'<div class="plan-opt">\'+optText+\'</div>\':\'\')+'
+          )
+          new_result_head = (
+              '  $("pr").innerHTML=\'<div class="plan-title">\'+title+\'</div>\'+\n'
+              '    \'<div class="plan-smart-summary">\'+smartSummary+\'</div>\'+\n'
+              '    \'<div class="plan-timetable-note">🕒 建議時段：\'+planScheduleTimes(ctx.timeMode,a.length).join(" → ")+\'<br>🎯 行程組合：\'+(planMixText(a)||"依主題安排")+\'</div>\'+\n'
+              '    (optText?\'<div class="plan-opt">\'+optText+\'</div>\':\'\')+'
+          )
+          if old_result_head not in s:
+              raise RuntimeError("Native20 cannot find plan result header")
+          s=s.replace(old_result_head,new_result_head,1)
+
+          s=s.replace(
+              "AI SMART ROUTE · Native19",
+              "AI SMART ROUTE · Native20",
+              1
+          )
+          s=s.replace(
+              "會先控制行程範圍，再綜合距離、熱門度與路線，自動挑 3～5 站。",
+              "會先控制行程範圍，再兼顧主題多樣性，排成可直接照著走的 3～5 站時間表。",
+              1
+          )
+          s=s.replace(
+              "AI 行程會優先排同一生活圈，避免單站拉太遠。",
+              "AI 行程會優先排同一生活圈，並避免整天都是同一類型景點。",
+              1
+          )
+
+          for token in [
+              "function planScheduleTimes(timeMode,count)",
+              "function planStopRole(s)",
+              "function planMixText(stops)",
+              "plan-time-badge",
+              "plan-timetable-note",
+              "AI SMART ROUTE · Native20"
+          ]:
+              if token not in s:
+                  raise RuntimeError("Native20 missing expected token: "+token)
+
+
           s=s.replace(
               "雲嘉南週末去哪玩 · V5.5",
-              "雲嘉南週末去哪玩 · V5.5 · Native19",
+              "雲嘉南週末去哪玩 · V5.5 · Native20",
               1
           )
 
@@ -1365,8 +1666,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 19
-                  versionName "5.5-native-19"
+                  versionCode 20
+                  versionName "5.5-native-20"
               }
 
               buildTypes {
@@ -1950,11 +2251,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native19.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native20.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native19-APK
-          path: YunJiaNanWeekend-V5.5-native19.apk
+          name: YunJiaNanWeekend-V5.5-Native20-APK
+          path: YunJiaNanWeekend-V5.5-native20.apk
           if-no-files-found: error
