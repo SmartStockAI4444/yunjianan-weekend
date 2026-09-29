@@ -2288,6 +2288,82 @@ jobs:
           for token in ["function planIsLateNight()","function renderLateNightChoice(opts)","data-tomorrow-plan","function planEventActiveForDay(s,dayMode)","AI SMART ROUTE · Native25","V5.5 · Native25"]:
               if token not in s: raise RuntimeError("Native25 missing expected token: "+token)
 
+          # Native26: make AI-plan activity labels respect today/tomorrow.
+          plan_date_helper = r"""
+          function planActivityDateText(s,dayMode){
+            if(!s||s.type!=="活動")return "";
+
+            var mode=planDayMode(dayMode);
+            var target=planTargetDate(mode);
+
+            if(planEventActiveForDay(s,mode)){
+              var label=mode==="tomorrow"?"📅 明天可參加":"📅 今天可參加";
+              var end=normDate(s.end);
+
+              if(end){
+                end.setHours(23,59,59,999);
+                if(end>=target){
+                  label+=" · 活動至 "+fmtMD(end);
+                }
+              }
+
+              return label;
+            }
+
+            /* Safety fallback: should rarely occur because planner already filters
+               activities by the selected target day. */
+            return activityDateText(s);
+          }
+
+          """
+
+          card_marker="function planCardHtml(s,i,ctx){"
+          if card_marker not in s:
+              raise RuntimeError("Native26 cannot find planCardHtml marker")
+          s=s.replace(card_marker,plan_date_helper+card_marker,1)
+
+          old_plan_date='  var date=activityDateText(s);'
+          new_plan_date='  var date=planActivityDateText(s,ctx&&ctx.dayMode);'
+          if old_plan_date not in s:
+              raise RuntimeError("Native26 cannot find plan date line")
+          s=s.replace(old_plan_date,new_plan_date,1)
+
+          s=s.replace(
+              "AI SMART ROUTE · Native25",
+              "AI SMART ROUTE · Native26",
+              1
+          )
+
+          s=s.replace(
+              "會依手機時間安排；晚上 21:00 後沒有可確認仍營業的地點時，不硬排景點，改提供明天半日／一日。",
+              "會依手機時間安排；明天行程的活動標籤也會改成「明天可參加」，不再誤顯示今天。",
+              1
+          )
+
+          s=s.replace(
+              "📍 Native25：正在呼叫 Android 定位…",
+              "📍 Native26：正在呼叫 Android 定位…",
+              1
+          )
+
+          footer_prefix="<footer>雲嘉南週末去哪玩 · V5.5 · Native"
+          fi=s.find(footer_prefix)
+          if fi<0:
+              raise RuntimeError("Native26 cannot find footer version")
+          fj=s.find("</footer>",fi)
+          if fj<0:
+              raise RuntimeError("Native26 cannot find footer end")
+          s=s[:fi]+"<footer>雲嘉南週末去哪玩 · V5.5 · Native26"+s[fj:]
+
+          for token in [
+              "function planActivityDateText(s,dayMode)",
+              'mode==="tomorrow"?"📅 明天可參加":"📅 今天可參加"',
+              "AI SMART ROUTE · Native26",
+              "V5.5 · Native26"
+          ]:
+              if token not in s:
+                  raise RuntimeError("Native26 missing expected token: "+token)
+
           # Native18 guard: nearby code must not reference undefined matchFilter().
           if "matchFilter(s)" in s:
               raise RuntimeError("nearbyMatchCount still references undefined matchFilter(s)")
@@ -2361,8 +2437,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 25
-                  versionName "5.5-native-25"
+                  versionCode 26
+                  versionName "5.5-native-26"
               }
 
               buildTypes {
@@ -2946,11 +3022,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native25.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native26.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native25-APK
-          path: YunJiaNanWeekend-V5.5-native25.apk
+          name: YunJiaNanWeekend-V5.5-Native26-APK
+          path: YunJiaNanWeekend-V5.5-native26.apk
           if-no-files-found: error
