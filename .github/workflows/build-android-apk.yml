@@ -1843,6 +1843,227 @@ jobs:
                   raise RuntimeError("Native21 missing expected token: "+token)
 
 
+          # Native22: pre-departure feasibility checks without inventing business hours.
+          native22_css = r"""
+          /* ===== Native22 Pre-departure Check ===== */
+          .plan-feasibility{
+            margin:8px 0 2px;
+            padding:8px 10px;
+            border-radius:11px;
+            font-size:11px;
+            font-weight:850;
+            line-height:1.45;
+          }
+          .plan-feasibility.good{
+            background:#e4f5ea;
+            color:#1f6a49;
+          }
+          .plan-feasibility.check{
+            background:#fff2d9;
+            color:#8a5d1b;
+          }
+          .plan-feasibility.event{
+            background:#e9f0ff;
+            color:#365f8b;
+          }
+          .plan-feas-summary-inline{
+            display:block;
+            margin-top:6px;
+            color:#fff7c8;
+            font-size:11px;
+            font-weight:850;
+          }
+          .phours{
+            background:#fff5dc !important;
+            color:#75551f !important;
+          }
+          """
+          if "</style>" not in s:
+              raise RuntimeError("Native22 cannot find style end")
+          s=s.replace("</style>",native22_css+"\n</style>",1)
+
+          feasibility_helpers = r"""
+          function planKnownHours(s){
+            if(!s)return "";
+            var keys=["opening_hours","open_hours","business_hours","hours","openingHours"];
+
+            for(var i=0;i<keys.length;i++){
+              var v=s[keys[i]];
+              if(typeof v==="string" && v.trim()){
+                return v.trim();
+              }
+            }
+            return "";
+          }
+
+          function planFeasibilityInfo(s){
+            if(!s)return {cls:"check",text:"⚠️ 出發前請確認最新資訊"};
+
+            if(s.type==="活動"){
+              if(isExpired(s)){
+                return {cls:"check",text:"⚠️ 活動日期已過，請重新排行程"};
+              }
+
+              if(eventActiveToday(s)){
+                return {cls:"good",text:"✅ 今天在活動期間內；出發前仍建議確認現場公告"};
+              }
+
+              if(isThisWeekendEvent(s)){
+                return {cls:"event",text:"📅 本週末活動日期有效；請再確認場次與入場時間"};
+              }
+
+              var dateText=activityDateText(s);
+              return {
+                cls:"event",
+                text:dateText
+                  ?"📅 活動日期已檢查："+dateText.replace(/^📅\s*/,"")
+                  :"📅 活動尚未過期；請確認實際場次時間"
+              };
+            }
+
+            var hours=planKnownHours(s);
+            if(hours){
+              return {
+                cls:"good",
+                text:"🕒 資料內營業資訊："+hours+"（出發前建議再確認）"
+              };
+            }
+
+            return {
+              cls:"check",
+              text:"⚠️ 尚未收錄可靠營業時間，不亂猜；出發前請查 Google Maps"
+            };
+          }
+
+          function planFeasibilityHtml(s){
+            var x=planFeasibilityInfo(s);
+            return '<div class="plan-feasibility '+x.cls+'">'+x.text+'</div>';
+          }
+
+          function planHoursSearchUrl(s){
+            var q=((s&&s.name)||"")+" "+shortPlace(s)+" 營業時間";
+            return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q);
+          }
+
+          function openPlanHoursSearch(s){
+            if(!s)return;
+            window.open(planHoursSearchUrl(s),"_blank");
+          }
+
+          function planFeasibilitySummary(stops){
+            var activity=0,known=0,need=0;
+
+            (stops||[]).forEach(function(s){
+              if(!s)return;
+              if(s.type==="活動"){
+                activity++;
+              }else if(planKnownHours(s)){
+                known++;
+              }else{
+                need++;
+              }
+            });
+
+            var parts=[];
+            if(activity)parts.push("📅 "+activity+" 個活動日期已檢查");
+            if(known)parts.push("🕒 "+known+" 站有營業資料");
+            if(need)parts.push("⚠️ "+need+" 站需出發前確認營業");
+
+            return parts.join(" · ")||"✅ 行程基本條件已檢查";
+          }
+          """
+          feasibility_marker="function planLegText(stops,i,startCoord){"
+          if feasibility_marker not in s:
+              raise RuntimeError("Native22 cannot find planLegText marker")
+          s=s.replace(feasibility_marker,feasibility_helpers+"\n"+feasibility_marker,1)
+
+          old_card_prep_feas = (
+              '  var drive=ctx?planDriveText(ctx,i):"";\n'
+              '  var role=planStopRole(s);\n'
+              '  var stay=planSuggestedStay(s);'
+          )
+          new_card_prep_feas = (
+              '  var drive=ctx?planDriveText(ctx,i):"";\n'
+              '  var role=planStopRole(s);\n'
+              '  var stay=planSuggestedStay(s);\n'
+              '  var feasibility=planFeasibilityHtml(s);'
+          )
+          if old_card_prep_feas not in s:
+              raise RuntimeError("Native22 cannot find plan card prep")
+          s=s.replace(old_card_prep_feas,new_card_prep_feas,1)
+
+          old_heat_line = '    \'<div class="plan-heat">🔥 熱度 \'+Number(s.heat||0)+\'</div>\'+'
+          new_heat_line = '    feasibility+\n'+old_heat_line
+          if old_heat_line not in s:
+              raise RuntimeError("Native22 cannot find plan heat line")
+          s=s.replace(old_heat_line,new_heat_line,1)
+
+          old_source_button = '      (sourceUrl?\'<button class="psource" data-ps="\'+i+\'">🔗 查看來源</button>\':\'\')+'
+          new_source_button = (
+              '      (s.type!=="活動"?\'<button class="phours" data-ph="\'+i+\'">🕒 查營業時間</button>\':\'\')+\n'
+              + old_source_button
+          )
+          if old_source_button not in s:
+              raise RuntimeError("Native22 cannot find plan source button")
+          s=s.replace(old_source_button,new_source_button,1)
+
+          old_smart_summary_22='var smartSummary="✨ AI 已綜合「"+(ctx.theme||"主題")+"」、熱門度、距離與路線，排成 "+a.length+" 站時間表。";'
+          new_smart_summary_22=(
+              old_smart_summary_22+
+              '\n  smartSummary+=\'<span class="plan-feas-summary-inline">\'+planFeasibilitySummary(a)+\'</span>\';'
+          )
+          if old_smart_summary_22 not in s:
+              raise RuntimeError("Native22 cannot find smart summary")
+          s=s.replace(old_smart_summary_22,new_smart_summary_22,1)
+
+          hours_handler = r"""
+            [].forEach.call($("pr").querySelectorAll("[data-ph]"),function(b){
+              b.onclick=function(){
+                var i=Number(this.getAttribute("data-ph"));
+                if(a[i])openPlanHoursSearch(a[i]);
+              };
+            });
+
+          """
+          source_handler_marker='  [].forEach.call($("pr").querySelectorAll("[data-ps]"),function(b){'
+          if source_handler_marker not in s:
+              raise RuntimeError("Native22 cannot find plan source handler")
+          s=s.replace(source_handler_marker,hours_handler+source_handler_marker,1)
+
+          s=s.replace(
+              "AI SMART ROUTE · Native21",
+              "AI SMART ROUTE · Native22",
+              1
+          )
+          s=s.replace(
+              "會先控制行程範圍，只使用可定位景點，再依停留時間與站間距離排出 3～5 站時間表。",
+              "會先控制行程範圍，只使用可定位景點，再加入活動日期與營業資訊檢查；沒有可靠營業資料時不亂猜。",
+              1
+          )
+          s=s.replace(
+              "AI 行程會優先排同一生活圈，並用站間距離估算移動時間。",
+              "AI 行程會排同一生活圈、估算移動時間，並提醒出發前確認營業／休館資訊。",
+              1
+          )
+          s=s.replace(
+              "雲嘉南週末去哪玩 · V5.5 · Native21",
+              "雲嘉南週末去哪玩 · V5.5 · Native22",
+              1
+          )
+
+          for token in [
+              "function planKnownHours(s)",
+              "function planFeasibilityInfo(s)",
+              "function planFeasibilitySummary(stops)",
+              "function openPlanHoursSearch(s)",
+              "plan-feasibility",
+              "data-ph=",
+              "AI SMART ROUTE · Native22"
+          ]:
+              if token not in s:
+                  raise RuntimeError("Native22 missing expected token: "+token)
+
+
           s=s.replace(
               "雲嘉南週末去哪玩 · V5.5",
               "雲嘉南週末去哪玩 · V5.5 · Native21",
@@ -1922,8 +2143,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 21
-                  versionName "5.5-native-21"
+                  versionCode 22
+                  versionName "5.5-native-22"
               }
 
               buildTypes {
@@ -2507,11 +2728,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native21.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native22.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native21-APK
-          path: YunJiaNanWeekend-V5.5-native21.apk
+          name: YunJiaNanWeekend-V5.5-Native22-APK
+          path: YunJiaNanWeekend-V5.5-native22.apk
           if-no-files-found: error
