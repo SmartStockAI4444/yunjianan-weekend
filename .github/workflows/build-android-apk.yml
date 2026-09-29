@@ -2064,6 +2064,82 @@ jobs:
                   raise RuntimeError("Native22 missing expected token: "+token)
 
 
+          # Native23: open the exact Google Maps place instead of searching for a phrase containing "營業時間".
+          old_maps_search = r"""function planHoursSearchUrl(s){
+            var q=((s&&s.name)||"")+" "+shortPlace(s)+" 營業時間";
+            return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q);
+          }"""
+
+          new_maps_search = r"""function planMapsPlaceQuery(s){
+            if(!s)return "";
+            var name=String(s.name||"").trim();
+            var place=String(s.place||"").trim();
+            var city=String(s.city||"").trim();
+            var parts=[];
+
+            if(name)parts.push(name);
+
+            if(place && place!==name){
+              parts.push(place);
+            }else if(city && city!==name){
+              parts.push(city);
+            }
+
+            return parts.join(" ").replace(/\s+/g," ").trim();
+          }
+
+          function planHoursSearchUrl(s){
+            var q=planMapsPlaceQuery(s);
+            return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q);
+          }"""
+
+          if old_maps_search not in s:
+              raise RuntimeError("Native23 cannot find Native22 Google Maps search function")
+          s=s.replace(old_maps_search,new_maps_search,1)
+
+          old_missing_hours='text:"⚠️ 尚未收錄可靠營業時間，不亂猜；出發前請查 Google Maps"'
+          new_missing_hours='text:"⚠️ 尚未收錄可靠營業時間；請開啟 Google Maps 地點頁確認營業／休館"'
+          if old_missing_hours not in s:
+              raise RuntimeError("Native23 cannot find missing-hours warning")
+          s=s.replace(old_missing_hours,new_missing_hours,1)
+
+          old_hours_button='🕒 查營業時間'
+          new_hours_button='🕒 Maps 查營業'
+          if old_hours_button not in s:
+              raise RuntimeError("Native23 cannot find hours button label")
+          s=s.replace(old_hours_button,new_hours_button,1)
+
+          s=s.replace(
+              "AI SMART ROUTE · Native22",
+              "AI SMART ROUTE · Native23",
+              1
+          )
+          s=s.replace(
+              "會先控制行程範圍，只使用可定位景點，再加入活動日期與營業資訊檢查；沒有可靠營業資料時不亂猜。",
+              "會先控制行程範圍，只使用可定位景點；營業時間不足時直接開啟 Google Maps 精確地點頁確認。",
+              1
+          )
+          s=s.replace(
+              "AI 行程會排同一生活圈、估算移動時間，並提醒出發前確認營業／休館資訊。",
+              "AI 行程會排同一生活圈、估算移動時間；Maps 查營業會以景點名稱＋地點搜尋，不再加入「營業時間」字樣。",
+              1
+          )
+          s=s.replace(
+              "雲嘉南週末去哪玩 · V5.5 · Native22",
+              "雲嘉南週末去哪玩 · V5.5 · Native23",
+              1
+          )
+
+          for token in [
+              "function planMapsPlaceQuery(s)",
+              "function planHoursSearchUrl(s)",
+              "Maps 查營業",
+              "AI SMART ROUTE · Native23"
+          ]:
+              if token not in s:
+                  raise RuntimeError("Native23 missing expected token: "+token)
+
+
           s=s.replace(
               "雲嘉南週末去哪玩 · V5.5",
               "雲嘉南週末去哪玩 · V5.5 · Native21",
@@ -2143,8 +2219,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 22
-                  versionName "5.5-native-22"
+                  versionCode 23
+                  versionName "5.5-native-23"
               }
 
               buildTypes {
@@ -2728,11 +2804,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native22.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native23.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native22-APK
-          path: YunJiaNanWeekend-V5.5-native22.apk
+          name: YunJiaNanWeekend-V5.5-Native23-APK
+          path: YunJiaNanWeekend-V5.5-native23.apk
           if-no-files-found: error
