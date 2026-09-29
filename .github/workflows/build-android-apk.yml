@@ -175,7 +175,7 @@ jobs:
               locationSource="gps";
               currentLocationLabel="手機定位";
               syncLocationPanel();
-              setNearbyHint("📍 Native18：正在呼叫 Android 定位…","loading");
+              setNearbyHint("📍 Native19：正在呼叫 Android 定位…","loading");
           
               try{
                 window.__clearNativeLocationTimer();
@@ -1110,9 +1110,185 @@ jobs:
 
 
 
+          # Native19: keep AI routes geographically compact and make estimated legs less falsely precise.
+          old_romantic_list='var romantic=["情侶","拍照","美食","咖啡","甜點","夜景","湖景","海景","藝術","文化","散步","花海","景觀"];'
+          new_romantic_list='var romantic=["情侶","拍照","美食","咖啡","甜點","夜景","湖景","海景","藝術","文化","散步","花海","景觀","夕陽"];'
+          if old_romantic_list not in s:
+              raise RuntimeError("Native19 cannot find romantic theme list")
+          s=s.replace(old_romantic_list,new_romantic_list,1)
+
+          old_romantic_return='return romantic.some(function(x){return tags.indexOf(x)>=0}) ||\n      ["景點","體驗","活動"].indexOf(s.type)>=0;'
+          new_romantic_return='return romantic.some(function(x){return tags.indexOf(x)>=0});'
+          if old_romantic_return not in s:
+              raise RuntimeError("Native19 cannot find romantic theme return")
+          s=s.replace(old_romantic_return,new_romantic_return,1)
+
+          old_radius='var maxRadius=timeMode==="full"?60:35;'
+          new_radius='var maxRadius=timeMode==="full"?40:20;'
+          if old_radius not in s:
+              raise RuntimeError("Native19 cannot find AI radius")
+          s=s.replace(old_radius,new_radius,1)
+
+          compact_helpers = r"""
+          function planLegLimit(timeMode,relaxed){
+            if(timeMode==="full")return relaxed?35:22;
+            return relaxed?20:12;
+          }
+
+          function buildCompactSmartPlan(candidates,opts,startCoord,maxStops){
+            var pool=(candidates||[]).slice(0,100);
+            var chosen=[];
+            var current=startCoord||null;
+            var activityCount=0;
+            var activityLimit=opts.timeMode==="full"?2:1;
+
+            function alreadyChosen(s){
+              return chosen.indexOf(s)>=0;
+            }
+
+            function pickOne(maxLeg,allowExtraActivity){
+              var best=null,bestScore=-1e9;
+
+              pool.forEach(function(s){
+                if(!s||alreadyChosen(s))return;
+                if(s.type==="活動" && activityCount>=activityLimit && !allowExtraActivity)return;
+
+                var coord=stopCoord(s);
+                var leg=0;
+
+                if(current&&coord){
+                  leg=geoDistance(current,coord);
+                  if(isFinite(leg)&&leg>maxLeg)return;
+                }
+
+                var score=smartPlanScore(s,opts.theme,startCoord,opts.timeMode);
+
+                if(current&&coord&&isFinite(leg)){
+                  score-=leg*1.8;
+                }
+
+                if(chosen.length){
+                  var prev=chosen[chosen.length-1];
+                  if(prev.city===s.city)score+=7;
+                  if(prev.type===s.type)score-=5;
+                }
+
+                if(s.type==="活動" && eventActiveToday(s))score+=6;
+
+                if(score>bestScore){
+                  bestScore=score;
+                  best=s;
+                }
+              });
+
+              if(!best)return false;
+
+              chosen.push(best);
+              if(best.type==="活動")activityCount++;
+
+              var next=stopCoord(best);
+              if(next)current=next;
+              return true;
+            }
+
+            while(chosen.length<maxStops){
+              if(pickOne(planLegLimit(opts.timeMode,false),false))continue;
+              if(pickOne(planLegLimit(opts.timeMode,true),false))continue;
+              if(pickOne(planLegLimit(opts.timeMode,true),true))continue;
+              break;
+            }
+
+            return chosen;
+          }
+
+          function formatPlanLegDistance(d,precise){
+            if(d==null||!isFinite(d))return "";
+            if(precise)return formatDistanceKm(d);
+            return "約 "+Math.max(1,Math.round(d))+" km";
+          }
+
+          """
+          compact_marker="function plannerLocationLabel(){"
+          if compact_marker not in s:
+              raise RuntimeError("Native19 cannot find plannerLocationLabel")
+          s=s.replace(compact_marker,compact_helpers+compact_marker,1)
+
+          old_pick='var a=candidates.slice(0,maxStops);'
+          new_pick='var a=buildCompactSmartPlan(candidates,opts,startCoord,maxStops);'
+          if old_pick not in s:
+              raise RuntimeError("Native19 cannot find AI candidate slice")
+          s=s.replace(old_pick,new_pick,1)
+
+          old_opt = r"""    var optimized=optimizePlanOrder(a,startCoord);
+              renderPlanResult(
+                optimized.stops,
+                title,
+                maxStops,
+                optimized.mode,
+                {
+                  startCoord:startCoord,
+                  theme:t,
+                  timeMode:timeMode,
+                  city:c
+                }
+              );"""
+          new_opt = r"""    renderPlanResult(
+                a,
+                title,
+                maxStops,
+                startCoord?"location":"distance",
+                {
+                  startCoord:startCoord,
+                  theme:t,
+                  timeMode:timeMode,
+                  city:c
+                }
+              );"""
+          if old_opt not in s:
+              raise RuntimeError("Native19 cannot find AI optimize block")
+          s=s.replace(old_opt,new_opt,1)
+
+          old_leg_return='return (i===0?"離目前位置 ":"距上一站 ")+formatDistanceKm(d);'
+          new_leg_return=r"""var precise=hasPreciseDistanceCoord(stops[i]) &&
+              (i===0 || hasPreciseDistanceCoord(stops[i-1]));
+            var distanceText=formatPlanLegDistance(d,precise);
+
+            return (i===0?"離目前位置 ":"距上一站 ")+distanceText;"""
+          if old_leg_return not in s:
+              raise RuntimeError("Native19 cannot find plan leg formatter")
+          s=s.replace(old_leg_return,new_leg_return,1)
+
+          s=s.replace(
+              "AI SMART ROUTE · Native18",
+              "AI SMART ROUTE · Native19",
+              1
+          )
+          s=s.replace(
+              "會綜合距離、熱門度與路線，自動挑 3～5 站。",
+              "會先控制行程範圍，再綜合距離、熱門度與路線，自動挑 3～5 站。",
+              1
+          )
+          s=s.replace(
+              "AI 行程會綜合主題、熱門度與距離。",
+              "AI 行程會優先排同一生活圈，避免單站拉太遠。",
+              1
+          )
+
+          for token in [
+              "function buildCompactSmartPlan(candidates,opts,startCoord,maxStops)",
+              'var maxRadius=timeMode==="full"?40:20;',
+              'var a=buildCompactSmartPlan(candidates,opts,startCoord,maxStops);',
+              "function formatPlanLegDistance(d,precise)",
+              "AI SMART ROUTE · Native19"
+          ]:
+              if token not in s:
+                  raise RuntimeError("Native19 missing expected token: "+token)
+
+
+
           s=s.replace(
               "雲嘉南週末去哪玩 · V5.5",
-              "雲嘉南週末去哪玩 · V5.5 · Native18",
+              "雲嘉南週末去哪玩 · V5.5 · Native19",
               1
           )
 
@@ -1189,8 +1365,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 18
-                  versionName "5.5-native-18"
+                  versionCode 19
+                  versionName "5.5-native-19"
               }
 
               buildTypes {
@@ -1774,11 +1950,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native18.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native19.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native18-APK
-          path: YunJiaNanWeekend-V5.5-native18.apk
+          name: YunJiaNanWeekend-V5.5-Native19-APK
+          path: YunJiaNanWeekend-V5.5-native19.apk
           if-no-files-found: error
