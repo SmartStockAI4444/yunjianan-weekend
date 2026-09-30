@@ -2660,6 +2660,42 @@ jobs:
           for token in ["function planMealPreciseQuery(ctx,i)","function planMealMapUrl(ctx,i)","data-pmealmap","午餐搜尋中心","AI SMART ROUTE · Native33","V5.5 · Native33"]:
               if token not in s: raise RuntimeError("Native33 missing expected token: "+token)
 
+          # Native34: remove ambiguous nearby keyword from destination meal search.
+          native34_css = r"""\
+          /* ===== Native34 Destination Meal Query ===== */
+          .plan-meal-query{margin-top:7px;padding:7px 9px;border-radius:9px;background:#fff8e8;color:#6e531c;font-size:9px;font-weight:850;line-height:1.45}
+          """
+          if "</style>" not in s: raise RuntimeError("Native34 cannot find style end")
+          s=s.replace("</style>",native34_css+"\n</style>",1)
+
+          old_meal_search_block='function planMealSearchAnchor(ctx,i){\n  if(!ctx)return null;\n\n  var stops=Array.isArray(ctx.stops)?ctx.stops:[];\n  var next=stops[i]||null;\n  var prev=i>0?stops[i-1]:null;\n\n  var coord=stopCoord(next);\n  if(coord)return {coord:coord,stop:next,source:"next"};\n\n  coord=stopCoord(prev);\n  if(coord)return {coord:coord,stop:prev,source:"prev"};\n\n  if(ctx.startCoord)return {coord:ctx.startCoord,stop:next||prev||null,source:"start"};\n  return {coord:null,stop:next||prev||null,source:"text"};\n}\n\nfunction planMealShortStopName(s){\n  if(!s||!s.name)return "";\n  var name=String(s.name).trim();\n\n  /* Keep well-known landmark words but remove a few overly generic prefixes/suffixes\n     so the Google Maps search stays local and concise. */\n  name=name.replace(/^國立/,"");\n  name=name.replace(/休閒觀光工廠$/,"觀光工廠");\n  return name;\n}\n\nfunction planMealLocalAreaText(s){\n  if(!s)return "";\n  var district=String(s.district||"").trim();\n\n  if(district)return district;\n\n  /* City is only a fallback when no smaller district/township is available. */\n  return String(s.city||"").trim();\n}\n\nfunction planMealPreciseQuery(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n  if(!anchor||!anchor.stop)return "附近餐廳 正餐";\n\n  var name=planMealShortStopName(anchor.stop);\n  var area=planMealLocalAreaText(anchor.stop);\n\n  return [\n    name,\n    area,\n    "附近餐廳",\n    "正餐"\n  ].filter(Boolean).join(" ").trim();\n}\n\nfunction planMealRestaurantSearchUrl(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n  var query=planMealPreciseQuery(ctx,i);\n\n  if(anchor&&anchor.coord&&anchor.coord.length>=2){\n    var lat=Number(anchor.coord[0]);\n    var lng=Number(anchor.coord[1]);\n\n    if(isFinite(lat)&&isFinite(lng)){\n      return "https://www.google.com/maps/search/"+encodeURIComponent(query)+"/@"+\n        lat.toFixed(6)+","+lng.toFixed(6)+",17z";\n    }\n  }\n\n  return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(query);\n}\n\nfunction planMealMapUrl(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n\n  if(anchor&&anchor.coord&&anchor.coord.length>=2){\n    var lat=Number(anchor.coord[0]);\n    var lng=Number(anchor.coord[1]);\n\n    if(isFinite(lat)&&isFinite(lng)){\n      return "https://www.google.com/maps/@"+\n        lat.toFixed(6)+","+lng.toFixed(6)+",17z";\n    }\n  }\n\n  var query=planMealPreciseQuery(ctx,i);\n  return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(query);\n}\n\nfunction planMealSearchButtonLabel(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n\n  if(anchor&&anchor.stop&&anchor.stop.name){\n    var name=planMealShortStopName(anchor.stop);\n    if(name.length>8)name=name.slice(0,8)+"…";\n    return "🍜 "+name+"附近正餐";\n  }\n\n  return "🍜 附近正餐";\n}\n\n\n'
+          new_meal_search_block='function planMealSearchAnchor(ctx,i){\n  if(!ctx)return null;\n\n  var stops=Array.isArray(ctx.stops)?ctx.stops:[];\n  var next=stops[i]||null;\n  var prev=i>0?stops[i-1]:null;\n\n  var coord=stopCoord(next);\n  if(coord)return {coord:coord,stop:next,source:"next"};\n\n  coord=stopCoord(prev);\n  if(coord)return {coord:coord,stop:prev,source:"prev"};\n\n  if(ctx.startCoord)return {coord:ctx.startCoord,stop:next||prev||null,source:"start"};\n  return {coord:null,stop:next||prev||null,source:"text"};\n}\n\nfunction planMealShortStopName(s){\n  if(!s||!s.name)return "";\n  var name=String(s.name).trim();\n\n  /* 保留完整景點名稱，避免 Google Maps 失去目的地語意。 */\n  name=name.replace(/休閒觀光工廠$/,"觀光工廠");\n  return name;\n}\n\nfunction planMealLocalAreaText(s){\n  if(!s)return "";\n\n  var district=String(s.district||"").trim();\n  if(district)return district;\n\n  return String(s.city||"").trim();\n}\n\nfunction planMealPreciseQuery(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n\n  if(!anchor||!anchor.stop){\n    return "餐廳 小吃 正餐";\n  }\n\n  var name=planMealShortStopName(anchor.stop);\n  var area=planMealLocalAreaText(anchor.stop);\n\n  /* Native34：刻意不使用「附近」。\n     Android Google Maps 有時會把「附近」重新解讀成手機目前所在地。\n     因此直接用「目的景點 + 行政區 + 餐廳/小吃/正餐」搜尋。 */\n  return [\n    name,\n    area,\n    "餐廳",\n    "小吃",\n    "正餐"\n  ].filter(Boolean).join(" ").trim();\n}\n\nfunction planMealRestaurantSearchUrl(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n  var query=planMealPreciseQuery(ctx,i);\n\n  if(anchor&&anchor.coord&&anchor.coord.length>=2){\n    var lat=Number(anchor.coord[0]);\n    var lng=Number(anchor.coord[1]);\n\n    if(isFinite(lat)&&isFinite(lng)){\n      return "https://www.google.com/maps/search/"+encodeURIComponent(query)+"/@"+\n        lat.toFixed(6)+","+lng.toFixed(6)+",17z";\n    }\n  }\n\n  return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(query);\n}\n\nfunction planMealMapUrl(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n\n  if(anchor&&anchor.coord&&anchor.coord.length>=2){\n    var lat=Number(anchor.coord[0]);\n    var lng=Number(anchor.coord[1]);\n\n    if(isFinite(lat)&&isFinite(lng)){\n      return "https://www.google.com/maps/@"+\n        lat.toFixed(6)+","+lng.toFixed(6)+",17z";\n    }\n  }\n\n  var query=planMealPreciseQuery(ctx,i);\n  return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(query);\n}\n\nfunction planMealSearchButtonLabel(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n\n  if(anchor&&anchor.stop&&anchor.stop.name){\n    var name=planMealShortStopName(anchor.stop);\n    if(name.length>8)name=name.slice(0,8)+"…";\n    return "🍜 搜尋"+name+"周邊正餐";\n  }\n\n  return "🍜 搜尋目的地周邊正餐";\n}\n\n\n'
+          if old_meal_search_block not in s: raise RuntimeError("Native34 cannot find meal search block")
+          s=s.replace(old_meal_search_block,new_meal_search_block,1)
+
+          old_meal_break_card='function planMealBreakHtml(ctx,i){\n  if(!ctx)return "";\n\n  var x=planTimeline(ctx)[i];\n  if(!x||!x.mealBefore)return "";\n\n  var w=planMealWindow(x.mealBefore);\n  var anchor=planMealSearchAnchor(ctx,i);\n  var centerText="";\n\n  if(anchor&&anchor.stop&&anchor.stop.name){\n    centerText=\'<div class="plan-meal-center">📍 午餐搜尋中心：<b>\'+anchor.stop.name+\'</b></div>\';\n  }\n\n  return \'<div class="plan-meal-card">\'+\n    \'<div class="plan-meal-title">\'+w.icon+\' 建議\'+w.label+\' \'+planClock(x.mealStart)+\'–\'+planClock(x.mealEnd)+\'</div>\'+\n    centerText+\n    \'<div class="plan-meal-text">附近沒有排到合適的正餐站，先保留 \'+w.duration+\' 分鐘自由用餐。Native33 會用下一站名稱＋鄉鎮／行政區搜尋，不再把「嘉義」這種大範圍地名放進主要搜尋詞，盡量把結果集中在下一站附近。</div>\'+\n    \'<div class="plan-meal-actions">\'+\n      \'<button class="plan-meal-search" data-pmeal="\'+i+\'">\'+planMealSearchButtonLabel(ctx,i)+\'</button>\'+\n      \'<button class="plan-meal-map" data-pmealmap="\'+i+\'">🗺️ 開啟 Google Maps</button>\'+\n    \'</div>\'+\n  \'</div>\';\n}\n\n\n'
+          new_meal_break_card='function planMealBreakHtml(ctx,i){\n  if(!ctx)return "";\n\n  var x=planTimeline(ctx)[i];\n  if(!x||!x.mealBefore)return "";\n\n  var w=planMealWindow(x.mealBefore);\n  var anchor=planMealSearchAnchor(ctx,i);\n  var centerText="";\n  var queryText=planMealPreciseQuery(ctx,i);\n\n  if(anchor&&anchor.stop&&anchor.stop.name){\n    centerText=\'<div class="plan-meal-center">📍 午餐搜尋目的地：<b>\'+anchor.stop.name+\'</b></div>\';\n  }\n\n  return \'<div class="plan-meal-card">\'+\n    \'<div class="plan-meal-title">\'+w.icon+\' 建議\'+w.label+\' \'+planClock(x.mealStart)+\'–\'+planClock(x.mealEnd)+\'</div>\'+\n    centerText+\n    \'<div class="plan-meal-text">附近沒有排到合適的正餐站，先保留 \'+w.duration+\' 分鐘自由用餐。Native34 已取消 Google Maps 搜尋詞中的「附近」，避免它把搜尋中心重新套回手機目前位置。</div>\'+\n    \'<div class="plan-meal-query">🔎 搜尋詞：\'+queryText+\'</div>\'+\n    \'<div class="plan-meal-actions">\'+\n      \'<button class="plan-meal-search" data-pmeal="\'+i+\'">\'+planMealSearchButtonLabel(ctx,i)+\'</button>\'+\n      \'<button class="plan-meal-map" data-pmealmap="\'+i+\'">🗺️ 開啟目的地地圖</button>\'+\n    \'</div>\'+\n  \'</div>\';\n}\n\n\n'
+          if old_meal_break_card not in s: raise RuntimeError("Native34 cannot find meal break card")
+          s=s.replace(old_meal_break_card,new_meal_break_card,1)
+
+          old_planner_hint='function updatePlannerLocationHint(){\n  var el=$("planStartHint");\n  if(!el)return;\n  el.textContent=plannerLocationLabel()+"；Native33 自由午餐會顯示「午餐搜尋中心」，用下一站名稱＋鄉鎮／行政區找正餐，另提供一鍵開啟該地點 Google Maps。";\n}\n\n\n'
+          new_planner_hint='function updatePlannerLocationHint(){\n  var el=$("planStartHint");\n  if(!el)return;\n  el.textContent=plannerLocationLabel()+"；Native34 已取消餐廳搜尋詞中的「附近」，改用下一站景點名稱＋鄉鎮／行政區＋餐廳／小吃，避免 Google Maps 把搜尋套回手機目前位置。";\n}\n\n\n'
+          if old_planner_hint not in s: raise RuntimeError("Native34 cannot find planner hint")
+          s=s.replace(old_planner_hint,new_planner_hint,1)
+
+          s=s.replace("AI SMART ROUTE · Native33","AI SMART ROUTE · Native34",1)
+          s=s.replace("自由午餐改用下一站名稱＋鄉鎮／行政區搜尋正餐，避免大範圍地名干擾，並提供獨立 Google Maps 地圖按鈕。","自由午餐搜尋已取消「附近」關鍵字，直接以目的景點名稱＋鄉鎮／行政區＋餐廳／小吃搜尋，避免 Google Maps 回到手機目前位置。",1)
+          s=s.replace("📍 Native33：正在呼叫 Android 定位…","📍 Native34：正在呼叫 Android 定位…",1)
+          footer_prefix="<footer>雲嘉南週末去哪玩 · V5.5 · Native"
+          fi=s.find(footer_prefix)
+          if fi<0: raise RuntimeError("Native34 cannot find footer version")
+          fj=s.find("</footer>",fi)
+          if fj<0: raise RuntimeError("Native34 cannot find footer end")
+          s=s[:fi]+"<footer>雲嘉南週末去哪玩 · V5.5 · Native34"+s[fj:]
+
+          for token in ["function planMealPreciseQuery(ctx,i)","Native34：刻意不使用「附近」","plan-meal-query","午餐搜尋目的地","AI SMART ROUTE · Native34","V5.5 · Native34"]:
+              if token not in s: raise RuntimeError("Native34 missing expected token: "+token)
+
           # Native18 guard: nearby code must not reference undefined matchFilter().
           if "matchFilter(s)" in s:
               raise RuntimeError("nearbyMatchCount still references undefined matchFilter(s)")
@@ -2733,8 +2769,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 33
-                  versionName "5.5-native-33"
+                  versionCode 34
+                  versionName "5.5-native-34"
               }
 
               buildTypes {
@@ -3318,11 +3354,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native33.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native34.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native33-APK
-          path: YunJiaNanWeekend-V5.5-native33.apk
+          name: YunJiaNanWeekend-V5.5-Native34-APK
+          path: YunJiaNanWeekend-V5.5-native34.apk
           if-no-files-found: error
