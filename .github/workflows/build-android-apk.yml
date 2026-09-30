@@ -2795,6 +2795,40 @@ jobs:
           for token in ["function planMealLocationText(s)","mapQuery / q / place","🧭 地點文字：","AI SMART ROUTE · Native37","V5.5 · Native37"]:
               if token not in s: raise RuntimeError("Native37 missing expected token: "+token)
 
+          # Native38: restaurant search intentionally uses the phone current location.
+          old_meal_search_block='function planMealSearchAnchor(ctx,i){\n  if(!ctx)return null;\n\n  var stops=Array.isArray(ctx.stops)?ctx.stops:[];\n  var next=stops[i]||null;\n  var prev=i>0?stops[i-1]:null;\n\n  var coord=stopCoord(next);\n  if(coord)return {coord:coord,stop:next,source:"next"};\n\n  coord=stopCoord(prev);\n  if(coord)return {coord:coord,stop:prev,source:"prev"};\n\n  if(ctx.startCoord)return {coord:ctx.startCoord,stop:next||prev||null,source:"start"};\n  return {coord:null,stop:next||prev||null,source:"text"};\n}\n\nfunction planMealShortStopName(s){\n  if(!s||!s.name)return "";\n  return String(s.name).trim().replace(/休閒觀光工廠$/,"觀光工廠");\n}\n\nfunction planMealLocationText(s){\n  if(!s)return "";\n\n  /* Native37：\n     景點資料真正使用的是 mapQuery / q / place。\n     先前版本讀 district，很多景點根本沒有 district，\n     因而退回 city，例如中正大學只變成「嘉義」。\n  */\n  var mapQuery=String(s.mapQuery||"").trim();\n  if(mapQuery)return mapQuery;\n\n  var q=String(s.q||"").trim();\n  if(q)return q;\n\n  var name=planMealShortStopName(s);\n  var place=String(s.place||"").trim();\n  var city=String(s.city||"").trim();\n\n  return [name,place,city].filter(Boolean).join(" ").trim();\n}\n\nfunction planMealPreciseQuery(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n\n  if(!anchor||!anchor.stop){\n    return "餐廳 小吃 正餐";\n  }\n\n  var loc=planMealLocationText(anchor.stop);\n\n  return [\n    "餐廳",\n    "小吃",\n    "正餐",\n    loc\n  ].filter(Boolean).join(" ").trim();\n}\n\nfunction planMealCoordinateQuery(ctx,i){\n  /* Native37 不再使用未文件化的「near 經緯度」語法。\n     Google 官方 Maps URL 的分類搜尋做法，是把地點直接寫進一般搜尋字串。 */\n  return planMealPreciseQuery(ctx,i);\n}\n\nfunction planMealSearchData(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n  if(!anchor)return null;\n\n  var data={\n    query:planMealPreciseQuery(ctx,i),\n    fallbackQuery:planMealPreciseQuery(ctx,i),\n    locationText:anchor.stop?planMealLocationText(anchor.stop):"",\n    lat:null,\n    lng:null,\n    stop:anchor.stop||null\n  };\n\n  if(anchor.coord&&anchor.coord.length>=2){\n    var lat=Number(anchor.coord[0]);\n    var lng=Number(anchor.coord[1]);\n\n    if(isFinite(lat)&&isFinite(lng)){\n      data.lat=lat;\n      data.lng=lng;\n    }\n  }\n\n  return data;\n}\n\nfunction planMealRestaurantSearchUrl(ctx,i){\n  var data=planMealSearchData(ctx,i);\n  if(!data)return "";\n\n  return "https://www.google.com/maps/search/?api=1&query="+\n    encodeURIComponent(data.query);\n}\n\nfunction planMealMapUrl(ctx,i){\n  var data=planMealSearchData(ctx,i);\n  if(!data)return "";\n\n  if(data.lat!==null&&data.lng!==null){\n    return "https://www.google.com/maps/@?api=1&map_action=map&center="+\n      data.lat.toFixed(6)+","+data.lng.toFixed(6)+"&zoom=17";\n  }\n\n  return "https://www.google.com/maps/search/?api=1&query="+\n    encodeURIComponent(data.locationText||data.query);\n}\n\nfunction planMealSearchButtonLabel(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n\n  if(anchor&&anchor.stop&&anchor.stop.name){\n    var name=planMealShortStopName(anchor.stop);\n    if(name.length>8)name=name.slice(0,8)+"…";\n    return "🍜 搜尋"+name+"周邊正餐";\n  }\n\n  return "🍜 搜尋目的地周邊正餐";\n}\n\n\n'
+          new_meal_search_block='function planMealSearchAnchor(ctx,i){\n  /* Native38：\n     用餐搜尋不再綁定下一站，Google Maps 直接依手機目前位置找餐廳。\n     這更符合使用者人在旅途中臨時找正餐的習慣。 */\n  return null;\n}\n\nfunction planMealRestaurantSearchQuery(){\n  return "餐廳 小吃 正餐";\n}\n\nfunction planMealRestaurantSearchUrl(){\n  return "https://www.google.com/maps/search/?api=1&query="+\n    encodeURIComponent(planMealRestaurantSearchQuery());\n}\n\nfunction planMealSearchButtonLabel(){\n  return "🍜 搜尋我附近餐廳";\n}\n\n\n'
+          if old_meal_search_block not in s: raise RuntimeError("Native38 cannot find meal search block")
+          s=s.replace(old_meal_search_block,new_meal_search_block,1)
+
+          old_meal_open_block='function openMealRestaurantSearch(ctx,i){\n  var data=planMealSearchData(ctx,i);\n\n  /* Native35：\n     在 Android App 裡直接呼叫原生 bridge。\n     MainActivity 會產生 geo:目的地緯度,目的地經度?q=餐廳 小吃 正餐，\n     並優先交給 Google Maps App。 */\n  if(\n    data &&\n    data.lat!==null &&\n    data.lng!==null &&\n    window.AndroidMap &&\n    typeof window.AndroidMap.searchAt==="function"\n  ){\n    try{\n      window.AndroidMap.searchAt(\n        Number(data.lat),\n        Number(data.lng),\n        String(data.query||"餐廳 小吃 正餐")\n      );\n      return;\n    }catch(e){}\n  }\n\n  var url=planMealRestaurantSearchUrl(ctx,i);\n  if(url)window.open(url,"_blank");\n}\n\nfunction openMealMap(ctx,i){\n  var data=planMealSearchData(ctx,i);\n\n  if(\n    data &&\n    data.lat!==null &&\n    data.lng!==null &&\n    window.AndroidMap &&\n    typeof window.AndroidMap.openAt==="function"\n  ){\n    try{\n      window.AndroidMap.openAt(\n        Number(data.lat),\n        Number(data.lng)\n      );\n      return;\n    }catch(e){}\n  }\n\n  var url=planMealMapUrl(ctx,i);\n  if(url)window.open(url,"_blank");\n}\n\n\n'
+          new_meal_open_block='function openMealRestaurantSearch(ctx,i){\n  /* 不指定目的地座標與景點名稱，交給 Google Maps 使用手機目前位置。 */\n  var url=planMealRestaurantSearchUrl();\n  if(url)window.open(url,"_blank");\n}\n\nfunction openMealMap(ctx,i){\n  var url=planMealRestaurantSearchUrl();\n  if(url)window.open(url,"_blank");\n}\n\n\n'
+          if old_meal_open_block not in s: raise RuntimeError("Native38 cannot find meal open block")
+          s=s.replace(old_meal_open_block,new_meal_open_block,1)
+
+          old_meal_break_card='function planMealBreakHtml(ctx,i){\n  if(!ctx)return "";\n\n  var x=planTimeline(ctx)[i];\n  if(!x||!x.mealBefore)return "";\n\n  var w=planMealWindow(x.mealBefore);\n  var anchor=planMealSearchAnchor(ctx,i);\n  var data=planMealSearchData(ctx,i);\n  var centerText="";\n  var sourceText="";\n  var queryText="";\n\n  if(anchor&&anchor.stop&&anchor.stop.name){\n    centerText=\'<div class="plan-meal-center">📍 午餐搜尋目的地：<b>\'+anchor.stop.name+\'</b></div>\';\n  }\n\n  if(data&&data.locationText){\n    sourceText=\'<div class="plan-meal-force">🧭 地點文字：\'+data.locationText+\'</div>\';\n  }\n\n  if(data&&data.query){\n    queryText=\'<div class="plan-meal-query">🔎 Maps 實際搜尋：\'+data.query+\'</div>\';\n  }\n\n  return \'<div class="plan-meal-card">\'+\n    \'<div class="plan-meal-title">\'+w.icon+\' 建議\'+w.label+\' \'+planClock(x.mealStart)+\'–\'+planClock(x.mealEnd)+\'</div>\'+\n    centerText+\n    sourceText+\n    queryText+\n    \'<div class="plan-meal-text">Native37 已修正景點地點欄位：優先使用 mapQuery（完整地址），其次 q，再其次景點名稱＋place。像中正大學會直接送出「國立中正大學 嘉義縣民雄鄉大學路一段168號」，不再只送「嘉義」或未支援的 near 座標語法。</div>\'+\n    \'<div class="plan-meal-actions">\'+\n      \'<button class="plan-meal-search" data-pmeal="\'+i+\'">\'+planMealSearchButtonLabel(ctx,i)+\'</button>\'+\n      \'<button class="plan-meal-map" data-pmealmap="\'+i+\'">🗺️ 只開目的地地圖</button>\'+\n    \'</div>\'+\n  \'</div>\';\n}\n\n\n'
+          new_meal_break_card='function planMealBreakHtml(ctx,i){\n  if(!ctx)return "";\n\n  var x=planTimeline(ctx)[i];\n  if(!x||!x.mealBefore)return "";\n\n  var w=planMealWindow(x.mealBefore);\n\n  return \'<div class="plan-meal-card">\'+\n    \'<div class="plan-meal-title">\'+w.icon+\' 建議\'+w.label+\' \'+planClock(x.mealStart)+\'–\'+planClock(x.mealEnd)+\'</div>\'+\n    \'<div class="plan-meal-text">這段先保留 \'+w.duration+\' 分鐘自由用餐。到用餐時間時，直接用手機目前位置搜尋附近的餐廳、小吃與正餐，行程後續景點照原本順序繼續。</div>\'+\n    \'<div class="plan-meal-actions">\'+\n      \'<button class="plan-meal-search" data-pmeal="\'+i+\'">\'+planMealSearchButtonLabel()+\'</button>\'+\n    \'</div>\'+\n  \'</div>\';\n}\n\n\n'
+          if old_meal_break_card not in s: raise RuntimeError("Native38 cannot find meal break card")
+          s=s.replace(old_meal_break_card,new_meal_break_card,1)
+
+          old_planner_hint='function updatePlannerLocationHint(){\n  var el=$("planStartHint");\n  if(!el)return;\n  el.textContent=plannerLocationLabel()+"；Native37 已修正地點欄位：餐廳搜尋會優先用景點的 mapQuery 完整地址，其次 q / place，不再把中正大學只縮成「嘉義」。";\n}\n\n\n'
+          new_planner_hint='function updatePlannerLocationHint(){\n  var el=$("planStartHint");\n  if(!el)return;\n  el.textContent=plannerLocationLabel()+"；Native38 用餐搜尋已改為依手機目前位置找餐廳，不再強制綁定下一站景點。";\n}\n\n\n'
+          if old_planner_hint not in s: raise RuntimeError("Native38 cannot find planner hint")
+          s=s.replace(old_planner_hint,new_planner_hint,1)
+
+          s=s.replace("AI SMART ROUTE · Native37","AI SMART ROUTE · Native38",1)
+          s=s.replace("自由午餐搜尋改用景點真正的 mapQuery / q / place 欄位；有完整地址就直接交給 Google Maps，避免只剩縣市層級。","自由用餐改為依手機目前位置搜尋餐廳／小吃／正餐，不再強制綁定下一站景點。",1)
+          s=s.replace("📍 Native37：正在呼叫 Android 定位…","📍 Native38：正在呼叫 Android 定位…",1)
+          footer_prefix="<footer>雲嘉南週末去哪玩 · V5.5 · Native"
+          fi=s.find(footer_prefix)
+          if fi<0: raise RuntimeError("Native38 cannot find footer version")
+          fj=s.find("</footer>",fi)
+          if fj<0: raise RuntimeError("Native38 cannot find footer end")
+          s=s[:fi]+"<footer>雲嘉南週末去哪玩 · V5.5 · Native38"+s[fj:]
+
+          for token in ["🍜 搜尋我附近餐廳","依手機目前位置找餐廳","AI SMART ROUTE · Native38","V5.5 · Native38"]:
+              if token not in s: raise RuntimeError("Native38 missing expected token: "+token)
+
           # Native18 guard: nearby code must not reference undefined matchFilter().
           if "matchFilter(s)" in s:
               raise RuntimeError("nearbyMatchCount still references undefined matchFilter(s)")
@@ -2868,8 +2902,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 37
-                  versionName "5.5-native-37"
+                  versionCode 38
+                  versionName "5.5-native-38"
               }
 
               buildTypes {
@@ -3543,11 +3577,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native37.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native38.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native37-APK
-          path: YunJiaNanWeekend-V5.5-native37.apk
+          name: YunJiaNanWeekend-V5.5-Native38-APK
+          path: YunJiaNanWeekend-V5.5-native38.apk
           if-no-files-found: error
