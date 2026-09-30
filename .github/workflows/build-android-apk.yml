@@ -2895,6 +2895,34 @@ jobs:
           for token in ["function planThemeSignalScore(s,t)","function planThemeReason(s,t)","✨ 推薦理由：",".plan-theme-reason{","🍜 搜尋我附近餐廳","AI SMART ROUTE · Native40","V5.5 · Native40"]:
               if token not in s: raise RuntimeError("Native40 missing expected token: "+token)
 
+          # Native41: safer late-night itinerary behavior.
+          old_night_eligibility='function planNightEligible(s,startCoord,opts){\n  if(!s)return false;\n\n  var arrival=planCandidateArrivalMinute(\n    [],\n    s,\n    {\n      city:opts.city,\n      theme:opts.theme,\n      timeMode:opts.timeMode,\n      dayMode:"today"\n    },\n    startCoord\n  );\n\n  var status=arrival==null?null:planKnownHoursStatus(s,arrival,"today");\n  if(status==="open")return true;\n\n  var tags=Array.isArray(s.tags)?s.tags.join(" "):"";\n  var raw=[s.name||"",s.why||"",tags].join(" ");\n\n  /* Only explicit all-night/24-hour wording is trusted without hours data.\n     Ordinary attractions, parks, "night view" tags, etc. are not assumed open. */\n  return /24\\s*(?:小時|小时|h)|全天候|全日開放|全日开放/i.test(raw);\n}\n\n'
+          new_night_eligibility='function planNightUtilityPlace(s){\n  if(!s)return false;\n\n  var tags=Array.isArray(s.tags)?s.tags.join(" "):"";\n  var raw=[\n    s.name||"",\n    s.type||"",\n    s.why||"",\n    tags\n  ].join(" ");\n\n  return /服務區|服务区|休息站|加油站|便利商店|停車場|停车场|交流道/i.test(raw);\n}\n\nfunction planNightLeisureSignal(s){\n  if(!s)return false;\n\n  var tags=Array.isArray(s.tags)?s.tags.join(" "):"";\n  var raw=[\n    s.name||"",\n    s.type||"",\n    s.why||"",\n    tags\n  ].join(" ");\n\n  return /夜景|夜間|夜间|夜遊|夜游|夜市|燈會|灯会|光影|星空|觀星|观星|宵夜/i.test(raw);\n}\n\nfunction planNightEligible(s,startCoord,opts){\n  if(!s)return false;\n\n  /* Native41：\n     24 小時營業不代表適合當作深夜旅遊景點。\n     像服務區、休息站、加油站等，只是交通/補給設施，\n     不再拿來湊「親子、情侶、戶外」等 AI 行程。 */\n  if(planNightUtilityPlace(s) && (!opts || opts.theme!=="美食")){\n    return false;\n  }\n\n  var arrival=planCandidateArrivalMinute(\n    [],\n    s,\n    {\n      city:opts.city,\n      theme:opts.theme,\n      timeMode:opts.timeMode,\n      dayMode:"today"\n    },\n    startCoord\n  );\n\n  var status=arrival==null?null:planKnownHoursStatus(s,arrival,"today");\n\n  /* 有營業資料而且確定深夜仍開放，可列入。 */\n  if(status==="open"){\n    return true;\n  }\n\n  var tags=Array.isArray(s.tags)?s.tags.join(" "):"";\n  var raw=[s.name||"",s.why||"",tags].join(" ");\n\n  /* 沒有營業資料時，只接受明確的 24 小時或夜遊訊號。\n     一般公園、校園、觀光工廠不再因為資料不足而硬排。 */\n  var explicitAllNight=/24\\s*(?:小時|小时|h)|全天候|全日開放|全日开放/i.test(raw);\n\n  if(explicitAllNight && !planNightUtilityPlace(s))return true;\n  if(planNightLeisureSignal(s) && status!=="closed")return true;\n\n  return false;\n}\n\n\n'
+          if old_night_eligibility not in s: raise RuntimeError("Native41 cannot find night eligibility")
+          s=s.replace(old_night_eligibility,new_night_eligibility,1)
+
+          old_late_night_choice='function renderLateNightChoice(opts){\n  var area=opts.city==="附近"?"離我近":opts.city;\n  var theme=opts.theme||"主題";\n\n  $("pr").innerHTML=\n    \'<div class="plan-late-card">\'+\n      \'<div class="plan-late-title">🌙 現在時間較晚</div>\'+\n      \'<div class="plan-late-time">手機目前時間 \'+planNowLabel()+\'</div>\'+\n      \'<p>目前沒有找到「可由現有資料確認仍營業」的夜間地點，因此不硬排一般觀光景點。</p>\'+\n      \'<p class="plan-late-sub">保留你的條件：\'+area+\'・\'+theme+\'。可以直接改排明天。</p>\'+\n      \'<div class="plan-late-actions">\'+\n        \'<button data-tomorrow-plan="half">🌅 排明天半日・3站</button>\'+\n        \'<button data-tomorrow-plan="full">☀️ 排明天一日・5站</button>\'+\n      \'</div>\'+\n    \'</div>\';\n\n  [].forEach.call($("pr").querySelectorAll("[data-tomorrow-plan]"),function(b){\n    b.onclick=function(){\n      var mode=this.getAttribute("data-tomorrow-plan")==="full"?"full":"half";\n      if($("ptime"))$("ptime").value=mode;\n\n      runSmartPlan({\n        city:opts.city,\n        theme:opts.theme,\n        timeMode:mode,\n        dayMode:"tomorrow"\n      });\n    };\n  });\n}\n\n\n'
+          new_late_night_choice='function renderLateNightChoice(opts){\n  var area=opts.city==="附近"?"離我近":opts.city;\n  var theme=opts.theme||"主題";\n\n  $("pr").innerHTML=\n    \'<div class="plan-late-card">\'+\n      \'<div class="plan-late-title">🌙 現在時間較晚</div>\'+\n      \'<div class="plan-late-time">手機目前時間 \'+planNowLabel()+\'</div>\'+\n      \'<p>現在已超過晚上 21:00。Native41 不會再用服務區、休息站等 24 小時設施硬湊旅遊行程。</p>\'+\n      \'<p>目前沒有找到「可確認仍營業，而且適合夜遊」的地點，因此建議直接安排明天。</p>\'+\n      \'<p class="plan-late-sub">保留你的條件：\'+area+\'・\'+theme+\'。</p>\'+\n      \'<div class="plan-late-actions">\'+\n        \'<button data-tomorrow-plan="half">🌅 排明天半日・3站</button>\'+\n        \'<button data-tomorrow-plan="full">☀️ 排明天一日・5站</button>\'+\n      \'</div>\'+\n    \'</div>\';\n\n  [].forEach.call($("pr").querySelectorAll("[data-tomorrow-plan]"),function(b){\n    b.onclick=function(){\n      var mode=this.getAttribute("data-tomorrow-plan")==="full"?"full":"half";\n      if($("ptime"))$("ptime").value=mode;\n\n      runSmartPlan({\n        city:opts.city,\n        theme:opts.theme,\n        timeMode:mode,\n        dayMode:"tomorrow"\n      });\n    };\n  });\n}\n\n\n'
+          if old_late_night_choice not in s: raise RuntimeError("Native41 cannot find late night choice")
+          s=s.replace(old_late_night_choice,new_late_night_choice,1)
+
+          old_planner_hint='function updatePlannerLocationHint(){\n  var el=$("planStartHint");\n  if(!el)return;\n  el.textContent=plannerLocationLabel()+"；Native40 會提高主題符合度，並在每一站顯示 AI 推薦理由；用餐仍依手機目前位置搜尋。";\n}\n\n\n'
+          new_planner_hint='function updatePlannerLocationHint(){\n  var el=$("planStartHint");\n  if(!el)return;\n  el.textContent=plannerLocationLabel()+"；Native41 保留主題推薦、路線最佳化與附近餐廳搜尋；晚上 21:00 後不再用服務區等 24 小時設施硬湊旅遊行程。";\n}\n\n\n'
+          if old_planner_hint not in s: raise RuntimeError("Native41 cannot find planner hint")
+          s=s.replace(old_planner_hint,new_planner_hint,1)
+
+          s=s.replace("AI SMART ROUTE · Native40","AI SMART ROUTE · Native41",1)
+          s=s.replace("📍 Native40：正在呼叫 Android 定位…","📍 Native41：正在呼叫 Android 定位…",1)
+          footer_prefix="<footer>雲嘉南週末去哪玩 · V5.5 · Native"
+          fi=s.find(footer_prefix)
+          if fi<0: raise RuntimeError("Native41 cannot find footer version")
+          fj=s.find("</footer>",fi)
+          if fj<0: raise RuntimeError("Native41 cannot find footer end")
+          s=s[:fi]+"<footer>雲嘉南週末去哪玩 · V5.5 · Native41"+s[fj:]
+
+          for token in ["function planNightUtilityPlace(s)","function planNightLeisureSignal(s)","不會再用服務區","✨ 推薦理由：","🍜 搜尋我附近餐廳","AI SMART ROUTE · Native41","V5.5 · Native41"]:
+              if token not in s: raise RuntimeError("Native41 missing expected token: "+token)
+
           # Native18 guard: nearby code must not reference undefined matchFilter().
           if "matchFilter(s)" in s:
               raise RuntimeError("nearbyMatchCount still references undefined matchFilter(s)")
@@ -2968,8 +2996,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 40
-                  versionName "5.5-native-40"
+                  versionCode 41
+                  versionName "5.5-native-41"
               }
 
               buildTypes {
@@ -3643,11 +3671,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native40.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native41.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native40-APK
-          path: YunJiaNanWeekend-V5.5-native40.apk
+          name: YunJiaNanWeekend-V5.5-Native41-APK
+          path: YunJiaNanWeekend-V5.5-native41.apk
           if-no-files-found: error
