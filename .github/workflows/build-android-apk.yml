@@ -2696,6 +2696,47 @@ jobs:
           for token in ["function planMealPreciseQuery(ctx,i)","Native34：刻意不使用「附近」","plan-meal-query","午餐搜尋目的地","AI SMART ROUTE · Native34","V5.5 · Native34"]:
               if token not in s: raise RuntimeError("Native34 missing expected token: "+token)
 
+          # Native35: force destination coordinates through an Android Google Maps bridge.
+          native35_css = r"""\
+          /* ===== Native35 Forced Destination Coordinates ===== */
+          .plan-meal-force{margin-top:7px;padding:7px 9px;border-radius:9px;background:#eaf7f1;color:#1f6550;font-size:9px;font-weight:900;line-height:1.45}
+          """
+          if "</style>" not in s: raise RuntimeError("Native35 cannot find style end")
+          s=s.replace("</style>",native35_css+"\n</style>",1)
+
+          old_meal_search_block='function planMealSearchAnchor(ctx,i){\n  if(!ctx)return null;\n\n  var stops=Array.isArray(ctx.stops)?ctx.stops:[];\n  var next=stops[i]||null;\n  var prev=i>0?stops[i-1]:null;\n\n  var coord=stopCoord(next);\n  if(coord)return {coord:coord,stop:next,source:"next"};\n\n  coord=stopCoord(prev);\n  if(coord)return {coord:coord,stop:prev,source:"prev"};\n\n  if(ctx.startCoord)return {coord:ctx.startCoord,stop:next||prev||null,source:"start"};\n  return {coord:null,stop:next||prev||null,source:"text"};\n}\n\nfunction planMealShortStopName(s){\n  if(!s||!s.name)return "";\n  var name=String(s.name).trim();\n\n  /* 保留完整景點名稱，避免 Google Maps 失去目的地語意。 */\n  name=name.replace(/休閒觀光工廠$/,"觀光工廠");\n  return name;\n}\n\nfunction planMealLocalAreaText(s){\n  if(!s)return "";\n\n  var district=String(s.district||"").trim();\n  if(district)return district;\n\n  return String(s.city||"").trim();\n}\n\nfunction planMealPreciseQuery(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n\n  if(!anchor||!anchor.stop){\n    return "餐廳 小吃 正餐";\n  }\n\n  var name=planMealShortStopName(anchor.stop);\n  var area=planMealLocalAreaText(anchor.stop);\n\n  /* Native34：刻意不使用「附近」。\n     Android Google Maps 有時會把「附近」重新解讀成手機目前所在地。\n     因此直接用「目的景點 + 行政區 + 餐廳/小吃/正餐」搜尋。 */\n  return [\n    name,\n    area,\n    "餐廳",\n    "小吃",\n    "正餐"\n  ].filter(Boolean).join(" ").trim();\n}\n\nfunction planMealRestaurantSearchUrl(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n  var query=planMealPreciseQuery(ctx,i);\n\n  if(anchor&&anchor.coord&&anchor.coord.length>=2){\n    var lat=Number(anchor.coord[0]);\n    var lng=Number(anchor.coord[1]);\n\n    if(isFinite(lat)&&isFinite(lng)){\n      return "https://www.google.com/maps/search/"+encodeURIComponent(query)+"/@"+\n        lat.toFixed(6)+","+lng.toFixed(6)+",17z";\n    }\n  }\n\n  return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(query);\n}\n\nfunction planMealMapUrl(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n\n  if(anchor&&anchor.coord&&anchor.coord.length>=2){\n    var lat=Number(anchor.coord[0]);\n    var lng=Number(anchor.coord[1]);\n\n    if(isFinite(lat)&&isFinite(lng)){\n      return "https://www.google.com/maps/@"+\n        lat.toFixed(6)+","+lng.toFixed(6)+",17z";\n    }\n  }\n\n  var query=planMealPreciseQuery(ctx,i);\n  return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(query);\n}\n\nfunction planMealSearchButtonLabel(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n\n  if(anchor&&anchor.stop&&anchor.stop.name){\n    var name=planMealShortStopName(anchor.stop);\n    if(name.length>8)name=name.slice(0,8)+"…";\n    return "🍜 搜尋"+name+"周邊正餐";\n  }\n\n  return "🍜 搜尋目的地周邊正餐";\n}\n\n\n'
+          new_meal_search_block='function planMealSearchAnchor(ctx,i){\n  if(!ctx)return null;\n\n  var stops=Array.isArray(ctx.stops)?ctx.stops:[];\n  var next=stops[i]||null;\n  var prev=i>0?stops[i-1]:null;\n\n  var coord=stopCoord(next);\n  if(coord)return {coord:coord,stop:next,source:"next"};\n\n  coord=stopCoord(prev);\n  if(coord)return {coord:coord,stop:prev,source:"prev"};\n\n  if(ctx.startCoord)return {coord:ctx.startCoord,stop:next||prev||null,source:"start"};\n  return {coord:null,stop:next||prev||null,source:"text"};\n}\n\nfunction planMealShortStopName(s){\n  if(!s||!s.name)return "";\n  var name=String(s.name).trim();\n  name=name.replace(/休閒觀光工廠$/,"觀光工廠");\n  return name;\n}\n\nfunction planMealLocalAreaText(s){\n  if(!s)return "";\n  var district=String(s.district||"").trim();\n  if(district)return district;\n  return String(s.city||"").trim();\n}\n\nfunction planMealPreciseQuery(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n\n  if(!anchor||!anchor.stop){\n    return "餐廳 小吃 正餐";\n  }\n\n  var name=planMealShortStopName(anchor.stop);\n  var area=planMealLocalAreaText(anchor.stop);\n\n  return [\n    name,\n    area,\n    "餐廳",\n    "小吃",\n    "正餐"\n  ].filter(Boolean).join(" ").trim();\n}\n\nfunction planMealNativeQuery(ctx,i){\n  /* Native35 的 Android geo: intent 已經用目的地座標當中心，\n     所以 query 本身只保留餐飲類型，不再讓目前手機位置參與地點判斷。 */\n  return "餐廳 小吃 正餐";\n}\n\nfunction planMealSearchData(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n  if(!anchor)return null;\n\n  var data={\n    query:planMealNativeQuery(ctx,i),\n    fallbackQuery:planMealPreciseQuery(ctx,i),\n    lat:null,\n    lng:null,\n    stop:anchor.stop||null\n  };\n\n  if(anchor.coord&&anchor.coord.length>=2){\n    var lat=Number(anchor.coord[0]);\n    var lng=Number(anchor.coord[1]);\n    if(isFinite(lat)&&isFinite(lng)){\n      data.lat=lat;\n      data.lng=lng;\n    }\n  }\n\n  return data;\n}\n\nfunction planMealRestaurantSearchUrl(ctx,i){\n  /* 這個 HTTPS URL 只做瀏覽器 fallback。\n     Android App 會優先走 AndroidMap.searchAt() 的 geo: intent。 */\n  var data=planMealSearchData(ctx,i);\n  if(!data)return "";\n\n  if(data.lat!==null&&data.lng!==null){\n    return "https://www.google.com/maps/search/"+\n      encodeURIComponent(data.fallbackQuery)+"/@"+\n      data.lat.toFixed(6)+","+data.lng.toFixed(6)+",17z";\n  }\n\n  return "https://www.google.com/maps/search/?api=1&query="+\n    encodeURIComponent(data.fallbackQuery);\n}\n\nfunction planMealMapUrl(ctx,i){\n  var data=planMealSearchData(ctx,i);\n  if(!data)return "";\n\n  if(data.lat!==null&&data.lng!==null){\n    return "https://www.google.com/maps/@"+\n      data.lat.toFixed(6)+","+data.lng.toFixed(6)+",17z";\n  }\n\n  return "https://www.google.com/maps/search/?api=1&query="+\n    encodeURIComponent(data.fallbackQuery);\n}\n\nfunction planMealSearchButtonLabel(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n\n  if(anchor&&anchor.stop&&anchor.stop.name){\n    var name=planMealShortStopName(anchor.stop);\n    if(name.length>8)name=name.slice(0,8)+"…";\n    return "🍜 搜尋"+name+"周邊正餐";\n  }\n\n  return "🍜 搜尋目的地周邊正餐";\n}\n\n\n'
+          if old_meal_search_block not in s: raise RuntimeError("Native35 cannot find meal search block")
+          s=s.replace(old_meal_search_block,new_meal_search_block,1)
+
+          old_meal_open_block='function openMealRestaurantSearch(ctx,i){\n  var url=planMealRestaurantSearchUrl(ctx,i);\n  if(url)window.open(url,"_blank");\n}\n\nfunction openMealMap(ctx,i){\n  var url=planMealMapUrl(ctx,i);\n  if(url)window.open(url,"_blank");\n}\n\n\n'
+          new_meal_open_block='function openMealRestaurantSearch(ctx,i){\n  var data=planMealSearchData(ctx,i);\n\n  /* Native35：\n     在 Android App 裡直接呼叫原生 bridge。\n     MainActivity 會產生 geo:目的地緯度,目的地經度?q=餐廳 小吃 正餐，\n     並優先交給 Google Maps App。 */\n  if(\n    data &&\n    data.lat!==null &&\n    data.lng!==null &&\n    window.AndroidMap &&\n    typeof window.AndroidMap.searchAt==="function"\n  ){\n    try{\n      window.AndroidMap.searchAt(\n        Number(data.lat),\n        Number(data.lng),\n        String(data.query||"餐廳 小吃 正餐")\n      );\n      return;\n    }catch(e){}\n  }\n\n  var url=planMealRestaurantSearchUrl(ctx,i);\n  if(url)window.open(url,"_blank");\n}\n\nfunction openMealMap(ctx,i){\n  var data=planMealSearchData(ctx,i);\n\n  if(\n    data &&\n    data.lat!==null &&\n    data.lng!==null &&\n    window.AndroidMap &&\n    typeof window.AndroidMap.openAt==="function"\n  ){\n    try{\n      window.AndroidMap.openAt(\n        Number(data.lat),\n        Number(data.lng)\n      );\n      return;\n    }catch(e){}\n  }\n\n  var url=planMealMapUrl(ctx,i);\n  if(url)window.open(url,"_blank");\n}\n\n\n'
+          if old_meal_open_block not in s: raise RuntimeError("Native35 cannot find meal open block")
+          s=s.replace(old_meal_open_block,new_meal_open_block,1)
+
+          old_meal_break_card='function planMealBreakHtml(ctx,i){\n  if(!ctx)return "";\n\n  var x=planTimeline(ctx)[i];\n  if(!x||!x.mealBefore)return "";\n\n  var w=planMealWindow(x.mealBefore);\n  var anchor=planMealSearchAnchor(ctx,i);\n  var centerText="";\n  var queryText=planMealPreciseQuery(ctx,i);\n\n  if(anchor&&anchor.stop&&anchor.stop.name){\n    centerText=\'<div class="plan-meal-center">📍 午餐搜尋目的地：<b>\'+anchor.stop.name+\'</b></div>\';\n  }\n\n  return \'<div class="plan-meal-card">\'+\n    \'<div class="plan-meal-title">\'+w.icon+\' 建議\'+w.label+\' \'+planClock(x.mealStart)+\'–\'+planClock(x.mealEnd)+\'</div>\'+\n    centerText+\n    \'<div class="plan-meal-text">附近沒有排到合適的正餐站，先保留 \'+w.duration+\' 分鐘自由用餐。Native34 已取消 Google Maps 搜尋詞中的「附近」，避免它把搜尋中心重新套回手機目前位置。</div>\'+\n    \'<div class="plan-meal-query">🔎 搜尋詞：\'+queryText+\'</div>\'+\n    \'<div class="plan-meal-actions">\'+\n      \'<button class="plan-meal-search" data-pmeal="\'+i+\'">\'+planMealSearchButtonLabel(ctx,i)+\'</button>\'+\n      \'<button class="plan-meal-map" data-pmealmap="\'+i+\'">🗺️ 開啟目的地地圖</button>\'+\n    \'</div>\'+\n  \'</div>\';\n}\n\n\n'
+          new_meal_break_card='function planMealBreakHtml(ctx,i){\n  if(!ctx)return "";\n\n  var x=planTimeline(ctx)[i];\n  if(!x||!x.mealBefore)return "";\n\n  var w=planMealWindow(x.mealBefore);\n  var anchor=planMealSearchAnchor(ctx,i);\n  var data=planMealSearchData(ctx,i);\n  var centerText="";\n  var coordText="";\n\n  if(anchor&&anchor.stop&&anchor.stop.name){\n    centerText=\'<div class="plan-meal-center">📍 午餐搜尋目的地：<b>\'+anchor.stop.name+\'</b></div>\';\n  }\n\n  if(data&&data.lat!==null&&data.lng!==null){\n    coordText=\'<div class="plan-meal-force">🎯 強制搜尋中心：\'+\n      data.lat.toFixed(5)+\', \'+data.lng.toFixed(5)+\n      \'（目的景點座標，不使用手機目前位置）</div>\';\n  }\n\n  return \'<div class="plan-meal-card">\'+\n    \'<div class="plan-meal-title">\'+w.icon+\' 建議\'+w.label+\' \'+planClock(x.mealStart)+\'–\'+planClock(x.mealEnd)+\'</div>\'+\n    centerText+\n    coordText+\n    \'<div class="plan-meal-text">附近沒有排到合適的正餐站，先保留 \'+w.duration+\' 分鐘自由用餐。Native35 在 Android App 內會直接把上面的目的景點座標交給 Google Maps，再搜尋餐廳／小吃／正餐；不再只依靠網址文字搜尋。</div>\'+\n    \'<div class="plan-meal-actions">\'+\n      \'<button class="plan-meal-search" data-pmeal="\'+i+\'">\'+planMealSearchButtonLabel(ctx,i)+\'</button>\'+\n      \'<button class="plan-meal-map" data-pmealmap="\'+i+\'">🗺️ 開啟目的地地圖</button>\'+\n    \'</div>\'+\n  \'</div>\';\n}\n\n\n'
+          if old_meal_break_card not in s: raise RuntimeError("Native35 cannot find meal break card")
+          s=s.replace(old_meal_break_card,new_meal_break_card,1)
+
+          old_planner_hint='function updatePlannerLocationHint(){\n  var el=$("planStartHint");\n  if(!el)return;\n  el.textContent=plannerLocationLabel()+"；Native34 已取消餐廳搜尋詞中的「附近」，改用下一站景點名稱＋鄉鎮／行政區＋餐廳／小吃，避免 Google Maps 把搜尋套回手機目前位置。";\n}\n\n\n'
+          new_planner_hint='function updatePlannerLocationHint(){\n  var el=$("planStartHint");\n  if(!el)return;\n  el.textContent=plannerLocationLabel()+"；Native35 已改成 Android 原生座標搜尋：午餐按鈕會把下一站景點的經緯度直接交給 Google Maps，不再讓手機目前位置決定搜尋中心。";\n}\n\n\n'
+          if old_planner_hint not in s: raise RuntimeError("Native35 cannot find planner hint")
+          s=s.replace(old_planner_hint,new_planner_hint,1)
+
+          s=s.replace("AI SMART ROUTE · Native34","AI SMART ROUTE · Native35",1)
+          s=s.replace("自由午餐搜尋已取消「附近」關鍵字，直接以目的景點名稱＋鄉鎮／行政區＋餐廳／小吃搜尋，避免 Google Maps 回到手機目前位置。","自由午餐改用 Android 原生 geo 座標搜尋，把下一站景點座標直接交給 Google Maps，再搜尋餐廳／小吃／正餐。",1)
+          s=s.replace("📍 Native34：正在呼叫 Android 定位…","📍 Native35：正在呼叫 Android 定位…",1)
+          footer_prefix="<footer>雲嘉南週末去哪玩 · V5.5 · Native"
+          fi=s.find(footer_prefix)
+          if fi<0: raise RuntimeError("Native35 cannot find footer version")
+          fj=s.find("</footer>",fi)
+          if fj<0: raise RuntimeError("Native35 cannot find footer end")
+          s=s[:fi]+"<footer>雲嘉南週末去哪玩 · V5.5 · Native35"+s[fj:]
+
+          for token in ["function planMealSearchData(ctx,i)","window.AndroidMap.searchAt","強制搜尋中心","目的景點座標，不使用手機目前位置","AI SMART ROUTE · Native35","V5.5 · Native35"]:
+              if token not in s: raise RuntimeError("Native35 missing expected token: "+token)
+
           # Native18 guard: nearby code must not reference undefined matchFilter().
           if "matchFilter(s)" in s:
               raise RuntimeError("nearbyMatchCount still references undefined matchFilter(s)")
@@ -2769,8 +2810,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 34
-                  versionName "5.5-native-34"
+                  versionCode 35
+                  versionName "5.5-native-35"
               }
 
               buildTypes {
@@ -2913,6 +2954,11 @@ jobs:
                           "AndroidLocation"
                   );
 
+                  webView.addJavascriptInterface(
+                          new NativeMapBridge(),
+                          "AndroidMap"
+                  );
+
                   WebViewAssetLoader assetLoader =
                           new WebViewAssetLoader.Builder()
                                   .addPathHandler(
@@ -2963,6 +3009,104 @@ jobs:
                       );
                   } else {
                       webView.restoreState(savedInstanceState);
+                  }
+              }
+
+              public class NativeMapBridge {
+                  @JavascriptInterface
+                  public void searchAt(double lat, double lng, String query) {
+                      runOnUiThread(() -> openGoogleMapsSearchAt(
+                              lat,
+                              lng,
+                              query == null || query.trim().isEmpty()
+                                      ? "餐廳 小吃 正餐"
+                                      : query.trim()
+                      ));
+                  }
+
+                  @JavascriptInterface
+                  public void openAt(double lat, double lng) {
+                      runOnUiThread(() -> openGoogleMapsAt(lat, lng));
+                  }
+              }
+
+              private void openGoogleMapsSearchAt(
+                      double lat,
+                      double lng,
+                      String query
+              ) {
+                  String geoUri =
+                          "geo:" + lat + "," + lng
+                                  + "?q=" + Uri.encode(query);
+
+                  Intent intent = new Intent(
+                          Intent.ACTION_VIEW,
+                          Uri.parse(geoUri)
+                  );
+
+                  /* 優先指定 Google Maps，避免瀏覽器重新用手機目前位置排序。 */
+                  intent.setPackage("com.google.android.apps.maps");
+
+                  try {
+                      startActivity(intent);
+                  } catch (Exception firstError) {
+                      try {
+                          intent.setPackage(null);
+                          startActivity(intent);
+                      } catch (Exception secondError) {
+                          String fallback =
+                                  "https://www.google.com/maps/search/?api=1&query="
+                                          + Uri.encode(query)
+                                          + "&center=" + lat + "," + lng;
+                          try {
+                              startActivity(new Intent(
+                                      Intent.ACTION_VIEW,
+                                      Uri.parse(fallback)
+                              ));
+                          } catch (Exception finalError) {
+                              Toast.makeText(
+                                      MainActivity.this,
+                                      "無法開啟 Google Maps",
+                                      Toast.LENGTH_SHORT
+                              ).show();
+                          }
+                      }
+                  }
+              }
+
+              private void openGoogleMapsAt(double lat, double lng) {
+                  String geoUri =
+                          "geo:" + lat + "," + lng + "?z=17";
+
+                  Intent intent = new Intent(
+                          Intent.ACTION_VIEW,
+                          Uri.parse(geoUri)
+                  );
+                  intent.setPackage("com.google.android.apps.maps");
+
+                  try {
+                      startActivity(intent);
+                  } catch (Exception firstError) {
+                      try {
+                          intent.setPackage(null);
+                          startActivity(intent);
+                      } catch (Exception secondError) {
+                          String fallback =
+                                  "https://www.google.com/maps/@"
+                                          + lat + "," + lng + ",17z";
+                          try {
+                              startActivity(new Intent(
+                                      Intent.ACTION_VIEW,
+                                      Uri.parse(fallback)
+                              ));
+                          } catch (Exception finalError) {
+                              Toast.makeText(
+                                      MainActivity.this,
+                                      "無法開啟 Google Maps",
+                                      Toast.LENGTH_SHORT
+                              ).show();
+                          }
+                      }
                   }
               }
 
@@ -3354,11 +3498,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native34.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native35.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native34-APK
-          path: YunJiaNanWeekend-V5.5-native34.apk
+          name: YunJiaNanWeekend-V5.5-Native35-APK
+          path: YunJiaNanWeekend-V5.5-native35.apk
           if-no-files-found: error
