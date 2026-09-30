@@ -2582,6 +2582,35 @@ jobs:
           for token in ["function planMealRestaurantSearchUrl(ctx,i)","function openMealRestaurantSearch(ctx,i)","data-pmeal","🍜 搜尋附近餐廳","AI SMART ROUTE · Native31","V5.5 · Native31"]:
               if token not in s: raise RuntimeError("Native31 missing expected token: "+token)
 
+          # Native32: precise meal-area search centered on the next stop.
+          old_meal_search_anchor='function planMealSearchAnchor(ctx,i){\n  if(!ctx)return null;\n\n  var stops=Array.isArray(ctx.stops)?ctx.stops:[];\n  var current=stops[i]||null;\n  var prev=i>0?stops[i-1]:null;\n\n  /* The meal break happens after the drive toward stop i,\n     so the upcoming stop is the best local search anchor. */\n  var coord=stopCoord(current);\n  if(coord)return {coord:coord,stop:current};\n\n  coord=stopCoord(prev);\n  if(coord)return {coord:coord,stop:prev};\n\n  if(ctx.startCoord)return {coord:ctx.startCoord,stop:null};\n  return {coord:null,stop:current||prev||null};\n}\n\nfunction planMealRestaurantSearchUrl(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n  var query="餐廳 小吃 在地美食";\n\n  if(anchor&&anchor.coord&&anchor.coord.length>=2){\n    var lat=Number(anchor.coord[0]);\n    var lng=Number(anchor.coord[1]);\n\n    if(isFinite(lat)&&isFinite(lng)){\n      return "https://www.google.com/maps/search/"+encodeURIComponent(query)+"/@"+\n        lat.toFixed(6)+","+lng.toFixed(6)+",15z";\n    }\n  }\n\n  var place="";\n  if(anchor&&anchor.stop){\n    place=[anchor.stop.name,anchor.stop.district,anchor.stop.city]\n      .filter(Boolean).join(" ");\n  }\n\n  return "https://www.google.com/maps/search/?api=1&query="+\n    encodeURIComponent((place?place+" ":"")+query);\n}\n\n'
+          new_meal_search_anchor='function planMealSearchAnchor(ctx,i){\n  if(!ctx)return null;\n\n  var stops=Array.isArray(ctx.stops)?ctx.stops:[];\n  var next=stops[i]||null;\n  var prev=i>0?stops[i-1]:null;\n\n  /* The meal break is immediately before stop i.\n     Native32 therefore treats stop i as the primary lunch-area anchor. */\n  var coord=stopCoord(next);\n  if(coord)return {coord:coord,stop:next,source:"next"};\n\n  coord=stopCoord(prev);\n  if(coord)return {coord:coord,stop:prev,source:"prev"};\n\n  if(ctx.startCoord)return {coord:ctx.startCoord,stop:next||prev||null,source:"start"};\n  return {coord:null,stop:next||prev||null,source:"text"};\n}\n\nfunction planMealSearchPlaceText(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n  if(!anchor||!anchor.stop)return "";\n\n  var s=anchor.stop;\n  return [\n    String(s.name||""),\n    String(s.city||""),\n    String(s.district||"")\n  ].filter(Boolean).join(" ").trim();\n}\n\nfunction planMealRestaurantSearchUrl(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n  var place=planMealSearchPlaceText(ctx,i);\n  var query=(place?place+" ":"")+"附近 3 公里 餐廳 小吃 正餐";\n\n  if(anchor&&anchor.coord&&anchor.coord.length>=2){\n    var lat=Number(anchor.coord[0]);\n    var lng=Number(anchor.coord[1]);\n\n    if(isFinite(lat)&&isFinite(lng)){\n      return "https://www.google.com/maps/search/"+encodeURIComponent(query)+"/@"+\n        lat.toFixed(6)+","+lng.toFixed(6)+",16z";\n    }\n  }\n\n  return "https://www.google.com/maps/search/?api=1&query="+\n    encodeURIComponent(query);\n}\n\nfunction planMealSearchButtonLabel(ctx,i){\n  var anchor=planMealSearchAnchor(ctx,i);\n\n  if(anchor&&anchor.stop&&anchor.stop.name){\n    var name=String(anchor.stop.name);\n    if(name.length>10)name=name.slice(0,10)+"…";\n    return "🍜 搜尋「"+name+"」附近餐廳";\n  }\n\n  return "🍜 搜尋附近餐廳";\n}\n\n\n'
+          if old_meal_search_anchor not in s: raise RuntimeError("Native32 cannot find meal search anchor")
+          s=s.replace(old_meal_search_anchor,new_meal_search_anchor,1)
+
+          old_meal_break_card='function planMealBreakHtml(ctx,i){\n  if(!ctx)return "";\n\n  var x=planTimeline(ctx)[i];\n  if(!x||!x.mealBefore)return "";\n\n  var w=planMealWindow(x.mealBefore);\n  var anchor=planMealSearchAnchor(ctx,i);\n  var nearText="";\n\n  if(anchor&&anchor.stop&&anchor.stop.name){\n    nearText="以「"+anchor.stop.name+"」附近為中心搜尋。";\n  }else{\n    nearText="會以目前可用的位置附近搜尋。";\n  }\n\n  return \'<div class="plan-meal-card">\'+\n    \'<div class="plan-meal-title">\'+w.icon+\' 建議\'+w.label+\' \'+planClock(x.mealStart)+\'–\'+planClock(x.mealEnd)+\'</div>\'+\n    \'<div class="plan-meal-text">附近沒有排到合適的正餐站，先保留 \'+w.duration+\' 分鐘自由用餐；咖啡、甜點、下午茶與伴手禮不會代替正餐，後面的景點時間已自動順延。\'+nearText+\'</div>\'+\n    \'<button class="plan-meal-search" data-pmeal="\'+i+\'">🍜 搜尋附近餐廳</button>\'+\n  \'</div>\';\n}\n\n'
+          new_meal_break_card='function planMealBreakHtml(ctx,i){\n  if(!ctx)return "";\n\n  var x=planTimeline(ctx)[i];\n  if(!x||!x.mealBefore)return "";\n\n  var w=planMealWindow(x.mealBefore);\n  var anchor=planMealSearchAnchor(ctx,i);\n  var nearText="";\n\n  if(anchor&&anchor.stop&&anchor.stop.name){\n    nearText="會優先搜尋「"+anchor.stop.name+"」附近約 3 公里的餐廳／小吃，減少為吃飯繞遠路。";\n  }else{\n    nearText="會以目前可用的位置附近搜尋餐廳／小吃。";\n  }\n\n  return \'<div class="plan-meal-card">\'+\n    \'<div class="plan-meal-title">\'+w.icon+\' 建議\'+w.label+\' \'+planClock(x.mealStart)+\'–\'+planClock(x.mealEnd)+\'</div>\'+\n    \'<div class="plan-meal-text">附近沒有排到合適的正餐站，先保留 \'+w.duration+\' 分鐘自由用餐；後面的景點時間已自動順延。\'+nearText+\'</div>\'+\n    \'<button class="plan-meal-search" data-pmeal="\'+i+\'">\'+planMealSearchButtonLabel(ctx,i)+\'</button>\'+\n  \'</div>\';\n}\n\n\n'
+          if old_meal_break_card not in s: raise RuntimeError("Native32 cannot find meal break card")
+          s=s.replace(old_meal_break_card,new_meal_break_card,1)
+
+          old_planner_hint='function updatePlannerLocationHint(){\n  var el=$("planStartHint");\n  if(!el)return;\n  el.textContent=plannerLocationLabel()+"；找不到合適正餐時會保留 60 分鐘自由午餐，並可直接按「搜尋附近餐廳」用該時段附近的景點位置開啟 Google Maps。";\n}\n\n\n'
+          new_planner_hint='function updatePlannerLocationHint(){\n  var el=$("planStartHint");\n  if(!el)return;\n  el.textContent=plannerLocationLabel()+"；Native32 的自由午餐會直接以「午餐後下一站」為搜尋中心，優先找約 3 公里內的餐廳／小吃，避免 Google Maps 把你帶太遠。";\n}\n\n\n'
+          if old_planner_hint not in s: raise RuntimeError("Native32 cannot find planner hint")
+          s=s.replace(old_planner_hint,new_planner_hint,1)
+
+          s=s.replace("AI SMART ROUTE · Native31","AI SMART ROUTE · Native32",1)
+          s=s.replace("找不到合適正餐時會保留自由午餐，並可直接搜尋該時段附近的餐廳、小吃與在地美食。","自由午餐會以午餐後下一站為中心，優先搜尋約 3 公里內的餐廳、小吃與正餐，減少繞路。",1)
+          s=s.replace("📍 Native31：正在呼叫 Android 定位…","📍 Native32：正在呼叫 Android 定位…",1)
+          footer_prefix="<footer>雲嘉南週末去哪玩 · V5.5 · Native"
+          fi=s.find(footer_prefix)
+          if fi<0: raise RuntimeError("Native32 cannot find footer version")
+          fj=s.find("</footer>",fi)
+          if fj<0: raise RuntimeError("Native32 cannot find footer end")
+          s=s[:fi]+"<footer>雲嘉南週末去哪玩 · V5.5 · Native32"+s[fj:]
+
+          for token in ["function planMealSearchPlaceText(ctx,i)","function planMealSearchButtonLabel(ctx,i)","附近 3 公里 餐廳 小吃 正餐","16z","AI SMART ROUTE · Native32","V5.5 · Native32"]:
+              if token not in s: raise RuntimeError("Native32 missing expected token: "+token)
+
           # Native18 guard: nearby code must not reference undefined matchFilter().
           if "matchFilter(s)" in s:
               raise RuntimeError("nearbyMatchCount still references undefined matchFilter(s)")
@@ -2655,8 +2684,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 31
-                  versionName "5.5-native-31"
+                  versionCode 32
+                  versionName "5.5-native-32"
               }
 
               buildTypes {
@@ -3240,11 +3269,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native31.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native32.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native31-APK
-          path: YunJiaNanWeekend-V5.5-native31.apk
+          name: YunJiaNanWeekend-V5.5-Native32-APK
+          path: YunJiaNanWeekend-V5.5-native32.apk
           if-no-files-found: error
