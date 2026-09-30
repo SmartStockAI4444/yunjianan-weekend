@@ -2521,6 +2521,30 @@ jobs:
           for token in ["function planMealFoodClass(s)","function planIsMealStop(s)","咖啡、甜點、下午茶與伴手禮不會代替正餐","score+=110","AI SMART ROUTE · Native29","V5.5 · Native29"]:
               if token not in s: raise RuntimeError("Native29 missing expected token: "+token)
 
+          # Native30: strict proper-meal classifier; venue name has priority over generic food tags.
+          old_food_classifier='function planFoodRaw(s){\n  if(!s)return "";\n  var tags=Array.isArray(s.tags)?s.tags.join(" "):"";\n  return [\n    String(s.type||""),\n    String(s.name||""),\n    String(s.why||""),\n    tags\n  ].join(" ");\n}\n\nfunction planMealFoodClass(s){\n  if(!s)return "";\n\n  var raw=planFoodRaw(s);\n\n  /* Strong meal wording wins even if the venue also serves coffee/dessert. */\n  if(/餐廳|餐馆|餐館|食堂|簡餐|简餐|早午餐|午餐|晚餐|正餐|便當|便当|火雞肉飯|火鸡肉饭|雞肉飯|鸡肉饭|魯肉飯|滷肉飯|卤肉饭|肉燥飯|牛肉湯|牛肉汤|虱目魚|虱目鱼|火鍋|火锅|鍋物|锅物|燒肉|烧肉|牛排|咖哩|咖喱|水餃|水饺|鍋貼|锅贴|拉麵|拉面|麵店|面店|麵館|面馆|米糕|粥|小吃|料理|餐飲|餐饮|魚頭|鱼头|brunch|bistro|restaurant/i.test(raw)){\n    return "meal";\n  }\n\n  if(/咖啡|甜點|甜点|蛋糕|冰品|冰淇淋|茶屋|茶飲|茶饮|飲料|饮料|下午茶|伴手禮|伴手礼|糕餅|糕饼|餅乾|饼干|巧克力|烘焙|麵包|面包|甜品|豆花|仙草|布丁|乳酪|果汁|糖果|餅舖|饼铺/i.test(raw)){\n    return "snack";\n  }\n\n  if(planIsFoodStop(s))return "general";\n  return "";\n}\n\n'
+          new_food_classifier='function planFoodRaw(s){\n  if(!s)return "";\n  var tags=Array.isArray(s.tags)?s.tags.join(" "):"";\n  return [\n    String(s.type||""),\n    String(s.name||""),\n    tags\n  ].join(" ");\n}\n\nfunction planMealFoodClass(s){\n  if(!s)return "";\n\n  var name=String(s.name||"");\n  var type=String(s.type||"");\n  var tags=Array.isArray(s.tags)?s.tags.join(" "):"";\n\n  var strongMealName=/餐廳|餐馆|餐館|食堂|簡餐|简餐|早午餐|午餐|晚餐|正餐|便當|便当|火雞肉飯|火鸡肉饭|雞肉飯|鸡肉饭|魯肉飯|滷肉飯|卤肉饭|肉燥飯|牛肉湯|牛肉汤|虱目魚|虱目鱼|火鍋|火锅|鍋物|锅物|燒肉|烧肉|牛排|咖哩|咖喱|水餃|水饺|鍋貼|锅贴|拉麵|拉面|麵店|面店|麵館|面馆|米糕|粥|小吃|料理|魚頭|鱼头|蚵仔煎|排骨飯|排骨饭|滷味|卤味|brunch|bistro|restaurant/i;\n  var strongSnackName=/咖啡|甜點|甜点|蛋糕|冰品|冰淇淋|茶屋|茶飲|茶饮|飲料|饮料|下午茶|伴手禮|伴手礼|糕餅|糕饼|餅乾|饼干|巧克力|烘焙|麵包|面包|甜品|豆花|仙草|布丁|乳酪|果汁|糖果|餅舖|饼铺/i;\n\n  /* Name wins first:\n     "咖啡博物館" / "咖啡文化館" must stay snack,\n     while an explicit "咖啡餐廳" can still count as a meal because\n     the strong meal signal is present in the name. */\n  if(strongMealName.test(name))return "meal";\n  if(strongSnackName.test(name))return "snack";\n\n  /* Type may qualify only when it is explicitly meal-like.\n     Generic "美食" or "餐飲" alone is NOT enough. */\n  if(/餐廳|餐馆|餐館|食堂|小吃|正餐|簡餐|简餐|料理|便當|便当|早午餐|午餐|晚餐/i.test(type)){\n    return "meal";\n  }\n  if(/咖啡|甜點|甜点|下午茶|伴手禮|伴手礼|糕餅|糕饼|冰品|烘焙/i.test(type)){\n    return "snack";\n  }\n\n  /* Tags can promote to meal only with a SPECIFIC meal keyword.\n     We intentionally exclude generic "美食" and "餐飲". */\n  if(/火雞肉飯|火鸡肉饭|雞肉飯|鸡肉饭|魯肉飯|滷肉飯|卤肉饭|肉燥飯|牛肉湯|牛肉汤|虱目魚|虱目鱼|火鍋|火锅|鍋物|锅物|燒肉|烧肉|牛排|咖哩|咖喱|水餃|水饺|鍋貼|锅贴|拉麵|拉面|麵店|面店|麵館|面馆|米糕|粥|小吃|料理|食堂|便當|便当|早午餐|正餐|午餐|晚餐|魚頭|鱼头|蚵仔煎|排骨飯|排骨饭|滷味|卤味/i.test(tags)){\n    return "meal";\n  }\n\n  if(/咖啡|甜點|甜点|蛋糕|冰品|冰淇淋|茶屋|茶飲|茶饮|飲料|饮料|下午茶|伴手禮|伴手礼|糕餅|糕饼|餅乾|饼干|巧克力|烘焙|麵包|面包|甜品|豆花|仙草|布丁|乳酪|果汁|糖果/i.test(tags)){\n    return "snack";\n  }\n\n  if(planIsFoodStop(s))return "general";\n  return "";\n}\n\n\n'
+          if old_food_classifier not in s: raise RuntimeError("Native30 cannot find food classifier")
+          s=s.replace(old_food_classifier,new_food_classifier,1)
+
+          old_planner_hint='function updatePlannerLocationHint(){\n  var el=$("planStartHint");\n  if(!el)return;\n  el.textContent=plannerLocationLabel()+"；一日行程午餐會優先安排餐廳／小吃等正餐，咖啡甜點伴手禮不會代替正餐；沒有合適正餐時保留 60 分鐘自由用餐。";\n}\n\n\n'
+          new_planner_hint='function updatePlannerLocationHint(){\n  var el=$("planStartHint");\n  if(!el)return;\n  el.textContent=plannerLocationLabel()+"；Native30 會嚴格判斷正餐：餐廳／小吃／飯麵鍋物才可當午餐，名稱含咖啡、甜點、下午茶、伴手禮等不會因「美食／餐飲」標籤而被誤判。";\n}\n\n\n'
+          if old_planner_hint not in s: raise RuntimeError("Native30 cannot find planner hint")
+          s=s.replace(old_planner_hint,new_planner_hint,1)
+
+          s=s.replace("AI SMART ROUTE · Native29","AI SMART ROUTE · Native30",1)
+          s=s.replace("午餐優先找餐廳／小吃等正餐；咖啡、甜點、下午茶與伴手禮不再代替正餐，找不到正餐就保留 60 分鐘自由用餐。","嚴格正餐判斷：餐廳／小吃／飯麵鍋物才能當午餐；咖啡、甜點、下午茶與伴手禮不會因一般美食標籤被誤判。",1)
+          s=s.replace("📍 Native29：正在呼叫 Android 定位…","📍 Native30：正在呼叫 Android 定位…",1)
+          footer_prefix="<footer>雲嘉南週末去哪玩 · V5.5 · Native"
+          fi=s.find(footer_prefix)
+          if fi<0: raise RuntimeError("Native30 cannot find footer version")
+          fj=s.find("</footer>",fi)
+          if fj<0: raise RuntimeError("Native30 cannot find footer end")
+          s=s[:fi]+"<footer>雲嘉南週末去哪玩 · V5.5 · Native30"+s[fj:]
+
+          for token in ["強正餐判斷" if False else "function planMealFoodClass(s)","Generic \"美食\" or \"餐飲\" alone is NOT enough","AI SMART ROUTE · Native30","V5.5 · Native30"]:
+              if token not in s: raise RuntimeError("Native30 missing expected token: "+token)
+
           # Native18 guard: nearby code must not reference undefined matchFilter().
           if "matchFilter(s)" in s:
               raise RuntimeError("nearbyMatchCount still references undefined matchFilter(s)")
@@ -2594,8 +2618,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 29
-                  versionName "5.5-native-29"
+                  versionCode 30
+                  versionName "5.5-native-30"
               }
 
               buildTypes {
@@ -3179,11 +3203,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native29.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native30.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native29-APK
-          path: YunJiaNanWeekend-V5.5-native29.apk
+          name: YunJiaNanWeekend-V5.5-Native30-APK
+          path: YunJiaNanWeekend-V5.5-native30.apk
           if-no-files-found: error
