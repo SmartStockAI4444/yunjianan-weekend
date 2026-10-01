@@ -3090,6 +3090,23 @@ jobs:
           for token in ["function renderRemainingTimeChoice(opts)","今天剩餘時間較短","Native44 不會再把這種情況誤顯示成","function planSetTomorrowAndRun(opts,mode)","id=\"pdate\"","AI SMART ROUTE · Native44","V5.5 · Native44"]:
               if token not in s: raise RuntimeError("Native44 missing expected token: "+token)
 
+          # Native45: mobile date picker width fix; first-stage stable build.
+          native45_css='\n/* ===== Native45 Mobile Date Picker Fix ===== */\n.planner-date-row{\n  grid-template-columns:1fr !important;\n}\n.planner-date-row label{\n  display:block;\n  width:100%;\n}\n.planner-date-row input[type="date"]{\n  display:block;\n  width:100% !important;\n  min-width:0 !important;\n  max-width:none !important;\n  padding:12px 14px !important;\n  font-size:18px !important;\n  line-height:1.35;\n  box-sizing:border-box;\n}\n.planner-date-help{\n  grid-column:1 !important;\n  width:100%;\n}\n@media (min-width:520px){\n  .planner-date-row{\n    grid-template-columns:128px minmax(0,1fr) !important;\n  }\n  .planner-date-help{\n    grid-column:1 / -1 !important;\n  }\n}\n'
+          if '/* ===== Native45 Mobile Date Picker Fix ===== */' not in s:
+              s=s.replace('</style>',native45_css+'\n</style>',1)
+
+          s=s.replace('Native44','Native45')
+
+          for token in [
+              '/* ===== Native45 Mobile Date Picker Fix ===== */',
+              'grid-template-columns:1fr !important',
+              'id="pdate"',
+              'AI SMART ROUTE · Native45',
+              'V5.5 · Native45'
+          ]:
+              if token not in s:
+                  raise RuntimeError('Native45 missing expected token: '+token)
+
           # Native18 guard: nearby code must not reference undefined matchFilter().
           if "matchFilter(s)" in s:
               raise RuntimeError("nearbyMatchCount still references undefined matchFilter(s)")
@@ -3163,8 +3180,8 @@ jobs:
                   applicationId "com.yunjianan.weekend"
                   minSdk 26
                   targetSdk 35
-                  versionCode 44
-                  versionName "5.5-native-44"
+                  versionCode 45
+                  versionName "5.5-native-45"
               }
 
               buildTypes {
@@ -3838,11 +3855,11 @@ jobs:
         run: gradle -p _android_build assembleDebug --stacktrace
 
       - name: Rename APK
-        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native44.apk
+        run: cp _android_build/app/build/outputs/apk/debug/app-debug.apk YunJiaNanWeekend-V5.5-native45.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: YunJiaNanWeekend-V5.5-Native44-APK
-          path: YunJiaNanWeekend-V5.5-native44.apk
+          name: YunJiaNanWeekend-V5.5-Native45-APK
+          path: YunJiaNanWeekend-V5.5-native45.apk
           if-no-files-found: error
