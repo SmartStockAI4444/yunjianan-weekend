@@ -1692,7 +1692,7 @@ footer{font-size:11px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V5.5 · Web/PWA</footer>
+<footer>雲嘉南週末去哪玩 · Web/PWA Stable</footer>
 
 <script>
 if(window.__NATIVE_ANDROID_APP__){
@@ -4279,7 +4279,7 @@ function renderRemainingTimeChoice(opts){
       '<div class="plan-late-title">🕕 今天剩餘時間較短</div>'+
       '<div class="plan-late-time">手機目前時間 '+planNowLabel()+'</div>'+
       '<p>現在還沒有超過晚上 21:00，但依目前時間與景點停留時間估算，今天已不足以完整排入一個一般觀光景點。</p>'+
-      '<p>Native45 不會再把這種情況誤顯示成「已超過 21:00」。建議改排明天，或直接從上方「📅 行程日期」選其他日期。</p>'+
+      '<p>系統不會把這種情況誤顯示成「已超過 21:00」。建議改排明天，或直接從上方「📅 行程日期」選其他日期。</p>'+
       '<p class="plan-late-sub">目前條件：'+area+'・'+theme+'・'+planTargetDateLabel(selectedDate)+'</p>'+
       '<div class="plan-late-actions">'+
         '<button data-next-plan="half">🌅 排明天半日・3站</button>'+
@@ -4306,7 +4306,7 @@ function renderLateNightChoice(opts){
     '<div class="plan-late-card">'+
       '<div class="plan-late-title">🌙 現在時間較晚</div>'+
       '<div class="plan-late-time">手機目前時間 '+planNowLabel()+'</div>'+
-      '<p>現在已超過晚上 21:00。Native45 不會用服務區、休息站等 24 小時設施硬湊旅遊行程。</p>'+
+      '<p>現在已超過晚上 21:00。系統不會用服務區、休息站等 24 小時設施硬湊旅遊行程。</p>'+
       '<p>目前沒有找到「可確認仍營業，而且適合夜遊」的地點，因此建議直接安排明天，或從上方日期欄選其他日期。</p>'+
       '<p class="plan-late-sub">保留你的條件：'+area+'・'+theme+'。</p>'+
       '<div class="plan-late-actions">'+
@@ -4949,7 +4949,7 @@ function updatePlannerLocationHint(){
 
   el.textContent=
     plannerLocationLabel()+
-    "；Native45 行程日期："+planTargetDateLabel(dateValue)+
+    "；行程日期："+planTargetDateLabel(dateValue)+
     "。已知休館日、活動日期不符、以及預估抵達時已關門的景點會避開；未收錄可靠營業時間的景點仍會提示用 Maps 再確認。";
 }
 

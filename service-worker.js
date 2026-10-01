@@ -1,4 +1,4 @@
-const CACHE_NAME = "yunjianan-web-pwa-stable-v1";
+const CACHE_NAME = "yunjianan-web-pwa-stable-v2";
 const CORE = [
   "./",
   "./index.html",
