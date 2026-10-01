@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#1f6b4f">
@@ -1056,6 +1057,29 @@ footer{font-size:11px}
   box-shadow:0 6px 22px rgba(24,55,42,.05);
 }
 .location-panel.hidden{display:none}
+.location-panel.collapsed{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.location-head-right{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:7px;
+  min-width:0;
+}
+.location-panel-toggle{
+  flex:0 0 auto;
+  height:28px;
+  padding:0 10px;
+  border:0;
+  border-radius:999px;
+  background:#e6f2eb;
+  color:#1c6b4b;
+  font-size:10px;
+  font-weight:950;
+}
+.location-panel-body.hidden{display:none}
 .location-panel-head{
   display:flex;
   align-items:center;
@@ -1144,6 +1168,319 @@ footer{font-size:11px}
   }
 }
 
+
+/* ===== Native18 Nearby Distance UI ===== */
+.distance-chip{
+  min-height:28px;
+  padding:0 9px;
+  box-shadow:0 3px 10px rgba(24,70,50,.10);
+  border:1px solid rgba(24,70,50,.08);
+}
+.distance-chip.nearest{
+  background:#17372a;
+  color:#fff;
+  border-color:#17372a;
+}
+.distance-chip.near{
+  background:#dff3e8;
+  color:#176747;
+  border-color:#c8e8d7;
+}
+.distance-chip.far{
+  background:#fff1d9;
+  color:#8b5b18;
+  border-color:#f0dfbe;
+}
+.nearby-zone{
+  grid-column:1 / -1;
+  width:100%;
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:10px;
+  margin:2px 2px -2px;
+  padding:7px 2px 3px;
+  color:#203b31;
+}
+.nearby-zone span{
+  font-size:15px;
+  font-weight:950;
+  letter-spacing:.02em;
+}
+.nearby-zone small{
+  font-size:10px;
+  font-weight:850;
+  color:#7a8982;
+}
+.nearby-zone.nearest span:before{content:"📍 "; }
+.nearby-zone.near span:before{content:"🚗 "; }
+.nearby-zone.far span:before{content:"🧭 "; }
+.nearby-range button{
+  transition:transform .16s ease,background .16s ease,color .16s ease,box-shadow .16s ease;
+}
+.nearby-range button:active{transform:scale(.95)}
+.nearby-hint.nearby-pulse{
+  animation:nearbyHintPulse .35s ease;
+}
+.cards.nearby-updated .travel-card{
+  animation:nearbyCardIn .28s ease both;
+}
+@keyframes nearbyHintPulse{
+  0%{transform:scale(.985);opacity:.75}
+  100%{transform:scale(1);opacity:1}
+}
+@keyframes nearbyCardIn{
+  0%{transform:translateY(5px);opacity:.82}
+  100%{transform:translateY(0);opacity:1}
+}
+
+
+.plan-start-hint{
+  margin-top:10px;padding:9px 11px;border-radius:12px;
+  background:rgba(255,255,255,.08);color:#d8e7df;
+  font-size:12px;font-weight:750;line-height:1.45
+}
+.plan-smart-summary{
+  margin:0 0 12px;padding:10px 12px;border-radius:13px;
+  background:rgba(255,255,255,.09);color:#e3f2ea;
+  font-size:12px;font-weight:800;line-height:1.45
+}
+.plan-distance{
+  margin-top:7px;color:#2d6f55;font-size:12px;font-weight:850
+}
+
+
+/* ===== Native20 AI Timetable ===== */
+.plan-time-row{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:7px;
+  margin:0 0 8px 43px;
+}
+.plan-time-badge{
+  display:inline-flex;
+  align-items:center;
+  min-height:27px;
+  padding:0 9px;
+  border-radius:999px;
+  background:#17372a;
+  color:#fff;
+  font-size:12px;
+  font-weight:950;
+  letter-spacing:.02em;
+}
+.plan-stay-badge{
+  display:inline-flex;
+  align-items:center;
+  min-height:27px;
+  padding:0 9px;
+  border-radius:999px;
+  background:#edf5f0;
+  color:#2e6652;
+  font-size:11px;
+  font-weight:900;
+}
+.plan-role-badge{
+  display:inline-flex;
+  align-items:center;
+  min-height:24px;
+  padding:0 8px;
+  margin-top:6px;
+  border-radius:999px;
+  background:#fff4dc;
+  color:#855817;
+  font-size:10px;
+  font-weight:900;
+}
+.plan-timetable-note{
+  margin:0 0 12px;
+  padding:10px 12px;
+  border-radius:13px;
+  background:#eef7f2;
+  color:#245c47;
+  font-size:12px;
+  font-weight:850;
+  line-height:1.5;
+}
+
+
+/* ===== Native21 Route Reality ===== */
+.plan-drive-badge{
+  display:inline-flex;
+  align-items:center;
+  min-height:27px;
+  padding:0 9px;
+  border-radius:999px;
+  background:#e8f0ff;
+  color:#315a8a;
+  font-size:11px;
+  font-weight:900;
+}
+
+
+/* ===== Native22 Pre-departure Check ===== */
+.plan-feasibility{
+  margin:8px 0 2px;
+  padding:8px 10px;
+  border-radius:11px;
+  font-size:11px;
+  font-weight:850;
+  line-height:1.45;
+}
+.plan-feasibility.good{
+  background:#e4f5ea;
+  color:#1f6a49;
+}
+.plan-feasibility.check{
+  background:#fff2d9;
+  color:#8a5d1b;
+}
+.plan-feasibility.event{
+  background:#e9f0ff;
+  color:#365f8b;
+}
+.plan-feas-summary-inline{
+  display:block;
+  margin-top:6px;
+  color:#fff7c8;
+  font-size:11px;
+  font-weight:850;
+}
+.phours{
+  background:#fff5dc !important;
+  color:#75551f !important;
+}
+
+\
+/* ===== Native24 Today-aware Planner ===== */
+.plan-now-note{margin:0 0 10px;padding:9px 11px;border-radius:12px;background:#fff6d8;color:#765a17;font-size:11px;font-weight:900;line-height:1.45}
+.plan-feasibility.closed{background:#ffe7e4;color:#9b3a31}
+
+\
+/* ===== Native25 Late-night Protection ===== */
+.plan-late-card{padding:14px;border-radius:16px;background:#fff7df;color:#5b4618;margin-top:8px;box-shadow:0 5px 16px rgba(27,65,49,.10)}
+.plan-late-title{font-size:20px;font-weight:950;margin-bottom:4px;color:#17372a}
+.plan-late-time{font-size:12px;font-weight:900;color:#8a641c;margin-bottom:9px}
+.plan-late-card p{margin:7px 0;font-size:12px;font-weight:800;line-height:1.55}
+.plan-late-sub{color:#6b746f}
+.plan-late-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.plan-late-actions button{border:0;border-radius:12px;padding:12px 8px;font-size:12px;font-weight:950;background:#176b4d;color:#fff}
+.plan-tomorrow-note{margin:0 0 10px;padding:9px 11px;border-radius:12px;background:#e6f4ff;color:#315f83;font-size:11px;font-weight:900;line-height:1.45}
+
+\
+/* ===== Native28 Meal Protection ===== */
+.plan-meal-card{margin:8px 0;padding:11px 12px;border-radius:14px;background:#fff4d8;border:1px solid #efdcae;color:#73551a;box-shadow:0 3px 12px rgba(80,60,20,.08)}
+.plan-meal-title{font-size:13px;font-weight:950;margin-bottom:4px}
+.plan-meal-text{font-size:10px;font-weight:800;line-height:1.5;color:#7d6a42}
+.plan-meal-stop-badge{display:inline-flex;align-items:center;min-height:22px;padding:0 7px;border-radius:999px;background:#fff2cf;color:#835d17;font-size:9px;font-weight:950}
+
+\
+/* ===== Native29 Proper Meal Priority ===== */
+.plan-food-class-badge{display:inline-flex;align-items:center;min-height:22px;padding:0 7px;border-radius:999px;font-size:9px;font-weight:950}
+.plan-food-class-badge.meal{background:#e7f6eb;color:#176845}
+.plan-food-class-badge.snack{background:#fff1d8;color:#8b5b18}
+.plan-food-class-badge.general{background:#eef1f0;color:#66706b}
+
+\
+/* ===== Native31 Nearby Restaurant Search ===== */
+.plan-meal-search{margin-top:9px;border:0;border-radius:11px;padding:9px 12px;background:#fff;color:#7a5411;font-size:11px;font-weight:950;box-shadow:0 1px 5px rgba(70,50,15,.12)}
+.plan-meal-search:active{transform:translateY(1px)}
+
+\
+/* ===== Native33 Local Lunch Search ===== */
+.plan-meal-center{margin-top:7px;padding:7px 9px;border-radius:10px;background:rgba(255,255,255,.72);color:#355d4c;font-size:10px;font-weight:850}
+.plan-meal-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:9px}
+.plan-meal-actions .plan-meal-search,.plan-meal-actions .plan-meal-map{margin-top:0;flex:1 1 140px}
+.plan-meal-map{border:0;border-radius:11px;padding:9px 12px;background:#edf4f2;color:#28594b;font-size:11px;font-weight:950;box-shadow:0 1px 5px rgba(35,75,65,.10)}
+
+\
+/* ===== Native34 Destination Meal Query ===== */
+.plan-meal-query{margin-top:7px;padding:7px 9px;border-radius:9px;background:#fff8e8;color:#6e531c;font-size:9px;font-weight:850;line-height:1.45}
+
+\
+/* ===== Native35 Forced Destination Coordinates ===== */
+.plan-meal-force{margin-top:7px;padding:7px 9px;border-radius:9px;background:#eaf7f1;color:#1f6550;font-size:9px;font-weight:900;line-height:1.45}
+
+
+/* ===== Native40 Theme Relevance ===== */
+.plan-theme-reason{
+  margin:8px 0 0;
+  padding:8px 10px;
+  border-radius:10px;
+  background:#eef8f2;
+  color:#246347;
+  font-size:11px;
+  font-weight:850;
+  line-height:1.45;
+  border:1px solid #d8ecdf;
+}
+
+
+/* ===== Native43 Date Planner ===== */
+.planner-date-row{
+  margin-top:12px;
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr);
+  gap:8px 10px;
+  align-items:center;
+  padding:10px 12px;
+  border-radius:14px;
+  background:rgba(255,255,255,.10);
+}
+.planner-date-row label{font-weight:900;white-space:nowrap}
+.planner-date-row input[type="date"]{
+  width:100%;min-width:0;box-sizing:border-box;border:0;border-radius:11px;
+  padding:10px 11px;font:inherit;font-weight:800;color:#1d2520;background:#fff;
+}
+.planner-date-help{
+  grid-column:1/-1;font-size:12px;line-height:1.45;opacity:.88;
+}
+
+
+/* ===== Native45 Mobile Date Picker Fix ===== */
+.planner-date-row{
+  grid-template-columns:1fr !important;
+}
+.planner-date-row label{
+  display:block;
+  width:100%;
+}
+.planner-date-row input[type="date"]{
+  display:block;
+  width:100% !important;
+  min-width:0 !important;
+  max-width:none !important;
+  padding:12px 14px !important;
+  font-size:18px !important;
+  line-height:1.35;
+  box-sizing:border-box;
+}
+.planner-date-help{
+  grid-column:1 !important;
+  width:100%;
+}
+@media (min-width:520px){
+  .planner-date-row{
+    grid-template-columns:128px minmax(0,1fr) !important;
+  }
+  .planner-date-help{
+    grid-column:1 / -1 !important;
+  }
+}
+
+
+/* ===== Web/PWA Stable ===== */
+.web-share-note{
+  margin-top:10px;
+  padding:10px 12px;
+  border-radius:13px;
+  background:rgba(255,255,255,.10);
+  color:#d8e8df;
+  font-size:12px;
+  line-height:1.5;
+}
+
 </style>
 </head>
 <body>
@@ -1213,7 +1550,7 @@ footer{font-size:11px}
   <button class="pill" data-v="熱度">社群熱度</button>
   <button class="pill" data-v="最新">最近更新</button>
 </div>
-<div id="nearbyHint" class="nearby-hint hidden"></div>
+<div id="nearbyHint" class="nearby-hint hidden" aria-live="polite"></div>
 <div id="nearbyRange" class="nearby-range hidden" aria-label="附近範圍">
   <button data-km="5">5 km</button>
   <button data-km="10">10 km</button>
@@ -1221,23 +1558,28 @@ footer{font-size:11px}
   <button data-km="50">50 km</button>
   <button data-km="all">不限</button>
 </div>
-<div id="locationPanel" class="location-panel hidden">
+<div id="locationPanel" class="location-panel hidden collapsed">
   <div class="location-panel-head">
     <span>📍 位置來源</span>
-    <span id="locationSourceBadge" class="location-source-badge">尚未設定</span>
+    <div class="location-head-right">
+      <span id="locationSourceBadge" class="location-source-badge">尚未設定</span>
+      <button id="locationPanelToggle" class="location-panel-toggle" type="button" aria-expanded="false">設定 ▼</button>
+    </div>
   </div>
-  <button id="useGpsLocation" class="gps-location-btn">📡 使用手機定位</button>
-  <div class="manual-location-title">或手動選擇目前位置</div>
-  <div class="manual-location-grid">
-    <select id="manualCity" aria-label="縣市">
-      <option value="嘉義">嘉義</option>
-      <option value="雲林">雲林</option>
-      <option value="台南">台南</option>
-    </select>
-    <select id="manualTown" aria-label="鄉鎮市區"></select>
-    <button id="applyManualLocation">套用位置</button>
+  <div id="locationPanelBody" class="location-panel-body hidden">
+    <button id="useGpsLocation" class="gps-location-btn">📡 重新使用手機定位</button>
+    <div class="manual-location-title">或手動選擇目前位置</div>
+    <div class="manual-location-grid">
+      <select id="manualCity" aria-label="縣市">
+        <option value="嘉義">嘉義</option>
+        <option value="雲林">雲林</option>
+        <option value="台南">台南</option>
+      </select>
+      <select id="manualTown" aria-label="鄉鎮市區"></select>
+      <button id="applyManualLocation">套用位置</button>
+    </div>
+    <div class="manual-location-note">手動位置只用來估算「離我近」；Google Maps 導航仍使用手機實際定位。</div>
   </div>
-  <div class="manual-location-note">手動位置只用來估算「離我近」；Google Maps 導航仍使用手機實際定位。</div>
 </div>
 
 <section>
@@ -1265,15 +1607,38 @@ footer{font-size:11px}
 </section>
 
 <section class="planner" id="planner">
-  <div class="planner-kicker">✨ SMART ROUTE</div>
-  <h2>幫我排一條<br>不繞路的行程</h2>
-  <p>選縣市、想玩的類型和半日／一日，系統會從熱門景點中挑選並依距離調整順序。</p>
-  <div class="planner-controls">
-    <select id="pc"><option>嘉義</option><option>雲林</option><option>台南</option></select>
-    <select id="pt"><option>親子</option><option>美食</option><option>戶外</option><option>室內</option><option>免費</option><option>觀光工廠</option><option>校園</option><option>活動</option><option>本週末</option></select>
-    <select id="ptime"><option value="half">半日</option><option value="full">一日</option></select>
-    <button id="plan" class="primary">幫我排行程</button>
+  <div class="planner-kicker">✨ AI SMART ROUTE · Web/PWA</div>
+  <h2>從現在的位置<br>幫我排行程</h2>
+  <p>先選行程日期，再選目前位置或指定縣市、主題與半日／一日；AI 會把所選日期的活動日期與已收錄營業日／營業時段一起納入排序，避開已知休館與抵達時已關門的景點。</p>
+  <div class="web-share-note">🌐 朋友版可直接用瀏覽器開啟；第一次使用「離我近」時請允許定位。若加入主畫面，之後可像一般 App 直接開啟。</div>
+  <div class="planner-date-row">
+    <label for="pdate">📅 行程日期</label>
+    <input id="pdate" type="date" aria-label="選擇行程日期">
+    <div id="pdateHelp" class="planner-date-help">預設今天；選未來日期會依該日營業資訊排行程。</div>
   </div>
+  <div class="planner-controls">
+    <select id="pc">
+      <option value="附近">📍 離我近</option>
+      <option value="嘉義">嘉義</option>
+      <option value="雲林">雲林</option>
+      <option value="台南">台南</option>
+    </select>
+    <select id="pt">
+      <option>親子</option>
+      <option>情侶</option>
+      <option>美食</option>
+      <option>戶外</option>
+      <option>室內</option>
+      <option>免費</option>
+      <option>觀光工廠</option>
+      <option>校園</option>
+      <option>活動</option>
+      <option>本週末</option>
+    </select>
+    <select id="ptime"><option value="half">半日・3站</option><option value="full">一日・5站</option></select>
+    <button id="plan" class="primary">✨ 產生 AI 行程</button>
+  </div>
+  <div id="planStartHint" class="plan-start-hint">📍 選「離我近」時會優先使用手機目前位置；指定縣市也會用位置協助安排順路順序。</div>
   <div id="pr" class="plan-result"></div>
 </section>
 
@@ -1327,9 +1692,15 @@ footer{font-size:11px}
   </div>
 </div>
 
-<footer>雲嘉南週末去哪玩 · V5.5</footer>
+<footer>雲嘉南週末去哪玩 · V5.5 · Web/PWA</footer>
 
 <script>
+if(window.__NATIVE_ANDROID_APP__){
+  window.open=function(url){
+    if(url) window.location.href=url;
+    return null;
+  };
+}
 (function(){
 var campusSeed=[{"id":"campus-yunlin-yuntech","city":"雲林","name":"國立雲林科技大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":84,"updated":"2026-09-27","tags":["校園","戶外","拍照","生態","免費"],"place":"斗六市","q":"國立雲林科技大學 雲林縣斗六市","why":"校內有雲夢湖、青青草原、生態專區與多處校園景觀，適合散步與拍照。","url":"https://gallery.yuntech.edu.tw/dir/1604"},{"id":"campus-yunlin-nfu","city":"雲林","name":"國立虎尾科技大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":78,"updated":"2026-09-27","tags":["校園","戶外","拍照","免費"],"place":"虎尾鎮","q":"國立虎尾科技大學 雲林縣虎尾鎮","why":"校方設有校園景觀專區，包含校門、校園建築與飛機意象等特色景觀。","url":"https://nfu.edu.tw/zh_tw/about/gallery/%E6%A0%A1%E5%9C%92%E6%99%AF%E8%A7%80-988561"},{"id":"campus-chiayi-ccu","city":"嘉義","name":"國立中正大學","e":"🏫","type":"校園","mapQuery":"國立中正大學 嘉義縣民雄鄉大學路一段168號","src":"官方","sources":["官方"],"heat":90,"updated":"2026-09-27","tags":["校園","戶外","拍照","湖景","免費"],"place":"民雄鄉","q":"國立中正大學 嘉義縣民雄鄉","why":"寧靜湖、拱橋、草坪與綠樹是代表性校園景觀，適合散步與拍照。","url":"https://ccu-navigation.ccu.edu.tw/p/426-1253-19.php?Lang=zh-tw"},{"id":"campus-chiayi-ncyu-lantan","city":"嘉義","name":"國立嘉義大學蘭潭校區","e":"🏫","type":"校園","mapQuery":"國立嘉義大學蘭潭校區 嘉義市東區學府路300號","src":"官方","sources":["官方"],"heat":82,"updated":"2026-09-27","tags":["校園","戶外","親子","生態","免費"],"place":"嘉義市","q":"國立嘉義大學蘭潭校區 嘉義市","why":"蘭潭校區有嘉大植物園、昆蟲館與農業相關教學場域，適合親子與校園散步。","url":"https://www.ncyu.edu.tw/ncyu/Subject/Detail/5776?nodeId=552"},{"id":"campus-chiayi-nhu","city":"嘉義","name":"南華大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":82,"updated":"2026-09-27","tags":["校園","戶外","拍照","生態","免費"],"place":"大林鎮","q":"南華大學 嘉義縣大林鎮","why":"校園有森林大學特色、大片綠地與多處校園景點，適合悠閒散步。","url":"https://www3.nhu.edu.tw/Web/Pages?mid=2603&n=%E6%A0%A1%E5%9C%92%E6%99%AF%E9%BB%9E&v=1"},{"id":"campus-tainan-ncku","city":"台南","name":"國立成功大學光復校區","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":92,"updated":"2026-09-27","tags":["校園","戶外","拍照","文化","古蹟","免費"],"place":"東區","q":"國立成功大學光復校區 台南市","why":"榕園、成功湖與歷史建築群是成大代表性景觀，也有校園古蹟導覽資源。","url":"https://virtualcampustour.ossd.ncku.edu.tw/"},{"id":"campus-tainan-tnnua","city":"台南","name":"國立臺南藝術大學","e":"🏫","type":"校園","src":"官方","sources":["官方"],"heat":88,"updated":"2026-09-27","tags":["校園","戶外","拍照","藝術","湖景","免費"],"place":"官田區","q":"國立臺南藝術大學 台南市官田區","why":"鄰近烏山頭水庫，校內南湖、藝川與藝術建築形成獨特山水校園景觀。","url":"https://www.tnnua.edu.tw/p/412-1000-1045.php?Lang=zh-tw"}];
 
@@ -2173,6 +2544,8 @@ function list(){
     a=diversifyRecommendations(a);
   }
   if(sort==="附近"){
+    a=nearbyDisplayDedupe(a);
+
     if(currentUserCoord){
       a=a.filter(withinNearbyRadius);
       a=nearbySort(a);
@@ -2503,6 +2876,18 @@ function applySavedManualLocation(){
   return applyManualLocation(x.city,x.town,false);
 }
 
+function setLocationPanelExpanded(open){
+  var panel=$("locationPanel");
+  var body=$("locationPanelBody");
+  var btn=$("locationPanelToggle");
+  if(!panel||!body||!btn)return;
+
+  body.classList.toggle("hidden",!open);
+  panel.classList.toggle("collapsed",!open);
+  btn.textContent=open?"收合 ▲":"設定 ▼";
+  btn.setAttribute("aria-expanded",open?"true":"false");
+}
+
 function syncLocationPanel(){
   var panel=$("locationPanel");
   if(!panel)return;
@@ -2587,6 +2972,99 @@ function formatDistanceKm(d){
   return "約 "+Math.round(d)+" km";
 }
 
+
+function nearbyBand(d){
+  if(d==null||!isFinite(d))return "";
+  if(d<=3)return "nearest";
+  if(d<=10)return "near";
+  return "far";
+}
+
+function nearbyBandMeta(b){
+  if(b==="nearest")return {title:"最近",range:"3 km 內"};
+  if(b==="near")return {title:"稍近",range:"3–10 km"};
+  if(b==="far")return {title:"較遠",range:"10 km 以上"};
+  return {title:"附近",range:""};
+}
+
+function distanceChipHtml(s){
+  if(sort!=="附近")return "";
+  var d=itemDistanceKm(s);
+  if(d==null)return "";
+  var band=nearbyBand(d);
+  return '<span class="distance-chip '+band+'">📍 '+formatDistanceForItem(s)+'</span>';
+}
+
+function pulseNearbyRefresh(){
+  var hint=$("nearbyHint");
+  var cards=$("cards");
+
+  if(hint){
+    hint.classList.remove("nearby-pulse");
+    void hint.offsetWidth;
+    hint.classList.add("nearby-pulse");
+  }
+
+  if(cards){
+    cards.classList.remove("nearby-updated");
+    void cards.offsetWidth;
+    cards.classList.add("nearby-updated");
+  }
+
+  setTimeout(function(){
+    if(hint)hint.classList.remove("nearby-pulse");
+    if(cards)cards.classList.remove("nearby-updated");
+  },420);
+}
+
+
+function hasPreciseDistanceCoord(s){
+  if(!s)return false;
+
+  var lat=Number(s.lat!=null?s.lat:s.latitude);
+  var lng=Number(s.lng!=null?s.lng:(s.lon!=null?s.lon:s.longitude));
+  if(isFinite(lat)&&isFinite(lng)&&Math.abs(lat)<=90&&Math.abs(lng)<=180){
+    return true;
+  }
+
+  return !!PRECISE_COORDS[String(s.id||"")];
+}
+
+function formatDistanceForItem(s){
+  var d=itemDistanceKm(s);
+  if(d==null||!isFinite(d))return "";
+
+  if(hasPreciseDistanceCoord(s)){
+    return formatDistanceKm(d);
+  }
+
+  return "約 "+Math.max(1,Math.round(d))+" km";
+}
+
+function nearbyDisplayDedupe(items){
+  var seen={},out=[];
+
+  (items||[]).forEach(function(s){
+    var nameKey=dedupeName((s&&s.name)||"");
+    var key=String((s&&s.city)||"")+"|"+nameKey;
+
+    if(!nameKey){
+      out.push(s);
+      return;
+    }
+
+    if(seen[key]==null){
+      seen[key]=out.length;
+      out.push(s);
+    }else{
+      var idx=seen[key];
+      out[idx]=mergeDuplicate(out[idx],s);
+    }
+  });
+
+  return out;
+}
+
 function nearbySort(items){
   return (items||[]).slice().sort(function(a,b){
     var da=itemDistanceKm(a),db=itemDistanceKm(b);
@@ -2650,7 +3128,9 @@ function nearbyMatchCount(items){
     if(isExpired(s))return false;
     if(city!=="全部"&&s.city!==city)return false;
     if(source!=="全部"&&sourceList(s).indexOf(source)<0)return false;
-    if(!matchFilter(s))return false;
+    if(!okTags(s))return false;
+    if(sel["活動"]&&!isTravelFriendlyEvent(s))return false;
+    if(favOnly&&!favs[s.id])return false;
 
     var q=query.toLowerCase();
     if(q){
@@ -2681,7 +3161,7 @@ function refreshNearbyHint(){
     return;
   }
 
-  var count=nearbyMatchCount(data);
+  var count=list().length;
   var note=nearbyRadius==="all"
     ?"已依距離由近到遠排列"
     :"找到 "+count+" 筆 "+nearbyRadiusText();
@@ -2697,7 +3177,89 @@ function refreshNearbyHint(){
 }
 
 
+
+if(window.__NATIVE_ANDROID_APP__){
+  window.__nativeLocationTimer=null;
+
+  window.__clearNativeLocationTimer=function(){
+    if(window.__nativeLocationTimer){
+      clearTimeout(window.__nativeLocationTimer);
+      window.__nativeLocationTimer=null;
+    }
+  };
+
+  window.__receiveNativeLocation=function(lat,lng){
+    window.__clearNativeLocationTimer();
+    currentUserCoord=[Number(lat),Number(lng)];
+    locationState="ready";
+    locationSource="gps";
+    currentLocationLabel="手機目前位置";
+    syncLocationPanel();
+    if(typeof setLocationPanelExpanded==="function")setLocationPanelExpanded(false);
+    refreshNearbyHint();
+    render();
+    if(window.__pendingSmartPlan && typeof runSmartPlan==="function"){
+      var pendingPlan=window.__pendingSmartPlan;
+      window.__pendingSmartPlan=null;
+      setTimeout(function(){runSmartPlan(pendingPlan);},80);
+    }
+  };
+
+  window.__nativeLocationError=function(msg){
+    window.__clearNativeLocationTimer();
+    locationState="error";
+    currentUserCoord=null;
+    locationSource="";
+    currentLocationLabel="";
+    syncLocationPanel();
+    if(typeof setLocationPanelExpanded==="function")setLocationPanelExpanded(true);
+    setNearbyHint("⚠️ "+(msg||"目前無法取得手機位置")+"；可展開位置設定改用手動位置。","warn");
+    render();
+    if(window.__pendingSmartPlan){
+      window.__pendingSmartPlan=null;
+      if($("pr")){
+        $("pr").innerHTML='<div class="plan-title">📍 無法取得目前位置</div>'+
+          '<div class="plan-route-note">請到「離我近」展開位置設定，改用手動位置後再產生 AI 行程。</div>';
+      }
+    }
+  };
+}
+
 function requestUserLocation(forceGps){
+  if(window.__NATIVE_ANDROID_APP__ && window.手機Location){
+    if(currentUserCoord&&!forceGps){
+      locationState="ready";
+      syncLocationPanel();
+      refreshNearbyHint();
+      render();
+      return;
+    }
+
+    if(!forceGps && applySavedManualLocation()){
+      return;
+    }
+
+    locationState="loading";
+    locationSource="gps";
+    currentLocationLabel="手機定位";
+    syncLocationPanel();
+    setNearbyHint("📍 正在取得瀏覽器定位…","loading");
+
+    try{
+      window.__clearNativeLocationTimer();
+      window.__nativeLocationTimer=setTimeout(function(){
+        window.__nativeLocationError(
+          "瀏覽器定位超過 20 秒沒有回應"
+        );
+      },20000);
+
+      window.手機Location.requestLocation();
+    }catch(e){
+      window.__nativeLocationError("瀏覽器定位服務啟動失敗");
+    }
+    return;
+  }
+
   /* 若已有手動位置，平常再次進入「離我近」直接沿用；
      按「使用手機定位」時 forceGps=true 才重新嘗試 GPS。 */
   if(currentUserCoord&&!forceGps){
@@ -2840,6 +3402,1700 @@ function optimizePlanOrder(stops,startCoord){
   return {stops:best||stops.slice(),mode:startCoord?"location":"distance"};
 }
 
+
+function planRouteDistanceKm(stops,startCoord){
+  if(!Array.isArray(stops)||!stops.length)return 0;
+
+  var total=0;
+  var from=startCoord||null;
+
+  for(var i=0;i<stops.length;i++){
+    var to=stopCoord(stops[i]);
+    if(!to)continue;
+
+    if(from){
+      var d=geoDistance(from,to);
+      if(isFinite(d))total+=d;
+    }
+
+    from=to;
+  }
+
+  return total;
+}
+
+function planRouteEndMinute(stops,startCoord,opts){
+  if(!Array.isArray(stops)||!stops.length)return null;
+
+  var ctx={
+    stops:stops.slice(),
+    startCoord:startCoord||null,
+    timeMode:opts&&opts.timeMode==="full"?"full":"half",
+    dayMode:planDayMode(opts&&opts.dayMode)
+  };
+
+  var tl=planTimeline(ctx);
+  if(!tl.length)return null;
+
+  var last=tl[tl.length-1];
+  var lastStop=stops[stops.length-1];
+
+  return Number(last.minute||0)+planStayMinutes(lastStop);
+}
+
+function planOrderHealth(stops,startCoord,opts){
+  var ctx={
+    stops:(stops||[]).slice(),
+    startCoord:startCoord||null,
+    timeMode:opts&&opts.timeMode==="full"?"full":"half",
+    dayMode:planDayMode(opts&&opts.dayMode)
+  };
+
+  var tl=planTimeline(ctx);
+  var closed=0;
+  var checked=0;
+  var dayMode=ctx.dayMode;
+
+  (stops||[]).forEach(function(s,i){
+    if(!s)return;
+
+    var slot=tl[i];
+    var minute=slot&&isFinite(slot.minute)?slot.minute:null;
+
+    if(s.type==="活動"){
+      checked++;
+      if(!planEventActiveForDay(s,dayMode))closed+=3;
+      return;
+    }
+
+    if(minute==null)return;
+
+    var status=planKnownHoursStatus(s,minute,dayMode);
+    if(status==="closed"){
+      checked++;
+      closed++;
+    }else if(status==="open"){
+      checked++;
+    }
+  });
+
+  return {
+    distance:planRouteDistanceKm(stops,startCoord),
+    closed:closed,
+    checked:checked,
+    endMinute:planRouteEndMinute(stops,startCoord,opts)
+  };
+}
+
+function planRouteEndLimit(opts){
+  if(opts&&opts.timeMode==="full")return 19*60+30;
+
+  var start=planStartMinutes(
+    opts&&opts.timeMode==="full"?"full":"half",
+    planDayMode(opts&&opts.dayMode)
+  );
+
+  return Math.min(19*60+30,start+5*60);
+}
+
+function planStopOrderKey(stops){
+  return (stops||[]).map(function(s,i){
+    return String(s&&s.id||s&&s.name||i);
+  }).join("|");
+}
+
+function optimizeSmartRouteOrder(stops,startCoord,opts){
+  stops=Array.isArray(stops)?stops.slice():[];
+
+  var baseHealth=planOrderHealth(stops,startCoord,opts);
+
+  if(stops.length<2 || stops.length>6){
+    return {
+      stops:stops,
+      optimized:false,
+      beforeKm:baseHealth.distance,
+      afterKm:baseHealth.distance,
+      savedKm:0,
+      closedBefore:baseHealth.closed,
+      closedAfter:baseHealth.closed,
+      endMinute:baseHealth.endMinute
+    };
+  }
+
+  var coords=stops.map(stopCoord);
+  if(coords.some(function(c){return !c})){
+    return {
+      stops:stops,
+      optimized:false,
+      beforeKm:baseHealth.distance,
+      afterKm:baseHealth.distance,
+      savedKm:0,
+      closedBefore:baseHealth.closed,
+      closedAfter:baseHealth.closed,
+      endMinute:baseHealth.endMinute,
+      partial:true
+    };
+  }
+
+  var endLimit=planRouteEndLimit(opts);
+  var best=stops.slice();
+  var bestHealth=baseHealth;
+  var bestCost=Infinity;
+
+  permuteStops(stops).forEach(function(order){
+    var h=planOrderHealth(order,startCoord,opts);
+    var late=Math.max(0,Number(h.endMinute||0)-endLimit);
+
+    /*
+      Native39 優先順序：
+      1. 避免已知休館／活動日期不符
+      2. 避免行程拖得太晚
+      3. 在可行方案裡縮短總移動距離
+    */
+    var cost=h.closed*10000 + late*25 + h.distance;
+
+    if(cost<bestCost-0.0001){
+      bestCost=cost;
+      best=order.slice();
+      bestHealth=h;
+      return;
+    }
+
+    if(Math.abs(cost-bestCost)<=0.0001 && h.distance<bestHealth.distance){
+      best=order.slice();
+      bestHealth=h;
+    }
+  });
+
+  var changed=planStopOrderKey(best)!==planStopOrderKey(stops);
+  var saved=Math.max(0,baseHealth.distance-bestHealth.distance);
+
+  return {
+    stops:best,
+    optimized:changed,
+    beforeKm:baseHealth.distance,
+    afterKm:bestHealth.distance,
+    savedKm:saved,
+    closedBefore:baseHealth.closed,
+    closedAfter:bestHealth.closed,
+    endMinute:bestHealth.endMinute
+  };
+}
+
+function planRouteOptimizationText(ctx){
+  var r=ctx&&ctx.routeOptimization;
+  if(!r)return "";
+
+  var after=isFinite(r.afterKm)?r.afterKm:0;
+  var saved=isFinite(r.savedKm)?r.savedKm:0;
+
+  if(r.partial){
+    return "🛣️ 部分景點缺少座標，已沿用目前順序；估算移動約 "+after.toFixed(1)+" km。";
+  }
+
+  if(r.optimized){
+    var t="🛣️ 已重新排列站點減少折返：估算移動 "+
+      Number(r.beforeKm||0).toFixed(1)+" → "+after.toFixed(1)+" km";
+
+    if(saved>=0.5)t+="，少約 "+saved.toFixed(1)+" km";
+
+    if(Number(r.closedAfter||0)<Number(r.closedBefore||0)){
+      t+="；並避開較不適合的已知營業時段";
+    }
+
+    return t+"。";
+  }
+
+  return "🛣️ 已檢查全部站點順序，目前順序已接近最佳；估算移動約 "+
+    after.toFixed(1)+" km。";
+}
+
+function planEstimatedFinishText(ctx){
+  if(!ctx)return "";
+
+  var minute=planRouteEndMinute(
+    ctx.stops||[],
+    ctx.startCoord||null,
+    {
+      timeMode:ctx.timeMode,
+      dayMode:ctx.dayMode
+    }
+  );
+
+  if(minute==null||!isFinite(minute))return "";
+  return planClock(minute);
+}
+
+
+function planTags(s){
+  return s&&Array.isArray(s.tags)?s.tags:[];
+}
+
+function planHasTag(s,tag){
+  return planTags(s).indexOf(tag)>=0;
+}
+
+function planThemeTagWeights(t){
+  var map={
+    "情侶":{
+      "情侶":30,"拍照":18,"散步":16,"景觀":16,"夕陽":18,"夜景":18,
+      "花海":17,"湖景":15,"海景":15,"藝術":13,"文化":10,
+      "咖啡":12,"甜點":12,"浪漫":18
+    },
+    "親子":{
+      "親子":32,"DIY":20,"體驗":18,"互動":18,"動物":18,"農場":16,
+      "遊樂":18,"科普":15,"室內":9,"戶外":7,"教育":12
+    },
+    "戶外":{
+      "戶外":30,"步道":22,"公園":18,"自然":20,"森林":19,"登山":20,
+      "湖景":16,"海景":16,"花海":16,"夕陽":15,"景觀":14,"自行車":15
+    },
+    "室內":{
+      "室內":30,"展覽":20,"博物館":20,"藝術":16,"文化":13,
+      "DIY":15,"體驗":13,"觀光工廠":18,"雨天":18
+    },
+    "美食":{
+      "美食":32,"小吃":20,"正餐":22,"甜點":16,"咖啡":14,"伴手禮":10
+    },
+    "免費":{
+      "免費":36,"公園":10,"步道":10,"校園":8,"戶外":7
+    }
+  };
+  return map[t]||{};
+}
+
+function planThemeSignalScore(s,t){
+  if(!s)return 0;
+
+  var weights=planThemeTagWeights(t);
+  var tags=planTags(s);
+  var score=0;
+
+  Object.keys(weights).forEach(function(tag){
+    if(tags.indexOf(tag)>=0)score+=weights[tag];
+  });
+
+  if(t==="觀光工廠" && s.type==="觀光工廠")score+=40;
+  if(t==="校園" && s.type==="校園")score+=40;
+  if(t==="活動" && s.type==="活動")score+=40;
+  if(t==="本週末" && s.type==="活動")score+=40;
+
+  if(t==="親子" && s.type==="觀光工廠")score+=10;
+  if(t==="室內" && s.type==="觀光工廠")score+=14;
+  if(t==="美食" && typeof planStopRole==="function" && planStopRole(s)==="美食")score+=24;
+
+  if(t==="戶外" && s.type==="觀光工廠" &&
+     !["戶外","公園","步道","自然","景觀"].some(function(x){return tags.indexOf(x)>=0})){
+    score-=18;
+  }
+
+  if(t==="室內" &&
+     ["戶外","步道","登山","自然"].some(function(x){return tags.indexOf(x)>=0}) &&
+     !["室內","展覽","博物館","觀光工廠"].some(function(x){return tags.indexOf(x)>=0})){
+    score-=14;
+  }
+
+  return score;
+}
+
+function planThemeMatch(s,t){
+  if(!s)return false;
+  var tags=planTags(s);
+
+  if(t==="觀光工廠")return s.type==="觀光工廠";
+  if(t==="校園")return s.type==="校園";
+
+  if(t==="活動"){
+    return s.type==="活動" && !isExpired(s) &&
+      isTravelFriendlyEvent(s) && isSoonEvent(s);
+  }
+
+  if(t==="本週末"){
+    return s.type==="活動" && !isExpired(s) &&
+      isTravelFriendlyEvent(s) && isThisWeekendEvent(s);
+  }
+
+  if(t==="情侶"){
+    return planThemeSignalScore(s,t)>=10;
+  }
+
+  if(t==="親子"){
+    return tags.indexOf("親子")>=0 ||
+      ["DIY","體驗","互動","動物","農場","遊樂","科普","教育"].some(function(x){
+        return tags.indexOf(x)>=0;
+      }) ||
+      s.type==="觀光工廠";
+  }
+
+  if(t==="戶外"){
+    return tags.indexOf("戶外")>=0 ||
+      ["步道","公園","自然","森林","登山","湖景","海景","花海","夕陽","景觀","自行車"].some(function(x){
+        return tags.indexOf(x)>=0;
+      });
+  }
+
+  if(t==="室內"){
+    return tags.indexOf("室內")>=0 ||
+      ["展覽","博物館","藝術","文化","DIY","體驗","雨天"].some(function(x){
+        return tags.indexOf(x)>=0;
+      }) ||
+      s.type==="觀光工廠";
+  }
+
+  if(t==="美食"){
+    return tags.indexOf("美食")>=0 ||
+      ["小吃","正餐","甜點","咖啡","伴手禮"].some(function(x){
+        return tags.indexOf(x)>=0;
+      }) ||
+      (typeof planStopRole==="function" && planStopRole(s)==="美食");
+  }
+
+  if(t==="免費"){
+    return tags.indexOf("免費")>=0;
+  }
+
+  return tags.indexOf(t)>=0;
+}
+
+function planThemeBonus(s,t){
+  var bonus=planThemeSignalScore(s,t);
+
+  if(planHasTag(s,t))bonus+=18;
+
+  if(s.type==="活動" && eventActiveToday(s))bonus+=14;
+  else if(s.type==="活動" && isThisWeekendEvent(s))bonus+=10;
+
+  if(photoInfo(s))bonus+=3;
+
+  return bonus;
+}
+
+function planThemeReason(s,t){
+  if(!s)return "";
+
+  var tags=planTags(s);
+  var preferred={
+    "情侶":["情侶","拍照","散步","景觀","夕陽","夜景","花海","湖景","海景","藝術","文化","咖啡","甜點"],
+    "親子":["親子","DIY","體驗","互動","動物","農場","遊樂","科普","教育","室內","戶外"],
+    "戶外":["戶外","步道","公園","自然","森林","登山","湖景","海景","花海","夕陽","景觀","自行車"],
+    "室內":["室內","展覽","博物館","藝術","文化","DIY","體驗","雨天","觀光工廠"],
+    "美食":["美食","正餐","小吃","甜點","咖啡","伴手禮"],
+    "免費":["免費","公園","步道","戶外"]
+  };
+
+  if(t==="觀光工廠" && s.type==="觀光工廠")return "符合觀光工廠主題";
+  if(t==="校園" && s.type==="校園")return "符合校園散步主題";
+  if(t==="活動" || t==="本週末")return "活動日期符合目前行程條件";
+
+  var hits=[];
+  (preferred[t]||[t]).forEach(function(tag){
+    if(tags.indexOf(tag)>=0 && hits.indexOf(tag)<0)hits.push(tag);
+  });
+
+  if(t==="親子" && s.type==="觀光工廠" && hits.indexOf("觀光工廠")<0){
+    hits.push("觀光工廠");
+  }
+
+  if(t==="室內" && s.type==="觀光工廠" && hits.indexOf("觀光工廠")<0){
+    hits.push("觀光工廠");
+  }
+
+  if(t==="美食" && typeof planStopRole==="function" &&
+     planStopRole(s)==="美食" && hits.indexOf("美食")<0){
+    hits.unshift("美食");
+  }
+
+  hits=hits.slice(0,3);
+
+  if(hits.length){
+    return hits.join("・");
+  }
+
+  if(s.type)return "符合主題的"+s.type;
+  return "符合目前主題與路線條件";
+}
+
+function smartPlanScore(s,t,startCoord,timeMode){
+  var score=Number(s.heat||0)+planThemeBonus(s,t);
+  var c=stopCoord(s);
+
+  if(startCoord&&c){
+    var d=geoDistance(startCoord,c);
+    if(isFinite(d)){
+      score-=d*(timeMode==="full"?0.45:0.85);
+    }
+  }
+
+  return score;
+}
+
+
+function smartPlanCandidates(opts,startCoord){
+  var c=opts.city,t=opts.theme,timeMode=opts.timeMode;
+  var maxRadius=timeMode==="full"?40:20;
+  var targetDay=planDayMode(opts.dayMode);
+
+  var a=data.filter(function(s){
+    if(!s||isExpired(s))return false;
+    if(c!=="附近" && s.city!==c)return false;
+
+    var primary=planThemeMatch(s,t);
+
+    if(s.type==="活動" && (t==="活動" || t==="本週末")){
+      primary=planEventActiveForDay(s,targetDay);
+    }
+
+    var support=(timeMode==="full" && t!=="美食" && planIsFoodStop(s));
+    if(!primary && !support)return false;
+
+    if(s.type==="活動" && !planEventActiveForDay(s,targetDay))return false;
+
+    /* 有可靠每週營業資料時，選定日期整日休館就直接排除。 */
+    if(planKnownDayStatus(s,targetDay)==="closed")return false;
+
+    if(c==="附近" && startCoord){
+      var coord=stopCoord(s);
+      if(!coord)return false;
+      var d=geoDistance(startCoord,coord);
+      if(isFinite(d) && d>maxRadius)return false;
+    }
+
+    return true;
+  });
+
+  a=uniquePlanStops(a);
+  a.sort(function(x,y){
+    return smartPlanScore(y,t,startCoord,timeMode)-smartPlanScore(x,t,startCoord,timeMode);
+  });
+
+  return a;
+}
+
+
+
+function planFoodRaw(s){
+  if(!s)return "";
+  var tags=Array.isArray(s.tags)?s.tags.join(" "):"";
+  return [
+    String(s.type||""),
+    String(s.name||""),
+    tags
+  ].join(" ");
+}
+
+function planMealFoodClass(s){
+  if(!s)return "";
+
+  var name=String(s.name||"");
+  var type=String(s.type||"");
+  var tags=Array.isArray(s.tags)?s.tags.join(" "):"";
+
+  var strongMealName=/餐廳|餐馆|餐館|食堂|簡餐|简餐|早午餐|午餐|晚餐|正餐|便當|便当|火雞肉飯|火鸡肉饭|雞肉飯|鸡肉饭|魯肉飯|滷肉飯|卤肉饭|肉燥飯|牛肉湯|牛肉汤|虱目魚|虱目鱼|火鍋|火锅|鍋物|锅物|燒肉|烧肉|牛排|咖哩|咖喱|水餃|水饺|鍋貼|锅贴|拉麵|拉面|麵店|面店|麵館|面馆|米糕|粥|小吃|料理|魚頭|鱼头|蚵仔煎|排骨飯|排骨饭|滷味|卤味|brunch|bistro|restaurant/i;
+  var strongSnackName=/咖啡|甜點|甜点|蛋糕|冰品|冰淇淋|茶屋|茶飲|茶饮|飲料|饮料|下午茶|伴手禮|伴手礼|糕餅|糕饼|餅乾|饼干|巧克力|烘焙|麵包|面包|甜品|豆花|仙草|布丁|乳酪|果汁|糖果|餅舖|饼铺/i;
+
+  /* Name wins first:
+     "咖啡博物館" / "咖啡文化館" must stay snack,
+     while an explicit "咖啡餐廳" can still count as a meal because
+     the strong meal signal is present in the name. */
+  if(strongMealName.test(name))return "meal";
+  if(strongSnackName.test(name))return "snack";
+
+  /* Type may qualify only when it is explicitly meal-like.
+     Generic "美食" or "餐飲" alone is NOT enough. */
+  if(/餐廳|餐馆|餐館|食堂|小吃|正餐|簡餐|简餐|料理|便當|便当|早午餐|午餐|晚餐/i.test(type)){
+    return "meal";
+  }
+  if(/咖啡|甜點|甜点|下午茶|伴手禮|伴手礼|糕餅|糕饼|冰品|烘焙/i.test(type)){
+    return "snack";
+  }
+
+  /* Tags can promote to meal only with a SPECIFIC meal keyword.
+     We intentionally exclude generic "美食" and "餐飲". */
+  if(/火雞肉飯|火鸡肉饭|雞肉飯|鸡肉饭|魯肉飯|滷肉飯|卤肉饭|肉燥飯|牛肉湯|牛肉汤|虱目魚|虱目鱼|火鍋|火锅|鍋物|锅物|燒肉|烧肉|牛排|咖哩|咖喱|水餃|水饺|鍋貼|锅贴|拉麵|拉面|麵店|面店|麵館|面馆|米糕|粥|小吃|料理|食堂|便當|便当|早午餐|正餐|午餐|晚餐|魚頭|鱼头|蚵仔煎|排骨飯|排骨饭|滷味|卤味/i.test(tags)){
+    return "meal";
+  }
+
+  if(/咖啡|甜點|甜点|蛋糕|冰品|冰淇淋|茶屋|茶飲|茶饮|飲料|饮料|下午茶|伴手禮|伴手礼|糕餅|糕饼|餅乾|饼干|巧克力|烘焙|麵包|面包|甜品|豆花|仙草|布丁|乳酪|果汁|糖果/i.test(tags)){
+    return "snack";
+  }
+
+  if(planIsFoodStop(s))return "general";
+  return "";
+}
+
+
+function planIsMealStop(s){
+  return planStopRole(s)==="美食" && planMealFoodClass(s)==="meal";
+}
+
+function planIsSnackStop(s){
+  return planStopRole(s)==="美食" && planMealFoodClass(s)==="snack";
+}
+
+function planFoodClassLabel(s){
+  var c=planMealFoodClass(s);
+  if(c==="meal")return "🍜 正餐";
+  if(c==="snack")return "☕ 點心／咖啡";
+  if(c==="general")return "🍽️ 美食";
+  return "";
+}
+
+function planIsFoodStop(s){
+  if(!s)return false;
+
+  var tags=Array.isArray(s.tags)?s.tags:[];
+  var type=String(s.type||"");
+  var name=String(s.name||"");
+
+  if(/美食|餐飲|餐饮|餐廳|餐厅|咖啡|甜點|甜点|小吃|食堂|冰品|茶屋|伴手禮|伴手礼|糕餅|糕饼|烘焙|下午茶/.test(type+" "+name)){
+    return true;
+  }
+
+  var keys=[
+    "美食","咖啡","甜點","甜点","小吃","餐廳","餐厅",
+    "下午茶","伴手禮","伴手礼","正餐","餐飲","餐饮"
+  ];
+  var hits=keys.filter(function(x){return tags.indexOf(x)>=0}).length;
+
+  return hits>=2;
+}
+
+
+function planStopRole(s){
+  if(!s)return "景點";
+  var tags=Array.isArray(s.tags)?s.tags:[];
+
+  if(s.type==="活動")return "活動";
+  if(s.type==="觀光工廠")return "觀光工廠";
+  if(s.type==="校園")return "校園";
+  if(planIsFoodStop(s))return "美食";
+  if(tags.indexOf("文化")>=0||tags.indexOf("藝術")>=0)return "文化";
+  if(tags.indexOf("戶外")>=0)return "戶外";
+  if(tags.indexOf("室內")>=0)return "室內";
+  return s.type||"景點";
+}
+
+function planRoleEmoji(role){
+  if(role==="美食")return "🍽️";
+  if(role==="活動")return "🎪";
+  if(role==="觀光工廠")return "🏭";
+  if(role==="校園")return "🏫";
+  if(role==="戶外")return "🌿";
+  if(role==="室內")return "🏠";
+  if(role==="文化")return "🎨";
+  return "📍";
+}
+
+function planSuggestedStay(s){
+  var role=planStopRole(s);
+
+  if(role==="美食"){
+    var fc=planMealFoodClass(s);
+    if(fc==="meal")return "60–75 分";
+    if(fc==="snack")return "45–60 分";
+    return "約 60 分";
+  }
+
+  if(role==="觀光工廠")return "約 90 分";
+  if(role==="活動")return "約 90 分";
+  if(role==="戶外")return "75–90 分";
+  if(role==="校園")return "60–75 分";
+  return "60–90 分";
+}
+
+
+function planStayMinutes(s){
+  var role=planStopRole(s);
+
+  if(role==="美食"){
+    var fc=planMealFoodClass(s);
+    if(fc==="meal")return 70;
+    if(fc==="snack")return 50;
+    return 60;
+  }
+
+  if(role==="觀光工廠")return 90;
+  if(role==="活動")return 90;
+  if(role==="戶外")return 80;
+  if(role==="校園")return 75;
+  return 70;
+}
+
+
+function planDriveMinutes(d){
+  if(d==null||!isFinite(d))return 0;
+  if(d<=1.5)return 8;
+  if(d<=4)return 12;
+  if(d<=8)return 18;
+  if(d<=15)return 25;
+  if(d<=25)return 35;
+  return 50;
+}
+
+function planClock(total){
+  total=Math.max(0,Math.round(total));
+  var h=Math.floor(total/60)%24;
+  var m=total%60;
+  return (h<10?"0":"")+h+":"+(m<10?"0":"")+m;
+}
+
+function planNowMinutes(){
+  var d=new Date();
+  return d.getHours()*60+d.getMinutes();
+}
+
+function planRoundUpMinutes(v,step){
+  step=step||15;
+  return Math.ceil(v/step)*step;
+}
+
+function planDefaultStartMinutes(timeMode){
+  return timeMode==="full"?9*60:9*60+30;
+}
+
+function planLocalIsoDate(d){
+  d=d||new Date();
+  var y=d.getFullYear();
+  var m=String(d.getMonth()+1).padStart(2,"0");
+  var day=String(d.getDate()).padStart(2,"0");
+  return y+"-"+m+"-"+day;
+}
+
+function planParseIsoDate(v){
+  var m=String(v||"").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if(!m)return null;
+  var d=new Date(Number(m[1]),Number(m[2])-1,Number(m[3]));
+  d.setHours(0,0,0,0);
+  if(
+    d.getFullYear()!==Number(m[1]) ||
+    d.getMonth()!==Number(m[2])-1 ||
+    d.getDate()!==Number(m[3])
+  )return null;
+  return d;
+}
+
+function planTodayIso(){
+  return planLocalIsoDate(todayAtMidnight());
+}
+
+function planTomorrowIso(){
+  var d=todayAtMidnight();
+  d.setDate(d.getDate()+1);
+  return planLocalIsoDate(d);
+}
+
+function planDayMode(v){
+  v=String(v||"").trim();
+  if(/^\d{4}-\d{2}-\d{2}$/.test(v) && planParseIsoDate(v))return v;
+  return v==="tomorrow"?"tomorrow":"today";
+}
+
+function planTargetDate(dayMode){
+  var mode=planDayMode(dayMode);
+
+  if(/^\d{4}-\d{2}-\d{2}$/.test(mode)){
+    return planParseIsoDate(mode)||todayAtMidnight();
+  }
+
+  var d=todayAtMidnight();
+  if(mode==="tomorrow")d.setDate(d.getDate()+1);
+  return d;
+}
+
+function planTargetIso(dayMode){
+  return planLocalIsoDate(planTargetDate(dayMode));
+}
+
+function planIsTodayTarget(dayMode){
+  return planTargetIso(dayMode)===planTodayIso();
+}
+
+function planIsTomorrowTarget(dayMode){
+  return planTargetIso(dayMode)===planTomorrowIso();
+}
+
+function planWeekdayText(d){
+  return ["日","一","二","三","四","五","六"][d.getDay()];
+}
+
+function planTargetDateLabel(dayMode){
+  var d=planTargetDate(dayMode);
+  return (d.getMonth()+1)+"/"+d.getDate()+"（週"+planWeekdayText(d)+"）";
+}
+
+function planTargetDayText(dayMode){
+  if(planIsTodayTarget(dayMode))return "今天";
+  if(planIsTomorrowTarget(dayMode))return "明天";
+  return planTargetDateLabel(dayMode);
+}
+
+function planInitDatePicker(){
+  var el=$("pdate");
+  if(!el)return;
+
+  var today=planTodayIso();
+  el.min=today;
+  if(!el.value || el.value<today)el.value=today;
+
+  function refresh(){
+    var mode=planDayMode(el.value||today);
+    var help=$("pdateHelp");
+    if(help){
+      help.textContent=
+        "已選 "+planTargetDateLabel(mode)+"；AI 會依這一天的活動日期與已收錄營業日／營業時段排行程。";
+    }
+  }
+
+  el.onchange=refresh;
+  refresh();
+}
+
+function planIsLateNight(){
+  return planNowMinutes()>=21*60;
+}
+
+function planEventActiveForDay(s,dayMode){
+  if(!s||s.type!=="活動")return false;
+
+  var target=planTargetDate(dayMode);
+  var sched=effectiveSchedule(s);
+
+  if(sched)return scheduleActiveOnDate(sched,target);
+
+  var a=normDate(s.start),b=normDate(s.end);
+  if(a)a.setHours(0,0,0,0);
+  if(b)b.setHours(23,59,59,999);
+
+  if(a&&b)return target>=a&&target<=b;
+  if(a)return target.getTime()===a.getTime();
+  return false;
+}
+
+function planNightUtilityPlace(s){
+  if(!s)return false;
+
+  var tags=Array.isArray(s.tags)?s.tags.join(" "):"";
+  var raw=[
+    s.name||"",
+    s.type||"",
+    s.why||"",
+    tags
+  ].join(" ");
+
+  return /服務區|服务区|休息站|加油站|便利商店|停車場|停车场|交流道/i.test(raw);
+}
+
+function planNightLeisureSignal(s){
+  if(!s)return false;
+
+  var tags=Array.isArray(s.tags)?s.tags.join(" "):"";
+  var raw=[
+    s.name||"",
+    s.type||"",
+    s.why||"",
+    tags
+  ].join(" ");
+
+  return /夜景|夜間|夜间|夜遊|夜游|夜市|燈會|灯会|光影|星空|觀星|观星|宵夜/i.test(raw);
+}
+
+function planNightEligible(s,startCoord,opts){
+  if(!s)return false;
+
+  /* Native41：
+     24 小時營業不代表適合當作深夜旅遊景點。
+     像服務區、休息站、加油站等，只是交通/補給設施，
+     不再拿來湊「親子、情侶、戶外」等 AI 行程。 */
+  if(planNightUtilityPlace(s) && (!opts || opts.theme!=="美食")){
+    return false;
+  }
+
+  var arrival=planCandidateArrivalMinute(
+    [],
+    s,
+    {
+      city:opts.city,
+      theme:opts.theme,
+      timeMode:opts.timeMode,
+      dayMode:"today"
+    },
+    startCoord
+  );
+
+  var status=arrival==null?null:planKnownHoursStatus(s,arrival,"today");
+
+  /* 有營業資料而且確定深夜仍開放，可列入。 */
+  if(status==="open"){
+    return true;
+  }
+
+  var tags=Array.isArray(s.tags)?s.tags.join(" "):"";
+  var raw=[s.name||"",s.why||"",tags].join(" ");
+
+  /* 沒有營業資料時，只接受明確的 24 小時或夜遊訊號。
+     一般公園、校園、觀光工廠不再因為資料不足而硬排。 */
+  var explicitAllNight=/24\s*(?:小時|小时|h)|全天候|全日開放|全日开放/i.test(raw);
+
+  if(explicitAllNight && !planNightUtilityPlace(s))return true;
+  if(planNightLeisureSignal(s) && status!=="closed")return true;
+
+  return false;
+}
+
+
+function planSetTomorrowAndRun(opts,mode){
+  mode=mode==="full"?"full":"half";
+
+  if($("ptime"))$("ptime").value=mode;
+
+  var tomorrow=planTomorrowIso();
+
+  if($("pdate")){
+    $("pdate").value=tomorrow;
+
+    if($("pdateHelp")){
+      $("pdateHelp").textContent=
+        "已選 "+planTargetDateLabel(tomorrow)+"；AI 會依這一天的活動日期與已收錄營業日／營業時段排行程。";
+    }
+  }
+
+  runSmartPlan({
+    city:opts.city,
+    theme:opts.theme,
+    timeMode:mode,
+    dateKey:tomorrow,
+    dayMode:tomorrow
+  });
+}
+
+
+function renderRemainingTimeChoice(opts){
+  var area=opts.city==="附近"?"離我近":opts.city;
+  var theme=opts.theme||"主題";
+  var selectedDate=opts&&opts.dayMode?opts.dayMode:planTodayIso();
+
+  $("pr").innerHTML=
+    '<div class="plan-late-card">'+
+      '<div class="plan-late-title">🕕 今天剩餘時間較短</div>'+
+      '<div class="plan-late-time">手機目前時間 '+planNowLabel()+'</div>'+
+      '<p>現在還沒有超過晚上 21:00，但依目前時間與景點停留時間估算，今天已不足以完整排入一個一般觀光景點。</p>'+
+      '<p>Native45 不會再把這種情況誤顯示成「已超過 21:00」。建議改排明天，或直接從上方「📅 行程日期」選其他日期。</p>'+
+      '<p class="plan-late-sub">目前條件：'+area+'・'+theme+'・'+planTargetDateLabel(selectedDate)+'</p>'+
+      '<div class="plan-late-actions">'+
+        '<button data-next-plan="half">🌅 排明天半日・3站</button>'+
+        '<button data-next-plan="full">☀️ 排明天一日・5站</button>'+
+      '</div>'+
+    '</div>';
+
+  [].forEach.call($("pr").querySelectorAll("[data-next-plan]"),function(b){
+    b.onclick=function(){
+      planSetTomorrowAndRun(
+        opts,
+        this.getAttribute("data-next-plan")==="full"?"full":"half"
+      );
+    };
+  });
+}
+
+
+function renderLateNightChoice(opts){
+  var area=opts.city==="附近"?"離我近":opts.city;
+  var theme=opts.theme||"主題";
+
+  $("pr").innerHTML=
+    '<div class="plan-late-card">'+
+      '<div class="plan-late-title">🌙 現在時間較晚</div>'+
+      '<div class="plan-late-time">手機目前時間 '+planNowLabel()+'</div>'+
+      '<p>現在已超過晚上 21:00。Native45 不會用服務區、休息站等 24 小時設施硬湊旅遊行程。</p>'+
+      '<p>目前沒有找到「可確認仍營業，而且適合夜遊」的地點，因此建議直接安排明天，或從上方日期欄選其他日期。</p>'+
+      '<p class="plan-late-sub">保留你的條件：'+area+'・'+theme+'。</p>'+
+      '<div class="plan-late-actions">'+
+        '<button data-next-plan="half">🌅 排明天半日・3站</button>'+
+        '<button data-next-plan="full">☀️ 排明天一日・5站</button>'+
+      '</div>'+
+    '</div>';
+
+  [].forEach.call($("pr").querySelectorAll("[data-next-plan]"),function(b){
+    b.onclick=function(){
+      planSetTomorrowAndRun(
+        opts,
+        this.getAttribute("data-next-plan")==="full"?"full":"half"
+      );
+    };
+  });
+}
+
+
+function planStartMinutes(timeMode,dayMode){
+  var base=planDefaultStartMinutes(timeMode);
+
+  if(!planIsTodayTarget(dayMode))return base;
+
+  var now=planNowMinutes();
+  if(now<=base-30)return base;
+
+  return Math.max(base,planRoundUpMinutes(now+15,15));
+}
+
+
+function planTodayStopCapacity(timeMode,requested,dayMode){
+  if(!planIsTodayTarget(dayMode))return requested||1;
+
+  var start=planStartMinutes(timeMode,dayMode);
+  var end=timeMode==="full"?19*60:Math.min(19*60,start+4*60+30);
+  var available=Math.max(0,end-start);
+  var capacity=Math.floor((available+20)/90);
+
+  if(capacity<1)return 0;
+  return Math.min(requested||1,capacity);
+}
+
+
+function planNowLabel(){
+  return planClock(planNowMinutes());
+}
+
+function planTimeTextToMinute(v){
+  var m=String(v||"").match(/(\d{1,2})[:：](\d{2})/);
+  if(!m)return null;
+
+  var h=Number(m[1]),min=Number(m[2]);
+  if(!isFinite(h)||!isFinite(min)||h<0||h>24||min<0||min>59)return null;
+  if(h===24)h=0;
+
+  return h*60+min;
+}
+
+function planSimpleHoursRanges(text){
+  text=String(text||"").trim();
+  if(!text)return [];
+
+  if(/週[一二三四五六日天]|星期|周[一二三四五六日天]|Mon|Tue|Wed|Thu|Fri|Sat|Sun/i.test(text)){
+    return [];
+  }
+
+  var re=/(\d{1,2}[:：]\d{2})\s*(?:-|~|～|–|—|至)\s*(\d{1,2}[:：]\d{2})/g;
+  var out=[],m;
+
+  while((m=re.exec(text))){
+    var a=planTimeTextToMinute(m[1]);
+    var b=planTimeTextToMinute(m[2]);
+    if(a==null||b==null)continue;
+    out.push([a,b]);
+  }
+
+  return out;
+}
+
+function planKnownDayStatus(s,dayMode){
+  var curated=planCuratedHoursRecord(s);
+
+  if(curated&&curated.days){
+    var target=planTargetDate(dayMode);
+    var ranges=curated.days[target.getDay()];
+
+    if(Array.isArray(ranges)){
+      return ranges.length?"open":"closed";
+    }
+  }
+
+  return null;
+}
+
+
+function planKnownHoursStatus(s,minute,dayMode){
+  var curated=planCuratedHoursRecord(s);
+
+  if(curated&&curated.days){
+    var target=planTargetDate(dayMode);
+    var day=target.getDay();
+    var ranges=curated.days[day];
+
+    if(Array.isArray(ranges)){
+      if(!ranges.length)return "closed";
+
+      for(var c=0;c<ranges.length;c++){
+        var ca=ranges[c][0],cb=ranges[c][1];
+
+        if(cb>=ca){
+          if(minute>=ca && minute<=cb)return "open";
+        }else{
+          if(minute>=ca || minute<=cb)return "open";
+        }
+      }
+
+      return "closed";
+    }
+  }
+
+  var hours=planKnownHours(s);
+  if(!hours)return null;
+
+  if(/休館|公休|休息|closed/i.test(hours) && !/\d{1,2}[:：]\d{2}/.test(hours)){
+    return "closed";
+  }
+
+  var ranges=planSimpleHoursRanges(hours);
+  if(!ranges.length)return null;
+
+  for(var i=0;i<ranges.length;i++){
+    var a=ranges[i][0],b=ranges[i][1];
+
+    if(b>=a){
+      if(minute>=a && minute<=b)return "open";
+    }else{
+      if(minute>=a || minute<=b)return "open";
+    }
+  }
+
+  return "closed";
+}
+
+
+function planCandidateArrivalMinute(chosen,s,opts,startCoord){
+  var temp=(chosen||[]).slice();
+  temp.push(s);
+
+  var ctx={
+    stops:temp,
+    startCoord:startCoord||null,
+    timeMode:opts&&opts.timeMode==="full"?"full":"half",
+    dayMode:planDayMode(opts&&opts.dayMode)
+  };
+
+  var tl=planTimeline(ctx);
+  var x=tl[tl.length-1];
+  return x&&isFinite(x.minute)?x.minute:null;
+}
+
+
+function planMealWindow(kind){
+  if(kind==="dinner"){
+    return {start:17*60+30,foodStart:17*60,foodEnd:19*60+30,duration:60,label:"晚餐",icon:"🍲"};
+  }
+
+  return {start:11*60+30,foodStart:11*60,foodEnd:13*60+30,duration:60,label:"午餐",icon:"🍜"};
+}
+
+function planMealCanApply(ctx,kind){
+  if(!ctx||ctx.timeMode!=="full")return false;
+
+  var start=planStartMinutes(ctx.timeMode,ctx.dayMode);
+  if(kind==="lunch")return start<=13*60+30;
+  if(kind==="dinner")return start<=19*60+30;
+
+  return false;
+}
+
+function planMealStopKind(s,minute,ctx,lunchHandled,dinnerHandled){
+  if(!planIsMealStop(s))return "";
+
+  if(!lunchHandled && planMealCanApply(ctx,"lunch")){
+    var lunch=planMealWindow("lunch");
+    if(minute>=lunch.foodStart && minute<=lunch.foodEnd)return "lunch";
+  }
+
+  if(!dinnerHandled && planMealCanApply(ctx,"dinner")){
+    var dinner=planMealWindow("dinner");
+    if(minute>=dinner.foodStart && minute<=dinner.foodEnd)return "dinner";
+  }
+
+  return "";
+}
+
+function planMealLabel(kind){
+  var w=planMealWindow(kind);
+  return w.icon+" "+w.label;
+}
+
+function planTimeline(ctx){
+  if(!ctx)return [];
+  if(ctx._timeline)return ctx._timeline;
+
+  var stops=Array.isArray(ctx.stops)?ctx.stops:[];
+  var t=planStartMinutes(ctx.timeMode,ctx.dayMode);
+  var out=[];
+  var lunchHandled=false;
+  var dinnerHandled=false;
+
+  stops.forEach(function(s,i){
+    var drive=0;
+    var from=null;
+    var to=stopCoord(s);
+
+    if(i===0){
+      from=ctx.startCoord||null;
+    }else{
+      from=stopCoord(stops[i-1]);
+    }
+
+    if(from && to){
+      drive=planDriveMinutes(geoDistance(from,to));
+      t+=drive;
+    }
+
+    var mealBefore="";
+    var mealStart=null;
+    var mealEnd=null;
+    var mealStop="";
+
+    mealStop=planMealStopKind(s,t,ctx,lunchHandled,dinnerHandled);
+
+    if(mealStop==="lunch"){
+      lunchHandled=true;
+    }else if(mealStop==="dinner"){
+      dinnerHandled=true;
+    }
+
+    if(!mealStop && !lunchHandled && planMealCanApply(ctx,"lunch")){
+      var lunch=planMealWindow("lunch");
+
+      if(t>=lunch.start){
+        mealBefore="lunch";
+        mealStart=t;
+        mealEnd=t+lunch.duration;
+        t=mealEnd;
+        lunchHandled=true;
+      }
+    }
+
+    if(!mealStop && !dinnerHandled && planMealCanApply(ctx,"dinner")){
+      var dinner=planMealWindow("dinner");
+
+      if(t>=dinner.start){
+        mealBefore="dinner";
+        mealStart=t;
+        mealEnd=t+dinner.duration;
+        t=mealEnd;
+        dinnerHandled=true;
+      }
+    }
+
+    out.push({
+      time:planClock(t),
+      minute:t,
+      drive:drive,
+      mealBefore:mealBefore,
+      mealStart:mealStart,
+      mealEnd:mealEnd,
+      mealStop:mealStop
+    });
+
+    t+=planStayMinutes(s);
+  });
+
+  ctx._timeline=out;
+  return out;
+}
+
+function planMealSearchAnchor(ctx,i){
+  /* Native38：
+     用餐搜尋不再綁定下一站，Google Maps 直接依手機目前位置找餐廳。
+     這更符合使用者人在旅途中臨時找正餐的習慣。 */
+  return null;
+}
+
+function planMealRestaurantSearchQuery(){
+  return "餐廳 小吃 正餐";
+}
+
+function planMealRestaurantSearchUrl(){
+  return "https://www.google.com/maps/search/?api=1&query="+
+    encodeURIComponent(planMealRestaurantSearchQuery());
+}
+
+function planMealSearchButtonLabel(){
+  return "🍜 搜尋我附近餐廳";
+}
+
+
+function openMealRestaurantSearch(ctx,i){
+  /* 不指定目的地座標與景點名稱，交給 Google Maps 使用手機目前位置。 */
+  var url=planMealRestaurantSearchUrl();
+  if(url)window.open(url,"_blank");
+}
+
+function openMealMap(ctx,i){
+  var url=planMealRestaurantSearchUrl();
+  if(url)window.open(url,"_blank");
+}
+
+
+function planMealBreakHtml(ctx,i){
+  if(!ctx)return "";
+
+  var x=planTimeline(ctx)[i];
+  if(!x||!x.mealBefore)return "";
+
+  var w=planMealWindow(x.mealBefore);
+
+  return '<div class="plan-meal-card">'+
+    '<div class="plan-meal-title">'+w.icon+' 建議'+w.label+' '+planClock(x.mealStart)+'–'+planClock(x.mealEnd)+'</div>'+
+    '<div class="plan-meal-text">這段先保留 '+w.duration+' 分鐘自由用餐。到用餐時間時，直接用手機目前位置搜尋附近的餐廳、小吃與正餐，行程後續景點照原本順序繼續。</div>'+
+    '<div class="plan-meal-actions">'+
+      '<button class="plan-meal-search" data-pmeal="'+i+'">'+planMealSearchButtonLabel()+'</button>'+
+    '</div>'+
+  '</div>';
+}
+
+
+function planMealSummary(ctx){
+  if(!ctx)return "";
+
+  var items=[];
+
+  planTimeline(ctx).forEach(function(x){
+    if(x.mealBefore){
+      var w=planMealWindow(x.mealBefore);
+      items.push(w.icon+"自由"+w.label+" "+planClock(x.mealStart)+"–"+planClock(x.mealEnd));
+    }else if(x.mealStop){
+      var ws=planMealWindow(x.mealStop);
+      items.push(ws.icon+"正餐"+ws.label+"站 "+x.time);
+    }
+  });
+
+  return items.length?items.join("・"):"";
+}
+
+
+function planDriveText(ctx,i){
+  if(!ctx||i<0)return "";
+
+  var x=planTimeline(ctx)[i];
+  if(!x||!x.drive)return "";
+
+  return i===0
+    ?"🚗 從目前位置約 "+x.drive+" 分"
+    :"🚗 約 "+x.drive+" 分";
+}
+
+
+function planScheduleTimes(timeMode,count){
+  var full=["09:00","11:30","13:30","15:30","17:00"];
+  var half=["09:30","11:30","13:00"];
+  var base=timeMode==="full"?full:half;
+  return base.slice(0,count||base.length);
+}
+
+function planTimeForStop(ctx,i){
+  var x=planTimeline(ctx)[i];
+  return x&&x.time?x.time:"";
+}
+
+function planMixText(stops){
+  var seen={},roles=[];
+  (stops||[]).forEach(function(s){
+    var r=planStopRole(s);
+    if(!seen[r]){
+      seen[r]=true;
+      roles.push(planRoleEmoji(r)+r);
+    }
+  });
+  return roles.join("・");
+}
+
+function planLegLimit(timeMode,relaxed){
+  if(timeMode==="full")return relaxed?35:22;
+  return relaxed?20:12;
+}
+
+function planDiversityGroup(s){
+  if(!s)return "其他";
+
+  var type=String(s.type||"");
+  var tags=Array.isArray(s.tags)?s.tags:[];
+
+  if(type==="觀光工廠")return "觀光工廠";
+  if(type==="校園")return "校園";
+  if(type==="活動")return "活動";
+
+  if(["DIY","體驗","互動","動物","農場","遊樂"].some(function(x){
+    return tags.indexOf(x)>=0;
+  }))return "體驗";
+
+  if(["公園","步道","自然","森林","登山","湖景","海景","花海","戶外"].some(function(x){
+    return tags.indexOf(x)>=0;
+  }))return "戶外";
+
+  if(["博物館","展覽","文化","藝術","歷史"].some(function(x){
+    return tags.indexOf(x)>=0;
+  }))return "文化";
+
+  if(["美食","小吃","正餐","甜點","咖啡","伴手禮"].some(function(x){
+    return tags.indexOf(x)>=0;
+  }))return "美食";
+
+  return type||"其他";
+}
+
+function planDiversityCount(stops,group){
+  return (stops||[]).filter(function(s){
+    return planDiversityGroup(s)===group;
+  }).length;
+}
+
+function planDiversityCap(group,theme,maxStops){
+  if(theme==="觀光工廠" || theme==="校園" ||
+     theme==="活動" || theme==="本週末"){
+    return maxStops;
+  }
+
+  if(group==="校園")return 1;
+  if(group==="觀光工廠")return maxStops>=5?2:1;
+  if(group==="美食")return 1;
+
+  if(theme==="親子" && group==="體驗")return 2;
+  if(theme==="戶外" && group==="戶外")return maxStops>=5?3:2;
+  if(theme==="室內" && group==="文化")return 2;
+
+  return 2;
+}
+
+function planDiversityPenalty(selected,s,theme,maxStops){
+  var group=planDiversityGroup(s);
+  var same=planDiversityCount(selected,group);
+  var cap=planDiversityCap(group,theme,maxStops);
+
+  if(same>=cap){
+    if(group==="校園")return 150;
+    if(group==="觀光工廠")return 110;
+    return 80;
+  }
+
+  return same*18;
+}
+
+function planVarietyText(stops){
+  var seen={},groups=[];
+  (stops||[]).forEach(function(s){
+    var g=planDiversityGroup(s);
+    if(!seen[g]){
+      seen[g]=true;
+      groups.push(g);
+    }
+  });
+  return groups.join("・");
+}
+
+
+function buildCompactSmartPlan(candidates,opts,startCoord,maxStops){
+  var allCandidates=(candidates||[]);
+  var pool=allCandidates.slice(0,120);
+
+  /* Keep proper-meal candidates visible even if their heat score is lower. */
+  if(opts.timeMode==="full"){
+    allCandidates.forEach(function(s){
+      if(pool.length>=160)return;
+      if(planIsMealStop(s) && pool.indexOf(s)<0){
+        pool.push(s);
+      }
+    });
+  }
+
+  var chosen=[];
+  var current=startCoord||null;
+  var activityCount=0;
+  var activityLimit=opts.timeMode==="full"?2:1;
+  var roleCounts={};
+  var targetDay=planDayMode(opts.dayMode);
+
+  function alreadyChosen(s){
+    return chosen.indexOf(s)>=0;
+  }
+
+  function pickOne(maxLeg,allowExtraActivity){
+    var best=null,bestScore=-1e9;
+
+    pool.forEach(function(s){
+      if(!s||alreadyChosen(s))return;
+      if(s.type==="活動" && !planEventActiveForDay(s,targetDay))return;
+      if(s.type==="活動" && activityCount>=activityLimit && !allowExtraActivity)return;
+
+      var coord=stopCoord(s);
+      var leg=0;
+
+      if(opts.city==="附近" && startCoord && !coord)return;
+
+      if(current&&coord){
+        leg=geoDistance(current,coord);
+        if(isFinite(leg)&&leg>maxLeg)return;
+      }
+
+      var score=smartPlanScore(s,opts.theme,startCoord,opts.timeMode);
+
+      var diversityPenalty=planDiversityPenalty(
+        chosen,
+        s,
+        opts.theme,
+        maxStops
+      );
+      score-=diversityPenalty;
+
+      /* 新類型略微加分，避免一般 5 站行程一直出現同類景點。 */
+      if(planDiversityCount(chosen,planDiversityGroup(s))===0){
+        score+=12;
+      }
+
+      var arrivalMinute=planCandidateArrivalMinute(chosen,s,opts,startCoord);
+      var knownStatus=arrivalMinute==null?null:planKnownHoursStatus(s,arrivalMinute,targetDay);
+
+      /* Native43：可靠資料顯示整日休館，或預估抵達時已關門，就不排入。 */
+      if(planKnownDayStatus(s,targetDay)==="closed")return;
+      if(knownStatus==="closed")return;
+      if(knownStatus==="open")score+=8;
+
+      if(current&&coord&&isFinite(leg)){
+        score-=leg*1.8;
+      }
+
+      if(chosen.length){
+        var prev=chosen[chosen.length-1];
+        if(prev.city===s.city)score+=7;
+        if(prev.type===s.type)score-=4;
+      }
+
+      var role=planStopRole(s);
+      var used=roleCounts[role]||0;
+
+      if(opts.theme!=="美食"){
+        score-=used*12;
+      }
+
+      if(opts.timeMode==="full" && role==="美食"){
+        var lunch=planMealWindow("lunch");
+        var dinner=planMealWindow("dinner");
+        var foodClass=planMealFoodClass(s);
+        var inLunch=arrivalMinute>=lunch.foodStart && arrivalMinute<=lunch.foodEnd;
+        var inDinner=arrivalMinute>=dinner.foodStart && arrivalMinute<=dinner.foodEnd;
+
+        if(inLunch){
+          if(foodClass==="meal"){
+            score+=110;
+          }else if(foodClass==="snack"){
+            score-=55;
+          }else{
+            score-=30;
+          }
+        }else if(inDinner){
+          if(foodClass==="meal"){
+            score+=75;
+          }else if(foodClass==="snack"){
+            score-=35;
+          }else{
+            score-=20;
+          }
+        }else if(foodClass==="meal" && chosen.length===1){
+          score+=18;
+        }else if(foodClass==="snack"){
+          score-=5;
+        }
+      }
+
+      if(s.type==="活動" && planEventActiveForDay(s,targetDay))score+=6;
+
+      if(score>bestScore){
+        bestScore=score;
+        best=s;
+      }
+    });
+
+    if(!best)return false;
+
+    chosen.push(best);
+    if(best.type==="活動")activityCount++;
+
+    var bestRole=planStopRole(best);
+    roleCounts[bestRole]=(roleCounts[bestRole]||0)+1;
+
+    var next=stopCoord(best);
+    if(next)current=next;
+
+    return true;
+  }
+
+  while(chosen.length<maxStops){
+    if(pickOne(planLegLimit(opts.timeMode,false),false))continue;
+    if(pickOne(planLegLimit(opts.timeMode,true),false))continue;
+    if(pickOne(planLegLimit(opts.timeMode,true),true))continue;
+    break;
+  }
+
+  return chosen;
+}
+
+
+function formatPlanLegDistance(d,precise){
+  if(d==null||!isFinite(d))return "";
+  if(precise)return formatDistanceKm(d);
+  return "約 "+Math.max(1,Math.round(d))+" km";
+}
+
+function plannerLocationLabel(){
+  if(currentUserCoord){
+    return locationSource==="manual"
+      ?"📍 手動位置："+(currentLocationLabel||"已設定")
+      :"📍 已取得手機位置";
+  }
+  return "📍 尚未取得目前位置";
+}
+
+function updatePlannerLocationHint(){
+  var el=$("planStartHint");
+  if(!el)return;
+
+  var dateValue=$("pdate")&&$("pdate").value
+    ?$("pdate").value
+    :planTodayIso();
+
+  el.textContent=
+    plannerLocationLabel()+
+    "；Native45 行程日期："+planTargetDateLabel(dateValue)+
+    "。已知休館日、活動日期不符、以及預估抵達時已關門的景點會避開；未收錄可靠營業時間的景點仍會提示用 Maps 再確認。";
+}
+
+
+function runSmartPlan(opts){
+  opts=opts||{};
+
+  var c=opts.city,t=opts.theme,timeMode=opts.timeMode;
+  var dayMode=planDayMode(opts.dateKey||opts.dayMode);
+  opts.dayMode=dayMode;
+
+  var requestedStops=timeMode==="full"?5:3;
+  var maxStops=planTodayStopCapacity(timeMode,requestedStops,dayMode);
+  var dayLabel=timeMode==="full"?"一日":"半日";
+  var targetText=planTargetDayText(dayMode);
+
+  $("pr").innerHTML='<div class="plan-title">✨ AI 正在排行程…</div>'+
+    '<div class="plan-opt">'+
+      (planIsTodayTarget(dayMode)
+        ?"正在依現在時間、主題、距離與今天可用的營業資料調整路線。"
+        :"正在依 "+targetText+" 的活動日期、營業日、營業時段、主題與距離安排路線。")+
+    '</div>';
+
+  getPlanStartCoord(function(startCoord){
+    if(c==="附近" && !startCoord){
+      $("pr").innerHTML='<div class="plan-title">📍 需要目前位置</div>'+
+        '<div class="plan-route-note">請先允許手機定位，或在「離我近」的位置設定中選擇手動位置後再試一次。</div>';
+      updatePlannerLocationHint();
+      return;
+    }
+
+    var candidates=smartPlanCandidates(opts,startCoord);
+
+    if(planIsTodayTarget(dayMode) && planIsLateNight()){
+      var nightCandidates=candidates.filter(function(s){
+        return planNightEligible(s,startCoord,opts);
+      });
+
+      if(!nightCandidates.length){
+        renderLateNightChoice(opts);
+        updatePlannerLocationHint();
+        return;
+      }
+
+      candidates=nightCandidates;
+      maxStops=Math.min(Math.max(1,maxStops),2);
+    }
+
+    if(planIsTodayTarget(dayMode) && maxStops<1){
+      if(planIsLateNight()){
+        renderLateNightChoice(opts);
+      }else{
+        renderRemainingTimeChoice(opts);
+      }
+
+      updatePlannerLocationHint();
+      return;
+    }
+
+    var a=buildCompactSmartPlan(candidates,opts,startCoord,maxStops);
+
+    if(planIsTodayTarget(dayMode) && planIsLateNight() && !a.length){
+      renderLateNightChoice(opts);
+      updatePlannerLocationHint();
+      return;
+    }
+
+    var routeOptimization=optimizeSmartRouteOrder(
+      a,
+      startCoord,
+      {timeMode:timeMode,dayMode:dayMode}
+    );
+    a=routeOptimization.stops;
+
+    var areaLabel=c==="附近"?"離我近":c;
+    var baseTitle=t==="本週末"?areaLabel+"・活動":areaLabel+"・"+t;
+
+    var timeLabel;
+    if(planIsTodayTarget(dayMode)){
+      if(planIsLateNight()){
+        timeLabel="今晚・"+maxStops+"站";
+      }else{
+        timeLabel=maxStops<requestedStops
+          ?dayLabel+"・今天可排"+maxStops+"站"
+          :"今天・"+dayLabel+"・"+maxStops+"站";
+      }
+    }else{
+      timeLabel=planTargetDateLabel(dayMode)+"・"+dayLabel+"・"+maxStops+"站";
+    }
+
+    var title=baseTitle+"・"+timeLabel+" AI 行程";
+
+    if(!a.length){
+      $("pr").innerHTML='<div class="plan-title">'+title+'</div>'+
+        '<div class="plan-route-note">在 '+planTargetDateLabel(dayMode)+' 沒有足夠符合條件且可排入的景點。已知休館日與活動日期不符的地點不會硬排進來，請換主題、縣市或日期。</div>';
+      return;
+    }
+
+    renderPlanResult(
+      a,
+      title,
+      maxStops,
+      startCoord?"location":"distance",
+      {
+        startCoord:startCoord,
+        theme:t,
+        timeMode:timeMode,
+        city:c,
+        dayMode:dayMode,
+        requestedStops:requestedStops,
+        routeOptimization:routeOptimization
+      }
+    );
+    updatePlannerLocationHint();
+  });
+}
+
+
+function requestSmartPlan(){
+  var dateValue=$("pdate")&&$("pdate").value
+    ?$("pdate").value
+    :planTodayIso();
+
+  var opts={
+    city:$("pc").value,
+    theme:$("pt").value,
+    timeMode:$("ptime").value,
+    dateKey:dateValue,
+    dayMode:dateValue
+  };
+
+  if(opts.city==="附近" &&
+     !currentUserCoord &&
+     window.__NATIVE_ANDROID_APP__ &&
+     window.手機Location){
+    window.__pendingSmartPlan=opts;
+    $("pr").innerHTML='<div class="plan-title">📍 正在取得手機位置…</div>'+
+      '<div class="plan-opt">取得位置後會自動產生 '+planTargetDateLabel(opts.dayMode)+' 的 AI 行程，不需要再按一次。</div>';
+    requestUserLocation(true);
+    return;
+  }
+
+  runSmartPlan(opts);
+}
+
+
 function getPlanStartCoord(done){
   if(currentUserCoord){
     done(currentUserCoord.slice());
@@ -2891,45 +5147,392 @@ function planRouteText(stops){
   return "Google Maps 路線："+parts.join(" → ");
 }
 
-function planCardHtml(s,i){
-  var date=activityDateText(s);
+
+function planNameKey(v){
+  return String(v||"")
+    .replace(/\s+/g,"")
+    .replace(/[（）()·・\-－_]/g,"")
+    .trim();
+}
+
+function planCuratedHoursRecord(s){
+  if(!s)return null;
+
+  var n=planNameKey(s.name);
+  var allDays={
+    0:[[600,1080]],1:[[600,1080]],2:[[600,1080]],3:[[600,1080]],
+    4:[[600,1080]],5:[[600,1080]],6:[[600,1080]]
+  };
+
+  if(n.indexOf("檜意森活村")>=0){
+    return {
+      display:"每日 10:00–18:00",
+      days:allDays,
+      sourceLabel:"檜意森活村官網",
+      sourceUrl:"https://www.hinokivillage.com.tw/"
+    };
+  }
+
+  if(n.indexOf("愛木村")>=0){
+    return {
+      display:"週二公休；其餘 09:00–17:30",
+      days:{
+        0:[[540,1050]],
+        1:[[540,1050]],
+        2:[],
+        3:[[540,1050]],
+        4:[[540,1050]],
+        5:[[540,1050]],
+        6:[[540,1050]]
+      },
+      sourceLabel:"交通部觀光資料",
+      sourceUrl:"https://media.taiwan.net.tw/zh-tw/portal/travel/details/attraction_376600000a_000050"
+    };
+  }
+
+  if(n.indexOf("月桃故事館")>=0){
+    return {
+      display:"每日 08:30–17:00（除夕休館）",
+      days:{
+        0:[[510,1020]],1:[[510,1020]],2:[[510,1020]],3:[[510,1020]],
+        4:[[510,1020]],5:[[510,1020]],6:[[510,1020]]
+      },
+      sourceLabel:"月桃故事館官網",
+      sourceUrl:"https://www.sgsh.com.tw/tw/contact.html"
+    };
+  }
+
+  if(n.indexOf("歐樂沃築夢城堡")>=0 || n.indexOf("歐樂沃")>=0){
+    return {
+      display:"平日 09:00–17:00；週六日 09:00–17:30",
+      days:{
+        0:[[540,1050]],
+        1:[[540,1020]],
+        2:[[540,1020]],
+        3:[[540,1020]],
+        4:[[540,1020]],
+        5:[[540,1020]],
+        6:[[540,1050]]
+      },
+      sourceLabel:"歐樂沃築夢城堡官網",
+      sourceUrl:"https://www.otherworld.com.tw/info_tw.php?id=2"
+    };
+  }
+
+  if(n.indexOf("佐登妮絲城堡")>=0 || n.indexOf("佐登妮絲")>=0){
+    return {
+      display:"每日 09:00–17:30",
+      days:{
+        0:[[540,1050]],1:[[540,1050]],2:[[540,1050]],3:[[540,1050]],
+        4:[[540,1050]],5:[[540,1050]],6:[[540,1050]]
+      },
+      sourceLabel:"佐登妮絲城堡官方資訊",
+      sourceUrl:"https://chateau.jourdeness.com/faq/other/"
+    };
+  }
+
+  return null;
+}
+
+function planKnownHours(s){
+  if(!s)return "";
+
+  var curated=planCuratedHoursRecord(s);
+  if(curated&&curated.display)return curated.display;
+
+  var keys=["opening_hours","open_hours","business_hours","hours","openingHours"];
+
+  for(var i=0;i<keys.length;i++){
+    var v=s[keys[i]];
+    if(typeof v==="string" && v.trim()){
+      return v.trim();
+    }
+  }
+  return "";
+}
+
+function planKnownHoursSourceLabel(s){
+  var curated=planCuratedHoursRecord(s);
+  return curated&&curated.sourceLabel?curated.sourceLabel:"";
+}
+
+function planKnownHoursSourceUrl(s){
+  var curated=planCuratedHoursRecord(s);
+  return curated&&curated.sourceUrl?curated.sourceUrl:"";
+}
+
+
+function planFeasibilityInfo(s,ctx,i){
+  if(!s)return {cls:"check",text:"⚠️ 出發前請確認最新資訊"};
+
+  var dayMode=planDayMode(ctx&&ctx.dayMode);
+  var dayText=planTargetDayText(dayMode);
+  var tl=ctx?planTimeline(ctx):[];
+  var slot=tl&&tl[i]?tl[i]:null;
+  var arrival=slot&&slot.time?slot.time:"";
+  var minute=slot&&isFinite(slot.minute)?slot.minute:null;
+
+  if(s.type==="活動"){
+    if(!planEventActiveForDay(s,dayMode)){
+      return {
+        cls:"closed",
+        text:"⛔ "+dayText+"不在這個活動的有效日期內，請重新排行程"
+      };
+    }
+
+    return {
+      cls:"good",
+      text:"✅ "+dayText+"活動日期有效"+(arrival?("；預計 "+arrival+" 抵達"):"")+"，仍建議確認現場場次"
+    };
+  }
+
+  var hours=planKnownHours(s);
+  var sourceLabel=planKnownHoursSourceLabel(s);
+  var status=minute==null?null:planKnownHoursStatus(s,minute,dayMode);
+
+  if(hours && status==="open"){
+    return {
+      cls:"good",
+      text:"✅ "+(sourceLabel?sourceLabel+"：":"")+"預計 "+arrival+" 抵達，營業時段 "+hours
+    };
+  }
+
+  if(hours && status==="closed"){
+    return {
+      cls:"closed",
+      text:"⛔ "+(sourceLabel?sourceLabel+"：":"")+"預計 "+arrival+" 抵達時可能尚未開放／已休館；營業時段 "+hours
+    };
+  }
+
+  if(hours){
+    return {
+      cls:"good",
+      text:"🕒 "+(sourceLabel?sourceLabel+"：":"資料內營業資訊：")+hours+"（出發前仍建議 Maps 確認）"
+    };
+  }
+
+  return {
+    cls:"check",
+    text:"⚠️ "+(arrival?("預計 "+arrival+" 抵達；"):"")+"尚未收錄可靠營業時間，請開啟 Google Maps 地點頁確認"
+  };
+}
+
+
+function planFeasibilityHtml(s,ctx,i){
+  var x=planFeasibilityInfo(s,ctx,i);
+  return '<div class="plan-feasibility '+x.cls+'">'+x.text+'</div>';
+}
+
+
+function planMapsPlaceQuery(s){
+  if(!s)return "";
+  var name=String(s.name||"").trim();
+  var place=String(s.place||"").trim();
+  var city=String(s.city||"").trim();
+  var parts=[];
+
+  if(name)parts.push(name);
+
+  if(place && place!==name){
+    parts.push(place);
+  }else if(city && city!==name){
+    parts.push(city);
+  }
+
+  return parts.join(" ").replace(/\s+/g," ").trim();
+}
+
+function planHoursSearchUrl(s){
+  var q=planMapsPlaceQuery(s);
+  return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q);
+}
+
+function openPlanHoursSearch(s){
+  if(!s)return;
+  window.open(planHoursSearchUrl(s),"_blank");
+}
+
+function planFeasibilitySummary(stops,ctx){
+  var activity=0,known=0,curated=0,need=0,closed=0;
+
+  (stops||[]).forEach(function(s,i){
+    if(!s)return;
+
+    if(s.type==="活動"){
+      activity++;
+      return;
+    }
+
+    var hours=planKnownHours(s);
+    if(!hours){
+      need++;
+      return;
+    }
+
+    known++;
+    if(planCuratedHoursRecord(s))curated++;
+
+    var tl=ctx?planTimeline(ctx):[];
+    var slot=tl&&tl[i]?tl[i]:null;
+    var minute=slot&&isFinite(slot.minute)?slot.minute:null;
+    var dayMode=planDayMode(ctx&&ctx.dayMode);
+
+    if(minute!=null && planKnownHoursStatus(s,minute,dayMode)==="closed"){
+      closed++;
+    }
+  });
+
+  var parts=[];
+  if(activity)parts.push("📅 "+activity+" 個活動日期已檢查");
+  if(curated)parts.push("✅ "+curated+" 站有官方／政府營業資料");
+  else if(known)parts.push("🕒 "+known+" 站有營業資料");
+  if(need)parts.push("⚠️ "+need+" 站需 Maps 確認營業");
+  if(closed)parts.push("⛔ "+closed+" 站時段可能不合");
+
+  parts.unshift("📅 "+planTargetDateLabel(ctx&&ctx.dayMode)+" 已套用");
+
+  return parts.join(" · ")||"✅ 行程基本條件已檢查";
+}
+
+
+function planLegText(stops,i,startCoord){
+  if(!Array.isArray(stops)||!stops[i])return "";
+  var to=stopCoord(stops[i]);
+  if(!to)return "";
+
+  var from=i===0?startCoord:stopCoord(stops[i-1]);
+  if(!from)return "";
+
+  var d=geoDistance(from,to);
+  if(!isFinite(d))return "";
+
+  var precise=hasPreciseDistanceCoord(stops[i]) &&
+    (i===0 || hasPreciseDistanceCoord(stops[i-1]));
+  var distanceText=formatPlanLegDistance(d,precise);
+
+  return (i===0?"離目前位置 ":"距上一站 ")+distanceText;
+}
+
+
+function planActivityDateText(s,dayMode){
+  if(!s||s.type!=="活動")return "";
+
+  var mode=planDayMode(dayMode);
+  var target=planTargetDate(mode);
+
+  if(planEventActiveForDay(s,mode)){
+    var label="📅 "+planTargetDayText(mode)+"可參加";
+    var end=normDate(s.end);
+
+    if(end){
+      end.setHours(23,59,59,999);
+      if(end>=target)label+=" · 活動至 "+fmtMD(end);
+    }
+
+    return label;
+  }
+
+  return activityDateText(s);
+}
+
+
+function planCardHtml(s,i,ctx){
+  var date=planActivityDateText(s,ctx&&ctx.dayMode);
   var place=shortPlace(s);
   var sourceUrl=s.url||s.social_url||"";
+  var leg=ctx?planLegText(ctx.stops,i,ctx.startCoord):"";
+  var time=ctx?planTimeForStop(ctx,i):"";
+  var drive=ctx?planDriveText(ctx,i):"";
+  var role=planStopRole(s);
+  var stay=planSuggestedStay(s);
+  var feasibility=planFeasibilityHtml(s,ctx,i);
+  var reason=ctx&&ctx.theme?planThemeReason(s,ctx.theme):"";
+  var slot=ctx?planTimeline(ctx)[i]:null;
+  var mealBadge=slot&&slot.mealStop
+    ?'<span class="plan-meal-stop-badge">'+planMealLabel(slot.mealStop)+'・正餐</span>'
+    :"";
+  var foodClassBadge=role==="美食" && !(slot&&slot.mealStop)
+    ?'<span class="plan-food-class-badge '+planMealFoodClass(s)+'">'+planFoodClassLabel(s)+'</span>'
+    :"";
+
   return '<div class="plan-card">'+
+    (time?'<div class="plan-time-row"><span class="plan-time-badge">🕘 '+time+'</span><span class="plan-stay-badge">建議停留 '+stay+'</span>'+(drive?'<span class="plan-drive-badge">'+drive+'</span>':'')+mealBadge+foodClassBadge+'</div>':'')+
     '<div class="plan-top">'+
       '<div class="plan-step">'+(i+1)+'</div>'+
       '<div>'+
         '<div class="plan-name">'+(s.name||"未命名行程")+'</div>'+
         '<div class="plan-meta">📍 '+place+' · '+(s.type||"景點")+'</div>'+
+        '<div class="plan-role-badge">'+planRoleEmoji(role)+' '+role+'</div>'+
       '</div>'+
     '</div>'+
+    (reason?'<div class="plan-theme-reason">✨ 推薦理由：'+reason+'</div>':'')+
     (date?'<div class="plan-date">'+date+'</div>':'')+
+    (leg?'<div class="plan-distance">🚗 '+leg+'（直線估算）</div>':'')+
+    feasibility+
     '<div class="plan-heat">🔥 熱度 '+Number(s.heat||0)+'</div>'+
     '<div class="plan-actions">'+
       '<button class="pnav" data-pn="'+i+'">🧭 導航</button>'+
       '<button class="pdetail" data-pd="'+i+'">詳情</button>'+
+      (s.type!=="活動"?'<button class="phours" data-ph="'+i+'">🕒 Maps 查營業</button>':'')+
       (sourceUrl?'<button class="psource" data-ps="'+i+'">🔗 查看來源</button>':'')+
     '</div>'+
   '</div>';
 }
 
-function renderPlanResult(a,title,maxStops,optMode){
+
+function renderPlanResult(a,title,maxStops,optMode,ctx){
+  ctx=ctx||{};
+  ctx.stops=a;
+  ctx._timeline=null;
+
   var shortage=a.length<maxStops
     ?'<div class="plan-route-note">目前只有 '+a.length+' 個符合條件的地點，因此不強行湊滿 '+maxStops+' 站。</div>'
     :"";
 
-  var optText=optMode==="location"
-    ?"🧭 已依目前位置＋景點距離調整順序"
-    :optMode==="distance"
-      ?"🧭 未取得目前位置，已依景點彼此距離調整順序"
-      :optMode==="heat"
-        ?"ℹ️ 部分景點缺少位置資訊，沿用熱門度順序"
-        :"";
+  var optText=planRouteOptimizationText(ctx);
+
+  if(!optText){
+    optText=optMode==="location"
+      ?"🧭 已依目前位置＋景點距離調整順序"
+      :optMode==="distance"
+        ?"🧭 未取得目前位置，已依景點彼此距離調整順序"
+        :optMode==="heat"
+          ?"ℹ️ 部分景點缺少位置資訊，沿用熱門度順序"
+          :"";
+  }
+
+  var smartSummary="✨ AI 已綜合「"+(ctx.theme||"主題")+"」、熱門度、距離、營業資料與正餐優先，排成 "+a.length+" 站時間表。";
+  smartSummary+='<span class="plan-feas-summary-inline">'+planFeasibilitySummary(a,ctx)+'</span>';
+
+  var dayMode=planDayMode(ctx.dayMode);
+  var shifted=planIsTodayTarget(dayMode) &&
+    planStartMinutes(ctx.timeMode,dayMode)>planDefaultStartMinutes(ctx.timeMode);
+  var reduced=ctx.requestedStops&&a.length<ctx.requestedStops;
+
+  var nowNote="";
+  if(!planIsTodayTarget(dayMode)){
+    nowNote='<div class="plan-tomorrow-note">📅 '+planTargetDateLabel(dayMode)+' 行程：從 '+planClock(planDefaultStartMinutes(ctx.timeMode))+' 左右開始安排；已依選定日期檢查活動有效日與已收錄營業資訊。</div>';
+  }else if(shifted||reduced){
+    nowNote='<div class="plan-now-note">⏰ 手機目前時間 '+planNowLabel()+'；行程已從可出發時段重新安排'+(reduced?'，今天剩餘時間較短，站數已調整':'')+'。</div>';
+  }
+
+  var mealSummary=planMealSummary(ctx);
+  var finishText=planEstimatedFinishText(ctx);
+  var cardsHtml=a.map(function(s,i){
+    return planMealBreakHtml(ctx,i)+planCardHtml(s,i,ctx);
+  }).join("");
 
   $("pr").innerHTML='<div class="plan-title">'+title+'</div>'+
+    '<div class="plan-smart-summary">'+smartSummary+'</div>'+
+    nowNote+
+    '<div class="plan-timetable-note">🕒 建議時段：'+planTimeline(ctx).map(function(x){return x.time}).join(" → ")+
+      (mealSummary?'<br>🍽️ 用餐安排：'+mealSummary:'')+
+      (finishText?'<br>🏁 預估結束：約 '+finishText:'')+
+      '<br>🎯 行程組合：'+(planMixText(a)||"依主題安排")+
+      '<br>🧩 景點類型：'+(planVarietyText(a)||"依主題安排")+'</div>'+
     (optText?'<div class="plan-opt">'+optText+'</div>':'')+
-    a.map(function(s,i){return planCardHtml(s,i)}).join("")+
-    '<button id="startPlanRoute" class="plan-route">🚗 開始整段行程</button>'+
+    cardsHtml+
+    '<button id="startPlanRoute" class="plan-route">🚗 Google Maps 整段導航</button>'+
     '<div class="plan-route-note">'+planRouteText(a)+'</div>'+
     shortage;
 
@@ -2949,6 +5552,27 @@ function renderPlanResult(a,title,maxStops,optMode){
     };
   });
 
+  [].forEach.call($("pr").querySelectorAll("[data-ph]"),function(b){
+    b.onclick=function(){
+      var i=Number(this.getAttribute("data-ph"));
+      if(a[i])openPlanHoursSearch(a[i]);
+    };
+  });
+
+  [].forEach.call($("pr").querySelectorAll("[data-pmeal]"),function(b){
+    b.onclick=function(){
+      var i=Number(this.getAttribute("data-pmeal"));
+      openMealRestaurantSearch(ctx,i);
+    };
+  });
+
+  [].forEach.call($("pr").querySelectorAll("[data-pmealmap]"),function(b){
+    b.onclick=function(){
+      var i=Number(this.getAttribute("data-pmealmap"));
+      openMealMap(ctx,i);
+    };
+  });
+
   [].forEach.call($("pr").querySelectorAll("[data-ps]"),function(b){
     b.onclick=function(){
       var i=Number(this.getAttribute("data-ps"));
@@ -2958,6 +5582,7 @@ function renderPlanResult(a,title,maxStops,optMode){
     };
   });
 }
+
 
 
 
@@ -3190,6 +5815,15 @@ function renderFeatured(){
   var count=$("featuredCount");
   if(!box||!section)return;
 
+  if(sort==="附近"){
+    section.style.display="none";
+    box.innerHTML="";
+    currentFeaturedIds={};
+    if(count)count.textContent="";
+    return;
+  }
+  section.style.display="";
+
   var picks=featuredCandidates();
   currentFeaturedIds={};
   picks.forEach(function(s){
@@ -3253,7 +5887,21 @@ function render(){
     return;
   }
 
+  var lastNearbyBand="";
   a.forEach(function(s){
+    if(sort==="附近"&&currentUserCoord){
+      var dBand=itemDistanceKm(s);
+      var band=nearbyBand(dBand);
+
+      if(band&&band!==lastNearbyBand){
+        var meta=nearbyBandMeta(band);
+        var zone=document.createElement("div");
+        zone.className="nearby-zone "+band;
+        zone.innerHTML='<span>'+meta.title+'</span><small>'+meta.range+'</small>';
+        box.appendChild(zone);
+        lastNearbyBand=band;
+      }
+    }
     var tags=Array.isArray(s.tags)?s.tags:[];
     var el=document.createElement("article");
     var topTags=tags.slice(0,3);
@@ -3281,7 +5929,7 @@ function render(){
       '<div class="body">'+
         '<div class="card-type-row">'+
           '<span class="type-chip">'+(s.type||"景點")+'</span>'+
-          (sort==="附近"&&itemDistanceKm(s)!=null?'<span class="distance-chip">📍 '+formatDistanceKm(itemDistanceKm(s))+'</span>':'')+
+          distanceChipHtml(s)+
           (sel["本週末"]&&isThisWeekendEvent(s)?'<span class="weekend-chip">本週末</span>':'')+
           (s.type==="活動"&&isTravelFriendlyEvent(s)?'<span class="weekend-chip">近期精選</span>':'')+
         '</div>'+
@@ -3476,6 +6124,7 @@ function init(){
       nearbyRadius=raw==="all"?"all":Number(raw);
       syncNearbyRange();
       render();
+      pulseNearbyRefresh();
     };
   });
 
@@ -3510,6 +6159,14 @@ function init(){
 
   syncNearbyRange();
   syncLocationPanel();
+  setLocationPanelExpanded(false);
+
+  if($("locationPanelToggle")){
+    $("locationPanelToggle").onclick=function(){
+      var body=$("locationPanelBody");
+      setLocationPanelExpanded(!!(body&&body.classList.contains("hidden")));
+    };
+  }
 
   $("search").oninput=function(){query=this.value;render()};
 
@@ -3531,52 +6188,8 @@ function init(){
   $("close").onclick=function(){$("modal").classList.add("hidden")};
   $("modal").onclick=function(e){if(e.target===this)this.classList.add("hidden")};
 
-  $("plan").onclick=function(){
-    var c=$("pc").value,t=$("pt").value;
-    var timeMode=$("ptime").value;
-    var maxStops=timeMode==="full"?4:2;
-    var timeLabel=timeMode==="full"?"一日":"半日";
-
-    var candidates=data.filter(function(s){
-      return s.city===c && (
-        t==="觀光工廠"
-          ? s.type==="觀光工廠"
-          : t==="校園"
-            ? s.type==="校園"
-            : t==="活動"
-              ? s.type==="活動" && !isExpired(s) && isTravelFriendlyEvent(s) && isSoonEvent(s)
-              : t==="本週末"
-                ? s.type==="活動" && !isExpired(s) && isTravelFriendlyEvent(s) && isThisWeekendEvent(s)
-                : Array.isArray(s.tags) && s.tags.indexOf(t)>=0
-      );
-    }).sort(function(a,b){
-      if(t==="活動"||t==="本週末"){
-        var sa=eventRecommendScore(a),sb=eventRecommendScore(b);
-        if(sa!==sb)return sb-sa;
-        return eventDaysUntil(a)-eventDaysUntil(b);
-      }
-      return Number(b.heat||0)-Number(a.heat||0);
-    });
-
-    var a=uniquePlanStops(candidates).slice(0,maxStops);
-
-    var baseTitle=t==="本週末"?c+"・本週末":c+"・"+t;
-    var title=baseTitle+"・"+timeLabel+"行程";
-
-    if(!a.length){
-      $("pr").innerHTML='<div class="plan-title">'+title+'</div>'+
-        '<div class="meta">'+(t==="本週末"?'本週末目前沒有符合條件的活動。':'目前沒有符合行程。')+'</div>';
-      return;
-    }
-
-    $("pr").innerHTML='<div class="plan-title">'+title+'</div>'+
-      '<div class="plan-opt">🧭 正在依距離最佳化行程順序…</div>';
-
-    getPlanStartCoord(function(startCoord){
-      var optimized=optimizePlanOrder(a,startCoord);
-      renderPlanResult(optimized.stops,title,maxStops,optimized.mode);
-    });
-  };
+  planInitDatePicker();
+  $("plan").onclick=requestSmartPlan;
 
   $("export").onclick=function(){
     $("jsonbox").value=JSON.stringify(data,null,2);
@@ -3656,6 +6269,7 @@ function init(){
   };
   if($("bnPlan"))$("bnPlan").onclick=function(){
     setBottomActive("bnPlan");
+    updatePlannerLocationHint();
     $("planner").scrollIntoView({behavior:"smooth",block:"start"});
   };
   if($("bnFav"))$("bnFav").onclick=function(){
@@ -3673,6 +6287,7 @@ function init(){
 
   setupPWA();
   refreshHealth();
+  updatePlannerLocationHint();
   render();
   if(savedFeed)syncFeed(savedFeed,true);
 }
@@ -3681,7 +6296,8 @@ function init(){
 var deferredInstallPrompt=null;
 
 function isStandaloneApp(){
-  return window.matchMedia("(display-mode: standalone)").matches ||
+  return window.__NATIVE_ANDROID_APP__===true ||
+    window.matchMedia("(display-mode: standalone)").matches ||
     window.navigator.standalone===true;
 }
 
@@ -3699,8 +6315,8 @@ function updateInstallUI(){
     btn.textContent="安裝 App";
     if(hint)hint.textContent="按一下即可安裝到手機桌面，之後可像一般 App 直接開啟。";
   }else{
-    btn.textContent="安裝說明";
-    if(hint)hint.textContent="若目前瀏覽器不能直接安裝，請用 Chrome 開啟後選「安裝應用程式」。";
+    btn.textContent="加入主畫面";
+    if(hint)hint.textContent="Android 可用 Chrome 安裝；iPhone 請用 Safari 的「分享」→「加入主畫面」。";
   }
 }
 
@@ -3734,11 +6350,11 @@ function setupPWA(){
         return;
       }
 
-      alert("請用 Chrome 開啟這個網頁，點右上角 ⋮，再選「安裝應用程式」或「加到主畫面」。");
+      alert("Android：請用 Chrome 開啟，點右上角 ⋮，選「安裝應用程式」或「加到主畫面」。\n\niPhone：請用 Safari 開啟，點「分享」→「加入主畫面」→「加入」。");
     };
   }
 
-  if("serviceWorker" in navigator){
+  if(!window.__NATIVE_ANDROID_APP__ && "serviceWorker" in navigator){
     window.addEventListener("load",function(){
       navigator.serviceWorker.register("./service-worker.js").catch(function(){});
     });

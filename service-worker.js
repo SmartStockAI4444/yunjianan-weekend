@@ -1,4 +1,4 @@
-const CACHE_NAME = "yunjianan-v5-5";
+const CACHE_NAME = "yunjianan-web-pwa-stable-v1";
 const CORE = [
   "./",
   "./index.html",
@@ -32,11 +32,12 @@ self.addEventListener("activate", event => {
 async function networkFirst(request, fallbackUrl) {
   const cache = await caches.open(CACHE_NAME);
   try {
-    const response = await fetch(request);
+    const response = await fetch(request, {cache:"no-store"});
     if (response && response.ok) cache.put(request, response.clone());
     return response;
   } catch (_) {
-    return (await cache.match(request)) || (fallbackUrl ? await cache.match(fallbackUrl) : undefined);
+    return (await cache.match(request)) ||
+      (fallbackUrl ? await cache.match(fallbackUrl) : undefined);
   }
 }
 
@@ -67,7 +68,6 @@ self.addEventListener("fetch", event => {
         }).catch(() => {});
         return cached;
       }
-
       return fetch(request).then(response => {
         if (response && response.ok) {
           const copy = response.clone();
