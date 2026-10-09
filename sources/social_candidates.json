@@ -295,11 +295,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
-      "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 75,
+    "base_heat": 82,
     "updated": "2026-10-09",
     "tags": [
       "景點",
@@ -309,8 +309,8 @@
     ],
     "place": "嘉義市 10020 西區 10020020 600 文化路552號",
     "q": "嘉義市 10020 西區 10020020 600 文化路552號",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA5VU9hWHg3V3JLdllSNmx6dHdBTXp4dnZPaGRMNkYzenYtcXBtQUZzcjhoV0JqODQ0Nk5Db1AxenZqeEJMaTl1RUQxSVJZSmJTRWc?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ISUdPakU5Um13WnVOQWw1aEQ5M2lKZk9mblJ0cE81ZzJONjNnbnowdkpsc1NpZjQ1enVzLTE0aFFjVGw0VnczVDZ0UmRONXM?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_395000000A_000542",
@@ -392,11 +392,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
     },
-    "base_heat": 82,
+    "base_heat": 75,
     "updated": "2026-10-09",
     "tags": [
       "戶外",
@@ -405,8 +405,8 @@
     ],
     "place": "安平區",
     "q": "708 臺南市安平區漁光路118號",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQXdFZDFnOTRLWEUwUUxtZTVhVHZXS2gzdG9Qcllmb3d5Njc4WWg0QWt6MDFadTVTRVpYT2dDQXFPajB4dWRDdEJFb2NHTmZSVVJVMk5Kb2lkVjc3dTg5X1BQRWdscnAtQjN5dXEyaTFtQWtvN3JzaklJMkY1djE1ZUhhY2hkVGtMUTFaVlB0elM3U1RNR1haTGlfQzVfcm4yUVE?oc=5"
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9td29yUEZLUkU4Z2R5V0lJTncwR2NzV0gxX2w2MHJkdFVubUdORXpSUm9MUkMzSWpfanNmUFZLTTR1VUMyNlJRQ2hyei1kM2NhcXh0ZnJScGZ4Z9IBT0FVX3lxTE1COUNHdGplcF9sY2NzTWtRM1VPb0hOSTRxOHhXY21oWmlYUHdXbVNzLW03dFE0VGx3TWNweVJCV2NUZ3EyMEhYUUdlTG45cEE?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_395000000A_000805",
@@ -720,5 +720,78 @@
     "q": "北香湖公園 嘉義市",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0zWXRwcTRlUlExTG9mWXJ6Q2lhdEtvQ3ZPQ0REaFZ2V1hDck9NNE1xNjlLY2RoUVZWRVZXcFZsTWkxQWFBMzdlMUdrYTZLRVVa?oc=5"
+  },
+  {
+    "id": "social-auto-chiayi-city-fallback-df49699a6f46",
+    "city": "嘉義",
+    "name": "2026嘉義市光織影舞",
+    "e": "🔥",
+    "type": "活動",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-09",
+    "tags": [
+      "活動",
+      "嘉義市政府",
+      "本週末",
+      "網路熱門"
+    ],
+    "place": "嘉義市・北香湖公園",
+    "q": "北香湖公園 嘉義市",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0zWXRwcTRlUlExTG9mWXJ6Q2lhdEtvQ3ZPQ0REaFZ2V1hDck9NNE1xNjlLY2RoUVZWRVZXcFZsTWkxQWFBMzdlMUdrYTZLRVVa?oc=5"
+  },
+  {
+    "id": "social-auto-chiayi-city-fallback-32187d431aa8",
+    "city": "嘉義",
+    "name": "2026諸羅搖滾音樂祭",
+    "e": "🔥",
+    "type": "活動",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-09",
+    "tags": [
+      "活動",
+      "嘉義市政府",
+      "本週末",
+      "網路熱門"
+    ],
+    "place": "嘉義市・大同技術學院",
+    "q": "大同技術學院 嘉義市 諸羅搖滾",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBQNGJVdWV6Qzl6cXAxTnpjWjdQcHdwWkd2by02N0pIdk5SSWtZVVEyRTdpdGFvd0NrRWFkMVBsMHRjZmYwOXNhc3JobGZrS3NsNEtkZjYxTjFXVnk0RnNB?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-event-Event_395000000A_008098",
+    "city": "台南",
+    "name": "跟著鏹鏹尋寶去－宮廟博物館×集章×線上尋寶",
+    "e": "🔥",
+    "type": "活動",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-09",
+    "tags": [
+      "活動",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 中西區 67000370 700",
+    "q": "臺南市 67000 中西區 67000370 700",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5nWU5ZSzRvakMtNVVHWHkyU0c0TFg2UFhwZm82SG1ndnhCZWs5SmVCb1NTNEU1ZVBHNUkwcktlMDUxdFMwSE9HME9UQmhva09zd0Y3YkpuSFk3YUh6Mi0zOFNvMFdJS09x?oc=5"
   }
 ]

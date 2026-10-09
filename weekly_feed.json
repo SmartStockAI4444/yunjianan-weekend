@@ -1,12 +1,12 @@
 {
   "version": "2026.10.09-auto",
   "updated": "2026-10-09",
-  "generated_at": "2026-10-09T06:31:24+00:00",
+  "generated_at": "2026-10-09T15:24:50+00:00",
   "stats": {
-    "official": 1397,
-    "social": 28,
+    "official": 1398,
+    "social": 30,
     "expired_removed": 63,
-    "total": 1404
+    "total": 1407
   },
   "items": [
     {
@@ -340,6 +340,30 @@
       "q": "從花磚到咖啡嘉義市廉政志工體驗文化與生活",
       "why": "為提升廉政志工服務知能及團隊凝聚力，嘉義市政府政風處昨(5)日辦理廉政志工教育訓練，安排花磚文化導覽、DIY手作、在地美食體驗及咖啡手沖實作，透過多元的學習方式，擴展志工視野，累積服務能量。 上午廉政志工前往花磚博物館，透過導覽人員知性且風趣的介紹，認識花磚的歷史、圖樣及文化特色，感受傳統工藝所承載的時代記憶，導覽員也特別分享保存花磚文化的理念，期盼透過更多人的認識與參與，讓這份珍貴的文化資產持續",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=954861",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "chiayi-city-news-ad3f84166d0a",
+      "city": "嘉義",
+      "name": "從認證到產業平台「木都日常」即日起至11/15開展！讓木作品牌匯聚嘉義市",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-09",
+      "start": "2026-10-09",
+      "end": "2026-11-15",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "從認證到產業平台「木都日常」即日起至11/15開展！讓木作品牌匯聚嘉義市",
+      "why": "「木」不只是嘉義的歷史，更是一種延續至今的生活語言。「木都日常｜好木作生活展」今(9)日起至11月15日於實驗木場盛大開展，集結全台各地木職人木作作品並與城市中超過10處以上木屋串聯，透過展覽、選物與市集，帶領民眾從城市歷史走進當代生活。嘉義市長黃敏惠今日主持開幕典禮，在木職人講解下進一步了解木作，走訪木作市集，欣賞各式木作好物，邀請大家把握展期，觀展同時也走入城市的街區和巷弄裡，發掘「木都」的歷",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=955283",
       "heat": 93,
       "sources": [
         "官方"
@@ -14166,14 +14190,14 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 1,
-        "creator_mentions": 1,
-        "repeat_recommendations": 0
+        "recent_mentions": 2,
+        "creator_mentions": 2,
+        "repeat_recommendations": 1
       },
-      "social_heat": 58,
+      "social_heat": 62,
       "social_updated": "2026-10-09",
-      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA5VU9hWHg3V3JLdllSNmx6dHdBTXp4dnZPaGRMNkYzenYtcXBtQUZzcjhoV0JqODQ0Nk5Db1AxenZqeEJMaTl1RUQxSVJZSmJTRWc?oc=5"
+      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ISUdPakU5Um13WnVOQWw1aEQ5M2lKZk9mblJ0cE81ZzJONjNnbnowdkpsc1NpZjQ1enVzLTE0aFFjVGw0VnczVDZ0UmRONXM?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_376600000A_000003",
@@ -28370,14 +28394,14 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 2,
-        "creator_mentions": 2,
-        "repeat_recommendations": 1
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
       },
-      "social_heat": 62,
+      "social_heat": 58,
       "social_updated": "2026-10-09",
-      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQXdFZDFnOTRLWEUwUUxtZTVhVHZXS2gzdG9Qcllmb3d5Njc4WWg0QWt6MDFadTVTRVpYT2dDQXFPajB4dWRDdEJFb2NHTmZSVVJVMk5Kb2lkVjc3dTg5X1BQRWdscnAtQjN5dXEyaTFtQWtvN3JzaklJMkY1djE1ZUhhY2hkVGtMUTFaVlB0elM3U1RNR1haTGlfQzVfcm4yUVE?oc=5"
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9td29yUEZLUkU4Z2R5V0lJTncwR2NzV0gxX2w2MHJkdFVubUdORXpSUm9MUkMzSWpfanNmUFZLTTR1VUMyNlJRQ2hyei1kM2NhcXh0ZnJScGZ4Z9IBT0FVX3lxTE1COUNHdGplcF9sY2NzTWtRM1VPb0hOSTRxOHhXY21oWmlYUHdXbVNzLW03dFE0VGx3TWNweVJCV2NUZ3EyMEhYUUdlTG45cEE?oc=5"
     },
     {
       "id": "tainan-attraction-5529",
@@ -29523,6 +29547,32 @@
       ]
     },
     {
+      "id": "social-auto-tourism-event-Event_395000000A_008098",
+      "city": "台南",
+      "name": "跟著鏹鏹尋寶去－宮廟博物館×集章×線上尋寶",
+      "e": "🔥",
+      "type": "活動",
+      "src": "社群",
+      "signals": {
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
+      },
+      "updated": "2026-10-09",
+      "tags": [
+        "活動",
+        "網路熱門"
+      ],
+      "place": "臺南市 67000 中西區 67000370 700",
+      "q": "臺南市 67000 中西區 67000370 700",
+      "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5nWU5ZSzRvakMtNVVHWHkyU0c0TFg2UFhwZm82SG1ndnhCZWs5SmVCb1NTNEU1ZVBHNUkwcktlMDUxdFMwSE9HME9UQmhva09zd0Y3YkpuSFk3YUh6Mi0zOFNvMFdJS09x?oc=5",
+      "heat": 58,
+      "sources": [
+        "社群"
+      ]
+    },
+    {
       "id": "social-auto-chiayi-city-event-df49699a6f46",
       "city": "嘉義",
       "name": "2026嘉義市光織影舞",
@@ -29545,6 +29595,38 @@
       "q": "北香湖公園 嘉義市",
       "why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0zWXRwcTRlUlExTG9mWXJ6Q2lhdEtvQ3ZPQ0REaFZ2V1hDck9NNE1xNjlLY2RoUVZWRVZXcFZsTWkxQWFBMzdlMUdrYTZLRVVa?oc=5",
+      "heat": 58,
+      "sources": [
+        "社群"
+      ],
+      "social_heat": 58,
+      "social_updated": "2026-10-09",
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0zWXRwcTRlUlExTG9mWXJ6Q2lhdEtvQ3ZPQ0REaFZ2V1hDck9NNE1xNjlLY2RoUVZWRVZXcFZsTWkxQWFBMzdlMUdrYTZLRVVa?oc=5"
+    },
+    {
+      "id": "social-auto-chiayi-city-fallback-32187d431aa8",
+      "city": "嘉義",
+      "name": "2026諸羅搖滾音樂祭",
+      "e": "🔥",
+      "type": "活動",
+      "src": "社群",
+      "signals": {
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
+      },
+      "updated": "2026-10-09",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "本週末",
+        "網路熱門"
+      ],
+      "place": "嘉義市・大同技術學院",
+      "q": "大同技術學院 嘉義市 諸羅搖滾",
+      "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBQNGJVdWV6Qzl6cXAxTnpjWjdQcHdwWkd2by02N0pIdk5SSWtZVVEyRTdpdGFvd0NrRWFkMVBsMHRjZmYwOXNhc3JobGZrS3NsNEtkZjYxTjFXVnk0RnNB?oc=5",
       "heat": 58,
       "sources": [
         "社群"
