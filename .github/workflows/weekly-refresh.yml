@@ -2,9 +2,10 @@ name: Build Weekly Travel Feed
 
 on:
   schedule:
-    # 每週一台灣時間上午 9:00 執行
-    # GitHub Actions 使用 UTC，所以設定 01:00 UTC
-    - cron: "0 1 * * 1"
+    # 每天更新兩次：台灣時間 08:30、16:30
+    # GitHub Actions 使用 UTC，所以是 00:30、08:30 UTC
+    - cron: "30 0 * * *"
+    - cron: "30 8 * * *"
 
   # 保留手動測試按鈕
   workflow_dispatch:
@@ -28,6 +29,9 @@ jobs:
       - name: Collect travel sources
         run: python collect_sources.py
 
+      - name: Add Chiayi City official activities
+        run: python collect_chiayi_city_events.py
+
       - name: Build weekly feed
         run: python build_weekly_feed.py
 
@@ -41,6 +45,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Auto update weekly travel feed"
+            git commit -m "Auto update travel feed"
             git push
           fi
