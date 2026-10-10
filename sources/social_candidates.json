@@ -178,7 +178,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "tags": [
       "景點",
       "文化",
@@ -202,7 +202,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "tags": [
       "活動",
       "網路熱門"
@@ -300,7 +300,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "tags": [
       "景點",
       "戶外",
@@ -373,7 +373,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "tags": [
       "景點",
       "文化",
@@ -397,7 +397,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "tags": [
       "戶外",
       "自然",
@@ -440,20 +440,20 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 3,
-      "creator_mentions": 3,
-      "repeat_recommendations": 2
+      "recent_mentions": 4,
+      "creator_mentions": 4,
+      "repeat_recommendations": 3
     },
-    "base_heat": 89,
-    "updated": "2026-10-09",
+    "base_heat": 95,
+    "updated": "2026-10-10",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市明德北路二段320號",
     "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市明德北路二段320號",
-    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE13VWlubG4wck44V2tjQUx1M0d2LWRFeGV0NTRNU0VCanI5MlZ6UmJxMFpBZDgwR2lWT2Nubk9aYTJaQWVMeUlyZFJQcmlEX1daSDlaSGZB?oc=5"
+    "why": "最近30天公開旅遊文章提及4次，來自4個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4ycnVsU3NHakt6NDUzLUo0MzBfb3ZhUXFNY0hOSnhGcGM1WWVDSkpuU2p5MTFfTmhXUjBQRkc0RS05MTRyTmdJWjNQWG9FWm1S?oc=5"
   },
   {
     "id": "social-auto-factory-chiayi-jordenice",
@@ -468,7 +468,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "tags": [
       "親子",
       "拍照",
@@ -495,7 +495,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "tags": [
       "親子",
       "DIY",
@@ -569,7 +569,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "tags": [
       "景點",
       "文化",
@@ -593,7 +593,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "tags": [
       "景點",
       "戶外",
@@ -617,7 +617,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "tags": [
       "活動",
       "網路熱門"
@@ -640,7 +640,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "tags": [
       "活動",
       "網路熱門"
@@ -663,7 +663,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "tags": [
       "活動",
       "網路熱門"
@@ -681,19 +681,19 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 3,
-      "creator_mentions": 3,
-      "repeat_recommendations": 2
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 89,
-    "updated": "2026-10-09",
+    "base_heat": 82,
+    "updated": "2026-10-10",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5sN01nYVBCOWtOU0w1YjRZN3JHUXNySjFaN3dTaklaWjJmdnR0QUxlN0pXczhtdWR0czJqSEF0WjdxX3c3ZllCOWdPZlFES2FKOUVQRG13bGNNbjBSNlc1NGszUQ?oc=5"
   },
   {
@@ -734,7 +734,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "tags": [
       "活動",
       "嘉義市政府",
@@ -754,12 +754,12 @@
     "type": "活動",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
-      "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 75,
-    "updated": "2026-10-09",
+    "base_heat": 82,
+    "updated": "2026-10-10",
     "tags": [
       "活動",
       "嘉義市政府",
@@ -768,8 +768,8 @@
     ],
     "place": "嘉義市・大同技術學院",
     "q": "大同技術學院 嘉義市 諸羅搖滾",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBQNGJVdWV6Qzl6cXAxTnpjWjdQcHdwWkd2by02N0pIdk5SSWtZVVEyRTdpdGFvd0NrRWFkMVBsMHRjZmYwOXNhc3JobGZrS3NsNEtkZjYxTjFXVnk0RnNB?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFA2NEdiM1NacWI2TDhtWXN5ZzJQOGNRVXYyNHozR25Zc2JGZTFFMV9XSFFJUkFKZDQ1SXVOekloQ0h3Q183d3F4bURoZnTSAVJBVV95cUxOc1N0U3JlUjFzTEQ5SVV0bTN1ZmdhSlRBazhSYjBHbzFQS2ExaUlpSEVqTXBUNFFramFmZTd6R2JXVk5zcHRmVWk3MXhxUnFYdVVn?oc=5"
   },
   {
     "id": "social-auto-tourism-event-Event_395000000A_008098",
@@ -784,7 +784,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-09",
+    "updated": "2026-10-10",
     "tags": [
       "活動",
       "網路熱門"
@@ -793,5 +793,28 @@
     "q": "臺南市 67000 中西區 67000370 700",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5nWU5ZSzRvakMtNVVHWHkyU0c0TFg2UFhwZm82SG1ndnhCZWs5SmVCb1NTNEU1ZVBHNUkwcktlMDUxdFMwSE9HME9UQmhva09zd0Y3YkpuSFk3YUh6Mi0zOFNvMFdJS09x?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-event-Event_395000000A_008100",
+    "city": "台南",
+    "name": "2026台南甜蜜節－童畫嘉年華",
+    "e": "🔥",
+    "type": "活動",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-10",
+    "tags": [
+      "活動",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 柳營區 67000040 736 德元埤荷蘭村",
+    "q": "臺南市 67000 柳營區 67000040 736 德元埤荷蘭村",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBuV0dnU01mTjY2TEI3NnBPX1duZ3o0aHZnZjZfbWtPRkpHbG1hdnBhR2ZMWXpHNzhmQy14SHMwb3Y3b1lUdTIzck8waGxvMTdTWnFHSVlhUE8ySWpwX2FpdEgwaXdIcE81?oc=5"
   }
 ]
