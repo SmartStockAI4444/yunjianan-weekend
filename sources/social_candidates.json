@@ -173,11 +173,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
     },
-    "base_heat": 82,
+    "base_heat": 75,
     "updated": "2026-10-10",
     "tags": [
       "景點",
@@ -186,8 +186,8 @@
     ],
     "place": "雲林縣 10009 虎尾鎮 10009030 632 林森路一段498號",
     "q": "雲林縣 10009 虎尾鎮 10009030 632 林森路一段498號",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE85c0ptMGFfeGZabHU4NDlmMGNZaW5hZ3h0OEprcTk1bGh0dUhVbWpZS2hEN05HVjJ0WE0tUlZoQlhqZHJkZVV4TUVvd1FqNzhTUkI4SmJZUkc?oc=5"
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9UaGRQc2FoeVpvUC00ZERDU2pON0NtTFFsX3puc2VFenlIYjVUaVNlMGRkQ0tGWWFLU2NDU2dxMEktOHB6RlB0NEFWaXVzMG5vZDJQbk9kamt3cW9zbWRhRWxqYTnSAWpBVV95cUxPdkh0M2hCN0hIZ0VnMnppZnV3andRbDZ5Vi1zbjlwdUVKWkVKaF9rVjdnMTRPN3djNW51RWR5YTZiUDZQdG0xdTFPS09oN0IwWldxeHh5MExualdSa0w5Q3NKUEZQZFc5dlR3?oc=5"
   },
   {
     "id": "social-auto-tourism-event-Event_A15010000H_081715",
@@ -197,11 +197,11 @@
     "type": "活動",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 3,
+      "creator_mentions": 3,
+      "repeat_recommendations": 2
     },
-    "base_heat": 82,
+    "base_heat": 89,
     "updated": "2026-10-10",
     "tags": [
       "活動",
@@ -209,8 +209,8 @@
     ],
     "place": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
     "q": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5UZVNKamxFQUtQQXVTUVNpVkV0R0JwZ3JGREcyVWotYkVacnZ6SXVrWElQQk5WajVweFUtTjNROWZ0b3ltd2tEa21SSmV6VUxPSnc?oc=5"
+    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rRWl3Zk0wcDdvY0lJR28yd2pFTG4wbjYyWUR2S0Q2Tk1tMlVaZHJaZWlXeTlEUDhrYjN2TGtBRkR3SU5hd3RmUl9odG8wMWhu0gFWQVVfeXFMTXBlaEZzNEVJd09wemZXS09tZU1IQ3VtaGU2czRORVFyWlltcWpfdWdqVDJTNEdlNGdOUGkzdXZ0d3RZM0RENW9SczN2R0k3dnNpREYyWmc?oc=5"
   },
   {
     "id": "social-auto-factory-chiayi-love-wood",
@@ -440,11 +440,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 4,
-      "creator_mentions": 4,
-      "repeat_recommendations": 3
+      "recent_mentions": 3,
+      "creator_mentions": 3,
+      "repeat_recommendations": 2
     },
-    "base_heat": 95,
+    "base_heat": 89,
     "updated": "2026-10-10",
     "tags": [
       "景點",
@@ -452,7 +452,7 @@
     ],
     "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市明德北路二段320號",
     "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市明德北路二段320號",
-    "why": "最近30天公開旅遊文章提及4次，來自4個來源",
+    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4ycnVsU3NHakt6NDUzLUo0MzBfb3ZhUXFNY0hOSnhGcGM1WWVDSkpuU2p5MTFfTmhXUjBQRkc0RS05MTRyTmdJWjNQWG9FWm1S?oc=5"
   },
   {
@@ -681,11 +681,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 3,
+      "creator_mentions": 3,
+      "repeat_recommendations": 2
     },
-    "base_heat": 82,
+    "base_heat": 89,
     "updated": "2026-10-10",
     "tags": [
       "景點",
@@ -693,7 +693,7 @@
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5sN01nYVBCOWtOU0w1YjRZN3JHUXNySjFaN3dTaklaWjJmdnR0QUxlN0pXczhtdWR0czJqSEF0WjdxX3c3ZllCOWdPZlFES2FKOUVQRG13bGNNbjBSNlc1NGszUQ?oc=5"
   },
   {
@@ -754,11 +754,11 @@
     "type": "活動",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
     },
-    "base_heat": 82,
+    "base_heat": 75,
     "updated": "2026-10-10",
     "tags": [
       "活動",
@@ -768,7 +768,7 @@
     ],
     "place": "嘉義市・大同技術學院",
     "q": "大同技術學院 嘉義市 諸羅搖滾",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFA2NEdiM1NacWI2TDhtWXN5ZzJQOGNRVXYyNHozR25Zc2JGZTFFMV9XSFFJUkFKZDQ1SXVOekloQ0h3Q183d3F4bURoZnTSAVJBVV95cUxOc1N0U3JlUjFzTEQ5SVV0bTN1ZmdhSlRBazhSYjBHbzFQS2ExaUlpSEVqTXBUNFFramFmZTd6R2JXVk5zcHRmVWk3MXhxUnFYdVVn?oc=5"
   },
   {
