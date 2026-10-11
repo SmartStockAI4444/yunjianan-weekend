@@ -197,11 +197,11 @@
     "type": "活動",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
-      "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 75,
+    "base_heat": 82,
     "updated": "2026-10-11",
     "tags": [
       "活動",
@@ -209,8 +209,8 @@
     ],
     "place": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
     "q": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE05Y2c5VFlJcm85YlFld3hjRXBua2EtTVFGb2MyU2J3R29pRmtTRnZDTW9UQWhOWFVNMy1IS2hEU25LaFJGbWRfbFV1MFFKeV9zanVUeUFjazRfdzhDUHMzcjc1ZnVJYmZzQWxJ?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rRWl3Zk0wcDdvY0lJR28yd2pFTG4wbjYyWUR2S0Q2Tk1tMlVaZHJaZWlXeTlEUDhrYjN2TGtBRkR3SU5hd3RmUl9odG8wMWhu0gFWQVVfeXFMTXBlaEZzNEVJd09wemZXS09tZU1IQ3VtaGU2czRORVFyWlltcWpfdWdqVDJTNEdlNGdOUGkzdXZ0d3RZM0RENW9SczN2R0k3dnNpREYyWmc?oc=5"
   },
   {
     "id": "social-auto-factory-chiayi-love-wood",
@@ -325,7 +325,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-09-26",
+    "updated": "2026-10-11",
     "tags": [
       "景點",
       "戶外",
@@ -334,7 +334,7 @@
     "place": "臺南市 67000 大內區 67000110 742 二溪里唭子瓦60號",
     "q": "臺南市 67000 大內區 67000110 742 二溪里唭子瓦60號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE11VnBfNk5FVnpER1JQSzhyVmdSS3RVRlpmTlpSd1E3MjdQRHpHRGhPamNUUU01TzFpSTYxZlFnRFB4VEZ6YlFzNUdKd0FDUGs?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBidzdtV21oRVVlSWYtWlJPNGYwUUVFNVZYcDRwNzdjdWJ4SjdNMC13b05DSHl1cXpfOEIwRlJWX092b1U0T0l6eQ?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_395000000A_000671",
