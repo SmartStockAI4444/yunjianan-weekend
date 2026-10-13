@@ -1,12 +1,12 @@
 {
   "version": "2026.10.13-auto",
   "updated": "2026-10-13",
-  "generated_at": "2026-10-13T07:01:39+00:00",
+  "generated_at": "2026-10-13T16:12:18+00:00",
   "stats": {
-    "official": 1380,
-    "social": 32,
+    "official": 1379,
+    "social": 34,
     "expired_removed": 69,
-    "total": 1390
+    "total": 1389
   },
   "items": [
     {
@@ -778,29 +778,6 @@
       "q": "沓沓仔練｜免驚！做伙來拍短影片！—台語短影音創作入門",
       "why": "𖦹2026嘉義市母語生活節「沓沓仔Ta̍uh-ta̍uh-á」系列 𖦹想欲拍家己ê短影片煞毋知ùi佗位開始？這擺工作坊咱來做伙做看覓！練習對鏡頭講話、想題材、收音概念、剪接等等，先試看覓才知敢好sńg！⟢沓沓仔練｜免驚！做伙來拍短影片！—台語短影音創作入門講師：台南妹仔ayo日期：10/17(六)&10/18(日)兩日時間：皆為9:30-16:30地點：世賢",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=955381",
-      "heat": 86,
-      "sources": [
-        "官方"
-      ]
-    },
-    {
-      "id": "chiayi-city-event-17a6b145024f",
-      "city": "嘉義",
-      "name": "沓沓仔聽｜來嘉散步拄拄仔好",
-      "e": "🎉",
-      "type": "活動",
-      "src": "官方",
-      "updated": "2026-10-13",
-      "start": "2026-10-11",
-      "end": "2026-10-14",
-      "tags": [
-        "活動",
-        "嘉義市政府"
-      ],
-      "place": "嘉義市",
-      "q": "沓沓仔聽｜來嘉散步拄拄仔好",
-      "why": "𖦹2026嘉義市母語生活節「沓沓仔Ta̍uh-ta̍uh-á」系列 𖦹嘉義，好慢。嘉義，好閒。嘉義好悠閒（茶）來嘉散步，跟著嘉義在地人，一起體會悠閒時光，感受這個小而美的城市吧！⟢沓沓仔聽｜來嘉散步拄拄仔好講師｜陳守玉日期｜①10/11 (日)14:00-16:00｜②10/14 (三)14:00-16:00地點｜中山路噴水圓環集合（康是美外面）🚲這場導覽要",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=954254",
       "heat": 86,
       "sources": [
         "官方"
@@ -7667,9 +7644,10 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-01-14",
+      "updated": "2026-10-13",
       "tags": [
-        "景點"
+        "景點",
+        "網路熱門"
       ],
       "place": "臺南市 67000 楠西區 67000240 715 密枝里70號",
       "q": "臺南市 67000 楠西區 67000240 715 密枝里70號",
@@ -7677,8 +7655,18 @@
       "url": "",
       "heat": 72,
       "sources": [
-        "官方"
-      ]
+        "官方",
+        "社群"
+      ],
+      "signals": {
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
+      },
+      "social_heat": 58,
+      "social_updated": "2026-10-13",
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OYmRYZm04V1BuRnFSLUhBakFlRXZxNWtONVdBdkxsNFkxTjFMZ19GMXZITGlIbjFWM2ttNzVSRmd3THUyWmo3MXUzQWphZlFiVW1BRWF6UndLazNmWXZ5ZVkwY0IzU3poYWfSAWpBVV95cUxOTmJkWGZtOFdQbkZxUi1IQWpBZUV2cTVrTjVXQXZMbDRZMU4xTGdfRjF2SExpSG4xVjNrbTc1UkZnd0x1MlpqNzF1M0FqYWZRYlVtQUVhelJ3S2szZll2eWVZMGNCM1N6aGFn?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_A15011200H_000032",
@@ -11598,13 +11586,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 2,
-        "creator_mentions": 2,
-        "repeat_recommendations": 1
+        "recent_mentions": 3,
+        "creator_mentions": 3,
+        "repeat_recommendations": 2
       },
-      "social_heat": 62,
+      "social_heat": 65,
       "social_updated": "2026-10-13",
-      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
+      "social_why": "最近30天公開旅遊文章提及3次，來自3個來源",
       "social_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4tWmxHb2hDS2dfc0ZpM2JtSTNCdWpIVlFCUV9IU2pQNVI0QU03bmt4cHYxbXdacTdVWV9zX3pDYU9iSVpabGgzeGRQNmtLU1ZPWDZBT3NSbHRPQnkwNnNzTmt2NUhZVVd1bW1nMWNR?oc=5"
     },
     {
@@ -22115,13 +22103,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 1,
-        "creator_mentions": 1,
-        "repeat_recommendations": 0
+        "recent_mentions": 2,
+        "creator_mentions": 2,
+        "repeat_recommendations": 1
       },
-      "social_heat": 58,
+      "social_heat": 62,
       "social_updated": "2026-10-13",
-      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE13VWlubG4wck44V2tjQUx1M0d2LWRFeGV0NTRNU0VCanI5MlZ6UmJxMFpBZDgwR2lWT2Nubk9aYTJaQWVMeUlyZFJQcmlEX1daSDlaSGZB?oc=5"
     },
     {
@@ -23963,10 +23951,11 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-06-17",
+      "updated": "2026-10-13",
       "tags": [
         "景點",
-        "戶外"
+        "戶外",
+        "網路熱門"
       ],
       "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市檨林路73-1號",
       "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市檨林路73-1號",
@@ -23974,8 +23963,18 @@
       "url": "",
       "heat": 72,
       "sources": [
-        "官方"
-      ]
+        "官方",
+        "社群"
+      ],
+      "signals": {
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
+      },
+      "social_heat": 58,
+      "social_updated": "2026-10-13",
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1lZC1VLWxUOEhwbHpMNUVQMFJhb3BxSURSNWFaQXYzZGpTWGRleVd2bzJRTk53TTBHbi1iQnJqRFZGczk4S1BpMXVjcUdRRVQ2OGZPaG1pZmdqel9leUV5YUo3eGZQR1owcjJn?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_376490000A_000205",
@@ -29137,7 +29136,7 @@
         "creator_mentions": 1,
         "repeat_recommendations": 0
       },
-      "updated": "2026-10-12",
+      "updated": "2026-10-13",
       "tags": [
         "活動",
         "網路熱門"

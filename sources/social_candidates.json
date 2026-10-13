@@ -440,11 +440,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
-      "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 75,
+    "base_heat": 82,
     "updated": "2026-10-13",
     "tags": [
       "景點",
@@ -452,7 +452,7 @@
     ],
     "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市明德北路二段320號",
     "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市明德北路二段320號",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE13VWlubG4wck44V2tjQUx1M0d2LWRFeGV0NTRNU0VCanI5MlZ6UmJxMFpBZDgwR2lWT2Nubk9aYTJaQWVMeUlyZFJQcmlEX1daSDlaSGZB?oc=5"
   },
   {
@@ -617,7 +617,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-12",
+    "updated": "2026-10-13",
     "tags": [
       "活動",
       "網路熱門"
@@ -681,11 +681,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 3,
+      "creator_mentions": 3,
+      "repeat_recommendations": 2
     },
-    "base_heat": 82,
+    "base_heat": 89,
     "updated": "2026-10-13",
     "tags": [
       "景點",
@@ -693,7 +693,7 @@
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4tWmxHb2hDS2dfc0ZpM2JtSTNCdWpIVlFCUV9IU2pQNVI0QU03bmt4cHYxbXdacTdVWV9zX3pDYU9iSVpabGgzeGRQNmtLU1ZPWDZBT3NSbHRPQnkwNnNzTmt2NUhZVVd1bW1nMWNR?oc=5"
   },
   {
@@ -840,5 +840,52 @@
     "q": "雲林縣 10009 北港鎮 10009060 651 雲林縣北港鎮中山路178號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ZSkIzNHRUbWMxcFZRbm1uemstUzdRQ1ZLVXhiVmNmckZ4TW1hSDM0NGZkS3pDa2s5cVJEd1Aza0ZhMDZ6QUNhdWktWTFjelhOWWdMaERnTnNnbTBkMWMzQkRtUURKMzMxSF9Z?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_376490000A_000275",
+    "city": "雲林",
+    "name": "紅螞蟻生態世界",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-13",
+    "tags": [
+      "景點",
+      "戶外",
+      "網路熱門"
+    ],
+    "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市檨林路73-1號",
+    "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市檨林路73-1號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1lZC1VLWxUOEhwbHpMNUVQMFJhb3BxSURSNWFaQXYzZGpTWGRleVd2bzJRTk53TTBHbi1iQnJqRFZGczk4S1BpMXVjcUdRRVQ2OGZPaG1pZmdqel9leUV5YUo3eGZQR1owcjJn?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_395000000A_000641",
+    "city": "台南",
+    "name": "曾文水庫",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-13",
+    "tags": [
+      "景點",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 楠西區 67000240 715 密枝里70號",
+    "q": "臺南市 67000 楠西區 67000240 715 密枝里70號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OYmRYZm04V1BuRnFSLUhBakFlRXZxNWtONVdBdkxsNFkxTjFMZ19GMXZITGlIbjFWM2ttNzVSRmd3THUyWmo3MXUzQWphZlFiVW1BRWF6UndLazNmWXZ5ZVkwY0IzU3poYWfSAWpBVV95cUxOTmJkWGZtOFdQbkZxUi1IQWpBZUV2cTVrTjVXQXZMbDRZMU4xTGdfRjF2SExpSG4xVjNrbTc1UkZnd0x1MlpqNzF1M0FqYWZRYlVtQUVhelJ3S2szZll2eWVZMGNCM1N6aGFn?oc=5"
   }
 ]
