@@ -154,7 +154,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-10-12",
+    "updated": "2026-10-13",
     "tags": [
       "景點",
       "戶外",
@@ -202,7 +202,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-10-12",
+    "updated": "2026-10-13",
     "tags": [
       "活動",
       "網路熱門"
@@ -295,12 +295,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
     },
-    "base_heat": 82,
-    "updated": "2026-10-12",
+    "base_heat": 75,
+    "updated": "2026-10-13",
     "tags": [
       "景點",
       "戶外",
@@ -309,7 +309,7 @@
     ],
     "place": "嘉義市 10020 西區 10020020 600 文化路552號",
     "q": "嘉義市 10020 西區 10020020 600 文化路552號",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ISUdPakU5Um13WnVOQWw1aEQ5M2lKZk9mblJ0cE81ZzJONjNnbnowdkpsc1NpZjQ1enVzLTE0aFFjVGw0VnczVDZ0UmRONXM?oc=5"
   },
   {
@@ -325,7 +325,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-12",
+    "updated": "2026-10-13",
     "tags": [
       "景點",
       "戶外",
@@ -373,7 +373,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-12",
+    "updated": "2026-10-13",
     "tags": [
       "景點",
       "文化",
@@ -397,7 +397,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-12",
+    "updated": "2026-10-13",
     "tags": [
       "戶外",
       "自然",
@@ -445,7 +445,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-12",
+    "updated": "2026-10-13",
     "tags": [
       "景點",
       "網路熱門"
@@ -468,7 +468,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-12",
+    "updated": "2026-10-13",
     "tags": [
       "親子",
       "拍照",
@@ -495,7 +495,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-12",
+    "updated": "2026-10-13",
     "tags": [
       "親子",
       "DIY",
@@ -640,7 +640,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-12",
+    "updated": "2026-10-13",
     "tags": [
       "活動",
       "網路熱門"
@@ -663,7 +663,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-12",
+    "updated": "2026-10-13",
     "tags": [
       "活動",
       "網路熱門"
@@ -686,7 +686,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-10-12",
+    "updated": "2026-10-13",
     "tags": [
       "景點",
       "網路熱門"
@@ -784,7 +784,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-12",
+    "updated": "2026-10-13",
     "tags": [
       "活動",
       "網路熱門"
@@ -816,5 +816,29 @@
     "q": "臺南市 67000 柳營區 67000040 736 德元埤荷蘭村",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBuV0dnU01mTjY2TEI3NnBPX1duZ3o0aHZnZjZfbWtPRkpHbG1hdnBhR2ZMWXpHNzhmQy14SHMwb3Y3b1lUdTIzck8waGxvMTdTWnFHSVlhUE8ySWpwX2FpdEgwaXdIcE81?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_376490000A_000002",
+    "city": "雲林",
+    "name": "北港朝天宮",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-13",
+    "tags": [
+      "景點",
+      "文化",
+      "網路熱門"
+    ],
+    "place": "雲林縣 10009 北港鎮 10009060 651 雲林縣北港鎮中山路178號",
+    "q": "雲林縣 10009 北港鎮 10009060 651 雲林縣北港鎮中山路178號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ZSkIzNHRUbWMxcFZRbm1uemstUzdRQ1ZLVXhiVmNmckZ4TW1hSDM0NGZkS3pDa2s5cVJEd1Aza0ZhMDZ6QUNhdWktWTFjelhOWWdMaERnTnNnbTBkMWMzQkRtUURKMzMxSF9Z?oc=5"
   }
 ]
