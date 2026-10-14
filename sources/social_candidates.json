@@ -154,7 +154,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "tags": [
       "景點",
       "戶外",
@@ -202,7 +202,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "tags": [
       "活動",
       "網路熱門"
@@ -300,7 +300,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "tags": [
       "景點",
       "戶外",
@@ -325,7 +325,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "tags": [
       "景點",
       "戶外",
@@ -373,7 +373,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "tags": [
       "景點",
       "文化",
@@ -397,7 +397,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "tags": [
       "戶外",
       "自然",
@@ -445,7 +445,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "tags": [
       "景點",
       "網路熱門"
@@ -468,7 +468,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "tags": [
       "親子",
       "拍照",
@@ -495,7 +495,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "tags": [
       "親子",
       "DIY",
@@ -546,7 +546,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-05",
+    "updated": "2026-10-14",
     "tags": [
       "活動",
       "網路熱門"
@@ -554,7 +554,7 @@
     "place": "臺南市 67000 安平區 67000360 708 永華市政中心西側及西拉雅廣場",
     "q": "臺南市 67000 安平區 67000360 708 永華市政中心西側及西拉雅廣場",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5EQWJrNE9CWUZGdEFXLXpqRGZFdGNyTk5NSFk5T1JFaG9yN1pXMUxEVlR2WHdYUGVWYnhRc3YzMTBZU3hVZEF0ZlNOZmstQVdJN3NZZVZ1VWZxZ0FPYXRzbk84VQ?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBKcEY5ang0SVN1eWE5MjlpV0t6MHdUMTlIaFppTUdvaFduNzVwQ2ZKQnJoYUQtSjBHR0VPVmEyVmxEdzdpS0RGSVRnaEtJcDZxTTdtRGZVcVpnOXNfVlVTUjdlTQ?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_395000000A_000934",
@@ -617,7 +617,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "tags": [
       "活動",
       "網路熱門"
@@ -640,7 +640,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "tags": [
       "活動",
       "網路熱門"
@@ -681,19 +681,19 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 3,
-      "creator_mentions": 3,
-      "repeat_recommendations": 2
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 89,
-    "updated": "2026-10-13",
+    "base_heat": 82,
+    "updated": "2026-10-14",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4tWmxHb2hDS2dfc0ZpM2JtSTNCdWpIVlFCUV9IU2pQNVI0QU03bmt4cHYxbXdacTdVWV9zX3pDYU9iSVpabGgzeGRQNmtLU1ZPWDZBT3NSbHRPQnkwNnNzTmt2NUhZVVd1bW1nMWNR?oc=5"
   },
   {
@@ -784,7 +784,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "tags": [
       "活動",
       "網路熱門"
@@ -830,7 +830,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "tags": [
       "景點",
       "文化",
@@ -854,7 +854,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "tags": [
       "景點",
       "戶外",
@@ -878,7 +878,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "tags": [
       "景點",
       "網路熱門"
