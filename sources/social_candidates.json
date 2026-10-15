@@ -453,7 +453,7 @@
     "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市明德北路二段320號",
     "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市明德北路二段320號",
     "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4ycnVsU3NHakt6NDUzLUo0MzBfb3ZhUXFNY0hOSnhGcGM1WWVDSkpuU2p5MTFfTmhXUjBQRkc0RS05MTRyTmdJWjNQWG9FWm1S?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE13VWlubG4wck44V2tjQUx1M0d2LWRFeGV0NTRNU0VCanI5MlZ6UmJxMFpBZDgwR2lWT2Nubk9aYTJaQWVMeUlyZFJQcmlEX1daSDlaSGZB?oc=5"
   },
   {
     "id": "social-auto-factory-chiayi-jordenice",
@@ -681,11 +681,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 3,
-      "creator_mentions": 3,
-      "repeat_recommendations": 2
+      "recent_mentions": 13,
+      "creator_mentions": 12,
+      "repeat_recommendations": 12
     },
-    "base_heat": 89,
+    "base_heat": 95,
     "updated": "2026-10-15",
     "tags": [
       "景點",
@@ -693,8 +693,8 @@
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
-    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4tWmxHb2hDS2dfc0ZpM2JtSTNCdWpIVlFCUV9IU2pQNVI0QU03bmt4cHYxbXdacTdVWV9zX3pDYU9iSVpabGgzeGRQNmtLU1ZPWDZBT3NSbHRPQnkwNnNzTmt2NUhZVVd1bW1nMWNR?oc=5"
+    "why": "最近30天公開旅遊文章提及13次，來自12個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8xWjBkbzNwQk1YZEJqNC1CeGJsLXhEaUtlOFdKa3hKU0loRmxFSTNTSnRmcTAwVnBUcnpMTEFGel84anhZVUFWalpsa3hWa2Nx?oc=5"
   },
   {
     "id": "social-auto-chiayi-city-event-df49699a6f46",

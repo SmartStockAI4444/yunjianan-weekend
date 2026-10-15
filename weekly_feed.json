@@ -1,14 +1,45 @@
 {
   "version": "2026.10.15-auto",
   "updated": "2026-10-15",
-  "generated_at": "2026-10-15T05:02:52+00:00",
+  "generated_at": "2026-10-15T13:35:01+00:00",
   "stats": {
-    "official": 1392,
+    "official": 1391,
     "social": 34,
     "expired_removed": 69,
-    "total": 1402
+    "total": 1401
   },
   "items": [
+    {
+      "id": "tourism-attraction-Attraction_A15011200H_000157",
+      "city": "台南",
+      "name": "關子嶺溫泉",
+      "e": "📍",
+      "type": "景點",
+      "src": "官方",
+      "updated": "2026-10-15",
+      "tags": [
+        "景點",
+        "網路熱門"
+      ],
+      "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
+      "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
+      "why": "關子嶺溫泉與北投、陽明山、四重溪並列為臺灣四大溫泉，是臺灣少見的泥漿溫泉。自從日治時期意外發現此處的天然溫泉後，關子嶺便享負盛名，根據史誌記載，由於它的功效以及特殊泥漿性質，更是有了「天下第一靈泉」的美名。",
+      "url": "",
+      "heat": 97,
+      "sources": [
+        "官方",
+        "社群"
+      ],
+      "signals": {
+        "recent_mentions": 13,
+        "creator_mentions": 12,
+        "repeat_recommendations": 12
+      },
+      "social_heat": 97,
+      "social_updated": "2026-10-15",
+      "social_why": "最近30天公開旅遊文章提及13次，來自12個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8xWjBkbzNwQk1YZEJqNC1CeGJsLXhEaUtlOFdKa3hKU0loRmxFSTNTSnRmcTAwVnBUcnpMTEFGel84anhZVUFWalpsa3hWa2Nx?oc=5"
+    },
     {
       "id": "chiayi-city-news-7f7923f14d33",
       "city": "嘉義",
@@ -154,30 +185,6 @@
       ]
     },
     {
-      "id": "chiayi-city-news-767a358bfd2a",
-      "city": "嘉義",
-      "name": "嘉義市推動女孩影像培力6組影像創作展現女孩多元力量",
-      "e": "📣",
-      "type": "活動",
-      "src": "官方",
-      "updated": "2026-10-05",
-      "start": "2026-10-05",
-      "end": "2026-10-15",
-      "tags": [
-        "活動",
-        "嘉義市政府",
-        "市府快報"
-      ],
-      "place": "嘉義市",
-      "q": "嘉義市推動女孩影像培力6組影像創作展現女孩多元力量",
-      "why": "嘉義市政府長期推動性別平等教育及女孩培力工作，今（5）日於嘉義市鈺通大飯店舉辦「嘉義市115年臺灣女孩日活動記者會暨成果展」，展出「2026女孩日影像培力營」6組學員團隊完成的紀錄短片成果，嘉義市長黃敏惠也出席並鼓勵女孩勇於表達自我、培養思辨能力，透過影像創作探索性別議題，展現女孩自信與多元的力量，從「被看見」進一步走向「主動發聲」與公共參與。 黃敏惠市長表示，嘉義市持續透過多元教育與培力行動推動",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=954730",
-      "heat": 93,
-      "sources": [
-        "官方"
-      ]
-    },
-    {
       "id": "chiayi-city-news-5b9902dcc97f",
       "city": "嘉義",
       "name": "從花磚到咖啡嘉義市廉政志工體驗文化與生活",
@@ -268,30 +275,6 @@
       "q": "白沙屯媽祖「粉紅超跑」駐駕嘉義市府黃敏惠市長接駕祈求市運昌隆",
       "why": "慶祝嘉義市崎頂大福興宮建廟360周年，白沙屯拱天宮媽祖再次應邀前來嘉義市贊境巡安。今(10)日適逢國慶連續假期，「粉紅超跑」神轎於中午時分盛大進駐嘉義市政府，吸引大批香燈腳於市府參香。嘉義市長黃敏惠亦率領市府團隊於市府接駕，祈求媽祖賜福嘉義市國泰民安、市民闔家安康。 黃敏惠市長表示，白沙屯媽祖徒步進香是臺灣極具代表性的重要宗教盛事，每年吸引廣大信眾熱情參與。繼3年前白沙屯媽祖首度蒞臨嘉義市，掀起萬",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=955389",
-      "heat": 93,
-      "sources": [
-        "官方"
-      ]
-    },
-    {
-      "id": "chiayi-city-news-05b8ccc919f3",
-      "city": "嘉義",
-      "name": "館校合作扎根嘉義118位高中生化身「市民研究員」策展嘉博館攜手成大、嘉中與輔仁中學「森度嘉義」10月3日登場",
-      "e": "📣",
-      "type": "活動",
-      "src": "官方",
-      "updated": "2026-10-05",
-      "start": "2026-02-28",
-      "end": "2027-02-28",
-      "tags": [
-        "活動",
-        "嘉義市政府",
-        "市府快報"
-      ],
-      "place": "嘉義市",
-      "q": "館校合作扎根嘉義118位高中生化身「市民研究員」策展嘉博館攜手成大、嘉中與輔仁中學「森度嘉義」10月3日登場",
-      "why": "嘉義市立博物館與國立成功大學歷史學系公眾歷史與博物館研究室攜手嘉義高中、輔仁中學，推動館校合作與高中生市民研究員計畫，集結118位高中生、6位教師共同策劃「森度嘉義」市民研究員館校合作聯展，於10月3日起至116年2月28日在嘉博館大廳展出，邀請市民走進展場，看見青年眼中的嘉義。 「森度嘉義」以嘉義「木都」城市意象為策展起點，將城市想像為一座持續生長的森林。學生分組從嘉義天主教發展、嘉義市知名地點",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=954723",
       "heat": 93,
       "sources": [
         "官方"
@@ -2472,6 +2455,28 @@
       "place": "臺南市 67000 北門區 67000170 727",
       "q": "臺南市 67000 北門區 67000170 727",
       "why": "騎上自行車，浪漫悠遊在雲嘉南田與海之美！精選「嘉義故宮高跟鞋教堂」、「雲林濱海小鎮」及「台南國聖港燈塔61追風趣」、「極西點燈塔至極南點燈塔」四條特色路線，歡迎民眾自行攜車或租借自行車騎乘。完成任一路線任意景點「本人＋自行車」照片，上傳至指定粉絲專頁活動貼文留言，即可完成自主騎乘認證並參加抽獎，一起感受雲嘉南的人文風情",
+      "url": "",
+      "heat": 80,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "tourism-event-Event_395000000A_008113",
+      "city": "台南",
+      "name": "「脫口Show雲端 載具嗶起來」租稅宣導活動",
+      "e": "🎉",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-15",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "tags": [
+        "活動"
+      ],
+      "place": "臺南市 67000 新營區 67000010 730 中正路23號(新營文化中心演藝廳)",
+      "q": "臺南市 67000 新營區 67000010 730 中正路23號(新營文化中心演藝廳)",
+      "why": "天啊!唐從聖竟然親自出來「熱烈號召」！這次不用花錢購票！只要你捐贈雲端發票就能換到入場券啦！11/7 新營見！這次不只聊夢想、聊人生，還要把平常覺得很硬的「租稅」聊到讓你笑出來！而且現場還有喜劇演出，保證不只是坐著聽講座！重點來了！入場券這樣拿⭕ 10/22 開始兌票捐出 115年9－11月雲端發票2張 即可兌換入場券",
       "url": "",
       "heat": 80,
       "sources": [
@@ -11874,37 +11879,6 @@
       "sources": [
         "官方"
       ]
-    },
-    {
-      "id": "tourism-attraction-Attraction_A15011200H_000157",
-      "city": "台南",
-      "name": "關子嶺溫泉",
-      "e": "📍",
-      "type": "景點",
-      "src": "官方",
-      "updated": "2026-10-15",
-      "tags": [
-        "景點",
-        "網路熱門"
-      ],
-      "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-      "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-      "why": "關子嶺溫泉與北投、陽明山、四重溪並列為臺灣四大溫泉，是臺灣少見的泥漿溫泉。自從日治時期意外發現此處的天然溫泉後，關子嶺便享負盛名，根據史誌記載，由於它的功效以及特殊泥漿性質，更是有了「天下第一靈泉」的美名。",
-      "url": "",
-      "heat": 72,
-      "sources": [
-        "官方",
-        "社群"
-      ],
-      "signals": {
-        "recent_mentions": 3,
-        "creator_mentions": 3,
-        "repeat_recommendations": 2
-      },
-      "social_heat": 65,
-      "social_updated": "2026-10-15",
-      "social_why": "最近30天公開旅遊文章提及3次，來自3個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4tWmxHb2hDS2dfc0ZpM2JtSTNCdWpIVlFCUV9IU2pQNVI0QU03bmt4cHYxbXdacTdVWV9zX3pDYU9iSVpabGgzeGRQNmtLU1ZPWDZBT3NSbHRPQnkwNnNzTmt2NUhZVVd1bW1nMWNR?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_395000000A_000590",
@@ -22421,7 +22395,7 @@
       "social_heat": 62,
       "social_updated": "2026-10-15",
       "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4ycnVsU3NHakt6NDUzLUo0MzBfb3ZhUXFNY0hOSnhGcGM1WWVDSkpuU2p5MTFfTmhXUjBQRkc0RS05MTRyTmdJWjNQWG9FWm1S?oc=5"
+      "social_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE13VWlubG4wck44V2tjQUx1M0d2LWRFeGV0NTRNU0VCanI5MlZ6UmJxMFpBZDgwR2lWT2Nubk9aYTJaQWVMeUlyZFJQcmlEX1daSDlaSGZB?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_376490000A_000218",
