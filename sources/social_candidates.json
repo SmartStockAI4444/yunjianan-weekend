@@ -373,7 +373,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-14",
+    "updated": "2026-10-16",
     "tags": [
       "景點",
       "文化",
@@ -382,7 +382,7 @@
     "place": "臺南市 67000 仁德區 67000270 717 文華路二段66號",
     "q": "臺南市 67000 仁德區 67000270 717 文華路二段66號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5TeGJDY3JyUERHQ3htX3RPQk9GaW9JX0pyT18tUC1IelpZLUZwZDBUbXI4Rm5DX0pZOEVDWmFvb3VJSVNtNVJ0aWJUR1gwVk5B?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vODBCQXYtbzh1RDNBODl6RW5MT2lyOEN3eVY2My0wVENkekM5SXdWZk9GRnJ4N3BJVFFTdGJqdUZOZ1lHdzBFSFplWGQ1bnA0?oc=5"
   },
   {
     "id": "social-auto-tainan-attraction-5520",
@@ -681,9 +681,9 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 16,
-      "creator_mentions": 14,
-      "repeat_recommendations": 15
+      "recent_mentions": 12,
+      "creator_mentions": 12,
+      "repeat_recommendations": 11
     },
     "base_heat": 95,
     "updated": "2026-10-16",
@@ -693,7 +693,7 @@
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及16次，來自14個來源",
+    "why": "最近30天公開旅遊文章提及12次，來自12個來源",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8xWjBkbzNwQk1YZEJqNC1CeGJsLXhEaUtlOFdKa3hKU0loRmxFSTNTSnRmcTAwVnBUcnpMTEFGel84anhZVUFWalpsa3hWa2Nx?oc=5"
   },
   {
@@ -913,5 +913,29 @@
     "q": "欣欣水泥森活園",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xS2ZndzFMSEo1ekxaLUN2SWhGWXA3U09uLW8yZHJlTndhdW9CNGZIQktqdHNIYnNCaXZ5Nl9NMkJsdE5MN2FKQkI2RmVRbnJEMXpfcDFyODJPUldMY1JYSzlua20?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_395000000A_000674",
+    "city": "台南",
+    "name": "赤崁樓",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-16",
+    "tags": [
+      "景點",
+      "文化",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 中西區 67000370 700 民族路二段212號",
+    "q": "臺南市 67000 中西區 67000370 700 民族路二段212號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vODBCQXYtbzh1RDNBODl6RW5MT2lyOEN3eVY2My0wVENkekM5SXdWZk9GRnJ4N3BJVFFTdGJqdUZOZ1lHdzBFSFplWGQ1bnA0?oc=5"
   }
 ]

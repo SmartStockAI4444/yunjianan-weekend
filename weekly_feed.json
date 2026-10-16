@@ -1,10 +1,10 @@
 {
   "version": "2026.10.16-auto",
   "updated": "2026-10-16",
-  "generated_at": "2026-10-16T04:51:57+00:00",
+  "generated_at": "2026-10-16T13:23:30+00:00",
   "stats": {
     "official": 1392,
-    "social": 35,
+    "social": 36,
     "expired_removed": 69,
     "total": 1402
   },
@@ -25,44 +25,20 @@
       "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
       "why": "關子嶺溫泉與北投、陽明山、四重溪並列為臺灣四大溫泉，是臺灣少見的泥漿溫泉。自從日治時期意外發現此處的天然溫泉後，關子嶺便享負盛名，根據史誌記載，由於它的功效以及特殊泥漿性質，更是有了「天下第一靈泉」的美名。",
       "url": "",
-      "heat": 100,
+      "heat": 95,
       "sources": [
         "官方",
         "社群"
       ],
       "signals": {
-        "recent_mentions": 16,
-        "creator_mentions": 14,
-        "repeat_recommendations": 15
+        "recent_mentions": 12,
+        "creator_mentions": 12,
+        "repeat_recommendations": 11
       },
-      "social_heat": 100,
+      "social_heat": 95,
       "social_updated": "2026-10-16",
-      "social_why": "最近30天公開旅遊文章提及16次，來自14個來源",
+      "social_why": "最近30天公開旅遊文章提及12次，來自12個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8xWjBkbzNwQk1YZEJqNC1CeGJsLXhEaUtlOFdKa3hKU0loRmxFSTNTSnRmcTAwVnBUcnpMTEFGel84anhZVUFWalpsa3hWa2Nx?oc=5"
-    },
-    {
-      "id": "chiayi-city-news-7f7923f14d33",
-      "city": "嘉義",
-      "name": "2026嘉義市購物節消費登錄金額近11億！發票登錄最後倒數壓軸抽VOLVO、百萬現金",
-      "e": "📣",
-      "type": "活動",
-      "src": "官方",
-      "updated": "2026-10-07",
-      "start": "2026-07-01",
-      "end": "2026-10-23",
-      "tags": [
-        "活動",
-        "嘉義市政府",
-        "市府快報"
-      ],
-      "place": "嘉義市",
-      "q": "2026嘉義市購物節消費登錄金額近11億！發票登錄最後倒數壓軸抽VOLVO、百萬現金",
-      "why": "2026嘉義市購物節再創佳績，發票登錄總額已超越去年最終登錄總額10.9億，提前刷新去年紀錄！嘉義市長黃敏惠提醒民眾，活動消費期間至10月11日止，發票登錄期限至10月13日23時59分，請民眾把握最後時間，登錄小撇步就是綁定載具，會將7月1日起符合抽獎資格的雲端發票全部自動載入，完成登錄，搶抽VOLVO汽車、100萬元現金等壓軸大獎。 黃敏惠市長表示，「週週抽好禮」在律師的見證下，公平公開的持續",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=954999",
-      "heat": 93,
-      "sources": [
-        "官方"
-      ]
     },
     {
       "id": "chiayi-city-news-7aaaa7f3965f",
@@ -185,24 +161,24 @@
       ]
     },
     {
-      "id": "chiayi-city-news-5b9902dcc97f",
+      "id": "chiayi-city-news-142c57fb64ea",
       "city": "嘉義",
-      "name": "從花磚到咖啡嘉義市廉政志工體驗文化與生活",
+      "name": "嘉義東市場深化行動支付LINEPay推出優惠券及點數回饋展現智慧城市數位治理成果",
       "e": "📣",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-06",
-      "start": "2026-10-06",
-      "end": "2026-10-16",
+      "updated": "2026-10-16",
+      "start": "2026-10-01",
+      "end": "2026-12-31",
       "tags": [
         "活動",
         "嘉義市政府",
         "市府快報"
       ],
       "place": "嘉義市",
-      "q": "從花磚到咖啡嘉義市廉政志工體驗文化與生活",
-      "why": "為提升廉政志工服務知能及團隊凝聚力，嘉義市政府政風處昨(5)日辦理廉政志工教育訓練，安排花磚文化導覽、DIY手作、在地美食體驗及咖啡手沖實作，透過多元的學習方式，擴展志工視野，累積服務能量。 上午廉政志工前往花磚博物館，透過導覽人員知性且風趣的介紹，認識花磚的歷史、圖樣及文化特色，感受傳統工藝所承載的時代記憶，導覽員也特別分享保存花磚文化的理念，期盼透過更多人的認識與參與，讓這份珍貴的文化資產持續",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=954861",
+      "q": "嘉義東市場深化行動支付LINEPay推出優惠券及點數回饋展現智慧城市數位治理成果",
+      "why": "為展現傳統市場與智慧科技碰撞的數位治理新成果，嘉義市政府建設處與LINEPay（連加網路商業股份有限公司）攜手合作，於今年10月1日起至12月31日止在歷史悠久的嘉義東市場盛大推出「在地商圈優惠3連發」，更於10月16日、10月17日上午10:00-11:00辦理限時加碼最高LINEPOINTS50%回饋！本次活動結合了嘉義市近年在智慧健康、低碳永續與便民服務上的全方位數位治理成效，展現出「新永續",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=956116",
       "heat": 93,
       "sources": [
         "官方"
@@ -275,6 +251,30 @@
       "q": "白沙屯媽祖「粉紅超跑」駐駕嘉義市府黃敏惠市長接駕祈求市運昌隆",
       "why": "慶祝嘉義市崎頂大福興宮建廟360周年，白沙屯拱天宮媽祖再次應邀前來嘉義市贊境巡安。今(10)日適逢國慶連續假期，「粉紅超跑」神轎於中午時分盛大進駐嘉義市政府，吸引大批香燈腳於市府參香。嘉義市長黃敏惠亦率領市府團隊於市府接駕，祈求媽祖賜福嘉義市國泰民安、市民闔家安康。 黃敏惠市長表示，白沙屯媽祖徒步進香是臺灣極具代表性的重要宗教盛事，每年吸引廣大信眾熱情參與。繼3年前白沙屯媽祖首度蒞臨嘉義市，掀起萬",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=955389",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "chiayi-city-news-c86faa451517",
+      "city": "嘉義",
+      "name": "黃敏惠市長出席寺廟負責人座談會肯定宗教界貢獻落實打造永續、低碳諸羅城",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-16",
+      "start": "2026-10-16",
+      "end": "2026-10-26",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "黃敏惠市長出席寺廟負責人座談會肯定宗教界貢獻落實打造永續、低碳諸羅城",
+      "why": "嘉義市政府今(16)日於鈺通大飯店舉辦年度寺廟負責人座談會，邀請全市各大寺廟負責人及代表，除交流宗教事務與地方發展外，也結合警察局、社會處各單位宣導相關政令。黃敏惠市長特別到場，頒發低碳認證予通過認證審查的寺廟代表，肯定宗教團體長期在社會救助、文化傳承及環境永續上的卓越貢獻，並期許市府持續與宗教界攜手合作，打造更宜居、充滿文化魅力的永續諸羅城。 黃敏惠市長表示，寺廟不僅是市民的信仰中心，更是安定人",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=956105",
       "heat": 93,
       "sources": [
         "官方"
@@ -3327,7 +3327,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2024-05-29",
+      "updated": "2026-10-16",
       "tags": [
         "景點"
       ],
@@ -6427,7 +6427,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-14",
+      "updated": "2026-10-16",
       "tags": [
         "景點",
         "文化",
@@ -6449,9 +6449,9 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-14",
+      "social_updated": "2026-10-16",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5TeGJDY3JyUERHQ3htX3RPQk9GaW9JX0pyT18tUC1IelpZLUZwZDBUbXI4Rm5DX0pZOEVDWmFvb3VJSVNtNVJ0aWJUR1gwVk5B?oc=5"
+      "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vODBCQXYtbzh1RDNBODl6RW5MT2lyOEN3eVY2My0wVENkekM5SXdWZk9GRnJ4N3BJVFFTdGJqdUZOZ1lHdzBFSFplWGQ1bnA0?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_395000000A_000689",
@@ -11479,10 +11479,11 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2025-10-31",
+      "updated": "2026-10-16",
       "tags": [
         "景點",
-        "文化"
+        "文化",
+        "網路熱門"
       ],
       "place": "臺南市 67000 中西區 67000370 700 民族路二段212號",
       "q": "臺南市 67000 中西區 67000370 700 民族路二段212號",
@@ -11490,8 +11491,18 @@
       "url": "",
       "heat": 72,
       "sources": [
-        "官方"
-      ]
+        "官方",
+        "社群"
+      ],
+      "signals": {
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
+      },
+      "social_heat": 58,
+      "social_updated": "2026-10-16",
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vODBCQXYtbzh1RDNBODl6RW5MT2lyOEN3eVY2My0wVENkekM5SXdWZk9GRnJ4N3BJVFFTdGJqdUZOZ1lHdzBFSFplWGQ1bnA0?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_A15011200H_000021",
@@ -25110,13 +25121,13 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2025-07-02",
+      "updated": "2026-10-16",
       "tags": [
         "景點",
         "文化"
       ],
-      "place": "雲林縣 10009 虎尾鎮 10009030 632 建國里建國一村",
-      "q": "雲林縣 10009 虎尾鎮 10009030 632 建國里建國一村",
+      "place": "雲林縣 10009 虎尾鎮 10009030 632 建國里建國一村73號庚樓",
+      "q": "雲林縣 10009 虎尾鎮 10009030 632 建國里建國一村73號庚樓",
       "why": "虎尾建國眷村特色－農村型眷村、二戰日軍遺址、眷村生活、日遺兵舍眷村痕跡虎尾建國一、二村為雲林縣的聚落建築群，保存範圍高達30公頃，是目前全台唯一保存的農村型眷村，歷經清朝農村、二戰日軍訓練基地兵舍及戰後空軍眷村，目前村落中仍留有大量的二戰日軍遺址以及眷村生活痕跡，如防空洞、日軍迴轉道、修車溝、水利設施等，每一段歷史皆有",
       "url": "",
       "heat": 72,
