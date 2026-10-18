@@ -149,12 +149,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
     },
-    "base_heat": 82,
-    "updated": "2026-10-17",
+    "base_heat": 75,
+    "updated": "2026-10-18",
     "tags": [
       "景點",
       "戶外",
@@ -162,8 +162,8 @@
     ],
     "place": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
     "q": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQamwxZ3RJNkxQa3ZJX25Gcms3RTd5Y0VmNHItdGRhUWIxaWRwVnFpMXpwcEZKUDhHUXBVUlRlaVRzcnBaLWdXeDViNEpGSDlfZ2hLTG1KTUduRmdpMnczWi05TUpoUV9Zc2JRajZjTTNITzZhcVZabkJyTkVfYW5YbS1vQjZWUFAzX2FOVERxME43TmJKanpLSzBjdlRnWmJfSmN5X0s5MElqUQ?oc=5"
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNOTRrSkk4ZUpMLXRtZGFNRTZZRk1iakx6WmtkY0tLeDB4OVRTVmkxRllEOW1fZ2c1aWxZZlVVcmRyMGZpWGpudVBjelhtZDJsWnpBMWdCYXRFSGNoS1pRYVZBcmhfVklIRVA3YjRKZl8xVnJYZmwwTmFPNUxCXzkweEtuTTJwV3pBWm40WC1MeUc?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_A25000000E_000036",
@@ -202,7 +202,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-10-17",
+    "updated": "2026-10-18",
     "tags": [
       "活動",
       "網路熱門"
@@ -300,7 +300,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-17",
+    "updated": "2026-10-18",
     "tags": [
       "景點",
       "戶外",
@@ -373,7 +373,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-17",
+    "updated": "2026-10-18",
     "tags": [
       "景點",
       "文化",
@@ -445,7 +445,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-10-17",
+    "updated": "2026-10-18",
     "tags": [
       "景點",
       "網路熱門"
@@ -453,7 +453,7 @@
     "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市明德北路二段320號",
     "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市明德北路二段320號",
     "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE13VWlubG4wck44V2tjQUx1M0d2LWRFeGV0NTRNU0VCanI5MlZ6UmJxMFpBZDgwR2lWT2Nubk9aYTJaQWVMeUlyZFJQcmlEX1daSDlaSGZB?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4ycnVsU3NHakt6NDUzLUo0MzBfb3ZhUXFNY0hOSnhGcGM1WWVDSkpuU2p5MTFfTmhXUjBQRkc0RS05MTRyTmdJWjNQWG9FWm1S?oc=5"
   },
   {
     "id": "social-auto-factory-chiayi-jordenice",
@@ -468,7 +468,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-17",
+    "updated": "2026-10-18",
     "tags": [
       "親子",
       "拍照",
@@ -495,7 +495,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-17",
+    "updated": "2026-10-18",
     "tags": [
       "親子",
       "DIY",
@@ -681,19 +681,19 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 11,
-      "creator_mentions": 11,
-      "repeat_recommendations": 10
+      "recent_mentions": 12,
+      "creator_mentions": 12,
+      "repeat_recommendations": 11
     },
     "base_heat": 95,
-    "updated": "2026-10-17",
+    "updated": "2026-10-18",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及11次，來自11個來源",
+    "why": "最近30天公開旅遊文章提及12次，來自12個來源",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8xWjBkbzNwQk1YZEJqNC1CeGJsLXhEaUtlOFdKa3hKU0loRmxFSTNTSnRmcTAwVnBUcnpMTEFGel84anhZVUFWalpsa3hWa2Nx?oc=5"
   },
   {
@@ -878,7 +878,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-14",
+    "updated": "2026-10-18",
     "tags": [
       "景點",
       "網路熱門"
@@ -886,7 +886,7 @@
     "place": "臺南市 67000 楠西區 67000240 715 密枝里70號",
     "q": "臺南市 67000 楠西區 67000240 715 密枝里70號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OYmRYZm04V1BuRnFSLUhBakFlRXZxNWtONVdBdkxsNFkxTjFMZ19GMXZITGlIbjFWM2ttNzVSRmd3THUyWmo3MXUzQWphZlFiVW1BRWF6UndLazNmWXZ5ZVkwY0IzU3poYWfSAWpBVV95cUxOTmJkWGZtOFdQbkZxUi1IQWpBZUV2cTVrTjVXQXZMbDRZMU4xTGdfRjF2SExpSG4xVjNrbTc1UkZnd0x1MlpqNzF1M0FqYWZRYlVtQUVhelJ3S2szZll2eWVZMGNCM1N6aGFn?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9qMGE2S042eVdHSjFCS1BFM2lKaUtIb0cwSWNoUVh0SkNFTVRBWkhYRUVoeGNKMHF3b2Q4YjN3Vk5GT0paaDQzWmE4WlExQQ?oc=5"
   },
   {
     "id": "social-auto-factory-chiayi-cement",
@@ -901,7 +901,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-17",
+    "updated": "2026-10-18",
     "tags": [
       "親子",
       "DIY",
@@ -927,7 +927,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-17",
+    "updated": "2026-10-18",
     "tags": [
       "景點",
       "文化",
@@ -937,5 +937,28 @@
     "q": "臺南市 67000 中西區 67000370 700 民族路二段212號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vODBCQXYtbzh1RDNBODl6RW5MT2lyOEN3eVY2My0wVENkekM5SXdWZk9GRnJ4N3BJVFFTdGJqdUZOZ1lHdzBFSFplWGQ1bnA0?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_395000000A_001334",
+    "city": "台南",
+    "name": "玉井虎頭山",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-18",
+    "tags": [
+      "景點",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 玉井區 67000230 714 竹圍",
+    "q": "臺南市 67000 玉井區 67000230 714 竹圍",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBKXzM2YV82ZUZGY0NTTlpKejhlUjdQMGUtS2ZEcU8xM216d3ZwT1ZVQXFDeG9UNjktcG1ZVHpseGdnQnZrWUxhWHRWZGNudw?oc=5"
   }
 ]
