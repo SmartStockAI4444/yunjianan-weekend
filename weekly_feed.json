@@ -1,7 +1,7 @@
 {
   "version": "2026.10.18-auto",
   "updated": "2026-10-18",
-  "generated_at": "2026-10-18T04:59:55+00:00",
+  "generated_at": "2026-10-18T12:41:50+00:00",
   "stats": {
     "official": 1384,
     "social": 37,
@@ -25,19 +25,19 @@
       "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
       "why": "關子嶺溫泉與北投、陽明山、四重溪並列為臺灣四大溫泉，是臺灣少見的泥漿溫泉。自從日治時期意外發現此處的天然溫泉後，關子嶺便享負盛名，根據史誌記載，由於它的功效以及特殊泥漿性質，更是有了「天下第一靈泉」的美名。",
       "url": "",
-      "heat": 95,
+      "heat": 97,
       "sources": [
         "官方",
         "社群"
       ],
       "signals": {
-        "recent_mentions": 12,
-        "creator_mentions": 12,
-        "repeat_recommendations": 11
+        "recent_mentions": 13,
+        "creator_mentions": 13,
+        "repeat_recommendations": 12
       },
-      "social_heat": 95,
+      "social_heat": 97,
       "social_updated": "2026-10-18",
-      "social_why": "最近30天公開旅遊文章提及12次，來自12個來源",
+      "social_why": "最近30天公開旅遊文章提及13次，來自13個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8xWjBkbzNwQk1YZEJqNC1CeGJsLXhEaUtlOFdKa3hKU0loRmxFSTNTSnRmcTAwVnBUcnpMTEFGel84anhZVUFWalpsa3hWa2Nx?oc=5"
     },
     {
@@ -25224,7 +25224,7 @@
       "social_heat": 58,
       "social_updated": "2026-10-18",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNOTRrSkk4ZUpMLXRtZGFNRTZZRk1iakx6WmtkY0tLeDB4OVRTVmkxRllEOW1fZ2c1aWxZZlVVcmRyMGZpWGpudVBjelhtZDJsWnpBMWdCYXRFSGNoS1pRYVZBcmhfVklIRVA3YjRKZl8xVnJYZmwwTmFPNUxCXzkweEtuTTJwV3pBWm40WC1MeUc?oc=5"
+      "social_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQamwxZ3RJNkxQa3ZJX25Gcms3RTd5Y0VmNHItdGRhUWIxaWRwVnFpMXpwcEZKUDhHUXBVUlRlaVRzcnBaLWdXeDViNEpGSDlfZ2hLTG1KTUduRmdpMnczWi05TUpoUV9Zc2JRajZjTTNITzZhcVZabkJyTkVfYW5YbS1vQjZWUFAzX2FOVERxME43TmJKanpLSzBjdlRnWmJfSmN5X0s5MElqUQ?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_376490000A_000176",
@@ -29273,7 +29273,7 @@
         "creator_mentions": 1,
         "repeat_recommendations": 0
       },
-      "updated": "2026-10-14",
+      "updated": "2026-10-18",
       "tags": [
         "活動",
         "網路熱門"
@@ -29281,7 +29281,7 @@
       "place": "臺南市 67000 安平區 67000360 708 永華市政中心西側及西拉雅廣場",
       "q": "臺南市 67000 安平區 67000360 708 永華市政中心西側及西拉雅廣場",
       "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBKcEY5ang0SVN1eWE5MjlpV0t6MHdUMTlIaFppTUdvaFduNzVwQ2ZKQnJoYUQtSjBHR0VPVmEyVmxEdzdpS0RGSVRnaEtJcDZxTTdtRGZVcVpnOXNfVlVTUjdlTQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBqdTdGZFlnUWstT3NIWXFQMTNJMHpSLWxSeTNIcXZKakhRaTNHcDhtOGxSM0o5X0dCeE5YSU84TDA4U3l2QnNOZ2gwUEQwd216QlgtRmR5eW0ydWFWVlRCcmNidw?oc=5",
       "heat": 58,
       "sources": [
         "社群"
