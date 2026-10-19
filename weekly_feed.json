@@ -1,12 +1,12 @@
 {
   "version": "2026.10.19-auto",
   "updated": "2026-10-19",
-  "generated_at": "2026-10-19T05:08:07+00:00",
+  "generated_at": "2026-10-19T15:46:33+00:00",
   "stats": {
-    "official": 1380,
+    "official": 1383,
     "social": 37,
     "expired_removed": 75,
-    "total": 1390
+    "total": 1393
   },
   "items": [
     {
@@ -25,19 +25,19 @@
       "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
       "why": "關子嶺溫泉與北投、陽明山、四重溪並列為臺灣四大溫泉，是臺灣少見的泥漿溫泉。自從日治時期意外發現此處的天然溫泉後，關子嶺便享負盛名，根據史誌記載，由於它的功效以及特殊泥漿性質，更是有了「天下第一靈泉」的美名。",
       "url": "",
-      "heat": 94,
+      "heat": 95,
       "sources": [
         "官方",
         "社群"
       ],
       "signals": {
-        "recent_mentions": 11,
-        "creator_mentions": 11,
-        "repeat_recommendations": 10
+        "recent_mentions": 12,
+        "creator_mentions": 12,
+        "repeat_recommendations": 11
       },
-      "social_heat": 94,
+      "social_heat": 95,
       "social_updated": "2026-10-19",
-      "social_why": "最近30天公開旅遊文章提及11次，來自11個來源",
+      "social_why": "最近30天公開旅遊文章提及12次，來自12個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8xWjBkbzNwQk1YZEJqNC1CeGJsLXhEaUtlOFdKa3hKU0loRmxFSTNTSnRmcTAwVnBUcnpMTEFGel84anhZVUFWalpsa3hWa2Nx?oc=5"
     },
     {
@@ -257,24 +257,24 @@
       ]
     },
     {
-      "id": "chiayi-city-news-ad3f84166d0a",
+      "id": "chiayi-city-news-1ac9603b4bfb",
       "city": "嘉義",
-      "name": "從認證到產業平台「木都日常」即日起至11/15開展！讓木作品牌匯聚嘉義市",
+      "name": "延續嘉義市博共創精神百工百業素人登臺演繹生命故事",
       "e": "📣",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-09",
-      "start": "2026-10-09",
-      "end": "2026-11-15",
+      "updated": "2026-10-19",
+      "start": "2026-10-19",
+      "end": "2026-10-29",
       "tags": [
         "活動",
         "嘉義市政府",
         "市府快報"
       ],
       "place": "嘉義市",
-      "q": "從認證到產業平台「木都日常」即日起至11/15開展！讓木作品牌匯聚嘉義市",
-      "why": "「木」不只是嘉義的歷史，更是一種延續至今的生活語言。「木都日常｜好木作生活展」今(9)日起至11月15日於實驗木場盛大開展，集結全台各地木職人木作作品並與城市中超過10處以上木屋串聯，透過展覽、選物與市集，帶領民眾從城市歷史走進當代生活。嘉義市長黃敏惠今日主持開幕典禮，在木職人講解下進一步了解木作，走訪木作市集，欣賞各式木作好物，邀請大家把握展期，觀展同時也走入城市的街區和巷弄裡，發掘「木都」的歷",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=955283",
+      "q": "延續嘉義市博共創精神百工百業素人登臺演繹生命故事",
+      "why": "延續「320＋1嘉義市城市博覽會」以百工百業描繪城市風景的精神，嘉義市政府文化局攜手勞工及青年發展處推出「嘉義式＋1百工百業共創劇場」，邀請專業劇場工作者帶領不同職業背景的市民，透過80小時培訓，從日常生活與生命經驗出發，將真實故事轉化為舞臺創作。成果展演昨（18）日在嘉義市影視音基地登場，素人演員真摯動人的演出感動全場，讓觀眾看見平凡生活中不平凡的生命故事。 嘉義市長黃敏惠表示，去年「320＋1",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=956310",
       "heat": 93,
       "sources": [
         "官方"
@@ -966,6 +966,29 @@
       ]
     },
     {
+      "id": "chiayi-city-event-cced0620e401",
+      "city": "嘉義",
+      "name": "嘉頌擊樂《野牛大遷徙－天國之渡》",
+      "e": "🎉",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-19",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "tags": [
+        "活動",
+        "嘉義市政府"
+      ],
+      "place": "嘉義市",
+      "q": "嘉頌擊樂《野牛大遷徙－天國之渡》",
+      "why": "嘉頌擊樂《野牛大遷徙－天國之渡》11/7（六）14:30、19:30演出團隊｜嘉頌擊樂演出地點｜嘉義市政府文化局音樂廳票務訊息｜售票，請洽年代售票【售票連結】擊樂×說書×鼓舞當旱季逼近，大草原上的動物開始遷徙。對族群而言，這是年復一年的生存旅程；對第一次踏上路途的小野牛而言，卻是一場必須學會成長、獨立與等待的生命歷程。《野牛大遷徙－天國之渡》是《彩虹鴉》音樂",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=956302",
+      "heat": 86,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
       "id": "chiayi-city-event-248404befac2",
       "city": "嘉義",
       "name": "戲說圖畫書活動9月登場喔！",
@@ -1006,6 +1029,29 @@
       "q": "明華園戲劇總團2026青年劇作《皇昭令》",
       "why": "明華園戲劇總團2026青年劇作《皇昭令》10/25(日)14:3010/26(一)14:30演出團隊｜明華園戲劇總團演出地點｜嘉義市政府文化局音樂廳票務訊息｜售票，請洽OPENTIX兩廳院文化生活【售票系統】(本場次適用文化幣青年席位)傳聞：「得皇昭令，得天下。」天鷹國為三族共居之國──北：風族，南：鷹族，西：虎族，由雄霸南方的鷹族掌君權。嘯雲天和母親金蓮花",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=951479",
+      "heat": 86,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "chiayi-city-event-c07fa862cdb4",
+      "city": "嘉義",
+      "name": "樂見彼此：雙城管弦系列音樂會II",
+      "e": "🎉",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-19",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "tags": [
+        "活動",
+        "嘉義市政府"
+      ],
+      "place": "嘉義市",
+      "q": "樂見彼此：雙城管弦系列音樂會II",
+      "why": "樂見彼此：雙城管弦系列音樂會II11/7（六）14:30演出團隊｜嘉義市青年管弦樂團、臺中市立清水國民中學音樂班演出地點｜臺中市港區藝術中心演藝廳票務訊息｜索票入場，索票方式詳見「CYO嘉義市青年管弦樂團」臉書公告文化局持續推動城市藝文交流，2026年以《樂見彼此：雙城管弦系列音樂會》串聯不同城市的音樂團隊。首場9月19日於臺南舉行，嘉義市青年管弦樂團與國立",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=956305",
       "heat": 86,
       "sources": [
         "官方"
@@ -1144,6 +1190,29 @@
       "q": "沓沓仔聽｜鹿港腔臺語的一千萬種可能？阿愷之聲Podcast的聲音實驗",
       "why": "𖦹2026嘉義市母語生活節「沓沓仔Ta̍uh-ta̍uh-á」系列 𖦹按怎將母語講轉來？鹿港腔臺語按怎結合新媒體來放送全世界?阿愷之聲Podcast又閣是啥款廣播節目？緊來收聽恁就知。⟢沓沓仔聽｜鹿港腔臺語的一千萬種可能？阿愷之聲Podcast的聲音實驗講師：王麒愷日期：10/23(五)時間：14:00-16:00地點：西門交誼創新所2F多功能會議室（600",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=955385",
+      "heat": 86,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "chiayi-city-event-9c6b0fba5a81",
+      "city": "嘉義",
+      "name": "降豬72變",
+      "e": "🎉",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-19",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "tags": [
+        "活動",
+        "嘉義市政府"
+      ],
+      "place": "嘉義市",
+      "q": "降豬72變",
+      "why": "降豬72變11/7（六）14:30演出團隊｜真雲林閣掌中劇團演出地點｜嘉義市中正公園票務訊息｜免費入場一路向西天取經的唐三藏與徒弟孫悟空一行人，來到一個叫高老莊的村子，村裡的高太公很著急，告訴大家自己的女兒高翠蘭被一隻豬妖強行娶走，關在家裡，不讓其女見家人，因此唐三藏一行人決定幫忙，孫悟空變成高翠蘭的樣子，引誘豬妖出來。原來，這隻豬妖就是以前天上的神仙，因為",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=956304",
       "heat": 86,
       "sources": [
         "官方"
@@ -6616,7 +6685,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-05-29",
+      "updated": "2026-10-19",
       "tags": [
         "景點"
       ],
@@ -17336,7 +17405,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-08-03",
+      "updated": "2026-10-19",
       "tags": [
         "景點",
         "戶外"
@@ -29069,32 +29138,6 @@
       ]
     },
     {
-      "id": "social-auto-tourism-event-Event_A15010000H_081715",
-      "city": "雲林",
-      "name": "2026雲林國際偶戲節",
-      "e": "🔥",
-      "type": "活動",
-      "src": "社群",
-      "signals": {
-        "recent_mentions": 2,
-        "creator_mentions": 2,
-        "repeat_recommendations": 1
-      },
-      "updated": "2026-10-19",
-      "tags": [
-        "活動",
-        "網路熱門"
-      ],
-      "place": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
-      "q": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
-      "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5UZVNKamxFQUtQQXVTUVNpVkV0R0JwZ3JGREcyVWotYkVacnZ6SXVrWElQQk5WajVweFUtTjNROWZ0b3ltd2tEa21SSmV6VUxPSnc?oc=5",
-      "heat": 62,
-      "sources": [
-        "社群"
-      ]
-    },
-    {
       "id": "social-auto-tourism-event-Event_395000000A_008093",
       "city": "台南",
       "name": "2026 水交社晴空藝術節",
@@ -29305,6 +29348,32 @@
       "q": "大同技術學院 嘉義市 諸羅搖滾",
       "why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFA2NEdiM1NacWI2TDhtWXN5ZzJQOGNRVXYyNHozR25Zc2JGZTFFMV9XSFFJUkFKZDQ1SXVOekloQ0h3Q183d3F4bURoZnTSAVJBVV95cUxOc1N0U3JlUjFzTEQ5SVV0bTN1ZmdhSlRBazhSYjBHbzFQS2ExaUlpSEVqTXBUNFFramFmZTd6R2JXVk5zcHRmVWk3MXhxUnFYdVVn?oc=5",
+      "heat": 58,
+      "sources": [
+        "社群"
+      ]
+    },
+    {
+      "id": "social-auto-tourism-event-Event_A15010000H_081715",
+      "city": "雲林",
+      "name": "2026雲林國際偶戲節",
+      "e": "🔥",
+      "type": "活動",
+      "src": "社群",
+      "signals": {
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
+      },
+      "updated": "2026-10-19",
+      "tags": [
+        "活動",
+        "網路熱門"
+      ],
+      "place": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
+      "q": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
+      "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rRWl3Zk0wcDdvY0lJR28yd2pFTG4wbjYyWUR2S0Q2Tk1tMlVaZHJaZWlXeTlEUDhrYjN2TGtBRkR3SU5hd3RmUl9odG8wMWhu0gFWQVVfeXFMTXBlaEZzNEVJd09wemZXS09tZU1IQ3VtaGU2czRORVFyWlltcWpfdWdqVDJTNEdlNGdOUGkzdXZ0d3RZM0RENW9SczN2R0k3dnNpREYyWmc?oc=5",
       "heat": 58,
       "sources": [
         "社群"
