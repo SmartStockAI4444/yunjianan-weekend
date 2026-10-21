@@ -1,12 +1,12 @@
 {
   "version": "2026.10.21-auto",
   "updated": "2026-10-21",
-  "generated_at": "2026-10-21T05:11:39+00:00",
+  "generated_at": "2026-10-21T13:59:38+00:00",
   "stats": {
-    "official": 1385,
+    "official": 1386,
     "social": 37,
     "expired_removed": 75,
-    "total": 1395
+    "total": 1396
   },
   "items": [
     {
@@ -25,20 +25,20 @@
       "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
       "why": "關子嶺溫泉與北投、陽明山、四重溪並列為臺灣四大溫泉，是臺灣少見的泥漿溫泉。自從日治時期意外發現此處的天然溫泉後，關子嶺便享負盛名，根據史誌記載，由於它的功效以及特殊泥漿性質，更是有了「天下第一靈泉」的美名。",
       "url": "",
-      "heat": 98,
+      "heat": 99,
       "sources": [
         "官方",
         "社群"
       ],
       "signals": {
-        "recent_mentions": 14,
+        "recent_mentions": 15,
         "creator_mentions": 14,
-        "repeat_recommendations": 13
+        "repeat_recommendations": 14
       },
-      "social_heat": 98,
+      "social_heat": 99,
       "social_updated": "2026-10-21",
-      "social_why": "最近30天公開旅遊文章提及14次，來自14個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1JVGpRMFpPcloyLVVweUNYNnJyUktSRkVCbU9NMXdDSnptT3JlbHMtQTJ1YlJiUWIyTElBcnYtTHlTY0tPSXpaOEpyRQ?oc=5"
+      "social_why": "最近30天公開旅遊文章提及15次，來自14個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA1c3BlYXB5eUo5RVYtNmRUREJBWGctV3JwM0FFQVhmOTFBZUI0bTBPOG0xN2xHZkZtMVgteWRnNkJSVTZnbHlFbHJEYURrVFhDYzdOR3VWWDdMakthTFhGOGVTQQ?oc=5"
     },
     {
       "id": "chiayi-city-news-0982c1d73436",
@@ -746,6 +746,29 @@
       "q": "Tâi-gí+1做伙行─台語講座：佇印度拉達克行踏的日子",
       "why": "※2026嘉義市培育台語家庭計畫─Tâi-gí+1做伙行※📍台語講座系列📍20歲時曾獨自前往印度進行為期21天的自助旅行，人生第一次出國，她如何完成這場追夢之旅，歡迎大家一起來聽聽！☆主題｜【文化講座】佇印度拉達克行踏的日子📅日期｜10/24（六）10:00–11:50👤講師｜林湘苓📍地點｜洪雅書房◆報名網址｜https://forms.gle/NQwUrW",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=955425",
+      "heat": 86,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "chiayi-city-event-66cdaf5a75c7",
+      "city": "嘉義",
+      "name": "《穿著旗袍的女孩》電影放映",
+      "e": "🎉",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-21",
+      "start": "2026-10-30",
+      "end": "2026-10-30",
+      "tags": [
+        "活動",
+        "嘉義市政府"
+      ],
+      "place": "嘉義市",
+      "q": "《穿著旗袍的女孩》電影放映",
+      "why": "影片介紹《穿著旗袍的女孩》以1949年來臺的沈媛為故事主角，透過一封久違的家書、一件件珍藏的旗袍，帶我們走進她塵封的記憶。在時代的離散與人生的聚散之間，那些對故鄉的思念、對母親的牽掛，以及來不及說出口的話，都隨著回憶再次浮現。 活動資訊時間：115年10月30日(五)下午2：00至4：00(電影放映及映後座談)地點：嘉義市立博物館一樓簡報室備註：本活動事先報",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=956582",
       "heat": 86,
       "sources": [
         "官方"
@@ -20808,12 +20831,13 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-08-12",
+      "updated": "2026-10-21",
       "tags": [
         "景點",
         "戶外",
         "親子",
-        "免費"
+        "免費",
+        "網路熱門"
       ],
       "place": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉湳仔村湳仔路",
       "q": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉湳仔村湳仔路",
@@ -20825,14 +20849,14 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 7,
-        "creator_mentions": 2,
-        "repeat_recommendations": 4
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
       },
-      "social_heat": 71,
-      "social_updated": "2026-08-12",
-      "social_why": "近期旅遊分享持續出現，適合週末散步與親子行程。",
-      "social_url": ""
+      "social_heat": 58,
+      "social_updated": "2026-10-21",
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0yWE5WaWV2anh3ME82VmdlRFhwUjlvWmVyYzR3ZWo5MFlXZFpuYW95aFJCa1QzTWZNWXNjZ3ZWMzhPUWxVVTBqakV2bk02cGR5Smc5S2dHc0JPcWZ4dXpwcVJNSUlKcmNZb2xR?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_376490000A_000139",
@@ -25241,14 +25265,14 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 2,
-        "creator_mentions": 2,
-        "repeat_recommendations": 1
+        "recent_mentions": 4,
+        "creator_mentions": 3,
+        "repeat_recommendations": 3
       },
-      "social_heat": 62,
+      "social_heat": 68,
       "social_updated": "2026-10-21",
-      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQamwxZ3RJNkxQa3ZJX25Gcms3RTd5Y0VmNHItdGRhUWIxaWRwVnFpMXpwcEZKUDhHUXBVUlRlaVRzcnBaLWdXeDViNEpGSDlfZ2hLTG1KTUduRmdpMnczWi05TUpoUV9Zc2JRajZjTTNITzZhcVZabkJyTkVfYW5YbS1vQjZWUFAzX2FOVERxME43TmJKanpLSzBjdlRnWmJfSmN5X0s5MElqUQ?oc=5"
+      "social_why": "最近30天公開旅遊文章提及4次，來自3個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZXZqQ2tjb3JHbDJ5LXVnd0Q5ZkJpWjhpYTlfZ1pEcjBJbUlrYUZKaXhEdWc4dktYOTVlcFpLM2Q2YnZGSnpxT0dIakdNNnlSQ0pPZHdiRzU4MFJsRjZpcmtPUlBSTDZBRlJ2RV9tVndZenRhMjZ2amRIancxR3RjYkxONVl0dGNV?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_376490000A_000176",
@@ -28164,9 +28188,9 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-17",
+      "social_updated": "2026-10-21",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBVWnZIOFpoaFRGOHNWSkJoR0xyaGh2VUdNLW1vTHZzT1J6aHVRcHFoTEVIVUk2b3p5UnRfS1VKenRzdkJMQUFJbUFpYzNJZVBfN0xDOWpR?oc=5"
+      "social_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1yWW00aDZIRkZfN1J4TlUwWEpOVWVLRE8wR1ZHdTQzaGdKUE9yaU5FY2RkOGhiQkc0eDRESVhGMm9XSjZBb3NHZlNJVVZUN3NlV2tYaW1CUGxQTDhYT3Y4ZHppMjQyQThRX1lRbnZWUQ?oc=5"
     },
     {
       "id": "tainan-attraction-5529",
@@ -29182,6 +29206,32 @@
       ]
     },
     {
+      "id": "social-auto-tourism-event-Event_A15010000H_081715",
+      "city": "雲林",
+      "name": "2026雲林國際偶戲節",
+      "e": "🔥",
+      "type": "活動",
+      "src": "社群",
+      "signals": {
+        "recent_mentions": 2,
+        "creator_mentions": 2,
+        "repeat_recommendations": 1
+      },
+      "updated": "2026-10-21",
+      "tags": [
+        "活動",
+        "網路熱門"
+      ],
+      "place": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
+      "q": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
+      "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5UZVNKamxFQUtQQXVTUVNpVkV0R0JwZ3JGREcyVWotYkVacnZ6SXVrWElQQk5WajVweFUtTjNROWZ0b3ltd2tEa21SSmV6VUxPSnc?oc=5",
+      "heat": 62,
+      "sources": [
+        "社群"
+      ]
+    },
+    {
       "id": "social-auto-tourism-event-Event_395000000A_008093",
       "city": "台南",
       "name": "2026 水交社晴空藝術節",
@@ -29392,32 +29442,6 @@
       "q": "大同技術學院 嘉義市 諸羅搖滾",
       "why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFA2NEdiM1NacWI2TDhtWXN5ZzJQOGNRVXYyNHozR25Zc2JGZTFFMV9XSFFJUkFKZDQ1SXVOekloQ0h3Q183d3F4bURoZnTSAVJBVV95cUxOc1N0U3JlUjFzTEQ5SVV0bTN1ZmdhSlRBazhSYjBHbzFQS2ExaUlpSEVqTXBUNFFramFmZTd6R2JXVk5zcHRmVWk3MXhxUnFYdVVn?oc=5",
-      "heat": 58,
-      "sources": [
-        "社群"
-      ]
-    },
-    {
-      "id": "social-auto-tourism-event-Event_A15010000H_081715",
-      "city": "雲林",
-      "name": "2026雲林國際偶戲節",
-      "e": "🔥",
-      "type": "活動",
-      "src": "社群",
-      "signals": {
-        "recent_mentions": 1,
-        "creator_mentions": 1,
-        "repeat_recommendations": 0
-      },
-      "updated": "2026-10-21",
-      "tags": [
-        "活動",
-        "網路熱門"
-      ],
-      "place": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
-      "q": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
-      "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rRWl3Zk0wcDdvY0lJR28yd2pFTG4wbjYyWUR2S0Q2Tk1tMlVaZHJaZWlXeTlEUDhrYjN2TGtBRkR3SU5hd3RmUl9odG8wMWhu0gFWQVVfeXFMTXBlaEZzNEVJd09wemZXS09tZU1IQ3VtaGU2czRORVFyWlltcWpfdWdqVDJTNEdlNGdOUGkzdXZ0d3RZM0RENW9SczN2R0k3dnNpREYyWmc?oc=5",
       "heat": 58,
       "sources": [
         "社群"

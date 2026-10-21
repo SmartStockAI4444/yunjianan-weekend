@@ -149,11 +149,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 4,
+      "creator_mentions": 3,
+      "repeat_recommendations": 3
     },
-    "base_heat": 82,
+    "base_heat": 93,
     "updated": "2026-10-21",
     "tags": [
       "景點",
@@ -162,8 +162,8 @@
     ],
     "place": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
     "q": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQamwxZ3RJNkxQa3ZJX25Gcms3RTd5Y0VmNHItdGRhUWIxaWRwVnFpMXpwcEZKUDhHUXBVUlRlaVRzcnBaLWdXeDViNEpGSDlfZ2hLTG1KTUduRmdpMnczWi05TUpoUV9Zc2JRajZjTTNITzZhcVZabkJyTkVfYW5YbS1vQjZWUFAzX2FOVERxME43TmJKanpLSzBjdlRnWmJfSmN5X0s5MElqUQ?oc=5"
+    "why": "最近30天公開旅遊文章提及4次，來自3個來源",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZXZqQ2tjb3JHbDJ5LXVnd0Q5ZkJpWjhpYTlfZ1pEcjBJbUlrYUZKaXhEdWc4dktYOTVlcFpLM2Q2YnZGSnpxT0dIakdNNnlSQ0pPZHdiRzU4MFJsRjZpcmtPUlBSTDZBRlJ2RV9tVndZenRhMjZ2amRIancxR3RjYkxONVl0dGNV?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_A25000000E_000036",
@@ -197,11 +197,11 @@
     "type": "活動",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
-      "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 75,
+    "base_heat": 82,
     "updated": "2026-10-21",
     "tags": [
       "活動",
@@ -209,8 +209,8 @@
     ],
     "place": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
     "q": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rRWl3Zk0wcDdvY0lJR28yd2pFTG4wbjYyWUR2S0Q2Tk1tMlVaZHJaZWlXeTlEUDhrYjN2TGtBRkR3SU5hd3RmUl9odG8wMWhu0gFWQVVfeXFMTXBlaEZzNEVJd09wemZXS09tZU1IQ3VtaGU2czRORVFyWlltcWpfdWdqVDJTNEdlNGdOUGkzdXZ0d3RZM0RENW9SczN2R0k3dnNpREYyWmc?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5UZVNKamxFQUtQQXVTUVNpVkV0R0JwZ3JGREcyVWotYkVacnZ6SXVrWElQQk5WajVweFUtTjNROWZ0b3ltd2tEa21SSmV6VUxPSnc?oc=5"
   },
   {
     "id": "social-auto-factory-chiayi-love-wood",
@@ -397,7 +397,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-17",
+    "updated": "2026-10-21",
     "tags": [
       "戶外",
       "自然",
@@ -406,7 +406,7 @@
     "place": "安平區",
     "q": "708 臺南市安平區漁光路118號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBVWnZIOFpoaFRGOHNWSkJoR0xyaGh2VUdNLW1vTHZzT1J6aHVRcHFoTEVIVUk2b3p5UnRfS1VKenRzdkJMQUFJbUFpYzNJZVBfN0xDOWpR?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1yWW00aDZIRkZfN1J4TlUwWEpOVWVLRE8wR1ZHdTQzaGdKUE9yaU5FY2RkOGhiQkc0eDRESVhGMm9XSjZBb3NHZlNJVVZUN3NlV2tYaW1CUGxQTDhYT3Y4ZHppMjQyQThRX1lRbnZWUQ?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_395000000A_000805",
@@ -681,9 +681,9 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 14,
+      "recent_mentions": 15,
       "creator_mentions": 14,
-      "repeat_recommendations": 13
+      "repeat_recommendations": 14
     },
     "base_heat": 95,
     "updated": "2026-10-21",
@@ -693,8 +693,8 @@
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及14次，來自14個來源",
-    "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1JVGpRMFpPcloyLVVweUNYNnJyUktSRkVCbU9NMXdDSnptT3JlbHMtQTJ1YlJiUWIyTElBcnYtTHlTY0tPSXpaOEpyRQ?oc=5"
+    "why": "最近30天公開旅遊文章提及15次，來自14個來源",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA1c3BlYXB5eUo5RVYtNmRUREJBWGctV3JwM0FFQVhmOTFBZUI0bTBPOG0xN2xHZkZtMVgteWRnNkJSVTZnbHlFbHJEYURrVFhDYzdOR3VWWDdMakthTFhGOGVTQQ?oc=5"
   },
   {
     "id": "social-auto-chiayi-city-event-df49699a6f46",
@@ -960,5 +960,29 @@
     "q": "臺南市 67000 玉井區 67000230 714 竹圍",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBKXzM2YV82ZUZGY0NTTlpKejhlUjdQMGUtS2ZEcU8xM216d3ZwT1ZVQXFDeG9UNjktcG1ZVHpseGdnQnZrWUxhWHRWZGNudw?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_376490000A_000015",
+    "city": "雲林",
+    "name": "古坑綠色隧道",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-21",
+    "tags": [
+      "景點",
+      "戶外",
+      "網路熱門"
+    ],
+    "place": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉湳仔村湳仔路",
+    "q": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉湳仔村湳仔路",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0yWE5WaWV2anh3ME82VmdlRFhwUjlvWmVyYzR3ZWo5MFlXZFpuYW95aFJCa1QzTWZNWXNjZ3ZWMzhPUWxVVTBqakV2bk02cGR5Smc5S2dHc0JPcWZ4dXpwcVJNSUlKcmNZb2xR?oc=5"
   }
 ]
