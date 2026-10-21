@@ -149,12 +149,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 3,
-      "creator_mentions": 3,
-      "repeat_recommendations": 2
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 89,
-    "updated": "2026-10-20",
+    "base_heat": 82,
+    "updated": "2026-10-21",
     "tags": [
       "景點",
       "戶外",
@@ -162,8 +162,8 @@
     ],
     "place": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
     "q": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
-    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZXZqQ2tjb3JHbDJ5LXVnd0Q5ZkJpWjhpYTlfZ1pEcjBJbUlrYUZKaXhEdWc4dktYOTVlcFpLM2Q2YnZGSnpxT0dIakdNNnlSQ0pPZHdiRzU4MFJsRjZpcmtPUlBSTDZBRlJ2RV9tVndZenRhMjZ2amRIancxR3RjYkxONVl0dGNV?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQamwxZ3RJNkxQa3ZJX25Gcms3RTd5Y0VmNHItdGRhUWIxaWRwVnFpMXpwcEZKUDhHUXBVUlRlaVRzcnBaLWdXeDViNEpGSDlfZ2hLTG1KTUduRmdpMnczWi05TUpoUV9Zc2JRajZjTTNITzZhcVZabkJyTkVfYW5YbS1vQjZWUFAzX2FOVERxME43TmJKanpLSzBjdlRnWmJfSmN5X0s5MElqUQ?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_A25000000E_000036",
@@ -202,7 +202,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-20",
+    "updated": "2026-10-21",
     "tags": [
       "活動",
       "網路熱門"
@@ -300,7 +300,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-20",
+    "updated": "2026-10-21",
     "tags": [
       "景點",
       "戶外",
@@ -373,7 +373,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-20",
+    "updated": "2026-10-21",
     "tags": [
       "景點",
       "文化",
@@ -445,7 +445,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-20",
+    "updated": "2026-10-21",
     "tags": [
       "景點",
       "網路熱門"
@@ -546,7 +546,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-20",
+    "updated": "2026-10-21",
     "tags": [
       "活動",
       "網路熱門"
@@ -686,7 +686,7 @@
       "repeat_recommendations": 13
     },
     "base_heat": 95,
-    "updated": "2026-10-20",
+    "updated": "2026-10-21",
     "tags": [
       "景點",
       "網路熱門"
@@ -694,7 +694,7 @@
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "why": "最近30天公開旅遊文章提及14次，來自14個來源",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8xWjBkbzNwQk1YZEJqNC1CeGJsLXhEaUtlOFdKa3hKU0loRmxFSTNTSnRmcTAwVnBUcnpMTEFGel84anhZVUFWalpsa3hWa2Nx?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1JVGpRMFpPcloyLVVweUNYNnJyUktSRkVCbU9NMXdDSnptT3JlbHMtQTJ1YlJiUWIyTElBcnYtTHlTY0tPSXpaOEpyRQ?oc=5"
   },
   {
     "id": "social-auto-chiayi-city-event-df49699a6f46",
@@ -878,7 +878,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-20",
+    "updated": "2026-10-21",
     "tags": [
       "景點",
       "網路熱門"
@@ -901,7 +901,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-20",
+    "updated": "2026-10-21",
     "tags": [
       "親子",
       "DIY",
@@ -927,7 +927,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-20",
+    "updated": "2026-10-21",
     "tags": [
       "景點",
       "文化",
@@ -951,7 +951,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-20",
+    "updated": "2026-10-21",
     "tags": [
       "景點",
       "網路熱門"
