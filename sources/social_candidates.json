@@ -368,11 +368,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
+      "recent_mentions": 2,
       "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "repeat_recommendations": 1
     },
-    "base_heat": 75,
+    "base_heat": 79,
     "updated": "2026-10-22",
     "tags": [
       "景點",
@@ -381,8 +381,8 @@
     ],
     "place": "臺南市 67000 仁德區 67000270 717 文華路二段66號",
     "q": "臺南市 67000 仁德區 67000270 717 文華路二段66號",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vODBCQXYtbzh1RDNBODl6RW5MT2lyOEN3eVY2My0wVENkekM5SXdWZk9GRnJ4N3BJVFFTdGJqdUZOZ1lHdzBFSFplWGQ1bnA0?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5TeGJDY3JyUERHQ3htX3RPQk9GaW9JX0pyT18tUC1IelpZLUZwZDBUbXI4Rm5DX0pZOEVDWmFvb3VJSVNtNVJ0aWJUR1gwVk5B?oc=5"
   },
   {
     "id": "social-auto-tainan-attraction-5520",
@@ -406,7 +406,7 @@
     "place": "安平區",
     "q": "708 臺南市安平區漁光路118號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1yWW00aDZIRkZfN1J4TlUwWEpOVWVLRE8wR1ZHdTQzaGdKUE9yaU5FY2RkOGhiQkc0eDRESVhGMm9XSjZBb3NHZlNJVVZUN3NlV2tYaW1CUGxQTDhYT3Y4ZHppMjQyQThRX1lRbnZWUQ?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQXdFZDFnOTRLWEUwUUxtZTVhVHZXS2gzdG9Qcllmb3d5Njc4WWg0QWt6MDFadTVTRVpYT2dDQXFPajB4dWRDdEJFb2NHTmZSVVJVMk5Kb2lkVjc3dTg5X1BQRWdscnAtQjN5dXEyaTFtQWtvN3JzaklJMkY1djE1ZUhhY2hkVGtMUTFaVlB0elM3U1RNR1haTGlfQzVfcm4yUVE?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_395000000A_000805",
@@ -554,7 +554,7 @@
     "place": "臺南市 67000 安平區 67000360 708 永華市政中心西側及西拉雅廣場",
     "q": "臺南市 67000 安平區 67000360 708 永華市政中心西側及西拉雅廣場",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBqdTdGZFlnUWstT3NIWXFQMTNJMHpSLWxSeTNIcXZKakhRaTNHcDhtOGxSM0o5X0dCeE5YSU84TDA4U3l2QnNOZ2gwUEQwd216QlgtRmR5eW0ydWFWVlRCcmNidw?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5EQWJrNE9CWUZGdEFXLXpqRGZFdGNyTk5NSFk5T1JFaG9yN1pXMUxEVlR2WHdYUGVWYnhRc3YzMTBZU3hVZEF0ZlNOZmstQVdJN3NZZVZ1VWZxZ0FPYXRzbk84VQ?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_395000000A_000934",
@@ -617,7 +617,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-15",
+    "updated": "2026-10-22",
     "tags": [
       "活動",
       "網路熱門"
@@ -663,7 +663,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-13",
+    "updated": "2026-10-22",
     "tags": [
       "活動",
       "網路熱門"
@@ -681,11 +681,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 13,
-      "creator_mentions": 13,
-      "repeat_recommendations": 12
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 95,
+    "base_heat": 82,
     "updated": "2026-10-22",
     "tags": [
       "景點",
@@ -693,8 +693,8 @@
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及13次，來自13個來源",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA1c3BlYXB5eUo5RVYtNmRUREJBWGctV3JwM0FFQVhmOTFBZUI0bTBPOG0xN2xHZkZtMVgteWRnNkJSVTZnbHlFbHJEYURrVFhDYzdOR3VWWDdMakthTFhGOGVTQQ?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "url": "https://news.google.com/rss/articles/CBMiiARBVV95cUxPVTZkX1hNMWMxdDQ3NmllcnBGTTdSLVZ2Tmpnc1JpUXJSTkVXcjBzSDZISmRscWVobEt3a2ZSb3NQZ19PT3ZvNW04YTZhVUdKOTI0X0ViUU9lRmc1R0NlRkpldTJPTWpEdmFyUHNzVU1BNUxDSEtBT0tLTzh6Q2xMWWR4RkltSzVjU3NOX3c5RGg4el95QXllb3pnOWg5NkVoWEtxZjRBcElPb0ZaellrRkVzVjJqckYwVzdjTkRPYkt4eUswRDJiWkROVi1QelpqdkdFeE5nX2FLQUE4emtiYVhjV3N2ZVJ5Q0NJWnJ6Y0Q3RzR5WkF3OHh2N0xYU01aNml0UUh0WHBHbjdianVTWFhPbDZoVWF6RE1NcUhUbDNIbTZNSFd3RUtXVXJzZ0Y3WHNNem03clJfRGE5aktIUHRGQW9CZHY4U1N2cmR1dkozcHlqdGdyd3FCbUZaUExSd2ZwTjUxeXkwc2NJRTF3WlVaWERGbG0ySjdwM2NjWHMtTUxaWGFpZEFkLXI4NHZkT0VLZnZmYmpsRllWTmtFLV9PN0lfdWFRWHUtdWhSd3VSdVR6c3hrTl9MZGpOcG8weEtabC1KMjJiWWt6b2E1RkhCcDd4TktFNUJnTWRSaE9uaVlucHhpcFJ0Q3JTLTJ4YUZRanVGdEJ5Q08wMGxGTEFxYWFfTklZ?oc=5"
   },
   {
     "id": "social-auto-chiayi-city-event-df49699a6f46",
@@ -807,7 +807,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-10",
+    "updated": "2026-10-22",
     "tags": [
       "活動",
       "網路熱門"
@@ -873,11 +873,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
+      "recent_mentions": 1,
       "creator_mentions": 1,
-      "repeat_recommendations": 1
+      "repeat_recommendations": 0
     },
-    "base_heat": 79,
+    "base_heat": 75,
     "updated": "2026-10-22",
     "tags": [
       "景點",
@@ -885,7 +885,7 @@
     ],
     "place": "臺南市 67000 楠西區 67000240 715 密枝里70號",
     "q": "臺南市 67000 楠西區 67000240 715 密枝里70號",
-    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9qMGE2S042eVdHSjFCS1BFM2lKaUtIb0cwSWNoUVh0SkNFTVRBWkhYRUVoeGNKMHF3b2Q4YjN3Vk5GT0paaDQzWmE4WlExQQ?oc=5"
   },
   {
@@ -984,5 +984,120 @@
     "q": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉湳仔村湳仔路",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0yWE5WaWV2anh3ME82VmdlRFhwUjlvWmVyYzR3ZWo5MFlXZFpuYW95aFJCa1QzTWZNWXNjZ3ZWMzhPUWxVVTBqakV2bk02cGR5Smc5S2dHc0JPcWZ4dXpwcVJNSUlKcmNZb2xR?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_A15011100H_000486",
+    "city": "台南",
+    "name": "水晶教堂",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-22",
+    "tags": [
+      "景點",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 北門區 67000170 727 北門里200號",
+    "q": "臺南市 67000 北門區 67000170 727 北門里200號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaUcxNmVTUlhvYjZUNURHRUdKRjNydE9Td0tkYkJQdUFDVjdhcTBsN19qc2pvS1NuNFIybGV5bjgzaExjNURwM0tfRDJ4N3ZjQkgwWEFobVpoaW9ZMjFlLTFMTFZ5dnBBcTM0RDVIOGFCdUJYeGxrTjdlb25CdlNJRGpWOUNRaEt2SkZnbGlOWUZSZ2s?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-event-Event_395000000A_007848",
+    "city": "台南",
+    "name": "2026臺南總舖師四季辦桌",
+    "e": "🔥",
+    "type": "活動",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-22",
+    "tags": [
+      "活動",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 關廟區 67000290 718 大潭埤旺萊公園",
+    "q": "臺南市 67000 關廟區 67000290 718 大潭埤旺萊公園",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9JUUlsSkFYNXl4SWZvWXp2N2xoY3lKYzBJMG9UUVJza2RVNTRLMThMdndNdWFYeW9OLVppcU5HZTRQb2c4RTd3ZERHM29aMkFqMHZLR0hzaDRnSmFzYXRoVGRXNUttU2ls?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-event-Event_395000000A_008082",
+    "city": "台南",
+    "name": "2026臺南購物節",
+    "e": "🔥",
+    "type": "活動",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-22",
+    "tags": [
+      "活動",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 中西區 67000370 700",
+    "q": "臺南市 67000 中西區 67000370 700",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBzcDZ2S3ZYNTNBWlg0TjZNUENDMWhSQ012eXZwVVY5VkE1SzlBYU1DdmdYYlB6LXRLZVR5V1VHWGpSWnVKTVhjLUtqVjdleEFTTXJKWk1kNUx2clhLUnp4LVdsWUdCZVNs?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-event-Event_395000000A_008099",
+    "city": "台南",
+    "name": "2026 臺南南島文化節《南島食光，用味道走進文化》",
+    "e": "🔥",
+    "type": "活動",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-22",
+    "tags": [
+      "活動",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 安平區 67000360 708 安億路公有停車場（近Tabe 札哈木樂原）",
+    "q": "臺南市 67000 安平區 67000360 708 安億路公有停車場（近Tabe 札哈木樂原）",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBDbnhWa3B0TnVjR3h1QmFXTDJsWDhPdm9sbGpBNVh0MTlHS1NiYV8tV0J2SEtMQ1JGdXh2QTdRYlIzX09MYUtlMzY5TDM4S0VPZGc4bzhSOHVBcjlIUnNwdTUydjI1ZTJO?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-event-Event_395000000A_008075",
+    "city": "台南",
+    "name": "2026臺南健康嘉年華",
+    "e": "🔥",
+    "type": "活動",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-22",
+    "tags": [
+      "活動",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 歸仁區 67000280 711 武東里歸仁十二路3號(大台南會展中心)",
+    "q": "臺南市 67000 歸仁區 67000280 711 武東里歸仁十二路3號(大台南會展中心)",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9aLS1uMkMyN3lQd0JkN0cxV3A4NUJtT3VwYVpDLVduRW9nSGZQcUg1YjhLQk1HREpaeV9Tbk5PeUpsZ0NUV1NHNTc5OTNlUVVjamZLeGZXeC1XTEdpLW5nUVFMSUZHZGNE?oc=5"
   }
 ]
