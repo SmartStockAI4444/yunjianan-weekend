@@ -154,7 +154,7 @@
       "repeat_recommendations": 2
     },
     "base_heat": 86,
-    "updated": "2026-10-22",
+    "updated": "2026-10-23",
     "tags": [
       "景點",
       "戶外",
@@ -202,7 +202,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-22",
+    "updated": "2026-10-23",
     "tags": [
       "活動",
       "網路熱門"
@@ -300,7 +300,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-22",
+    "updated": "2026-10-23",
     "tags": [
       "景點",
       "戶外",
@@ -368,12 +368,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
+      "recent_mentions": 1,
       "creator_mentions": 1,
-      "repeat_recommendations": 1
+      "repeat_recommendations": 0
     },
-    "base_heat": 79,
-    "updated": "2026-10-22",
+    "base_heat": 75,
+    "updated": "2026-10-23",
     "tags": [
       "景點",
       "文化",
@@ -381,8 +381,8 @@
     ],
     "place": "臺南市 67000 仁德區 67000270 717 文華路二段66號",
     "q": "臺南市 67000 仁德區 67000270 717 文華路二段66號",
-    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5TeGJDY3JyUERHQ3htX3RPQk9GaW9JX0pyT18tUC1IelpZLUZwZDBUbXI4Rm5DX0pZOEVDWmFvb3VJSVNtNVJ0aWJUR1gwVk5B?oc=5"
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vODBCQXYtbzh1RDNBODl6RW5MT2lyOEN3eVY2My0wVENkekM5SXdWZk9GRnJ4N3BJVFFTdGJqdUZOZ1lHdzBFSFplWGQ1bnA0?oc=5"
   },
   {
     "id": "social-auto-tainan-attraction-5520",
@@ -397,7 +397,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-22",
+    "updated": "2026-10-23",
     "tags": [
       "戶外",
       "自然",
@@ -406,7 +406,7 @@
     "place": "安平區",
     "q": "708 臺南市安平區漁光路118號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQXdFZDFnOTRLWEUwUUxtZTVhVHZXS2gzdG9Qcllmb3d5Njc4WWg0QWt6MDFadTVTRVpYT2dDQXFPajB4dWRDdEJFb2NHTmZSVVJVMk5Kb2lkVjc3dTg5X1BQRWdscnAtQjN5dXEyaTFtQWtvN3JzaklJMkY1djE1ZUhhY2hkVGtMUTFaVlB0elM3U1RNR1haTGlfQzVfcm4yUVE?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1yWW00aDZIRkZfN1J4TlUwWEpOVWVLRE8wR1ZHdTQzaGdKUE9yaU5FY2RkOGhiQkc0eDRESVhGMm9XSjZBb3NHZlNJVVZUN3NlV2tYaW1CUGxQTDhYT3Y4ZHppMjQyQThRX1lRbnZWUQ?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_395000000A_000805",
@@ -445,7 +445,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-22",
+    "updated": "2026-10-23",
     "tags": [
       "景點",
       "網路熱門"
@@ -546,7 +546,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-22",
+    "updated": "2026-10-23",
     "tags": [
       "活動",
       "網路熱門"
@@ -554,7 +554,7 @@
     "place": "臺南市 67000 安平區 67000360 708 永華市政中心西側及西拉雅廣場",
     "q": "臺南市 67000 安平區 67000360 708 永華市政中心西側及西拉雅廣場",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5EQWJrNE9CWUZGdEFXLXpqRGZFdGNyTk5NSFk5T1JFaG9yN1pXMUxEVlR2WHdYUGVWYnhRc3YzMTBZU3hVZEF0ZlNOZmstQVdJN3NZZVZ1VWZxZ0FPYXRzbk84VQ?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBqdTdGZFlnUWstT3NIWXFQMTNJMHpSLWxSeTNIcXZKakhRaTNHcDhtOGxSM0o5X0dCeE5YSU84TDA4U3l2QnNOZ2gwUEQwd216QlgtRmR5eW0ydWFWVlRCcmNidw?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_395000000A_000934",
@@ -681,20 +681,20 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 14,
+      "creator_mentions": 14,
+      "repeat_recommendations": 13
     },
-    "base_heat": 82,
-    "updated": "2026-10-22",
+    "base_heat": 95,
+    "updated": "2026-10-23",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiiARBVV95cUxPVTZkX1hNMWMxdDQ3NmllcnBGTTdSLVZ2Tmpnc1JpUXJSTkVXcjBzSDZISmRscWVobEt3a2ZSb3NQZ19PT3ZvNW04YTZhVUdKOTI0X0ViUU9lRmc1R0NlRkpldTJPTWpEdmFyUHNzVU1BNUxDSEtBT0tLTzh6Q2xMWWR4RkltSzVjU3NOX3c5RGg4el95QXllb3pnOWg5NkVoWEtxZjRBcElPb0ZaellrRkVzVjJqckYwVzdjTkRPYkt4eUswRDJiWkROVi1QelpqdkdFeE5nX2FLQUE4emtiYVhjV3N2ZVJ5Q0NJWnJ6Y0Q3RzR5WkF3OHh2N0xYU01aNml0UUh0WHBHbjdianVTWFhPbDZoVWF6RE1NcUhUbDNIbTZNSFd3RUtXVXJzZ0Y3WHNNem03clJfRGE5aktIUHRGQW9CZHY4U1N2cmR1dkozcHlqdGdyd3FCbUZaUExSd2ZwTjUxeXkwc2NJRTF3WlVaWERGbG0ySjdwM2NjWHMtTUxaWGFpZEFkLXI4NHZkT0VLZnZmYmpsRllWTmtFLV9PN0lfdWFRWHUtdWhSd3VSdVR6c3hrTl9MZGpOcG8weEtabC1KMjJiWWt6b2E1RkhCcDd4TktFNUJnTWRSaE9uaVlucHhpcFJ0Q3JTLTJ4YUZRanVGdEJ5Q08wMGxGTEFxYWFfTklZ?oc=5"
+    "why": "最近30天公開旅遊文章提及14次，來自14個來源",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA1c3BlYXB5eUo5RVYtNmRUREJBWGctV3JwM0FFQVhmOTFBZUI0bTBPOG0xN2xHZkZtMVgteWRnNkJSVTZnbHlFbHJEYURrVFhDYzdOR3VWWDdMakthTFhGOGVTQQ?oc=5"
   },
   {
     "id": "social-auto-chiayi-city-event-df49699a6f46",
@@ -878,7 +878,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-22",
+    "updated": "2026-10-23",
     "tags": [
       "景點",
       "網路熱門"
@@ -901,7 +901,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-22",
+    "updated": "2026-10-23",
     "tags": [
       "親子",
       "DIY",
@@ -927,7 +927,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-22",
+    "updated": "2026-10-23",
     "tags": [
       "景點",
       "文化",
@@ -951,7 +951,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-22",
+    "updated": "2026-10-23",
     "tags": [
       "景點",
       "網路熱門"
@@ -974,7 +974,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-22",
+    "updated": "2026-10-23",
     "tags": [
       "景點",
       "戶外",
@@ -1099,5 +1099,28 @@
     "q": "臺南市 67000 歸仁區 67000280 711 武東里歸仁十二路3號(大台南會展中心)",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9aLS1uMkMyN3lQd0JkN0cxV3A4NUJtT3VwYVpDLVduRW9nSGZQcUg1YjhLQk1HREpaeV9Tbk5PeUpsZ0NUV1NHNTc5OTNlUVVjamZLeGZXeC1XTEdpLW5nUVFMSUZHZGNE?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-event-Event_395000000A_008113",
+    "city": "台南",
+    "name": "「脫口Show雲端 載具嗶起來」租稅宣導活動",
+    "e": "🔥",
+    "type": "活動",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-23",
+    "tags": [
+      "活動",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 新營區 67000010 730 中正路23號(新營文化中心演藝廳)",
+    "q": "臺南市 67000 新營區 67000010 730 中正路23號(新營文化中心演藝廳)",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA5Mi1UWmdqZWZKbFoyY2xqUjg4QWJQZnBESi1uR19qaHdJN016bE9uUGFhZEtIbzg1NGZoVE1ZYkZ1OTJZZ25Yb2NsNDlLLXZsdWh0bXAxQ0JqTzllLV92VDJCWWlfcng1?oc=5"
   }
 ]
