@@ -149,11 +149,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
-      "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "recent_mentions": 3,
+      "creator_mentions": 2,
+      "repeat_recommendations": 2
     },
-    "base_heat": 75,
+    "base_heat": 86,
     "updated": "2026-10-25",
     "tags": [
       "景點",
@@ -162,7 +162,7 @@
     ],
     "place": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
     "q": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "why": "最近30天公開旅遊文章提及3次，來自2個來源",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOFlLWkE0YmJkbUIwZUV0ekt0bFprbGx1cEF6OUhNdGNHZDNkczl4dUk4dmtQRmJ1dzdlNG91RTh1ZVB2ZUhQYmxMaG9rcUctYnNXbU5yTGozRHdmSUhJWXQ2RW5ZeHo4MUNfNVZfWWpPUWdCZUNQR3p4dVJNckhLbUtfUXppZkRNUFlyc3gzSTRTY2JDb051VUJpMA?oc=5"
   },
   {
@@ -392,11 +392,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
-      "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "recent_mentions": 3,
+      "creator_mentions": 3,
+      "repeat_recommendations": 2
     },
-    "base_heat": 75,
+    "base_heat": 89,
     "updated": "2026-10-25",
     "tags": [
       "戶外",
@@ -405,8 +405,8 @@
     ],
     "place": "安平區",
     "q": "708 臺南市安平區漁光路118號",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1yWW00aDZIRkZfN1J4TlUwWEpOVWVLRE8wR1ZHdTQzaGdKUE9yaU5FY2RkOGhiQkc0eDRESVhGMm9XSjZBb3NHZlNJVVZUN3NlV2tYaW1CUGxQTDhYT3Y4ZHppMjQyQThRX1lRbnZWUQ?oc=5"
+    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE52NmpneFFSRDZUSm9BN3laUTJQNlRJRlBmQjY1U3hEWGNkZXpVeTZ6c2xPZzVQX3FtV3BZWmMzOFByNWJJanhHbEluN3RyM1lkWTFvbVNtMHMwdHpj?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_395000000A_000805",
@@ -453,7 +453,7 @@
     "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市明德北路二段320號",
     "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市明德北路二段320號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE83MHUyNEVtbTRRNFIxTEhtd0tMSVAzTDdIckJQS2tPUWJWQmdmOWF3Wi1nRC0wUllRVW1OZEpwVU9DeXJDOGc4MDJBVGhJMmZBaFJVclBqRQ?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE13VWlubG4wck44V2tjQUx1M0d2LWRFeGV0NTRNU0VCanI5MlZ6UmJxMFpBZDgwR2lWT2Nubk9aYTJaQWVMeUlyZFJQcmlEX1daSDlaSGZB?oc=5"
   },
   {
     "id": "social-auto-factory-chiayi-jordenice",
@@ -681,9 +681,9 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 7,
-      "creator_mentions": 7,
-      "repeat_recommendations": 6
+      "recent_mentions": 5,
+      "creator_mentions": 5,
+      "repeat_recommendations": 4
     },
     "base_heat": 95,
     "updated": "2026-10-25",
@@ -693,7 +693,7 @@
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及7次，來自7個來源",
+    "why": "最近30天公開旅遊文章提及5次，來自5個來源",
     "url": "https://news.google.com/rss/articles/CBMiiARBVV95cUxPVTZkX1hNMWMxdDQ3NmllcnBGTTdSLVZ2Tmpnc1JpUXJSTkVXcjBzSDZISmRscWVobEt3a2ZSb3NQZ19PT3ZvNW04YTZhVUdKOTI0X0ViUU9lRmc1R0NlRkpldTJPTWpEdmFyUHNzVU1BNUxDSEtBT0tLTzh6Q2xMWWR4RkltSzVjU3NOX3c5RGg4el95QXllb3pnOWg5NkVoWEtxZjRBcElPb0ZaellrRkVzVjJqckYwVzdjTkRPYkt4eUswRDJiWkROVi1QelpqdkdFeE5nX2FLQUE4emtiYVhjV3N2ZVJ5Q0NJWnJ6Y0Q3RzR5WkF3OHh2N0xYU01aNml0UUh0WHBHbjdianVTWFhPbDZoVWF6RE1NcUhUbDNIbTZNSFd3RUtXVXJzZ0Y3WHNNem03clJfRGE5aktIUHRGQW9CZHY4U1N2cmR1dkozcHlqdGdyd3FCbUZaUExSd2ZwTjUxeXkwc2NJRTF3WlVaWERGbG0ySjdwM2NjWHMtTUxaWGFpZEFkLXI4NHZkT0VLZnZmYmpsRllWTmtFLV9PN0lfdWFRWHUtdWhSd3VSdVR6c3hrTl9MZGpOcG8weEtabC1KMjJiWWt6b2E1RkhCcDd4TktFNUJnTWRSaE9uaVlucHhpcFJ0Q3JTLTJ4YUZRanVGdEJ5Q08wMGxGTEFxYWFfTklZ?oc=5"
   },
   {
@@ -901,7 +901,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-24",
+    "updated": "2026-10-25",
     "tags": [
       "親子",
       "DIY",

@@ -1,12 +1,12 @@
 {
   "version": "2026.10.25-auto",
   "updated": "2026-10-25",
-  "generated_at": "2026-10-25T05:08:37+00:00",
+  "generated_at": "2026-10-25T13:16:19+00:00",
   "stats": {
-    "official": 1376,
+    "official": 1378,
     "social": 43,
     "expired_removed": 77,
-    "total": 1391
+    "total": 1393
   },
   "items": [
     {
@@ -226,6 +226,30 @@
       ]
     },
     {
+      "id": "chiayi-city-news-b43f461ff95c",
+      "city": "嘉義",
+      "name": "百年國寶齊聚嘉義！葉王誕辰200週年特展盛大開幕嘉博館鎮館之寶展出",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-25",
+      "start": "2026-04-28",
+      "end": "2027-04-28",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "百年國寶齊聚嘉義！葉王誕辰200週年特展盛大開幕嘉博館鎮館之寶展出",
+      "why": "交趾陶是嘉義重要的文化資產，交趾陶大師葉王更出身嘉義。適逢葉王誕辰200週年之際，嘉義市立博物館推出重磅展覽「傳奇葉王－國寶交趾陶大師200周年紀念展」昨(24)日起，在嘉義市長黃敏惠主持下盛大開展。本次展覽獲臺南市學甲慈濟宮及嘉義縣水上鄉柳仔林苦竹寺支持，借展珍貴葉王作品，嘉義市立博物館的鎮館之寶「葉王交趾陶文官立像」亦展出，難得一見的葉王作品齊聚嘉義市。 黃敏惠市長表示，嘉義與交趾陶有著深厚的",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=956914",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
       "id": "chiayi-city-news-4e53e96e33f9",
       "city": "嘉義",
       "name": "石猴工藝走入生活競賽、展覽、創作接力登場歷屆首獎齊聚展風華",
@@ -244,6 +268,30 @@
       "q": "石猴工藝走入生活競賽、展覽、創作接力登場歷屆首獎齊聚展風華",
       "why": "石猴是嘉義市具代表性的傳統工藝，嘉義市政府除積極推動工藝走入街區，更持續透過競賽、展覽等方式，發揚這項具地方代表性的工藝。今(24)日，由嘉義市長黃敏惠頒獎，表揚今年度以「一石一猴‧藝匯桃城」為主題，在賽事中脫穎而出的藝師。本屆競賽共收到全國47件作品，經評選出21件作品展出，並邀集自2008年起的歷屆首獎作品於市府中庭共同展出，展期自10月24日至10月30日。 黃敏惠市長表示，石猴是嘉義市具代",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=956849",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "chiayi-city-news-5b40c48f8f1a",
+      "city": "嘉義",
+      "name": "葉王誕辰200週年！嘉義交趾陶競賽徵件數創新高阿公阿嬤出手連藝師都驚豔",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-25",
+      "start": "2026-04-25",
+      "end": "2026-10-28",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "葉王誕辰200週年！嘉義交趾陶競賽徵件數創新高阿公阿嬤出手連藝師都驚豔",
+      "why": "適逢交趾陶宗師葉王誕辰200週年，繼昨日起「傳奇葉王－國寶交趾陶大師200周年紀念展」盛大開展後，今(25)日上午再舉行「2026嘉義交趾陶工藝競賽」頒獎典禮，由嘉義市副市長林瑞彥頒獎表揚傑出作品，盼工藝薪火相傳。今年競賽以國寶交趾陶大師葉王200週年為主題，共吸引418件作品參賽，創下歷年新高，經專業評審選出107件獲獎作品。競賽今年首增「樂齡長照組」，更首度推動嘉義工藝業師跨縣市教學，將交趾陶",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=956913",
       "heat": 93,
       "sources": [
         "官方"
@@ -1897,37 +1945,6 @@
       ]
     },
     {
-      "id": "tourism-attraction-Attraction_A15011200H_000157",
-      "city": "台南",
-      "name": "關子嶺溫泉",
-      "e": "📍",
-      "type": "景點",
-      "src": "官方",
-      "updated": "2026-10-25",
-      "tags": [
-        "景點",
-        "網路熱門"
-      ],
-      "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-      "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-      "why": "關子嶺溫泉與北投、陽明山、四重溪並列為臺灣四大溫泉，是臺灣少見的泥漿溫泉。自從日治時期意外發現此處的天然溫泉後，關子嶺便享負盛名，根據史誌記載，由於它的功效以及特殊泥漿性質，更是有了「天下第一靈泉」的美名。",
-      "url": "",
-      "heat": 81,
-      "sources": [
-        "官方",
-        "社群"
-      ],
-      "signals": {
-        "recent_mentions": 7,
-        "creator_mentions": 7,
-        "repeat_recommendations": 6
-      },
-      "social_heat": 81,
-      "social_updated": "2026-10-25",
-      "social_why": "最近30天公開旅遊文章提及7次，來自7個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiiARBVV95cUxPVTZkX1hNMWMxdDQ3NmllcnBGTTdSLVZ2Tmpnc1JpUXJSTkVXcjBzSDZISmRscWVobEt3a2ZSb3NQZ19PT3ZvNW04YTZhVUdKOTI0X0ViUU9lRmc1R0NlRkpldTJPTWpEdmFyUHNzVU1BNUxDSEtBT0tLTzh6Q2xMWWR4RkltSzVjU3NOX3c5RGg4el95QXllb3pnOWg5NkVoWEtxZjRBcElPb0ZaellrRkVzVjJqckYwVzdjTkRPYkt4eUswRDJiWkROVi1QelpqdkdFeE5nX2FLQUE4emtiYVhjV3N2ZVJ5Q0NJWnJ6Y0Q3RzR5WkF3OHh2N0xYU01aNml0UUh0WHBHbjdianVTWFhPbDZoVWF6RE1NcUhUbDNIbTZNSFd3RUtXVXJzZ0Y3WHNNem03clJfRGE5aktIUHRGQW9CZHY4U1N2cmR1dkozcHlqdGdyd3FCbUZaUExSd2ZwTjUxeXkwc2NJRTF3WlVaWERGbG0ySjdwM2NjWHMtTUxaWGFpZEFkLXI4NHZkT0VLZnZmYmpsRllWTmtFLV9PN0lfdWFRWHUtdWhSd3VSdVR6c3hrTl9MZGpOcG8weEtabC1KMjJiWWt6b2E1RkhCcDd4TktFNUJnTWRSaE9uaVlucHhpcFJ0Q3JTLTJ4YUZRanVGdEJ5Q08wMGxGTEFxYWFfTklZ?oc=5"
-    },
-    {
       "id": "tourism-event-Event_395000000A_008099",
       "city": "台南",
       "name": "2026 臺南南島文化節《南島食光，用味道走進文化》",
@@ -2577,7 +2594,7 @@
       "e": "🏭",
       "type": "觀光工廠",
       "src": "官方",
-      "updated": "2026-10-24",
+      "updated": "2026-10-25",
       "tags": [
         "親子",
         "DIY",
@@ -2602,7 +2619,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-24",
+      "social_updated": "2026-10-25",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xS2ZndzFMSEo1ekxaLUN2SWhGWXA3U09uLW8yZHJlTndhdW9CNGZIQktqdHNIYnNCaXZ5Nl9NMkJsdE5MN2FKQkI2RmVRbnJEMXpfcDFyODJPUldMY1JYSzlua20?oc=5"
     },
@@ -2757,6 +2774,37 @@
       "sources": [
         "官方"
       ]
+    },
+    {
+      "id": "tourism-attraction-Attraction_A15011200H_000157",
+      "city": "台南",
+      "name": "關子嶺溫泉",
+      "e": "📍",
+      "type": "景點",
+      "src": "官方",
+      "updated": "2026-10-25",
+      "tags": [
+        "景點",
+        "網路熱門"
+      ],
+      "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
+      "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
+      "why": "關子嶺溫泉與北投、陽明山、四重溪並列為臺灣四大溫泉，是臺灣少見的泥漿溫泉。自從日治時期意外發現此處的天然溫泉後，關子嶺便享負盛名，根據史誌記載，由於它的功效以及特殊泥漿性質，更是有了「天下第一靈泉」的美名。",
+      "url": "",
+      "heat": 73,
+      "sources": [
+        "官方",
+        "社群"
+      ],
+      "signals": {
+        "recent_mentions": 5,
+        "creator_mentions": 5,
+        "repeat_recommendations": 4
+      },
+      "social_heat": 73,
+      "social_updated": "2026-10-25",
+      "social_why": "最近30天公開旅遊文章提及5次，來自5個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiiARBVV95cUxPVTZkX1hNMWMxdDQ3NmllcnBGTTdSLVZ2Tmpnc1JpUXJSTkVXcjBzSDZISmRscWVobEt3a2ZSb3NQZ19PT3ZvNW04YTZhVUdKOTI0X0ViUU9lRmc1R0NlRkpldTJPTWpEdmFyUHNzVU1BNUxDSEtBT0tLTzh6Q2xMWWR4RkltSzVjU3NOX3c5RGg4el95QXllb3pnOWg5NkVoWEtxZjRBcElPb0ZaellrRkVzVjJqckYwVzdjTkRPYkt4eUswRDJiWkROVi1QelpqdkdFeE5nX2FLQUE4emtiYVhjV3N2ZVJ5Q0NJWnJ6Y0Q3RzR5WkF3OHh2N0xYU01aNml0UUh0WHBHbjdianVTWFhPbDZoVWF6RE1NcUhUbDNIbTZNSFd3RUtXVXJzZ0Y3WHNNem03clJfRGE5aktIUHRGQW9CZHY4U1N2cmR1dkozcHlqdGdyd3FCbUZaUExSd2ZwTjUxeXkwc2NJRTF3WlVaWERGbG0ySjdwM2NjWHMtTUxaWGFpZEFkLXI4NHZkT0VLZnZmYmpsRllWTmtFLV9PN0lfdWFRWHUtdWhSd3VSdVR6c3hrTl9MZGpOcG8weEtabC1KMjJiWWt6b2E1RkhCcDd4TktFNUJnTWRSaE9uaVlucHhpcFJ0Q3JTLTJ4YUZRanVGdEJ5Q08wMGxGTEFxYWFfTklZ?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_A15011200H_000175",
@@ -22104,7 +22152,7 @@
       "social_heat": 58,
       "social_updated": "2026-10-25",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE83MHUyNEVtbTRRNFIxTEhtd0tMSVAzTDdIckJQS2tPUWJWQmdmOWF3Wi1nRC0wUllRVW1OZEpwVU9DeXJDOGc4MDJBVGhJMmZBaFJVclBqRQ?oc=5"
+      "social_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE13VWlubG4wck44V2tjQUx1M0d2LWRFeGV0NTRNU0VCanI5MlZ6UmJxMFpBZDgwR2lWT2Nubk9aYTJaQWVMeUlyZFJQcmlEX1daSDlaSGZB?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_376490000A_000218",
@@ -25048,13 +25096,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 1,
-        "creator_mentions": 1,
-        "repeat_recommendations": 0
+        "recent_mentions": 3,
+        "creator_mentions": 2,
+        "repeat_recommendations": 2
       },
-      "social_heat": 58,
+      "social_heat": 64,
       "social_updated": "2026-10-25",
-      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_why": "最近30天公開旅遊文章提及3次，來自2個來源",
       "social_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOFlLWkE0YmJkbUIwZUV0ekt0bFprbGx1cEF6OUhNdGNHZDNkczl4dUk4dmtQRmJ1dzdlNG91RTh1ZVB2ZUhQYmxMaG9rcUctYnNXbU5yTGozRHdmSUhJWXQ2RW5ZeHo4MUNfNVZfWWpPUWdCZUNQR3p4dVJNckhLbUtfUXppZkRNUFlyc3gzSTRTY2JDb051VUJpMA?oc=5"
     },
     {
@@ -27966,14 +28014,14 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 1,
-        "creator_mentions": 1,
-        "repeat_recommendations": 0
+        "recent_mentions": 3,
+        "creator_mentions": 3,
+        "repeat_recommendations": 2
       },
-      "social_heat": 58,
+      "social_heat": 65,
       "social_updated": "2026-10-25",
-      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1yWW00aDZIRkZfN1J4TlUwWEpOVWVLRE8wR1ZHdTQzaGdKUE9yaU5FY2RkOGhiQkc0eDRESVhGMm9XSjZBb3NHZlNJVVZUN3NlV2tYaW1CUGxQTDhYT3Y4ZHppMjQyQThRX1lRbnZWUQ?oc=5"
+      "social_why": "最近30天公開旅遊文章提及3次，來自3個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE52NmpneFFSRDZUSm9BN3laUTJQNlRJRlBmQjY1U3hEWGNkZXpVeTZ6c2xPZzVQX3FtV3BZWmMzOFByNWJJanhHbEluN3RyM1lkWTFvbVNtMHMwdHpj?oc=5"
     },
     {
       "id": "tainan-attraction-5529",
