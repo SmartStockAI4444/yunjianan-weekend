@@ -150,11 +150,11 @@
     "src": "社群",
     "signals": {
       "recent_mentions": 3,
-      "creator_mentions": 2,
+      "creator_mentions": 3,
       "repeat_recommendations": 2
     },
-    "base_heat": 86,
-    "updated": "2026-10-25",
+    "base_heat": 89,
+    "updated": "2026-10-26",
     "tags": [
       "景點",
       "戶外",
@@ -162,7 +162,7 @@
     ],
     "place": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
     "q": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
-    "why": "最近30天公開旅遊文章提及3次，來自2個來源",
+    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOFlLWkE0YmJkbUIwZUV0ekt0bFprbGx1cEF6OUhNdGNHZDNkczl4dUk4dmtQRmJ1dzdlNG91RTh1ZVB2ZUhQYmxMaG9rcUctYnNXbU5yTGozRHdmSUhJWXQ2RW5ZeHo4MUNfNVZfWWpPUWdCZUNQR3p4dVJNckhLbUtfUXppZkRNUFlyc3gzSTRTY2JDb051VUJpMA?oc=5"
   },
   {
@@ -373,7 +373,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-25",
+    "updated": "2026-10-26",
     "tags": [
       "景點",
       "文化",
@@ -397,7 +397,7 @@
       "repeat_recommendations": 2
     },
     "base_heat": 89,
-    "updated": "2026-10-25",
+    "updated": "2026-10-26",
     "tags": [
       "戶外",
       "自然",
@@ -445,7 +445,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-25",
+    "updated": "2026-10-26",
     "tags": [
       "景點",
       "網路熱門"
@@ -546,7 +546,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-25",
+    "updated": "2026-10-26",
     "tags": [
       "活動",
       "網路熱門"
@@ -681,20 +681,20 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 5,
-      "creator_mentions": 5,
-      "repeat_recommendations": 4
+      "recent_mentions": 4,
+      "creator_mentions": 4,
+      "repeat_recommendations": 3
     },
     "base_heat": 95,
-    "updated": "2026-10-25",
+    "updated": "2026-10-26",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及5次，來自5個來源",
-    "url": "https://news.google.com/rss/articles/CBMiiARBVV95cUxPVTZkX1hNMWMxdDQ3NmllcnBGTTdSLVZ2Tmpnc1JpUXJSTkVXcjBzSDZISmRscWVobEt3a2ZSb3NQZ19PT3ZvNW04YTZhVUdKOTI0X0ViUU9lRmc1R0NlRkpldTJPTWpEdmFyUHNzVU1BNUxDSEtBT0tLTzh6Q2xMWWR4RkltSzVjU3NOX3c5RGg4el95QXllb3pnOWg5NkVoWEtxZjRBcElPb0ZaellrRkVzVjJqckYwVzdjTkRPYkt4eUswRDJiWkROVi1QelpqdkdFeE5nX2FLQUE4emtiYVhjV3N2ZVJ5Q0NJWnJ6Y0Q3RzR5WkF3OHh2N0xYU01aNml0UUh0WHBHbjdianVTWFhPbDZoVWF6RE1NcUhUbDNIbTZNSFd3RUtXVXJzZ0Y3WHNNem03clJfRGE5aktIUHRGQW9CZHY4U1N2cmR1dkozcHlqdGdyd3FCbUZaUExSd2ZwTjUxeXkwc2NJRTF3WlVaWERGbG0ySjdwM2NjWHMtTUxaWGFpZEFkLXI4NHZkT0VLZnZmYmpsRllWTmtFLV9PN0lfdWFRWHUtdWhSd3VSdVR6c3hrTl9MZGpOcG8weEtabC1KMjJiWWt6b2E1RkhCcDd4TktFNUJnTWRSaE9uaVlucHhpcFJ0Q3JTLTJ4YUZRanVGdEJ5Q08wMGxGTEFxYWFfTklZ?oc=5"
+    "why": "最近30天公開旅遊文章提及4次，來自4個來源",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ndHRMRkp2eVhiZXUtMTNDSHhkMFVMblhIZDZFMFIwVmxSM0Q2WE9fajdralhWbjktMVBIc0liQkdhUG81M2JDSGZSN0tIbC1HREhEcGx1ZW5kQmdldEJpY2dXMA?oc=5"
   },
   {
     "id": "social-auto-chiayi-city-event-df49699a6f46",
@@ -830,7 +830,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-17",
+    "updated": "2026-10-26",
     "tags": [
       "景點",
       "文化",
@@ -839,7 +839,7 @@
     "place": "雲林縣 10009 北港鎮 10009060 651 雲林縣北港鎮中山路178號",
     "q": "雲林縣 10009 北港鎮 10009060 651 雲林縣北港鎮中山路178號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1PNXBhUGRJSTN2SXU1d0owaVZNY2xEbmVKZFFPNkZKYk5NZEhTeVNFT2QyT0gwSS1hWmVaSS0tbE9IRDRSY1pWX0Nvekd6c1Z2OHIwdEZMTmxpN1hQM3FBYks5bzU0Y2x5aW5v?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ZSkIzNHRUbWMxcFZRbm1uemstUzdRQ1ZLVXhiVmNmckZ4TW1hSDM0NGZkS3pDa2s5cVJEd1Aza0ZhMDZ6QUNhdWktWTFjelhOWWdMaERnTnNnbTBkMWMzQkRtUURKMzMxSF9Z?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_376490000A_000275",
@@ -878,7 +878,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-25",
+    "updated": "2026-10-26",
     "tags": [
       "景點",
       "網路熱門"
@@ -927,7 +927,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-25",
+    "updated": "2026-10-26",
     "tags": [
       "景點",
       "文化",
@@ -951,7 +951,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-25",
+    "updated": "2026-10-26",
     "tags": [
       "景點",
       "網路熱門"
@@ -974,7 +974,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-24",
+    "updated": "2026-10-26",
     "tags": [
       "景點",
       "戶外",
@@ -1021,7 +1021,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-25",
+    "updated": "2026-10-26",
     "tags": [
       "活動",
       "網路熱門"
