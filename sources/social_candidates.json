@@ -681,9 +681,9 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 4,
-      "creator_mentions": 4,
-      "repeat_recommendations": 3
+      "recent_mentions": 5,
+      "creator_mentions": 5,
+      "repeat_recommendations": 4
     },
     "base_heat": 95,
     "updated": "2026-10-26",
@@ -693,7 +693,7 @@
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及4次，來自4個來源",
+    "why": "最近30天公開旅遊文章提及5次，來自5個來源",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ndHRMRkp2eVhiZXUtMTNDSHhkMFVMblhIZDZFMFIwVmxSM0Q2WE9fajdralhWbjktMVBIc0liQkdhUG81M2JDSGZSN0tIbC1HREhEcGx1ZW5kQmdldEJpY2dXMA?oc=5"
   },
   {
