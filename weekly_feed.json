@@ -1,12 +1,12 @@
 {
   "version": "2026.10.27-auto",
   "updated": "2026-10-27",
-  "generated_at": "2026-10-27T05:26:43+00:00",
+  "generated_at": "2026-10-27T14:45:53+00:00",
   "stats": {
-    "official": 1375,
+    "official": 1377,
     "social": 43,
     "expired_removed": 79,
-    "total": 1390
+    "total": 1392
   },
   "items": [
     {
@@ -58,6 +58,30 @@
       ]
     },
     {
+      "id": "chiayi-city-news-f86b7e1e220a",
+      "city": "嘉義",
+      "name": "2026嘉義市購物節登錄金額衝破15億！連7年刷新紀錄百萬VOLVO純電車、百萬現金幸運得主出爐",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-27",
+      "start": "2026-07-01",
+      "end": "2026-11-01",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "2026嘉義市購物節登錄金額衝破15億！連7年刷新紀錄百萬VOLVO純電車、百萬現金幸運得主出爐",
+      "why": "2026嘉義市購物節於10月11日圓滿落幕，嘉義市政府今(27)日於嘉義市購物節FB粉絲專頁線上直播抽獎，現場由嘉義市長黃敏惠、嘉義市汽車商業同業公會副理事長江嘉和與VOLVO匯勝汽車副總經理莊孟樺，攜手抽出市價139.9萬的頭獎「VOLVOEX30Core純電車」1名，並由黃敏惠市長抽出特獎「百萬現金」1名，同時公布「嘉購王」得主，同場也以電腦抽獎抽出特約店家加碼獎、電子載具專屬獎…等大獎。 黃",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957020",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
       "id": "chiayi-city-news-51ce6b13c005",
       "city": "嘉義",
       "name": "儲藏室變身美學展演空間嘉市蘭潭國中「藝流・之間」打造校園學美之路",
@@ -76,6 +100,30 @@
       "q": "儲藏室變身美學展演空間嘉市蘭潭國中「藝流・之間」打造校園學美之路",
       "why": "嘉義市蘭潭國中將原本堆放雜物的儲藏室，改造為兼具展演、教學、創作與交流功能的美學空間。今（22）日舉行「藝流・之間」學美教室揭牌啟用典禮，嘉義市長黃敏惠出席典禮表示，市府持續將美學融入城市治理與教育日常，透過空間改善與設計創新，提升校園環境與使用機能，激發學生的創造力，為教育注入更多可能。 黃敏惠市長表示，自2021年台灣設計展在嘉義市舉辦以來，市府持續將設計思維融入教育現場。蘭潭國中是嘉義市唯一",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=956669",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "chiayi-city-news-88e64be0fd78",
+      "city": "嘉義",
+      "name": "全球首演在嘉義！明華園《皇昭令》連兩日滿座孫翠鳳領全團熱喊「我愛嘉義市」",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-27",
+      "start": "2026-10-27",
+      "end": "2026-11-06",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "全球首演在嘉義！明華園《皇昭令》連兩日滿座孫翠鳳領全團熱喊「我愛嘉義市」",
+      "why": "明華園戲劇總團全新大戲《皇昭令》全球首演獻給嘉義市！10月25、26日連續兩天精彩登場，由「無敵小生」孫翠鳳特別演出，兩日座無虛席。舞臺上精湛的唱念做打，搭配高潮迭起的劇情，讓觀眾隨著角色命運時而開懷大笑、時而感動落淚，掌聲與喝采聲此起彼落，也讓嘉義市成為《皇昭令》全球首演的重要起點。 此次全球首演選在嘉義市，背後更有一段溫暖情誼。孫翠鳳老師在臺上特別分享，自己與明華園對嘉義市一直有著深厚感情，因",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957006",
       "heat": 93,
       "sources": [
         "官方"
@@ -27947,13 +27995,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 2,
-        "creator_mentions": 2,
-        "repeat_recommendations": 1
+        "recent_mentions": 3,
+        "creator_mentions": 3,
+        "repeat_recommendations": 2
       },
-      "social_heat": 62,
+      "social_heat": 65,
       "social_updated": "2026-10-27",
-      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
+      "social_why": "最近30天公開旅遊文章提及3次，來自3個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE52NmpneFFSRDZUSm9BN3laUTJQNlRJRlBmQjY1U3hEWGNkZXpVeTZ6c2xPZzVQX3FtV3BZWmMzOFByNWJJanhHbEluN3RyM1lkWTFvbVNtMHMwdHpj?oc=5"
     },
     {
