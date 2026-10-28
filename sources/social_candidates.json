@@ -149,12 +149,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 3,
+      "recent_mentions": 4,
       "creator_mentions": 3,
-      "repeat_recommendations": 2
+      "repeat_recommendations": 3
     },
-    "base_heat": 89,
-    "updated": "2026-10-27",
+    "base_heat": 93,
+    "updated": "2026-10-28",
     "tags": [
       "景點",
       "戶外",
@@ -162,7 +162,7 @@
     ],
     "place": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
     "q": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
-    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
+    "why": "最近30天公開旅遊文章提及4次，來自3個來源",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOFlLWkE0YmJkbUIwZUV0ekt0bFprbGx1cEF6OUhNdGNHZDNkczl4dUk4dmtQRmJ1dzdlNG91RTh1ZVB2ZUhQYmxMaG9rcUctYnNXbU5yTGozRHdmSUhJWXQ2RW5ZeHo4MUNfNVZfWWpPUWdCZUNQR3p4dVJNckhLbUtfUXppZkRNUFlyc3gzSTRTY2JDb051VUJpMA?oc=5"
   },
   {
@@ -368,12 +368,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
+      "recent_mentions": 2,
       "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "repeat_recommendations": 1
     },
-    "base_heat": 75,
-    "updated": "2026-10-27",
+    "base_heat": 79,
+    "updated": "2026-10-28",
     "tags": [
       "景點",
       "文化",
@@ -381,8 +381,8 @@
     ],
     "place": "臺南市 67000 仁德區 67000270 717 文華路二段66號",
     "q": "臺南市 67000 仁德區 67000270 717 文華路二段66號",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vODBCQXYtbzh1RDNBODl6RW5MT2lyOEN3eVY2My0wVENkekM5SXdWZk9GRnJ4N3BJVFFTdGJqdUZOZ1lHdzBFSFplWGQ1bnA0?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5TeGJDY3JyUERHQ3htX3RPQk9GaW9JX0pyT18tUC1IelpZLUZwZDBUbXI4Rm5DX0pZOEVDWmFvb3VJSVNtNVJ0aWJUR1gwVk5B?oc=5"
   },
   {
     "id": "social-auto-tainan-attraction-5520",
@@ -546,7 +546,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-27",
+    "updated": "2026-10-28",
     "tags": [
       "活動",
       "網路熱門"
@@ -554,7 +554,7 @@
     "place": "臺南市 67000 安平區 67000360 708 永華市政中心西側及西拉雅廣場",
     "q": "臺南市 67000 安平區 67000360 708 永華市政中心西側及西拉雅廣場",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBqdTdGZFlnUWstT3NIWXFQMTNJMHpSLWxSeTNIcXZKakhRaTNHcDhtOGxSM0o5X0dCeE5YSU84TDA4U3l2QnNOZ2gwUEQwd216QlgtRmR5eW0ydWFWVlRCcmNidw?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5EQWJrNE9CWUZGdEFXLXpqRGZFdGNyTk5NSFk5T1JFaG9yN1pXMUxEVlR2WHdYUGVWYnhRc3YzMTBZU3hVZEF0ZlNOZmstQVdJN3NZZVZ1VWZxZ0FPYXRzbk84VQ?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_395000000A_000934",
@@ -617,7 +617,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-24",
+    "updated": "2026-10-28",
     "tags": [
       "活動",
       "網路熱門"
@@ -663,7 +663,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-24",
+    "updated": "2026-10-28",
     "tags": [
       "活動",
       "網路熱門"
@@ -681,19 +681,19 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 4,
-      "creator_mentions": 4,
-      "repeat_recommendations": 3
+      "recent_mentions": 2,
+      "creator_mentions": 1,
+      "repeat_recommendations": 1
     },
-    "base_heat": 95,
-    "updated": "2026-10-27",
+    "base_heat": 79,
+    "updated": "2026-10-28",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及4次，來自4個來源",
+    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ndHRMRkp2eVhiZXUtMTNDSHhkMFVMblhIZDZFMFIwVmxSM0Q2WE9fajdralhWbjktMVBIc0liQkdhUG81M2JDSGZSN0tIbC1HREhEcGx1ZW5kQmdldEJpY2dXMA?oc=5"
   },
   {
@@ -807,7 +807,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-24",
+    "updated": "2026-10-28",
     "tags": [
       "活動",
       "網路熱門"
@@ -878,7 +878,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-10-27",
+    "updated": "2026-10-28",
     "tags": [
       "景點",
       "網路熱門"
@@ -927,7 +927,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-27",
+    "updated": "2026-10-28",
     "tags": [
       "景點",
       "文化",
@@ -951,7 +951,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-10-27",
+    "updated": "2026-10-28",
     "tags": [
       "景點",
       "網路熱門"
@@ -974,7 +974,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-27",
+    "updated": "2026-10-28",
     "tags": [
       "景點",
       "戶外",
@@ -998,7 +998,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-24",
+    "updated": "2026-10-28",
     "tags": [
       "景點",
       "網路熱門"
@@ -1044,7 +1044,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-24",
+    "updated": "2026-10-28",
     "tags": [
       "活動",
       "網路熱門"
