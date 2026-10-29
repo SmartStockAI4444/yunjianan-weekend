@@ -154,7 +154,7 @@
       "repeat_recommendations": 3
     },
     "base_heat": 93,
-    "updated": "2026-10-28",
+    "updated": "2026-10-29",
     "tags": [
       "景點",
       "戶外",
@@ -163,7 +163,7 @@
     "place": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
     "q": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
     "why": "最近30天公開旅遊文章提及4次，來自3個來源",
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOFlLWkE0YmJkbUIwZUV0ekt0bFprbGx1cEF6OUhNdGNHZDNkczl4dUk4dmtQRmJ1dzdlNG91RTh1ZVB2ZUhQYmxMaG9rcUctYnNXbU5yTGozRHdmSUhJWXQ2RW5ZeHo4MUNfNVZfWWpPUWdCZUNQR3p4dVJNckhLbUtfUXppZkRNUFlyc3gzSTRTY2JDb051VUJpMA?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQamwxZ3RJNkxQa3ZJX25Gcms3RTd5Y0VmNHItdGRhUWIxaWRwVnFpMXpwcEZKUDhHUXBVUlRlaVRzcnBaLWdXeDViNEpGSDlfZ2hLTG1KTUduRmdpMnczWi05TUpoUV9Zc2JRajZjTTNITzZhcVZabkJyTkVfYW5YbS1vQjZWUFAzX2FOVERxME43TmJKanpLSzBjdlRnWmJfSmN5X0s5MElqUQ?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_A25000000E_000036",
@@ -397,7 +397,7 @@
       "repeat_recommendations": 2
     },
     "base_heat": 89,
-    "updated": "2026-10-28",
+    "updated": "2026-10-29",
     "tags": [
       "戶外",
       "自然",
@@ -445,7 +445,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-27",
+    "updated": "2026-10-29",
     "tags": [
       "景點",
       "網路熱門"
@@ -546,7 +546,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-28",
+    "updated": "2026-10-29",
     "tags": [
       "活動",
       "網路熱門"
@@ -686,7 +686,7 @@
       "repeat_recommendations": 4
     },
     "base_heat": 95,
-    "updated": "2026-10-28",
+    "updated": "2026-10-29",
     "tags": [
       "景點",
       "網路熱門"
@@ -873,19 +873,19 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
-      "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 75,
-    "updated": "2026-10-28",
+    "base_heat": 82,
+    "updated": "2026-10-29",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "臺南市 67000 楠西區 67000240 715 密枝里70號",
     "q": "臺南市 67000 楠西區 67000240 715 密枝里70號",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
     "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9qMGE2S042eVdHSjFCS1BFM2lKaUtIb0cwSWNoUVh0SkNFTVRBWkhYRUVoeGNKMHF3b2Q4YjN3Vk5GT0paaDQzWmE4WlExQQ?oc=5"
   },
   {
@@ -922,12 +922,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
+      "recent_mentions": 1,
       "creator_mentions": 1,
-      "repeat_recommendations": 1
+      "repeat_recommendations": 0
     },
-    "base_heat": 79,
-    "updated": "2026-10-28",
+    "base_heat": 75,
+    "updated": "2026-10-29",
     "tags": [
       "景點",
       "文化",
@@ -935,7 +935,7 @@
     ],
     "place": "臺南市 67000 中西區 67000370 700 民族路二段212號",
     "q": "臺南市 67000 中西區 67000370 700 民族路二段212號",
-    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBtV2VPZVlzQXQtQS1uZzJZaGpkazBHSlItSGFZOTRlQkE4SWlvem90b0pHeUVocmp2WXBGR2tUNjh5NkQtSWNWdW85TWN6Q1Nl?oc=5"
   },
   {
@@ -951,7 +951,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-28",
+    "updated": "2026-10-29",
     "tags": [
       "景點",
       "網路熱門"
@@ -974,7 +974,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-28",
+    "updated": "2026-10-29",
     "tags": [
       "景點",
       "戶外",
@@ -1021,7 +1021,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-10-28",
+    "updated": "2026-10-29",
     "tags": [
       "活動",
       "網路熱門"
@@ -1122,5 +1122,77 @@
     "q": "臺南市 67000 新營區 67000010 730 中正路23號(新營文化中心演藝廳)",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA5Mi1UWmdqZWZKbFoyY2xqUjg4QWJQZnBESi1uR19qaHdJN016bE9uUGFhZEtIbzg1NGZoVE1ZYkZ1OTJZZ25Yb2NsNDlLLXZsdWh0bXAxQ0JqTzllLV92VDJCWWlfcng1?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_376600000A_000015",
+    "city": "嘉義",
+    "name": "檜意森活村",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-29",
+    "tags": [
+      "景點",
+      "戶外",
+      "文化",
+      "網路熱門"
+    ],
+    "place": "嘉義市 10020 東區 10020010 600 共和路370號",
+    "q": "嘉義市 10020 東區 10020010 600 共和路370號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rSjhvLXd6dlc3WnB6SHFjeWpRekRxODRVWTBUR3pBRTdpa0gwcDRGMHVMTHhOWjVyMkRaNGhjVC1YaGp6a082cW80c0ZPNmUy?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_A15010800H_000082",
+    "city": "嘉義",
+    "name": "二延平步道",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-29",
+    "tags": [
+      "景點",
+      "戶外",
+      "網路熱門"
+    ],
+    "place": "嘉義縣 10010 番路鄉 10010160 602 阿里山公路27號",
+    "q": "嘉義縣 10010 番路鄉 10010160 602 阿里山公路27號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5hc094c3NHWGc4dGxQWmYwekFBSUxHend6V3o0MlBNWjdsb05yeVdFcXR5UXNKT3d6eG1yaVNtLW8yVUxiQ3E4emlUUE56clBjdGVtZzAzSDY?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_A15010800H_000514",
+    "city": "嘉義",
+    "name": "奮起湖",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-29",
+    "tags": [
+      "景點",
+      "網路熱門"
+    ],
+    "place": "嘉義縣 10010 竹崎鄉 10010140 604 中和村奮起湖",
+    "q": "嘉義縣 10010 竹崎鄉 10010140 604 中和村奮起湖",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9HbDBFZDd3aEZTTE5VVDZYeUo0YnhRSFVLQnd6bGE1VW10UUVDN3ZFaEI2T1ZGYUd0S05jODJSUXVmNTRwOWJjWGcxNTBtS0ZPQXp3TWE0V19WbndL0gFcQVVfeXFMT0dsMEVkN3doRlNMTlVUNlh5SjRieFFIVUtCd3psYTVVbXRRRUM3dkVoQjZPVkZhR3RLTmM4MlJRdWY1NHA5YmNYZzE1MG1LRk9BendNYTRXX1Zud0s?oc=5"
   }
 ]
