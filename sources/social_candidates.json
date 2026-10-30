@@ -163,7 +163,7 @@
     "place": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
     "q": "雲林縣 10009 西螺鎮 10009040 648 西螺鎮西螺大橋",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOFlLWkE0YmJkbUIwZUV0ekt0bFprbGx1cEF6OUhNdGNHZDNkczl4dUk4dmtQRmJ1dzdlNG91RTh1ZVB2ZUhQYmxMaG9rcUctYnNXbU5yTGozRHdmSUhJWXQ2RW5ZeHo4MUNfNVZfWWpPUWdCZUNQR3p4dVJNckhLbUtfUXppZkRNUFlyc3gzSTRTY2JDb051VUJpMA?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9hWjlZaWNSQ1ZaRjY2MHNkU040UHY1dU0xVkF1RC10SHBVZ01kZVVSdGQ0Z3VteFlMQnNpZmx3XzVvaXlDMzJEVTZDUllfanlqWFctWVZDT1o0WW1wZVlIV2haMEFDYVlfYV8w?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_A25000000E_000036",
@@ -453,7 +453,7 @@
     "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市明德北路二段320號",
     "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市明德北路二段320號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4ycnVsU3NHakt6NDUzLUo0MzBfb3ZhUXFNY0hOSnhGcGM1WWVDSkpuU2p5MTFfTmhXUjBQRkc0RS05MTRyTmdJWjNQWG9FWm1S?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE13VWlubG4wck44V2tjQUx1M0d2LWRFeGV0NTRNU0VCanI5MlZ6UmJxMFpBZDgwR2lWT2Nubk9aYTJaQWVMeUlyZFJQcmlEX1daSDlaSGZB?oc=5"
   },
   {
     "id": "social-auto-factory-chiayi-jordenice",
@@ -1217,5 +1217,28 @@
     "q": "臺南市 67000 白河區 67000030 732",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMi1wJBVV95cUxNekh4SV9CNW9TNDJvSzJtRGI1NEdyRTExYURueGNuUG04OVExNEh1VFk1dXJXUUhJdE5KNlprXzVSdkNVRHFiMXZDMTZvc1F5OUZGRTBjOVphRUJ5Z2FDQkFKRkNSUXBmS2tQSmZ1bUJWWG9nTXZieHFYOEhXYnVuWDJFVnZYOWsyeG1VLUhvcXZQZUxSV2gwQVc2VWoweGMyaDZrYTE3T0FLSE9JdF8tNGpxZ0hoUHdvakZRNGROV1VUeG42ZHFFWmQ4R2FHaUVILTY0UGE1WTBBVEM0SDBxYVFYeTh2bmZIdGpRUENBSkRCcnkxUW1jSHBWOFRpOGRfeU9kQWdmUHNFWGJ4ejJlUTV6djZGMTh0ZlhEMHZrcWhHNjhHZUdiajE1a2lHOGU4cm9vRTFqbUdEZndqdE5aTzA4YUhUTV9DNWU5ZUdwSHVyYTdfX084?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_395000000A_000520",
+    "city": "台南",
+    "name": "德元埤荷蘭村",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-10-30",
+    "tags": [
+      "景點",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 柳營區 67000040 736 神農里新厝100號",
+    "q": "臺南市 67000 柳營區 67000040 736 神農里新厝100號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1RcGlTa3A1d1RVRW1uY1lNaW81eEhoRkd1MTh4cGNHWkkxUTN4MXFleTFtZWw4eTlhak9KQXlFcFFjZGswMEt0MmlYVjhQaG9YVkVoZGRlcUg2MFF2Z28wR0FqSQ?oc=5"
   }
 ]
