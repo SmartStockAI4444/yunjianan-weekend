@@ -1,12 +1,12 @@
 {
   "version": "2026.10.31-auto",
   "updated": "2026-10-31",
-  "generated_at": "2026-10-31T06:09:48+00:00",
+  "generated_at": "2026-10-31T14:38:08+00:00",
   "stats": {
-    "official": 1372,
+    "official": 1377,
     "social": 47,
     "expired_removed": 79,
-    "total": 1387
+    "total": 1392
   },
   "items": [
     {
@@ -28,6 +28,30 @@
       "q": "2026嘉義市購物節登錄金額衝破15億！連7年刷新紀錄百萬VOLVO純電車、百萬現金幸運得主出爐",
       "why": "2026嘉義市購物節於10月11日圓滿落幕，嘉義市政府今(27)日於嘉義市購物節FB粉絲專頁線上直播抽獎，現場由嘉義市長黃敏惠、嘉義市汽車商業同業公會副理事長江嘉和與VOLVO匯勝汽車副總經理莊孟樺，攜手抽出市價139.9萬的頭獎「VOLVOEX30Core純電車」1名，並由黃敏惠市長抽出特獎「百萬現金」1名，同時公布「嘉購王」得主，同場也以電腦抽獎抽出特約店家加碼獎、電子載具專屬獎…等大獎。 黃",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957020",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "chiayi-city-news-8b2c2f7ed263",
+      "city": "嘉義",
+      "name": "2026食農嘉年華熱鬧登場！四大主題、12場食農手作邀市民玩轉食農教育",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-31",
+      "start": "2026-10-31",
+      "end": "2026-11-10",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "2026食農嘉年華熱鬧登場！四大主題、12場食農手作邀市民玩轉食農教育",
+      "why": "「2026嘉義市食農嘉年華《食在市》」今（31）日於民生公園熱鬧登場，活動選址於「穿城之水計畫」核心，串連多功能廣場與水綠廊道，並與嘉義大學新民校區完美縫合。水綠環境與全齡食農教育完美結合，帶給市民最生動的體驗。 陳永豐副市長表示，民生公園旁的「道將圳」擁有300多年歷史，是嘉義市重要的母親河與灌溉水源，孕育了周邊的農作與常民生活。這與食農教育強調「理解食物從哪裡來、與土地和水的關係」的核心精神相",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957466",
       "heat": 93,
       "sources": [
         "官方"
@@ -178,6 +202,78 @@
       ]
     },
     {
+      "id": "chiayi-city-news-d27dee91b422",
+      "city": "嘉義",
+      "name": "小勇士集結！嘉市幼兒運動會化身冒險舞臺小勇士趣味闖關守護桃城",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-31",
+      "start": "2026-10-31",
+      "end": "2026-11-10",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "小勇士集結！嘉市幼兒運動會化身冒險舞臺小勇士趣味闖關守護桃城",
+      "why": "嘉義市政府於今（31）日於東區體育館舉辦「嘉義市115年幼兒運動會」，今年以「幸福桃城保衛戰」為主題，打破傳統運動會形式，將運動賽事融入故事情節，讓孩子化身守護桃城的小勇士，嘉義市副市長林瑞彥也陪伴小小勇士們，在一連串充滿趣味的挑戰中展開拯救小桃子的冒險旅程，讓運動場化身充滿想像力與活力的故事舞臺。 林瑞彥副市長表示，孩子是城市未來的希望，市府持續致力於打造友善、優質的幼兒教育環境，讓每個孩子都能",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957464",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "chiayi-city-news-13562bd6e536",
+      "city": "嘉義",
+      "name": "從二地居到一起成家！嘉義「二地居」三年吸引逾200組團隊提案見證幸福",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-31",
+      "start": "2026-10-31",
+      "end": "2026-11-15",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "從二地居到一起成家！嘉義「二地居」三年吸引逾200組團隊提案見證幸福",
+      "why": "嘉義市政府領先全臺首創「二地居－游牧者計畫」，透過「二地工作、二地生活」，計畫三年累計吸引逾200組全臺青年團隊提案，更已有青年成立工作室、在地就業、跨域合作及攜家移居。今（31）日，舉辦「2026嘉義二地居・一起住+1」成果記者會，特別邀請UG梁鈺杰化身《KANO》投手吳明捷擔任主持人，為活動增添亮點，會中更上演浪漫橋段。參與「二地居」計劃的「鬆氏」主理人在活動現場浪漫求婚，嘉義市長黃敏惠見證幸",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957463",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "chiayi-city-news-938c4d0e8500",
+      "city": "嘉義",
+      "name": "用生命影響生命！嘉義市身障日表揚傑出身障人士、績優單位黃敏惠市長盼以理解與支持讓夢想無礙",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-31",
+      "start": "2026-10-31",
+      "end": "2026-11-10",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "用生命影響生命！嘉義市身障日表揚傑出身障人士、績優單位黃敏惠市長盼以理解與支持讓夢想無礙",
+      "why": "「2026嘉義市國際身心障礙者日活動」，今(31)日在中央廣場登場，嘉義市長黃敏惠也出席活動，與市民共同響應。今年以「用理解消除歧視，以支持落實平權」為主題，並以「無礙飆速」電競共融體驗為創新亮點，透過合適的輔具及多元操作方式，打破身體條件與年齡的參與限制，讓不同需求的民眾都能享受遊戲樂趣，親身感受科技如何成為促進平等參與、實踐友善共融的橋梁。 黃敏惠市長表示，嘉義市政府持續落實身心障礙者平權，積",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957465",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
       "id": "chiayi-city-news-b43f461ff95c",
       "city": "嘉義",
       "name": "百年國寶齊聚嘉義！葉王誕辰200週年特展盛大開幕嘉博館鎮館之寶展出",
@@ -220,6 +316,30 @@
       "q": "石猴工藝走入生活競賽、展覽、創作接力登場歷屆首獎齊聚展風華",
       "why": "石猴是嘉義市具代表性的傳統工藝，嘉義市政府除積極推動工藝走入街區，更持續透過競賽、展覽等方式，發揚這項具地方代表性的工藝。今(24)日，由嘉義市長黃敏惠頒獎，表揚今年度以「一石一猴‧藝匯桃城」為主題，在賽事中脫穎而出的藝師。本屆競賽共收到全國47件作品，經評選出21件作品展出，並邀集自2008年起的歷屆首獎作品於市府中庭共同展出，展期自10月24日至10月30日。 黃敏惠市長表示，石猴是嘉義市具代",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=956849",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "chiayi-city-news-c600b9d13a1f",
+      "city": "嘉義",
+      "name": "萬聖不搗蛋！嘉市邀親子闖關學安全兒童發展篩檢守護成長",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-10-31",
+      "start": "2026-10-31",
+      "end": "2026-11-10",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "萬聖不搗蛋！嘉市邀親子闖關學安全兒童發展篩檢守護成長",
+      "why": "嘉義市政府衛生局局長廖育瑋表示，依本市兒少事故傷害統計，年至未滿歲兒童運輸事故計人、跌倒（落）人；年至月，運輸事故計人、跌倒（落）人，由於幼兒好奇心強，危險辨識及自我保護能力尚未成熟，需要成人主動做好安全防護。依提醒家長應持續重視兒童乘車及活動安全，從照護行為與環境改善著手，減少事故傷害發生。本次活動將四大安全議題融入親子闖關，在遊戲中學習技能。在乘車安全方面，提醒家長依孩子年齡及體型選用合適的汽",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957397",
       "heat": 93,
       "sources": [
         "官方"
@@ -305,7 +425,7 @@
       "e": "🏭",
       "type": "觀光工廠",
       "src": "官方",
-      "updated": "2026-10-30",
+      "updated": "2026-10-31",
       "tags": [
         "親子",
         "拍照",
@@ -329,7 +449,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-30",
+      "social_updated": "2026-10-31",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA4bl85THpvdC1JOWppMW9QaTJOWkZ0dDFtUkJMSDcwZGR5VzlJSVB4VmswM2pDS1BoeVNra09yMVRGTW5wOW4ySk1nMXVHSTVacDcyRUFIY3hFMzJa?oc=5"
     },
@@ -340,7 +460,7 @@
       "e": "🏭",
       "type": "觀光工廠",
       "src": "官方",
-      "updated": "2026-10-30",
+      "updated": "2026-10-31",
       "tags": [
         "親子",
         "DIY",
@@ -365,7 +485,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-30",
+      "social_updated": "2026-10-31",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA4bl85THpvdC1JOWppMW9QaTJOWkZ0dDFtUkJMSDcwZGR5VzlJSVB4VmswM2pDS1BoeVNra09yMVRGTW5wOW4ySk1nMXVHSTVacDcyRUFIY3hFMzJa?oc=5"
     },
@@ -5899,7 +6019,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-30",
+      "updated": "2026-10-31",
       "tags": [
         "景點",
         "文化",
@@ -5921,7 +6041,7 @@
         "repeat_recommendations": 1
       },
       "social_heat": 60,
-      "social_updated": "2026-10-30",
+      "social_updated": "2026-10-31",
       "social_why": "最近30天公開旅遊文章提及2次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5TeGJDY3JyUERHQ3htX3RPQk9GaW9JX0pyT18tUC1IelpZLUZwZDBUbXI4Rm5DX0pZOEVDWmFvb3VJSVNtNVJ0aWJUR1gwVk5B?oc=5"
     },
@@ -6915,7 +7035,7 @@
       "social_heat": 58,
       "social_updated": "2026-10-31",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxPMEhObWpIV0tkUHFNQ2VhN3E1UGhrNnBlQWx5Y0Rfd0o5UGVTai1XM1I3VUZIQnhaQW1kSjJJdTV5eXp5V3A3TE5PMDZZT1MtR21kZ25SZHRTTm1sM1NrSXFiYi1sV0hYOGkzX09VTFNkZE1UbVZMTUtTSXY1azhjYnlRM1VveDRvaWRubHowQWRRUGR0TURnNDFJWG5DdGdZdlNQTXFENDV1TmpNelRHb0ZidzQta1ZNbEpIQ0Vic0lRY0VMX2s5NkJmXzdiTUR6c056cmNpTGZ3T2hYcjlPWEVGeko0cWhuV2lMRmVidEViYU5nUHMwSjZ2YjE5WkxQWVF5VC1waC1GU3NzS3lhbkduaE82Y3hPcXQtbEQtNVJpa1ZuRGd4b1Q4d3UxSkpIRTdzRkRhdmxlY2dEZkNhaVc2V1NYVlJUcDlPcnQ5aVJSZndyNmVmX3dybXV0dEVNYUtzcHpmcmM?oc=5"
+      "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1RcGlTa3A1d1RVRW1uY1lNaW81eEhoRkd1MTh4cGNHWkkxUTN4MXFleTFtZWw4eTlhak9KQXlFcFFjZGswMEt0MmlYVjhQaG9YVkVoZGRlcUg2MFF2Z28wR0FqSQ?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_395000000A_004291",
@@ -8304,7 +8424,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-30",
+      "updated": "2026-10-31",
       "tags": [
         "景點",
         "網路熱門"
@@ -8324,7 +8444,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-30",
+      "social_updated": "2026-10-31",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaUcxNmVTUlhvYjZUNURHRUdKRjNydE9Td0tkYkJQdUFDVjdhcTBsN19qc2pvS1NuNFIybGV5bjgzaExjNURwM0tfRDJ4N3ZjQkgwWEFobVpoaW9ZMjFlLTFMTFZ5dnBBcTM0RDVIOGFCdUJYeGxrTjdlb25CdlNJRGpWOUNRaEt2SkZnbGlOWUZSZ2s?oc=5"
     },
@@ -11033,13 +11153,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 1,
+        "recent_mentions": 2,
         "creator_mentions": 1,
-        "repeat_recommendations": 0
+        "repeat_recommendations": 1
       },
-      "social_heat": 58,
+      "social_heat": 60,
       "social_updated": "2026-10-31",
-      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_why": "最近30天公開旅遊文章提及2次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBtV2VPZVlzQXQtQS1uZzJZaGpkazBHSlItSGFZOTRlQkE4SWlvem90b0pHeUVocmp2WXBGR2tUNjh5NkQtSWNWdW85TWN6Q1Nl?oc=5"
     },
     {
@@ -11485,14 +11605,14 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 4,
-        "creator_mentions": 4,
-        "repeat_recommendations": 3
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
       },
-      "social_heat": 69,
+      "social_heat": 58,
       "social_updated": "2026-10-31",
-      "social_why": "最近30天公開旅遊文章提及4次，來自4個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ndHRMRkp2eVhiZXUtMTNDSHhkMFVMblhIZDZFMFIwVmxSM0Q2WE9fajdralhWbjktMVBIc0liQkdhUG81M2JDSGZSN0tIbC1HREhEcGx1ZW5kQmdldEJpY2dXMA?oc=5"
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5sN01nYVBCOWtOU0w1YjRZN3JHUXNySjFaN3dTaklaWjJmdnR0QUxlN0pXczhtdWR0czJqSEF0WjdxX3c3ZllCOWdPZlFES2FKOUVQRG13bGNNbjBSNlc1NGszUQ?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_395000000A_000590",
@@ -22032,7 +22152,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-30",
+      "updated": "2026-10-31",
       "tags": [
         "景點",
         "網路熱門"
@@ -22052,9 +22172,9 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-30",
+      "social_updated": "2026-10-31",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE13VWlubG4wck44V2tjQUx1M0d2LWRFeGV0NTRNU0VCanI5MlZ6UmJxMFpBZDgwR2lWT2Nubk9aYTJaQWVMeUlyZFJQcmlEX1daSDlaSGZB?oc=5"
+      "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4ycnVsU3NHakt6NDUzLUo0MzBfb3ZhUXFNY0hOSnhGcGM1WWVDSkpuU2p5MTFfTmhXUjBQRkc0RS05MTRyTmdJWjNQWG9FWm1S?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_376490000A_000218",
@@ -25005,7 +25125,7 @@
       "social_heat": 58,
       "social_updated": "2026-10-31",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1zVEtMYWUyb3VRMkVId1R1UDUzZThCTjI3ZktJSWRvN3UyT3lPdlFMYm5WUG5XM0xtOEh5Rm9idGhFOGVoLUNsY2M1QmdrczZkYUxmbzlR?oc=5"
+      "social_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOFlLWkE0YmJkbUIwZUV0ekt0bFprbGx1cEF6OUhNdGNHZDNkczl4dUk4dmtQRmJ1dzdlNG91RTh1ZVB2ZUhQYmxMaG9rcUctYnNXbU5yTGozRHdmSUhJWXQ2RW5ZeHo4MUNfNVZfWWpPUWdCZUNQR3p4dVJNckhLbUtfUXppZkRNUFlyc3gzSTRTY2JDb051VUJpMA?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_376490000A_000176",
@@ -27916,13 +28036,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 3,
-        "creator_mentions": 3,
-        "repeat_recommendations": 2
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
       },
-      "social_heat": 65,
+      "social_heat": 58,
       "social_updated": "2026-10-31",
-      "social_why": "最近30天公開旅遊文章提及3次，來自3個來源",
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE52NmpneFFSRDZUSm9BN3laUTJQNlRJRlBmQjY1U3hEWGNkZXpVeTZ6c2xPZzVQX3FtV3BZWmMzOFByNWJJanhHbEluN3RyM1lkWTFvbVNtMHMwdHpj?oc=5"
     },
     {
@@ -28939,6 +29059,32 @@
       ]
     },
     {
+      "id": "social-auto-tourism-event-Event_A15010000H_081715",
+      "city": "雲林",
+      "name": "2026雲林國際偶戲節",
+      "e": "🔥",
+      "type": "活動",
+      "src": "社群",
+      "signals": {
+        "recent_mentions": 2,
+        "creator_mentions": 2,
+        "repeat_recommendations": 1
+      },
+      "updated": "2026-10-31",
+      "tags": [
+        "活動",
+        "網路熱門"
+      ],
+      "place": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
+      "q": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
+      "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5UZVNKamxFQUtQQXVTUVNpVkV0R0JwZ3JGREcyVWotYkVacnZ6SXVrWElQQk5WajVweFUtTjNROWZ0b3ltd2tEa21SSmV6VUxPSnc?oc=5",
+      "heat": 62,
+      "sources": [
+        "社群"
+      ]
+    },
+    {
       "id": "social-auto-tourism-event-Event_395000000A_008093",
       "city": "台南",
       "name": "2026 水交社晴空藝術節",
@@ -28950,7 +29096,7 @@
         "creator_mentions": 1,
         "repeat_recommendations": 0
       },
-      "updated": "2026-10-30",
+      "updated": "2026-10-31",
       "tags": [
         "活動",
         "網路熱門"
@@ -29002,7 +29148,7 @@
         "creator_mentions": 1,
         "repeat_recommendations": 0
       },
-      "updated": "2026-10-30",
+      "updated": "2026-10-31",
       "tags": [
         "活動",
         "網路熱門"
@@ -29184,7 +29330,7 @@
         "creator_mentions": 1,
         "repeat_recommendations": 0
       },
-      "updated": "2026-10-30",
+      "updated": "2026-10-31",
       "tags": [
         "活動",
         "網路熱門"
@@ -29279,32 +29425,6 @@
       "q": "大同技術學院 嘉義市 諸羅搖滾",
       "why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFA2NEdiM1NacWI2TDhtWXN5ZzJQOGNRVXYyNHozR25Zc2JGZTFFMV9XSFFJUkFKZDQ1SXVOekloQ0h3Q183d3F4bURoZnTSAVJBVV95cUxOc1N0U3JlUjFzTEQ5SVV0bTN1ZmdhSlRBazhSYjBHbzFQS2ExaUlpSEVqTXBUNFFramFmZTd6R2JXVk5zcHRmVWk3MXhxUnFYdVVn?oc=5",
-      "heat": 58,
-      "sources": [
-        "社群"
-      ]
-    },
-    {
-      "id": "social-auto-tourism-event-Event_A15010000H_081715",
-      "city": "雲林",
-      "name": "2026雲林國際偶戲節",
-      "e": "🔥",
-      "type": "活動",
-      "src": "社群",
-      "signals": {
-        "recent_mentions": 1,
-        "creator_mentions": 1,
-        "repeat_recommendations": 0
-      },
-      "updated": "2026-10-30",
-      "tags": [
-        "活動",
-        "網路熱門"
-      ],
-      "place": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
-      "q": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
-      "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5SeUdVZHdfMG5TOEpZNkE2Q3kzckZhWUhPSzBOc29pN1M5RFhjUDc1QWg2aFJyNFk5SlFRdE5FUjNNNlJRcTdnTk0wQVItWU5DYTcwVDQ3TlVMRy1tQUZUdXZKRlhZQTk3b3dV?oc=5",
       "heat": 58,
       "sources": [
         "社群"
