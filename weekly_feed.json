@@ -1,12 +1,12 @@
 {
-  "version": "2026.10.31-auto",
-  "updated": "2026-10-31",
-  "generated_at": "2026-10-31T14:38:08+00:00",
+  "version": "2026.11.01-auto",
+  "updated": "2026-11-01",
+  "generated_at": "2026-11-01T06:41:28+00:00",
   "stats": {
-    "official": 1377,
+    "official": 1373,
     "social": 47,
     "expired_removed": 79,
-    "total": 1392
+    "total": 1388
   },
   "items": [
     {
@@ -76,30 +76,6 @@
       "q": "《小王子》第100場演出獻給嘉義市！經典故事感動登場邀民眾走進劇場",
       "why": "經典文學作品《小王子》陪伴無數讀者走過成長歲月，如今透過劇場藝術再次與觀眾相遇！《小王子》舞臺作品即將迎來第100場演出的重要里程碑，並選擇在嘉義市登場，為這段精彩的演出旅程寫下別具意義的一頁。嘉義市政府文化局邀請市民朋友走進劇場，跟隨小王子的腳步，重新感受關於愛、陪伴與生命中珍貴事物的動人故事。 嘉義市長黃敏惠表示，《小王子》是跨越世代、深受世界各地讀者喜愛的經典作品，此次第100場演出選擇嘉義",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957459",
-      "heat": 93,
-      "sources": [
-        "官方"
-      ]
-    },
-    {
-      "id": "chiayi-city-news-51ce6b13c005",
-      "city": "嘉義",
-      "name": "儲藏室變身美學展演空間嘉市蘭潭國中「藝流・之間」打造校園學美之路",
-      "e": "📣",
-      "type": "活動",
-      "src": "官方",
-      "updated": "2026-10-22",
-      "start": "2026-10-22",
-      "end": "2026-11-01",
-      "tags": [
-        "活動",
-        "嘉義市政府",
-        "市府快報"
-      ],
-      "place": "嘉義市",
-      "q": "儲藏室變身美學展演空間嘉市蘭潭國中「藝流・之間」打造校園學美之路",
-      "why": "嘉義市蘭潭國中將原本堆放雜物的儲藏室，改造為兼具展演、教學、創作與交流功能的美學空間。今（22）日舉行「藝流・之間」學美教室揭牌啟用典禮，嘉義市長黃敏惠出席典禮表示，市府持續將美學融入城市治理與教育日常，透過空間改善與設計創新，提升校園環境與使用機能，激發學生的創造力，為教育注入更多可能。 黃敏惠市長表示，自2021年台灣設計展在嘉義市舉辦以來，市府持續將設計思維融入教育現場。蘭潭國中是嘉義市唯一",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=956669",
       "heat": 93,
       "sources": [
         "官方"
@@ -322,7 +298,7 @@
       ]
     },
     {
-      "id": "chiayi-city-news-c600b9d13a1f",
+      "id": "chiayi-city-news-e45861fd4a78",
       "city": "嘉義",
       "name": "萬聖不搗蛋！嘉市邀親子闖關學安全兒童發展篩檢守護成長",
       "e": "📣",
@@ -330,7 +306,7 @@
       "src": "官方",
       "updated": "2026-10-31",
       "start": "2026-10-31",
-      "end": "2026-11-10",
+      "end": "2026-11-30",
       "tags": [
         "活動",
         "嘉義市政府",
@@ -338,7 +314,7 @@
       ],
       "place": "嘉義市",
       "q": "萬聖不搗蛋！嘉市邀親子闖關學安全兒童發展篩檢守護成長",
-      "why": "嘉義市政府衛生局局長廖育瑋表示，依本市兒少事故傷害統計，年至未滿歲兒童運輸事故計人、跌倒（落）人；年至月，運輸事故計人、跌倒（落）人，由於幼兒好奇心強，危險辨識及自我保護能力尚未成熟，需要成人主動做好安全防護。依提醒家長應持續重視兒童乘車及活動安全，從照護行為與環境改善著手，減少事故傷害發生。本次活動將四大安全議題融入親子闖關，在遊戲中學習技能。在乘車安全方面，提醒家長依孩子年齡及體型選用合適的汽",
+      "why": "守護孩子成長，從安全照護與發展篩檢做起！嘉義市政府衛生局於115年10月31日（星期六）假世賢國小活動中心舉辦「萬聖不搗蛋嘉倍幸福安全大闖關」親子活動，結合嬰幼兒汽車安全座椅、睡眠安全、燒燙傷防制及預防跌墜落四大主題，透過趣味闖關、唱跳互動、魔術表演及故事時光，讓家長與孩子在歡樂中學習安全知識；並特邀戴德森醫療財團法人嘉義基督教醫院團隊提供兒童發展篩檢服務，讓幼兒照護更週全。嘉義市政府衛生局局長廖",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957397",
       "heat": 93,
       "sources": [
@@ -547,7 +523,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-10-12",
       "end": "2026-11-02",
       "tags": [
@@ -570,7 +546,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-11-08",
       "end": "2026-11-08",
       "tags": [
@@ -587,36 +563,13 @@
       ]
     },
     {
-      "id": "chiayi-city-event-8e89702b56a3",
-      "city": "嘉義",
-      "name": "115年嘉義市樂齡勇壯城成果展來囉！將於11月1日在文化公園熱鬧登場！",
-      "e": "🎉",
-      "type": "活動",
-      "src": "官方",
-      "updated": "2026-10-31",
-      "start": "2026-11-01",
-      "end": "2026-11-01",
-      "tags": [
-        "活動",
-        "嘉義市政府"
-      ],
-      "place": "嘉義市",
-      "q": "115年嘉義市樂齡勇壯城成果展來囉！將於11月1日在文化公園熱鬧登場！",
-      "why": "大朋友、小朋友、老朋友、新朋友，我們邀請大家相揪來同樂！一起野餐、分享音樂，感受滿滿的勇壯活力！ 揪團參加同學會就贈送精美宣導品！闖關完成更贈送食安三金獎獲獎美食！「電競教父」、「金曲歌王」施文彬演唱！ 歡迎帶著家人、邀請朋友，自備野餐墊及餐點，一起來場勇壯同學會！ 活動資訊日期｜2026年11月1日（日）時間｜13:30－18:30地點｜文化公園 報名連結",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=956284",
-      "heat": 86,
-      "sources": [
-        "官方"
-      ]
-    },
-    {
       "id": "chiayi-city-event-4d25026de8ff",
       "city": "嘉義",
       "name": "2026年11月份嬰幼兒閱讀推廣活動",
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-11-07",
       "end": "2026-11-08",
       "tags": [
@@ -639,7 +592,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-11-15",
       "end": "2026-11-15",
       "tags": [
@@ -656,36 +609,13 @@
       ]
     },
     {
-      "id": "chiayi-city-event-b980a23757e0",
-      "city": "嘉義",
-      "name": "CMUSICAL音樂劇《小王子》",
-      "e": "🎉",
-      "type": "活動",
-      "src": "官方",
-      "updated": "2026-10-31",
-      "start": "2026-10-31",
-      "end": "2026-11-01",
-      "tags": [
-        "活動",
-        "嘉義市政府"
-      ],
-      "place": "嘉義市",
-      "q": "CMUSICAL音樂劇《小王子》",
-      "why": "CMUSICAL音樂劇《小王子》10/31（六）14:3011/01（日）14:30演出團隊｜CMUSICAL製作演出地點｜嘉義市政府文化局音樂廳票務訊息｜售票，請洽OPENTIX兩廳院文化生活【售票連結】(本場次適用文化幣青年席位)★法國經典名著改編・療癒名品大人小孩必看★好評遍佈北中南與海內外・全臺破三萬名觀眾熱淚推薦三位演員×三位現場樂手×深入你心的歌",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=952406",
-      "heat": 86,
-      "sources": [
-        "官方"
-      ]
-    },
-    {
       "id": "chiayi-city-event-7a44ca2be2d5",
       "city": "嘉義",
       "name": "《大鳴大Fun》",
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-11-27",
       "end": "2026-11-27",
       "tags": [
@@ -708,7 +638,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-11-22",
       "end": "2026-11-22",
       "tags": [
@@ -731,7 +661,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-10-09",
       "end": "2026-11-15",
       "tags": [
@@ -754,7 +684,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-08-01",
       "end": "2026-12-31",
       "tags": [
@@ -777,7 +707,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-01-01",
       "end": "2026-12-31",
       "tags": [
@@ -800,7 +730,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-07-21",
       "end": "2026-11-30",
       "tags": [
@@ -823,7 +753,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-09-21",
       "end": "2026-11-06",
       "tags": [
@@ -846,7 +776,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-10-24",
       "end": "2027-04-25",
       "tags": [
@@ -921,7 +851,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2024-12-31",
       "end": "2026-12-31",
       "tags": [
@@ -944,7 +874,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-11-07",
       "end": "2026-11-07",
       "tags": [
@@ -967,7 +897,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-11-01",
       "end": "2026-11-30",
       "tags": [
@@ -990,7 +920,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "",
       "end": "",
       "tags": [
@@ -1013,7 +943,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-11-07",
       "end": "2026-11-07",
       "tags": [
@@ -1036,7 +966,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-10-02",
       "end": "2026-11-12",
       "tags": [
@@ -1053,36 +983,13 @@
       ]
     },
     {
-      "id": "chiayi-city-event-80e4eee4a862",
-      "city": "嘉義",
-      "name": "沓沓仔聽｜台灣民俗采風",
-      "e": "🎉",
-      "type": "活動",
-      "src": "官方",
-      "updated": "2026-10-31",
-      "start": "2026-11-01",
-      "end": "2026-11-01",
-      "tags": [
-        "活動",
-        "嘉義市政府"
-      ],
-      "place": "嘉義市",
-      "q": "沓沓仔聽｜台灣民俗采風",
-      "why": "𖦹2026嘉義市母語生活節「沓沓仔Ta̍uh-ta̍uh-á」系列 𖦹那些我們從小就習以為常的習俗，究竟從哪裡來？為什麼不同地方有著截然不同的傳統？本課程將從台灣民間生活出發，在熟悉與陌生之間，探討傳統背後的有趣故事。⟢沓沓仔聽｜台灣民俗采風講師：林茂賢日期：11/1(日) 時間：14:00-16:00地點：嘉義城隍廟教學大樓4樓Ｃ教室台語比例：100%◎講",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=955388",
-      "heat": 86,
-      "sources": [
-        "官方"
-      ]
-    },
-    {
       "id": "chiayi-city-event-9c6b0fba5a81",
       "city": "嘉義",
       "name": "降豬72變",
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "start": "2026-11-07",
       "end": "2026-11-07",
       "tags": [
@@ -1973,7 +1880,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-30",
+      "updated": "2026-11-01",
       "start": "2026-07-01",
       "end": "2026-11-30",
       "tags": [
@@ -2171,7 +2078,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-30",
+      "updated": "2026-11-01",
       "start": "2026-06-03",
       "end": "2026-11-21",
       "tags": [
@@ -2259,7 +2166,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-30",
+      "updated": "2026-11-01",
       "start": "2026-09-01",
       "end": "2026-11-09",
       "tags": [
@@ -2281,7 +2188,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-30",
+      "updated": "2026-11-01",
       "start": "2026-10-01",
       "end": "2027-03-31",
       "tags": [
@@ -2303,7 +2210,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-30",
+      "updated": "2026-11-01",
       "start": "2026-04-30",
       "end": "2026-11-30",
       "tags": [
@@ -2325,7 +2232,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-30",
+      "updated": "2026-11-01",
       "start": "2026-03-01",
       "end": "2026-12-31",
       "tags": [
@@ -2440,7 +2347,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-10-30",
+      "updated": "2026-11-01",
       "start": "2026-10-08",
       "end": "2026-11-08",
       "tags": [
@@ -2637,7 +2544,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "戶外",
@@ -2661,7 +2568,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-31",
+      "social_updated": "2026-11-01",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rSjhvLXd6dlc3WnB6SHFjeWpRekRxODRVWTBUR3pBRTdpa0gwcDRGMHVMTHhOWjVyMkRaNGhjVC1YaGp6a082cW80c0ZPNmUy?oc=5"
     },
@@ -6019,7 +5926,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "文化",
@@ -6041,7 +5948,7 @@
         "repeat_recommendations": 1
       },
       "social_heat": 60,
-      "social_updated": "2026-10-31",
+      "social_updated": "2026-11-01",
       "social_why": "最近30天公開旅遊文章提及2次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5TeGJDY3JyUERHQ3htX3RPQk9GaW9JX0pyT18tUC1IelpZLUZwZDBUbXI4Rm5DX0pZOEVDWmFvb3VJSVNtNVJ0aWJUR1gwVk5B?oc=5"
     },
@@ -7013,7 +6920,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "網路熱門"
@@ -7033,7 +6940,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-31",
+      "social_updated": "2026-11-01",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1RcGlTa3A1d1RVRW1uY1lNaW81eEhoRkd1MTh4cGNHWkkxUTN4MXFleTFtZWw4eTlhak9KQXlFcFFjZGswMEt0MmlYVjhQaG9YVkVoZGRlcUg2MFF2Z28wR0FqSQ?oc=5"
     },
@@ -7597,7 +7504,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "網路熱門"
@@ -7617,7 +7524,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-31",
+      "social_updated": "2026-11-01",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9qMGE2S042eVdHSjFCS1BFM2lKaUtIb0cwSWNoUVh0SkNFTVRBWkhYRUVoeGNKMHF3b2Q4YjN3Vk5GT0paaDQzWmE4WlExQQ?oc=5"
     },
@@ -8424,7 +8331,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "網路熱門"
@@ -8444,7 +8351,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-31",
+      "social_updated": "2026-11-01",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaUcxNmVTUlhvYjZUNURHRUdKRjNydE9Td0tkYkJQdUFDVjdhcTBsN19qc2pvS1NuNFIybGV5bjgzaExjNURwM0tfRDJ4N3ZjQkgwWEFobVpoaW9ZMjFlLTFMTFZ5dnBBcTM0RDVIOGFCdUJYeGxrTjdlb25CdlNJRGpWOUNRaEt2SkZnbGlOWUZSZ2s?oc=5"
     },
@@ -9011,7 +8918,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "網路熱門"
@@ -9031,7 +8938,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-31",
+      "social_updated": "2026-11-01",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBKXzM2YV82ZUZGY0NTTlpKejhlUjdQMGUtS2ZEcU8xM216d3ZwT1ZVQXFDeG9UNjktcG1ZVHpseGdnQnZrWUxhWHRWZGNudw?oc=5"
     },
@@ -11137,7 +11044,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "文化",
@@ -11158,7 +11065,7 @@
         "repeat_recommendations": 1
       },
       "social_heat": 60,
-      "social_updated": "2026-10-31",
+      "social_updated": "2026-11-01",
       "social_why": "最近30天公開旅遊文章提及2次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBtV2VPZVlzQXQtQS1uZzJZaGpkazBHSlItSGFZOTRlQkE4SWlvem90b0pHeUVocmp2WXBGR2tUNjh5NkQtSWNWdW85TWN6Q1Nl?oc=5"
     },
@@ -11590,7 +11497,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "網路熱門"
@@ -11610,7 +11517,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-31",
+      "social_updated": "2026-11-01",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5sN01nYVBCOWtOU0w1YjRZN3JHUXNySjFaN3dTaklaWjJmdnR0QUxlN0pXczhtdWR0czJqSEF0WjdxX3c3ZllCOWdPZlFES2FKOUVQRG13bGNNbjBSNlc1NGszUQ?oc=5"
     },
@@ -13203,7 +13110,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "戶外",
@@ -13224,7 +13131,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-31",
+      "social_updated": "2026-11-01",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5hc094c3NHWGc4dGxQWmYwekFBSUxHend6V3o0MlBNWjdsb05yeVdFcXR5UXNKT3d6eG1yaVNtLW8yVUxiQ3E4emlUUE56clBjdGVtZzAzSDY?oc=5"
     },
@@ -15218,7 +15125,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "網路熱門"
@@ -15238,9 +15145,9 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-31",
+      "social_updated": "2026-11-01",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9HbDBFZDd3aEZTTE5VVDZYeUo0YnhRSFVLQnd6bGE1VW10UUVDN3ZFaEI2T1ZGYUd0S05jODJSUXVmNTRwOWJjWGcxNTBtS0ZPQXp3TWE0V19WbndL0gFcQVVfeXFMT0dsMEVkN3doRlNMTlVUNlh5SjRieFFIVUtCd3psYTVVbXRRRUM3dkVoQjZPVkZhR3RLTmM4MlJRdWY1NHA5YmNYZzE1MG1LRk9BendNYTRXX1Zud0s?oc=5"
+      "social_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9wTkVIdHo1V3dsWUR0OERzTVlKTEpFMXNGT1hXSjZPM1pBMWwtNWhPYUU4bUk3Q1ljNmRjOExrTzlPbGxrcThlTlJLc1VSZWJybE5EbA?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_A15010800H_000086",
@@ -18304,7 +18211,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "戶外"
@@ -18657,7 +18564,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "戶外",
@@ -18679,7 +18586,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "戶外",
@@ -18701,7 +18608,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "戶外"
@@ -18744,7 +18651,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "戶外",
@@ -19170,7 +19077,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "戶外"
@@ -22152,7 +22059,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "網路熱門"
@@ -22172,7 +22079,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-31",
+      "social_updated": "2026-11-01",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4ycnVsU3NHakt6NDUzLUo0MzBfb3ZhUXFNY0hOSnhGcGM1WWVDSkpuU2p5MTFfTmhXUjBQRkc0RS05MTRyTmdJWjNQWG9FWm1S?oc=5"
     },
@@ -25102,7 +25009,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "景點",
         "戶外",
@@ -25123,7 +25030,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-31",
+      "social_updated": "2026-11-01",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOFlLWkE0YmJkbUIwZUV0ekt0bFprbGx1cEF6OUhNdGNHZDNkczl4dUk4dmtQRmJ1dzdlNG91RTh1ZVB2ZUhQYmxMaG9rcUctYnNXbU5yTGozRHdmSUhJWXQ2RW5ZeHo4MUNfNVZfWWpPUWdCZUNQR3p4dVJNckhLbUtfUXppZkRNUFlyc3gzSTRTY2JDb051VUJpMA?oc=5"
     },
@@ -26399,7 +26306,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26419,7 +26326,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "文化"
       ],
@@ -26439,7 +26346,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26459,7 +26366,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26479,7 +26386,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26499,7 +26406,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -26520,7 +26427,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26540,7 +26447,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26560,7 +26467,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -26581,7 +26488,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26601,7 +26508,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26621,7 +26528,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26641,7 +26548,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26661,7 +26568,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26681,7 +26588,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -26702,7 +26609,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26722,7 +26629,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26742,7 +26649,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26762,7 +26669,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26782,7 +26689,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26802,7 +26709,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26822,7 +26729,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26842,7 +26749,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26862,7 +26769,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26882,7 +26789,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26902,7 +26809,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26922,7 +26829,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26942,7 +26849,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -26962,7 +26869,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -26983,7 +26890,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27003,7 +26910,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27023,7 +26930,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27043,7 +26950,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27063,7 +26970,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27083,7 +26990,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27103,7 +27010,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27123,7 +27030,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27143,7 +27050,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27163,7 +27070,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27183,7 +27090,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -27204,7 +27111,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27224,7 +27131,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27244,7 +27151,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27264,7 +27171,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27284,7 +27191,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27304,7 +27211,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27324,7 +27231,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27344,7 +27251,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27364,7 +27271,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27384,7 +27291,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27404,7 +27311,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27424,7 +27331,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子",
         "網路熱門"
@@ -27455,7 +27362,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27475,7 +27382,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27495,7 +27402,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27515,7 +27422,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27535,7 +27442,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27555,7 +27462,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27575,7 +27482,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27595,7 +27502,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27615,7 +27522,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27635,7 +27542,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27655,7 +27562,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -27676,7 +27583,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27696,7 +27603,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27716,7 +27623,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -27737,7 +27644,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -27758,7 +27665,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -27779,7 +27686,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27799,7 +27706,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27819,7 +27726,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27839,7 +27746,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27859,7 +27766,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27879,7 +27786,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27899,7 +27806,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27919,7 +27826,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27939,7 +27846,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -27959,7 +27866,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -27980,7 +27887,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28000,7 +27907,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28020,7 +27927,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然",
@@ -28041,7 +27948,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-31",
+      "social_updated": "2026-11-01",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE52NmpneFFSRDZUSm9BN3laUTJQNlRJRlBmQjY1U3hEWGNkZXpVeTZ6c2xPZzVQX3FtV3BZWmMzOFByNWJJanhHbEluN3RyM1lkWTFvbVNtMHMwdHpj?oc=5"
     },
@@ -28052,7 +27959,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28072,7 +27979,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -28093,7 +28000,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28113,7 +28020,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28133,7 +28040,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -28154,7 +28061,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28174,7 +28081,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28194,7 +28101,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28214,7 +28121,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28234,7 +28141,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28254,7 +28161,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28274,7 +28181,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "文化"
       ],
@@ -28294,7 +28201,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28314,7 +28221,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28334,7 +28241,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28354,7 +28261,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28374,7 +28281,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28394,7 +28301,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28414,7 +28321,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28434,7 +28341,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28454,7 +28361,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28474,7 +28381,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28494,7 +28401,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28514,7 +28421,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28534,7 +28441,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -28555,7 +28462,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28575,7 +28482,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28595,7 +28502,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28615,7 +28522,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -28636,7 +28543,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28656,7 +28563,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28676,7 +28583,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28696,7 +28603,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28716,7 +28623,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28736,7 +28643,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28756,7 +28663,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28776,7 +28683,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28796,7 +28703,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -28817,7 +28724,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28837,7 +28744,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28857,7 +28764,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28877,7 +28784,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28897,7 +28804,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28917,7 +28824,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28937,7 +28844,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28957,7 +28864,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28977,7 +28884,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -28997,7 +28904,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "親子"
       ],
@@ -29017,7 +28924,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "戶外",
         "自然"
@@ -29070,7 +28977,7 @@
         "creator_mentions": 2,
         "repeat_recommendations": 1
       },
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "活動",
         "網路熱門"
@@ -29096,7 +29003,7 @@
         "creator_mentions": 1,
         "repeat_recommendations": 0
       },
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "活動",
         "網路熱門"
@@ -29148,7 +29055,7 @@
         "creator_mentions": 1,
         "repeat_recommendations": 0
       },
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "活動",
         "網路熱門"
@@ -29330,7 +29237,7 @@
         "creator_mentions": 1,
         "repeat_recommendations": 0
       },
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "tags": [
         "活動",
         "網路熱門"
