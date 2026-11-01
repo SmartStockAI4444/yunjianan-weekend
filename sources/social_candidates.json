@@ -1240,5 +1240,29 @@
     "q": "臺南市 67000 柳營區 67000040 736 神農里新厝100號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1RcGlTa3A1d1RVRW1uY1lNaW81eEhoRkd1MTh4cGNHWkkxUTN4MXFleTFtZWw4eTlhak9KQXlFcFFjZGswMEt0MmlYVjhQaG9YVkVoZGRlcUg2MFF2Z28wR0FqSQ?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_376490000A_000330",
+    "city": "雲林",
+    "name": "虎尾糖廠",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-01",
+    "tags": [
+      "景點",
+      "文化",
+      "網路熱門"
+    ],
+    "place": "雲林縣 10009 虎尾鎮 10009030 632 雲林縣虎尾鎮安慶里中山路2號",
+    "q": "雲林縣 10009 虎尾鎮 10009030 632 雲林縣虎尾鎮安慶里中山路2號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE91VEZ5UmxDWVozMnZuNkdDNlZQOHAxXzY3VlJSVWYzUDc1OHJ1bklMbkNzZkdmMklDSFdWdi13Yl9iRmZOUnItd21ONlRYck9QNU93NA?oc=5"
   }
 ]
