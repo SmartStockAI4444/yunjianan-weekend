@@ -1,10 +1,10 @@
 {
   "version": "2026.11.02-auto",
   "updated": "2026-11-02",
-  "generated_at": "2026-11-02T06:40:13+00:00",
+  "generated_at": "2026-11-02T18:37:54+00:00",
   "stats": {
     "official": 1371,
-    "social": 48,
+    "social": 49,
     "expired_removed": 81,
     "total": 1386
   },
@@ -11468,13 +11468,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 4,
-        "creator_mentions": 3,
-        "repeat_recommendations": 3
+        "recent_mentions": 5,
+        "creator_mentions": 4,
+        "repeat_recommendations": 4
       },
-      "social_heat": 68,
+      "social_heat": 71,
       "social_updated": "2026-11-02",
-      "social_why": "最近30天公開旅遊文章提及4次，來自3個來源",
+      "social_why": "最近30天公開旅遊文章提及5次，來自4個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ndHRMRkp2eVhiZXUtMTNDSHhkMFVMblhIZDZFMFIwVmxSM0Q2WE9fajdralhWbjktMVBIc0liQkdhUG81M2JDSGZSN0tIbC1HREhEcGx1ZW5kQmdldEJpY2dXMA?oc=5"
     },
     {
@@ -14977,9 +14977,10 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-09-24",
+      "updated": "2026-11-02",
       "tags": [
-        "景點"
+        "景點",
+        "網路熱門"
       ],
       "place": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
       "q": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
@@ -14987,8 +14988,18 @@
       "url": "",
       "heat": 72,
       "sources": [
-        "官方"
-      ]
+        "官方",
+        "社群"
+      ],
+      "signals": {
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
+      },
+      "social_heat": 58,
+      "social_updated": "2026-11-02",
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51TndNSXFGR0Z3NHQwOVJzblNvb2ZmVjBpcUtpUjJVZGZfZG1Wb2tMbmYxR2JiV1V0cHdkV0VrZUVaSWIxUFlqRmwzSU9Wb2hmbklhYi1QNHY2SDZEQ1E?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_A15010800H_000187",
@@ -18167,7 +18178,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-02",
+      "updated": "2026-11-03",
       "tags": [
         "景點",
         "戶外"
@@ -18520,7 +18531,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-02",
+      "updated": "2026-11-03",
       "tags": [
         "景點",
         "戶外",
@@ -18542,7 +18553,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-02",
+      "updated": "2026-11-03",
       "tags": [
         "景點",
         "戶外",
@@ -18564,7 +18575,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-02",
+      "updated": "2026-11-03",
       "tags": [
         "景點",
         "戶外"
@@ -18607,7 +18618,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-02",
+      "updated": "2026-11-03",
       "tags": [
         "景點",
         "戶外",
@@ -19033,7 +19044,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-02",
+      "updated": "2026-11-03",
       "tags": [
         "景點",
         "戶外"

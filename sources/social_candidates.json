@@ -681,11 +681,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 4,
-      "creator_mentions": 3,
-      "repeat_recommendations": 3
+      "recent_mentions": 5,
+      "creator_mentions": 4,
+      "repeat_recommendations": 4
     },
-    "base_heat": 93,
+    "base_heat": 95,
     "updated": "2026-11-02",
     "tags": [
       "景點",
@@ -693,7 +693,7 @@
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及4次，來自3個來源",
+    "why": "最近30天公開旅遊文章提及5次，來自4個來源",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ndHRMRkp2eVhiZXUtMTNDSHhkMFVMblhIZDZFMFIwVmxSM0Q2WE9fajdralhWbjktMVBIc0liQkdhUG81M2JDSGZSN0tIbC1HREhEcGx1ZW5kQmdldEJpY2dXMA?oc=5"
   },
   {
@@ -1264,5 +1264,28 @@
     "q": "雲林縣 10009 虎尾鎮 10009030 632 雲林縣虎尾鎮安慶里中山路2號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE91VEZ5UmxDWVozMnZuNkdDNlZQOHAxXzY3VlJSVWYzUDc1OHJ1bklMbkNzZkdmMklDSFdWdi13Yl9iRmZOUnItd21ONlRYck9QNU93NA?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_A15010800H_000197",
+    "city": "嘉義",
+    "name": "太平雲梯",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-02",
+    "tags": [
+      "景點",
+      "網路熱門"
+    ],
+    "place": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
+    "q": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51TndNSXFGR0Z3NHQwOVJzblNvb2ZmVjBpcUtpUjJVZGZfZG1Wb2tMbmYxR2JiV1V0cHdkV0VrZUVaSWIxUFlqRmwzSU9Wb2hmbklhYi1QNHY2SDZEQ1E?oc=5"
   }
 ]
