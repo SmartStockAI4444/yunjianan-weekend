@@ -1,7 +1,7 @@
 {
   "version": "2026.11.03-auto",
   "updated": "2026-11-03",
-  "generated_at": "2026-11-03T07:09:08+00:00",
+  "generated_at": "2026-11-03T16:23:51+00:00",
   "stats": {
     "official": 1375,
     "social": 49,
@@ -15069,7 +15069,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-02",
+      "updated": "2026-11-03",
       "tags": [
         "景點",
         "網路熱門"
@@ -15084,14 +15084,14 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 1,
-        "creator_mentions": 1,
-        "repeat_recommendations": 0
+        "recent_mentions": 2,
+        "creator_mentions": 2,
+        "repeat_recommendations": 1
       },
-      "social_heat": 58,
-      "social_updated": "2026-11-02",
-      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51TndNSXFGR0Z3NHQwOVJzblNvb2ZmVjBpcUtpUjJVZGZfZG1Wb2tMbmYxR2JiV1V0cHdkV0VrZUVaSWIxUFlqRmwzSU9Wb2hmbklhYi1QNHY2SDZEQ1E?oc=5"
+      "social_heat": 62,
+      "social_updated": "2026-11-03",
+      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE41UFVBM1g5d1ZYQXB0dWhpeV9IWWdnNTVhVTMtLTFZdXNDajdudkhTYmdoR2Jpc3M1cVQ4YzhVaDVVTHpEazZjSjlIOUg?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_A15010800H_000187",
@@ -25102,7 +25102,7 @@
       "social_heat": 58,
       "social_updated": "2026-11-03",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOFlLWkE0YmJkbUIwZUV0ekt0bFprbGx1cEF6OUhNdGNHZDNkczl4dUk4dmtQRmJ1dzdlNG91RTh1ZVB2ZUhQYmxMaG9rcUctYnNXbU5yTGozRHdmSUhJWXQ2RW5ZeHo4MUNfNVZfWWpPUWdCZUNQR3p4dVJNckhLbUtfUXppZkRNUFlyc3gzSTRTY2JDb051VUJpMA?oc=5"
+      "social_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1zVEtMYWUyb3VRMkVId1R1UDUzZThCTjI3ZktJSWRvN3UyT3lPdlFMYm5WUG5XM0xtOEh5Rm9idGhFOGVoLUNsY2M1QmdrczZkYUxmbzlR?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_376490000A_000176",
