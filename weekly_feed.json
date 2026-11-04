@@ -1,12 +1,12 @@
 {
   "version": "2026.11.04-auto",
   "updated": "2026-11-04",
-  "generated_at": "2026-11-04T06:54:33+00:00",
+  "generated_at": "2026-11-04T16:27:25+00:00",
   "stats": {
-    "official": 1375,
+    "official": 1376,
     "social": 49,
     "expired_removed": 81,
-    "total": 1390
+    "total": 1391
   },
   "items": [
     {
@@ -178,6 +178,30 @@
       ]
     },
     {
+      "id": "chiayi-city-news-372e6a679008",
+      "city": "嘉義",
+      "name": "嘉義市邀民眾把握最後機會近距離欣賞石猴藝師精湛技藝走訪葉王交趾陶紀念展",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-11-04",
+      "start": "2026-04-25",
+      "end": "2026-11-05",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "嘉義市邀民眾把握最後機會近距離欣賞石猴藝師精湛技藝走訪葉王交趾陶紀念展",
+      "why": "嘉義市傳統工藝魅力持續展現！「嘉義市石猴戶外雕刻創作」活動進入最後倒數，30位在地石猴藝師齊聚嘉義市立博物館戶外廣場，透過現場雕刻展現精湛技藝，讓民眾近距離欣賞石材經由巧手雕琢，逐步化為生動石猴的創作過程。文化局邀請民眾把握最後機會，走進戶外創作現場，同時欣賞嘉義市立博物館「傳奇葉王－國寶交趾陶大師200周年紀念展」，感受嘉義傳統工藝的多元魅力。 嘉義市市長黃敏惠表示，嘉義是一座文化底蘊深厚的城市",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957900",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
       "id": "chiayi-city-news-d27dee91b422",
       "city": "嘉義",
       "name": "小勇士集結！嘉市幼兒運動會化身冒險舞臺小勇士趣味闖關守護桃城",
@@ -226,6 +250,30 @@
       ]
     },
     {
+      "id": "chiayi-city-news-db17225c65fa",
+      "city": "嘉義",
+      "name": "明華園總團旗艦大戲《貓神》11月14日登場邀您共賞歌仔戲經典盛宴",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-11-04",
+      "start": "2026-11-04",
+      "end": "2026-11-14",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "明華園總團旗艦大戲《貓神》11月14日登場邀您共賞歌仔戲經典盛宴",
+      "why": "備受期待的明華園戲劇總團旗艦大戲《貓神》，原訂演出因接連兩度受到颱風影響而延期，如今終於迎來重新登場的時刻！將於11月14日（星期六）晚間7時在嘉義市東區舊燈會區(空軍市場)盛大登台，由無敵小生孫翠鳳領銜主演，以磅礡舞台、精湛演技及經典劇情，再次為嘉義市帶來一場精彩絕倫的歌仔戲藝術盛宴，邀請市民朋友把握機會，共同感受臺灣傳統戲曲歷久彌新的魅力。 嘉義市長黃敏惠表示，一座有魅力的城市，不僅要有完善的",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957899",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
       "id": "chiayi-city-news-e8bd592218ed",
       "city": "嘉義",
       "name": "樂齡勇壯城成果展表揚黃敏惠市長盼翻轉高齡想像、活出精彩第三人生",
@@ -268,54 +316,6 @@
       "q": "用生命影響生命！嘉義市身障日表揚傑出身障人士、績優單位黃敏惠市長盼以理解與支持讓夢想無礙",
       "why": "「2026嘉義市國際身心障礙者日活動」，今(31)日在中央廣場登場，嘉義市長黃敏惠也出席活動，與市民共同響應。今年以「用理解消除歧視，以支持落實平權」為主題，並以「無礙飆速」電競共融體驗為創新亮點，透過合適的輔具及多元操作方式，打破身體條件與年齡的參與限制，讓不同需求的民眾都能享受遊戲樂趣，親身感受科技如何成為促進平等參與、實踐友善共融的橋梁。 黃敏惠市長表示，嘉義市政府持續落實身心障礙者平權，積",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957465",
-      "heat": 93,
-      "sources": [
-        "官方"
-      ]
-    },
-    {
-      "id": "chiayi-city-news-b43f461ff95c",
-      "city": "嘉義",
-      "name": "百年國寶齊聚嘉義！葉王誕辰200週年特展盛大開幕嘉博館鎮館之寶展出",
-      "e": "📣",
-      "type": "活動",
-      "src": "官方",
-      "updated": "2026-10-25",
-      "start": "2026-04-28",
-      "end": "2027-04-28",
-      "tags": [
-        "活動",
-        "嘉義市政府",
-        "市府快報"
-      ],
-      "place": "嘉義市",
-      "q": "百年國寶齊聚嘉義！葉王誕辰200週年特展盛大開幕嘉博館鎮館之寶展出",
-      "why": "交趾陶是嘉義重要的文化資產，交趾陶大師葉王更出身嘉義。適逢葉王誕辰200週年之際，嘉義市立博物館推出重磅展覽「傳奇葉王－國寶交趾陶大師200周年紀念展」昨(24)日起，在嘉義市長黃敏惠主持下盛大開展。本次展覽獲臺南市學甲慈濟宮及嘉義縣水上鄉柳仔林苦竹寺支持，借展珍貴葉王作品，嘉義市立博物館的鎮館之寶「葉王交趾陶文官立像」亦展出，難得一見的葉王作品齊聚嘉義市。 黃敏惠市長表示，嘉義與交趾陶有著深厚的",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=956914",
-      "heat": 93,
-      "sources": [
-        "官方"
-      ]
-    },
-    {
-      "id": "chiayi-city-news-4e53e96e33f9",
-      "city": "嘉義",
-      "name": "石猴工藝走入生活競賽、展覽、創作接力登場歷屆首獎齊聚展風華",
-      "e": "📣",
-      "type": "活動",
-      "src": "官方",
-      "updated": "2026-10-24",
-      "start": "2026-10-02",
-      "end": "2026-11-05",
-      "tags": [
-        "活動",
-        "嘉義市政府",
-        "市府快報"
-      ],
-      "place": "嘉義市",
-      "q": "石猴工藝走入生活競賽、展覽、創作接力登場歷屆首獎齊聚展風華",
-      "why": "石猴是嘉義市具代表性的傳統工藝，嘉義市政府除積極推動工藝走入街區，更持續透過競賽、展覽等方式，發揚這項具地方代表性的工藝。今(24)日，由嘉義市長黃敏惠頒獎，表揚今年度以「一石一猴‧藝匯桃城」為主題，在賽事中脫穎而出的藝師。本屆競賽共收到全國47件作品，經評選出21件作品展出，並邀集自2008年起的歷屆首獎作品於市府中庭共同展出，展期自10月24日至10月30日。 黃敏惠市長表示，石猴是嘉義市具代",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=956849",
       "heat": 93,
       "sources": [
         "官方"
@@ -1046,6 +1046,29 @@
       "q": "樂購捐發票公益傳愛零距離",
       "why": "為鼓勵民眾消費使用雲端發票，並捐贈雲端發票支持公益團體，嘉義市政府財政稅務局於momo購物網週年慶期間(115/10/2至10/12)及雙11購物節(115/11/2至11/12)期間，在momo購物網舉辦「購物捐發票公益零距離」及「樂購雙11雲端傳愛心」活動(已登記額滿)，兩梯次共有2,000個名額。 該局說明，活動期間內於momo購物網消費，消費金額10",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=953674",
+      "heat": 86,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "chiayi-city-event-192b7e408f79",
+      "city": "嘉義",
+      "name": "沓沓仔聽｜鹿港腔臺語的一千萬種可能？阿愷之聲Podcast的聲音實驗",
+      "e": "🎉",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-11-04",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "tags": [
+        "活動",
+        "嘉義市政府"
+      ],
+      "place": "嘉義市",
+      "q": "沓沓仔聽｜鹿港腔臺語的一千萬種可能？阿愷之聲Podcast的聲音實驗",
+      "why": "𖦹2026嘉義市母語生活節「沓沓仔Ta̍uh-ta̍uh-á」系列 𖦹如何讓母語重新回到日常生活？又如何透過新媒體，讓鹿港腔臺語的聲音傳遍全世界？兩度入圍金鐘獎的「阿愷之聲」Podcast究竟又是什麼樣的節目？快來一起聽，聽了就知道！-------------------------------------------⟢沓沓仔聽｜鹿港腔臺語的一千萬種可能？阿",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=957927",
       "heat": 86,
       "sources": [
         "官方"
@@ -5991,14 +6014,14 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 2,
+        "recent_mentions": 1,
         "creator_mentions": 1,
-        "repeat_recommendations": 1
+        "repeat_recommendations": 0
       },
-      "social_heat": 60,
+      "social_heat": 58,
       "social_updated": "2026-11-04",
-      "social_why": "最近30天公開旅遊文章提及2次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5TeGJDY3JyUERHQ3htX3RPQk9GaW9JX0pyT18tUC1IelpZLUZwZDBUbXI4Rm5DX0pZOEVDWmFvb3VJSVNtNVJ0aWJUR1gwVk5B?oc=5"
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vODBCQXYtbzh1RDNBODl6RW5MT2lyOEN3eVY2My0wVENkekM5SXdWZk9GRnJ4N3BJVFFTdGJqdUZOZ1lHdzBFSFplWGQ1bnA0?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_395000000A_000689",
@@ -11108,14 +11131,14 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 1,
+        "recent_mentions": 2,
         "creator_mentions": 1,
-        "repeat_recommendations": 0
+        "repeat_recommendations": 1
       },
-      "social_heat": 58,
+      "social_heat": 60,
       "social_updated": "2026-11-04",
-      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vODBCQXYtbzh1RDNBODl6RW5MT2lyOEN3eVY2My0wVENkekM5SXdWZk9GRnJ4N3BJVFFTdGJqdUZOZ1lHdzBFSFplWGQ1bnA0?oc=5"
+      "social_why": "最近30天公開旅遊文章提及2次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBtV2VPZVlzQXQtQS1uZzJZaGpkazBHSlItSGFZOTRlQkE4SWlvem90b0pHeUVocmp2WXBGR2tUNjh5NkQtSWNWdW85TWN6Q1Nl?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_A15011200H_000021",
@@ -15084,13 +15107,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 1,
-        "creator_mentions": 1,
-        "repeat_recommendations": 0
+        "recent_mentions": 2,
+        "creator_mentions": 2,
+        "repeat_recommendations": 1
       },
-      "social_heat": 58,
+      "social_heat": 62,
       "social_updated": "2026-11-04",
-      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
       "social_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWU10dURpQk9yYXFITG5naGFaUFItN0lMYzZUbmRTR2N1b092YUlwcXV1UV9EZ2JVSjRnUm9EYlpHRjNIVGluUVM3a0xuS19lUWYyLXRnM2RSYW1KeDhGWGRsaW9GQnpaZFhBRy1FZTRveWlyc2lBeEIxU0tDWjhOOFYySVpmeW1uOVdUWWxlNmYtek0?oc=5"
     },
     {
@@ -29043,9 +29066,9 @@
       "type": "活動",
       "src": "社群",
       "signals": {
-        "recent_mentions": 2,
-        "creator_mentions": 2,
-        "repeat_recommendations": 1
+        "recent_mentions": 3,
+        "creator_mentions": 3,
+        "repeat_recommendations": 2
       },
       "updated": "2026-11-04",
       "tags": [
@@ -29054,9 +29077,9 @@
       ],
       "place": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
       "q": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
-      "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+      "why": "最近30天公開旅遊文章提及3次，來自3個來源",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5UZVNKamxFQUtQQXVTUVNpVkV0R0JwZ3JGREcyVWotYkVacnZ6SXVrWElQQk5WajVweFUtTjNROWZ0b3ltd2tEa21SSmV6VUxPSnc?oc=5",
-      "heat": 62,
+      "heat": 65,
       "sources": [
         "社群"
       ]
