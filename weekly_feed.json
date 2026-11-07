@@ -1,7 +1,7 @@
 {
   "version": "2026.11.07-auto",
   "updated": "2026-11-07",
-  "generated_at": "2026-11-07T06:28:01+00:00",
+  "generated_at": "2026-11-07T14:58:36+00:00",
   "stats": {
     "official": 1374,
     "social": 49,
@@ -1950,7 +1950,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-11-06",
+      "updated": "2026-11-07",
       "start": "2026-07-01",
       "end": "2026-11-30",
       "tags": [
@@ -2126,7 +2126,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-11-06",
+      "updated": "2026-11-07",
       "start": "2026-06-03",
       "end": "2026-11-21",
       "tags": [
@@ -2192,7 +2192,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-11-06",
+      "updated": "2026-11-07",
       "start": "2026-09-01",
       "end": "2026-11-09",
       "tags": [
@@ -2214,7 +2214,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-11-06",
+      "updated": "2026-11-07",
       "start": "2026-10-01",
       "end": "2027-03-31",
       "tags": [
@@ -2236,7 +2236,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-11-06",
+      "updated": "2026-11-07",
       "start": "2026-04-30",
       "end": "2026-11-30",
       "tags": [
@@ -2258,7 +2258,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-11-06",
+      "updated": "2026-11-07",
       "start": "2026-03-01",
       "end": "2026-12-31",
       "tags": [
@@ -2373,7 +2373,7 @@
       "e": "🎉",
       "type": "活動",
       "src": "官方",
-      "updated": "2026-11-06",
+      "updated": "2026-11-07",
       "start": "2026-10-08",
       "end": "2026-11-08",
       "tags": [
@@ -11538,13 +11538,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 5,
+        "recent_mentions": 4,
         "creator_mentions": 4,
-        "repeat_recommendations": 4
+        "repeat_recommendations": 3
       },
-      "social_heat": 71,
+      "social_heat": 69,
       "social_updated": "2026-11-07",
-      "social_why": "最近30天公開旅遊文章提及5次，來自4個來源",
+      "social_why": "最近30天公開旅遊文章提及4次，來自4個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ndHRMRkp2eVhiZXUtMTNDSHhkMFVMblhIZDZFMFIwVmxSM0Q2WE9fajdralhWbjktMVBIc0liQkdhUG81M2JDSGZSN0tIbC1HREhEcGx1ZW5kQmdldEJpY2dXMA?oc=5"
     },
     {
@@ -15063,12 +15063,12 @@
       ],
       "signals": {
         "recent_mentions": 3,
-        "creator_mentions": 3,
+        "creator_mentions": 2,
         "repeat_recommendations": 2
       },
-      "social_heat": 65,
+      "social_heat": 64,
       "social_updated": "2026-11-07",
-      "social_why": "最近30天公開旅遊文章提及3次，來自3個來源",
+      "social_why": "最近30天公開旅遊文章提及3次，來自2個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1pQ3FNS3Fyb3BMZ18yZWdXWkJYaW8xc0tJa2VSeWxVNUNUUFBLbVh4eGJmZ1ZxQVNtWWVfemRfeXgxMXV2?oc=5"
     },
     {
@@ -29021,9 +29021,9 @@
       "type": "活動",
       "src": "社群",
       "signals": {
-        "recent_mentions": 3,
-        "creator_mentions": 3,
-        "repeat_recommendations": 2
+        "recent_mentions": 2,
+        "creator_mentions": 2,
+        "repeat_recommendations": 1
       },
       "updated": "2026-11-07",
       "tags": [
@@ -29032,9 +29032,9 @@
       ],
       "place": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
       "q": "雲林縣 10009 虎尾鎮 10009030 632 立田徑場、農博公園",
-      "why": "最近30天公開旅遊文章提及3次，來自3個來源",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5UZVNKamxFQUtQQXVTUVNpVkV0R0JwZ3JGREcyVWotYkVacnZ6SXVrWElQQk5WajVweFUtTjNROWZ0b3ltd2tEa21SSmV6VUxPSnc?oc=5",
-      "heat": 65,
+      "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5SeUdVZHdfMG5TOEpZNkE2Q3kzckZhWUhPSzBOc29pN1M5RFhjUDc1QWg2aFJyNFk5SlFRdE5FUjNNNlJRcTdnTk0wQVItWU5DYTcwVDQ3TlVMRy1tQUZUdXZKRlhZQTk3b3dV?oc=5",
+      "heat": 62,
       "sources": [
         "社群"
       ]
