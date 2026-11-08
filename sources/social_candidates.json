@@ -397,7 +397,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "tags": [
       "戶外",
       "自然",
@@ -1273,11 +1273,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 3,
-      "creator_mentions": 2,
-      "repeat_recommendations": 2
+      "recent_mentions": 2,
+      "creator_mentions": 1,
+      "repeat_recommendations": 1
     },
-    "base_heat": 86,
+    "base_heat": 79,
     "updated": "2026-11-08",
     "tags": [
       "景點",
@@ -1285,7 +1285,32 @@
     ],
     "place": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
     "q": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
-    "why": "最近30天公開旅遊文章提及3次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1pQ3FNS3Fyb3BMZ18yZWdXWkJYaW8xc0tJa2VSeWxVNUNUUFBLbVh4eGJmZ1ZxQVNtWWVfemRfeXgxMXV2?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE56dm1MMTlCSGFNX0VHOXQxTXpnRUpKWGZyaVEyWVYtelNybkZmVjEyT3lxS0RhVlpqb2V2SVJBTnJ0ZkJfNEh6MDJscTZVNWFzQ1E?oc=5"
+  },
+  {
+    "id": "social-auto-factory-tainan-meiya",
+    "city": "台南",
+    "name": "美雅家具觀光工廠",
+    "e": "🔥",
+    "type": "觀光工廠",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-08",
+    "tags": [
+      "親子",
+      "產業",
+      "室內",
+      "網路熱門"
+    ],
+    "place": "白河區",
+    "q": "美雅家具觀光工廠",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5PYmNURGxhMzFsWUxyS3J2WjJqZnpjV0IzTVlCYnpDZjViWGdxdWRjTlpocnZTYzBuVzV1b0hnZmt2eGFBOWowRG50V190RWFsZUxGVnVndjNKOXNmaVhMczBsRzJzSTRCNXdWQUFkTmZvRVhqRlFHQldRUlcwSknSAWJBVV95cUxPMENaMHhPeUpJeklfQ2oyVDVoZzBWVUlyZTJDLURZekhQN0R0bGktMUcta2V6ckg0Z2JVUHVKWUE5cVZSTGVwVnBRWFU2N2RUbnJjWGswLUF2c2E0WGZJZmNmUQ?oc=5"
   }
 ]
