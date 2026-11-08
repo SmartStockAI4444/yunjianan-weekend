@@ -1039,7 +1039,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "tags": [
       "景點",
       "戶外",
@@ -1058,7 +1058,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "tags": [
       "景點",
       "戶外"
@@ -1076,7 +1076,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "tags": [
       "景點",
       "戶外"
@@ -1094,7 +1094,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "tags": [
       "景點",
       "戶外",
@@ -1113,7 +1113,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "tags": [
       "景點",
       "戶外"
@@ -1131,7 +1131,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "tags": [
       "景點",
       "戶外",
@@ -23614,2231 +23614,24 @@
     "url": ""
   },
   {
-    "id": "tainan-attraction-625",
-    "city": "台南",
-    "name": "牛稠內扇貝化石",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "左鎮區",
-    "q": "713 臺南市左鎮區 左鎮里(台20線往左鎮本部落)",
-    "why": "左鎮本部落牛稠內附近的地質屬於崎頂層，主要岩石有砂岩、頁岩和泥岩的互層。崎頂層下段以泥岩為主，中段則為泥岩夾數層厚層砂岩，上段以砂岩與頁岩的互層為主。在此地帶岩層找到的扇貝和牡蠣數量居多。\r\n牛稠內附近多數是半面山，一邊是斜坡(向西傾斜)，另一邊是接近垂直的山崖(在斜坡東邊)。因為泥岩與砂岩相互堆疊，惡地形很發達，地層",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/625"
-  },
-  {
-    "id": "tainan-attraction-626",
-    "city": "台南",
-    "name": "六甲水流東",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "六甲區",
-    "q": "734 臺南市六甲區王爺里水流東的入口處下坡道旁(174市道36K處)",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/626"
-  },
-  {
-    "id": "tainan-attraction-636",
-    "city": "台南",
-    "name": "關子嶺登山步道系統",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "白河區",
-    "q": "732 臺南市白河區",
-    "why": "共5條登山健行路線，大凍山線、九龍山線、雞籠山線、福龍山線以及檳榔山線。其中大凍山台南市第一高峰，也是台灣小百岳之一",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/636"
-  },
-  {
-    "id": "tainan-attraction-638",
-    "city": "台南",
-    "name": "北門溴提塔",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "北門區",
-    "q": "727 臺南市北門區北門里舊埕3號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/638"
-  },
-  {
-    "id": "tainan-attraction-850",
-    "city": "台南",
-    "name": "臺灣保生大帝官祀首廟「祀典興濟宮」",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "北區",
-    "q": "704 臺南市北區成功路86號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/850"
-  },
-  {
-    "id": "tainan-attraction-854",
-    "city": "台南",
-    "name": "臺疆祖廟「大觀音亭」",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "北區",
-    "q": "704 臺南市北區成功路86號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/854"
-  },
-  {
-    "id": "tainan-attraction-855",
-    "city": "台南",
-    "name": "綠色魔法學校",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "北區",
-    "q": "704 臺南市北區小東路25號 (力行校區)",
-    "why": "落成於2011年的綠色魔法學校是台灣第一座零碳建築，也可說是一棟融入現代諾亞方舟概念的綠建築",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/855"
-  },
-  {
-    "id": "tainan-attraction-870",
-    "city": "台南",
-    "name": "龍山漁港",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "七股區",
-    "q": "724 臺南市七股區龍山里龍山宮前",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/870"
-  },
-  {
-    "id": "tainan-attraction-972",
-    "city": "台南",
-    "name": "麻豆護濟宮",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "麻豆區",
-    "q": "721 臺南市麻豆區光復路106號",
-    "why": "護濟宮俗稱「媽祖宮」，是在清乾隆46年（1781）由居民倡建，奉祀媽祖。護濟宮創建後，香火鼎盛，在乾隆末期在附近形成市街，今廟東振興街即是古街道。清道光19年（1839），麻豆分出頂街與下街，即穀里街為頂街，在上帝廟四周；穀興街為下街，即護濟宮四周。",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/972"
-  },
-  {
-    "id": "tainan-attraction-1337",
-    "city": "台南",
-    "name": "永康探索教育公園",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "永康區",
-    "q": "710 臺南市永康區永康里永華路、永平街、永大五路、永興路街廓",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/1337"
-  },
-  {
-    "id": "tainan-attraction-1352",
-    "city": "台南",
-    "name": "十二佃神榕",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "安南區",
-    "q": "709 臺南市安南區公學路4段54巷43弄",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/1352"
-  },
-  {
-    "id": "tainan-attraction-1364",
-    "city": "台南",
-    "name": "歸仁文化中心",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "歸仁區",
-    "q": "711 臺南市歸仁區信義南路78號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/1364"
-  },
-  {
-    "id": "tainan-attraction-1373",
-    "city": "台南",
-    "name": "樹谷園區",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "新市區",
-    "q": "744 臺南市新市區中心路8號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/1373"
-  },
-  {
-    "id": "tainan-attraction-1374",
-    "city": "台南",
-    "name": "臺南市政府消防局防災教育館",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "安平區",
-    "q": "708 臺南市安平區永華路二段898號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/1374"
-  },
-  {
-    "id": "tainan-attraction-1380",
-    "city": "台南",
-    "name": "安平觀音亭",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "安平區",
-    "q": "708 臺南市安平區觀音街33號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/1380"
-  },
-  {
-    "id": "tainan-attraction-4279",
-    "city": "台南",
-    "name": "歸仁美學館",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "歸仁區",
-    "q": "711 臺南市歸仁區區中山路一段568號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/4279"
-  },
-  {
-    "id": "tainan-attraction-4318",
-    "city": "台南",
-    "name": "開隆宮",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "中西區",
-    "q": "700 臺南市中西區中山路79巷56號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/4318"
-  },
-  {
-    "id": "tainan-attraction-4320",
-    "city": "台南",
-    "name": "小南天福德祠",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "中西區",
-    "q": "700 臺南市中西區忠義路二段158巷27號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/4320"
-  },
-  {
-    "id": "tainan-attraction-4321",
-    "city": "台南",
-    "name": "開基臨水夫人媽廟",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "中西區",
-    "q": "700 臺南市中西區建業街16號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/4321"
-  },
-  {
-    "id": "tainan-attraction-4326",
-    "city": "台南",
-    "name": "大灣凌霄寶殿武龍宮",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "永康區",
-    "q": "710 臺南市永康區永大路二段103巷8號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/4326"
-  },
-  {
-    "id": "tainan-attraction-5504",
-    "city": "台南",
-    "name": "B.B.ART",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "中西區",
-    "q": "700 臺南市中西區民權路二段48號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5504"
-  },
-  {
-    "id": "tainan-attraction-5505",
-    "city": "台南",
-    "name": "小北觀光夜市",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "北區",
-    "q": "704 臺南市北區西門路四段101號",
-    "why": "與南部常見的露天市集式的夜市不同，小北觀光夜市都設在室內，是一個結合府城知名小吃、四季水果、冷飲冰品、服飾、鞋帽及各式精美百貨之綜合型商場。不受天候與車輛影響，行人能於此自在走逛，享受購物嚐美食的樂趣。",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5505"
-  },
-  {
-    "id": "tainan-attraction-5516",
-    "city": "台南",
-    "name": "安平定情碼頭-德陽艦園區",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "安平區",
-    "q": "708 臺南市安平區安億路115號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5516"
-  },
-  {
-    "id": "tainan-attraction-5520",
-    "city": "台南",
-    "name": "漁光島",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "安平區",
-    "q": "708 臺南市安平區漁光路118號",
-    "why": "漁光島，與熙來攘往的安平區僅隔一座漁光大橋相連，舊稱三鯤鯓。從前漁船在夜間點燈以吸引魚隻，遠望過去，漆黑的海上遍佈耀眼的漁光點點，因而得名「漁光島」，更有「漁火點點，半月沉江」的佳言美句流傳。遊客可漫步於沙灘，或赤腳踏入海浪，感受海風的親撫，沁涼的海水輕拍腳踝。",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5520"
-  },
-  {
-    "id": "tainan-attraction-5524",
-    "city": "台南",
-    "name": "台南運河遊船",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "安平區",
-    "q": "708 臺南市安平區安億路501號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5524"
-  },
-  {
-    "id": "tainan-attraction-5525",
-    "city": "台南",
-    "name": "木架山大草原",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "新化區",
-    "q": "712 臺南市新化區山脚里五甲勢",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5525"
-  },
-  {
-    "id": "tainan-attraction-5529",
-    "city": "台南",
-    "name": "熱蘭遮博物館",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "安平區",
-    "q": "708 臺南市安平區國勝路82號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5529"
-  },
-  {
-    "id": "tainan-attraction-5533",
-    "city": "台南",
-    "name": "臺南國家美術館（原臺南市美術館2館）",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "中西區",
-    "q": "700 臺南市中西區忠義路二段1號",
-    "why": "建築本體以鳳凰花為發想概念，五角形的外型象徵臺南的文化地標，垂直錯落堆疊的展示空間，結合大型碎形屋頂，構成南美館2館",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5533"
-  },
-  {
-    "id": "tainan-attraction-5534",
-    "city": "台南",
-    "name": "台江文化中心",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "安南區",
-    "q": "709 臺南市安南區安吉路一段205號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5534"
-  },
-  {
-    "id": "tainan-attraction-5535",
-    "city": "台南",
-    "name": "大目降文化園區",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "新化區",
-    "q": "712 臺南市新化區和平街45巷1號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5535"
-  },
-  {
-    "id": "tainan-attraction-5539",
-    "city": "台南",
-    "name": "蘇家古厝",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "新化區",
-    "q": "712 臺南市新化區中正路341巷31號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5539"
-  },
-  {
-    "id": "tainan-attraction-5544",
-    "city": "台南",
-    "name": "碧海碼頭",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "安平區",
-    "q": "708 臺南市安平區城平路1號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5544"
-  },
-  {
-    "id": "tainan-attraction-5548",
-    "city": "台南",
-    "name": "安平水景公園",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "安平區",
-    "q": "708 臺南市安平區安北路",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5548"
-  },
-  {
-    "id": "tainan-attraction-5552",
-    "city": "台南",
-    "name": "安平遊憩碼頭",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "安平區",
-    "q": "708 臺南市安平區運河路43號之1",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5552"
-  },
-  {
-    "id": "tainan-attraction-5556",
-    "city": "台南",
-    "name": "全美戲院",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "中西區",
-    "q": "700 臺南市中西區永福路二段187號",
-    "why": "落成於1950年的全美戲院，是台南老字號的二輪戲院，也是國際知名電影導演李安曾多次提及的戲院，孕育出李安的電影夢",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5556"
-  },
-  {
-    "id": "tainan-attraction-5560",
-    "city": "台南",
-    "name": "八吉境道署關帝廳",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "中西區",
-    "q": "700 臺南市中西區友愛街40巷11號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5560"
-  },
-  {
-    "id": "tainan-attraction-5564",
-    "city": "台南",
-    "name": "東市場",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "中西區",
-    "q": "700 臺南市中西區青年路164巷26號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5564"
-  },
-  {
-    "id": "tainan-attraction-5568",
-    "city": "台南",
-    "name": "鴨母寮市場",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "北區",
-    "q": "704 臺南市北區成功路148號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5568"
-  },
-  {
-    "id": "tainan-attraction-5572",
-    "city": "台南",
-    "name": "花園夜市",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "北區",
-    "q": "704 臺南市北區海安路三段533號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5572"
-  },
-  {
-    "id": "tainan-attraction-5576",
-    "city": "台南",
-    "name": "台南文創園區（原台灣總督府專賣局台南支局台南出張所）",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "東區",
-    "q": "701 臺南市東區北門路二段16號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5576"
-  },
-  {
-    "id": "tainan-attraction-5580",
-    "city": "台南",
-    "name": "東門巴克禮紀念教會",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "東區",
-    "q": "701 臺南市東區東門路一段187號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5580"
-  },
-  {
-    "id": "tainan-attraction-5584",
-    "city": "台南",
-    "name": "永康車站",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "永康區",
-    "q": "710 臺南市永康區中山路459號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5584"
-  },
-  {
-    "id": "tainan-attraction-5588",
-    "city": "台南",
-    "name": "永康社教中心",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "永康區",
-    "q": "710 臺南市永康區永大二路88號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5588"
-  },
-  {
-    "id": "tainan-attraction-5592",
-    "city": "台南",
-    "name": "鹽埕圖書館",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "南區",
-    "q": "702 臺南市南區新和東路51號",
-    "why": "以書本的堆疊形式象徵知識結晶體，呼應圖書館及在地特色。預計藏書10萬冊、視聽資料供民眾借閱，成為南區民眾的學習與生活中心",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5592"
-  },
-  {
-    "id": "tainan-attraction-5597",
-    "city": "台南",
-    "name": "新光社區-北寮老街彩繪村",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "關廟區",
-    "q": "718 臺南市關廟區新光街209號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5597"
-  },
-  {
-    "id": "tainan-attraction-5601",
-    "city": "台南",
-    "name": "關廟市場",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "關廟區",
-    "q": "718 臺南市關廟區忠孝街68號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5601"
-  },
-  {
-    "id": "tainan-attraction-5602",
-    "city": "台南",
-    "name": "三角湧",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "新化區",
-    "q": "712 臺南市新化區中正路與中山路交會處",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5602"
-  },
-  {
-    "id": "tainan-attraction-5603",
-    "city": "台南",
-    "name": "善化牛墟",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "善化區",
-    "q": "741 臺南市善化區南126區道102號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5603"
-  },
-  {
-    "id": "tainan-attraction-5604",
-    "city": "台南",
-    "name": "胡厝寮彩繪村",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "善化區",
-    "q": "741 臺南市善化區胡家里300號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5604"
-  },
-  {
-    "id": "tainan-attraction-5605",
-    "city": "台南",
-    "name": "迎曦湖",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "新市區",
-    "q": "744 臺南市新市區環東路一段",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5605"
-  },
-  {
-    "id": "tainan-attraction-5606",
-    "city": "台南",
-    "name": "加利利漂流木方舟教堂",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "玉井區",
-    "q": "714 臺南市玉井區三埔里83-1號",
-    "why": "加利利宣教中心的方舟教堂是以八八風災漂流木打造，造型深具意義。草坪上有耶穌牧羊與可愛動物塑像，彷彿諾亞方舟的故事場景",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5606"
-  },
-  {
-    "id": "tainan-attraction-5607",
-    "city": "台南",
-    "name": "白色教堂",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "玉井區",
-    "q": "714 臺南市玉井區層林1之7號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5607"
-  },
-  {
-    "id": "tainan-attraction-5608",
-    "city": "台南",
-    "name": "弎弌 和茗園「本田三一宅」",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "新營區",
-    "q": "730 臺南市新營區大同路39號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5608"
-  },
-  {
-    "id": "tainan-attraction-5609",
-    "city": "台南",
-    "name": "新營美術園區",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "新營區",
-    "q": "730 臺南市新營區公園路一段139號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5609"
-  },
-  {
-    "id": "tainan-attraction-5610",
-    "city": "台南",
-    "name": "吳晉淮音樂紀念館",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "柳營區",
-    "q": "736 臺南市柳營區界和路158號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5610"
-  },
-  {
-    "id": "tainan-attraction-5615",
-    "city": "台南",
-    "name": "老塘湖藝術村",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "學甲區",
-    "q": "726 臺南市學甲區美豐49之26號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5615"
-  },
-  {
-    "id": "tainan-attraction-5616",
-    "city": "台南",
-    "name": "青鯤鯓青山漁港",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "將軍區",
-    "q": "725 臺南市將軍區南26區道101號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5616"
-  },
-  {
-    "id": "tainan-attraction-5617",
-    "city": "台南",
-    "name": "藺草工坊",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "西港區",
-    "q": "723 臺南市西港區檨林里24號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5617"
-  },
-  {
-    "id": "tainan-attraction-5618",
-    "city": "台南",
-    "name": "西港市場",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "西港區",
-    "q": "723 臺南市西港區慶安路59巷17號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5618"
-  },
-  {
-    "id": "tainan-attraction-5619",
-    "city": "台南",
-    "name": "榖倉餐廳",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "西港區",
-    "q": "723 臺南市西港區營西里1號",
-    "why": "西港是台灣胡麻的主要產區，當地原作為儲存粗糠用的西港農會穀倉，現改為以胡麻料理為特色的穀倉餐廳",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5619"
-  },
-  {
-    "id": "tainan-attraction-5620",
-    "city": "台南",
-    "name": "長勝營區綠色隧道",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "新營區",
-    "q": "730 臺南市新營區建業路200號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5620"
-  },
-  {
-    "id": "tainan-attraction-5621",
-    "city": "台南",
-    "name": "新營文化中心",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "新營區",
-    "q": "730 臺南市新營區中正路23號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5621"
-  },
-  {
-    "id": "tainan-attraction-5622",
-    "city": "台南",
-    "name": "北門水晶教堂",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "北門區",
-    "q": "727 臺南市北門區舊埕200號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5622"
-  },
-  {
-    "id": "tainan-attraction-5623",
-    "city": "台南",
-    "name": "林鳳營落羽松",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "六甲區",
-    "q": "734 臺南市六甲區菁埔埤",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5623"
-  },
-  {
-    "id": "tainan-attraction-5624",
-    "city": "台南",
-    "name": "劉啟祥美術紀念館",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "柳營區",
-    "q": "736 臺南市柳營區中山西路三段112號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5624"
-  },
-  {
-    "id": "tainan-attraction-5625",
-    "city": "台南",
-    "name": "港濱歷史公園(大魚的祝福)",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "安平區",
-    "q": "708 臺南市安平區港濱歷史公園(安億橋邊安億路旁)",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5625"
-  },
-  {
-    "id": "tainan-attraction-5626",
-    "city": "台南",
-    "name": "善糖文化園區",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "善化區",
-    "q": "741 臺南市善化區溪美里262號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5626"
-  },
-  {
-    "id": "tainan-attraction-5628",
-    "city": "台南",
-    "name": "馬沙溝李聖宮",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "將軍區",
-    "q": "725 臺南市將軍區長沙里51號",
-    "why": "從過去的沿海漁村，到今天濱海遊憩區，馬沙溝今日或許是以3D彩繪藝術村、沙雕藝術季、音樂節等形象被認識，但若要深入了解馬沙溝，也可以從庒廟「李聖宮」著手。",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5628"
-  },
-  {
-    "id": "tainan-attraction-5629",
-    "city": "台南",
-    "name": "青鯤鯓扇形鹽田(生命之樹)",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "將軍區",
-    "q": "725 臺南市將軍區鯤鯓里",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5629"
-  },
-  {
-    "id": "tainan-attraction-5630",
-    "city": "台南",
-    "name": "石斛蘭瀑布",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "白河區",
-    "q": "732 臺南市白河區汴頭里11鄰洪溪州29之2號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5630"
-  },
-  {
-    "id": "tainan-attraction-5636",
-    "city": "台南",
-    "name": "大屯社區彩繪村",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "下營區",
-    "q": "735 臺南市下營區大屯里(大屯保安宮旁)",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5636"
-  },
-  {
-    "id": "tainan-attraction-5713",
-    "city": "台南",
-    "name": "臺南市原住民文物館",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "文化"
-    ],
-    "place": "永康區",
-    "q": "710 臺南市永康區永大二路88號B棟3F（永康社教中心-圖書館3樓）",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5713"
-  },
-  {
-    "id": "tainan-attraction-5764",
-    "city": "台南",
-    "name": "新營鐵道地景公園",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "新營區",
-    "q": "730 臺南市新營區新進路57號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5764"
-  },
-  {
-    "id": "tainan-attraction-5765",
-    "city": "台南",
-    "name": "金獅傳說",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "西港區",
-    "q": "723 臺南市西港區八份58號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5765"
-  },
-  {
-    "id": "tainan-attraction-5812",
-    "city": "台南",
-    "name": "台江國家公園管理處遊客中心暨行政中心園區",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "安南區",
-    "q": "709 臺南市安南區四草大道118號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5812"
-  },
-  {
-    "id": "tainan-attraction-5813",
-    "city": "台南",
-    "name": "川文山森林生態保育農場",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "官田區",
-    "q": "720 臺南市官田區拔林里75號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5813"
-  },
-  {
-    "id": "tainan-attraction-5815",
-    "city": "台南",
-    "name": "官田慈聖宮",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "官田區",
-    "q": "720 臺南市官田區官田里357號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5815"
-  },
-  {
-    "id": "tainan-attraction-5993",
-    "city": "台南",
-    "name": "關廟森林公園",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "關廟區",
-    "q": "718 臺南市關廟區台19甲線50K處",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/5993"
-  },
-  {
-    "id": "tainan-attraction-6001",
-    "city": "台南",
-    "name": "官田遊客中心",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "官田區",
-    "q": "720 臺南市官田區福田路99號",
-    "why": "吸睛的建築外觀結合西拉雅族意象，以西拉雅聚落建築為概念設計，以台南的「陽光」、嘉南平原的「風」及西拉雅族信仰阿立祖的「水」三大元素來進行設計，更沿用西拉雅傳統服飾顏色作為建築主色調，白色為主體、藍色及黃色為綴。更沿用西拉雅族聚落傳統，面朝水域來進行規劃，遠遠看去建築彷彿被山田環抱，增添寧靜的美感。",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6001"
-  },
-  {
-    "id": "tainan-attraction-6004",
-    "city": "台南",
-    "name": "飛虎將軍廟",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "安南區",
-    "q": "709 臺南市安南區大安街730-1號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6004"
-  },
-  {
-    "id": "tainan-attraction-6006",
-    "city": "台南",
-    "name": "大隆田生態文化園區",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "官田區",
-    "q": "720 臺南市官田區中山路一段(官田區公所對面)",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6006"
-  },
-  {
-    "id": "tainan-attraction-6007",
-    "city": "台南",
-    "name": "萬佛寺/小普陀山禪修公園",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "楠西區",
-    "q": "715 臺南市楠西區照興里興北 73-5 號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6007"
-  },
-  {
-    "id": "tainan-attraction-6008",
-    "city": "台南",
-    "name": "梅嶺神秘氣場露營區",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "楠西區",
-    "q": "715 臺南市楠西區灣丘里香蕉山51之6號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6008"
-  },
-  {
-    "id": "tainan-attraction-6049",
-    "city": "台南",
-    "name": "將軍溪自行車道",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "學甲區",
-    "q": "726 臺南市學甲區信義路10-8號(華宗橋)",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6049"
-  },
-  {
-    "id": "tainan-attraction-6054",
-    "city": "台南",
-    "name": "新化果菜市場",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "新化區",
-    "q": "712 臺南市新化區護東路335號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6054"
-  },
-  {
-    "id": "tainan-attraction-6063",
-    "city": "台南",
-    "name": "新市新港廟",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "新市區",
-    "q": "744 臺南市新市區大社里577號",
-    "why": "遠看是以鐵皮搭建的兩層樓私人祠廟，入口處有著聖旨牌和對聯，入內卻會發現和一般廟宇略有不同，供桌中央是三個插有植物的祀壺，牆上掛有雷令旗，寫著「新港社太上老君祖」、「藥王」、「三十六太師」，前方奉祀著檳榔和香菸，顯示了這裡的西拉雅信仰色彩。而在祀壺的前方，有著四尊神像一同被奉祀著。",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6063"
-  },
-  {
-    "id": "tainan-attraction-6064",
-    "city": "台南",
-    "name": "山上南洲開靈宮",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "山上區",
-    "q": "743 臺南市山上區南洲里158號",
-    "why": "位於山上區，南洲開靈宮可能是全臺唯一主祀阿勃勒的廟宇。為什麼會以樹為主神？這有一段「漢朝樹神」與「清朝樹神」的有趣連結。\r\n\r\n根據廟內石碑的介紹，樹德尊王生前為西漢的「杜冠明」將軍，為人忠心愛國。在王莽以藥酒毒死漢平帝，篡漢佔領江山後，杜將軍站在「忠臣不扶二主」的立場，入深山墾荒，養精蓄銳，預備著某一日要協助收復漢朝",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6064"
-  },
-  {
-    "id": "tainan-attraction-6065",
-    "city": "台南",
-    "name": "鍾厝清寧代天府",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "仁德區",
-    "q": "717 臺南市仁德區仁德區仁義里中清路82號",
-    "why": "位於仁德區鍾厝，當地人習慣稱廟宇為「鍾厝清寧代天府」。清康熙年間，鍾姓先民率十一姓氏（王黃吳葉林沈阮余楊陳蔡）先民一同自泉州同安渡海來臺，為了路途的平安，並自廈門草仔鞍奉迎吳府千歲神尊隨行庇護。來臺後，除了吳府千歲外，又自南鯤鯓代天府分香，迎來李府千歲、池府千歲、朱府千歲、范府千歲神尊（建廟時間不詳）。",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6065"
-  },
-  {
-    "id": "tainan-attraction-6067",
-    "city": "台南",
-    "name": "昆沙宮",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "中西區",
-    "q": "700 臺南市中西區府前路一段359巷2號",
-    "why": "現在的昆沙宮廟貌是1987年重修後落成，廟內的裝飾藝術是眾「師」雲集—施弘毅石雕、潘岳雄門神、蔡草如石板畫、何金龍剪黏，前三位是薪傳獎名師，而何金龍則是來自潮汕的著名剪黏司阜，由於在臺的時間不長，留下的作品不多，且分佈於南瀛地區為主，而昆沙宮所留的壁堵剪黏，則是府城城內唯一而且能近距離觀賞的作品。",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6067"
-  },
-  {
-    "id": "tainan-attraction-6068",
-    "city": "台南",
-    "name": "五帝廟",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "中西區",
-    "q": "700 臺南市中西區忠義路二段87號",
-    "why": "三川殿邀請藝師王武雄，以剪黏技法完成西拉雅族赤崁社、荷蘭、明清、日治四個時期的作品，讓廟口門面如同臺南歷史的縮影；走入廟內，牆面是府城潘氏家族三代的彩繪，名家汪崇楹書法、杜牧河父子泥塑神像，在前殿的屋頂還有對於府城近代發展有貢獻的人物剪黏。",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6068"
-  },
-  {
-    "id": "tainan-attraction-6069",
-    "city": "台南",
-    "name": "左鎮岡林教會",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "左鎮區",
-    "q": "713 臺南市左鎮區岡林里47號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6069"
-  },
-  {
-    "id": "tainan-attraction-6070",
-    "city": "台南",
-    "name": "厚德紫竹寺",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "南化區",
-    "q": "716 臺南市南化區東和108-1號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6070"
-  },
-  {
-    "id": "tainan-attraction-6073",
-    "city": "台南",
-    "name": "蘇厝滯洪池",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "安定區",
-    "q": "745 臺南市安定區蘇厝滯洪池",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6073"
-  },
-  {
-    "id": "tainan-attraction-6074",
-    "city": "台南",
-    "name": "港口(灣港)滯洪池",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "安定區",
-    "q": "745 臺南市安定區港口(灣港)滯洪池",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6074"
-  },
-  {
-    "id": "tainan-attraction-6076",
-    "city": "台南",
-    "name": "南陽聖堂修道院",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "南化區",
-    "q": "716 臺南市南化區北平里北平9-5號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6076"
-  },
-  {
-    "id": "tainan-attraction-6078",
-    "city": "台南",
-    "name": "龍鱗山步道",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "南化區",
-    "q": "716 臺南市南化區龍鱗山步道",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6078"
-  },
-  {
-    "id": "tainan-attraction-6079",
-    "city": "台南",
-    "name": "臺灣基督長老教會白水溪教會",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "白河區",
-    "q": "732 臺南市白河區仙草里白水溪26-4號",
-    "why": "甘為霖牧師撒下的信仰種子",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6079"
-  },
-  {
-    "id": "tainan-attraction-6080",
-    "city": "台南",
-    "name": "臺灣教會公報社",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "東區",
-    "q": "701 臺南市東區青年路334號",
-    "why": "臺灣首份報紙的發源地",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6080"
-  },
-  {
-    "id": "tainan-attraction-6081",
-    "city": "台南",
-    "name": "港濱歷史特色遊戲場",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "安平區",
-    "q": "708 臺南市安平區安億路",
-    "why": "港濱歷史特色遊戲場是一處以深海歷險趣為主題的公園，設有5~12歲各年齡層的遊樂設施、方便年長者散步的步道、遮陽處等，園區中共分四大主題區：大鯨魚土丘區、急流海溝區、珊瑚礁叢區及綠藻山洞區，依各區主題設置溜滑梯、盪鞦韆、彈跳床、雙軌滑溜索等好玩設施，夏季時段在噴霧區還會定時噴出水霧，讓孩子能夠盡情暢玩，享受在海洋探險的樂",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6081"
-  },
-  {
-    "id": "tainan-attraction-6082",
-    "city": "台南",
-    "name": "金砂里花旗木步道",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "西港區",
-    "q": "723 臺南市西港區南45-1鄉道",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6082"
-  },
-  {
-    "id": "tainan-attraction-6083",
-    "city": "台南",
-    "name": "夢之湖",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "六甲區",
-    "q": "734 臺南市六甲區夢之湖",
-    "why": "是《在水一方》等待的伊人、也是《今年的湖畔會很冷》的洛茵湖，位於烏山頭水庫集水區上緣的夢之湖，在1980年代因多部知名電影在此取景而紅極一時，巨星秦漢、林青霞、王祖賢等都曾在此留下不朽的身影。",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6083"
-  },
-  {
-    "id": "tainan-attraction-6084",
-    "city": "台南",
-    "name": "蝙蝠洞瀑布",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "楠西區",
-    "q": "715 臺南市楠西區",
-    "why": "蝙蝠洞瀑布藏於灣丘溪的支流之中，近南118茄拔路，距離梅嶺風景區僅10分鐘的車程，自停車場步行約200公尺的森林步道，只需5分鐘即可抵達這別有洞天的秘境。",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6084"
-  },
-  {
-    "id": "tainan-attraction-6085",
-    "city": "台南",
-    "name": "臺南市立馬術場",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "南區",
-    "q": "702 臺南市南區濱南路780號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6085"
-  },
-  {
-    "id": "tainan-attraction-6088",
-    "city": "台南",
-    "name": "學甲蜀葵花海",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "學甲區",
-    "q": "726 臺南市學甲區學甲光華社區",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6088"
-  },
-  {
-    "id": "tainan-attraction-6089",
-    "city": "台南",
-    "name": "二空新村",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "仁德區",
-    "q": "717 臺南市仁德區保仁路20號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6089"
-  },
-  {
-    "id": "tainan-attraction-6090",
-    "city": "台南",
-    "name": "新東舊時光—新營百年歷史縮影",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "新營區",
-    "q": "730 臺南市新營區大同路78巷13號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6090"
-  },
-  {
-    "id": "tainan-attraction-6103",
-    "city": "台南",
-    "name": "哈赫拿爾森林公園",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "南區",
-    "q": "702 臺南市南區體育路10號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6103"
-  },
-  {
-    "id": "tainan-attraction-6104",
-    "city": "台南",
-    "name": "春季賞花地圖(3~5月)",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "西港區",
-    "q": "723 臺南市西港區金砂里",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6104"
-  },
-  {
-    "id": "tainan-attraction-6105",
-    "city": "台南",
-    "name": "夏季賞花地圖(6~8月)",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "中西區",
-    "q": "700 臺南市中西區",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6105"
-  },
-  {
-    "id": "tainan-attraction-6106",
-    "city": "台南",
-    "name": "秋季賞花地圖(9~11月)",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "大內區",
-    "q": "742 臺南市大內區",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6106"
-  },
-  {
-    "id": "tainan-attraction-6107",
-    "city": "台南",
-    "name": "冬季賞花地圖(12~2月)",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "六甲區",
-    "q": "734 臺南市六甲區",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6107"
-  },
-  {
-    "id": "tainan-attraction-6108",
-    "city": "台南",
-    "name": "台南武聖夜市",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "中西區",
-    "q": "700 臺南市中西區武聖路 69巷及光賢街交界處廣場",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6108"
-  },
-  {
-    "id": "tainan-attraction-6109",
-    "city": "台南",
-    "name": "大東東夜市",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "東區",
-    "q": "701 臺南市東區林森路一段276號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6109"
-  },
-  {
-    "id": "tainan-attraction-6110",
-    "city": "台南",
-    "name": "大東夜市",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "東區",
-    "q": "701 臺南市東區林森路一段276號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6110"
-  },
-  {
-    "id": "tainan-attraction-6111",
-    "city": "台南",
-    "name": "臺南彩虹地景(中西區-海安路-友愛街口與中正路口之中軸地帶)",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "中西區",
-    "q": "700 臺南市中西區中西區-海安路-友愛街口與中正路口之中軸地帶",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6111"
-  },
-  {
-    "id": "tainan-attraction-6112",
-    "city": "台南",
-    "name": "晉祥橋",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "仁德區",
-    "q": "717 臺南市仁德區晉祥橋",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6112"
-  },
-  {
-    "id": "tainan-attraction-6114",
-    "city": "台南",
-    "name": "文鼎留聲博物館",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "中西區",
-    "q": "700 臺南市中西區民權路二段162號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6114"
-  },
-  {
-    "id": "tainan-attraction-6115",
-    "city": "台南",
-    "name": "龍崎182橋下公園",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "龍崎區",
-    "q": "719 臺南市龍崎區182橋下公園",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6115"
-  },
-  {
-    "id": "tainan-attraction-6116",
-    "city": "台南",
-    "name": "戲巢藝術館",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "東區",
-    "q": "701 臺南市東區林森路二段256號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6116"
-  },
-  {
-    "id": "tainan-attraction-6117",
-    "city": "台南",
-    "name": "Tabe札哈木樂原",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "文化"
-    ],
-    "place": "安平區",
-    "q": "708 臺南市安平區安億路472號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6117"
-  },
-  {
-    "id": "tainan-attraction-6126",
-    "city": "台南",
-    "name": "馬稠後關帝廳",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "白河區",
-    "q": "732 臺南市白河區草店130號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6126"
-  },
-  {
-    "id": "tainan-attraction-6127",
-    "city": "台南",
-    "name": "張慶芳紀念圖書館",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "中西區",
-    "q": "700 臺南市中西區新興路573號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6127"
-  },
-  {
-    "id": "tainan-attraction-6129",
-    "city": "台南",
-    "name": "白河山仔腳大山宮",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "白河區",
-    "q": "732 臺南市白河區廣蓮里53號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6129"
-  },
-  {
-    "id": "tainan-attraction-6130",
-    "city": "台南",
-    "name": "鹽水牛墟",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "鹽水區",
-    "q": "737 臺南市鹽水區水秀里土庫74號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6130"
-  },
-  {
-    "id": "tainan-attraction-6131",
-    "city": "台南",
-    "name": "台南柳營靶場",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "柳營區",
-    "q": "736 臺南市柳營區旭山4號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6131"
-  },
-  {
-    "id": "tainan-attraction-6132",
-    "city": "台南",
-    "name": "林安森林步道",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "東山區",
-    "q": "733 臺南市東山區林安里",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6132"
-  },
-  {
-    "id": "tainan-attraction-6133",
-    "city": "台南",
-    "name": "仁德滯洪池",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "戶外",
-      "自然"
-    ],
-    "place": "仁德區",
-    "q": "717 臺南市仁德區仁德滯洪池",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6133"
-  },
-  {
-    "id": "tainan-attraction-6134",
-    "city": "台南",
-    "name": "長短樹公園",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "後壁區",
-    "q": "731 臺南市後壁區長短樹47號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6134"
-  },
-  {
-    "id": "tainan-attraction-6135",
-    "city": "台南",
-    "name": "沙崙智慧綠能科學城",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "歸仁區",
-    "q": "711 臺南市歸仁區沙崙里高發二路360號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6135"
-  },
-  {
-    "id": "tainan-attraction-6136",
-    "city": "台南",
-    "name": "沙崙彩繪牆",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 70,
-    "updated": "2026-11-07",
-    "tags": [
-      "親子"
-    ],
-    "place": "歸仁區",
-    "q": "711 臺南市歸仁區沙崙里269號",
-    "why": "台南官方旅遊景點",
-    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6136"
+    "id": "chiayi-city-event-31fe409dc85f",
+    "city": "嘉義",
+    "name": "「高年級志工第二青春進行式onlineS3」看影片抽好禮！25份限定好禮等你來拿！",
+    "e": "🎉",
+    "type": "活動",
+    "src": "官方",
+    "base_heat": 86,
+    "updated": "2026-11-08",
+    "start": "2026-11-08",
+    "end": "2026-12-01",
+    "tags": [
+      "活動",
+      "嘉義市政府"
+    ],
+    "place": "嘉義市",
+    "q": "「高年級志工第二青春進行式onlineS3」看影片抽好禮！25份限定好禮等你來拿！",
+    "why": "錯過今年「高年級志工第二青春進行式」分享講座嗎？沒關係！精彩內容已經上架YouTube，讓您隨時隨地都能回顧講座精華，感受高年級志工的熱情與活力！本次分享內容包含蔡玉碧總幹事主講的「樂齡志工好幸福」，以及由高辰吉理事長主持的「第二青春志工力～高齡志工方案分享與服務再設計討論交流座談」，邀請大家一起透過影片，認識樂齡志工的服務經驗與創新能量。【S3精彩影片線上",
+    "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=958272"
   },
   {
     "id": "chiayi-city-event-7d9ddbea7ad3",
@@ -25848,7 +23641,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-11-01",
     "end": "2026-11-15",
     "tags": [
@@ -25868,7 +23661,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-11-29",
     "end": "2026-11-29",
     "tags": [
@@ -25888,7 +23681,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-11-27",
     "end": "2026-11-27",
     "tags": [
@@ -25908,7 +23701,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-11-22",
     "end": "2026-11-22",
     "tags": [
@@ -25928,7 +23721,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-11-21",
     "end": "2026-11-21",
     "tags": [
@@ -25948,7 +23741,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-11-15",
     "end": "2026-11-15",
     "tags": [
@@ -25961,66 +23754,6 @@
     "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=957096"
   },
   {
-    "id": "chiayi-city-event-001b51573366",
-    "city": "嘉義",
-    "name": "115年「玩稅加嘉遊」租稅育樂營活動歡迎報名！",
-    "e": "🎉",
-    "type": "活動",
-    "src": "官方",
-    "base_heat": 86,
-    "updated": "2026-11-07",
-    "start": "2026-11-08",
-    "end": "2026-11-08",
-    "tags": [
-      "活動",
-      "嘉義市政府"
-    ],
-    "place": "嘉義市",
-    "q": "115年「玩稅加嘉遊」租稅育樂營活動歡迎報名！",
-    "why": "主辦單位：嘉義市政府財政稅務局活動時間：115年11月8日（星期日）上午8時至下午4時30分活動地點：月桃故事館（嘉義市東區後湖里保忠一街359號）參加對象：本市國小3-6年級學生報名人數：30名學員，額滿為止；另候補10名，如有名額釋出依序遞補。報名時間：115年10月16日（星期五）上午8:30至10月30日（星期五）下午5:30。報名方式：採網路報名，",
-    "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=955601"
-  },
-  {
-    "id": "chiayi-city-event-47007dc07905",
-    "city": "嘉義",
-    "name": "嘉義市台語家庭註冊綁定，加碼送好禮！11/7、11/8限定！",
-    "e": "🎉",
-    "type": "活動",
-    "src": "官方",
-    "base_heat": 86,
-    "updated": "2026-11-07",
-    "start": "2026-11-07",
-    "end": "2026-11-08",
-    "tags": [
-      "活動",
-      "嘉義市政府"
-    ],
-    "place": "嘉義市",
-    "q": "嘉義市台語家庭註冊綁定，加碼送好禮！11/7、11/8限定！",
-    "why": "1/7、11/8限定！嘉義市台語家庭註冊綁定，加碼送好禮！11月7日至8日兩天下午2點至晚間8點，來到森林之歌〈桃城文學什光紀：珍藏．帶走一段什光─什光市集×跨域野餐×私心聚場〉─台語家庭推廣攤位，完成台語家庭註冊綁定，不僅有贈送嘉義市桃喜野餐墊，還有文化部加碼送的超可愛台語家庭娃娃吊飾！這個娃娃可不簡單！除了可以拿來擦拭手機螢幕，使用滑鼠時，還可以墊在手腕",
-    "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=958179"
-  },
-  {
-    "id": "chiayi-city-event-4d25026de8ff",
-    "city": "嘉義",
-    "name": "2026年11月份嬰幼兒閱讀推廣活動",
-    "e": "🎉",
-    "type": "活動",
-    "src": "官方",
-    "base_heat": 86,
-    "updated": "2026-11-07",
-    "start": "2026-11-07",
-    "end": "2026-11-08",
-    "tags": [
-      "活動",
-      "嘉義市政府"
-    ],
-    "place": "嘉義市",
-    "q": "2026年11月份嬰幼兒閱讀推廣活動",
-    "why": "115年11月份嬰幼兒閱讀推廣活動場次資訊如下：​𓂃𓂃𓂃✦娃娃故事坊｜最終場✦𓂃𓂃𓂃❍活動時間｜115/11/07(六)15:40-16:30❍活動地點｜森林之歌❍活動主題｜用童謠音樂與台語說在地故事❍活動帶領人｜林奕宏講師❍活動對象｜0-5歲嬰幼兒及其家長❍名額限制｜18組(一組為1嬰幼兒＋1-2家長)󠀠󠀠𓂃𓂃𓂃✦戶外悅讀趣｜第1場✦𓂃𓂃𓂃❍活動時間｜11",
-    "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=954839"
-  },
-  {
     "id": "chiayi-city-event-5162eac0c0e6",
     "city": "嘉義",
     "name": "《大自然，有影無影？》台語主題書展",
@@ -26028,7 +23761,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-11-01",
     "end": "2026-11-29",
     "tags": [
@@ -26048,7 +23781,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-11-01",
     "end": "2026-11-30",
     "tags": [
@@ -26068,7 +23801,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-10-24",
     "end": "2027-04-25",
     "tags": [
@@ -26088,7 +23821,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-10-22",
     "end": "2026-11-30",
     "tags": [
@@ -26108,7 +23841,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-10-12",
     "end": "2026-11-16",
     "tags": [
@@ -26128,7 +23861,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-10-09",
     "end": "2026-11-15",
     "tags": [
@@ -26148,7 +23881,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-10-02",
     "end": "2026-11-12",
     "tags": [
@@ -26168,7 +23901,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-08-01",
     "end": "2026-12-31",
     "tags": [
@@ -26188,7 +23921,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-07-21",
     "end": "2026-11-30",
     "tags": [
@@ -26208,7 +23941,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2026-01-01",
     "end": "2026-12-31",
     "tags": [
@@ -26228,7 +23961,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "2024-12-31",
     "end": "2026-12-31",
     "tags": [
@@ -26248,7 +23981,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "start": "",
     "end": "",
     "tags": [
@@ -26259,6 +23992,27 @@
     "q": "戲說圖畫書活動9月登場喔！",
     "why": "主辦單位：文化局辦理日期：2019.8.16至2019.12.8活動內容：💗戲說圖畫書💗活動9月登場喔！閱讀可以有不同的方式，用自己的語言來說演故事，共讀一本書，一同感受閱讀的樂趣與想像。文化局從9月起至12月，每月將推出1場\"戲說圖畫書\"活動，分別於世賢圖書館及文化局演講廳舉行，由小茶壺兒童劇團與圖書館林老師說故事成員擔綱演出，活動內容有：🌸第1場：日期：",
     "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=385243"
+  },
+  {
+    "id": "chiayi-city-news-1fa9ad99dbde",
+    "city": "嘉義",
+    "name": "「嘉市好旅行」亮相2026ITF台灣國際旅展嘉義市集結11家在地業者展現城市觀光魅力",
+    "e": "📣",
+    "type": "活動",
+    "src": "官方",
+    "base_heat": 93,
+    "updated": "2026-11-08",
+    "start": "2026-11-06",
+    "end": "2026-11-09",
+    "tags": [
+      "活動",
+      "嘉義市政府",
+      "市府快報"
+    ],
+    "place": "嘉義市",
+    "q": "「嘉市好旅行」亮相2026ITF台灣國際旅展嘉義市集結11家在地業者展現城市觀光魅力",
+    "why": "年度觀光盛事「2026ITF台灣國際旅展」於11月6至9日在臺北南港展覽館盛大登場。嘉義市政府以「嘉市好旅行」為主題，融合木都與文青設計打造特色展館。昨(7)日，嘉義市政府觀光新聞處長鄭雅文與金鐘主持人吳鳳現身推廣，攜手3家在地旅宿與8家「嘉市好店」業者，透過互動體驗與限定優惠，向全國民眾展現嘉義市豐富多元的觀光魅力。 為讓更多民眾深刻感受嘉義市的旅遊魅力，今年嘉義市館特別邀請首位榮獲金鐘獎的外籍",
+    "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=958314"
   },
   {
     "id": "chiayi-city-news-95324466d828",
@@ -26280,27 +24034,6 @@
     "q": "2026嘉市購物節創逾15億消費佳績雞肉飯也要排隊見證城市觀光熱度",
     "why": "嘉義市2026購物節發票登錄總金額達12.28億元，創歷年新高。今（6）日舉行頒獎典禮，由嘉義市長黃敏惠親自頒發價值139.9萬元的VOLVOEX30Core純電車、百萬現金、LV名牌包及光陽電動機車等大獎，與幸運得主共享喜悅。本屆購物節累計創造15.06億元消費成果，展現嘉義市熱絡的消費買氣與城市經濟活力。 黃敏惠市長表示，今年購物節發票登錄總金額達12.28億元，創歷年新高，加上嘉義市民專屬「",
     "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=958178"
-  },
-  {
-    "id": "chiayi-city-news-740be7c98b20",
-    "city": "嘉義",
-    "name": "嘉義市2026「教育新世代亮點成果展」暨專書發表11/7盛大登場！人氣知識型創作者文森說書現身三大教育主軸解鎖AI互動新體驗",
-    "e": "📣",
-    "type": "活動",
-    "src": "官方",
-    "base_heat": 93,
-    "updated": "2026-11-06",
-    "start": "2026-11-06",
-    "end": "2026-11-07",
-    "tags": [
-      "活動",
-      "嘉義市政府",
-      "市府快報"
-    ],
-    "place": "嘉義市",
-    "q": "嘉義市2026「教育新世代亮點成果展」暨專書發表11/7盛大登場！人氣知識型創作者文森說書現身三大教育主軸解鎖AI互動新體驗",
-    "why": "嘉義市2026「教育新世代亮點成果展」將於11月7日（星期六）上午9時30分至12時於嘉義市立棒球場前廣場盛大登場！本次活動以「教育新世代，Just愛教育無限可能」為核心，展現嘉義市近幾年以「身心健康、自我實現、永續教育」三大戰略發展主軸，持續推動多元教育、培育具備未來影響力的世界公民。活動當日除了規劃12大教育主題成果展示攤位，更邀請近百萬訂閱人氣知識型創作者「文森說書」親臨現場，分享全新教育專",
-    "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=958152"
   },
   {
     "id": "chiayi-city-news-f99cef75884d",
@@ -26574,26 +24307,5 @@
     "q": "嘉義市攜手嘉強電子實踐文化ESG臺德管樂共演讓國際資源回饋家鄉",
     "why": "讓企業的國際連結，成為城市共享的文化資源！嘉義在地企業嘉強電子MIPRO邀請德國MusikvereinLampoldshausen管樂團來臺，攜手嘉義市政府文化局共同舉辦「波西米亞音樂慶典」，昨(29)日晚間於中正公園登場，由在地嘉義市管樂團與德國樂團同臺共演。透過市府、在地企業及臺德樂團共同參與，將國際交流帶入城市公共空間，讓市民共享跨國合作的文化成果，實踐文化ESG與文化永續理念。 此次合作源",
     "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957385"
-  },
-  {
-    "id": "chiayi-city-news-5faf74338d62",
-    "city": "嘉義",
-    "name": "嘉義市迎接2027亞太管樂節黃敏惠市長接受承辦議定書",
-    "e": "📣",
-    "type": "活動",
-    "src": "官方",
-    "base_heat": 93,
-    "updated": "2026-10-29",
-    "start": "2026-01-01",
-    "end": "2026-12-19",
-    "tags": [
-      "活動",
-      "嘉義市政府",
-      "市府快報"
-    ],
-    "place": "嘉義市",
-    "q": "嘉義市迎接2027亞太管樂節黃敏惠市長接受承辦議定書",
-    "why": "嘉義市與亞太管樂協會交流情誼深厚，2027年再迎國際盛會！嘉義市長黃敏惠昨(28)日接見亞太管樂指導者協會(APBDA)榮譽理事長葉樹涵教授，並接受2027年亞太管樂盛會議定書，為明年國際交流活動揭開序幕。今年嘉義市國際管樂節更將迎來APBDA15個會員組織代表齊聚嘉義，並舉行會旗交接儀式，見證「管樂之都」持續深化國際交流的重要時刻。 黃敏惠市長表示，嘉義與管樂的緣分已超過30年，從校園教育到國際",
-    "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957276"
   }
 ]
