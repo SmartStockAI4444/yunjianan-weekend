@@ -681,11 +681,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 6,
-      "creator_mentions": 4,
-      "repeat_recommendations": 5
+      "recent_mentions": 4,
+      "creator_mentions": 2,
+      "repeat_recommendations": 3
     },
-    "base_heat": 95,
+    "base_heat": 90,
     "updated": "2026-11-09",
     "tags": [
       "景點",
@@ -693,7 +693,7 @@
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及6次，來自4個來源",
+    "why": "最近30天公開旅遊文章提及4次，來自2個來源",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA1c3BlYXB5eUo5RVYtNmRUREJBWGctV3JwM0FFQVhmOTFBZUI0bTBPOG0xN2xHZkZtMVgteWRnNkJSVTZnbHlFbHJEYURrVFhDYzdOR3VWWDdMakthTFhGOGVTQQ?oc=5"
   },
   {
@@ -1312,5 +1312,29 @@
     "q": "美雅家具觀光工廠",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8wQ1oweE95Skl6SV9DajJUNWhnMFZVSXJlMkMtRFl6SFA3RHRsaS0xRy1rZXpySDRnYlVQdUpZQTlxVlJMZXBWcFFYVTY3ZFRucmNYazAtQXZzYTRYZklmY2ZR0gFiQVVfeXFMTzBDWjB4T3lKSXpJX0NqMlQ1aGcwVlVJcmUyQy1EWXpIUDdEdGxpLTFHLWtlenJINGdiVVB1SllBOXFWUkxlcFZwUVhVNjdkVG5yY1hrMC1BdnNhNFhmSWZjZlE?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_376490000A_000290",
+    "city": "雲林",
+    "name": "膨鼠森林公園",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-09",
+    "tags": [
+      "景點",
+      "戶外",
+      "網路熱門"
+    ],
+    "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市大學路三段222-1號",
+    "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市大學路三段222-1號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1YS1Q1M054SElwYXVmbXV0eUowNXY4bGtZbDc1Ulo4ZDlDTG9wSVk1dU11VThuXzBBVDhuQWVDZWh1WTFUT2hXb0VlU1V2Vm1zVlhFUExLSTlmcGVSS21TaDBQM050RVhhNElN?oc=5"
   }
 ]
