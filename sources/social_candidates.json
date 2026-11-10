@@ -397,7 +397,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "tags": [
       "戶外",
       "自然",
@@ -681,11 +681,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
+      "recent_mentions": 3,
       "creator_mentions": 1,
-      "repeat_recommendations": 1
+      "repeat_recommendations": 2
     },
-    "base_heat": 79,
+    "base_heat": 83,
     "updated": "2026-11-10",
     "tags": [
       "景點",
@@ -693,8 +693,8 @@
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ndHRMRkp2eVhiZXUtMTNDSHhkMFVMblhIZDZFMFIwVmxSM0Q2WE9fajdralhWbjktMVBIc0liQkdhUG81M2JDSGZSN0tIbC1HREhEcGx1ZW5kQmdldEJpY2dXMA?oc=5"
+    "why": "最近30天公開旅遊文章提及3次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1saGhWaWRIdTd4MUJVeld5OXBLeVVYMHhjbTF4MldqY2xnY084RzFOOVczMDZIQmkxdlpXOUY0T0JPQVJzNDNOY1Z6UGt3bWY5OWR2dXRHNGtlQmVfcXF5SklNVQ?oc=5"
   },
   {
     "id": "social-auto-chiayi-city-event-df49699a6f46",
@@ -1274,10 +1274,10 @@
     "src": "社群",
     "signals": {
       "recent_mentions": 2,
-      "creator_mentions": 1,
+      "creator_mentions": 2,
       "repeat_recommendations": 1
     },
-    "base_heat": 79,
+    "base_heat": 82,
     "updated": "2026-11-10",
     "tags": [
       "景點",
@@ -1285,8 +1285,8 @@
     ],
     "place": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
     "q": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
-    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE56dm1MMTlCSGFNX0VHOXQxTXpnRUpKWGZyaVEyWVYtelNybkZmVjEyT3lxS0RhVlpqb2V2SVJBTnJ0ZkJfNEh6MDJscTZVNWFzQ1E?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5blRQN0FVeWhBMVVtTXY5cmZTMWZTczBmbW9TZ0FTUTQ5aWpfb1UwaUd6QXdneWptSjlpSkRDQXktTzd0VU9jVzVDMW9EeTlLRnhpcExR?oc=5"
   },
   {
     "id": "social-auto-factory-tainan-meiya",
@@ -1359,5 +1359,29 @@
     "q": "雲林縣 10009 斗六市 10009010 640 斗六市南聖路301號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5NU3pWTlp6dmowWWMxMzdvQkJmckJwQV9oQkNrNFRsWEZjMFFGMWlXUlpOOGxRU1VJdnhxRnYzVl95MkFlbW5GUDZZckxVMGpLZlU0c0pmSzJHZ1FxcldtTllWQnpqWDhkbnpF?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_395000000A_000470",
+    "city": "台南",
+    "name": "七股潟湖",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-10",
+    "tags": [
+      "景點",
+      "戶外",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 七股區 67000150 724 三股里",
+    "q": "臺南市 67000 七股區 67000150 724 三股里",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBvTnJRWFVycmF2dnIzLXpESkdnaFJWUjQ1RjRIM2MteWJiRFc1ckFjOFpuYzZJanBOdUZMN3BPT2dBVXBaSG1xYXZvbjQ?oc=5"
   }
 ]

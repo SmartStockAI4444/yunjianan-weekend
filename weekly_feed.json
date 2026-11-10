@@ -1,10 +1,10 @@
 {
   "version": "2026.11.10-auto",
   "updated": "2026-11-10",
-  "generated_at": "2026-11-10T07:39:29+00:00",
+  "generated_at": "2026-11-10T16:30:05+00:00",
   "stats": {
     "official": 1368,
-    "social": 52,
+    "social": 53,
     "expired_removed": 86,
     "total": 1383
   },
@@ -2627,10 +2627,11 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2024-05-28",
+      "updated": "2026-11-10",
       "tags": [
         "景點",
-        "戶外"
+        "戶外",
+        "網路熱門"
       ],
       "place": "臺南市 67000 七股區 67000150 724 於七股溪與將軍溪間，又稱內海仔",
       "q": "臺南市 67000 七股區 67000150 724 於七股溪與將軍溪間，又稱內海仔",
@@ -2638,8 +2639,18 @@
       "url": "",
       "heat": 72,
       "sources": [
-        "官方"
-      ]
+        "官方",
+        "社群"
+      ],
+      "signals": {
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
+      },
+      "social_heat": 58,
+      "social_updated": "2026-11-10",
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBvTnJRWFVycmF2dnIzLXpESkdnaFJWUjQ1RjRIM2MteWJiRFc1ckFjOFpuYzZJanBOdUZMN3BPT2dBVXBaSG1xYXZvbjQ?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_A15011100H_000248",
@@ -11415,14 +11426,14 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 2,
+        "recent_mentions": 3,
         "creator_mentions": 1,
-        "repeat_recommendations": 1
+        "repeat_recommendations": 2
       },
-      "social_heat": 60,
+      "social_heat": 62,
       "social_updated": "2026-11-10",
-      "social_why": "最近30天公開旅遊文章提及2次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1ndHRMRkp2eVhiZXUtMTNDSHhkMFVMblhIZDZFMFIwVmxSM0Q2WE9fajdralhWbjktMVBIc0liQkdhUG81M2JDSGZSN0tIbC1HREhEcGx1ZW5kQmdldEJpY2dXMA?oc=5"
+      "social_why": "最近30天公開旅遊文章提及3次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1saGhWaWRIdTd4MUJVeld5OXBLeVVYMHhjbTF4MldqY2xnY084RzFOOVczMDZIQmkxdlpXOUY0T0JPQVJzNDNOY1Z6UGt3bWY5OWR2dXRHNGtlQmVfcXF5SklNVQ?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_395000000A_000590",
@@ -14940,13 +14951,13 @@
       ],
       "signals": {
         "recent_mentions": 2,
-        "creator_mentions": 1,
+        "creator_mentions": 2,
         "repeat_recommendations": 1
       },
-      "social_heat": 60,
+      "social_heat": 62,
       "social_updated": "2026-11-10",
-      "social_why": "最近30天公開旅遊文章提及2次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE56dm1MMTlCSGFNX0VHOXQxTXpnRUpKWGZyaVEyWVYtelNybkZmVjEyT3lxS0RhVlpqb2V2SVJBTnJ0ZkJfNEh6MDJscTZVNWFzQ1E?oc=5"
+      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5blRQN0FVeWhBMVVtTXY5cmZTMWZTczBmbW9TZ0FTUTQ5aWpfb1UwaUd6QXdneWptSjlpSkRDQXktTzd0VU9jVzVDMW9EeTlLRnhpcExR?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_A15010800H_000187",
@@ -27895,7 +27906,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-11-09",
+      "social_updated": "2026-11-10",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE52NmpneFFSRDZUSm9BN3laUTJQNlRJRlBmQjY1U3hEWGNkZXpVeTZ6c2xPZzVQX3FtV3BZWmMzOFByNWJJanhHbEluN3RyM1lkWTFvbVNtMHMwdHpj?oc=5"
     },
