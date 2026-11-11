@@ -1,12 +1,12 @@
 {
   "version": "2026.11.11-auto",
   "updated": "2026-11-11",
-  "generated_at": "2026-11-11T06:58:29+00:00",
+  "generated_at": "2026-11-11T16:25:26+00:00",
   "stats": {
-    "official": 1365,
+    "official": 1367,
     "social": 53,
     "expired_removed": 86,
-    "total": 1380
+    "total": 1382
   },
   "items": [
     {
@@ -268,6 +268,30 @@
       "q": "萬聖不搗蛋！嘉市邀親子闖關學安全兒童發展篩檢守護成長",
       "why": "守護孩子成長，從安全照護與發展篩檢做起！嘉義市政府衛生局於115年10月31日（星期六）假世賢國小活動中心舉辦「萬聖不搗蛋嘉倍幸福安全大闖關」親子活動，結合嬰幼兒汽車安全座椅、睡眠安全、燒燙傷防制及預防跌墜落四大主題，透過趣味闖關、唱跳互動、魔術表演及故事時光，讓家長與孩子在歡樂中學習安全知識；並特邀戴德森醫療財團法人嘉義基督教醫院團隊提供兒童發展篩檢服務，讓幼兒照護更週全。嘉義市政府衛生局局長廖",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=957397",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "chiayi-city-news-ea42197d4cc6",
+      "city": "嘉義",
+      "name": "逾50年老館舍大變身！嘉市家教中心整建落成12月正式開放",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-11-11",
+      "start": "2026-11-11",
+      "end": "2026-11-21",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "逾50年老館舍大變身！嘉市家教中心整建落成12月正式開放",
+      "why": "建築承載城市記憶，也見證世代成長。嘉義市家庭教育中心館舍今（11）日落成，嘉義市長黃敏惠與歷任教育處長官郭添財參議、余坤龍前處長、林良慶前處長及洪文祥前督學等人共同見證歷史傳承。未來將持續整合專業資源、串聯社區網絡，打造市民共享、共學的家庭教育基地。新館舍預計11月底前試營運，12月初正式對外開放。 黃敏惠市長表示，家庭教育是每個人成長過程中最重要的基礎，家庭更是人生的第一所學校。嘉義市自家庭教育",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=958623",
       "heat": 93,
       "sources": [
         "官方"
@@ -911,23 +935,23 @@
       ]
     },
     {
-      "id": "chiayi-city-event-e4bddfc5a738",
+      "id": "chiayi-city-event-e2d72982d717",
       "city": "嘉義",
-      "name": "樂購捐發票公益傳愛零距離",
+      "name": "明華園戲劇總團《貓神》",
       "e": "🎉",
       "type": "活動",
       "src": "官方",
       "updated": "2026-11-11",
-      "start": "2026-10-02",
-      "end": "2026-11-12",
+      "start": "2026-11-14",
+      "end": "2026-11-14",
       "tags": [
         "活動",
         "嘉義市政府"
       ],
       "place": "嘉義市",
-      "q": "樂購捐發票公益傳愛零距離",
-      "why": "為鼓勵民眾消費使用雲端發票，並捐贈雲端發票支持公益團體，嘉義市政府財政稅務局於momo購物網週年慶期間(115/10/2至10/12)及雙11購物節(115/11/2至11/12)期間，在momo購物網舉辦「購物捐發票公益零距離」及「樂購雙11雲端傳愛心」活動(已登記額滿)，兩梯次共有2,000個名額。 該局說明，活動期間內於momo購物網消費，消費金額10",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=953674",
+      "q": "明華園戲劇總團《貓神》",
+      "why": "明華園戲劇總團《貓神》11/14（六）19:00演出團隊｜明華園戲劇總團演出地點｜嘉義舊燈會區－空軍市場票務訊息｜免費入場看似懸疑的包裝下，撼動人心的戲劇轉折、不為人知的驚人內幕，一步步走入「貓神」的謎樣世界……《貓神》是明華園首部懸疑題材創作，劇情深刻感人、戲劇張力十足，也是明華園創團80週年時推出的精彩劇作。本劇從五○年代內台戲汲取靈感，首度讓輝煌的內台",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=958619",
       "heat": 86,
       "sources": [
         "官方"
@@ -1479,7 +1503,7 @@
       "social_heat": 58,
       "social_updated": "2026-11-11",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8wQ1oweE95Skl6SV9DajJUNWhnMFZVSXJlMkMtRFl6SFA3RHRsaS0xRy1rZXpySDRnYlVQdUpZQTlxVlJMZXBWcFFYVTY3ZFRucmNYazAtQXZzYTRYZklmY2ZR0gFiQVVfeXFMTzBDWjB4T3lKSXpJX0NqMlQ1aGcwVlVJcmUyQy1EWXpIUDdEdGxpLTFHLWtlenJINGdiVVB1SllBOXFWUkxlcFZwUVhVNjdkVG5yY1hrMC1BdnNhNFhmSWZjZlE?oc=5"
+      "social_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5vM05PSVdabFQtd080U1d1NWNpVDFlS3VZbkxHcVl2VnJfa2g0QUhwa0NsTW5fb2hUaFd0M21Idy05WDI1MVROUXZlQUJnVE0xWWJydkl4WFUzek040gFiQVVfeXFMTzBDWjB4T3lKSXpJX0NqMlQ1aGcwVlVJcmUyQy1EWXpIUDdEdGxpLTFHLWtlenJINGdiVVB1SllBOXFWUkxlcFZwUVhVNjdkVG5yY1hrMC1BdnNhNFhmSWZjZlE?oc=5"
     },
     {
       "id": "factory-tainan-foot",
@@ -20444,7 +20468,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-10-29",
+      "updated": "2026-11-11",
       "tags": [
         "景點",
         "戶外",
@@ -20467,9 +20491,9 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-10-29",
+      "social_updated": "2026-11-11",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0yWE5WaWV2anh3ME82VmdlRFhwUjlvWmVyYzR3ZWo5MFlXZFpuYW95aFJCa1QzTWZNWXNjZ3ZWMzhPUWxVVTBqakV2bk02cGR5Smc5S2dHc0JPcWZ4dXpwcVJNSUlKcmNZb2xR?oc=5"
+      "social_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBkYmU3emdrVzRjT2F2YWtkWm0wd2hGNGNKUW5HVXcxSk5HN1VfbURBQzNmc2stR1d5N3o5RGpqaHE2dDBLR0FLcWpKcDVyN211WEYtRGoyQmREeG1CeTliUU83cEF3OUVQSEROSzJqQnc2dw?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_376490000A_000139",
@@ -25625,7 +25649,7 @@
       "social_heat": 58,
       "social_updated": "2026-11-11",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9SOGdLRjlVNmZ5OF9HZ3dmbFhYa1NHOWY5ZERSeE1KaUgtMnhmU0I1X2pvMjQxTXpnM2ZPWjY2bnV3M3JmbkZINlhRSHRtREpYZ1E?oc=5"
+      "social_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9zaGV5bGxMYS1TT25EUFNmWDA1OWNLMjlpblRuMmozQWtXM1M5Z2p1dDI4OHlCWXNyd2RRVkJfU3NnR2hrbFNWM3V0Q0hDcVIyd0E?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_376490000A_000001",
@@ -26523,6 +26547,26 @@
       "q": "716 臺南市南化區東和108-1號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6070",
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "tainan-attraction-6139",
+      "city": "台南",
+      "name": "原龍崎庄長官舍",
+      "e": "📍",
+      "type": "景點",
+      "src": "官方",
+      "updated": "2026-11-11",
+      "tags": [
+        "親子"
+      ],
+      "place": "龍崎區",
+      "q": "719 臺南市龍崎區崎頂里新市子216號",
+      "why": "台南官方旅遊景點",
+      "url": "https://www.twtainan.net/zh-tw/attractions/detail/6139",
       "heat": 70,
       "sources": [
         "官方"
@@ -27829,13 +27873,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 2,
-        "creator_mentions": 2,
-        "repeat_recommendations": 1
+        "recent_mentions": 3,
+        "creator_mentions": 3,
+        "repeat_recommendations": 2
       },
-      "social_heat": 62,
+      "social_heat": 65,
       "social_updated": "2026-11-11",
-      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
+      "social_why": "最近30天公開旅遊文章提及3次，來自3個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE52NmpneFFSRDZUSm9BN3laUTJQNlRJRlBmQjY1U3hEWGNkZXpVeTZ6c2xPZzVQX3FtV3BZWmMzOFByNWJJanhHbEluN3RyM1lkWTFvbVNtMHMwdHpj?oc=5"
     },
     {
@@ -29019,7 +29063,7 @@
         "creator_mentions": 1,
         "repeat_recommendations": 0
       },
-      "updated": "2026-10-29",
+      "updated": "2026-11-11",
       "tags": [
         "活動",
         "網路熱門"
@@ -29027,7 +29071,7 @@
       "place": "臺南市 67000 關廟區 67000290 718 大潭埤旺萊公園",
       "q": "臺南市 67000 關廟區 67000290 718 大潭埤旺萊公園",
       "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBuS01HRDlheWFKbWdkZGM1eXBqR3NYSmZfWFY5MS1BZ0R5RUM0bEpsaTJaRFk2U0d3dDZPcmoyNHdPVklxVG1ULXdCU0RpOU1ZSmplOGZneGdUTzZfRkFydWhHYw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1pd1E3Snh4U29oekRYSkhRN25vZ2d5RGJfWVFTS1dncGk2eWFwMGhvWE9iZ0wzSG95U1c4V2ZvcFBCaUt1N1VhQThIX3RaaHVLR0tWZHc1SXBic2c2VVppUHRzNXZNeVhx?oc=5",
       "heat": 58,
       "sources": [
         "社群"
