@@ -178,7 +178,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "tags": [
       "景點",
       "文化",
@@ -373,7 +373,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "tags": [
       "景點",
       "文化",
@@ -392,12 +392,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
-      "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 75,
-    "updated": "2026-11-10",
+    "base_heat": 82,
+    "updated": "2026-11-11",
     "tags": [
       "戶外",
       "自然",
@@ -405,7 +405,7 @@
     ],
     "place": "安平區",
     "q": "708 臺南市安平區漁光路118號",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE52NmpneFFSRDZUSm9BN3laUTJQNlRJRlBmQjY1U3hEWGNkZXpVeTZ6c2xPZzVQX3FtV3BZWmMzOFByNWJJanhHbEluN3RyM1lkWTFvbVNtMHMwdHpj?oc=5"
   },
   {
@@ -686,7 +686,7 @@
       "repeat_recommendations": 2
     },
     "base_heat": 83,
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "tags": [
       "景點",
       "網路熱門"
@@ -878,7 +878,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "tags": [
       "景點",
       "網路熱門"
@@ -927,7 +927,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 79,
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "tags": [
       "景點",
       "文化",
@@ -951,7 +951,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "tags": [
       "景點",
       "網路熱門"
@@ -1136,7 +1136,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "tags": [
       "景點",
       "戶外",
@@ -1185,7 +1185,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "tags": [
       "景點",
       "網路熱門"
@@ -1278,7 +1278,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "tags": [
       "景點",
       "網路熱門"
@@ -1296,12 +1296,12 @@
     "type": "觀光工廠",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
+      "recent_mentions": 1,
       "creator_mentions": 1,
-      "repeat_recommendations": 1
+      "repeat_recommendations": 0
     },
-    "base_heat": 79,
-    "updated": "2026-11-10",
+    "base_heat": 75,
+    "updated": "2026-11-11",
     "tags": [
       "親子",
       "產業",
@@ -1310,7 +1310,7 @@
     ],
     "place": "白河區",
     "q": "美雅家具觀光工廠",
-    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8wQ1oweE95Skl6SV9DajJUNWhnMFZVSXJlMkMtRFl6SFA3RHRsaS0xRy1rZXpySDRnYlVQdUpZQTlxVlJMZXBWcFFYVTY3ZFRucmNYazAtQXZzYTRYZklmY2ZR0gFiQVVfeXFMTzBDWjB4T3lKSXpJX0NqMlQ1aGcwVlVJcmUyQy1EWXpIUDdEdGxpLTFHLWtlenJINGdiVVB1SllBOXFWUkxlcFZwUVhVNjdkVG5yY1hrMC1BdnNhNFhmSWZjZlE?oc=5"
   },
   {
@@ -1326,7 +1326,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "tags": [
       "景點",
       "戶外",
@@ -1350,7 +1350,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "tags": [
       "景點",
       "網路熱門"
@@ -1373,7 +1373,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "tags": [
       "景點",
       "戶外",
