@@ -368,11 +368,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
-      "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 75,
+    "base_heat": 82,
     "updated": "2026-11-12",
     "tags": [
       "景點",
@@ -381,7 +381,7 @@
     ],
     "place": "臺南市 67000 仁德區 67000270 717 文華路二段66號",
     "q": "臺南市 67000 仁德區 67000270 717 文華路二段66號",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vODBCQXYtbzh1RDNBODl6RW5MT2lyOEN3eVY2My0wVENkekM5SXdWZk9GRnJ4N3BJVFFTdGJqdUZOZ1lHdzBFSFplWGQ1bnA0?oc=5"
   },
   {
@@ -406,7 +406,7 @@
     "place": "安平區",
     "q": "708 臺南市安平區漁光路118號",
     "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE95MjlQZFJCYmdKWTNWWTgxY0VwT1N1c25aOGlZWWYtYkpZemo5SF82Wl8xZ3ItaVRYMmFtSWN4RWtaS1pTaUdGekFMQTVDdkktbGJoRkZGbm1VbFVrY01aYzFLQQ?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE52NmpneFFSRDZUSm9BN3laUTJQNlRJRlBmQjY1U3hEWGNkZXpVeTZ6c2xPZzVQX3FtV3BZWmMzOFByNWJJanhHbEluN3RyM1lkWTFvbVNtMHMwdHpj?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_395000000A_000805",
@@ -1274,10 +1274,10 @@
     "src": "社群",
     "signals": {
       "recent_mentions": 2,
-      "creator_mentions": 1,
+      "creator_mentions": 2,
       "repeat_recommendations": 1
     },
-    "base_heat": 79,
+    "base_heat": 82,
     "updated": "2026-11-12",
     "tags": [
       "景點",
@@ -1285,8 +1285,8 @@
     ],
     "place": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
     "q": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
-    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWU10dURpQk9yYXFITG5naGFaUFItN0lMYzZUbmRTR2N1b092YUlwcXV1UV9EZ2JVSjRnUm9EYlpHRjNIVGluUVM3a0xuS19lUWYyLXRnM2RSYW1KeDhGWGRsaW9GQnpaZFhBRy1FZTRveWlyc2lBeEIxU0tDWjhOOFYySVpmeW1uOVdUWWxlNmYtek0?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5blRQN0FVeWhBMVVtTXY5cmZTMWZTczBmbW9TZ0FTUTQ5aWpfb1UwaUd6QXdneWptSjlpSkRDQXktTzd0VU9jVzVDMW9EeTlLRnhpcExR?oc=5"
   },
   {
     "id": "social-auto-factory-tainan-meiya",
