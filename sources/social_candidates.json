@@ -178,7 +178,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "tags": [
       "景點",
       "文化",
@@ -187,7 +187,7 @@
     "place": "雲林縣 10009 虎尾鎮 10009030 632 林森路一段498號",
     "q": "雲林縣 10009 虎尾鎮 10009030 632 林森路一段498號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9zaGV5bGxMYS1TT25EUFNmWDA1OWNLMjlpblRuMmozQWtXM1M5Z2p1dDI4OHlCWXNyd2RRVkJfU3NnR2hrbFNWM3V0Q0hDcVIyd0E?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5DX3JQMXcxSGNobWJaNU9wN1J6enJWTktPYUczS0FqREMyZWtVUmJHcnY3ellsOVRwRHl6aXpNMjROa2xJYkRqcVZmSjVaVXZ0M1HSAVJBVV95cUxOQ19yUDF3MUhjaG1iWjVPcDdSenpyVk5LT2FHM0tBakRDMmVrVVJiR3J2N3pZbDlUcER5eml6TTI0TmtsSWJEanFWZko1WlV2dDNR?oc=5"
   },
   {
     "id": "social-auto-tourism-event-Event_A15010000H_081715",
@@ -373,7 +373,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "tags": [
       "景點",
       "文化",
@@ -392,12 +392,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 3,
-      "creator_mentions": 3,
-      "repeat_recommendations": 2
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 89,
-    "updated": "2026-11-11",
+    "base_heat": 82,
+    "updated": "2026-11-12",
     "tags": [
       "戶外",
       "自然",
@@ -405,8 +405,8 @@
     ],
     "place": "安平區",
     "q": "708 臺南市安平區漁光路118號",
-    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
-    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE52NmpneFFSRDZUSm9BN3laUTJQNlRJRlBmQjY1U3hEWGNkZXpVeTZ6c2xPZzVQX3FtV3BZWmMzOFByNWJJanhHbEluN3RyM1lkWTFvbVNtMHMwdHpj?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE95MjlQZFJCYmdKWTNWWTgxY0VwT1N1c25aOGlZWWYtYkpZemo5SF82Wl8xZ3ItaVRYMmFtSWN4RWtaS1pTaUdGekFMQTVDdkktbGJoRkZGbm1VbFVrY01aYzFLQQ?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_395000000A_000805",
@@ -682,18 +682,18 @@
     "src": "社群",
     "signals": {
       "recent_mentions": 3,
-      "creator_mentions": 1,
+      "creator_mentions": 2,
       "repeat_recommendations": 2
     },
-    "base_heat": 83,
-    "updated": "2026-11-11",
+    "base_heat": 86,
+    "updated": "2026-11-12",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及3次，來自1個來源",
+    "why": "最近30天公開旅遊文章提及3次，來自2個來源",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1saGhWaWRIdTd4MUJVeld5OXBLeVVYMHhjbTF4MldqY2xnY084RzFOOVczMDZIQmkxdlpXOUY0T0JPQVJzNDNOY1Z6UGt3bWY5OWR2dXRHNGtlQmVfcXF5SklNVQ?oc=5"
   },
   {
@@ -878,7 +878,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "tags": [
       "景點",
       "網路熱門"
@@ -927,7 +927,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 79,
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "tags": [
       "景點",
       "文化",
@@ -951,7 +951,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "tags": [
       "景點",
       "網路熱門"
@@ -974,7 +974,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "tags": [
       "景點",
       "戶外",
@@ -1021,7 +1021,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "tags": [
       "活動",
       "網路熱門"
@@ -1136,7 +1136,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "tags": [
       "景點",
       "戶外",
@@ -1185,7 +1185,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "tags": [
       "景點",
       "網路熱門"
@@ -1274,19 +1274,19 @@
     "src": "社群",
     "signals": {
       "recent_mentions": 2,
-      "creator_mentions": 2,
+      "creator_mentions": 1,
       "repeat_recommendations": 1
     },
-    "base_heat": 82,
-    "updated": "2026-11-11",
+    "base_heat": 79,
+    "updated": "2026-11-12",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
     "q": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5blRQN0FVeWhBMVVtTXY5cmZTMWZTczBmbW9TZ0FTUTQ5aWpfb1UwaUd6QXdneWptSjlpSkRDQXktTzd0VU9jVzVDMW9EeTlLRnhpcExR?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWU10dURpQk9yYXFITG5naGFaUFItN0lMYzZUbmRTR2N1b092YUlwcXV1UV9EZ2JVSjRnUm9EYlpHRjNIVGluUVM3a0xuS19lUWYyLXRnM2RSYW1KeDhGWGRsaW9GQnpaZFhBRy1FZTRveWlyc2lBeEIxU0tDWjhOOFYySVpmeW1uOVdUWWxlNmYtek0?oc=5"
   },
   {
     "id": "social-auto-factory-tainan-meiya",
@@ -1301,7 +1301,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "tags": [
       "親子",
       "產業",
@@ -1373,7 +1373,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-11",
+    "updated": "2026-11-12",
     "tags": [
       "景點",
       "戶外",
