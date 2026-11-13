@@ -178,7 +178,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-12",
+    "updated": "2026-11-13",
     "tags": [
       "景點",
       "文化",
@@ -373,7 +373,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-12",
+    "updated": "2026-11-13",
     "tags": [
       "景點",
       "文化",
@@ -397,7 +397,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-12",
+    "updated": "2026-11-13",
     "tags": [
       "戶外",
       "自然",
@@ -406,7 +406,7 @@
     "place": "安平區",
     "q": "708 臺南市安平區漁光路118號",
     "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE52NmpneFFSRDZUSm9BN3laUTJQNlRJRlBmQjY1U3hEWGNkZXpVeTZ6c2xPZzVQX3FtV3BZWmMzOFByNWJJanhHbEluN3RyM1lkWTFvbVNtMHMwdHpj?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE95MjlQZFJCYmdKWTNWWTgxY0VwT1N1c25aOGlZWWYtYkpZemo5SF82Wl8xZ3ItaVRYMmFtSWN4RWtaS1pTaUdGekFMQTVDdkktbGJoRkZGbm1VbFVrY01aYzFLQQ?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_395000000A_000805",
@@ -686,7 +686,7 @@
       "repeat_recommendations": 2
     },
     "base_heat": 86,
-    "updated": "2026-11-12",
+    "updated": "2026-11-13",
     "tags": [
       "景點",
       "網路熱門"
@@ -878,7 +878,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-12",
+    "updated": "2026-11-13",
     "tags": [
       "景點",
       "網路熱門"
@@ -927,7 +927,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 79,
-    "updated": "2026-11-12",
+    "updated": "2026-11-13",
     "tags": [
       "景點",
       "文化",
@@ -951,7 +951,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-12",
+    "updated": "2026-11-13",
     "tags": [
       "景點",
       "網路熱門"
@@ -974,7 +974,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-12",
+    "updated": "2026-11-13",
     "tags": [
       "景點",
       "戶外",
@@ -1021,7 +1021,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-12",
+    "updated": "2026-11-13",
     "tags": [
       "活動",
       "網路熱門"
@@ -1136,7 +1136,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-12",
+    "updated": "2026-11-13",
     "tags": [
       "景點",
       "戶外",
@@ -1185,7 +1185,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-12",
+    "updated": "2026-11-13",
     "tags": [
       "景點",
       "網路熱門"
@@ -1278,7 +1278,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-12",
+    "updated": "2026-11-13",
     "tags": [
       "景點",
       "網路熱門"
@@ -1383,5 +1383,28 @@
     "q": "臺南市 67000 七股區 67000150 724 三股里",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBvTnJRWFVycmF2dnIzLXpESkdnaFJWUjQ1RjRIM2MteWJiRFc1ckFjOFpuYzZJanBOdUZMN3BPT2dBVXBaSG1xYXZvbjQ?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_376490000A_000006",
+    "city": "雲林",
+    "name": "太平老街",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-13",
+    "tags": [
+      "景點",
+      "網路熱門"
+    ],
+    "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市太平路",
+    "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市太平路",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5pN3gzODF5Z214U1M1SWNvaThSYm5FeVVLZXZUNWhpOTk0N2FydDFyOFhRUUpSYkVGN2JnU29vV3JQNk1PanhtR3RXNDNvUlEy?oc=5"
   }
 ]
