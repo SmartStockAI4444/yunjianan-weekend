@@ -373,7 +373,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-13",
+    "updated": "2026-11-14",
     "tags": [
       "景點",
       "文化",
@@ -397,7 +397,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-13",
+    "updated": "2026-11-14",
     "tags": [
       "戶外",
       "自然",
@@ -681,19 +681,19 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 4,
-      "creator_mentions": 3,
-      "repeat_recommendations": 3
+      "recent_mentions": 3,
+      "creator_mentions": 2,
+      "repeat_recommendations": 2
     },
-    "base_heat": 93,
-    "updated": "2026-11-13",
+    "base_heat": 86,
+    "updated": "2026-11-14",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及4次，來自3個來源",
+    "why": "最近30天公開旅遊文章提及3次，來自2個來源",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1saGhWaWRIdTd4MUJVeld5OXBLeVVYMHhjbTF4MldqY2xnY084RzFOOVczMDZIQmkxdlpXOUY0T0JPQVJzNDNOY1Z6UGt3bWY5OWR2dXRHNGtlQmVfcXF5SklNVQ?oc=5"
   },
   {
@@ -878,7 +878,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-13",
+    "updated": "2026-11-14",
     "tags": [
       "景點",
       "網路熱門"
@@ -927,7 +927,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 79,
-    "updated": "2026-11-13",
+    "updated": "2026-11-14",
     "tags": [
       "景點",
       "文化",
@@ -951,7 +951,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-13",
+    "updated": "2026-11-14",
     "tags": [
       "景點",
       "網路熱門"
@@ -974,7 +974,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-13",
+    "updated": "2026-11-14",
     "tags": [
       "景點",
       "戶外",
@@ -1021,7 +1021,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-13",
+    "updated": "2026-11-14",
     "tags": [
       "活動",
       "網路熱門"
@@ -1136,7 +1136,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-13",
+    "updated": "2026-11-14",
     "tags": [
       "景點",
       "戶外",
@@ -1185,7 +1185,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-13",
+    "updated": "2026-11-14",
     "tags": [
       "景點",
       "網路熱門"
@@ -1278,7 +1278,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-13",
+    "updated": "2026-11-14",
     "tags": [
       "景點",
       "網路熱門"
@@ -1301,7 +1301,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-12",
+    "updated": "2026-11-14",
     "tags": [
       "親子",
       "產業",
@@ -1397,7 +1397,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-13",
+    "updated": "2026-11-14",
     "tags": [
       "景點",
       "網路熱門"
