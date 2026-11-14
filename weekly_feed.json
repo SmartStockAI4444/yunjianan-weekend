@@ -1,12 +1,12 @@
 {
   "version": "2026.11.14-auto",
   "updated": "2026-11-14",
-  "generated_at": "2026-11-14T06:55:01+00:00",
+  "generated_at": "2026-11-14T15:14:14+00:00",
   "stats": {
     "official": 1369,
-    "social": 54,
+    "social": 55,
     "expired_removed": 84,
-    "total": 1384
+    "total": 1385
   },
   "items": [
     {
@@ -82,30 +82,6 @@
       ]
     },
     {
-      "id": "chiayi-city-news-d4a6b667d1dc",
-      "city": "嘉義",
-      "name": "千件文學作品寫下城市故事！嘉市桃城文學獎得獎名單揭曉32件佳作脫穎而出",
-      "e": "📣",
-      "type": "活動",
-      "src": "官方",
-      "updated": "2026-11-14",
-      "start": "2026-11-14",
-      "end": "2026-11-24",
-      "tags": [
-        "活動",
-        "嘉義市政府",
-        "市府快報"
-      ],
-      "place": "嘉義市",
-      "q": "千件文學作品寫下城市故事！嘉市桃城文學獎得獎名單揭曉32件佳作脫穎而出",
-      "why": "嘉義年度文學盛事「第17屆桃城文學獎」頒獎典禮今（14）日舉行，本屆共收到1,505件投稿，再創歷年新高，投稿來源遍及全臺及日本、澳洲、新加坡、香港等地，經18位評審評選，選出32件得獎作品。今年以「嘉藏私心」為主題，邀請創作者從個人記憶與生活經驗出發，書寫與土地及城市的連結。嘉義市副市長陳永豐代表黃敏惠市長出席典禮，與文學界人士及得獎者共同見證創作成果。 陳永豐副市長表示，桃城文學獎走過17屆，",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=958918",
-      "heat": 93,
-      "sources": [
-        "官方"
-      ]
-    },
-    {
       "id": "chiayi-city-news-451fffb52b50",
       "city": "嘉義",
       "name": "嘉義市2026家將藝術節踩街將登場！交管資訊公開",
@@ -148,6 +124,30 @@
       "q": "嘉義市民族國小勇奪「節約能源創意七十二變－小劇場創作決賽」全國第三名",
       "why": "嘉義市民族國小於昨(8)日參加經濟部能源署舉辦的「115年度國民中小學節約能源創意七十二變－小劇場創作競賽」決賽，在全國眾多參賽隊伍中脫穎而出，以作品《九陽真經》再度榮獲全國第三名的佳績，表現亮眼。 黃敏惠市長表示，面對能源資源的有限性，更需要從教育扎根，落實「經濟要發展、社會要進步、環境要保護」的理念，培養下一代珍惜能源、愛護環境的觀念。市府期望透過能源教育，讓孩子們從生活中實踐節能減碳，成為守",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=958342",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "chiayi-city-news-2a31462c5425",
+      "city": "嘉義",
+      "name": "嘉義市深耕文學人才培育從新秀走向跨域創作第17屆桃城文學獎1,505件投稿創新高",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-11-14",
+      "start": "2026-11-14",
+      "end": "2026-11-24",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "嘉義市深耕文學人才培育從新秀走向跨域創作第17屆桃城文學獎1,505件投稿創新高",
+      "why": "嘉義年度文學盛事「第17屆桃城文學獎」頒獎典禮今（14）日舉行，本屆共收到1,505件投稿，再創歷年新高，投稿來源遍及全臺及日本、澳洲、新加坡、香港等地，經18位評審評選，選出32件得獎作品。今年以「嘉藏私心」為主題，邀請創作者從個人記憶與生活經驗出發，書寫與土地及城市的連結。嘉義市副市長陳永豐代表黃敏惠市長出席典禮，與文學界人士及得獎者共同見證創作成果。 陳永豐副市長表示，桃城文學獎走過17屆，",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=958918",
       "heat": 93,
       "sources": [
         "官方"
@@ -11421,13 +11421,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 3,
-        "creator_mentions": 2,
-        "repeat_recommendations": 2
+        "recent_mentions": 2,
+        "creator_mentions": 1,
+        "repeat_recommendations": 1
       },
-      "social_heat": 64,
+      "social_heat": 60,
       "social_updated": "2026-11-14",
-      "social_why": "最近30天公開旅遊文章提及3次，來自2個來源",
+      "social_why": "最近30天公開旅遊文章提及2次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1saGhWaWRIdTd4MUJVeld5OXBLeVVYMHhjbTF4MldqY2xnY084RzFOOVczMDZIQmkxdlpXOUY0T0JPQVJzNDNOY1Z6UGt3bWY5OWR2dXRHNGtlQmVfcXF5SklNVQ?oc=5"
     },
     {
@@ -27927,13 +27927,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 2,
-        "creator_mentions": 2,
-        "repeat_recommendations": 1
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
       },
-      "social_heat": 62,
+      "social_heat": 58,
       "social_updated": "2026-11-14",
-      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE95MjlQZFJCYmdKWTNWWTgxY0VwT1N1c25aOGlZWWYtYkpZemo5SF82Wl8xZ3ItaVRYMmFtSWN4RWtaS1pTaUdGekFMQTVDdkktbGJoRkZGbm1VbFVrY01aYzFLQQ?oc=5"
     },
     {
@@ -29290,6 +29290,33 @@
       "q": "大同技術學院 嘉義市 諸羅搖滾",
       "why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFA2NEdiM1NacWI2TDhtWXN5ZzJQOGNRVXYyNHozR25Zc2JGZTFFMV9XSFFJUkFKZDQ1SXVOekloQ0h3Q183d3F4bURoZnTSAVJBVV95cUxOc1N0U3JlUjFzTEQ5SVV0bTN1ZmdhSlRBazhSYjBHbzFQS2ExaUlpSEVqTXBUNFFramFmZTd6R2JXVk5zcHRmVWk3MXhxUnFYdVVn?oc=5",
+      "heat": 58,
+      "sources": [
+        "社群"
+      ]
+    },
+    {
+      "id": "social-auto-chiayi-city-event-bcdc1ce6eebe",
+      "city": "嘉義",
+      "name": "「2026家將藝術節：裝將ē囡仔」",
+      "e": "🔥",
+      "type": "活動",
+      "src": "社群",
+      "signals": {
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
+      },
+      "updated": "2026-11-14",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "網路熱門"
+      ],
+      "place": "嘉義市",
+      "q": "「2026家將藝術節：裝將ē囡仔」",
+      "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9qX3phb0E3ekhvdk5qc3hTT2dGR1Z5aFZDVmNUcGhXa1Bvc3prR2J4S2hmWk5vYThGVFhiODM3THotTmlpSGNCM3JJTjZWZkxrSXpqeXprd1pZcncwaS00S3BpSnhOV0N4bVVF?oc=5",
       "heat": 58,
       "sources": [
         "社群"

@@ -392,11 +392,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
     },
-    "base_heat": 82,
+    "base_heat": 75,
     "updated": "2026-11-14",
     "tags": [
       "戶外",
@@ -405,7 +405,7 @@
     ],
     "place": "安平區",
     "q": "708 臺南市安平區漁光路118號",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE95MjlQZFJCYmdKWTNWWTgxY0VwT1N1c25aOGlZWWYtYkpZemo5SF82Wl8xZ3ItaVRYMmFtSWN4RWtaS1pTaUdGekFMQTVDdkktbGJoRkZGbm1VbFVrY01aYzFLQQ?oc=5"
   },
   {
@@ -681,11 +681,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 3,
-      "creator_mentions": 2,
-      "repeat_recommendations": 2
+      "recent_mentions": 2,
+      "creator_mentions": 1,
+      "repeat_recommendations": 1
     },
-    "base_heat": 86,
+    "base_heat": 79,
     "updated": "2026-11-14",
     "tags": [
       "景點",
@@ -693,7 +693,7 @@
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及3次，來自2個來源",
+    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1saGhWaWRIdTd4MUJVeld5OXBLeVVYMHhjbTF4MldqY2xnY084RzFOOVczMDZIQmkxdlpXOUY0T0JPQVJzNDNOY1Z6UGt3bWY5OWR2dXRHNGtlQmVfcXF5SklNVQ?oc=5"
   },
   {
@@ -1406,5 +1406,29 @@
     "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市太平路",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5pN3gzODF5Z214U1M1SWNvaThSYm5FeVVLZXZUNWhpOTk0N2FydDFyOFhRUUpSYkVGN2JnU29vV3JQNk1PanhtR3RXNDNvUlEy?oc=5"
+  },
+  {
+    "id": "social-auto-chiayi-city-event-bcdc1ce6eebe",
+    "city": "嘉義",
+    "name": "「2026家將藝術節：裝將ē囡仔」",
+    "e": "🔥",
+    "type": "活動",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-14",
+    "tags": [
+      "活動",
+      "嘉義市政府",
+      "網路熱門"
+    ],
+    "place": "嘉義市",
+    "q": "「2026家將藝術節：裝將ē囡仔」",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9qX3phb0E3ekhvdk5qc3hTT2dGR1Z5aFZDVmNUcGhXa1Bvc3prR2J4S2hmWk5vYThGVFhiODM3THotTmlpSGNCM3JJTjZWZkxrSXpqeXprd1pZcncwaS00S3BpSnhOV0N4bVVF?oc=5"
   }
 ]
