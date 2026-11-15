@@ -922,11 +922,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
+      "recent_mentions": 1,
       "creator_mentions": 1,
-      "repeat_recommendations": 1
+      "repeat_recommendations": 0
     },
-    "base_heat": 79,
+    "base_heat": 75,
     "updated": "2026-11-15",
     "tags": [
       "景點",
@@ -935,7 +935,7 @@
     ],
     "place": "臺南市 67000 中西區 67000370 700 民族路二段212號",
     "q": "臺南市 67000 中西區 67000370 700 民族路二段212號",
-    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBtV2VPZVlzQXQtQS1uZzJZaGpkazBHSlItSGFZOTRlQkE4SWlvem90b0pHeUVocmp2WXBGR2tUNjh5NkQtSWNWdW85TWN6Q1Nl?oc=5"
   },
   {
