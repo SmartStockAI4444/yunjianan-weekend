@@ -373,7 +373,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "tags": [
       "景點",
       "文化",
@@ -392,12 +392,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
-      "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 75,
-    "updated": "2026-11-14",
+    "base_heat": 82,
+    "updated": "2026-11-15",
     "tags": [
       "戶外",
       "自然",
@@ -405,7 +405,7 @@
     ],
     "place": "安平區",
     "q": "708 臺南市安平區漁光路118號",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE95MjlQZFJCYmdKWTNWWTgxY0VwT1N1c25aOGlZWWYtYkpZemo5SF82Wl8xZ3ItaVRYMmFtSWN4RWtaS1pTaUdGekFMQTVDdkktbGJoRkZGbm1VbFVrY01aYzFLQQ?oc=5"
   },
   {
@@ -686,7 +686,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 79,
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "tags": [
       "景點",
       "網路熱門"
@@ -878,7 +878,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "tags": [
       "景點",
       "網路熱門"
@@ -927,7 +927,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 79,
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "tags": [
       "景點",
       "文化",
@@ -951,7 +951,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "tags": [
       "景點",
       "網路熱門"
@@ -974,7 +974,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "tags": [
       "景點",
       "戶外",
@@ -1021,7 +1021,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "tags": [
       "活動",
       "網路熱門"
@@ -1136,7 +1136,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "tags": [
       "景點",
       "戶外",
@@ -1185,7 +1185,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "tags": [
       "景點",
       "網路熱門"
@@ -1278,7 +1278,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "tags": [
       "景點",
       "網路熱門"
@@ -1301,7 +1301,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "tags": [
       "親子",
       "產業",
@@ -1397,7 +1397,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "tags": [
       "景點",
       "網路熱門"
@@ -1420,7 +1420,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "tags": [
       "活動",
       "嘉義市政府",
@@ -1430,5 +1430,28 @@
     "q": "「2026家將藝術節：裝將ē囡仔」",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9qX3phb0E3ekhvdk5qc3hTT2dGR1Z5aFZDVmNUcGhXa1Bvc3prR2J4S2hmWk5vYThGVFhiODM3THotTmlpSGNCM3JJTjZWZkxrSXpqeXprd1pZcncwaS00S3BpSnhOV0N4bVVF?oc=5"
+  },
+  {
+    "id": "social-auto-tainan-attraction-5572",
+    "city": "台南",
+    "name": "花園夜市",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-15",
+    "tags": [
+      "親子",
+      "網路熱門"
+    ],
+    "place": "北區",
+    "q": "704 臺南市北區海安路三段533號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5EWjNNY2U3ekMwQWI5eWdsRHV3cUNhdUFGQ3o1NjBQRkw0WW5iUllTWVY2ajJqTTRlbmVXN0U3cWJ5YzU4Y05GYjRvRE02ZzJTRWF4UWxaYXVXSHRQVW9sMGJhMl_SAWpBVV95cUxQY1N4LWNyNzlQc2dUMDBxYW9lOEVxVDJmaXlsRk9DZmlWX0JGSVo3dG1BbEdEYzFIV09VNkhHX1dxMUxzQ3ZkU3NUQmpWOEpGOWZvUXB4WElFa0h5cVlRVTRnRkwzVVV3ZTB3?oc=5"
   }
 ]
