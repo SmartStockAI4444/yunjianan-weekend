@@ -1,38 +1,14 @@
 {
   "version": "2026.11.16-auto",
   "updated": "2026-11-16",
-  "generated_at": "2026-11-16T07:08:39+00:00",
+  "generated_at": "2026-11-16T18:44:28+00:00",
   "stats": {
-    "official": 1362,
+    "official": 1361,
     "social": 56,
     "expired_removed": 84,
-    "total": 1378
+    "total": 1377
   },
   "items": [
-    {
-      "id": "chiayi-city-news-95324466d828",
-      "city": "嘉義",
-      "name": "2026嘉市購物節創逾15億消費佳績雞肉飯也要排隊見證城市觀光熱度",
-      "e": "📣",
-      "type": "活動",
-      "src": "官方",
-      "updated": "2026-11-06",
-      "start": "2026-11-06",
-      "end": "2026-11-16",
-      "tags": [
-        "活動",
-        "嘉義市政府",
-        "市府快報"
-      ],
-      "place": "嘉義市",
-      "q": "2026嘉市購物節創逾15億消費佳績雞肉飯也要排隊見證城市觀光熱度",
-      "why": "嘉義市2026購物節發票登錄總金額達12.28億元，創歷年新高。今（6）日舉行頒獎典禮，由嘉義市長黃敏惠親自頒發價值139.9萬元的VOLVOEX30Core純電車、百萬現金、LV名牌包及光陽電動機車等大獎，與幸運得主共享喜悅。本屆購物節累計創造15.06億元消費成果，展現嘉義市熱絡的消費買氣與城市經濟活力。 黃敏惠市長表示，今年購物節發票登錄總金額達12.28億元，創歷年新高，加上嘉義市民專屬「",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=958178",
-      "heat": 93,
-      "sources": [
-        "官方"
-      ]
-    },
     {
       "id": "chiayi-city-news-7029c0ff47a0",
       "city": "嘉義",
@@ -5671,7 +5647,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-15",
+      "updated": "2026-11-16",
       "tags": [
         "景點",
         "文化",
@@ -5688,14 +5664,14 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 2,
-        "creator_mentions": 2,
-        "repeat_recommendations": 1
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
       },
-      "social_heat": 62,
-      "social_updated": "2026-11-15",
-      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vODBCQXYtbzh1RDNBODl6RW5MT2lyOEN3eVY2My0wVENkekM5SXdWZk9GRnJ4N3BJVFFTdGJqdUZOZ1lHdzBFSFplWGQ1bnA0?oc=5"
+      "social_heat": 58,
+      "social_updated": "2026-11-16",
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9qQ05PLUp5d2c3SzdNMEpQXzRFSk8tT1JqZW5nQy1vNi1Wb2MteDVWaFZyR1FQU1R6RlU4UzJuWWlGbHBaeDE1Qlcwa1lnUm4yazlpb1hfMWVBOWsw?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_395000000A_000689",
@@ -17967,7 +17943,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-16",
+      "updated": "2026-11-17",
       "tags": [
         "景點",
         "戶外"
@@ -18320,7 +18296,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-16",
+      "updated": "2026-11-17",
       "tags": [
         "景點",
         "戶外",
@@ -18342,7 +18318,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-16",
+      "updated": "2026-11-17",
       "tags": [
         "景點",
         "戶外",
@@ -18364,7 +18340,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-16",
+      "updated": "2026-11-17",
       "tags": [
         "景點",
         "戶外"
@@ -18407,7 +18383,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-16",
+      "updated": "2026-11-17",
       "tags": [
         "景點",
         "戶外",
@@ -18833,7 +18809,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-16",
+      "updated": "2026-11-17",
       "tags": [
         "景點",
         "戶外"
@@ -20372,7 +20348,7 @@
       "social_heat": 58,
       "social_updated": "2026-11-16",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBkYmU3emdrVzRjT2F2YWtkWm0wd2hGNGNKUW5HVXcxSk5HN1VfbURBQzNmc2stR1d5N3o5RGpqaHE2dDBLR0FLcWpKcDVyN211WEYtRGoyQmREeG1CeTliUU83cEF3OUVQSEROSzJqQnc2dw?oc=5"
+      "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBVSkJGVkR4b05lMmF4QTJrUTRjX3h0bXVLRFpYOEN3emQ3R3g1eHkyVExUb3l3cVJlc1pNZEo5RVdkQWNEdi1scHZFNVhuYU1l?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_376490000A_000139",

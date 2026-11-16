@@ -368,12 +368,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
     },
-    "base_heat": 82,
-    "updated": "2026-11-15",
+    "base_heat": 75,
+    "updated": "2026-11-16",
     "tags": [
       "景點",
       "文化",
@@ -381,8 +381,8 @@
     ],
     "place": "臺南市 67000 仁德區 67000270 717 文華路二段66號",
     "q": "臺南市 67000 仁德區 67000270 717 文華路二段66號",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vODBCQXYtbzh1RDNBODl6RW5MT2lyOEN3eVY2My0wVENkekM5SXdWZk9GRnJ4N3BJVFFTdGJqdUZOZ1lHdzBFSFplWGQ1bnA0?oc=5"
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9qQ05PLUp5d2c3SzdNMEpQXzRFSk8tT1JqZW5nQy1vNi1Wb2MteDVWaFZyR1FQU1R6RlU4UzJuWWlGbHBaeDE1Qlcwa1lnUm4yazlpb1hfMWVBOWsw?oc=5"
   },
   {
     "id": "social-auto-tainan-attraction-5520",
@@ -983,7 +983,7 @@
     "place": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉湳仔村湳仔路",
     "q": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉湳仔村湳仔路",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBkYmU3emdrVzRjT2F2YWtkWm0wd2hGNGNKUW5HVXcxSk5HN1VfbURBQzNmc2stR1d5N3o5RGpqaHE2dDBLR0FLcWpKcDVyN211WEYtRGoyQmREeG1CeTliUU83cEF3OUVQSEROSzJqQnc2dw?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBVSkJGVkR4b05lMmF4QTJrUTRjX3h0bXVLRFpYOEN3emQ3R3g1eHkyVExUb3l3cVJlc1pNZEo5RVdkQWNEdi1scHZFNVhuYU1l?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_A15011100H_000486",
