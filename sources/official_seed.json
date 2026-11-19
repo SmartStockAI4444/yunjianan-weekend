@@ -1039,7 +1039,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -1058,7 +1058,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -1076,7 +1076,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -1094,7 +1094,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -1113,7 +1113,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -1131,7 +1131,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -1150,7 +1150,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1168,7 +1168,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1203,7 +1203,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -1220,7 +1220,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -1237,7 +1237,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -1254,7 +1254,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -1271,7 +1271,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1289,7 +1289,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -1307,7 +1307,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -1324,7 +1324,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -1338,29 +1338,12 @@
   {
     "id": "tourism-attraction-Attraction_376490000A_000012",
     "city": "雲林",
-    "name": "農田水利環境教育園區",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 72,
-    "updated": "2026-06-17",
-    "tags": [
-      "景點"
-    ],
-    "place": "雲林縣 10009 林內鄉 10009100 643 雲林縣林內鄉林中村三星路9-2號",
-    "q": "雲林縣 10009 林內鄉 10009100 643 雲林縣林內鄉林中村三星路9-2號",
-    "why": "浪漫水圳學，秋享落羽松全台首座以水利主題園區，展示館藉由影像、模型和水利器具，實際展示農業跟水利之間的關係。因地處濁水溪上游，以八卦池模樣呈現的林內分水工作充滿觀賞性與教育價值。",
-    "url": ""
-  },
-  {
-    "id": "tourism-attraction-Attraction_376490000A_000013",
-    "city": "雲林",
     "name": "六輕阿媽公園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -1373,48 +1356,12 @@
   {
     "id": "tourism-attraction-Attraction_376490000A_000014",
     "city": "雲林",
-    "name": "雲中街文創聚落",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 72,
-    "updated": "2026-06-17",
-    "tags": [
-      "景點",
-      "文化"
-    ],
-    "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市雲林路1段75巷7號",
-    "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市雲林路1段75巷7號",
-    "why": "日治宿舍，今日文青聚落原為日治時代警察與警眷宿舍，經重新翻修後陸續進駐咖啡廳、甜點店、獨立書房、駐村藝術家等，並重新整理周圍草皮、老榕樹等，讓木造建築群成為今日的文青熱點。",
-    "url": ""
-  },
-  {
-    "id": "tourism-attraction-Attraction_376490000A_000015",
-    "city": "雲林",
-    "name": "古坑綠色隧道",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 72,
-    "updated": "2026-06-17",
-    "tags": [
-      "景點",
-      "戶外"
-    ],
-    "place": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉湳仔村湳仔路",
-    "q": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉湳仔村湳仔路",
-    "why": "舉家同歡的綠色隧道綠蔭編織成的綠色隧道，全長約莫兩公里，因步道兩側的50年濃密芒果樹蔭得名。散步在青翠草皮上來廠野餐遊憩、為小孩放電。還有在地特色市集可以消費，適合舉家共度慢活自在的午後。",
-    "url": ""
-  },
-  {
-    "id": "tourism-attraction-Attraction_376490000A_000017",
-    "city": "雲林",
     "name": "古坑情人橋",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -1425,14 +1372,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000018",
+    "id": "tourism-attraction-Attraction_376490000A_000015",
     "city": "雲林",
     "name": "蜜蜂故事館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -1444,14 +1391,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000021",
+    "id": "tourism-attraction-Attraction_376490000A_000018",
     "city": "雲林",
     "name": "虎尾鐵橋",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1462,14 +1409,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000022",
+    "id": "tourism-attraction-Attraction_376490000A_000019",
     "city": "雲林",
     "name": "虎尾驛",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1480,14 +1427,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000023",
+    "id": "tourism-attraction-Attraction_376490000A_000020",
     "city": "雲林",
     "name": "雲林故事館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1498,14 +1445,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000024",
+    "id": "tourism-attraction-Attraction_376490000A_000021",
     "city": "雲林",
     "name": "合同廳舍",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1516,14 +1463,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000025",
+    "id": "tourism-attraction-Attraction_376490000A_000022",
     "city": "雲林",
     "name": "麥寮拱範宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1534,14 +1481,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000026",
+    "id": "tourism-attraction-Attraction_376490000A_000023",
     "city": "雲林",
     "name": "荷苞山桐花公園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -1553,14 +1500,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000027",
+    "id": "tourism-attraction-Attraction_376490000A_000024",
     "city": "雲林",
     "name": "北溪好厝米_雲林縣虎尾鎮北溪社區發展協會",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1571,32 +1518,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000028",
-    "city": "雲林",
-    "name": "冠弦吉他樂器行",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 72,
-    "updated": "2026-06-17",
-    "tags": [
-      "景點",
-      "文化"
-    ],
-    "place": "雲林縣 10009 水林鄉 10009200 652 雲林縣水林鄉水南村東陽街102號",
-    "q": "雲林縣 10009 水林鄉 10009200 652 雲林縣水林鄉水南村東陽街102號",
-    "why": "位於水林鄉田野間的冠弦吉他樂器社，由陳國明老師親手打造每一把吉他，陳國明老師是臺灣碩果僅存吉他製造師傅，具有三十年以上的技術，由其經手打造的吉他已不計其數，近年來因偶像劇帶動了烏克麗麗的風潮，讓這個位處於純樸鄉間的手工樂器社引起大眾矚目，吸引不少愛好者慕名而來。    冠弦吉他樂器社近年來在雲林縣政府的關注下，除了提昇",
-    "url": ""
-  },
-  {
-    "id": "tourism-attraction-Attraction_376490000A_000029",
+    "id": "tourism-attraction-Attraction_376490000A_000025",
     "city": "雲林",
     "name": "虎尾厝沙龍",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -1608,14 +1537,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000030",
+    "id": "tourism-attraction-Attraction_376490000A_000026",
     "city": "雲林",
     "name": "魔羯魚祈福館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1626,14 +1555,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000032",
+    "id": "tourism-attraction-Attraction_376490000A_000028",
     "city": "雲林",
     "name": "佛美神仙故事館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1644,14 +1573,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000033",
+    "id": "tourism-attraction-Attraction_376490000A_000029",
     "city": "雲林",
     "name": "澄霖味道森林館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -1662,14 +1591,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000036",
+    "id": "tourism-attraction-Attraction_376490000A_000032",
     "city": "雲林",
     "name": "北港春生活園區",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1680,14 +1609,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000037",
+    "id": "tourism-attraction-Attraction_376490000A_000033",
     "city": "雲林",
     "name": "Gem Shop真金店",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -1697,14 +1626,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000038",
+    "id": "tourism-attraction-Attraction_376490000A_000034",
     "city": "雲林",
     "name": "炎卿木偶雕刻社",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -1714,14 +1643,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000039",
+    "id": "tourism-attraction-Attraction_376490000A_000035",
     "city": "雲林",
     "name": "北港工藝坊",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1732,14 +1661,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000040",
+    "id": "tourism-attraction-Attraction_376490000A_000036",
     "city": "雲林",
     "name": "北港-武德宮樂咖啡",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -1749,14 +1678,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000041",
+    "id": "tourism-attraction-Attraction_376490000A_000037",
     "city": "雲林",
     "name": "蔦松客棧",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1767,14 +1696,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000042",
+    "id": "tourism-attraction-Attraction_376490000A_000038",
     "city": "雲林",
     "name": "幽情谷",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -1785,14 +1714,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000043",
+    "id": "tourism-attraction-Attraction_376490000A_000039",
     "city": "雲林",
     "name": "木馬古道",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -1803,14 +1732,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000044",
+    "id": "tourism-attraction-Attraction_376490000A_000040",
     "city": "雲林",
     "name": "北港「甕牆」",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -1820,14 +1749,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000045",
+    "id": "tourism-attraction-Attraction_376490000A_000041",
     "city": "雲林",
     "name": "李萬居故居(李萬居精神啟蒙館)",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -1837,14 +1766,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000046",
+    "id": "tourism-attraction-Attraction_376490000A_000042",
     "city": "雲林",
     "name": "奇香老沉(香茶藝術)",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1855,14 +1784,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000047",
+    "id": "tourism-attraction-Attraction_376490000A_000043",
     "city": "雲林",
     "name": "持法媽祖宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1873,14 +1802,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000048",
+    "id": "tourism-attraction-Attraction_376490000A_000044",
     "city": "雲林",
     "name": "北港故事館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -1891,14 +1820,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000049",
+    "id": "tourism-attraction-Attraction_376490000A_000045",
     "city": "雲林",
     "name": "北港牛墟",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -1908,14 +1837,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000050",
+    "id": "tourism-attraction-Attraction_376490000A_000046",
     "city": "雲林",
     "name": "青山坪咖啡農場",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -1925,14 +1854,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000052",
+    "id": "tourism-attraction-Attraction_376490000A_000048",
     "city": "雲林",
     "name": "二崙新虎溪",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -1943,14 +1872,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000053",
+    "id": "tourism-attraction-Attraction_376490000A_000049",
     "city": "雲林",
     "name": "二崙濁水夕照",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -1961,14 +1890,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000054",
+    "id": "tourism-attraction-Attraction_376490000A_000050",
     "city": "雲林",
     "name": "二崙運動公園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -1980,14 +1909,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000055",
+    "id": "tourism-attraction-Attraction_376490000A_000051",
     "city": "雲林",
     "name": "孩沙里社區",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -2015,14 +1944,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000057",
+    "id": "tourism-attraction-Attraction_376490000A_000053",
     "city": "雲林",
     "name": "湖口溼地",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -2033,14 +1962,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000058",
+    "id": "tourism-attraction-Attraction_376490000A_000054",
     "city": "雲林",
     "name": "四湖三條崙海清宮包公祖廟",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2050,14 +1979,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000059",
+    "id": "tourism-attraction-Attraction_376490000A_000055",
     "city": "雲林",
     "name": "糖業文物館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2067,14 +1996,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000060",
+    "id": "tourism-attraction-Attraction_376490000A_000056",
     "city": "雲林",
     "name": "塭底賞鳥區",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -2085,14 +2014,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000061",
+    "id": "tourism-attraction-Attraction_376490000A_000057",
     "city": "雲林",
     "name": "水林鄉蕃薯厝順天宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2102,14 +2031,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000062",
+    "id": "tourism-attraction-Attraction_376490000A_000058",
     "city": "雲林",
     "name": "七角井",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -2120,14 +2049,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000063",
+    "id": "tourism-attraction-Attraction_376490000A_000059",
     "city": "雲林",
     "name": "綠色一線天自行車道",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -2138,14 +2067,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000064",
+    "id": "tourism-attraction-Attraction_376490000A_000060",
     "city": "雲林",
     "name": "北港武德宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2155,14 +2084,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000065",
+    "id": "tourism-attraction-Attraction_376490000A_000061",
     "city": "雲林",
     "name": "雲科生態休閒農場",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -2173,14 +2102,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000066",
+    "id": "tourism-attraction-Attraction_376490000A_000062",
     "city": "雲林",
     "name": "湖山岩大佛寺／佛教藝術園區",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2190,32 +2119,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000067",
-    "city": "雲林",
-    "name": "日興被帳行",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 72,
-    "updated": "2026-06-17",
-    "tags": [
-      "景點",
-      "文化"
-    ],
-    "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市太平路151號",
-    "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市太平路151號",
-    "why": "日興棉被店是家超過百年歷史三代經營的老店。老闆陳清秀從小就和父親學做手工棉被，每個細節都馬虎不得，從棉花原料，經過開棉、鋪棉、彈棉、壓篩、牽紗等繁複步驟，做好一件手工被，要花費至少3個小時。  陳清秀會在棉被裡用紅線縫上「特上」兩字，與印上棉被行的電話、地址，代表對這件棉被的品質保證，在現代，這樣的堅持與用心已少見了。",
-    "url": ""
-  },
-  {
-    "id": "tourism-attraction-Attraction_376490000A_000068",
+    "id": "tourism-attraction-Attraction_376490000A_000063",
     "city": "雲林",
     "name": "斗六棒球場",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2225,14 +2136,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000069",
+    "id": "tourism-attraction-Attraction_376490000A_000064",
     "city": "雲林",
     "name": "張廖宗祠（崇遠堂）",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2242,14 +2153,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000070",
+    "id": "tourism-attraction-Attraction_376490000A_000065",
     "city": "雲林",
     "name": "西螺振興宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -2260,14 +2171,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000071",
+    "id": "tourism-attraction-Attraction_376490000A_000066",
     "city": "雲林",
     "name": "圓明禪寺",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -2278,14 +2189,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000072",
+    "id": "tourism-attraction-Attraction_376490000A_000067",
     "city": "雲林",
     "name": "林內天聖宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -2297,14 +2208,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000073",
+    "id": "tourism-attraction-Attraction_376490000A_000068",
     "city": "雲林",
     "name": "林內公園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -2316,14 +2227,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000074",
+    "id": "tourism-attraction-Attraction_376490000A_000069",
     "city": "雲林",
     "name": "白馬山菩提講堂",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2333,14 +2244,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000075",
+    "id": "tourism-attraction-Attraction_376490000A_000070",
     "city": "雲林",
     "name": "石敢當",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -2351,14 +2262,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000076",
+    "id": "tourism-attraction-Attraction_376490000A_000071",
     "city": "雲林",
     "name": "孩沙里福天宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2368,14 +2279,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000077",
+    "id": "tourism-attraction-Attraction_376490000A_000072",
     "city": "雲林",
     "name": "樹仔腳天主堂",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2385,14 +2296,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000078",
+    "id": "tourism-attraction-Attraction_376490000A_000073",
     "city": "雲林",
     "name": "麥寮風力發電站",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2402,14 +2313,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000079",
+    "id": "tourism-attraction-Attraction_376490000A_000074",
     "city": "雲林",
     "name": "蕃薯窯文化創意園區",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -2420,14 +2331,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000080",
+    "id": "tourism-attraction-Attraction_376490000A_000075",
     "city": "雲林",
     "name": "同心家園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -2438,14 +2349,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000081",
+    "id": "tourism-attraction-Attraction_376490000A_000076",
     "city": "雲林",
     "name": "坪頂觀光茶園(茶葉推廣中心)",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -2456,14 +2367,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000082",
+    "id": "tourism-attraction-Attraction_376490000A_000077",
     "city": "雲林",
     "name": "湖本生態村",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -2474,14 +2385,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000083",
+    "id": "tourism-attraction-Attraction_376490000A_000078",
     "city": "雲林",
     "name": "西螺廣福宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -2492,14 +2403,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000084",
+    "id": "tourism-attraction-Attraction_376490000A_000079",
     "city": "雲林",
     "name": "西螺福興宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2509,14 +2420,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000085",
+    "id": "tourism-attraction-Attraction_376490000A_000080",
     "city": "雲林",
     "name": "振文書院(文祠廟)",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2526,14 +2437,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000086",
+    "id": "tourism-attraction-Attraction_376490000A_000081",
     "city": "雲林",
     "name": "西螺戲院",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -2544,14 +2455,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000087",
+    "id": "tourism-attraction-Attraction_376490000A_000082",
     "city": "雲林",
     "name": "七崁雕塑公園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -2563,14 +2474,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000088",
+    "id": "tourism-attraction-Attraction_376490000A_000083",
     "city": "雲林",
     "name": "三條崙漁港",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2580,14 +2491,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000089",
+    "id": "tourism-attraction-Attraction_376490000A_000084",
     "city": "雲林",
     "name": "台西海螺",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -2598,14 +2509,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000090",
+    "id": "tourism-attraction-Attraction_376490000A_000085",
     "city": "雲林",
     "name": "台西漁港",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2615,14 +2526,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000091",
+    "id": "tourism-attraction-Attraction_376490000A_000086",
     "city": "雲林",
     "name": "石壁生態休憩區",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -2633,14 +2544,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000092",
+    "id": "tourism-attraction-Attraction_376490000A_000087",
     "city": "雲林",
     "name": "劍湖慈光寺",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2650,14 +2561,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000093",
+    "id": "tourism-attraction-Attraction_376490000A_000088",
     "city": "雲林",
     "name": "荷苞山咖啡園區",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2667,14 +2578,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000094",
+    "id": "tourism-attraction-Attraction_376490000A_000089",
     "city": "雲林",
     "name": "華山步道群",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -2685,14 +2596,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000095",
+    "id": "tourism-attraction-Attraction_376490000A_000090",
     "city": "雲林",
     "name": "華山休閒農業區",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2702,14 +2613,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000096",
+    "id": "tourism-attraction-Attraction_376490000A_000091",
     "city": "雲林",
     "name": "荷苞山地母廟",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2719,14 +2630,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000097",
+    "id": "tourism-attraction-Attraction_376490000A_000092",
     "city": "雲林",
     "name": "北港義民廟",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -2737,14 +2648,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000098",
+    "id": "tourism-attraction-Attraction_376490000A_000093",
     "city": "雲林",
     "name": "北港觀光大橋",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2754,14 +2665,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000099",
+    "id": "tourism-attraction-Attraction_376490000A_000094",
     "city": "雲林",
     "name": "振興戲院",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2771,14 +2682,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000100",
+    "id": "tourism-attraction-Attraction_376490000A_000095",
     "city": "雲林",
     "name": "斗南順安宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2788,14 +2699,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000101",
+    "id": "tourism-attraction-Attraction_376490000A_000096",
     "city": "雲林",
     "name": "斗南車站",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2805,31 +2716,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000102",
-    "city": "雲林",
-    "name": "斗六車站",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 72,
-    "updated": "2026-06-17",
-    "tags": [
-      "景點"
-    ],
-    "place": "雲林縣 10009 斗六市 10009010 640 斗六市信義里民生路187號",
-    "q": "雲林縣 10009 斗六市 10009010 640 斗六市信義里民生路187號",
-    "why": "雲林門戶斗六車站創始於明治37年，初為木造站房，昭和16年因中埔地震倒塌損毀，隔年3月復建竣工。民國47年興建第三代鋼筋水泥式站房，民國97年啟用跨站式新車站。",
-    "url": ""
-  },
-  {
-    "id": "tourism-attraction-Attraction_376490000A_000103",
+    "id": "tourism-attraction-Attraction_376490000A_000097",
     "city": "雲林",
     "name": "斗六圓環",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2839,14 +2733,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000104",
+    "id": "tourism-attraction-Attraction_376490000A_000098",
     "city": "雲林",
     "name": "大埤酸菜文化館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -2857,14 +2751,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000105",
+    "id": "tourism-attraction-Attraction_376490000A_000099",
     "city": "雲林",
     "name": "大埤三山國王廟",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -2874,14 +2768,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000106",
+    "id": "tourism-attraction-Attraction_376490000A_000100",
     "city": "雲林",
     "name": "口湖下寮萬善同歸塚",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -2892,14 +2786,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000107",
+    "id": "tourism-attraction-Attraction_376490000A_000101",
     "city": "雲林",
     "name": "日落蚵田",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -2927,14 +2821,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000109",
+    "id": "tourism-attraction-Attraction_376490000A_000103",
     "city": "雲林",
     "name": "雲嶺之丘",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -2962,14 +2856,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000111",
+    "id": "tourism-attraction-Attraction_376490000A_000105",
     "city": "雲林",
     "name": "二崙故事屋",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -2980,14 +2874,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000112",
+    "id": "tourism-attraction-Attraction_376490000A_000106",
     "city": "雲林",
     "name": "他里霧文化園區",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -2998,14 +2892,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000113",
+    "id": "tourism-attraction-Attraction_376490000A_000107",
     "city": "雲林",
     "name": "龍過脈步道",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -3016,14 +2910,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000114",
+    "id": "tourism-attraction-Attraction_376490000A_000108",
     "city": "雲林",
     "name": "湖山水庫環境教育園區",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -3035,14 +2929,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000115",
+    "id": "tourism-attraction-Attraction_376490000A_000109",
     "city": "雲林",
     "name": "北港女兒橋",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3052,14 +2946,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000116",
+    "id": "tourism-attraction-Attraction_376490000A_000110",
     "city": "雲林",
     "name": "五元兩角",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3087,14 +2981,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000118",
+    "id": "tourism-attraction-Attraction_376490000A_000112",
     "city": "雲林",
     "name": "涌翠閣",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3104,14 +2998,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000119",
+    "id": "tourism-attraction-Attraction_376490000A_000113",
     "city": "雲林",
     "name": "三小市集食育基地",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3121,14 +3015,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000120",
+    "id": "tourism-attraction-Attraction_376490000A_000114",
     "city": "雲林",
     "name": "Mr. Lobby Coffee Project",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3138,14 +3032,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000121",
+    "id": "tourism-attraction-Attraction_376490000A_000115",
     "city": "雲林",
     "name": "詔安客家文化館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -3156,14 +3050,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000122",
+    "id": "tourism-attraction-Attraction_376490000A_000116",
     "city": "雲林",
     "name": "石榴火車站",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3173,14 +3067,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000123",
+    "id": "tourism-attraction-Attraction_376490000A_000117",
     "city": "雲林",
     "name": "萡子寮漁港",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -3191,14 +3085,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000124",
+    "id": "tourism-attraction-Attraction_376490000A_000118",
     "city": "雲林",
     "name": "西螺延平老街(西螺東市場)",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3208,14 +3102,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000125",
+    "id": "tourism-attraction-Attraction_376490000A_000119",
     "city": "雲林",
     "name": "北溪里剪紙藝術村",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -3226,14 +3120,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000126",
+    "id": "tourism-attraction-Attraction_376490000A_000120",
     "city": "雲林",
     "name": "晁陽綠能休閒農場",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -3244,14 +3138,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000127",
+    "id": "tourism-attraction-Attraction_376490000A_000121",
     "city": "雲林",
     "name": "湳仔社區鐵道文化3D彩繪",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -3262,14 +3156,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000128",
+    "id": "tourism-attraction-Attraction_376490000A_000122",
     "city": "雲林",
     "name": "土庫老街(第一市場、庄役場、故事館及順天宮)",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3279,14 +3173,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000129",
+    "id": "tourism-attraction-Attraction_376490000A_000123",
     "city": "雲林",
     "name": "樟湖地區",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -3297,14 +3191,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000130",
+    "id": "tourism-attraction-Attraction_376490000A_000124",
     "city": "雲林",
     "name": "農博生態園區",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -3315,14 +3209,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000131",
+    "id": "tourism-attraction-Attraction_376490000A_000125",
     "city": "雲林",
     "name": "育成水耕教育農場",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3332,14 +3226,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000132",
+    "id": "tourism-attraction-Attraction_376490000A_000126",
     "city": "雲林",
     "name": "林北卡好數位生活館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -3350,14 +3244,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000133",
+    "id": "tourism-attraction-Attraction_376490000A_000127",
     "city": "雲林",
     "name": "果色天鄉",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -3369,14 +3263,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000134",
+    "id": "tourism-attraction-Attraction_376490000A_000128",
     "city": "雲林",
     "name": "采邑綠工坊",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3386,14 +3280,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000135",
+    "id": "tourism-attraction-Attraction_376490000A_000129",
     "city": "雲林",
     "name": "寶隆紙廠",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3403,14 +3297,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000136",
+    "id": "tourism-attraction-Attraction_376490000A_000130",
     "city": "雲林",
     "name": "松花坡種苗園藝社",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3420,14 +3314,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000137",
+    "id": "tourism-attraction-Attraction_376490000A_000131",
     "city": "雲林",
     "name": "賓哥室",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -3439,14 +3333,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000138",
+    "id": "tourism-attraction-Attraction_376490000A_000132",
     "city": "雲林",
     "name": "蘿莎玫瑰山莊",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -3457,14 +3351,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000139",
+    "id": "tourism-attraction-Attraction_376490000A_000133",
     "city": "雲林",
     "name": "古坑綠隧驛站",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3474,14 +3368,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000140",
+    "id": "tourism-attraction-Attraction_376490000A_000134",
     "city": "雲林",
     "name": "自家莊園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3491,14 +3385,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000141",
+    "id": "tourism-attraction-Attraction_376490000A_000135",
     "city": "雲林",
     "name": "谷泉咖啡莊園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -3509,14 +3403,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000142",
+    "id": "tourism-attraction-Attraction_376490000A_000136",
     "city": "雲林",
     "name": "貝克翰農場",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3526,14 +3420,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000143",
+    "id": "tourism-attraction-Attraction_376490000A_000137",
     "city": "雲林",
     "name": "持明寺",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3543,14 +3437,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000144",
+    "id": "tourism-attraction-Attraction_376490000A_000138",
     "city": "雲林",
     "name": "草嶺地質生態國小",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -3561,14 +3455,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000145",
+    "id": "tourism-attraction-Attraction_376490000A_000139",
     "city": "雲林",
     "name": "華山文學步道",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -3579,14 +3473,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000146",
+    "id": "tourism-attraction-Attraction_376490000A_000140",
     "city": "雲林",
     "name": "華山咖啡大街",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3596,14 +3490,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000147",
+    "id": "tourism-attraction-Attraction_376490000A_000141",
     "city": "雲林",
     "name": "古坑鄉公所",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3613,14 +3507,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000148",
+    "id": "tourism-attraction-Attraction_376490000A_000142",
     "city": "雲林",
     "name": "樟湖生態國民中小學",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -3631,14 +3525,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000149",
+    "id": "tourism-attraction-Attraction_376490000A_000143",
     "city": "雲林",
     "name": "舊樟湖國小",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3648,14 +3542,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000150",
+    "id": "tourism-attraction-Attraction_376490000A_000144",
     "city": "雲林",
     "name": "三秀園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3665,14 +3559,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000151",
+    "id": "tourism-attraction-Attraction_376490000A_000145",
     "city": "雲林",
     "name": "北港傳薪學院",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -3683,14 +3577,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000152",
+    "id": "tourism-attraction-Attraction_376490000A_000146",
     "city": "雲林",
     "name": "福民老街",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -3701,14 +3595,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000153",
+    "id": "tourism-attraction-Attraction_376490000A_000147",
     "city": "雲林",
     "name": "北港文化中心",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -3719,14 +3613,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000154",
+    "id": "tourism-attraction-Attraction_376490000A_000148",
     "city": "雲林",
     "name": "土庫鎮農會八角倉庫",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -3737,14 +3631,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000155",
+    "id": "tourism-attraction-Attraction_376490000A_000149",
     "city": "雲林",
     "name": "土庫故事館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -3755,14 +3649,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000156",
+    "id": "tourism-attraction-Attraction_376490000A_000150",
     "city": "雲林",
     "name": "茂盛有機農場",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -3773,14 +3667,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000157",
+    "id": "tourism-attraction-Attraction_376490000A_000151",
     "city": "雲林",
     "name": "連塍陶坊",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3790,14 +3684,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000158",
+    "id": "tourism-attraction-Attraction_376490000A_000152",
     "city": "雲林",
     "name": "雲林高鐵站",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3807,14 +3701,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000159",
+    "id": "tourism-attraction-Attraction_376490000A_000153",
     "city": "雲林",
     "name": "中華機車出租行(斗六租車)",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3824,14 +3718,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000160",
+    "id": "tourism-attraction-Attraction_376490000A_000154",
     "city": "雲林",
     "name": "發鑫車業機車行(虎尾租車)",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3841,14 +3735,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000161",
+    "id": "tourism-attraction-Attraction_376490000A_000155",
     "city": "雲林",
     "name": "地球村書局(斗南租車)",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3858,14 +3752,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000162",
+    "id": "tourism-attraction-Attraction_376490000A_000156",
     "city": "雲林",
     "name": "湖光山舍",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -3876,14 +3770,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000163",
+    "id": "tourism-attraction-Attraction_376490000A_000157",
     "city": "雲林",
     "name": "斗六南聖宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3893,14 +3787,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000164",
+    "id": "tourism-attraction-Attraction_376490000A_000158",
     "city": "雲林",
     "name": "西螺延平老街文化館(捷發乾記茶莊)",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -3911,14 +3805,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000165",
+    "id": "tourism-attraction-Attraction_376490000A_000159",
     "city": "雲林",
     "name": "建國眷村",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -3929,14 +3823,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000166",
+    "id": "tourism-attraction-Attraction_376490000A_000160",
     "city": "雲林",
     "name": "圖南咖啡故事館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -3947,14 +3841,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000167",
+    "id": "tourism-attraction-Attraction_376490000A_000161",
     "city": "雲林",
     "name": "雲林二手玩具屋",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3964,14 +3858,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000168",
+    "id": "tourism-attraction-Attraction_376490000A_000162",
     "city": "雲林",
     "name": "雲林縣斗六市繪本圖書館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -3981,14 +3875,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000169",
+    "id": "tourism-attraction-Attraction_376490000A_000163",
     "city": "雲林",
     "name": "斗六籽公園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -3999,33 +3893,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000170",
-    "city": "雲林",
-    "name": "斗六藝術水岸園區",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 72,
-    "updated": "2026-06-17",
-    "tags": [
-      "景點",
-      "戶外",
-      "文化"
-    ],
-    "place": "雲林縣 10009 斗六市 10009010 640 斗六市社口街",
-    "q": "雲林縣 10009 斗六市 10009010 640 斗六市社口街",
-    "why": "斗六最強親子遊戲場斗六藝術水岸園區，兼顧種植水生植物的蓄洪池和陸上公園功能。除了饒富特色的馬賽克烏龜、吸管造型沖洗區，和舉凡攀爬架、攀岩、拉繩等親子運動區，肯定是室外活動的首選。",
-    "url": ""
-  },
-  {
-    "id": "tourism-attraction-Attraction_376490000A_000171",
+    "id": "tourism-attraction-Attraction_376490000A_000164",
     "city": "雲林",
     "name": "雲林官邸兒童館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4035,14 +3910,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000172",
+    "id": "tourism-attraction-Attraction_376490000A_000165",
     "city": "雲林",
     "name": "鵝媽媽鵝童樂園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -4053,14 +3928,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000173",
+    "id": "tourism-attraction-Attraction_376490000A_000166",
     "city": "雲林",
     "name": "橙色農作休閒果園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4070,14 +3945,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000174",
+    "id": "tourism-attraction-Attraction_376490000A_000167",
     "city": "雲林",
     "name": "林內教芋部",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -4088,14 +3963,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000175",
+    "id": "tourism-attraction-Attraction_376490000A_000168",
     "city": "雲林",
     "name": "勝嘉商店-育成水耕教育農場",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4105,14 +3980,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000176",
+    "id": "tourism-attraction-Attraction_376490000A_000169",
     "city": "雲林",
     "name": "西螺大橋親水公園 螺石公園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -4123,14 +3998,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000177",
+    "id": "tourism-attraction-Attraction_376490000A_000170",
     "city": "雲林",
     "name": "千巧谷牛樂園牧場",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -4141,14 +4016,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000178",
+    "id": "tourism-attraction-Attraction_376490000A_000171",
     "city": "雲林",
     "name": "三條崙海水浴場親水公園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4158,14 +4033,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000179",
+    "id": "tourism-attraction-Attraction_376490000A_000172",
     "city": "雲林",
     "name": "紫藤湖",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -4176,14 +4051,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000180",
+    "id": "tourism-attraction-Attraction_376490000A_000173",
     "city": "雲林",
     "name": "大尖山登山步道",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -4194,14 +4069,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000181",
+    "id": "tourism-attraction-Attraction_376490000A_000174",
     "city": "雲林",
     "name": "萬年峽谷",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -4212,14 +4087,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000182",
+    "id": "tourism-attraction-Attraction_376490000A_000175",
     "city": "雲林",
     "name": "山豬湖步道",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -4230,14 +4105,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000183",
+    "id": "tourism-attraction-Attraction_376490000A_000176",
     "city": "雲林",
     "name": "石壁仙谷",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -4248,14 +4123,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000184",
+    "id": "tourism-attraction-Attraction_376490000A_000177",
     "city": "雲林",
     "name": "同心瀑布",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -4266,14 +4141,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000185",
+    "id": "tourism-attraction-Attraction_376490000A_000178",
     "city": "雲林",
     "name": "峭壁雄風",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4283,14 +4158,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000186",
+    "id": "tourism-attraction-Attraction_376490000A_000179",
     "city": "雲林",
     "name": "蓬萊瀑布",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4300,14 +4175,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000187",
+    "id": "tourism-attraction-Attraction_376490000A_000180",
     "city": "雲林",
     "name": "二崙自然步道",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -4318,14 +4193,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000188",
+    "id": "tourism-attraction-Attraction_376490000A_000181",
     "city": "雲林",
     "name": "北港天空之橋",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4335,14 +4210,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000189",
+    "id": "tourism-attraction-Attraction_376490000A_000182",
     "city": "雲林",
     "name": "北港媽祖景觀公園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -4353,14 +4228,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000190",
+    "id": "tourism-attraction-Attraction_376490000A_000183",
     "city": "雲林",
     "name": "斗六雲中街生活聚落",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -4371,14 +4246,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000191",
+    "id": "tourism-attraction-Attraction_376490000A_000184",
     "city": "雲林",
     "name": "劍湖山世界主題樂園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -4389,14 +4264,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000192",
+    "id": "tourism-attraction-Attraction_376490000A_000185",
     "city": "雲林",
     "name": "埤頭繪本公園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -4407,14 +4282,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000193",
+    "id": "tourism-attraction-Attraction_376490000A_000186",
     "city": "雲林",
     "name": "北港大復戲院",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4424,14 +4299,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000194",
+    "id": "tourism-attraction-Attraction_376490000A_000187",
     "city": "雲林",
     "name": "斗南分局舊辦公廳舍",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -4442,14 +4317,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000195",
+    "id": "tourism-attraction-Attraction_376490000A_000188",
     "city": "雲林",
     "name": "五年千歲公園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -4460,14 +4335,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000196",
+    "id": "tourism-attraction-Attraction_376490000A_000189",
     "city": "雲林",
     "name": "鄧麗君出生地文化園區",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -4496,14 +4371,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000198",
+    "id": "tourism-attraction-Attraction_376490000A_000191",
     "city": "雲林",
     "name": "台西海口故事屋",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -4514,14 +4389,32 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000200",
+    "id": "tourism-attraction-Attraction_376490000A_000308",
+    "city": "雲林",
+    "name": "海口庄派出所",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "文化"
+    ],
+    "place": "雲林縣 10009 臺西鄉 10009160 636 雲林縣台西村15中山路108號",
+    "q": "雲林縣 10009 臺西鄉 10009160 636 雲林縣台西村15中山路108號",
+    "why": "深具歷史意義的派出所與現代的分局大樓並列一起，呈現二代同堂時空穿越感⏳。",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000193",
     "city": "雲林",
     "name": "水林鄉顏思齊故事館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -4532,14 +4425,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000202",
+    "id": "tourism-attraction-Attraction_376490000A_000195",
     "city": "雲林",
     "name": "奶奶的熊毛巾故事館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4549,14 +4442,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000204",
+    "id": "tourism-attraction-Attraction_376490000A_000197",
     "city": "雲林",
     "name": "樂耕農室內樂團",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -4567,14 +4460,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000205",
+    "id": "tourism-attraction-Attraction_376490000A_000198",
     "city": "雲林",
     "name": "紙農書院-染織紙手創聚落",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4584,32 +4477,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000206",
-    "city": "雲林",
-    "name": "創樂子生活學苑–多肉花藝手作",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 72,
-    "updated": "2026-06-17",
-    "tags": [
-      "景點",
-      "文化"
-    ],
-    "place": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉光昌路247號",
-    "q": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉光昌路247號",
-    "why": "全雲林最大的多肉療癒庭園，座落於雲林縣古坑鄉，以生活美學、體驗學習、休閒療癒力為基底，結合質感手作、花藝設計、多肉園藝發展文創藝術，產品包含多肉組合禮盆、永生玻璃花罩、農產造型布包等，透過體驗課程與咖啡輕食，釋放現代人緊張的生活壓力，提供紓壓與學習的管道。",
-    "url": ""
-  },
-  {
-    "id": "tourism-attraction-Attraction_376490000A_000207",
+    "id": "tourism-attraction-Attraction_376490000A_000200",
     "city": "雲林",
     "name": "台灣雲林縣樟湖藍染人文協會_有間靛",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -4620,14 +4495,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000208",
+    "id": "tourism-attraction-Attraction_376490000A_000201",
     "city": "雲林",
     "name": "妙善菩陶藝工作坊",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -4638,14 +4513,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000209",
+    "id": "tourism-attraction-Attraction_376490000A_000202",
     "city": "雲林",
     "name": "臺灣工藝之家-瑩的幸福工坊",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -4656,14 +4531,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000210",
+    "id": "tourism-attraction-Attraction_376490000A_000203",
     "city": "雲林",
     "name": "御鼎興純手工柴燒黑豆醬油",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4673,14 +4548,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000211",
+    "id": "tourism-attraction-Attraction_376490000A_000204",
     "city": "雲林",
     "name": "光明屋獨立書店",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -4691,14 +4566,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000212",
+    "id": "tourism-attraction-Attraction_376490000A_000205",
     "city": "雲林",
     "name": "玉山碾米廠",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4708,14 +4583,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000213",
+    "id": "tourism-attraction-Attraction_376490000A_000206",
     "city": "雲林",
     "name": "土庫串樓口讀力書屋",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -4726,14 +4601,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000214",
+    "id": "tourism-attraction-Attraction_376490000A_000207",
     "city": "雲林",
     "name": "東遠碾米廠(第一稻場)",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4743,14 +4618,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000215",
+    "id": "tourism-attraction-Attraction_376490000A_000208",
     "city": "雲林",
     "name": "珍．粉紅城堡鹿角村",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -4762,14 +4637,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000216",
+    "id": "tourism-attraction-Attraction_376490000A_000209",
     "city": "雲林",
     "name": "開基斗六媽新興宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4779,14 +4654,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000217",
+    "id": "tourism-attraction-Attraction_376490000A_000210",
     "city": "雲林",
     "name": "永福寺",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4796,14 +4671,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000218",
+    "id": "tourism-attraction-Attraction_376490000A_000211",
     "city": "雲林",
     "name": "斗六福德宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4813,14 +4688,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000219",
+    "id": "tourism-attraction-Attraction_376490000A_000212",
     "city": "雲林",
     "name": "斗六聖玫瑰天主堂",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4830,14 +4705,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000220",
+    "id": "tourism-attraction-Attraction_376490000A_000213",
     "city": "雲林",
     "name": "斗六大北勢天聖宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -4848,14 +4723,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000221",
+    "id": "tourism-attraction-Attraction_376490000A_000214",
     "city": "雲林",
     "name": "斗六門受天宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4865,14 +4740,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000222",
+    "id": "tourism-attraction-Attraction_376490000A_000215",
     "city": "雲林",
     "name": "林內永安宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4882,14 +4757,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000223",
+    "id": "tourism-attraction-Attraction_376490000A_000216",
     "city": "雲林",
     "name": "九芎鎮安宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4899,14 +4774,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000224",
+    "id": "tourism-attraction-Attraction_376490000A_000217",
     "city": "雲林",
     "name": "林內開復廟",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4916,14 +4791,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000225",
+    "id": "tourism-attraction-Attraction_376490000A_000218",
     "city": "雲林",
     "name": "吳厝新興媽祖會",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4933,14 +4808,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000226",
+    "id": "tourism-attraction-Attraction_376490000A_000219",
     "city": "雲林",
     "name": "虎尾天后宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4950,14 +4825,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000227",
+    "id": "tourism-attraction-Attraction_376490000A_000220",
     "city": "雲林",
     "name": "虎尾立仁里順天宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -4967,14 +4842,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000228",
+    "id": "tourism-attraction-Attraction_376490000A_000221",
     "city": "雲林",
     "name": "虎尾興中里帥興宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -4985,14 +4860,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000229",
+    "id": "tourism-attraction-Attraction_376490000A_000222",
     "city": "雲林",
     "name": "虎尾福安宮糖廠媽",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5002,14 +4877,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000230",
+    "id": "tourism-attraction-Attraction_376490000A_000223",
     "city": "雲林",
     "name": "虎尾德興宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5019,14 +4894,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000231",
+    "id": "tourism-attraction-Attraction_376490000A_000224",
     "city": "雲林",
     "name": "埒內拱雲宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5036,14 +4911,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000232",
+    "id": "tourism-attraction-Attraction_376490000A_000225",
     "city": "雲林",
     "name": "西螺魚寮鎮南宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5053,14 +4928,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000233",
+    "id": "tourism-attraction-Attraction_376490000A_000226",
     "city": "雲林",
     "name": "西螺新厝弓孝宮伏魔大帝",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5070,14 +4945,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000234",
+    "id": "tourism-attraction-Attraction_376490000A_000227",
     "city": "雲林",
     "name": "西螺新天宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5087,14 +4962,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000235",
+    "id": "tourism-attraction-Attraction_376490000A_000228",
     "city": "雲林",
     "name": "伽藍爺廟",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5104,14 +4979,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000236",
+    "id": "tourism-attraction-Attraction_376490000A_000229",
     "city": "雲林",
     "name": "社口福天宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5121,14 +4996,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000237",
+    "id": "tourism-attraction-Attraction_376490000A_000230",
     "city": "雲林",
     "name": "吳厝朝興宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -5139,14 +5014,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000238",
+    "id": "tourism-attraction-Attraction_376490000A_000231",
     "city": "雲林",
     "name": "下湳鉢子寺",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5156,14 +5031,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000239",
+    "id": "tourism-attraction-Attraction_376490000A_000232",
     "city": "雲林",
     "name": "溝皂真武殿",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5173,14 +5048,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000240",
+    "id": "tourism-attraction-Attraction_376490000A_000233",
     "city": "雲林",
     "name": "崙仔進興宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5190,14 +5065,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000241",
+    "id": "tourism-attraction-Attraction_376490000A_000234",
     "city": "雲林",
     "name": "土庫都城隍廟",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5207,14 +5082,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000242",
+    "id": "tourism-attraction-Attraction_376490000A_000235",
     "city": "雲林",
     "name": "莿桐天瑤宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5224,14 +5099,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000243",
+    "id": "tourism-attraction-Attraction_376490000A_000236",
     "city": "雲林",
     "name": "甘厝庄天竺寺",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5241,14 +5116,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000244",
+    "id": "tourism-attraction-Attraction_376490000A_000237",
     "city": "雲林",
     "name": "饒平廣興宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5258,14 +5133,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000245",
+    "id": "tourism-attraction-Attraction_376490000A_000238",
     "city": "雲林",
     "name": "田尾賜福宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5275,14 +5150,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000246",
+    "id": "tourism-attraction-Attraction_376490000A_000239",
     "city": "雲林",
     "name": "二崙深坑仔觀音佛祖廟",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -5293,14 +5168,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000247",
+    "id": "tourism-attraction-Attraction_376490000A_000240",
     "city": "雲林",
     "name": "元長鰲峯宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5310,14 +5185,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000248",
+    "id": "tourism-attraction-Attraction_376490000A_000241",
     "city": "雲林",
     "name": "港尾順天宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5327,14 +5202,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000249",
+    "id": "tourism-attraction-Attraction_376490000A_000242",
     "city": "雲林",
     "name": "豐岡村埔羌崙玫瑰天主堂",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5344,14 +5219,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000250",
+    "id": "tourism-attraction-Attraction_376490000A_000243",
     "city": "雲林",
     "name": "馬山厝永安宮二太子廟",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5361,14 +5236,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000251",
+    "id": "tourism-attraction-Attraction_376490000A_000244",
     "city": "雲林",
     "name": "五條港安西府",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5378,14 +5253,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000252",
+    "id": "tourism-attraction-Attraction_376490000A_000245",
     "city": "雲林",
     "name": "蚊港鎮安府",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5395,14 +5270,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000253",
+    "id": "tourism-attraction-Attraction_376490000A_000246",
     "city": "雲林",
     "name": "崙豐進安府",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5412,14 +5287,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000254",
+    "id": "tourism-attraction-Attraction_376490000A_000247",
     "city": "雲林",
     "name": "四湖參天宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5429,14 +5304,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000255",
+    "id": "tourism-attraction-Attraction_376490000A_000248",
     "city": "雲林",
     "name": "萡子寮普天宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5446,14 +5321,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000256",
+    "id": "tourism-attraction-Attraction_376490000A_000249",
     "city": "雲林",
     "name": "口湖下崙福安宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5463,14 +5338,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000257",
+    "id": "tourism-attraction-Attraction_376490000A_000250",
     "city": "雲林",
     "name": "椬梧順天宮",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5480,14 +5355,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000258",
+    "id": "tourism-attraction-Attraction_376490000A_000251",
     "city": "雲林",
     "name": "水林通天府",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -5498,14 +5373,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000259",
+    "id": "tourism-attraction-Attraction_376490000A_000252",
     "city": "雲林",
     "name": "六房天上聖母",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5515,14 +5390,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000260",
+    "id": "tourism-attraction-Attraction_376490000A_000253",
     "city": "雲林",
     "name": "林內車站",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5532,14 +5407,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000261",
+    "id": "tourism-attraction-Attraction_376490000A_000254",
     "city": "雲林",
     "name": "石龜車站",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5549,14 +5424,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000262",
+    "id": "tourism-attraction-Attraction_376490000A_000255",
     "city": "雲林",
     "name": "華山遊憩區",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -5567,14 +5442,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000263",
+    "id": "tourism-attraction-Attraction_376490000A_000256",
     "city": "雲林",
     "name": "雲林縣蝴蝶故事館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -5585,14 +5460,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000264",
+    "id": "tourism-attraction-Attraction_376490000A_000257",
     "city": "雲林",
     "name": "樂米工坊",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5602,14 +5477,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000265",
+    "id": "tourism-attraction-Attraction_376490000A_000258",
     "city": "雲林",
     "name": "北港街角藝事館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -5620,14 +5495,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000266",
+    "id": "tourism-attraction-Attraction_376490000A_000259",
     "city": "雲林",
     "name": "黑矸仔醬油釀製所",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5637,14 +5512,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000267",
+    "id": "tourism-attraction-Attraction_376490000A_000260",
     "city": "雲林",
     "name": "憨吉秘塘",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -5655,14 +5530,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000268",
+    "id": "tourism-attraction-Attraction_376490000A_000261",
     "city": "雲林",
     "name": "藍光水塘",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -5673,14 +5548,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000269",
+    "id": "tourism-attraction-Attraction_376490000A_000262",
     "city": "雲林",
     "name": "北水南引資源共享碑",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5690,14 +5565,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000270",
+    "id": "tourism-attraction-Attraction_376490000A_000263",
     "city": "雲林",
     "name": "黑森林自行車道",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5707,14 +5582,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000271",
+    "id": "tourism-attraction-Attraction_376490000A_000264",
     "city": "雲林",
     "name": "顏思齊開拓台灣紀念碑",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5724,14 +5599,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000272",
+    "id": "tourism-attraction-Attraction_376490000A_000265",
     "city": "雲林",
     "name": "月光下友善農場",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5741,14 +5616,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000273",
+    "id": "tourism-attraction-Attraction_376490000A_000266",
     "city": "雲林",
     "name": "老土藝術工作室",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -5760,14 +5635,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000274",
+    "id": "tourism-attraction-Attraction_376490000A_000267",
     "city": "雲林",
     "name": "糧莘庇護農場",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5777,14 +5652,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000275",
+    "id": "tourism-attraction-Attraction_376490000A_000268",
     "city": "雲林",
     "name": "紅螞蟻生態世界",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -5795,14 +5670,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000276",
+    "id": "tourism-attraction-Attraction_376490000A_000269",
     "city": "雲林",
     "name": "蔡秋桐文學館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -5813,14 +5688,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000277",
+    "id": "tourism-attraction-Attraction_376490000A_000270",
     "city": "雲林",
     "name": "歸途文畫室",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5830,14 +5705,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000278",
+    "id": "tourism-attraction-Attraction_376490000A_000271",
     "city": "雲林",
     "name": "昶典工業股份有限公司",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5847,14 +5722,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000279",
+    "id": "tourism-attraction-Attraction_376490000A_000272",
     "city": "雲林",
     "name": "季節角落",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -5865,14 +5740,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000280",
+    "id": "tourism-attraction-Attraction_376490000A_000273",
     "city": "雲林",
     "name": "青心耕雲協會",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -5883,14 +5758,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000281",
+    "id": "tourism-attraction-Attraction_376490000A_000274",
     "city": "雲林",
     "name": "風鼓新創基地",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -5901,14 +5776,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000282",
+    "id": "tourism-attraction-Attraction_376490000A_000275",
     "city": "雲林",
     "name": "建影陶形",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -5920,14 +5795,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000283",
+    "id": "tourism-attraction-Attraction_376490000A_000276",
     "city": "雲林",
     "name": "北港登記所",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5937,14 +5812,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000284",
+    "id": "tourism-attraction-Attraction_376490000A_000277",
     "city": "雲林",
     "name": "承龍海產行",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5954,14 +5829,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000285",
+    "id": "tourism-attraction-Attraction_376490000A_000278",
     "city": "雲林",
     "name": "北港滯洪池",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -5971,32 +5846,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000286",
-    "city": "雲林",
-    "name": "北港1911好庫文化產業園區（北港糖廠）",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 72,
-    "updated": "2026-06-17",
-    "tags": [
-      "景點",
-      "文化"
-    ],
-    "place": "雲林縣 10009 北港鎮 10009060 651 雲林縣北港鎮光復路2號",
-    "q": "雲林縣 10009 北港鎮 10009060 651 雲林縣北港鎮光復路2號",
-    "why": "北港糖廠是一座擁有超過百年歷史的台灣糖業代表性工業遺址，它蘊藏著豐富的文化資源，見證了台灣近代糖業產業和城鄉起伏發展的歷史。",
-    "url": ""
-  },
-  {
-    "id": "tourism-attraction-Attraction_376490000A_000287",
+    "id": "tourism-attraction-Attraction_376490000A_000279",
     "city": "雲林",
     "name": "微醺農場",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6006,14 +5863,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000288",
+    "id": "tourism-attraction-Attraction_376490000A_000280",
     "city": "雲林",
     "name": "雲林科技大學",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -6024,14 +5881,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000289",
+    "id": "tourism-attraction-Attraction_376490000A_000281",
     "city": "雲林",
     "name": "斗六後庄埤親水公園(天空之島光環境)",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -6043,32 +5900,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000290",
-    "city": "雲林",
-    "name": "膨鼠森林公園",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 72,
-    "updated": "2026-06-17",
-    "tags": [
-      "景點",
-      "戶外"
-    ],
-    "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市大學路三段222-1號",
-    "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市大學路三段222-1號",
-    "why": "膨鼠森林公園佔占地約8公頃，因公園內大樹成林，吸引許多松鼠棲息，因而命名為「膨鼠森林公園」。有橡果體健山丘、膨鼠遊戲草原、歇腳森林休憩平台、直排輪場、大型戶外天篷舞台。假日常有大型活動及市集在此舉辦，非常適合親子同樂。",
-    "url": ""
-  },
-  {
-    "id": "tourism-attraction-Attraction_376490000A_000291",
+    "id": "tourism-attraction-Attraction_376490000A_000282",
     "city": "雲林",
     "name": "松竹廣場",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -6079,14 +5918,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000292",
+    "id": "tourism-attraction-Attraction_376490000A_000283",
     "city": "雲林",
     "name": "瀞座",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -6097,14 +5936,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000293",
+    "id": "tourism-attraction-Attraction_376490000A_000284",
     "city": "雲林",
     "name": "低語軒",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6114,14 +5953,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000294",
+    "id": "tourism-attraction-Attraction_376490000A_000285",
     "city": "雲林",
     "name": "小柴軒",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6131,14 +5970,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000295",
+    "id": "tourism-attraction-Attraction_376490000A_000286",
     "city": "雲林",
     "name": "穹頂竹棚",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -6149,14 +5988,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000296",
+    "id": "tourism-attraction-Attraction_376490000A_000287",
     "city": "雲林",
     "name": "微風小築",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6166,14 +6005,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000297",
+    "id": "tourism-attraction-Attraction_376490000A_000288",
     "city": "雲林",
     "name": "靜思坪",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -6184,14 +6023,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000298",
+    "id": "tourism-attraction-Attraction_376490000A_000289",
     "city": "雲林",
     "name": "明陣",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6201,14 +6040,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000299",
+    "id": "tourism-attraction-Attraction_376490000A_000290",
     "city": "雲林",
     "name": "風之舞台",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6218,14 +6057,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000300",
+    "id": "tourism-attraction-Attraction_376490000A_000291",
     "city": "雲林",
     "name": "杉林步道",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -6236,14 +6075,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000301",
+    "id": "tourism-attraction-Attraction_376490000A_000292",
     "city": "雲林",
     "name": "後院 houyuan",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6253,14 +6092,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000302",
+    "id": "tourism-attraction-Attraction_376490000A_000293",
     "city": "雲林",
     "name": "福家草莓果園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6270,14 +6109,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000303",
+    "id": "tourism-attraction-Attraction_376490000A_000294",
     "city": "雲林",
     "name": "籽奇手作工作室",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6287,14 +6126,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000304",
+    "id": "tourism-attraction-Attraction_376490000A_000295",
     "city": "雲林",
     "name": "丁宗華木雕藝術工作坊",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -6305,14 +6144,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000305",
+    "id": "tourism-attraction-Attraction_376490000A_000296",
     "city": "雲林",
     "name": "弘久愛玉園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6322,14 +6161,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000306",
+    "id": "tourism-attraction-Attraction_376490000A_000297",
     "city": "雲林",
     "name": "森活武樹公園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -6341,14 +6180,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000307",
+    "id": "tourism-attraction-Attraction_376490000A_000298",
     "city": "雲林",
     "name": "綠金蕃茄南瓜農場",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -6359,14 +6198,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000308",
+    "id": "tourism-attraction-Attraction_376490000A_000299",
     "city": "雲林",
     "name": "華星印書局活版故事館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -6377,14 +6216,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000309",
+    "id": "tourism-attraction-Attraction_376490000A_000300",
     "city": "雲林",
     "name": "金世紀草莓園、黃金番茄園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6394,14 +6233,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000310",
+    "id": "tourism-attraction-Attraction_376490000A_000301",
     "city": "雲林",
     "name": "成龍集會所",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -6412,14 +6251,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000311",
+    "id": "tourism-attraction-Attraction_376490000A_000302",
     "city": "雲林",
     "name": "東北柑仔店",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6429,14 +6268,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000312",
+    "id": "tourism-attraction-Attraction_376490000A_000303",
     "city": "雲林",
     "name": "十八將軍祠",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -6447,14 +6286,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000313",
+    "id": "tourism-attraction-Attraction_376490000A_000304",
     "city": "雲林",
     "name": "舊東勢鄉公所辦公廳舍及附屬倉庫",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -6465,14 +6304,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000314",
+    "id": "tourism-attraction-Attraction_376490000A_000305",
     "city": "雲林",
     "name": "白馬之星民宿",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -6484,14 +6323,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000315",
+    "id": "tourism-attraction-Attraction_376490000A_000306",
     "city": "雲林",
     "name": "龍巖糖廠歷史文物館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -6502,14 +6341,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000316",
+    "id": "tourism-attraction-Attraction_376490000A_000307",
     "city": "雲林",
     "name": "台西泉州國小",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6519,32 +6358,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000317",
-    "city": "雲林",
-    "name": "海口庄派出所",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 72,
-    "updated": "2026-06-17",
-    "tags": [
-      "景點",
-      "文化"
-    ],
-    "place": "雲林縣 10009 臺西鄉 10009160 636 雲林縣台西村15中山路108號",
-    "q": "雲林縣 10009 臺西鄉 10009160 636 雲林縣台西村15中山路108號",
-    "why": "深具歷史意義的派出所與現代的分局大樓並列一起，呈現二代同堂時空穿越感⏳。",
-    "url": ""
-  },
-  {
-    "id": "tourism-attraction-Attraction_376490000A_000318",
+    "id": "tourism-attraction-Attraction_376490000A_000309",
     "city": "雲林",
     "name": "海口放送台西老街",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6554,14 +6375,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000319",
+    "id": "tourism-attraction-Attraction_376490000A_000310",
     "city": "雲林",
     "name": "林內蔡媽媽李子園",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6571,32 +6392,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000320",
-    "city": "雲林",
-    "name": "林內紫蝶生態地景園區(林內驛站)",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 72,
-    "updated": "2026-06-17",
-    "tags": [
-      "景點",
-      "戶外"
-    ],
-    "place": "雲林縣 10009 林內鄉 10009100 643 雲林縣林內鄉新興9號",
-    "q": "雲林縣 10009 林內鄉 10009100 643 雲林縣林內鄉新興9號",
-    "why": "林內紫蝶生態地景園區(林內驛站)",
-    "url": ""
-  },
-  {
-    "id": "tourism-attraction-Attraction_376490000A_000321",
+    "id": "tourism-attraction-Attraction_376490000A_000311",
     "city": "雲林",
     "name": "燚茶咖啡",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6606,32 +6409,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000322",
-    "city": "雲林",
-    "name": "萬德醫院",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 72,
-    "updated": "2026-06-17",
-    "tags": [
-      "景點",
-      "文化"
-    ],
-    "place": "雲林縣 10009 土庫鎮 10009050 633 雲林縣土庫鎮中山路204號",
-    "q": "雲林縣 10009 土庫鎮 10009050 633 雲林縣土庫鎮中山路204號",
-    "why": "創立於20世紀初的醫院融合日式風格，內庭圓雕壽字牆為特色，秉持「#賺情不賺錢」精神守護土庫，停業並經修復後，變身為社區推廣文化活動的重要據點。",
-    "url": ""
-  },
-  {
-    "id": "tourism-attraction-Attraction_376490000A_000323",
+    "id": "tourism-attraction-Attraction_376490000A_000312",
     "city": "雲林",
     "name": "豐村行雜貨店",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
@@ -6641,31 +6426,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000324",
-    "city": "雲林",
-    "name": "第一鰻波",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 72,
-    "updated": "2026-06-17",
-    "tags": [
-      "景點"
-    ],
-    "place": "雲林縣 10009 口湖鄉 10009190 653 第一鰻波(口湖鄉外埔路1-2號)",
-    "q": "雲林縣 10009 口湖鄉 10009190 653 第一鰻波(口湖鄉外埔路1-2號)",
-    "why": "口湖鰻魚王國 第一鰻波工坊位於口湖鄉，由莊國顯先生與嚴竹英女士所創立，是雲林縣第一座鰻魚養殖場，兩人經過多年的養殖研究，終於生產出口感細嫩的胭脂鰻，並通過產銷履歷認證，外銷日本。",
-    "url": ""
-  },
-  {
-    "id": "tourism-attraction-Attraction_376490000A_000325",
+    "id": "tourism-attraction-Attraction_376490000A_000313",
     "city": "雲林",
     "name": "朝露魚舖",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -6746,14 +6514,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000330",
+    "id": "tourism-attraction-Attraction_376490000A_000318",
     "city": "雲林",
     "name": "虎尾糖廠",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化"
@@ -6764,14 +6532,14 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000331",
+    "id": "tourism-attraction-Attraction_376490000A_000319",
     "city": "雲林",
     "name": "草嶺地質體驗區",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外"
@@ -6782,37 +6550,20 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000332",
+    "id": "tourism-attraction-Attraction_376490000A_000320",
     "city": "雲林",
     "name": "草嶺遊客中心",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
     "place": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉草嶺村40-2號",
     "q": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉草嶺村40-2號",
     "why": "草嶺旅遊資訊服務中心位於草嶺形象商圈的中坪仔商店街。主要在提供遊客諮詢服務、協助洽詢團體安排各項服務。",
-    "url": ""
-  },
-  {
-    "id": "tourism-attraction-Attraction_376490000A_000334",
-    "city": "雲林",
-    "name": "林內鄉農會",
-    "e": "📍",
-    "type": "景點",
-    "src": "官方",
-    "base_heat": 72,
-    "updated": "2026-06-17",
-    "tags": [
-      "景點"
-    ],
-    "place": "雲林縣 10009 林內鄉 10009100 643 雲林縣林內鄉瑞農路23號",
-    "q": "雲林縣 10009 林內鄉 10009100 643 雲林縣林內鄉瑞農路23號",
-    "why": "本會以辦理農民教育訓練及農業推廣工作、金融服務、促進農業升級, 建構出創力農業、活力農民、魅力農村、發展農村經濟服務民為宗旨,自本屆總幹事接任以來,時時刻刻為農會貢獻心力,不斷創新農會業 務,也為農會增加收益,並秉持以「誠信、專業服務、共享」為理 念,以及「企業管理、永續經營」的精神來經營農會,創造農業、農民、農會三贏",
     "url": ""
   },
   {
@@ -6830,6 +6581,128 @@
     "place": "雲林縣 10009 口湖鄉 10009190 653 民主路5號",
     "q": "雲林縣 10009 口湖鄉 10009190 653 民主路5號",
     "why": "金湖萬善爺廟位於雲林縣口湖鄉港東村金湖國小附近，建於清咸豐年間，為悼念1845年金湖大水災的遇難先民，居民因而於蚶仔寮建祠供後人祭拜。今日金湖萬善爺廟則是從蚶仔寮分靈而來，後因海水倒灌、西濱公路拓寬等原因，於1985年於現址重建。",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000337",
+    "city": "雲林",
+    "name": "金琴麵包食品行",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-06-17",
+    "tags": [
+      "景點"
+    ],
+    "place": "雲林縣 10009 土庫鎮 10009050 633 雲林縣土庫鎮中山路195號",
+    "q": "雲林縣 10009 土庫鎮 10009050 633 雲林縣土庫鎮中山路195號",
+    "why": "傳說中的台式麵包天堂 老闆的堅持烘出小鎮的回憶，來一趟保證收服你的味蕾！",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000324",
+    "city": "雲林",
+    "name": "土庫順天宮",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點"
+    ],
+    "place": "雲林縣 10009 土庫鎮 10009050 633 雲林縣土庫鎮中正路109號",
+    "q": "雲林縣 10009 土庫鎮 10009050 633 雲林縣土庫鎮中正路109號",
+    "why": "土庫媽祖蔭外庄土庫順天宮主祀媽祖，俗稱塗褲媽（土庫媽），現在的格局和廟貌是在昭和年間重建所奠定，漳派胡賢和泉州溪底派王錦木比拚大木作、蔣九、蔣泉和、陳天乞藝匠名司的作品亦在其中。",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000325",
+    "city": "雲林",
+    "name": "斗六車站",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點"
+    ],
+    "place": "雲林縣 10009 斗六市 10009010 640 斗六市信義里民生路187號",
+    "q": "雲林縣 10009 斗六市 10009010 640 斗六市信義里民生路187號",
+    "why": "雲林門戶斗六車站創始於明治37年，初為木造站房，昭和16年因中埔地震倒塌損毀，隔年3月復建竣工。民國47年興建第三代鋼筋水泥式站房，民國97年啟用跨站式新車站。",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000330",
+    "city": "雲林",
+    "name": "萬得醫院",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "文化"
+    ],
+    "place": "雲林縣 10009 土庫鎮 10009050 633 雲林縣土庫鎮宮北里中山路204號",
+    "q": "雲林縣 10009 土庫鎮 10009050 633 雲林縣土庫鎮宮北里中山路204號",
+    "why": "創立於20世紀初的醫院融合日式風格，內庭圓雕壽字牆為特色，停業並經修復後，變身為社區推廣文化活動的重要據點。",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000331",
+    "city": "雲林",
+    "name": "農田水利環境教育園區",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點"
+    ],
+    "place": "雲林縣 10009 林內鄉 10009100 643 雲林縣林內鄉林中村三星路9-2號",
+    "q": "雲林縣 10009 林內鄉 10009100 643 雲林縣林內鄉林中村三星路9-2號",
+    "why": "浪漫水圳學，秋享落羽松全台首座以水利主題園區，展示館藉由影像、模型和水利器具，實際展示農業跟水利之間的關係。因地處濁水溪上游，以八卦池模樣呈現的林內分水工作充滿觀賞性與教育價值。",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000332",
+    "city": "雲林",
+    "name": "古坑綠色隧道",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "戶外"
+    ],
+    "place": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉湳仔村湳仔路",
+    "q": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉湳仔村湳仔路",
+    "why": "舉家同歡的綠色隧道綠蔭編織成的綠色隧道，全長約莫兩公里，因步道兩側的50年濃密芒果樹蔭得名。散步在青翠草皮上來廠野餐遊憩、為小孩放電。還有在地特色市集可以消費，適合舉家共度慢活自在的午後。",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000333",
+    "city": "雲林",
+    "name": "雲中街生活聚落",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "文化"
+    ],
+    "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市雲林路1段75巷7號",
+    "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市雲林路1段75巷7號",
+    "why": "日治宿舍，今日文青聚落原為日治時代警察與警眷宿舍，經重新翻修後陸續進駐咖啡廳、甜點店、獨立書房、駐村藝術家等，並重新整理周圍草皮、老榕樹等，讓木造建築群成為今日的文青熱點。",
     "url": ""
   },
   {
@@ -6851,37 +6724,255 @@
     "url": ""
   },
   {
-    "id": "tourism-attraction-Attraction_376490000A_000337",
+    "id": "tourism-attraction-Attraction_376490000A_000335",
     "city": "雲林",
-    "name": "金琴麵包食品行",
+    "name": "✨【歷史建築 #古坑東和陳宅「一方院」開院囉！】✨",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
     "tags": [
-      "景點"
+      "景點",
+      "文化"
     ],
-    "place": "雲林縣 10009 土庫鎮 10009050 633 雲林縣土庫鎮中山路195號",
-    "q": "雲林縣 10009 土庫鎮 10009050 633 雲林縣土庫鎮中山路195號",
-    "why": "傳說中的台式麵包天堂 老闆的堅持烘出小鎮的回憶，來一趟保證收服你的味蕾！",
+    "place": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉東和村文化路115-1號",
+    "q": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉東和村文化路115-1號",
+    "why": "✨【歷史建築 #古坑東和陳宅「一方院」開院囉！】✨感謝鄉親好友中秋來古坑東和相聚⸜(ˊᗜˋ)⸝謝謝 #高幸里老師 為一方院設計獨一無二的木雕藝術，溫暖落日交織在人與老宅，畫面真的好美✨ 公共空間全面開放參觀中！歡迎大家到古坑東和散步吹風、來陳宅欣賞鹿港名匠郭新林的傳世彩繪，感受山城慢生活☕ 目前也正全力推進民宿申請中！",
     "url": ""
   },
   {
     "id": "tourism-attraction-Attraction_376490000A_000338",
     "city": "雲林",
-    "name": "土庫順天宮",
+    "name": "斗南文薈館",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-06-17",
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "戶外",
+      "文化"
+    ],
+    "place": "雲林縣 10009 斗南鎮 10009020 630 雲林縣斗南鎮西岐里文昌路145號",
+    "q": "雲林縣 10009 斗南鎮 10009020 630 雲林縣斗南鎮西岐里文昌路145號",
+    "why": "斗南文薈館啟用後，串接起斗南現有在地藝文場館，從日式宿舍為出發點，經他里霧文化園區、青銀共生基地、偶的家布袋戲館、他里霧親水公園等，隨著小東工業區開發，陸續引進更多休閒育樂空間，將斗南打造成為蘊含鄉土文化、名師藝廊、消費經濟、親子共遊的一日走讀圈。",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000340",
+    "city": "雲林",
+    "name": "北港1911好庫文化產業園區（北港糖廠）",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "文化"
+    ],
+    "place": "雲林縣 10009 北港鎮 10009060 651 雲林縣北港鎮光復路2號",
+    "q": "雲林縣 10009 北港鎮 10009060 651 雲林縣北港鎮光復路2號",
+    "why": "北港糖廠是一座擁有超過百年歷史的台灣糖業代表性工業遺址，它蘊藏著豐富的文化資源，見證了台灣近代糖業產業和城鄉起伏發展的歷史。",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000341",
+    "city": "雲林",
+    "name": "斗六觀光夜市",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
     "tags": [
       "景點"
     ],
-    "place": "雲林縣 10009 土庫鎮 10009050 633 雲林縣土庫鎮中正路109號",
-    "q": "雲林縣 10009 土庫鎮 10009050 633 雲林縣土庫鎮中正路109號",
-    "why": "土庫媽祖蔭外庄土庫順天宮主祀媽祖，俗稱塗褲媽（土庫媽），現在的格局和廟貌是在昭和年間重建所奠定，漳派胡賢和泉州溪底派王錦木比拚大木作、蔣九、蔣泉和、陳天乞藝匠名司的作品亦在其中。",
+    "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市鎮南路560號",
+    "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市鎮南路560號",
+    "why": "占地約3,000坪，匯集上千攤美食、遊戲與特色商家，設有免費停車場，是在地人氣夜遊景點。",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000342",
+    "city": "雲林",
+    "name": "草嶺石壁森林療癒園區",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "戶外",
+      "文化"
+    ],
+    "place": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉",
+    "q": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉",
+    "why": "海拔約 1,500 至 1,750 公尺，是全臺首座結合多項竹構藝術裝置的森林療癒基地，榮獲世界竹組織授證為「世界竹地標」。",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000344",
+    "city": "雲林",
+    "name": "西螺客町文化館",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "文化"
+    ],
+    "place": "雲林縣 10009 西螺鎮 10009040 648 雲林縣西螺鎮中山路288號（位於戶政事務所旁）",
+    "q": "雲林縣 10009 西螺鎮 10009040 648 雲林縣西螺鎮中山路288號（位於戶政事務所旁）",
+    "why": "歷史建築「原西螺街長宿舍」修復工程劃下完美句點，即將以「西螺客町文化館」之嶄新姿態與大眾見面。在開幕營運前雲林縣副縣長謝淑亞率文化觀光處及客家輔導團關心其開館營運進度，並為詔安客家文化發展提供輔導意見。",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000351",
+    "city": "雲林",
+    "name": "九芎村落羽松秘境",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "戶外"
+    ],
+    "place": "雲林縣 10009 林內鄉 10009100 643 雲林縣林內鄉九芎村",
+    "q": "雲林縣 10009 林內鄉 10009100 643 雲林縣林內鄉九芎村",
+    "why": "在雲林林內鄉的九芎村外圍,藏著一片由熱心地主悉心培育的千棵落羽松森林。每當秋冬交替,這片大地便悄悄打翻了調色盤,將漫天綠意染成層次分明的金黃與迷幻橘紅,宛如北歐童話裡的神秘長廊。這座免費開放的私人祕境,最適合在11月入冬之際,搭配周邊的林內驛站或水舞休閒農業區一同順遊。今年秋冬,給自己留一個午後,來九芎村感受這場轉瞬即",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000352",
+    "city": "雲林",
+    "name": "土庫庄役場",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "文化"
+    ],
+    "place": "雲林縣 10009 土庫鎮 10009050 633 雲林縣土庫鎮宮北里中山路252號",
+    "q": "雲林縣 10009 土庫鎮 10009050 633 雲林縣土庫鎮宮北里中山路252號",
+    "why": "位於土庫老街上的「土庫庄役場」，建於1933年，原為日治時期的土庫街庄役場，即當時土庫的行政中心，後轉為土庫鎮公所的辦公場所，直至2002 年遷至新建辦公大樓便閒置下來。而由於其為土庫地區最具代表性的建築之一，建築風格融合了和洋折衷的特色，展現了1930 年代的建築工藝價值，每一塊磚、每一片瓦都訴說著一個屬於土庫的故事",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000353",
+    "city": "雲林",
+    "name": "第一鰻波",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點"
+    ],
+    "place": "雲林縣 10009 口湖鄉 10009190 653 第一鰻波(口湖鄉外埔路1-2號)",
+    "q": "雲林縣 10009 口湖鄉 10009190 653 第一鰻波(口湖鄉外埔路1-2號)",
+    "why": "口湖鰻魚王國 第一鰻波工坊位於口湖鄉，由莊國顯先生與嚴竹英女士所創立，是雲林縣第一座鰻魚養殖場，兩人經過多年的養殖研究，終於生產出口感細嫩的胭脂鰻，並通過產銷履歷認證，外銷日本。",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000354",
+    "city": "雲林",
+    "name": "鹿寮百年天主堂",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點"
+    ],
+    "place": "雲林縣 10009 元長鄉 10009170 655 雲林縣元長鄉鹿北村明鹿路82號",
+    "q": "雲林縣 10009 元長鄉 10009170 655 雲林縣元長鄉鹿北村明鹿路82號",
+    "why": "鹿寮百年天主堂佇立於元長鄉將近130年的老教堂鄉下民風純樸 且有濃濃的人情味",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000355",
+    "city": "雲林",
+    "name": "麥寮社教園區",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "文化"
+    ],
+    "place": "雲林縣 10009 麥寮鄉 10009130 638 雲林縣麥寮鄉麥豐村自強路125號",
+    "q": "雲林縣 10009 麥寮鄉 10009130 638 雲林縣麥寮鄉麥豐村自強路125號",
+    "why": "結合 教育 × 文化 × 永續 × 社區 的生活實驗場域，從生活美學館、智慧圖書館到多元公共空間，讓學習走進日常、讓永續成為行動。",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000356",
+    "city": "雲林",
+    "name": "林內紙蝶生態地景園區(林內驛站)",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "戶外"
+    ],
+    "place": "雲林縣 10009 林內鄉 10009100 643 雲林縣林內鄉新興9號",
+    "q": "雲林縣 10009 林內鄉 10009100 643 雲林縣林內鄉新興9號",
+    "why": "林內紙蝶生態地景園區(林內驛站)",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000357",
+    "city": "雲林",
+    "name": "膨鼠森林公園",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "戶外"
+    ],
+    "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市大學路三段222-1號",
+    "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市大學路三段222-1號",
+    "why": "斗六最強親子遊戲場，膨鼠森林公園佔占地約8公頃，因公園內大樹成林，吸引許多松鼠棲息，因而命名為「膨鼠森林公園」。有橡果體健山丘、膨鼠遊戲草原、歇腳森林休憩平台、直排輪場、大型戶外天篷舞台。假日常有大型活動及市集在此舉辦，非常適合親子同樂。",
+    "url": ""
+  },
+  {
+    "id": "tourism-attraction-Attraction_376490000A_000358",
+    "city": "雲林",
+    "name": "斗六藝術水岸園區",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 72,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "戶外",
+      "文化"
+    ],
+    "place": "雲林縣 10009 斗六市 10009010 640 斗六市社口街",
+    "q": "雲林縣 10009 斗六市 10009010 640 斗六市社口街",
+    "why": "斗六藝術水岸園區，兼顧種植水生植物的蓄洪池和陸上公園功能。除了饒富特色的馬賽克烏龜、吸管造型沖洗區，和舉凡攀爬架、攀岩、拉繩等親子運動區，肯定是室外活動的首選。",
     "url": ""
   },
   {
@@ -11107,14 +11198,13 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2024-05-29",
+    "updated": "2026-11-18",
     "tags": [
-      "景點",
-      "戶外"
+      "景點"
     ],
     "place": "臺南市 67000 北門區 67000170 727 永華里",
     "q": "臺南市 67000 北門區 67000170 727 永華里",
-    "why": "北門區之生態環境屬於潟湖生態，蘊含著豐富之魚、蝦、貝類及紅樹林景觀，常見許多鷺鳥、水鳥，彈塗魚和各種螃蟹，具有潟湖觀光生態旅遊之魅力。最讓人注目的是每年10月到翌年4月到此作客的黑腹燕鷗，每到黃昏成群的黑腹燕鷗會在空中群聚飛舞，依照風向變換各種不同隊型，相當壯觀。",
+    "why": "潟湖水岸欣賞候鳥群舞",
     "url": ""
   },
   {
@@ -11125,14 +11215,14 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-12",
+    "updated": "2026-11-18",
     "tags": [
       "景點",
-      "文化"
+      "戶外"
     ],
     "place": "臺南市 67000 北門區 67000170 727 復育鹽田西南郊",
     "q": "臺南市 67000 北門區 67000170 727 復育鹽田西南郊",
-    "why": "井仔腳瓦盤鹽田是北門的第一座鹽田，也是現存最古老的瓦盤鹽田遺址，原為清領時期的瀨東鹽場，西元1818年遷移至此，至今未再移位，是台灣最古老的現址鹽田，至今已有200年歷史。",
+    "why": "兩百年鹽田延續海岸記憶",
     "url": ""
   },
   {
@@ -14881,14 +14971,13 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-09-21",
+    "updated": "2026-11-18",
     "tags": [
-      "景點",
-      "戶外"
+      "景點"
     ],
     "place": "臺南市 67000 安南區 67000350 709 大眾路360號",
     "q": "臺南市 67000 安南區 67000350 709 大眾路360號",
-    "why": "四草綠色隧道所指的是四草大眾廟後方排水道的紅樹林區，這條河道因兩側遍佈樹齡逾50年的原生紅樹林，自然形成一彎如隧道般的景象，號稱「迷你版亞馬遜森林」，同時也是臺灣唯一的水上綠色河道。",
+    "why": "樹影相連的水上綠色隧道",
     "url": ""
   },
   {
@@ -19666,13 +19755,13 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2024-10-04",
+    "updated": "2026-11-18",
     "tags": [
       "景點"
     ],
-    "place": "嘉義縣 10010 東石鄉 10010090 614 彩霞大道420號",
-    "q": "嘉義縣 10010 東石鄉 10010090 614 彩霞大道420號",
-    "why": "東石漁人碼頭以「風」「陽光」「魚」「船」「海洋」及「燈塔」等元素做為規劃概念，打造出多元的海洋風貌。其中最吸睛的莫過於那一列散發著異國風情的彩色小屋，色彩鮮亮活潑的小屋，也進駐了不少商家，讓遊客們能在此度過更美好的時光。",
+    "place": "嘉義縣 10010 東石鄉 10010090 614 東石村彩霞大道420號",
+    "q": "嘉義縣 10010 東石鄉 10010090 614 東石村彩霞大道420號",
+    "why": "彩色小屋映出海港風情",
     "url": ""
   },
   {
@@ -19823,13 +19912,13 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2024-05-28",
+    "updated": "2026-11-18",
     "tags": [
       "景點"
     ],
     "place": "嘉義縣 10010 布袋鎮 10010030 625 岑海里中山路3號",
     "q": "嘉義縣 10010 布袋鎮 10010030 625 岑海里中山路3號",
-    "why": "布袋港舊稱布袋嘴，因地形酷似一只布袋而得名，漁獲資源相當豐盛，早期便轉型發展成觀光漁市，至今成為嘉義縣規模最大、人氣最旺的觀光景點之一。",
+    "why": "走進魚市感受漁港風情",
     "url": ""
   },
   {
@@ -19892,13 +19981,13 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2024-05-28",
+    "updated": "2026-11-18",
     "tags": [
       "景點"
     ],
     "place": "臺南市 67000 將軍區 67000160 725 平沙里156號、157號",
     "q": "臺南市 67000 將軍區 67000160 725 平沙里156號、157號",
-    "why": "將軍漁港是假日漁市及漁貨拍賣市場，也是將來供作台灣環島海上綠色公路航線的重要港口。",
+    "why": "漁船相伴的港邊風景",
     "url": ""
   },
   {
@@ -19960,13 +20049,13 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-12",
+    "updated": "2026-11-18",
     "tags": [
       "景點"
     ],
     "place": "臺南市 67000 七股區 67000150 724 鹽埕里66號",
     "q": "臺南市 67000 七股區 67000150 724 鹽埕里66號",
-    "why": "七股鹽場過去曾是臺灣最大的曬鹽場，主要供應國內農工業用鹽，然而隨著時代變遷，曬鹽不符經濟效益，2002年5月七股鹽場關閉曬鹽場，結束338年的榮耀曬鹽史。",
+    "why": "七股鹽場的曬鹽歲月",
     "url": ""
   },
   {
@@ -20011,14 +20100,13 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-17",
+    "updated": "2026-11-18",
     "tags": [
-      "景點",
-      "文化"
+      "景點"
     ],
     "place": "臺南市 67000 安南區 67000350 709 城安路160號",
     "q": "臺南市 67000 安南區 67000350 709 城安路160號",
-    "why": "臺南是台灣的發源地，正統鹿耳門聖母廟緣起於十六世紀前，因奉祀鹿耳門媽祖而興建。為臺灣唯一奉祀有八百年以上歷史鹿耳門媽金身，及建築面積第一大規模之媽祖廟。",
+    "why": "宮殿建築展現信仰風華",
     "url": ""
   },
   {
@@ -20151,14 +20239,13 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-05-14",
+    "updated": "2026-11-18",
     "tags": [
-      "景點",
-      "文化"
+      "景點"
     ],
     "place": "臺南市 67000 北門區 67000170 727 蚵寮里976號",
     "q": "臺南市 67000 北門區 67000170 727 蚵寮里976號",
-    "why": "南鯤鯓代天府是臺灣香火鼎盛的廟宇之一，也是全臺最古老的五府千歲的信仰中心，建廟歷史已有三百多年以上，已為國定古蹟，也是臺南的「八景八勝三園」。",
+    "why": "三百年香火守護鯤鯓",
     "url": ""
   },
   {
@@ -20187,14 +20274,14 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-17",
+    "updated": "2026-11-18",
     "tags": [
       "景點",
       "戶外"
     ],
     "place": "臺南市 67000 北門區 67000170 727 雙春里雙春73-10號",
     "q": "臺南市 67000 北門區 67000170 727 雙春里雙春73-10號",
-    "why": "雙春濱海遊憩區是位在台南北門的生態遊憩場所，園區內規劃紅樹林觀察區，網羅台灣珍貴的4種原生紅樹林：海茄苳、水筆仔、欖李、紅海欖（亦稱五梨跤），適合帶著孩子一同前往，認識台灣特有生態。",
+    "why": "走進雙春認識濱海生態",
     "url": ""
   },
   {
@@ -20205,14 +20292,13 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2024-08-27",
+    "updated": "2026-11-18",
     "tags": [
-      "景點",
-      "文化"
+      "景點"
     ],
     "place": "臺南市 67000 北門區 67000170 727 三光里95號",
     "q": "臺南市 67000 北門區 67000170 727 三光里95號",
-    "why": "東隆宮是三寮灣先民們隨著鄭成功渡海來臺開墾，為保佑平安渡海，特迎請李府千歲神像護佑，後眾生為感念千歲神威大顯，初乃創草寮、建公厝奉祀。東隆宮以傳統閩式建築設計，內主祀神明有李、溫、吳、池府千歲及保生大帝。廟內同時供祀二艘永遠駐廟的王船，一木一銅，啟建於西元1976年間；銅製王船為全台唯一的泉州式古帆船，水手、船舍雕工精",
+    "why": "渡海信仰守護三寮灣",
     "url": ""
   },
   {
@@ -20392,19 +20478,19 @@
   {
     "id": "tourism-attraction-Attraction_A15011100H_000268",
     "city": "嘉義",
-    "name": "布袋濕地生態園區",
+    "name": "布袋濕地生態園區（南布袋濕地）",
     "e": "📍",
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-12",
+    "updated": "2026-11-18",
     "tags": [
       "景點",
       "戶外"
     ],
     "place": "嘉義縣 10010 布袋鎮 10010030 625 布袋國中附近",
     "q": "嘉義縣 10010 布袋鎮 10010030 625 布袋國中附近",
-    "why": "南布袋濕地位於嘉義縣布袋鎮市區南側，座落於昔日布袋鹽場的六區鹽田所在地，包含潟湖水域面積廣大。由於經濟結構轉變，本土鹽業將鹽場廢曬，經過了多年的閒置，長年的雨水沖蝕淡化以及地層下陷，自然與人為的各種因素影響之下，這裡最終形成了一片生態豐富的溼地環境，吸引大批冬候鳥、夏候鳥前來棲息覓食，此處也成為雲嘉南濱海地區賞鳥的熱點",
+    "why": "昔日鹽田化身生態濕地",
     "url": ""
   },
   {
@@ -20574,13 +20660,13 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-07-27",
+    "updated": "2026-11-18",
     "tags": [
       "景點"
     ],
     "place": "臺南市 67000 北門區 67000170 727 北門里200號",
     "q": "臺南市 67000 北門區 67000170 727 北門里200號",
-    "why": "水晶教堂位於洲北鹽田與中洲鹽田交界。西濱空曠平坦，早年以鹽田為最大地景，突出於地表者為鹽堆，水晶教堂即以鹽堆之大堆連結小堆為造形意象。",
+    "why": "鹽堆化作晶透風景",
     "url": ""
   },
   {
@@ -20644,15 +20730,13 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-07-17",
+    "updated": "2026-11-18",
     "tags": [
-      "景點",
-      "戶外",
-      "文化"
+      "景點"
     ],
-    "place": "嘉義縣 10010 布袋鎮 10010030 625 新西路5號",
-    "q": "嘉義縣 10010 布袋鎮 10010030 625 新西路5號",
-    "why": "位於布袋海景公園，矗立於水面造景上的高跟鞋教堂造型亮眼，使用320餘片玻璃組成，於2016年6月獲得金氏世界紀錄，為全世界最大高跟鞋造型建築物。藍色透明玻璃外觀在白天陽光的照射下閃閃發光，而到了夜間則有華麗夢幻的燈光秀，在地景藝術的圍繞之下體驗不一樣的浪漫氣氛。",
+    "place": "嘉義縣 10010 布袋鎮 10010030 625 岑海里新西路5號",
+    "q": "嘉義縣 10010 布袋鎮 10010030 625 岑海里新西路5號",
+    "why": "遇見海濱的藍色玻璃鞋",
     "url": ""
   },
   {
@@ -20663,14 +20747,13 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-12",
+    "updated": "2026-11-18",
     "tags": [
-      "景點",
-      "戶外"
+      "景點"
     ],
     "place": "臺南市 67000 七股區 67000150 724 塩埕里塩埕102-8號",
     "q": "臺南市 67000 七股區 67000150 724 塩埕里塩埕102-8號",
-    "why": "※前往六號小島步道因潮汐因素，於漲潮時水面覆蓋步道人員無法行走，為避免潮汐影響遊客體驗，可至交通部中央氣象局 查詢潮汐時間",
+    "why": "以堤為形的濱海建築",
     "url": ""
   },
   {
@@ -20735,15 +20818,13 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-11-12",
+    "updated": "2026-11-18",
     "tags": [
-      "景點",
-      "戶外",
-      "文化"
+      "景點"
     ],
     "place": "嘉義縣 10010 東石鄉 10010090 614 鰲鼓村12鄰四股67-6號",
     "q": "嘉義縣 10010 東石鄉 10010090 614 鰲鼓村12鄰四股67-6號",
-    "why": "座落於以養殖漁業為主的嘉義縣東石鄉，向禾休閒漁場與周圍鰲鼓溼地生態呼應，由養殖文蛤的傳統魚塭轉型成環境教育場域，這裡以「海盜村」為特色主題打造，提供專業導覽、漁業體驗等相關活動，讓大朋友小朋友都能在玩樂的同時認識當地的自然生態與產業文化。",
+    "why": "化身海盜展開水上冒險",
     "url": ""
   },
   {
@@ -20772,14 +20853,14 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 72,
-    "updated": "2026-10-19",
+    "updated": "2026-11-18",
     "tags": [
       "景點",
       "戶外"
     ],
-    "place": "嘉義縣 10010 布袋鎮 10010030 625 新南一街5號",
-    "q": "嘉義縣 10010 布袋鎮 10010030 625 新南一街5號",
-    "why": "座落於嘉義布袋漁港的「布袋港潮間帶海上巴士」是一處結合地方生態、人文、休閒的休憩場所，這是一處乘著船帶著您遊賞漁港、陸地、沙洲、海上牧場、潮間帶之海上生態休閒園區。",
+    "place": "嘉義縣 10010 布袋鎮 10010030 625 岑海里新南一街5號",
+    "q": "嘉義縣 10010 布袋鎮 10010030 625 岑海里新南一街5號",
+    "why": "搭乘海上巴士，展開布袋港生態之旅",
     "url": ""
   },
   {
@@ -21717,7 +21798,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-01-26",
+    "updated": "2026-11-19",
     "start": "2025-01-02",
     "end": "2026-02-02",
     "tags": [
@@ -21725,7 +21806,7 @@
     ],
     "place": "雲林縣 10009 虎尾鎮 10009030 632",
     "q": "雲林縣 10009 虎尾鎮 10009030 632",
-    "why": "地點:雲林布袋戲館1樓常設展區 展期:114/1/2起   雲林是臺灣布袋戲的故鄉，這項風行百年的傳統表演藝術，在眾多在地藝師、劇團努力之下，不斷地與時俱進，透過策劃「掌演乾坤」展盼透過館藏戲偶與文物的展示，期許能引發觀者對雲林地區發揚布袋戲文化有進一步認識，也讓初次認識布袋戲的民眾，能一齊體驗布袋戲的巧妙與趣味。  ",
+    "why": "地點:雲林布袋戲館1樓常設展區展期:114/1/2起  雲林是臺灣布袋戲的故鄉，這項風行百年的傳統表演藝術，在眾多在地藝師、劇團努力之下，不斷地與時俱進，透過策劃「掌演乾坤」展盼透過館藏戲偶與文物的展示，期許能引發觀者對雲林地區發揚布袋戲文化有進一步認識，也讓初次認識布袋戲的民眾，能一齊體驗布袋戲的巧妙與趣味。 ◎展場",
     "url": ""
   },
   {
@@ -21736,7 +21817,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-01-26",
+    "updated": "2026-11-19",
     "start": "2025-10-10",
     "end": "2025-12-21",
     "tags": [
@@ -21744,7 +21825,7 @@
     ],
     "place": "雲林縣 10009 虎尾鎮 10009030 632",
     "q": "雲林縣 10009 虎尾鎮 10009030 632",
-    "why": "由雲林縣政府文化觀光處主辦，霹靂國際多媒體股份有限公司策展，高格頓設計公司規劃設計，繼《東離來風：布袋戲的異世界想像》特展之後，第二檔《聖道流光：霹靂傳奇群像》，將於2025雲林國際偶戲節開幕日10月10日上午10點開展，誠摯邀請您共襄盛舉！ 《聖道流光：霹靂傳奇群像》 ｜展覽票價｜#免費入場 ｜展覽期間｜2025/1",
+    "why": "由雲林縣政府文化觀光處主辦，霹靂國際多媒體股份有限公司策展，高格頓設計公司規劃設計，繼《東離來風：布袋戲的異世界想像》特展之後，第二檔《聖道流光：霹靂傳奇群像》，將於2025雲林國際偶戲節開幕日10月10日上午10點開展，誠摯邀請您共襄盛舉！《聖道流光：霹靂傳奇群像》｜展覽票價｜#免費入場｜展覽期間｜2025/10/1",
     "url": ""
   },
   {
@@ -21755,7 +21836,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-01-26",
+    "updated": "2026-11-19",
     "start": "2025-10-18",
     "end": "2025-11-29",
     "tags": [
@@ -21774,7 +21855,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-01-26",
+    "updated": "2026-11-19",
     "start": "2025-11-08",
     "end": "2026-01-07",
     "tags": [
@@ -21786,33 +21867,14 @@
     "url": ""
   },
   {
-    "id": "tourism-event-Event_376490000A_000006",
-    "city": "雲林",
-    "name": "壯麗山河—黃乾成(黃宇立) 水墨創作展",
-    "e": "🎉",
-    "type": "活動",
-    "src": "官方",
-    "base_heat": 80,
-    "updated": "2026-01-26",
-    "start": "2025-11-15",
-    "end": "2025-11-26",
-    "tags": [
-      "活動"
-    ],
-    "place": "雲林縣 10009 北港鎮 10009060 651",
-    "q": "雲林縣 10009 北港鎮 10009060 651",
-    "why": "黃乾成本次展覽以壯麗山河為主題，亦承先前志向以台灣的名山勝水、美景佳境為狀寫表現的內容為主。表現出台灣地理環境的特殊性，風土民情的獨特性，並在繼承民族傳統文化、發揚台灣本土特質下，營造台灣水墨藝術創作之獨特風格。",
-    "url": ""
-  },
-  {
-    "id": "tourism-event-Event_376490000A_000007",
+    "id": "tourism-event-Event_376490000A_000005",
     "city": "雲林",
     "name": "從心舞墨‧吳昱瑩書法創作展",
     "e": "🎉",
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-01-26",
+    "updated": "2026-11-19",
     "start": "2025-11-15",
     "end": "2025-11-30",
     "tags": [
@@ -21824,14 +21886,14 @@
     "url": ""
   },
   {
-    "id": "tourism-event-Event_376490000A_000008",
+    "id": "tourism-event-Event_376490000A_000006",
     "city": "雲林",
     "name": "第21屆雲林文化藝術獎美術獎—入選與邀請作品展",
     "e": "🎉",
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-01-26",
+    "updated": "2026-11-19",
     "start": "2025-11-15",
     "end": "2025-11-30",
     "tags": [
@@ -21840,6 +21902,63 @@
     "place": "雲林縣 10009 斗六市 10009010 640",
     "q": "雲林縣 10009 斗六市 10009010 640",
     "why": "「雲林文化藝術獎」自94年起接續地方美展經驗，歷經21年，期間培育無數雲林藝文人才，也提供旅外鄉親藝文回鄉的渠道。今年持續採全國徵件，廣徵更多元、優秀的作品參與競賽。本展呈現114年度第二十一屆雲林文化藝術奬美術奬5類入選與邀請作品，歡迎藝文愛好者參觀鑑賞。",
+    "url": ""
+  },
+  {
+    "id": "tourism-event-Event_376490000A_000007",
+    "city": "雲林",
+    "name": "吳明吉國畫個展",
+    "e": "🎉",
+    "type": "活動",
+    "src": "官方",
+    "base_heat": 80,
+    "updated": "2026-11-19",
+    "start": "2026-02-25",
+    "end": "2026-03-10",
+    "tags": [
+      "活動"
+    ],
+    "place": "雲林縣 10009 斗六市 10009010 640",
+    "q": "雲林縣 10009 斗六市 10009010 640",
+    "why": "水墨藝術家吳明吉老師為高雄人，自幼即具繪畫才能，從事水墨藝術創作迄今50餘年。其水墨作品以寫生入手，老師遊歷各地名山勝景，體驗及師法自然，收集豐富繪畫素材。描繪民情、叢山峻嶺及流泉飛瀑，深得傳統繪畫風貌之外，並融合現代筆意，將自然的律動表現得生氣盎然，為其創作特色。",
+    "url": ""
+  },
+  {
+    "id": "tourism-event-Event_376490000A_000008",
+    "city": "雲林",
+    "name": "莿桐國中2026美術班畢業成果展",
+    "e": "🎉",
+    "type": "活動",
+    "src": "官方",
+    "base_heat": 80,
+    "updated": "2026-11-19",
+    "start": "2026-02-25",
+    "end": "2026-03-10",
+    "tags": [
+      "活動"
+    ],
+    "place": "雲林縣 10009 斗六市 10009010 640",
+    "q": "雲林縣 10009 斗六市 10009010 640",
+    "why": "莿桐國中美術班是本縣較為新興的國中美術班，近年來該校重視藝術教育，積極對外發表美術班教學成果，曾於108~111年、113-114年辦理展出，本次於文化觀光處辦理畢業展，展出作品以國畫、書法、水彩及視覺設計等媒材為主，讓大家看到該校美術班同學向藝術之路努力邁進的過程。",
+    "url": ""
+  },
+  {
+    "id": "tourism-event-Event_376490000A_000009",
+    "city": "雲林",
+    "name": "壯麗山河—黃乾成(黃宇立) 水墨創作展",
+    "e": "🎉",
+    "type": "活動",
+    "src": "官方",
+    "base_heat": 80,
+    "updated": "2026-11-19",
+    "start": "2025-11-15",
+    "end": "2025-11-26",
+    "tags": [
+      "活動"
+    ],
+    "place": "雲林縣 10009 北港鎮 10009060 651",
+    "q": "雲林縣 10009 北港鎮 10009060 651",
+    "why": "黃乾成本次展覽以壯麗山河為主題，亦承先前志向以台灣的名山勝水、美景佳境為狀寫表現的內容為主。表現出台灣地理環境的特殊性，風土民情的獨特性，並在繼承民族傳統文化、發揚台灣本土特質下，營造台灣水墨藝術創作之獨特風格。 展期：11/15(六)-11/26(三)地點：雲林縣北港文化中心展出時間：09:00~17:00(週一及國",
     "url": ""
   },
   {
@@ -21897,25 +22016,6 @@
     "place": "臺南市 67000 中西區 67000370 700",
     "q": "臺南市 67000 中西區 67000370 700",
     "why": "※持台灣好行1日票(不限路線)，可享以下各路線特約優惠：套票購買    ※歡迎各店家踴躍申請加入特約，預計每月更新提供優惠：申請連結    台灣好行─臺南各路線特約店家優惠資訊：※ 98府城台江線 & 111臺南小港機場線    推薦特約店家：            項次            分類          ",
-    "url": ""
-  },
-  {
-    "id": "tourism-event-Event_395000000A_007632",
-    "city": "台南",
-    "name": "2025台南聖誕燈節",
-    "e": "🎉",
-    "type": "活動",
-    "src": "官方",
-    "base_heat": 80,
-    "updated": "2025-12-05",
-    "start": "2025-11-28",
-    "end": "2026-01-04",
-    "tags": [
-      "活動"
-    ],
-    "place": "臺南市 67000 中西區 67000370 700",
-    "q": "臺南市 67000 中西區 67000370 700",
-    "why": "2025台南聖誕燈節暨全市聖誕月相關主題活動資訊    聖誕佳節即將到來！熱情歡迎您蒞臨全糖市-台南歡度聖誕跨年假期，與我們同享溫馨幸福時光，向2025完美告別，迎向2026新里程 !!2025台南聖誕節慶地圖google map https://ppt.cc/fEz8Xx聖誕月期間主題聖誕燈飾及精彩活動看這裡!!(活",
     "url": ""
   },
   {
@@ -22211,7 +22311,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-07-01",
     "end": "2026-11-30",
     "tags": [
@@ -22629,7 +22729,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-04-30",
     "end": "2026-11-30",
     "tags": [
@@ -22686,7 +22786,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-09-25",
     "end": "2026-10-11",
     "tags": [
@@ -22705,7 +22805,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-10-08",
     "end": "2026-11-08",
     "tags": [
@@ -22724,7 +22824,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-09-11",
     "end": "2026-09-11",
     "tags": [
@@ -22743,7 +22843,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-07-18",
     "end": "2026-07-26",
     "tags": [
@@ -22762,7 +22862,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-02-07",
     "end": "2026-03-08",
     "tags": [
@@ -22781,7 +22881,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-02-27",
     "end": "2026-03-16",
     "tags": [
@@ -22800,7 +22900,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-11-01",
     "end": "2027-03-31",
     "tags": [
@@ -22819,7 +22919,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-09-29",
     "end": "2026-10-11",
     "tags": [
@@ -22838,7 +22938,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-03-02",
     "end": "2026-03-03",
     "tags": [
@@ -22857,7 +22957,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-03-01",
     "end": "2026-10-18",
     "tags": [
@@ -22895,7 +22995,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-03-03",
     "end": "2026-03-15",
     "tags": [
@@ -22914,7 +23014,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-08-22",
     "end": "2026-09-12",
     "tags": [
@@ -22933,7 +23033,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-01-01",
     "end": "2026-01-01",
     "tags": [
@@ -22952,7 +23052,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-02-14",
     "end": "2026-03-08",
     "tags": [
@@ -22990,7 +23090,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-06-03",
     "end": "2026-11-21",
     "tags": [
@@ -23009,7 +23109,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-03-01",
     "end": "2026-12-31",
     "tags": [
@@ -23028,7 +23128,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-07-25",
     "end": "2026-07-26",
     "tags": [
@@ -23047,7 +23147,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2025-11-14",
     "end": "2026-03-28",
     "tags": [
@@ -23066,7 +23166,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2025-12-20",
     "end": "2026-03-14",
     "tags": [
@@ -23085,7 +23185,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-07-01",
     "end": "2026-08-31",
     "tags": [
@@ -23104,7 +23204,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 80,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-09-01",
     "end": "2026-11-09",
     "tags": [
@@ -23617,7 +23717,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -23635,7 +23735,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -23653,7 +23753,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23670,7 +23770,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23687,7 +23787,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23704,7 +23804,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23721,7 +23821,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23738,7 +23838,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23755,7 +23855,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23772,7 +23872,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23789,7 +23889,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -23807,7 +23907,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23824,7 +23924,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23841,7 +23941,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23858,7 +23958,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23875,7 +23975,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23892,7 +23992,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23909,7 +24009,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23926,7 +24026,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23943,7 +24043,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23960,7 +24060,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23977,7 +24077,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -23994,7 +24094,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24011,7 +24111,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -24029,7 +24129,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24046,7 +24146,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -24064,7 +24164,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24081,7 +24181,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24098,7 +24198,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24115,7 +24215,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24132,7 +24232,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24149,7 +24249,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24166,7 +24266,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24183,7 +24283,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -24201,7 +24301,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24218,7 +24318,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24235,7 +24335,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24252,7 +24352,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24269,7 +24369,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24286,7 +24386,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24303,7 +24403,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24320,7 +24420,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24337,7 +24437,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24354,7 +24454,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24371,7 +24471,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24388,7 +24488,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24405,7 +24505,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24422,7 +24522,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24439,7 +24539,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24456,7 +24556,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24473,7 +24573,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24490,7 +24590,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24507,7 +24607,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24524,7 +24624,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24541,7 +24641,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24558,7 +24658,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24575,7 +24675,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24592,7 +24692,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24609,7 +24709,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24626,7 +24726,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24643,7 +24743,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24660,7 +24760,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24677,7 +24777,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24694,7 +24794,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -24712,7 +24812,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24729,7 +24829,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24746,7 +24846,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24763,7 +24863,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24780,7 +24880,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -24798,7 +24898,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -24816,7 +24916,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24833,7 +24933,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "文化"
     ],
@@ -24850,7 +24950,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24867,7 +24967,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24884,7 +24984,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24901,7 +25001,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24918,7 +25018,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24935,7 +25035,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24952,7 +25052,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24969,7 +25069,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -24986,7 +25086,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25003,7 +25103,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25020,7 +25120,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -25038,7 +25138,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25055,7 +25155,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25072,7 +25172,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25089,7 +25189,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25106,7 +25206,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25123,7 +25223,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25140,7 +25240,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25157,7 +25257,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25174,7 +25274,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25191,7 +25291,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25208,7 +25308,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -25226,7 +25326,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25243,7 +25343,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -25261,7 +25361,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25278,7 +25378,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25295,7 +25395,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25312,7 +25412,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -25330,7 +25430,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -25348,7 +25448,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -25366,7 +25466,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25383,7 +25483,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25400,7 +25500,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25417,7 +25517,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25434,7 +25534,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25451,7 +25551,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25468,7 +25568,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25485,7 +25585,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25502,7 +25602,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25519,7 +25619,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25536,7 +25636,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25553,7 +25653,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25570,7 +25670,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25587,7 +25687,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25604,7 +25704,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25621,7 +25721,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25638,7 +25738,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25655,7 +25755,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "文化"
     ],
@@ -25672,7 +25772,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25689,7 +25789,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25706,7 +25806,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25723,7 +25823,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25740,7 +25840,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25757,7 +25857,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -25775,7 +25875,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "戶外",
       "自然"
@@ -25793,7 +25893,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25810,7 +25910,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25827,7 +25927,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25844,7 +25944,7 @@
     "type": "景點",
     "src": "官方",
     "base_heat": 70,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子"
     ],
@@ -25861,7 +25961,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-11-15",
     "end": "2027-03-07",
     "tags": [
@@ -25881,7 +25981,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-11-14",
     "end": "2026-11-29",
     "tags": [
@@ -25901,7 +26001,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-11-08",
     "end": "2026-12-01",
     "tags": [
@@ -25921,7 +26021,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-12-10",
     "end": "2026-12-10",
     "tags": [
@@ -25941,7 +26041,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-12-03",
     "end": "2026-12-03",
     "tags": [
@@ -25961,7 +26061,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-11-29",
     "end": "2026-11-29",
     "tags": [
@@ -25981,7 +26081,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-11-27",
     "end": "2026-11-27",
     "tags": [
@@ -26001,7 +26101,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-11-22",
     "end": "2026-11-22",
     "tags": [
@@ -26021,7 +26121,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-11-21",
     "end": "2026-11-21",
     "tags": [
@@ -26041,7 +26141,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-11-20",
     "end": "2027-03-07",
     "tags": [
@@ -26061,7 +26161,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-11-01",
     "end": "2026-11-29",
     "tags": [
@@ -26081,7 +26181,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-11-01",
     "end": "2026-11-30",
     "tags": [
@@ -26101,7 +26201,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-10-24",
     "end": "2026-12-20",
     "tags": [
@@ -26121,7 +26221,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-10-24",
     "end": "2027-04-25",
     "tags": [
@@ -26141,7 +26241,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-10-22",
     "end": "2026-11-30",
     "tags": [
@@ -26161,7 +26261,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-08-01",
     "end": "2026-12-31",
     "tags": [
@@ -26181,7 +26281,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-07-21",
     "end": "2026-11-30",
     "tags": [
@@ -26201,7 +26301,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2026-01-01",
     "end": "2026-12-31",
     "tags": [
@@ -26221,7 +26321,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "2024-12-31",
     "end": "2026-12-31",
     "tags": [
@@ -26241,7 +26341,7 @@
     "type": "活動",
     "src": "官方",
     "base_heat": 86,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "start": "",
     "end": "",
     "tags": [

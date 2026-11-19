@@ -686,7 +686,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 79,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "網路熱門"
@@ -927,7 +927,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "文化",
@@ -1021,7 +1021,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "活動",
       "網路熱門"
@@ -1136,7 +1136,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "戶外",
@@ -1185,7 +1185,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "網路熱門"
@@ -1278,7 +1278,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "網路熱門"
@@ -1286,7 +1286,7 @@
     "place": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
     "q": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
     "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5blRQN0FVeWhBMVVtTXY5cmZTMWZTczBmbW9TZ0FTUTQ5aWpfb1UwaUd6QXdneWptSjlpSkRDQXktTzd0VU9jVzVDMW9EeTlLRnhpcExR?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdUJDR3NsTk9VcmNVdDFLdnhJR0lBMFlWbFhDQ2xnNTVYY0VWemp0SFhiQ1Z2UGFUZDZfemFySXkzRHZ6dEdBVEo3dFF6T1RXRFd1WlRmeDRGYU9tUG5STjIwcTJZUkhQSkxpQkJsejZ1eFF4Q2JRblFTWU9Yc3RJWDQ1TDBEenltOGc?oc=5"
   },
   {
     "id": "social-auto-factory-tainan-meiya",
@@ -1301,7 +1301,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "親子",
       "產業",
@@ -1397,7 +1397,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-18",
+    "updated": "2026-11-19",
     "tags": [
       "景點",
       "網路熱門"
@@ -1453,5 +1453,52 @@
     "q": "704 臺南市北區海安路三段533號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5EWjNNY2U3ekMwQWI5eWdsRHV3cUNhdUFGQ3o1NjBQRkw0WW5iUllTWVY2ajJqTTRlbmVXN0U3cWJ5YzU4Y05GYjRvRE02ZzJTRWF4UWxaYXVXSHRQVW9sMGJhMl_SAWpBVV95cUxQY1N4LWNyNzlQc2dUMDBxYW9lOEVxVDJmaXlsRk9DZmlWX0JGSVo3dG1BbEdEYzFIV09VNkhHX1dxMUxzQ3ZkU3NUQmpWOEpGOWZvUXB4WElFa0h5cVlRVTRnRkwzVVV3ZTB3?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_376490000A_000332",
+    "city": "雲林",
+    "name": "古坑綠色隧道",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "戶外",
+      "網路熱門"
+    ],
+    "place": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉湳仔村湳仔路",
+    "q": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉湳仔村湳仔路",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBVSkJGVkR4b05lMmF4QTJrUTRjX3h0bXVLRFpYOEN3emQ3R3g1eHkyVExUb3l3cVJlc1pNZEo5RVdkQWNEdi1scHZFNVhuYU1l?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_A15010800H_000142",
+    "city": "嘉義",
+    "name": "1314觀景台",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-19",
+    "tags": [
+      "景點",
+      "網路熱門"
+    ],
+    "place": "嘉義縣 10010 梅山鄉 10010150 603 瑞峰村1314觀景台",
+    "q": "嘉義縣 10010 梅山鄉 10010150 603 瑞峰村1314觀景台",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMlVaejJPaTRLOTI5cjlxTkFhbkdTZFM4TWZYRWtucnpCUmtWSmdodklhQ0dVMGNrY21raTNDMEU2UU9qTEFORmFBVV90MU1rLXVVU2szS25xVndNa3ZjUUZqbHd3a0hBeTZUOEVkM05XMVlkeU41aWI5cTBocXBkckxrVWdJZ1RX?oc=5"
   }
 ]
