@@ -686,7 +686,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 79,
-    "updated": "2026-11-19",
+    "updated": "2026-11-20",
     "tags": [
       "景點",
       "網路熱門"
@@ -927,7 +927,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-19",
+    "updated": "2026-11-20",
     "tags": [
       "景點",
       "文化",
@@ -1021,7 +1021,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-19",
+    "updated": "2026-11-20",
     "tags": [
       "活動",
       "網路熱門"
@@ -1136,7 +1136,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-19",
+    "updated": "2026-11-20",
     "tags": [
       "景點",
       "戶外",
@@ -1278,7 +1278,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-19",
+    "updated": "2026-11-20",
     "tags": [
       "景點",
       "網路熱門"
@@ -1301,7 +1301,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-19",
+    "updated": "2026-11-20",
     "tags": [
       "親子",
       "產業",
@@ -1392,19 +1392,19 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
     },
-    "base_heat": 82,
-    "updated": "2026-11-19",
+    "base_heat": 75,
+    "updated": "2026-11-20",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市太平路",
     "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市太平路",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9HdzRZQ1FfZmhlT2V0OHdxTjdEVDFFVEx3bVBBWTJ3aTZEZVlSRG43dTZoSVBNOEp5Zm5RdUxSNmNscDg5Q3N5a2pNNVhOel82?oc=5"
   },
   {
@@ -1467,7 +1467,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-19",
+    "updated": "2026-11-20",
     "tags": [
       "景點",
       "戶外",
@@ -1500,5 +1500,54 @@
     "q": "嘉義縣 10010 梅山鄉 10010150 603 瑞峰村1314觀景台",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMlVaejJPaTRLOTI5cjlxTkFhbkdTZFM4TWZYRWtucnpCUmtWSmdodklhQ0dVMGNrY21raTNDMEU2UU9qTEFORmFBVV90MU1rLXVVU2szS25xVndNa3ZjUUZqbHd3a0hBeTZUOEVkM05XMVlkeU41aWI5cTBocXBkckxrVWdJZ1RX?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_376600000A_000061",
+    "city": "嘉義",
+    "name": "蘭潭",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-20",
+    "tags": [
+      "景點",
+      "戶外",
+      "文化",
+      "網路熱門"
+    ],
+    "place": "嘉義市 10020 東區 10020010 600 鹿寮里紅毛埤187號之4",
+    "q": "嘉義市 10020 東區 10020010 600 鹿寮里紅毛埤187號之4",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxZjhycXNVYnFRR0dMTlJGUmI5dnFJS2p0SjVXTWRyaVhJRS1LZUFmMzVUU05YR1dMMDNUdXJDYkFpWlFUMU9sQ0RXaU5WNkFEZmctaFEwQ0Y0YndoVFlF?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_376600000A_000062",
+    "city": "嘉義",
+    "name": "蘭潭後山步道",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-20",
+    "tags": [
+      "景點",
+      "戶外",
+      "網路熱門"
+    ],
+    "place": "嘉義市 10020 東區 10020010 600 東郊山仔頂",
+    "q": "嘉義市 10020 東區 10020010 600 東郊山仔頂",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxZjhycXNVYnFRR0dMTlJGUmI5dnFJS2p0SjVXTWRyaVhJRS1LZUFmMzVUU05YR1dMMDNUdXJDYkFpWlFUMU9sQ0RXaU5WNkFEZmctaFEwQ0Y0YndoVFlF?oc=5"
   }
 ]
