@@ -349,7 +349,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-09-28",
+    "updated": "2026-11-20",
     "tags": [
       "景點",
       "文化",
@@ -358,7 +358,7 @@
     "place": "臺南市 67000 安平區 67000360 708 國勝路82號",
     "q": "臺南市 67000 安平區 67000360 708 國勝路82號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE42clhYWXpuZndjYTBlNDZXVFUtb1ZMOEZ3LXYzUzFxUEprQ2h2ck5zMTd4VnJBX2dwNXZzTDhWRHpBTV9rVWRRdno5RG5laFZTRHZXa3FaRVhoQ0MzRW1ZUzdmQzBLX3NBOVBKWA?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWndRZjBSREtsV0g2cjZ6eFdNLWNzNWNRWERTMXRVMTJFVV9xenhfcEhMN1JtaFhWSDZ4Z3lJaVhoMmF5cUVEYUxBbEN3NGZRa3E3S0hZN2FjY2p1TVJYVmRQRk9ZZGpYMUQ3akhqQV9XNmRsdXQyU1pLeU45MU10bTUxNjA?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_395000000A_000572",
@@ -1392,11 +1392,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
-      "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 75,
+    "base_heat": 82,
     "updated": "2026-11-20",
     "tags": [
       "景點",
@@ -1404,7 +1404,7 @@
     ],
     "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市太平路",
     "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市太平路",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9HdzRZQ1FfZmhlT2V0OHdxTjdEVDFFVEx3bVBBWTJ3aTZEZVlSRG43dTZoSVBNOEp5Zm5RdUxSNmNscDg5Q3N5a2pNNVhOel82?oc=5"
   },
   {
@@ -1549,5 +1549,30 @@
     "q": "嘉義市 10020 東區 10020010 600 東郊山仔頂",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxZjhycXNVYnFRR0dMTlJGUmI5dnFJS2p0SjVXTWRyaVhJRS1LZUFmMzVUU05YR1dMMDNUdXJDYkFpWlFUMU9sQ0RXaU5WNkFEZmctaFEwQ0Y0YndoVFlF?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_376600000A_000025",
+    "city": "嘉義",
+    "name": "嘉義公園",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-20",
+    "tags": [
+      "景點",
+      "戶外",
+      "文化",
+      "網路熱門"
+    ],
+    "place": "嘉義市 10020 東區 10020010 600 啟明路264號",
+    "q": "嘉義市 10020 東區 10020010 600 啟明路264號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBJMWcwaHI2bTFEY1FtYmpoeWNZSnh2Q01HSFRNVUoxZDVjVm1ybjlYamVMMF9fX1dJZEZXUVY3Qm5sMkthSkdsZE5iR2plV3B3cVFJZTRDSQ?oc=5"
   }
 ]
