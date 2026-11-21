@@ -1,7 +1,7 @@
 {
   "version": "2026.11.21-auto",
   "updated": "2026-11-21",
-  "generated_at": "2026-11-21T07:37:28+00:00",
+  "generated_at": "2026-11-21T16:17:26+00:00",
   "stats": {
     "official": 1370,
     "social": 60,
@@ -9,30 +9,6 @@
     "total": 1386
   },
   "items": [
-    {
-      "id": "chiayi-city-news-7029c0ff47a0",
-      "city": "嘉義",
-      "name": "3座巨型燈箱照亮木都記憶！嘉義市「木光計畫」共創展登場市府邀民眾免費欣賞光影藝術",
-      "e": "📣",
-      "type": "活動",
-      "src": "官方",
-      "updated": "2026-11-13",
-      "start": "2026-11-11",
-      "end": "2026-11-22",
-      "tags": [
-        "活動",
-        "嘉義市政府",
-        "市府快報"
-      ],
-      "place": "嘉義市",
-      "q": "3座巨型燈箱照亮木都記憶！嘉義市「木光計畫」共創展登場市府邀民眾免費欣賞光影藝術",
-      "why": "嘉義市政府日前於有事青年實驗室推出「木光計畫｜嘉義市過去・現在・未來燈箱共創展」期間限定展覽，邀請在地品牌百木學堂、找靈感園藝與國立嘉義高工室內空間設計科師生製作三座高150公分的大型木作燈箱，展期至11月22日，免費入場參觀。 市府勞工及青年發展處長林家緯表示，嘉義曾因木材產業、阿里山森林鐵路與林業文化發展出獨特的城市紋理，素有「木都」之稱，如今青年創意、老屋再生與生活品牌持續為城市注入新樣貌。",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=958859",
-      "heat": 93,
-      "sources": [
-        "官方"
-      ]
-    },
     {
       "id": "chiayi-city-news-343545120a07",
       "city": "嘉義",
@@ -130,6 +106,30 @@
       ]
     },
     {
+      "id": "chiayi-city-news-2bbe5d968172",
+      "city": "嘉義",
+      "name": "從物產看見嘉義風景！嘉美館《觀物視野》探索諸羅派藝術與地方風土",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-11-21",
+      "start": "2026-03-07",
+      "end": "2027-03-07",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "從物產看見嘉義風景！嘉美館《觀物視野》探索諸羅派藝術與地方風土",
+      "why": "嘉義市立美術館2026年第三檔主題展「觀物視野―從物產至風景的生成」，於昨（20）日起至明(116)年3月7日止，在館內1至3樓空間展出，嘉義市副市長林瑞彥今日代表出席開幕式活動，並邀請民眾走進美術館，透過藝術作品感受嘉義市的文化底蘊。本次展覽由策展人劉星佑規劃，從作品、檔案中的「物」出發，延伸至地方物產、農牧治理、環境變遷與勞動經驗，重新思考藝術創作與地方生活的關係。 嘉義在日治時期有「畫都」美",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=959578",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
       "id": "chiayi-city-news-44b28d62ce40",
       "city": "嘉義",
       "name": "揮拍追夢一起飛！嘉義市世澤盃網球錦標賽登場黃敏惠市長祝福選手締造佳績",
@@ -172,6 +172,30 @@
       "q": "環境教育在地生根、世代永續！115年環境教育繪本徵選頒獎典禮復國幼兒園溫馨登場!",
       "why": "為推動環境教育向下扎根，嘉義市辦理環境教育繪本徵稿活動以「環境保護、在地特色及永續發展」為核心，鼓勵創作者將生硬嚴肅的環境議題，淬鍊成溫暖生動的圖像故事。嘉義市政府環境保護局特別安排於嘉義市立復國幼兒園舉行頒獎典禮，此次繪本徵選第一名更由該校家長與學生攜手奪得，頒獎典禮結合繪本展演與校園推廣，展現環境教育由創意激盪、創作至實際推廣的完整歷程。徵選作品透過繪本創作將環境觀念轉化為孩童易懂的圖像語言，",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=959487",
+      "heat": 93,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "chiayi-city-news-dd33b8d9c481",
+      "city": "嘉義",
+      "name": "耐斯聖誕心願卡傳愛20年！累計送出近9,500份禮物為孩子圓夢公私協力守護孩童幸福成長",
+      "e": "📣",
+      "type": "活動",
+      "src": "官方",
+      "updated": "2026-11-21",
+      "start": "2026-01-01",
+      "end": "2026-12-18",
+      "tags": [
+        "活動",
+        "嘉義市政府",
+        "市府快報"
+      ],
+      "place": "嘉義市",
+      "q": "耐斯聖誕心願卡傳愛20年！累計送出近9,500份禮物為孩子圓夢公私協力守護孩童幸福成長",
+      "why": "耐斯王子大飯店第20屆「聖誕心願卡認領」啟動儀式今（21）日於飯店一樓大廳舉行，市府社會處長李思賢與耐斯廣場總經理鄭百三、台灣世界展望會主任徐本強及嘉義家扶中心主任沈明彥等貴賓共同參與，邀請社會大眾響應公益，認領孩子們的聖誕心願。耐斯王子大飯店自2006年起持續舉辦活動，串聯在地企業、社福團體及社會大眾，包含今年在內已累計送出將近9,500份滿載祝福的禮物，讓愛與關懷陪伴孩子成長。 李思賢處長表示",
+      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=455&s=959576",
       "heat": 93,
       "sources": [
         "官方"
@@ -503,29 +527,6 @@
       "q": "《聲影、劇夢》音樂會",
       "why": "《聲影、劇夢》音樂會12/5（六）14:30演出團隊｜嘉頌重奏團演出地點｜嘉義市政府文化局音樂廳票務訊息｜售票，請洽年代售票【售票連結】「七種語言、一場夢」本場音樂會匯聚國際男歌手史博偉、女歌手張詩佳、長笛名家毛䕒婧、香港青年鋼琴家蔡俊穎及豎琴演奏家張嘉玲，交織出跨越地域與風格的音樂旅程。曲目涵蓋古典、歌劇、音樂劇、電影配樂與世界音樂，從莫札特、比才、舒伯特",
       "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=959477",
-      "heat": 86,
-      "sources": [
-        "官方"
-      ]
-    },
-    {
-      "id": "chiayi-city-event-96fa14798ae8",
-      "city": "嘉義",
-      "name": "《聲生相續》2026嘉頌五金行單簧管重奏團年度音樂會",
-      "e": "🎉",
-      "type": "活動",
-      "src": "官方",
-      "updated": "2026-11-21",
-      "start": "2026-11-22",
-      "end": "2026-11-22",
-      "tags": [
-        "活動",
-        "嘉義市政府"
-      ],
-      "place": "嘉義市",
-      "q": "《聲生相續》2026嘉頌五金行單簧管重奏團年度音樂會",
-      "why": "《聲生相續》2026嘉頌五金行單簧管重奏團年度音樂會11/22（日）14:30演出團隊｜嘉頌五金行單簧管重奏團演出地點｜嘉義市政府文化局音樂廳票務訊息｜售票，請洽年代售票【售票連結】(本場次適用文化幣青年席位)《聲生相續》由嘉頌五金行單簧管重奏團、高師大單簧管重奏團及小嘉頌豎笛重奏團同台共演，從青少年學習者、音樂系學生，到專業演奏者，每一個階段皆代表著單簧管",
-      "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=957097",
       "heat": 86,
       "sources": [
         "官方"
@@ -28385,7 +28386,7 @@
       "social_heat": 58,
       "social_updated": "2026-11-21",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxPOWVyR1hkM0xwS3R6SnZMejlyc1NYWm5NTzg3YVl3T09EUDh4MXJ0am9CVjVzNExOTXZQcDdOTUQwS3RpWXVERXBOdHVZVUhfQ29UVlIwekl4aTA5WjlLTXZ2TUN2dEdYWjExRGlYbTlyS3ZoUkZKeU4waVg3M1ZUZEM1U0duMk9YMGk4TXBwZGpZdi1qbUVKbTlKWnZHTElOTmx4elloVFNJVFM1XzFyemJYamJMOGhFN2FJWXNJajRZbkRydGc5UFZVWThVNVNvSzhrY2VDTXNaaWhBbDN3YU9WR2hCdFp1UVE2NlF5bEtKeWJRQ2VIN2ZKVWdLal9palk0WnhyUWF5RG9WT2M1RGxkd01qZmxjWDhPd1RhWU85Yy0zWWpfaE1vV0tfTWpZWl8tYmpaTlpSOWlWSEpiZnlUejNVZ0ZCMTJZaGNYQWVMMlMxMS01ZS1MTEJvdXlKRDd3Qg?oc=5"
+      "social_url": "https://news.google.com/rss/articles/CBMimgNBVV95cUxQNzBPa3ZCMHRBOEwzR2ZiT0k2U1NXSnUzSHAtanROX1VyaHNxMFA1V2VHM21ndFRBVDJ5TEdLS2dJVV8wSXhJSEZsd1FVRnJmOFc0Z0FnRERQNldzVVlqc0lRZElRdGdrZUktS2FpYXN6N3FlY3BKVWlzN0lqSjE1RmIwVUttX1MxYmZ6SGwwS2IwZEdMdl9LakF5VGRQZVp6XzY2V2duYTFxOFkzMWs0SFoxU0tHb0YwZGFuc1BjMFJNd1JOdzNGZktfb1N0TG1BSTYwVDU3WmVvcDZiMlpRNE1lTjRnZFRJbHRyMEk0SGs3dzFkRWU5ekMwaXZUMVFCam4za0prMHZWRUdMS29jbWtDMmZZVkdkZmQ1Mnc5UXdMSEVZZDhwM251ZmRVd2tsMXpWMlNjcDRlRWlmVVp4UnVoREp2c3dsd3B3UFgxdjZtN096ajBBMkE4QkI0RWM0SjIxQVJiSGEyeVVodFF5LUVzelUtY0RlYmlhRWtyLUlpaEtkZTlrbzBYTS11MWU5QUFrVnZiUWdWdw?oc=5"
     },
     {
       "id": "tainan-attraction-6007",
