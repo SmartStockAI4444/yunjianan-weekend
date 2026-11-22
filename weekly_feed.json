@@ -1,7 +1,7 @@
 {
   "version": "2026.11.22-auto",
   "updated": "2026-11-22",
-  "generated_at": "2026-11-22T07:20:27+00:00",
+  "generated_at": "2026-11-22T16:31:25+00:00",
   "stats": {
     "official": 1338,
     "social": 60,
@@ -683,7 +683,7 @@
       "e": "🏭",
       "type": "觀光工廠",
       "src": "官方",
-      "updated": "2026-11-21",
+      "updated": "2026-11-22",
       "tags": [
         "親子",
         "產業",
@@ -706,7 +706,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-11-21",
+      "social_updated": "2026-11-22",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5vM05PSVdabFQtd080U1d1NWNpVDFlS3VZbkxHcVl2VnJfa2g0QUhwa0NsTW5fb2hUaFd0M21Idy05WDI1MVROUXZlQUJnVE0xWWJydkl4WFUzek040gFiQVVfeXFMTzBDWjB4T3lKSXpJX0NqMlQ1aGcwVlVJcmUyQy1EWXpIUDdEdGxpLTFHLWtlenJINGdiVVB1SllBOXFWUkxlcFZwUVhVNjdkVG5yY1hrMC1BdnNhNFhmSWZjZlE?oc=5"
     },
@@ -5166,7 +5166,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-21",
+      "updated": "2026-11-22",
       "tags": [
         "景點",
         "文化",
@@ -5187,7 +5187,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-11-21",
+      "social_updated": "2026-11-22",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWndRZjBSREtsV0g2cjZ6eFdNLWNzNWNRWERTMXRVMTJFVV9xenhfcEhMN1JtaFhWSDZ4Z3lJaVhoMmF5cUVEYUxBbEN3NGZRa3E3S0hZN2FjY2p1TVJYVmRQRk9ZZGpYMUQ3akhqQV9XNmRsdXQyU1pLeU45MU10bTUxNjA?oc=5"
     },
@@ -10109,7 +10109,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-21",
+      "updated": "2026-11-22",
       "tags": [
         "景點",
         "文化",
@@ -10130,7 +10130,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-11-21",
+      "social_updated": "2026-11-22",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBtV2VPZVlzQXQtQS1uZzJZaGpkazBHSlItSGFZOTRlQkE4SWlvem90b0pHeUVocmp2WXBGR2tUNjh5NkQtSWNWdW85TWN6Q1Nl?oc=5"
     },
@@ -10562,7 +10562,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-21",
+      "updated": "2026-11-22",
       "tags": [
         "景點",
         "網路熱門"
@@ -10582,7 +10582,7 @@
         "repeat_recommendations": 1
       },
       "social_heat": 60,
-      "social_updated": "2026-11-21",
+      "social_updated": "2026-11-22",
       "social_why": "最近30天公開旅遊文章提及2次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1saGhWaWRIdTd4MUJVeld5OXBLeVVYMHhjbTF4MldqY2xnY084RzFOOVczMDZIQmkxdlpXOUY0T0JPQVJzNDNOY1Z6UGt3bWY5OWR2dXRHNGtlQmVfcXF5SklNVQ?oc=5"
     },
@@ -13148,7 +13148,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-21",
+      "updated": "2026-11-22",
       "tags": [
         "景點",
         "戶外",
@@ -13170,7 +13170,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-11-21",
+      "social_updated": "2026-11-22",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBJMWcwaHI2bTFEY1FtYmpoeWNZSnh2Q01HSFRNVUoxZDVjVm1ybjlYamVMMF9fX1dJZEZXUVY3Qm5sMkthSkdsZE5iR2plV3B3cVFJZTRDSQ?oc=5"
     },
@@ -14121,13 +14121,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 4,
-        "creator_mentions": 4,
-        "repeat_recommendations": 3
+        "recent_mentions": 3,
+        "creator_mentions": 3,
+        "repeat_recommendations": 2
       },
-      "social_heat": 69,
+      "social_heat": 65,
       "social_updated": "2026-11-22",
-      "social_why": "最近30天公開旅遊文章提及4次，來自4個來源",
+      "social_why": "最近30天公開旅遊文章提及3次，來自3個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5blRQN0FVeWhBMVVtTXY5cmZTMWZTczBmbW9TZ0FTUTQ5aWpfb1UwaUd6QXdneWptSjlpSkRDQXktTzd0VU9jVzVDMW9EeTlLRnhpcExR?oc=5"
     },
     {
@@ -14221,7 +14221,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-19",
+      "updated": "2026-11-22",
       "tags": [
         "景點",
         "網路熱門"
@@ -14241,7 +14241,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-11-19",
+      "social_updated": "2026-11-22",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9wTkVIdHo1V3dsWUR0OERzTVlKTEpFMXNGT1hXSjZPM1pBMWwtNWhPYUU4bUk3Q1ljNmRjOExrTzlPbGxrcThlTlJLc1VSZWJybE5EbA?oc=5"
     },
@@ -20454,13 +20454,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 2,
-        "creator_mentions": 2,
-        "repeat_recommendations": 1
+        "recent_mentions": 3,
+        "creator_mentions": 3,
+        "repeat_recommendations": 2
       },
-      "social_heat": 62,
+      "social_heat": 65,
       "social_updated": "2026-11-22",
-      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
+      "social_why": "最近30天公開旅遊文章提及3次，來自3個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9HdzRZQ1FfZmhlT2V0OHdxTjdEVDFFVEx3bVBBWTJ3aTZEZVlSRG43dTZoSVBNOEp5Zm5RdUxSNmNscDg5Q3N5a2pNNVhOel82?oc=5"
     },
     {
@@ -27643,7 +27643,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-11-21",
+      "social_updated": "2026-11-22",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMimgNBVV95cUxQNzBPa3ZCMHRBOEwzR2ZiT0k2U1NXSnUzSHAtanROX1VyaHNxMFA1V2VHM21ndFRBVDJ5TEdLS2dJVV8wSXhJSEZsd1FVRnJmOFc0Z0FnRERQNldzVVlqc0lRZElRdGdrZUktS2FpYXN6N3FlY3BKVWlzN0lqSjE1RmIwVUttX1MxYmZ6SGwwS2IwZEdMdl9LakF5VGRQZVp6XzY2V2duYTFxOFkzMWs0SFoxU0tHb0YwZGFuc1BjMFJNd1JOdzNGZktfb1N0TG1BSTYwVDU3WmVvcDZiMlpRNE1lTjRnZFRJbHRyMEk0SGs3dzFkRWU5ekMwaXZUMVFCam4za0prMHZWRUdMS29jbWtDMmZZVkdkZmQ1Mnc5UXdMSEVZZDhwM251ZmRVd2tsMXpWMlNjcDRlRWlmVVp4UnVoREp2c3dsd3B3UFgxdjZtN096ajBBMkE4QkI0RWM0SjIxQVJiSGEyeVVodFF5LUVzelUtY0RlYmlhRWtyLUlpaEtkZTlrbzBYTS11MWU5QUFrVnZiUWdWdw?oc=5"
     },
