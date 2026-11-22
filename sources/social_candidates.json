@@ -373,7 +373,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-18",
+    "updated": "2026-11-22",
     "tags": [
       "景點",
       "文化",
@@ -392,12 +392,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 3,
+      "creator_mentions": 3,
+      "repeat_recommendations": 2
     },
-    "base_heat": 82,
-    "updated": "2026-11-15",
+    "base_heat": 89,
+    "updated": "2026-11-22",
     "tags": [
       "戶外",
       "自然",
@@ -405,7 +405,7 @@
     ],
     "place": "安平區",
     "q": "708 臺南市安平區漁光路118號",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE95MjlQZFJCYmdKWTNWWTgxY0VwT1N1c25aOGlZWWYtYkpZemo5SF82Wl8xZ3ItaVRYMmFtSWN4RWtaS1pTaUdGekFMQTVDdkktbGJoRkZGbm1VbFVrY01aYzFLQQ?oc=5"
   },
   {
@@ -1021,7 +1021,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-21",
+    "updated": "2026-11-22",
     "tags": [
       "活動",
       "網路熱門"
@@ -1136,7 +1136,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-21",
+    "updated": "2026-11-22",
     "tags": [
       "景點",
       "戶外",
@@ -1273,19 +1273,19 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 4,
+      "creator_mentions": 4,
+      "repeat_recommendations": 3
     },
-    "base_heat": 82,
-    "updated": "2026-11-21",
+    "base_heat": 95,
+    "updated": "2026-11-22",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
     "q": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "why": "最近30天公開旅遊文章提及4次，來自4個來源",
     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5blRQN0FVeWhBMVVtTXY5cmZTMWZTczBmbW9TZ0FTUTQ5aWpfb1UwaUd6QXdneWptSjlpSkRDQXktTzd0VU9jVzVDMW9EeTlLRnhpcExR?oc=5"
   },
   {
@@ -1373,7 +1373,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-12",
+    "updated": "2026-11-22",
     "tags": [
       "景點",
       "戶外",
@@ -1397,7 +1397,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-21",
+    "updated": "2026-11-22",
     "tags": [
       "景點",
       "網路熱門"
@@ -1467,7 +1467,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-21",
+    "updated": "2026-11-22",
     "tags": [
       "景點",
       "戶外",
@@ -1491,7 +1491,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-21",
+    "updated": "2026-11-22",
     "tags": [
       "景點",
       "網路熱門"
@@ -1514,7 +1514,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-21",
+    "updated": "2026-11-22",
     "tags": [
       "景點",
       "戶外",
@@ -1539,7 +1539,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-21",
+    "updated": "2026-11-22",
     "tags": [
       "景點",
       "戶外",
