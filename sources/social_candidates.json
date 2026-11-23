@@ -1136,7 +1136,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-22",
+    "updated": "2026-11-23",
     "tags": [
       "景點",
       "戶外",
@@ -1273,19 +1273,19 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 3,
-      "creator_mentions": 3,
-      "repeat_recommendations": 2
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 89,
-    "updated": "2026-11-22",
+    "base_heat": 82,
+    "updated": "2026-11-23",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
     "q": "嘉義縣 10010 梅山鄉 10010150 603 太平村下坑仔5號",
-    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5blRQN0FVeWhBMVVtTXY5cmZTMWZTczBmbW9TZ0FTUTQ5aWpfb1UwaUd6QXdneWptSjlpSkRDQXktTzd0VU9jVzVDMW9EeTlLRnhpcExR?oc=5"
   },
   {
