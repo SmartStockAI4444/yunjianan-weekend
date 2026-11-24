@@ -681,19 +681,19 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
+      "recent_mentions": 2,
       "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "repeat_recommendations": 1
     },
-    "base_heat": 75,
-    "updated": "2026-11-23",
+    "base_heat": 79,
+    "updated": "2026-11-24",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1saGhWaWRIdTd4MUJVeld5OXBLeVVYMHhjbTF4MldqY2xnY084RzFOOVczMDZIQmkxdlpXOUY0T0JPQVJzNDNOY1Z6UGt3bWY5OWR2dXRHNGtlQmVfcXF5SklNVQ?oc=5"
   },
   {
@@ -927,7 +927,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-23",
+    "updated": "2026-11-24",
     "tags": [
       "景點",
       "文化",
@@ -1021,7 +1021,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-23",
+    "updated": "2026-11-24",
     "tags": [
       "活動",
       "網路熱門"
@@ -1301,7 +1301,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-23",
+    "updated": "2026-11-24",
     "tags": [
       "親子",
       "產業",
@@ -1397,7 +1397,7 @@
       "repeat_recommendations": 2
     },
     "base_heat": 89,
-    "updated": "2026-11-23",
+    "updated": "2026-11-24",
     "tags": [
       "景點",
       "網路熱門"
@@ -1420,7 +1420,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-15",
+    "updated": "2026-11-24",
     "tags": [
       "活動",
       "嘉義市政府",
@@ -1444,7 +1444,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-23",
+    "updated": "2026-11-24",
     "tags": [
       "親子",
       "網路熱門"
@@ -1467,7 +1467,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-23",
+    "updated": "2026-11-24",
     "tags": [
       "景點",
       "戶外",
@@ -1491,7 +1491,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-22",
+    "updated": "2026-11-24",
     "tags": [
       "景點",
       "網路熱門"
@@ -1514,7 +1514,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-22",
+    "updated": "2026-11-24",
     "tags": [
       "景點",
       "戶外",
@@ -1539,7 +1539,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-22",
+    "updated": "2026-11-24",
     "tags": [
       "景點",
       "戶外",
@@ -1558,12 +1558,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
-      "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 75,
-    "updated": "2026-11-22",
+    "base_heat": 82,
+    "updated": "2026-11-24",
     "tags": [
       "景點",
       "戶外",
@@ -1572,8 +1572,8 @@
     ],
     "place": "嘉義市 10020 東區 10020010 600 啟明路264號",
     "q": "嘉義市 10020 東區 10020010 600 啟明路264號",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBJMWcwaHI2bTFEY1FtYmpoeWNZSnh2Q01HSFRNVUoxZDVjVm1ybjlYamVMMF9fX1dJZEZXUVY3Qm5sMkthSkdsZE5iR2plV3B3cVFJZTRDSQ?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE81TTktLV9aaG5zWFRLX3VVc2N4UFVCaHJJZGVucWVnV3R0TlhTWVdfOUJTOFVCVjcwYUY5YTVRUzVtNFVqVDctWHNfX3F0ckhj?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_376490000A_000280",
@@ -1598,5 +1598,52 @@
     "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市大學路三段123號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxNVTlaSzh5UXBQbzlGMmZVNEdKMkZfNVJIZ0RWQnp4M0gwRHZ0eF9saGx6RUhPNUxlWDZBQXluMVhuQ2p0WjFha1FWUC1YWUlqX2FiMnRVT0FXSkNSa3FqSjFpelluU2hVQ2FhLTlfR1FoSjZ4dkxfbl9OR2N4eDBBYUxZWXB1SFY2N1pLdVpBMFVRTzFvNzBvRFdQQWdZeXA1U3llbUdVUGFnLW1mQVZlNjBCQVI5bmlyNXVkMVR0NFpiYkNsTklvc1B2akt4QW1fOU9ncV9JWkVna1ZYeWc5OTJ0emphLUxoQnhKbEZ0cFdXVFFqY3g5VWMya3FWV3RvYWN5YnNNQUpKUGJBNko0S1g4T2oyYzBLbjd2NC1OenliVUJvbU9jM1pIZ3JUWVV6aEFtTnowWGc?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_376490000A_000357",
+    "city": "雲林",
+    "name": "膨鼠森林公園",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-24",
+    "tags": [
+      "景點",
+      "戶外",
+      "網路熱門"
+    ],
+    "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市大學路三段222-1號",
+    "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市大學路三段222-1號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1YS1Q1M054SElwYXVmbXV0eUowNXY4bGtZbDc1Ulo4ZDlDTG9wSVk1dU11VThuXzBBVDhuQWVDZWh1WTFUT2hXb0VlU1V2Vm1zVlhFUExLSTlmcGVSS21TaDBQM050RVhhNElN?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-event-Event_395000000A_008169",
+    "city": "台南",
+    "name": "2026後壁高中藝術季",
+    "e": "🔥",
+    "type": "活動",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-24",
+    "tags": [
+      "活動",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 後壁區 67000050 731 下茄苳132號（國立後壁高中彎彎大車棚）",
+    "q": "臺南市 67000 後壁區 67000050 731 下茄苳132號（國立後壁高中彎彎大車棚）",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1GdmJlTXBSUTk4MzRwZ3o5RWRuNUhSdTJuX2szYm9jZ3hfQmdqYjFsSFE0RHl0Z2lNUWNYSlBNYW1WMHZpYjhMNVNIRHZnSmlGUkE2LWtWblJIVFlrOXVESG5YTzJLRXVN?oc=5"
   }
 ]
