@@ -373,7 +373,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-22",
+    "updated": "2026-11-24",
     "tags": [
       "景點",
       "文化",
@@ -682,10 +682,10 @@
     "src": "社群",
     "signals": {
       "recent_mentions": 2,
-      "creator_mentions": 1,
+      "creator_mentions": 2,
       "repeat_recommendations": 1
     },
-    "base_heat": 79,
+    "base_heat": 82,
     "updated": "2026-11-24",
     "tags": [
       "景點",
@@ -693,8 +693,8 @@
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及2次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1saGhWaWRIdTd4MUJVeld5OXBLeVVYMHhjbTF4MldqY2xnY084RzFOOVczMDZIQmkxdlpXOUY0T0JPQVJzNDNOY1Z6UGt3bWY5OWR2dXRHNGtlQmVfcXF5SklNVQ?oc=5"
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5DZXJfVVE3RFdROXE3akhpcDQtSXdmeXVtdEgyZzM1SGJuRm91QmY2bERZSVVsLXdkM1pLU3pvenpwcjNTV0RQUklQSHA3cFpIQU9LZHA1NVVUT0hCVEpDdGZUN1prZHV0WTc0b0xoRVRWbHRn?oc=5"
   },
   {
     "id": "social-auto-chiayi-city-event-df49699a6f46",
@@ -1588,7 +1588,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-23",
+    "updated": "2026-11-24",
     "tags": [
       "景點",
       "文化",
@@ -1645,5 +1645,29 @@
     "q": "臺南市 67000 後壁區 67000050 731 下茄苳132號（國立後壁高中彎彎大車棚）",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1GdmJlTXBSUTk4MzRwZ3o5RWRuNUhSdTJuX2szYm9jZ3hfQmdqYjFsSFE0RHl0Z2lNUWNYSlBNYW1WMHZpYjhMNVNIRHZnSmlGUkE2LWtWblJIVFlrOXVESG5YTzJLRXVN?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_A15011100H_000036",
+    "city": "嘉義",
+    "name": "鰲鼓濕地",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-24",
+    "tags": [
+      "景點",
+      "戶外",
+      "網路熱門"
+    ],
+    "place": "嘉義縣 10010 東石鄉 10010090 614 鰲鼓村西方（四鼓社區）",
+    "q": "嘉義縣 10010 東石鄉 10010090 614 鰲鼓村西方（四鼓社區）",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE15S0dJcXFoMFZ4dlE1bTg2MTRaSkRObF81akFZMG54WXhqVWlmX1pmR2VJb1RaWVJMbW5nYUpOZlVyS0xYcnB6dkdEajB1Qmdubnhmdkp3?oc=5"
   }
 ]
