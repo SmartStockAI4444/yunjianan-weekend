@@ -373,7 +373,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-24",
+    "updated": "2026-11-25",
     "tags": [
       "景點",
       "文化",
@@ -686,7 +686,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-24",
+    "updated": "2026-11-25",
     "tags": [
       "景點",
       "網路熱門"
@@ -1136,7 +1136,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-23",
+    "updated": "2026-11-25",
     "tags": [
       "景點",
       "戶外",
@@ -1278,7 +1278,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-23",
+    "updated": "2026-11-25",
     "tags": [
       "景點",
       "網路熱門"
@@ -1636,7 +1636,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-24",
+    "updated": "2026-11-25",
     "tags": [
       "活動",
       "網路熱門"
@@ -1669,5 +1669,28 @@
     "q": "嘉義縣 10010 東石鄉 10010090 614 鰲鼓村西方（四鼓社區）",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE15S0dJcXFoMFZ4dlE1bTg2MTRaSkRObF81akFZMG54WXhqVWlmX1pmR2VJb1RaWVJMbW5nYUpOZlVyS0xYcnB6dkdEajB1Qmdubnhmdkp3?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-event-Event_395000000A_008171",
+    "city": "台南",
+    "name": "稅月好時光．幸福遊臺南－閃耀雲端",
+    "e": "🔥",
+    "type": "活動",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-25",
+    "tags": [
+      "活動",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 麻豆區 67000070 721 南勢里168號（曾文市政願景園區致遠樓1樓前廣場）",
+    "q": "臺南市 67000 麻豆區 67000070 721 南勢里168號（曾文市政願景園區致遠樓1樓前廣場）",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9TeEFYbkQ1cEFGd0Q1eGVYY2N4SGpJSUJwb1hxcm5PSkMyRF9KcXZjemtpeUg3eXZCUkgzVjEtYW45dnJYZHBjMUhGYlYxaVBqU0d2dEszakl2Y3lHMjBYclBabC1td29L?oc=5"
   }
 ]
