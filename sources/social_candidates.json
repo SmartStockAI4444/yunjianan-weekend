@@ -107,7 +107,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-09-21",
+    "updated": "2026-11-26",
     "tags": [
       "親子",
       "網路熱門"
@@ -115,7 +115,7 @@
     "place": "中西區",
     "q": "700 臺南市中西區民權路二段162號",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
-    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1EQmNURHJ3blBUZzJ3QnRtMU92cTQ5QjVpbnBNQ0F6UVNJeEhVMFhaZGlKUFozUjJtRzZ3WUhiSzhnZHVfRTNMLS15T01pUQ?oc=5"
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBldlZpM1hrSlJKWkE0U2NrRHBhaG9xbS1SdHhRTVUyVlZneXd3enZQVkVlZ1owNHBVdWxjUGt3bEQ1a0ppd2YxUzhIUUMtVS1sVkJTTFNtVzZxT0NLTHNBV2t5QUVJNEhrZUt3dlB6bVNtSkhNZTFfRWtWcjlGZ9IBYkFVX3lxTE5VSGdQeHVCNzlxM1lhTXNjNkxaOHRhZTN0QkpTSzRfZlVZbmtXcUxlZFNSNmdaM3U0U1ZJcTZkbENuRW5mQzNfMnUzb3lvbUgtWTlyOWk0ZFM2aEpxS3VpN3dB?oc=5"
   },
   {
     "id": "social-auto-tainan-attraction-805",
@@ -681,20 +681,20 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
+      "recent_mentions": 3,
       "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "repeat_recommendations": 2
     },
-    "base_heat": 82,
-    "updated": "2026-11-25",
+    "base_heat": 86,
+    "updated": "2026-11-26",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5DZXJfVVE3RFdROXE3akhpcDQtSXdmeXVtdEgyZzM1SGJuRm91QmY2bERZSVVsLXdkM1pLU3pvenpwcjNTV0RQUklQSHA3cFpIQU9LZHA1NVVUT0hCVEpDdGZUN1prZHV0WTc0b0xoRVRWbHRn?oc=5"
+    "why": "最近30天公開旅遊文章提及3次，來自2個來源",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1saGhWaWRIdTd4MUJVeld5OXBLeVVYMHhjbTF4MldqY2xnY084RzFOOVczMDZIQmkxdlpXOUY0T0JPQVJzNDNOY1Z6UGt3bWY5OWR2dXRHNGtlQmVfcXF5SklNVQ?oc=5"
   },
   {
     "id": "social-auto-chiayi-city-event-df49699a6f46",
@@ -927,7 +927,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-24",
+    "updated": "2026-11-26",
     "tags": [
       "景點",
       "文化",
@@ -1021,7 +1021,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-24",
+    "updated": "2026-11-26",
     "tags": [
       "活動",
       "網路熱門"
@@ -1136,7 +1136,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-25",
+    "updated": "2026-11-26",
     "tags": [
       "景點",
       "戶外",
@@ -1185,7 +1185,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-22",
+    "updated": "2026-11-26",
     "tags": [
       "景點",
       "網路熱門"
@@ -1278,7 +1278,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-25",
+    "updated": "2026-11-26",
     "tags": [
       "景點",
       "網路熱門"
@@ -1301,7 +1301,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-24",
+    "updated": "2026-11-26",
     "tags": [
       "親子",
       "產業",
@@ -1392,19 +1392,19 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 3,
-      "creator_mentions": 3,
-      "repeat_recommendations": 2
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 89,
-    "updated": "2026-11-24",
+    "base_heat": 82,
+    "updated": "2026-11-26",
     "tags": [
       "景點",
       "網路熱門"
     ],
     "place": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市太平路",
     "q": "雲林縣 10009 斗六市 10009010 640 雲林縣斗六市太平路",
-    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9HdzRZQ1FfZmhlT2V0OHdxTjdEVDFFVEx3bVBBWTJ3aTZEZVlSRG43dTZoSVBNOEp5Zm5RdUxSNmNscDg5Q3N5a2pNNVhOel82?oc=5"
   },
   {
@@ -1467,7 +1467,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-24",
+    "updated": "2026-11-26",
     "tags": [
       "景點",
       "戶外",
@@ -1612,7 +1612,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-24",
+    "updated": "2026-11-26",
     "tags": [
       "景點",
       "戶外",
@@ -1636,7 +1636,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-25",
+    "updated": "2026-11-26",
     "tags": [
       "活動",
       "網路熱門"
@@ -1683,7 +1683,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-25",
+    "updated": "2026-11-26",
     "tags": [
       "活動",
       "網路熱門"
@@ -1692,5 +1692,55 @@
     "q": "臺南市 67000 麻豆區 67000070 721 南勢里168號（曾文市政願景園區致遠樓1樓前廣場）",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9TeEFYbkQ1cEFGd0Q1eGVYY2N4SGpJSUJwb1hxcm5PSkMyRF9KcXZjemtpeUg3eXZCUkgzVjEtYW45dnJYZHBjMUhGYlYxaVBqU0d2dEszakl2Y3lHMjBYclBabC1td29L?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_395000000A_000874",
+    "city": "台南",
+    "name": "葫蘆埤自然公園",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-26",
+    "tags": [
+      "景點",
+      "戶外",
+      "文化",
+      "網路熱門"
+    ],
+    "place": "臺南市 67000 官田區 67000100 720 中山路二段207號",
+    "q": "臺南市 67000 官田區 67000100 720 中山路二段207號",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5kUWh4QjRGZVBsbDNwbXpnLWF4b3N6V1R6MklTV2VFOTk3Yllsam80NDJjeVZPdG5SRmtGRmM4bExHRFE5VW5PNU5LdUJJRE9EVWdPRXljdXVjWTBRLUU3LWNYSQ?oc=5"
+  },
+  {
+    "id": "social-auto-factory-tainan-chimei",
+    "city": "台南",
+    "name": "奇美食品幸福工廠",
+    "e": "🔥",
+    "type": "觀光工廠",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-26",
+    "tags": [
+      "親子",
+      "產業",
+      "室內",
+      "網路熱門"
+    ],
+    "place": "仁德區",
+    "q": "奇美食品幸福工廠",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBpMllFeGRwVkQ4b3c1QVBzQ29qZHRMRkYwTWdMQkJmREw4czczSktPaG9sUE1hVkR5UEduZ3hZWkJMQWs5QlZ1cFJxZXdYYkVT?oc=5"
   }
 ]
