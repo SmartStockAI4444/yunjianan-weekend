@@ -1,12 +1,12 @@
 {
   "version": "2026.11.27-auto",
   "updated": "2026-11-27",
-  "generated_at": "2026-11-27T08:57:59+00:00",
+  "generated_at": "2026-11-27T18:19:53+00:00",
   "stats": {
-    "official": 1380,
-    "social": 66,
+    "official": 1389,
+    "social": 67,
     "expired_removed": 97,
-    "total": 1398
+    "total": 1407
   },
   "items": [
     {
@@ -1240,7 +1240,7 @@
       "e": "🏭",
       "type": "觀光工廠",
       "src": "官方",
-      "updated": "2026-11-26",
+      "updated": "2026-11-27",
       "tags": [
         "親子",
         "產業",
@@ -1263,7 +1263,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-11-26",
+      "social_updated": "2026-11-27",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBpMllFeGRwVkQ4b3c1QVBzQ29qZHRMRkYwTWdMQkJmREw4czczSktPaG9sUE1hVkR5UEduZ3hZWkJMQWs5QlZ1cFJxZXdYYkVT?oc=5"
     },
@@ -2384,7 +2384,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-26",
+      "updated": "2026-11-27",
       "tags": [
         "景點",
         "戶外",
@@ -2408,7 +2408,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-11-26",
+      "social_updated": "2026-11-27",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5rSjhvLXd6dlc3WnB6SHFjeWpRekRxODRVWTBUR3pBRTdpa0gwcDRGMHVMTHhOWjVyMkRaNGhjVC1YaGp6a082cW80c0ZPNmUy?oc=5"
     },
@@ -11368,14 +11368,14 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 2,
-        "creator_mentions": 2,
-        "repeat_recommendations": 1
+        "recent_mentions": 3,
+        "creator_mentions": 1,
+        "repeat_recommendations": 2
       },
       "social_heat": 62,
       "social_updated": "2026-11-27",
-      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9aR19iOTFISExBRi1JbmE5dmVqSUZVemdycF85eGZ1WDRZTGVHY3poUzB5LUd0a21fazlVbTAtS0RFdjVWX0ZObUVtWEt0MHJSYWxyMEVFN3V0UTc3ZDRrZWlFdw?oc=5"
+      "social_why": "最近30天公開旅遊文章提及3次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1saGhWaWRIdTd4MUJVeld5OXBLeVVYMHhjbTF4MldqY2xnY084RzFOOVczMDZIQmkxdlpXOUY0T0JPQVJzNDNOY1Z6UGt3bWY5OWR2dXRHNGtlQmVfcXF5SklNVQ?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_395000000A_000590",
@@ -14897,7 +14897,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-26",
+      "updated": "2026-11-27",
       "tags": [
         "景點",
         "網路熱門"
@@ -14917,7 +14917,7 @@
         "repeat_recommendations": 1
       },
       "social_heat": 62,
-      "social_updated": "2026-11-26",
+      "social_updated": "2026-11-27",
       "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5blRQN0FVeWhBMVVtTXY5cmZTMWZTczBmbW9TZ0FTUTQ5aWpfb1UwaUd6QXdneWptSjlpSkRDQXktTzd0VU9jVzVDMW9EeTlLRnhpcExR?oc=5"
     },
@@ -17927,14 +17927,14 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 2,
-        "creator_mentions": 2,
-        "repeat_recommendations": 1
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
       },
-      "social_heat": 62,
+      "social_heat": 58,
       "social_updated": "2026-11-27",
-      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
-      "social_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxZjhycXNVYnFRR0dMTlJGUmI5dnFJS2p0SjVXTWRyaVhJRS1LZUFmMzVUU05YR1dMMDNUdXJDYkFpWlFUMU9sQ0RXaU5WNkFEZmctaFEwQ0Y0YndoVFlF?oc=5"
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8wck1jejNsUFpYdFpaMk1YM0M5bnYySGpjeGM0TmxJbFQ5b1JDT1B3QmZ0RlhZY3pDTnA3czBhRTVYYzVvUnBGX0w4c1BYRWd4aVo5NzNPVF82Y2I1NlB2RFo5c0EtN3RNdDkzRVRZd2NUSUVZYUNmVHVR?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_376600000A_000062",
@@ -20547,13 +20547,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 1,
-        "creator_mentions": 1,
-        "repeat_recommendations": 0
+        "recent_mentions": 2,
+        "creator_mentions": 2,
+        "repeat_recommendations": 1
       },
-      "social_heat": 58,
+      "social_heat": 62,
       "social_updated": "2026-11-27",
-      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_why": "最近30天公開旅遊文章提及2次，來自2個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBVSkJGVkR4b05lMmF4QTJrUTRjX3h0bXVLRFpYOEN3emQ3R3g1eHkyVExUb3l3cVJlc1pNZEo5RVdkQWNEdi1scHZFNVhuYU1l?oc=5"
     },
     {
@@ -24382,11 +24382,12 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-26",
+      "updated": "2026-11-27",
       "tags": [
         "景點",
         "戶外",
-        "文化"
+        "文化",
+        "網路熱門"
       ],
       "place": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉",
       "q": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉",
@@ -24394,8 +24395,18 @@
       "url": "",
       "heat": 72,
       "sources": [
-        "官方"
-      ]
+        "官方",
+        "社群"
+      ],
+      "signals": {
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
+      },
+      "social_heat": 58,
+      "social_updated": "2026-11-27",
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
+      "social_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ZQlp3RE1jTTZKV3ZrMWdaRDVNYjJ6TFNXaUJPemRIUFR3TkxOamNmOUNqRUVRRVRpOS1YRmRaZmlzN0VDeEt2UHh5ajJlZWJGbkE?oc=5"
     },
     {
       "id": "tourism-attraction-Attraction_376490000A_000320",
@@ -25927,7 +25938,7 @@
       "e": "📍",
       "type": "景點",
       "src": "官方",
-      "updated": "2026-11-26",
+      "updated": "2026-11-27",
       "tags": [
         "景點",
         "文化",
@@ -25948,7 +25959,7 @@
         "repeat_recommendations": 0
       },
       "social_heat": 58,
-      "social_updated": "2026-11-26",
+      "social_updated": "2026-11-27",
       "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5DX3JQMXcxSGNobWJaNU9wN1J6enJWTktPYUczS0FqREMyZWtVUmJHcnY3ellsOVRwRHl6aXpNMjROa2xJYkRqcVZmSjVaVXZ0M1HSAVJBVV95cUxOQ19yUDF3MUhjaG1iWjVPcDdSenpyVk5LT2FHM0tBakRDMmVrVVJiR3J2N3pZbDlUcER5eml6TTI0TmtsSWJEanFWZko1WlV2dDNR?oc=5"
     },
@@ -26602,6 +26613,26 @@
       ]
     },
     {
+      "id": "tainan-attraction-6147",
+      "city": "台南",
+      "name": "三明里大莊阿勃勒綠色隧道",
+      "e": "📍",
+      "type": "景點",
+      "src": "官方",
+      "updated": "2026-11-27",
+      "tags": [
+        "親子"
+      ],
+      "place": "鹽水區",
+      "q": "737 臺南市鹽水區",
+      "why": "台南官方旅遊景點",
+      "url": "https://www.twtainan.net/zh-tw/attractions/detail/6147",
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
       "id": "tainan-attraction-5602",
       "city": "台南",
       "name": "三角湧",
@@ -27145,6 +27176,26 @@
       ]
     },
     {
+      "id": "tainan-attraction-6148",
+      "city": "台南",
+      "name": "外角里臨水宮",
+      "e": "📍",
+      "type": "景點",
+      "src": "官方",
+      "updated": "2026-11-27",
+      "tags": [
+        "親子"
+      ],
+      "place": "白河區",
+      "q": "732 臺南市白河區外角里三民路51號",
+      "why": "台南官方旅遊景點",
+      "url": "https://www.twtainan.net/zh-tw/attractions/detail/6148",
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
       "id": "tainan-attraction-6083",
       "city": "台南",
       "name": "夢之湖",
@@ -27226,6 +27277,26 @@
       ]
     },
     {
+      "id": "tainan-attraction-6150",
+      "city": "台南",
+      "name": "大林里綠食農場",
+      "e": "📍",
+      "type": "景點",
+      "src": "官方",
+      "updated": "2026-11-27",
+      "tags": [
+        "親子"
+      ],
+      "place": "白河區",
+      "q": "732 臺南市白河區大林里檨子林64之3號",
+      "why": "台南官方旅遊景點",
+      "url": "https://www.twtainan.net/zh-tw/attractions/detail/6150",
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
       "id": "tainan-attraction-4326",
       "city": "台南",
       "name": "大灣凌霄寶殿武龍宮",
@@ -27240,6 +27311,26 @@
       "q": "710 臺南市永康區永大路二段103巷8號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4326",
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "tainan-attraction-6140",
+      "city": "台南",
+      "name": "大營夫妻樹景觀生態公園",
+      "e": "📍",
+      "type": "景點",
+      "src": "官方",
+      "updated": "2026-11-27",
+      "tags": [
+        "親子"
+      ],
+      "place": "新市區",
+      "q": "744 臺南市新市區大營里南139鄉道11號",
+      "why": "台南官方旅遊景點",
+      "url": "https://www.twtainan.net/zh-tw/attractions/detail/6140",
       "heat": 70,
       "sources": [
         "官方"
@@ -27541,6 +27632,46 @@
       "q": "713 臺南市左鎮區岡林里47號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/6069",
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "tainan-attraction-6143",
+      "city": "台南",
+      "name": "左鎮探探館",
+      "e": "📍",
+      "type": "景點",
+      "src": "官方",
+      "updated": "2026-11-27",
+      "tags": [
+        "親子"
+      ],
+      "place": "左鎮區",
+      "q": "713 臺南市左鎮區榮和里62-37號",
+      "why": "台南官方旅遊景點",
+      "url": "https://www.twtainan.net/zh-tw/attractions/detail/6143",
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "tainan-attraction-6149",
+      "city": "台南",
+      "name": "庄內里客庄內福呂府",
+      "e": "📍",
+      "type": "景點",
+      "src": "官方",
+      "updated": "2026-11-27",
+      "tags": [
+        "親子"
+      ],
+      "place": "白河區",
+      "q": "732 臺南市白河區庄內里裕農路1鄰142號",
+      "why": "台南官方旅遊景點",
+      "url": "https://www.twtainan.net/zh-tw/attractions/detail/6149",
       "heat": 70,
       "sources": [
         "官方"
@@ -28225,13 +28356,13 @@
         "社群"
       ],
       "signals": {
-        "recent_mentions": 3,
-        "creator_mentions": 3,
-        "repeat_recommendations": 2
+        "recent_mentions": 1,
+        "creator_mentions": 1,
+        "repeat_recommendations": 0
       },
-      "social_heat": 65,
-      "social_updated": "2026-11-22",
-      "social_why": "最近30天公開旅遊文章提及3次，來自3個來源",
+      "social_heat": 58,
+      "social_updated": "2026-11-27",
+      "social_why": "最近30天公開旅遊文章提及1次，來自1個來源",
       "social_url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE95MjlQZFJCYmdKWTNWWTgxY0VwT1N1c25aOGlZWWYtYkpZemo5SF82Wl8xZ3ItaVRYMmFtSWN4RWtaS1pTaUdGekFMQTVDdkktbGJoRkZGbm1VbFVrY01aYzFLQQ?oc=5"
     },
     {
@@ -28648,6 +28779,26 @@
       "social_url": "https://news.google.com/rss/articles/CBMimgNBVV95cUxQNzBPa3ZCMHRBOEwzR2ZiT0k2U1NXSnUzSHAtanROX1VyaHNxMFA1V2VHM21ndFRBVDJ5TEdLS2dJVV8wSXhJSEZsd1FVRnJmOFc0Z0FnRERQNldzVVlqc0lRZElRdGdrZUktS2FpYXN6N3FlY3BKVWlzN0lqSjE1RmIwVUttX1MxYmZ6SGwwS2IwZEdMdl9LakF5VGRQZVp6XzY2V2duYTFxOFkzMWs0SFoxU0tHb0YwZGFuc1BjMFJNd1JOdzNGZktfb1N0TG1BSTYwVDU3WmVvcDZiMlpRNE1lTjRnZFRJbHRyMEk0SGs3dzFkRWU5ekMwaXZUMVFCam4za0prMHZWRUdMS29jbWtDMmZZVkdkZmQ1Mnc5UXdMSEVZZDhwM251ZmRVd2tsMXpWMlNjcDRlRWlmVVp4UnVoREp2c3dsd3B3UFgxdjZtN096ajBBMkE4QkI0RWM0SjIxQVJiSGEyeVVodFF5LUVzelUtY0RlYmlhRWtyLUlpaEtkZTlrbzBYTS11MWU5QUFrVnZiUWdWdw?oc=5"
     },
     {
+      "id": "tainan-attraction-6144",
+      "city": "台南",
+      "name": "苦瓜寮朝天宮",
+      "e": "📍",
+      "type": "景點",
+      "src": "官方",
+      "updated": "2026-11-27",
+      "tags": [
+        "親子"
+      ],
+      "place": "山上區",
+      "q": "743 臺南市山上區明和里11鄰苦瓜寮157號",
+      "why": "台南官方旅遊景點",
+      "url": "https://www.twtainan.net/zh-tw/attractions/detail/6144",
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
       "id": "tainan-attraction-6007",
       "city": "台南",
       "name": "萬佛寺/小普陀山禪修公園",
@@ -28870,6 +29021,26 @@
       ]
     },
     {
+      "id": "tainan-attraction-6146",
+      "city": "台南",
+      "name": "長安里空相美術館",
+      "e": "📍",
+      "type": "景點",
+      "src": "官方",
+      "updated": "2026-11-27",
+      "tags": [
+        "親子"
+      ],
+      "place": "後壁區",
+      "q": "731 臺南市後壁區長安里47號之2",
+      "why": "台南官方旅遊景點",
+      "url": "https://www.twtainan.net/zh-tw/attractions/detail/6146",
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
       "id": "tainan-attraction-6134",
       "city": "台南",
       "name": "長短樹公園",
@@ -28924,6 +29095,26 @@
       "q": "700 臺南市中西區中山路79巷56號",
       "why": "台南官方旅遊景點",
       "url": "https://www.twtainan.net/zh-tw/attractions/detail/4318",
+      "heat": 70,
+      "sources": [
+        "官方"
+      ]
+    },
+    {
+      "id": "tainan-attraction-6141",
+      "city": "台南",
+      "name": "閱之森公園",
+      "e": "📍",
+      "type": "景點",
+      "src": "官方",
+      "updated": "2026-11-27",
+      "tags": [
+        "親子"
+      ],
+      "place": "永康區",
+      "q": "710 臺南市永康區康橋大道255號",
+      "why": "台南官方旅遊景點",
+      "url": "https://www.twtainan.net/zh-tw/attractions/detail/6141",
       "heat": 70,
       "sources": [
         "官方"
@@ -29452,7 +29643,7 @@
         "creator_mentions": 1,
         "repeat_recommendations": 0
       },
-      "updated": "2026-11-26",
+      "updated": "2026-11-27",
       "tags": [
         "活動",
         "網路熱門"

@@ -178,7 +178,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-26",
+    "updated": "2026-11-27",
     "tags": [
       "景點",
       "文化",
@@ -392,12 +392,12 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 3,
-      "creator_mentions": 3,
-      "repeat_recommendations": 2
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
     },
-    "base_heat": 89,
-    "updated": "2026-11-22",
+    "base_heat": 75,
+    "updated": "2026-11-27",
     "tags": [
       "戶外",
       "自然",
@@ -405,7 +405,7 @@
     ],
     "place": "安平區",
     "q": "708 臺南市安平區漁光路118號",
-    "why": "最近30天公開旅遊文章提及3次，來自3個來源",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE95MjlQZFJCYmdKWTNWWTgxY0VwT1N1c25aOGlZWWYtYkpZemo5SF82Wl8xZ3ItaVRYMmFtSWN4RWtaS1pTaUdGekFMQTVDdkktbGJoRkZGbm1VbFVrY01aYzFLQQ?oc=5"
   },
   {
@@ -681,11 +681,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 3,
+      "creator_mentions": 1,
+      "repeat_recommendations": 2
     },
-    "base_heat": 82,
+    "base_heat": 83,
     "updated": "2026-11-27",
     "tags": [
       "景點",
@@ -693,8 +693,8 @@
     ],
     "place": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
     "q": "臺南市 67000 白河區 67000030 732 關子嶺風景區",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9aR19iOTFISExBRi1JbmE5dmVqSUZVemdycF85eGZ1WDRZTGVHY3poUzB5LUd0a21fazlVbTAtS0RFdjVWX0ZObUVtWEt0MHJSYWxyMEVFN3V0UTc3ZDRrZWlFdw?oc=5"
+    "why": "最近30天公開旅遊文章提及3次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1saGhWaWRIdTd4MUJVeld5OXBLeVVYMHhjbTF4MldqY2xnY084RzFOOVczMDZIQmkxdlpXOUY0T0JPQVJzNDNOY1Z6UGt3bWY5OWR2dXRHNGtlQmVfcXF5SklNVQ?oc=5"
   },
   {
     "id": "social-auto-chiayi-city-event-df49699a6f46",
@@ -1021,7 +1021,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-26",
+    "updated": "2026-11-27",
     "tags": [
       "活動",
       "網路熱門"
@@ -1136,7 +1136,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-26",
+    "updated": "2026-11-27",
     "tags": [
       "景點",
       "戶外",
@@ -1278,7 +1278,7 @@
       "repeat_recommendations": 1
     },
     "base_heat": 82,
-    "updated": "2026-11-26",
+    "updated": "2026-11-27",
     "tags": [
       "景點",
       "網路熱門"
@@ -1462,11 +1462,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 1,
-      "creator_mentions": 1,
-      "repeat_recommendations": 0
+      "recent_mentions": 2,
+      "creator_mentions": 2,
+      "repeat_recommendations": 1
     },
-    "base_heat": 75,
+    "base_heat": 82,
     "updated": "2026-11-27",
     "tags": [
       "景點",
@@ -1475,7 +1475,7 @@
     ],
     "place": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉湳仔村湳仔路",
     "q": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉湳仔村湳仔路",
-    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBVSkJGVkR4b05lMmF4QTJrUTRjX3h0bXVLRFpYOEN3emQ3R3g1eHkyVExUb3l3cVJlc1pNZEo5RVdkQWNEdi1scHZFNVhuYU1l?oc=5"
   },
   {
@@ -1509,11 +1509,11 @@
     "type": "景點",
     "src": "社群",
     "signals": {
-      "recent_mentions": 2,
-      "creator_mentions": 2,
-      "repeat_recommendations": 1
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
     },
-    "base_heat": 82,
+    "base_heat": 75,
     "updated": "2026-11-27",
     "tags": [
       "景點",
@@ -1523,8 +1523,8 @@
     ],
     "place": "嘉義市 10020 東區 10020010 600 鹿寮里紅毛埤187號之4",
     "q": "嘉義市 10020 東區 10020010 600 鹿寮里紅毛埤187號之4",
-    "why": "最近30天公開旅遊文章提及2次，來自2個來源",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxZjhycXNVYnFRR0dMTlJGUmI5dnFJS2p0SjVXTWRyaVhJRS1LZUFmMzVUU05YR1dMMDNUdXJDYkFpWlFUMU9sQ0RXaU5WNkFEZmctaFEwQ0Y0YndoVFlF?oc=5"
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8wck1jejNsUFpYdFpaMk1YM0M5bnYySGpjeGM0TmxJbFQ5b1JDT1B3QmZ0RlhZY3pDTnA3czBhRTVYYzVvUnBGX0w4c1BYRWd4aVo5NzNPVF82Y2I1NlB2RFo5c0EtN3RNdDkzRVRZd2NUSUVZYUNmVHVR?oc=5"
   },
   {
     "id": "social-auto-tourism-attraction-Attraction_376600000A_000062",
@@ -1731,7 +1731,7 @@
       "repeat_recommendations": 0
     },
     "base_heat": 75,
-    "updated": "2026-11-26",
+    "updated": "2026-11-27",
     "tags": [
       "親子",
       "產業",
@@ -1742,5 +1742,30 @@
     "q": "奇美食品幸福工廠",
     "why": "最近30天公開旅遊文章提及1次，來自1個來源",
     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBpMllFeGRwVkQ4b3c1QVBzQ29qZHRMRkYwTWdMQkJmREw4czczSktPaG9sUE1hVkR5UEduZ3hZWkJMQWs5QlZ1cFJxZXdYYkVT?oc=5"
+  },
+  {
+    "id": "social-auto-tourism-attraction-Attraction_376490000A_000342",
+    "city": "雲林",
+    "name": "草嶺石壁森林療癒園區",
+    "e": "🔥",
+    "type": "景點",
+    "src": "社群",
+    "signals": {
+      "recent_mentions": 1,
+      "creator_mentions": 1,
+      "repeat_recommendations": 0
+    },
+    "base_heat": 75,
+    "updated": "2026-11-27",
+    "tags": [
+      "景點",
+      "戶外",
+      "文化",
+      "網路熱門"
+    ],
+    "place": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉",
+    "q": "雲林縣 10009 古坑鄉 10009070 646 雲林縣古坑鄉",
+    "why": "最近30天公開旅遊文章提及1次，來自1個來源",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ZQlp3RE1jTTZKV3ZrMWdaRDVNYjJ6TFNXaUJPemRIUFR3TkxOamNmOUNqRUVRRVRpOS1YRmRaZmlzN0VDeEt2UHh5ajJlZWJGbkE?oc=5"
   }
 ]

@@ -26323,6 +26323,159 @@
     "url": "https://www.twtainan.net/zh-tw/attractions/detail/6139"
   },
   {
+    "id": "tainan-attraction-6140",
+    "city": "台南",
+    "name": "大營夫妻樹景觀生態公園",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 70,
+    "updated": "2026-11-27",
+    "tags": [
+      "親子"
+    ],
+    "place": "新市區",
+    "q": "744 臺南市新市區大營里南139鄉道11號",
+    "why": "台南官方旅遊景點",
+    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6140"
+  },
+  {
+    "id": "tainan-attraction-6141",
+    "city": "台南",
+    "name": "閱之森公園",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 70,
+    "updated": "2026-11-27",
+    "tags": [
+      "親子"
+    ],
+    "place": "永康區",
+    "q": "710 臺南市永康區康橋大道255號",
+    "why": "台南官方旅遊景點",
+    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6141"
+  },
+  {
+    "id": "tainan-attraction-6143",
+    "city": "台南",
+    "name": "左鎮探探館",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 70,
+    "updated": "2026-11-27",
+    "tags": [
+      "親子"
+    ],
+    "place": "左鎮區",
+    "q": "713 臺南市左鎮區榮和里62-37號",
+    "why": "台南官方旅遊景點",
+    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6143"
+  },
+  {
+    "id": "tainan-attraction-6144",
+    "city": "台南",
+    "name": "苦瓜寮朝天宮",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 70,
+    "updated": "2026-11-27",
+    "tags": [
+      "親子"
+    ],
+    "place": "山上區",
+    "q": "743 臺南市山上區明和里11鄰苦瓜寮157號",
+    "why": "台南官方旅遊景點",
+    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6144"
+  },
+  {
+    "id": "tainan-attraction-6146",
+    "city": "台南",
+    "name": "長安里空相美術館",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 70,
+    "updated": "2026-11-27",
+    "tags": [
+      "親子"
+    ],
+    "place": "後壁區",
+    "q": "731 臺南市後壁區長安里47號之2",
+    "why": "台南官方旅遊景點",
+    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6146"
+  },
+  {
+    "id": "tainan-attraction-6147",
+    "city": "台南",
+    "name": "三明里大莊阿勃勒綠色隧道",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 70,
+    "updated": "2026-11-27",
+    "tags": [
+      "親子"
+    ],
+    "place": "鹽水區",
+    "q": "737 臺南市鹽水區",
+    "why": "台南官方旅遊景點",
+    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6147"
+  },
+  {
+    "id": "tainan-attraction-6148",
+    "city": "台南",
+    "name": "外角里臨水宮",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 70,
+    "updated": "2026-11-27",
+    "tags": [
+      "親子"
+    ],
+    "place": "白河區",
+    "q": "732 臺南市白河區外角里三民路51號",
+    "why": "台南官方旅遊景點",
+    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6148"
+  },
+  {
+    "id": "tainan-attraction-6149",
+    "city": "台南",
+    "name": "庄內里客庄內福呂府",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 70,
+    "updated": "2026-11-27",
+    "tags": [
+      "親子"
+    ],
+    "place": "白河區",
+    "q": "732 臺南市白河區庄內里裕農路1鄰142號",
+    "why": "台南官方旅遊景點",
+    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6149"
+  },
+  {
+    "id": "tainan-attraction-6150",
+    "city": "台南",
+    "name": "大林里綠食農場",
+    "e": "📍",
+    "type": "景點",
+    "src": "官方",
+    "base_heat": 70,
+    "updated": "2026-11-27",
+    "tags": [
+      "親子"
+    ],
+    "place": "白河區",
+    "q": "732 臺南市白河區大林里檨子林64之3號",
+    "why": "台南官方旅遊景點",
+    "url": "https://www.twtainan.net/zh-tw/attractions/detail/6150"
+  },
+  {
     "id": "chiayi-city-event-f668a279a46a",
     "city": "嘉義",
     "name": "❤️志工讓嘉義更暖心！❤️國際志工日留言答題抽好禮",
@@ -26341,26 +26494,6 @@
     "q": "❤️志工讓嘉義更暖心！❤️國際志工日留言答題抽好禮",
     "why": "❤️因為有志工，嘉義更溫暖❤️一個微笑、一句關心、一雙伸出的手，都是讓嘉義更溫暖的力量。✨從醫院裡的貼心引導、環境守護，到長者身旁的溫暖陪伴，每一份默默付出，都值得被看見。💕🎉【國際志工日知識問答】💬你知道每年的「國際志工日」是幾月幾日嗎？快來「嘉義市志願服務推廣中心」臉書專頁，留言正確答案，一起響應國際志工日，向每一位默默付出的志工致敬！❤️🎁【留言答題抽",
     "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=959723"
-  },
-  {
-    "id": "chiayi-city-event-bcdc1ce6eebe",
-    "city": "嘉義",
-    "name": "「2026家將藝術節：裝將ē囡仔」",
-    "e": "🎉",
-    "type": "活動",
-    "src": "官方",
-    "base_heat": 86,
-    "updated": "2026-11-27",
-    "start": "2026-11-15",
-    "end": "2027-03-07",
-    "tags": [
-      "活動",
-      "嘉義市政府"
-    ],
-    "place": "嘉義市",
-    "q": "「2026家將藝術節：裝將ē囡仔」",
-    "why": "嘉義素有「家將窟」之稱。百餘年來，家將在廟會上威武的神儀，成為這座城市深厚的信仰記憶。然而，當我們凝視那威赫鮮明的面譜，往往只看見神將形象，卻忽略顏料之下那一張張真實的臉孔。 「家將藝術節」以「人」作為重新理解家將的起點。他們來自百工百業，可能是學生、是工程師、廚師、軍警、修車技師或設計師，在日常生活中有各自的工作、家庭與煩惱，卻都在特定時刻走入廟埕，藉由畫",
-    "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=958833"
   },
   {
     "id": "chiayi-city-event-f99593a4c55f",
@@ -26501,6 +26634,26 @@
     "q": "觀物視野—從物產至風景的生成",
     "why": "過去的創作者因何種機緣與「物」相遇？當代藝術家又為何選擇與之對話？「觀物視野—從物產至風景的生成」從作品、檔案中的「物」出發，將美術史對風格、題材與展覽制度等研究方向，延伸至物產引進、農牧治理、環境變遷與勞動經驗，重新思考藝術創作與地方生活的關係。日治時期的嘉義有「畫都」的美名，亦有「諸羅派」與「嘉義青年畫派」之稱。藝術史學者林柏亭於《嘉義地區繪畫之研究》指",
     "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=958422"
+  },
+  {
+    "id": "chiayi-city-event-bcdc1ce6eebe",
+    "city": "嘉義",
+    "name": "「2026家將藝術節：裝將ē囡仔」",
+    "e": "🎉",
+    "type": "活動",
+    "src": "官方",
+    "base_heat": 86,
+    "updated": "2026-11-27",
+    "start": "2026-11-15",
+    "end": "2027-03-07",
+    "tags": [
+      "活動",
+      "嘉義市政府"
+    ],
+    "place": "嘉義市",
+    "q": "「2026家將藝術節：裝將ē囡仔」",
+    "why": "嘉義素有「家將窟」之稱。百餘年來，家將在廟會上威武的神儀，成為這座城市深厚的信仰記憶。然而，當我們凝視那威赫鮮明的面譜，往往只看見神將形象，卻忽略顏料之下那一張張真實的臉孔。 「家將藝術節」以「人」作為重新理解家將的起點。他們來自百工百業，可能是學生、是工程師、廚師、軍警、修車技師或設計師，在日常生活中有各自的工作、家庭與煩惱，卻都在特定時刻走入廟埕，藉由畫",
+    "url": "https://www.chiayi.gov.tw/News_Content.aspx?n=1165&s=958833"
   },
   {
     "id": "chiayi-city-event-40c2b8154cc0",
